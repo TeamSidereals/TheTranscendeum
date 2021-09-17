@@ -30,6 +30,16 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "somberstone"
+    },
+    {
+      "name": "Stone",
+      "type": "tag",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stone",
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [],
@@ -43,7 +53,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Tags",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "the_transcendeum",
