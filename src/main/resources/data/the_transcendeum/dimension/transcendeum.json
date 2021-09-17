@@ -54,7 +54,7 @@
       "sea_level": 63,
       "disable_mob_generation": false,
       "default_block": {
-        "Name": "minecraft:blackstone"
+        "Name": "the_transcendeum:somberstone"
       },
       "default_fluid": {
         "Name": "minecraft:water",

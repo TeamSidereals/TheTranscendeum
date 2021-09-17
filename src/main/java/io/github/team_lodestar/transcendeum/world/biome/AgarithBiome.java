@@ -13,8 +13,8 @@ import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.block.Blocks;
 
+import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -31,8 +31,8 @@ public class AgarithBiome extends TheTranscendeumModElements.ModElement {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6697729).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(-6697729).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.BLACKSTONE.getDefaultState(),
-								Blocks.BLACKSTONE.getDefaultState(), Blocks.BLACKSTONE.getDefaultState())));
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SomberstoneBlock.block.getDefaultState(),
+								SomberstoneBlock.block.getDefaultState(), SomberstoneBlock.block.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();

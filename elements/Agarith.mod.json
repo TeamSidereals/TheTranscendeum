@@ -4,10 +4,10 @@
   "definition": {
     "name": "Agarith",
     "groundBlock": {
-      "value": "Blocks.BLACKSTONE"
+      "value": "CUSTOM:Somberstone"
     },
     "undergroundBlock": {
-      "value": "Blocks.BLACKSTONE"
+      "value": "CUSTOM:Somberstone"
     },
     "airColor": {
       "value": -6697729,
