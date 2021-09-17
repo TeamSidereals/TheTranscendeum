@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "the_transcendeum:block/transcendeum_portal_ew"
+    },
+    "axis=x": {
+      "model": "the_transcendeum:block/transcendeum_portal_ns"
+    }
+  }
+}

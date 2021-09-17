@@ -1,0 +1,55 @@
+{
+  "_fv": 24,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "badlands"
+      },
+      {
+        "value": "badlands_plateau"
+      },
+      {
+        "value": "mutated_desert"
+      },
+      {
+        "value": "mushroom_field_shore"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.STONE#3"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -3381505,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "Blocks.PURPUR_BLOCK"
+    },
+    "portalParticles": {
+      "value": "CRIT_MAGIC"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Transcendent Powder",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "transcendent_essence",
+    "portalTexture": "transcendeum_portal",
+    "enablePortal": true
+  }
+}

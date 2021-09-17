@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="the_transcendeum"
+version="1.0.0"
+displayName="The Transcendeum"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://team-lodestar.github.io"
+authors="Team Lodestar"
+
+[[dependencies.the_transcendeum]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

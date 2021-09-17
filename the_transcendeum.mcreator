@@ -1,0 +1,47 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Transcendeum",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendeum",
+      "metadata": {
+        "ep": true
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.the_transcendeum.transcendeum": "Transcendent Powder"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "the_transcendeum",
+    "modName": "The Transcendeum",
+    "version": "1.0.0",
+    "author": "Team Lodestar",
+    "websiteURL": "https://team-lodestar.github.io",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "io.github.team_lodestar.transcendeum",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100235315
+}
