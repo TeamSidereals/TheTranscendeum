@@ -37,7 +37,7 @@
     },
     "igniterName": "Transcendent Powder",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:TranscendeumItems"
     },
     "texture": "transcendent_essence",
     "portalTexture": "transcendeum_portal",

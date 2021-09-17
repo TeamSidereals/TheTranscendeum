@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "Transcendeum Items",
+    "icon": {
+      "value": "Items.SPAWN_EGG#58"
+    },
+    "showSearch": false
+  }
+}

@@ -40,6 +40,46 @@
       "ids": {},
       "registry_name": "stone",
       "path": "~/Tags"
+    },
+    {
+      "name": "TranscendeumBlocks",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendeum_blocks",
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "TranscendeumGear",
+      "type": "tab",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendeum_gear",
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "TranscendeumItems",
+      "type": "tab",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendeum_items",
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "TranscendeumMobs",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendeum_mobs",
+      "path": "~/Creative Tabs"
     }
   ],
   "variable_elements": [],
@@ -47,8 +87,12 @@
   "language_map": {
     "en_us": {
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
+      "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
+      "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
+      "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
       "biome.the_transcendeum.agarith": "Agarith",
-      "block.the_transcendeum.somberstone": "Somberstone"
+      "block.the_transcendeum.somberstone": "Somberstone",
+      "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
   },
   "foldersRoot": {
@@ -56,6 +100,10 @@
     "children": [
       {
         "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Creative Tabs",
         "children": []
       }
     ]

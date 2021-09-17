@@ -8,17 +8,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import io.github.team_lodestar.transcendeum.world.dimension.TranscendeumDimension;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
 
 public class TranscendeumItem extends Item {
 	@ObjectHolder("the_transcendeum:transcendeum")
 	public static final Item block = null;
 	public TranscendeumItem() {
-		super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(64));
+		super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxDamage(64));
 	}
 
 	@Override

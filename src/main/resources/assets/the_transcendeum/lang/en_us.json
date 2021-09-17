@@ -1,5 +1,9 @@
 {
   "item.the_transcendeum.transcendeum": "Transcendent Powder",
+  "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
+  "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
+  "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
   "biome.the_transcendeum.agarith": "Agarith",
-  "block.the_transcendeum.somberstone": "Somberstone"
+  "block.the_transcendeum.somberstone": "Somberstone",
+  "itemGroup.tabtranscendeum_items": "Transcendeum Items"
 }
