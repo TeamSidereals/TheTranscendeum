@@ -35,10 +35,10 @@
     "parent": {
       "value": "No parent"
     },
-    "rainingPossibility": 0.5,
+    "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "heightVariation": 0.1,
     "biomeType": "COOL",
     "spawnBiome": false,
     "biomeWeight": 10,
