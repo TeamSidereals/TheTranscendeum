@@ -4,27 +4,18 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "badlands"
-      },
-      {
-        "value": "badlands_plateau"
-      },
-      {
-        "value": "mutated_desert"
-      },
-      {
-        "value": "mushroom_field_shore"
+        "value": "CUSTOM:Agarith"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.STONE#3"
+      "value": "Blocks.BLACKSTONE"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
     "airColor": {
-      "value": -3381505,
+      "value": -6684673,
       "falpha": 0.0
     },
     "canRespawnHere": true,

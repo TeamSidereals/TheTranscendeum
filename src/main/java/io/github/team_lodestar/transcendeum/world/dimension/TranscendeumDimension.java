@@ -85,10 +85,10 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(Blocks.DIORITE).build(), "field_222718_j");
+						.add(Blocks.BLACKSTONE).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(Blocks.DIORITE).build(), "field_222718_j");
+						.add(Blocks.BLACKSTONE).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -101,7 +101,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(128, true, DimensionRenderInfo.FogType.NORMAL, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(0.8, 0.4, 1);
+				return new Vector3d(0.6, 1, 1);
 			}
 
 			@Override

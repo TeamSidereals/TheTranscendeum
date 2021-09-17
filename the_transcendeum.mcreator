@@ -12,13 +12,23 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "Agarith",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "agarith"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.the_transcendeum.transcendeum": "Transcendent Powder"
+      "item.the_transcendeum.transcendeum": "Transcendent Powder",
+      "biome.the_transcendeum.agarith": "Agarith"
     }
   },
   "foldersRoot": {
