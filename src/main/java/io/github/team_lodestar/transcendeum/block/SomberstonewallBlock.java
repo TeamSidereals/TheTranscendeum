@@ -36,7 +36,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class SomberstonewallBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:somberstonewall")
+	@ObjectHolder("the_transcendeum:somberstone_wall")
 	public static final Block block = null;
 	public SomberstonewallBlock(TheTranscendeumModElements instance) {
 		super(instance, 12);
@@ -51,7 +51,7 @@ public class SomberstonewallBlock extends TheTranscendeumModElements.ModElement 
 	public static class CustomBlock extends WallBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 7.5f).setLightLevel(s -> 0));
-			setRegistryName("somberstonewall");
+			setRegistryName("somberstone_wall");
 		}
 		private static final VoxelShape CENTER_POLE_SHAPE = Block.makeCuboidShape(7.0D, 0.0D, 7.0D, 9.0D, 16.0D, 9.0D);
 		private static final VoxelShape WALL_CONNECTION_NORTH_SIDE_SHAPE = Block.makeCuboidShape(7.0D, 0.0D, 0.0D, 9.0D, 16.0D, 9.0D);

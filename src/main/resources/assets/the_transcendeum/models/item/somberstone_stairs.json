@@ -1,5 +1,5 @@
 {
-  "parent": "the_transcendeum:block/somberstonestairs",
+  "parent": "the_transcendeum:block/somberstone_stairs",
   "display": {
     "thirdperson": {
       "rotation": [

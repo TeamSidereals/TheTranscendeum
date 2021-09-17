@@ -20,7 +20,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "agarith"
+      "registry_name": "agarith",
+      "path": "~/Biomes"
     },
     {
       "name": "Somberstone",
@@ -88,7 +89,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "somberstoneslab"
+      "registry_name": "somberstone_slab"
     },
     {
       "name": "Somberstonestairs",
@@ -97,7 +98,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "somberstonestairs"
+      "registry_name": "somberstone_stairs"
     },
     {
       "name": "Somberstonewall",
@@ -106,23 +107,23 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "somberstonewall"
+      "registry_name": "somberstone_wall"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.the_transcendeum.somberstoneslab": "Somberstone Slab",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
+      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
+      "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
+      "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
       "biome.the_transcendeum.agarith": "Agarith",
       "block.the_transcendeum.somberstone": "Somberstone",
-      "itemGroup.tabtranscendeum_items": "Transcendeum Items",
-      "block.the_transcendeum.somberstonestairs": "Somberstone Stairs",
-      "block.the_transcendeum.somberstonewall": "Somberstone Wall"
+      "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
   },
   "foldersRoot": {
@@ -138,6 +139,10 @@
       },
       {
         "name": "recipes",
+        "children": []
+      },
+      {
+        "name": "Biomes",
         "children": []
       }
     ]

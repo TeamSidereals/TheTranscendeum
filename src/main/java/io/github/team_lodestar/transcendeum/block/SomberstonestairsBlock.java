@@ -23,7 +23,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class SomberstonestairsBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:somberstonestairs")
+	@ObjectHolder("the_transcendeum:somberstone_stairs")
 	public static final Block block = null;
 	public SomberstonestairsBlock(TheTranscendeumModElements instance) {
 		super(instance, 11);
@@ -41,7 +41,7 @@ public class SomberstonestairsBlock extends TheTranscendeumModElements.ModElemen
 					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 7.5f).setLightLevel(s -> 0))
 							.getDefaultState(),
 					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 7.5f).setLightLevel(s -> 0));
-			setRegistryName("somberstonestairs");
+			setRegistryName("somberstone_stairs");
 		}
 
 		@Override

@@ -5,7 +5,7 @@
         "up": "true"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall_post"
+        "model": "the_transcendeum:block/somberstone_wall_post"
       }
     },
     {
@@ -13,7 +13,7 @@
         "north": "low"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall",
+        "model": "the_transcendeum:block/somberstone_wall",
         "uvlock": true
       }
     },
@@ -22,7 +22,7 @@
         "east": "low"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall",
+        "model": "the_transcendeum:block/somberstone_wall",
         "y": 90,
         "uvlock": true
       }
@@ -32,7 +32,7 @@
         "south": "low"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall",
+        "model": "the_transcendeum:block/somberstone_wall",
         "y": 180,
         "uvlock": true
       }
@@ -42,7 +42,7 @@
         "west": "low"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall",
+        "model": "the_transcendeum:block/somberstone_wall",
         "y": 270,
         "uvlock": true
       }
@@ -52,7 +52,7 @@
         "north": "tall"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall_side_tall",
+        "model": "the_transcendeum:block/somberstone_wall_side_tall",
         "uvlock": true
       }
     },
@@ -61,7 +61,7 @@
         "east": "tall"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall_side_tall",
+        "model": "the_transcendeum:block/somberstone_wall_side_tall",
         "y": 90,
         "uvlock": true
       }
@@ -71,7 +71,7 @@
         "south": "tall"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall_side_tall",
+        "model": "the_transcendeum:block/somberstone_wall_side_tall",
         "y": 180,
         "uvlock": true
       }
@@ -81,7 +81,7 @@
         "west": "tall"
       },
       "apply": {
-        "model": "the_transcendeum:block/somberstonewall_side_tall",
+        "model": "the_transcendeum:block/somberstone_wall_side_tall",
         "y": 270,
         "uvlock": true
       }
