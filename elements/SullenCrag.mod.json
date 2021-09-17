@@ -1,0 +1,30 @@
+{
+  "_fv": 24,
+  "_type": "structure",
+  "definition": {
+    "structure": "sullen_crag",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 850000,
+    "minCountPerChunk": 3,
+    "maxCountPerChunk": 6,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": -1,
+    "spawnXOffset": -2,
+    "spawnZOffset": -2,
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:SullenSand"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SullenCrags"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

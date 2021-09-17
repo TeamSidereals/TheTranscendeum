@@ -102,7 +102,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(128, true, DimensionRenderInfo.FogType.NORMAL, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(0.6, 1, 1);
+				return color.mul(sunHeight * 0.94 + 0.06, sunHeight * 0.94 + 0.06, sunHeight * 0.91 + 0.09);
 			}
 
 			@Override

@@ -5,6 +5,12 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:Agarith"
+      },
+      {
+        "value": "CUSTOM:SullenCrags"
+      },
+      {
+        "value": "CUSTOM:SullenDesert"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -13,10 +19,6 @@
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
-    },
-    "airColor": {
-      "value": -6684673,
-      "falpha": 0.0
     },
     "canRespawnHere": true,
     "hasFog": true,

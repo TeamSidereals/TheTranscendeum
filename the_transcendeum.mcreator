@@ -108,22 +108,94 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "somberstone_wall"
+    },
+    {
+      "name": "SullenSand",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_sand"
+    },
+    {
+      "name": "SullenSandstone",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_sandstone"
+    },
+    {
+      "name": "SullenDesert",
+      "type": "biome",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_desert",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "SullenCrags",
+      "type": "biome",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_crags",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "SullenCrag",
+      "type": "structure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_crag",
+      "path": "~/Structures"
+    },
+    {
+      "name": "SullenCrag1",
+      "type": "structure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_crag_1",
+      "path": "~/Structures"
+    },
+    {
+      "name": "SullenCrag2",
+      "type": "structure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_crag_2",
+      "path": "~/Structures"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "biome.the_transcendeum.sullen_desert": "Sullen Desert",
+      "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
-      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
-      "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
+      "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
+      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
       "biome.the_transcendeum.agarith": "Agarith",
       "block.the_transcendeum.somberstone": "Somberstone",
-      "itemGroup.tabtranscendeum_items": "Transcendeum Items"
+      "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+      "block.the_transcendeum.sullen_sand": "Sullen Sand"
     }
   },
   "foldersRoot": {
@@ -143,6 +215,10 @@
       },
       {
         "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Structures",
         "children": []
       }
     ]
