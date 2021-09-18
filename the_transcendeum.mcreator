@@ -14,16 +14,6 @@
       }
     },
     {
-      "name": "Agarith",
-      "type": "biome",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "agarith",
-      "path": "~/Biomes"
-    },
-    {
       "name": "Somberstone",
       "type": "block",
       "sortid": 3,
@@ -155,7 +145,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag",
-      "path": "~/Structures"
+      "path": "~/Structures/Natural"
     },
     {
       "name": "SullenCrag1",
@@ -165,7 +155,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag_1",
-      "path": "~/Structures"
+      "path": "~/Structures/Natural"
     },
     {
       "name": "SullenCrag2",
@@ -175,7 +165,106 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag_2",
-      "path": "~/Structures"
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "Sullcactus",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullcactus"
+    },
+    {
+      "name": "SullcactusBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullcactus_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SullenCanyon",
+      "type": "biome",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_canyon",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "TranscendentOcean",
+      "type": "biome",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendent_ocean",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "TranscendentSea",
+      "type": "biome",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendent_sea",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "HugeSullcactus",
+      "type": "structure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "HugeSullcactus1",
+      "type": "structure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "HugeSullcactus2",
+      "type": "structure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus_2",
+      "path": "~/Structures/Natural"
     }
   ],
   "variable_elements": [],
@@ -184,15 +273,18 @@
     "en_us": {
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
+      "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
+      "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
+      "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
+      "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
-      "biome.the_transcendeum.agarith": "Agarith",
       "block.the_transcendeum.somberstone": "Somberstone",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
       "block.the_transcendeum.sullen_sand": "Sullen Sand"
@@ -219,7 +311,16 @@
       },
       {
         "name": "Structures",
-        "children": []
+        "children": [
+          {
+            "name": "Natural",
+            "children": []
+          },
+          {
+            "name": "Constructed",
+            "children": []
+          }
+        ]
       }
     ]
   },

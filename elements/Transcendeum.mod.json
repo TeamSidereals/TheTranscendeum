@@ -4,13 +4,19 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Agarith"
-      },
-      {
         "value": "CUSTOM:SullenCrags"
       },
       {
         "value": "CUSTOM:SullenDesert"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
+        "value": "CUSTOM:TranscendentOcean"
+      },
+      {
+        "value": "CUSTOM:TranscendentSea"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -21,7 +27,7 @@
       "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": true,
-    "hasFog": true,
+    "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",

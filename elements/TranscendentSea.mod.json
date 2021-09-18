@@ -2,15 +2,19 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Agarith",
+    "name": "Transcendent Sea",
     "groundBlock": {
-      "value": "CUSTOM:Somberstone"
+      "value": "CUSTOM:SullenSand"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Somberstone"
     },
     "airColor": {
       "value": -6697729,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -3569952,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -37,11 +41,11 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 0.5,
-    "baseHeight": 0.1,
+    "baseHeight": -0.8,
     "heightVariation": 0.1,
     "biomeType": "COOL",
     "spawnBiome": false,
-    "biomeWeight": 10,
+    "biomeWeight": 120,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
@@ -80,10 +84,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }
