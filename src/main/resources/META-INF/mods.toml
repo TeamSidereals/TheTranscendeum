@@ -1,17 +1,14 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Lodestar License"
+license="Academic Free License v3.0"
 
 [[mods]]
 modId="the_transcendeum"
 version="1.0.0"
 displayName="The Transcendeum"
-credits="Texturers: Sajevius, Dylanvhs / Special thanks to everyone for all their ideas!"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://team-lodestar.github.io"
 authors="Team Lodestar"
-description='''
-A mod that adds a brand new dimension transcended beyond reality, being familiar yet unfamiliar at the same time.
-'''
 
 [[dependencies.the_transcendeum]]
     modId="minecraft"
