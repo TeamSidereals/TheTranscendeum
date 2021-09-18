@@ -5,13 +5,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.SoundEvent;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class IaprieGrassBlockBlock extends TheTranscendeumModElements.ModElement {
+public class MordhenLeavesBlock extends TheTranscendeumModElements.ModElement {
 
-	@ObjectHolder("the_transcendeum:iaprie_grass_block")
+	@ObjectHolder("the_transcendeum:mordhen_leaves")
 	public static final Block block = null;
 
-	public IaprieGrassBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 61);
+	public MordhenLeavesBlock(TheTranscendeumModElements instance) {
+		super(instance, 55);
 
 	}
 
@@ -22,17 +22,22 @@ public class IaprieGrassBlockBlock extends TheTranscendeumModElements.ModElement
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends LeavesBlock {
 
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
 
-			setRegistryName("iaprie_grass_block");
+			setRegistryName("mordhen_leaves");
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+			return 1;
+		}
+
+		@Override
+		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 30;
 		}
 
 		@Override

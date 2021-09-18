@@ -729,6 +729,15 @@
       "registry_name": "iaprie_grass_block"
     },
     {
+      "name": "CoriumFlower",
+      "type": "plant",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corium_flower"
+    },
+    {
       "name": "AureaPlains",
       "type": "biome",
       "sortid": 62,
@@ -737,6 +746,15 @@
       "ids": {},
       "registry_name": "aurea_plains",
       "path": "~/Biomes"
+    },
+    {
+      "name": "IaprieGrass",
+      "type": "plant",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iaprie_grass"
     },
     {
       "name": "ScaliaWart",
@@ -757,22 +775,23 @@
       "registry_name": "mergoany"
     },
     {
-      "name": "IaprieGrass",
-      "type": "plant",
-      "sortid": 64,
+      "name": "MordhenBush",
+      "type": "structure",
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "iaprie_grass"
+      "registry_name": "mordhen_bush",
+      "path": "~/Structures/Natural"
     },
     {
-      "name": "CoriumFlower",
-      "type": "plant",
-      "sortid": 65,
+      "name": "MordhenLeaves",
+      "type": "block",
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "corium_flower"
+      "registry_name": "mordhen_leaves"
     }
   ],
   "variable_elements": [],
@@ -785,8 +804,6 @@
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
       "block.the_transcendeum.mordhen_grass": "Mordhen Grass",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
-      "block.the_transcendeum.scalia_wart": "Scalia Wart",
-      "block.the_transcendeum.mergoany": "Mergoany",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_log": "Stariam Log",
@@ -806,8 +823,6 @@
       "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
-      "biome.the_transcendeum.aurea_plains": "Aurea Plains",
-      "block.the_transcendeum.corium_flower": "Corium Flower",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
       "block.the_transcendeum.stariam_button": "Stariam Button",
       "biome.the_transcendeum.agarith": "Agarith",
@@ -817,12 +832,10 @@
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "block.the_transcendeum.sullcactus": "Sullcactus",
-      "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
       "block.the_transcendeum.saltrock": "Saltrock",
       "biome.the_transcendeum.mordhen_wastes": "Mordhen Wastes",
-      "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
