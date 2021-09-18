@@ -10,7 +10,7 @@
       "value": "CUSTOM:SullenSandstone"
     },
     "airColor": {
-      "value": -13210,
+      "value": -5870182,
       "falpha": 0.0
     },
     "grassColor": {
@@ -53,8 +53,8 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 1.2000000000000002,
-    "heightVariation": 1.0,
+    "baseHeight": 1.4,
+    "heightVariation": 0.2,
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 100,

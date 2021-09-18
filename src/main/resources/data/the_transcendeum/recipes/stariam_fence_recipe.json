@@ -7,26 +7,26 @@
   ],
   "key": {
     "0": {
-      "item": "the_transcendeum:stariam_planks"
+      "item": "the_transcendeum:deleted_mod_element"
     },
     "1": {
       "item": "minecraft:stick"
     },
     "2": {
-      "item": "the_transcendeum:stariam_planks"
+      "item": "the_transcendeum:deleted_mod_element"
     },
     "3": {
-      "item": "the_transcendeum:stariam_planks"
+      "item": "the_transcendeum:deleted_mod_element"
     },
     "4": {
       "item": "minecraft:stick"
     },
     "5": {
-      "item": "the_transcendeum:stariam_planks"
+      "item": "the_transcendeum:deleted_mod_element"
     }
   },
   "result": {
-    "item": "the_transcendeum:stariam_fence",
+    "item": "the_transcendeum:deleted_mod_element",
     "count": 3
   }
 }
