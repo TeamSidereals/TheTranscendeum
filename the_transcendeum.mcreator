@@ -14,16 +14,6 @@
       }
     },
     {
-      "name": "Agarith",
-      "type": "biome",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "agarith",
-      "path": "~/Biomes"
-    },
-    {
       "name": "Somberstone",
       "type": "block",
       "sortid": 3,
@@ -192,7 +182,6 @@
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
-      "biome.the_transcendeum.agarith": "Agarith",
       "block.the_transcendeum.somberstone": "Somberstone",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
       "block.the_transcendeum.sullen_sand": "Sullen Sand"
@@ -219,6 +208,10 @@
       },
       {
         "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "gear sets",
         "children": []
       }
     ]
