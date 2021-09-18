@@ -7,20 +7,20 @@
   ],
   "key": {
     "0": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:stariam_log"
     },
     "1": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:stariam_log"
     },
     "2": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:stariam_log"
     },
     "3": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:stariam_log"
     }
   },
   "result": {
-    "item": "the_transcendeum:deleted_mod_element",
+    "item": "the_transcendeum:stariam_wood",
     "count": 3
   }
 }
