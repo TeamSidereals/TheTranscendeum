@@ -5,13 +5,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.SoundEvent;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class MordhenNylliumBlock extends TheTranscendeumModElements.ModElement {
+public class SaltrockBlock extends TheTranscendeumModElements.ModElement {
 
-	@ObjectHolder("the_transcendeum:mordhen_nyllium")
+	@ObjectHolder("the_transcendeum:saltrock")
 	public static final Block block = null;
 
-	public MordhenNylliumBlock(TheTranscendeumModElements instance) {
-		super(instance, 52);
+	public SaltrockBlock(TheTranscendeumModElements instance) {
+		super(instance, 58);
 
 	}
 
@@ -25,9 +25,10 @@ public class MordhenNylliumBlock extends TheTranscendeumModElements.ModElement {
 	public static class CustomBlock extends Block {
 
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.BASALT).hardnessAndResistance(2f, 2f).setLightLevel(s -> 0).harvestLevel(0)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 
-			setRegistryName("mordhen_nyllium");
+			setRegistryName("saltrock");
 		}
 
 		@Override

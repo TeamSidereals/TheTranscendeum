@@ -1,0 +1,33 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:deleted_mod_element"
+    },
+    "3": {
+      "item": "the_transcendeum:deleted_mod_element"
+    },
+    "4": {
+      "item": "the_transcendeum:deleted_mod_element"
+    },
+    "6": {
+      "item": "the_transcendeum:deleted_mod_element"
+    },
+    "7": {
+      "item": "the_transcendeum:deleted_mod_element"
+    },
+    "8": {
+      "item": "the_transcendeum:deleted_mod_element"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:polished_somberstone_stairs",
+    "count": 4
+  }
+}

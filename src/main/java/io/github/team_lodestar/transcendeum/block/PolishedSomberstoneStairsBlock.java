@@ -5,13 +5,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.SoundEvent;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class MordhenNylliumBlock extends TheTranscendeumModElements.ModElement {
+public class PolishedSomberstoneStairsBlock extends TheTranscendeumModElements.ModElement {
 
-	@ObjectHolder("the_transcendeum:mordhen_nyllium")
+	@ObjectHolder("the_transcendeum:polished_somberstone_stairs")
 	public static final Block block = null;
 
-	public MordhenNylliumBlock(TheTranscendeumModElements instance) {
-		super(instance, 52);
+	public PolishedSomberstoneStairsBlock(TheTranscendeumModElements instance) {
+		super(instance, 54);
 
 	}
 
@@ -22,17 +22,15 @@ public class MordhenNylliumBlock extends TheTranscendeumModElements.ModElement {
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends StairsBlock {
 
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0));
+			super(() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 2f).setLightLevel(s -> 0)
+					.harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool()).getDefaultState(),
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 2f).setLightLevel(s -> 0)
+							.harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool());
 
-			setRegistryName("mordhen_nyllium");
-		}
-
-		@Override
-		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+			setRegistryName("polished_somberstone_stairs");
 		}
 
 		@Override
