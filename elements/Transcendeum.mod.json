@@ -4,16 +4,22 @@
   "definition": {
     "biomesInDimension": [
       {
+        "value": "CUSTOM:CrystaliaForest"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
         "value": "CUSTOM:SullenCrags"
       },
       {
         "value": "CUSTOM:SullenDesert"
       },
       {
-        "value": "CUSTOM:CrystaliaForest"
+        "value": "CUSTOM:TranscendentOcean"
       },
       {
-        "value": "CUSTOM:MordhenWastes"
+        "value": "CUSTOM:TranscendentSea"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -24,7 +30,7 @@
       "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": true,
-    "hasFog": true,
+    "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",

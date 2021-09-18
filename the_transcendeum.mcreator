@@ -711,10 +711,10 @@
   "workspaceSettings": {
     "modid": "the_transcendeum",
     "modName": "The Transcendeum",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "author": "Team Lodestar",
     "websiteURL": "https://team-lodestar.github.io",
-    "license": "Academic Free License v3.0",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -722,7 +722,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
