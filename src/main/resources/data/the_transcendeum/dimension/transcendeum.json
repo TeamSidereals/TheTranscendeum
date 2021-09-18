@@ -7,28 +7,28 @@
       "type": "minecraft:multi_noise",
       "seed": 0,
       "temperature_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
         ]
       },
       "humidity_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
         ]
       },
       "altitude_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
         ]
       },
       "weirdness_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
@@ -36,7 +36,7 @@
       },
       "biomes": [
         {
-          "biome": "the_transcendeum:agarith",
+          "biome": "the_transcendeum:sullen_crags",
           "parameters": {
             "temperature": 1,
             "humidity": -1,
@@ -46,22 +46,12 @@
           }
         },
         {
-          "biome": "the_transcendeum:sullen_crags",
-          "parameters": {
-            "temperature": 0.333333333334,
-            "humidity": -0.333333333334,
-            "altitude": -0.75,
-            "weirdness": 1.5,
-            "offset": 0
-          }
-        },
-        {
           "biome": "the_transcendeum:sullen_desert",
           "parameters": {
-            "temperature": -0.333333333334,
-            "humidity": 0.333333333334,
-            "altitude": 0.75,
-            "weirdness": -1.5,
+            "temperature": 0,
+            "humidity": 0,
+            "altitude": -0.75,
+            "weirdness": 1.5,
             "offset": 0
           }
         },
@@ -70,8 +60,8 @@
           "parameters": {
             "temperature": -1,
             "humidity": 1,
-            "altitude": -0.75,
-            "weirdness": 1.5,
+            "altitude": 0.75,
+            "weirdness": -1.5,
             "offset": 0
           }
         }
