@@ -599,15 +599,6 @@
       "path": "~/Biomes"
     },
     {
-      "name": "MordhenNyllium",
-      "type": "block",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mordhen_nyllium"
-    },
-    {
       "name": "MordhenGrass",
       "type": "plant",
       "sortid": 53,
@@ -615,6 +606,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "mordhen_grass"
+    },
+    {
+      "name": "MordhenNyllium",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mordhen_nyllium"
     },
     {
       "name": "MordhenWastes",

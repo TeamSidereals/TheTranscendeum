@@ -49,7 +49,7 @@
     "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 25,
+    "biomeWeight": 30,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
@@ -61,7 +61,7 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 10,
-    "vanillaTreeType": "Default",
+    "vanillaTreeType": "Savanna trees",
     "treeType": 1,
     "minHeight": 10,
     "maxWaterDepth": 0,
@@ -89,10 +89,6 @@
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
       "Caves"
     ],
     "spawnEntries": []
