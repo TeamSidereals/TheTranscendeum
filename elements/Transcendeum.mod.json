@@ -4,22 +4,22 @@
   "definition": {
     "biomesInDimension": [
       {
+        "value": "CUSTOM:CrystaliaForest"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
         "value": "CUSTOM:SullenCrags"
       },
       {
         "value": "CUSTOM:SullenDesert"
       },
       {
-        "value": "CUSTOM:SullenCanyon"
-      },
-      {
         "value": "CUSTOM:TranscendentOcean"
       },
       {
         "value": "CUSTOM:TranscendentSea"
-      },
-      {
-        "value": "CUSTOM:CrystaliaForest"
       }
     ],
     "worldGenType": "Normal world gen",
