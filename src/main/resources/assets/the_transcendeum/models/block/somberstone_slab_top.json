@@ -2,7 +2,7 @@
   "parent": "block/slab_top",
   "textures": {
     "particle": "the_transcendeum:blocks/somberstone",
-    "bottom": "the_transcendeum:blocks/somberstone",
+    "bottom": "the_transcendeum:blocks/somberstone_top",
     "top": "the_transcendeum:blocks/somberstone_top",
     "side": "the_transcendeum:blocks/somberstone"
   }
