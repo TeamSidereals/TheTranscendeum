@@ -4,13 +4,19 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Agarith"
-      },
-      {
         "value": "CUSTOM:SullenCrags"
       },
       {
         "value": "CUSTOM:SullenDesert"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
+        "value": "CUSTOM:TranscendentOcean"
+      },
+      {
+        "value": "CUSTOM:TranscendentSea"
       },
       {
         "value": "CUSTOM:CrystaliaForest"

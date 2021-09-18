@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "somberstone",
+    "texture": "somberstone_top",
     "textureTop": "somberstone_top",
     "textureLeft": "",
     "textureFront": "somberstone",
