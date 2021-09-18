@@ -5,13 +5,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.SoundEvent;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class PolishedSomberstoneSlabBlock extends TheTranscendeumModElements.ModElement {
+public class MordhenNylliumBlock extends TheTranscendeumModElements.ModElement {
 
-	@ObjectHolder("the_transcendeum:polished_somberstone_slab")
+	@ObjectHolder("the_transcendeum:mordhen_nyllium")
 	public static final Block block = null;
 
-	public PolishedSomberstoneSlabBlock(TheTranscendeumModElements instance) {
-		super(instance, 53);
+	public MordhenNylliumBlock(TheTranscendeumModElements instance) {
+		super(instance, 52);
 
 	}
 
@@ -22,21 +22,26 @@ public class PolishedSomberstoneSlabBlock extends TheTranscendeumModElements.Mod
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
-	public static class CustomBlock extends SlabBlock {
+	public static class CustomBlock extends Block {
 
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 2f).setLightLevel(s -> 0).harvestLevel(0)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool());
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0));
 
-			setRegistryName("polished_somberstone_slab");
+			setRegistryName("mordhen_nyllium");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, state.get(TYPE) == SlabType.DOUBLE ? 2 : 1));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
 	}
