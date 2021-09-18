@@ -145,7 +145,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag",
-      "path": "~/Structures/Natural"
+      "path": "~/Structures"
     },
     {
       "name": "SullenCrag1",
@@ -155,7 +155,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag_1",
-      "path": "~/Structures/Natural"
+      "path": "~/Structures"
     },
     {
       "name": "SullenCrag2",
@@ -165,7 +165,17 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag_2",
-      "path": "~/Structures/Natural"
+      "path": "~/Structures"
+    },
+    {
+      "name": "TranscendentOcean",
+      "type": "biome",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendent_ocean",
+      "path": "~/Biomes"
     },
     {
       "name": "Sullcactus",
@@ -175,6 +185,46 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullcactus"
+    },
+    {
+      "name": "HugeSullcactus2",
+      "type": "structure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus_2",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "HugeSullcactus",
+      "type": "structure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "TranscendentSea",
+      "type": "biome",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendent_sea",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "HugeSullcactus1",
+      "type": "structure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus_1",
+      "path": "~/Structures/Natural"
     },
     {
       "name": "SullcactusBlockValidPlacementCondition",
@@ -217,54 +267,47 @@
       "path": "~/Biomes"
     },
     {
-      "name": "TranscendentOcean",
-      "type": "biome",
-      "sortid": 23,
+      "name": "Cursedbaseballbat",
+      "type": "tool",
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "transcendent_ocean",
-      "path": "~/Biomes"
+      "registry_name": "cursedbaseballbat",
+      "path": "~/gear sets"
     },
     {
-      "name": "TranscendentSea",
-      "type": "biome",
-      "sortid": 24,
+      "name": "CursedbaseballbatLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "transcendent_sea",
-      "path": "~/Biomes"
-    },
-    {
-      "name": "HugeSullcactus",
-      "type": "structure",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "huge_sullcactus",
-      "path": "~/Structures/Natural"
-    },
-    {
-      "name": "HugeSullcactus1",
-      "type": "structure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "huge_sullcactus_1",
-      "path": "~/Structures/Natural"
-    },
-    {
-      "name": "HugeSullcactus2",
-      "type": "structure",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "huge_sullcactus_2",
-      "path": "~/Structures/Natural"
+      "registry_name": "cursedbaseballbat_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -273,10 +316,8 @@
     "en_us": {
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
-      "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
-      "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
-      "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
+      "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
@@ -294,19 +335,11 @@
     "name": "~",
     "children": [
       {
-        "name": "Tags",
+        "name": "Biomes",
         "children": []
       },
       {
         "name": "Creative Tabs",
-        "children": []
-      },
-      {
-        "name": "recipes",
-        "children": []
-      },
-      {
-        "name": "Biomes",
         "children": []
       },
       {
@@ -321,6 +354,18 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "gear sets",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "recipes",
+        "children": []
       }
     ]
   },

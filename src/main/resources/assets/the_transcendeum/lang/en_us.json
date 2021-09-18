@@ -1,10 +1,8 @@
 {
   "biome.the_transcendeum.sullen_desert": "Sullen Desert",
   "biome.the_transcendeum.sullen_crags": "Sullen Crags",
-  "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
-  "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
-  "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
   "item.the_transcendeum.transcendeum": "Transcendent Powder",
+  "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
   "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
   "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
   "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
