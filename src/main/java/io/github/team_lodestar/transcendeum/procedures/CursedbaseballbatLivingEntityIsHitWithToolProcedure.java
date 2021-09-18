@@ -1,7 +1,18 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class CursedbaseballbatLivingEntityIsHitWithToolProcedure {
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.entity.Entity;
 
+import java.util.stream.Collectors;
+import java.util.function.Function;
+import java.util.Map;
+import java.util.List;
+import java.util.Comparator;
+
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class CursedbaseballbatLivingEntityIsHitWithToolProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
@@ -28,13 +39,11 @@ public class CursedbaseballbatLivingEntityIsHitWithToolProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure CursedbaseballbatLivingEntityIsHitWithTool!");
 			return;
 		}
-
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		{
 			List<Entity> _entfound = world
 					.getEntitiesWithinAABB(Entity.class,
@@ -51,5 +60,4 @@ public class CursedbaseballbatLivingEntityIsHitWithToolProcedure {
 			}
 		}
 	}
-
 }
