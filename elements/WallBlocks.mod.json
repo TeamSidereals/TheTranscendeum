@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Somberstonewall"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "walls",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:stariam_log"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:stariam_planks",
+    "count": 4
+  }
+}

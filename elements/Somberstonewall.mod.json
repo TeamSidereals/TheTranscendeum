@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "somberstone",
     "blockBase": "Wall",
     "tintType": "No tint",
     "isItemTinted": false,

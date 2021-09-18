@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "somberstone",
-    "textureTop": "somberstone",
+    "textureTop": "somberstone_top",
     "textureLeft": "",
     "textureFront": "somberstone",
     "textureRight": "",
@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "somberstone",
     "blockBase": "Stairs",
     "tintType": "No tint",
     "isItemTinted": false,

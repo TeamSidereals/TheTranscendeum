@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "the_transcendeum:blocks/somberstone",
+    "down": "the_transcendeum:blocks/somberstone_top",
+    "up": "the_transcendeum:blocks/somberstone_top",
+    "north": "the_transcendeum:blocks/somberstone",
+    "east": "the_transcendeum:blocks/somberstone",
+    "south": "the_transcendeum:blocks/somberstone",
+    "west": "the_transcendeum:blocks/somberstone",
     "particle": "the_transcendeum:blocks/somberstone"
   }
 }

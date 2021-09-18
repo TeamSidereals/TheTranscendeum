@@ -176,26 +176,330 @@
       "ids": {},
       "registry_name": "sullen_crag_2",
       "path": "~/Structures"
+    },
+    {
+      "name": "StariamWood",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_wood"
+    },
+    {
+      "name": "StariamLog",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_log"
+    },
+    {
+      "name": "StariamPlanks",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_planks"
+    },
+    {
+      "name": "StariamLeaves",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_leaves"
+    },
+    {
+      "name": "StariamStairs",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_stairs"
+    },
+    {
+      "name": "StariamSlab",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_slab"
+    },
+    {
+      "name": "StariamFence",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_fence"
+    },
+    {
+      "name": "StariamFenceGate",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_fence_gate"
+    },
+    {
+      "name": "StariamPressurePlate",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_pressure_plate"
+    },
+    {
+      "name": "StariamButton",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_button"
+    },
+    {
+      "name": "StariamItemsTag",
+      "type": "tag",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_items_tag"
+    },
+    {
+      "name": "StariamWoodRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_wood_recipe"
+    },
+    {
+      "name": "StariamPlanksRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_planks_recipe"
+    },
+    {
+      "name": "StariamStairsRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_stairs_recipe"
+    },
+    {
+      "name": "StariamSlabRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_slab_recipe"
+    },
+    {
+      "name": "StariamFenceRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_fence_recipe"
+    },
+    {
+      "name": "StariamFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_fence_gate_recipe"
+    },
+    {
+      "name": "StariamPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_pressure_plate_recipe"
+    },
+    {
+      "name": "StariamButtonRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_button_recipe"
+    },
+    {
+      "name": "StariamStickRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stariam_stick_recipe"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_blocks"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "log_blocks"
+    },
+    {
+      "name": "FenceBlocks",
+      "type": "tag",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fence_blocks"
+    },
+    {
+      "name": "WoodenFenceBlocks",
+      "type": "tag",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wooden_fence_blocks"
+    },
+    {
+      "name": "WallBlocks",
+      "type": "tag",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wall_blocks"
+    },
+    {
+      "name": "LeaveBlocks",
+      "type": "tag",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leave_blocks"
+    },
+    {
+      "name": "PlankItems",
+      "type": "tag",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plank_items"
+    },
+    {
+      "name": "Sombersoil",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sombersoil"
+    },
+    {
+      "name": "CrystaliaTransium",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystalia_transium"
+    },
+    {
+      "name": "CrystaliaGrass",
+      "type": "plant",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystalia_grass"
+    },
+    {
+      "name": "BlockOfCrystak",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_of_crystak"
+    },
+    {
+      "name": "CrystaliaForest",
+      "type": "biome",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystalia_forest",
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.the_transcendeum.stariam_slab": "Stariam Slab",
+      "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
+      "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
+      "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
+      "block.the_transcendeum.stariam_planks": "Stariam Planks",
+      "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
+      "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
+      "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
+      "block.the_transcendeum.stariam_log": "Stariam Log",
+      "block.the_transcendeum.stariam_button": "Stariam Button",
+      "biome.the_transcendeum.agarith": "Agarith",
+      "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
+      "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
-      "itemGroup.tabtranscendeum_mobs": "Transcendeum Items",
-      "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
-      "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
+      "block.the_transcendeum.stariam_fence": "Stariam Fence",
+      "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
-      "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
+      "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
-      "biome.the_transcendeum.agarith": "Agarith",
-      "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
-      "block.the_transcendeum.sullen_sand": "Sullen Sand"
+      "block.the_transcendeum.crystalia_transium": "Crystalia Transium"
     }
   },
   "foldersRoot": {

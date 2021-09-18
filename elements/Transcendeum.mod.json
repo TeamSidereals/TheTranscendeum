@@ -11,6 +11,9 @@
       },
       {
         "value": "CUSTOM:SullenDesert"
+      },
+      {
+        "value": "CUSTOM:CrystaliaForest"
       }
     ],
     "worldGenType": "Normal world gen",
