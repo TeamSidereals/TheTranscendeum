@@ -2,15 +2,15 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Sullen Crags",
+    "name": "Sullen Canyon",
     "groundBlock": {
-      "value": "CUSTOM:SullenSand"
+      "value": "Blocks.STONE#1"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:SullenSandstone"
+      "value": "Blocks.STONE#1"
     },
     "airColor": {
-      "value": -5870182,
+      "value": -8631982,
       "falpha": 0.0
     },
     "grassColor": {
@@ -49,12 +49,12 @@
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
     "parent": {
-      "value": "CUSTOM:SullenDesert"
+      "value": "No parent"
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 1.4,
-    "heightVariation": 0.2,
+    "baseHeight": 0.0,
+    "heightVariation": 0.1,
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 100,

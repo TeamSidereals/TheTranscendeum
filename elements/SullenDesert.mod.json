@@ -10,7 +10,7 @@
       "value": "CUSTOM:SullenSandstone"
     },
     "airColor": {
-      "value": -13210,
+      "value": -5870182,
       "falpha": 0.0
     },
     "grassColor": {
@@ -49,12 +49,12 @@
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:SullenCanyon"
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "baseHeight": 0.8,
+    "heightVariation": 0.1,
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 100,
@@ -74,20 +74,20 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treeType": 1,
+    "minHeight": 9,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": ""
+      "value": "CUSTOM:Sullcactus"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,

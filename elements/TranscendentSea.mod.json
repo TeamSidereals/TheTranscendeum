@@ -2,31 +2,19 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Sullen Crags",
+    "name": "Transcendent Sea",
     "groundBlock": {
       "value": "CUSTOM:SullenSand"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:SullenSandstone"
+      "value": "CUSTOM:Somberstone"
     },
     "airColor": {
-      "value": -5870182,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -6307992,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -6307992,
+      "value": -6697729,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -13384205,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -6045906,
+      "value": -3569952,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -47,22 +35,18 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "DESERT",
+    "biomeCategory": "NONE",
     "parent": {
-      "value": "CUSTOM:SullenDesert"
+      "value": "No parent"
     },
     "rainingPossibility": 0.0,
-    "temperature": 2.0,
-    "baseHeight": 1.4,
-    "heightVariation": 0.2,
-    "biomeType": "DESERT",
+    "temperature": 0.5,
+    "baseHeight": -0.8,
+    "heightVariation": 0.1,
+    "biomeType": "COOL",
     "spawnBiome": false,
-    "biomeWeight": 100,
-    "biomeDictionaryTypes": [
-      "WASTELAND",
-      "HOT",
-      "DRY"
-    ],
+    "biomeWeight": 120,
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -100,10 +84,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }
