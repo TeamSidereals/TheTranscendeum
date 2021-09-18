@@ -1,10 +1,10 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="MIT License"
+license="Academic Free License v3.0"
 
 [[mods]]
 modId="the_transcendeum"
-version="0.1.0"
+version="1.0.0"
 displayName="The Transcendeum"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://team-lodestar.github.io"
