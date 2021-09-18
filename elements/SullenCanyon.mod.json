@@ -101,8 +101,7 @@
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
-      "Caves",
-      "Ores"
+      "Caves"
     ],
     "spawnEntries": []
   }

@@ -168,6 +168,115 @@
       "path": "~/Structures"
     },
     {
+      "name": "TranscendentOcean",
+      "type": "biome",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendent_ocean",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "Sullcactus",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullcactus"
+    },
+    {
+      "name": "HugeSullcactus2",
+      "type": "structure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus_2",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "HugeSullcactus",
+      "type": "structure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "TranscendentSea",
+      "type": "biome",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendent_sea",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "HugeSullcactus1",
+      "type": "structure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "huge_sullcactus_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullcactusBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullcactus_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SullenCanyon",
+      "type": "biome",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_canyon",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "Cursedbaseballbat",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cursedbaseballbat",
+      "path": "~/gear sets"
+    },
+    {
       "name": "CursedbaseballbatLivingEntityIsHitWithTool",
       "type": "procedure",
       "sortid": 20,
@@ -199,16 +308,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Cursedbaseballbat",
-      "type": "tool",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cursedbaseballbat",
-      "path": "~/gear sets"
     }
   ],
   "variable_elements": [],
@@ -217,11 +316,15 @@
     "en_us": {
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
+      "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
+      "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
+      "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
+      "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Gear",
@@ -235,7 +338,7 @@
     "name": "~",
     "children": [
       {
-        "name": "Tags",
+        "name": "Biomes",
         "children": []
       },
       {
@@ -243,19 +346,28 @@
         "children": []
       },
       {
-        "name": "recipes",
-        "children": []
-      },
-      {
-        "name": "Biomes",
-        "children": []
-      },
-      {
         "name": "Structures",
-        "children": []
+        "children": [
+          {
+            "name": "Natural",
+            "children": []
+          },
+          {
+            "name": "Constructed",
+            "children": []
+          }
+        ]
       },
       {
         "name": "gear sets",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "recipes",
         "children": []
       }
     ]
