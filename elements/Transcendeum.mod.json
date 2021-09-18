@@ -20,6 +20,9 @@
       },
       {
         "value": "CUSTOM:TranscendentSea"
+      },
+      {
+        "value": "CUSTOM:MordhenWastes"
       }
     ],
     "worldGenType": "Normal world gen",

@@ -7,14 +7,22 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.gen.trunkplacer.ForkyTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
+import net.minecraft.world.gen.foliageplacer.AcaciaFoliagePlacer;
+import net.minecraft.world.gen.feature.TwoLayerFeature;
+import net.minecraft.world.gen.feature.Features;
+import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.MobSpawnInfo;
@@ -38,7 +46,10 @@ import java.util.List;
 
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
+import io.github.team_lodestar.transcendeum.block.MordhenLeavesBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+
+import com.google.common.collect.ImmutableList;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class MordhenWastesBiome extends TheTranscendeumModElements.ModElement {
@@ -56,6 +67,16 @@ public class MordhenWastesBiome extends TheTranscendeumModElements.ModElement {
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MordhenNylliumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
+								new SimpleBlockStateProvider(MordhenLeavesBlock.block.getDefaultState()),
+								new AcaciaFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0)),
+								new ForkyTrunkPlacer(20, 2, 2), new TwoLayerFeature(1, 0, 2)))
+										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
+												new CustomCocoaTreeDecorator()))
+										.setMaxWaterDepth(5).build())
+						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(20, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.HUGE_BROWN_MUSHROOM.withConfiguration(new BigMushroomFeatureConfig(
 								new SimpleBlockStateProvider(Blocks.BROWN_MUSHROOM_BLOCK.getDefaultState().with(HugeMushroomBlock.UP, Boolean.TRUE)
