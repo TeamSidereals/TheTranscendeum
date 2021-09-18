@@ -183,7 +183,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_wood_recipe"
+      "registry_name": "stariam_wood_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "StariamLog",
@@ -201,7 +202,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_stairs_recipe"
+      "registry_name": "stariam_stairs_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "StariamFenceRecipe",
@@ -210,7 +212,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_fence_recipe"
+      "registry_name": "stariam_fence_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "StariamFenceGate",
@@ -255,7 +258,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "leave_blocks"
+      "registry_name": "leave_blocks",
+      "path": "~/Tags"
     },
     {
       "name": "LogBlocks",
@@ -264,7 +268,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "log_blocks"
+      "registry_name": "log_blocks",
+      "path": "~/Tags"
     },
     {
       "name": "StariamPressurePlateRecipe",
@@ -273,7 +278,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_pressure_plate_recipe"
+      "registry_name": "stariam_pressure_plate_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "WallBlocks",
@@ -282,7 +288,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wall_blocks"
+      "registry_name": "wall_blocks",
+      "path": "~/Tags"
     },
     {
       "name": "StariamFenceGateRecipe",
@@ -291,7 +298,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_fence_gate_recipe"
+      "registry_name": "stariam_fence_gate_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "WoodenFenceBlocks",
@@ -300,7 +308,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_fence_blocks"
+      "registry_name": "wooden_fence_blocks",
+      "path": "~/Tags"
     },
     {
       "name": "StariamStickRecipe",
@@ -309,7 +318,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_stick_recipe"
+      "registry_name": "stariam_stick_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "StariamSlabRecipe",
@@ -318,7 +328,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_slab_recipe"
+      "registry_name": "stariam_slab_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "StariamFence",
@@ -345,7 +356,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_planks_recipe"
+      "registry_name": "stariam_planks_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "FenceBlocks",
@@ -354,7 +366,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fence_blocks"
+      "registry_name": "fence_blocks",
+      "path": "~/Tags"
     },
     {
       "name": "BlockOfCrystak",
@@ -390,7 +403,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_button_recipe"
+      "registry_name": "stariam_button_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "StariamButton",
@@ -427,7 +441,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stariam_items_tag"
+      "registry_name": "stariam_items_tag",
+      "path": "~/Tags"
     },
     {
       "name": "PlankItems",
@@ -436,7 +451,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "plank_items"
+      "registry_name": "plank_items",
+      "path": "~/Tags"
     },
     {
       "name": "StariamStairs",
@@ -454,7 +470,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dirt_blocks"
+      "registry_name": "dirt_blocks",
+      "path": "~/Tags"
     },
     {
       "name": "TranscendentOcean",
@@ -624,7 +641,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "polished_somberstone_stairs_recipe"
+      "registry_name": "polished_somberstone_stairs_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "Saltrock",
@@ -651,7 +669,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "polished_somberstone_recipe"
+      "registry_name": "polished_somberstone_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "PolishedSomberstoneSlabRecipe",
@@ -660,7 +679,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "polished_somberstone_slab_recipe"
+      "registry_name": "polished_somberstone_slab_recipe",
+      "path": "~/recipes"
     },
     {
       "name": "PolishedSomberstoneSlab",
@@ -789,10 +809,10 @@
   "workspaceSettings": {
     "modid": "the_transcendeum",
     "modName": "The Transcendeum",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "author": "Team Lodestar",
     "websiteURL": "https://team-lodestar.github.io",
-    "license": "Academic Free License v3.0",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -800,7 +820,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },

@@ -7,28 +7,28 @@
       "type": "minecraft:multi_noise",
       "seed": 0,
       "temperature_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -6.16,
         "amplitudes": [
           2,
           2
         ]
       },
       "humidity_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -6.16,
         "amplitudes": [
           2,
           2
         ]
       },
       "altitude_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -6.16,
         "amplitudes": [
           2,
           2
         ]
       },
       "weirdness_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -6.16,
         "amplitudes": [
           2,
           2
@@ -36,7 +36,7 @@
       },
       "biomes": [
         {
-          "biome": "the_transcendeum:sullen_crags",
+          "biome": "the_transcendeum:crystalia_forest",
           "parameters": {
             "temperature": 1,
             "humidity": -1,
@@ -46,27 +46,47 @@
           }
         },
         {
-          "biome": "the_transcendeum:sullen_desert",
+          "biome": "the_transcendeum:sullen_canyon",
           "parameters": {
-            "temperature": 0.333333333334,
-            "humidity": -0.333333333334,
+            "temperature": 0.6,
+            "humidity": -0.6,
             "altitude": -0.75,
             "weirdness": 1.5,
             "offset": 0
           }
         },
         {
-          "biome": "the_transcendeum:crystalia_forest",
+          "biome": "the_transcendeum:sullen_crags",
           "parameters": {
-            "temperature": -0.333333333334,
-            "humidity": 0.333333333334,
+            "temperature": 0.2,
+            "humidity": -0.2,
             "altitude": 0.75,
             "weirdness": -1.5,
             "offset": 0
           }
         },
         {
-          "biome": "the_transcendeum:salt_lowlands",
+          "biome": "the_transcendeum:sullen_desert",
+          "parameters": {
+            "temperature": -0.2,
+            "humidity": 0.2,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:transcendent_ocean",
+          "parameters": {
+            "temperature": -0.6,
+            "humidity": 0.6,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:transcendent_sea",
           "parameters": {
             "temperature": -1,
             "humidity": 1,
