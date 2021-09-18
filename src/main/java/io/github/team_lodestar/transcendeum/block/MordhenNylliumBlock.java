@@ -5,14 +5,12 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -23,11 +21,11 @@ import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGrou
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class StariamLeavesBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:stariam_leaves")
+public class MordhenNylliumBlock extends TheTranscendeumModElements.ModElement {
+	@ObjectHolder("the_transcendeum:mordhen_nyllium")
 	public static final Block block = null;
-	public StariamLeavesBlock(TheTranscendeumModElements instance) {
-		super(instance, 23);
+	public MordhenNylliumBlock(TheTranscendeumModElements instance) {
+		super(instance, 52);
 	}
 
 	@Override
@@ -36,20 +34,15 @@ public class StariamLeavesBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends LeavesBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
-			setRegistryName("stariam_leaves");
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0));
+			setRegistryName("mordhen_nyllium");
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 1;
-		}
-
-		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 30;
+			return 15;
 		}
 
 		@Override

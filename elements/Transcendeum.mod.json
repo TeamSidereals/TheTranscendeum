@@ -4,9 +4,6 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Agarith"
-      },
-      {
         "value": "CUSTOM:SullenCrags"
       },
       {
@@ -14,6 +11,9 @@
       },
       {
         "value": "CUSTOM:CrystaliaForest"
+      },
+      {
+        "value": "CUSTOM:MordhenWastes"
       }
     ],
     "worldGenType": "Normal world gen",

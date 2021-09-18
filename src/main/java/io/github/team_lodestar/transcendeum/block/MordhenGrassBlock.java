@@ -12,9 +12,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.gen.feature.Features;
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.NoiseDependant;
+import net.minecraft.world.gen.feature.RandomPatchFeature;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.DefaultFlowersFeature;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
@@ -53,11 +54,11 @@ import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGrou
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:crystalia_grass")
+public class MordhenGrassBlock extends TheTranscendeumModElements.ModElement {
+	@ObjectHolder("the_transcendeum:mordhen_grass")
 	public static final Block block = null;
-	public CrystaliaGrassBlock(TheTranscendeumModElements instance) {
-		super(instance, 49);
+	public MordhenGrassBlock(TheTranscendeumModElements instance) {
+		super(instance, 53);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -79,12 +80,7 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
-				@Override
-				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
-					return block.getDefaultState();
-				}
-
+			feature = new RandomPatchFeature(BlockClusterFeatureConfig.field_236587_a_) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
@@ -96,19 +92,18 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 					return super.generate(world, generator, random, pos, config);
 				}
 			};
-			configuredFeature = feature
-					.withConfiguration(
-							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(64).build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(10);
-			event.getRegistry().register(feature.setRegistryName("crystalia_grass"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:crystalia_grass"), configuredFeature);
+			configuredFeature = feature.withConfiguration(
+					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(64)
+							.build())
+					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 10)));
+			event.getRegistry().register(feature.setRegistryName("mordhen_grass"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:mordhen_grass"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("the_transcendeum:crystalia_forest").equals(event.getName()))
+		if (new ResourceLocation("the_transcendeum:mordhen_wastes").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
@@ -118,7 +113,7 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("crystalia_grass");
+			setRegistryName("mordhen_grass");
 		}
 
 		@Override
@@ -147,7 +142,7 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 		@Override
 		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			Block ground = state.getBlock();
-			return (ground == CrystaliaTransiumBlock.block);
+			return (ground == MordhenNylliumBlock.block);
 		}
 
 		@Override

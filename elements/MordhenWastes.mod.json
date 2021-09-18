@@ -1,0 +1,96 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Crystalia Forest",
+    "groundBlock": {
+      "value": "CUSTOM:MordhenNyllium"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Sombersoil"
+    },
+    "airColor": {
+      "value": -12290246,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -13408196,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -13408196,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": false,
+    "biomeWeight": 25,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 10,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 10,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:StariamLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:StariamLeaves"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves"
+    ],
+    "spawnEntries": []
+  }
+}
