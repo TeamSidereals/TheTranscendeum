@@ -7,28 +7,28 @@
       "type": "minecraft:multi_noise",
       "seed": 0,
       "temperature_noise": {
-        "firstOctave": -6.16,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
         ]
       },
       "humidity_noise": {
-        "firstOctave": -6.16,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
         ]
       },
       "altitude_noise": {
-        "firstOctave": -6.16,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
         ]
       },
       "weirdness_noise": {
-        "firstOctave": -6.16,
+        "firstOctave": -5.53,
         "amplitudes": [
           2,
           2
@@ -48,40 +48,10 @@
         {
           "biome": "the_transcendeum:sullen_desert",
           "parameters": {
-            "temperature": 0.6,
-            "humidity": -0.6,
+            "temperature": 0,
+            "humidity": 0,
             "altitude": -0.75,
             "weirdness": 1.5,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "the_transcendeum:sullen_canyon",
-          "parameters": {
-            "temperature": 0.2,
-            "humidity": -0.2,
-            "altitude": 0.75,
-            "weirdness": -1.5,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "the_transcendeum:transcendent_ocean",
-          "parameters": {
-            "temperature": -0.2,
-            "humidity": 0.2,
-            "altitude": -0.75,
-            "weirdness": 1.5,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "the_transcendeum:transcendent_sea",
-          "parameters": {
-            "temperature": -0.6,
-            "humidity": 0.6,
-            "altitude": 0.75,
-            "weirdness": -1.5,
             "offset": 0
           }
         },
@@ -90,8 +60,8 @@
           "parameters": {
             "temperature": -1,
             "humidity": 1,
-            "altitude": -0.75,
-            "weirdness": 1.5,
+            "altitude": 0.75,
+            "weirdness": -1.5,
             "offset": 0
           }
         }
