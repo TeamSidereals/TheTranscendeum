@@ -718,6 +718,25 @@
       "ids": {},
       "registry_name": "mordhen_wastes",
       "path": "~/Biomes"
+    },
+    {
+      "name": "MordhenLeaves",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mordhen_leaves"
+    },
+    {
+      "name": "MordhenBush",
+      "type": "structure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mordhen_bush",
+      "path": "~/Structures/Natural"
     }
   ],
   "variable_elements": [],
@@ -749,6 +768,7 @@
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
+      "block.the_transcendeum.mordhen_leaves": "Mordhen Leaves",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
