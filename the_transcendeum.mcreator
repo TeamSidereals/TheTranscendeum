@@ -792,6 +792,220 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "mordhen_leaves"
+    },
+    {
+      "name": "Argoany",
+      "type": "plant",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "argoany"
+    },
+    {
+      "name": "AcriumFlower",
+      "type": "plant",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrium_flower"
+    },
+    {
+      "name": "KelaveWood",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_wood"
+    },
+    {
+      "name": "KelaveLog",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_log"
+    },
+    {
+      "name": "KelavePlanks",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_planks"
+    },
+    {
+      "name": "KelaveWoodlet",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_woodlet"
+    },
+    {
+      "name": "KelaveSlab",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_slab"
+    },
+    {
+      "name": "KelaveStairs",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_stairs"
+    },
+    {
+      "name": "KelaveFenceGate",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_fence_gate"
+    },
+    {
+      "name": "KelaveFence",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_fence"
+    },
+    {
+      "name": "KelavePressurePlate",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_pressure_plate"
+    },
+    {
+      "name": "KelaveButton",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_button"
+    },
+    {
+      "name": "AureaForest",
+      "type": "biome",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aurea_forest",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "Kelfae",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelfae"
+    },
+    {
+      "name": "ChrysaliumVine",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine"
+    },
+    {
+      "name": "ChrysaliumVineBottom",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_bottom"
+    },
+    {
+      "name": "ChrysaliumVineBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChrysaliumVineBottomBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_bottom_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kelavus",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelavus"
     }
   ],
   "variable_elements": [],
@@ -799,27 +1013,41 @@
   "language_map": {
     "en_us": {
       "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
-      "biome.the_transcendeum.salt_lowlands": "Salt Lowlands",
       "block.the_transcendeum.stariam_slab": "Stariam Slab",
+      "biome.the_transcendeum.salt_lowlands": "Salt Lowlands",
+      "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
       "block.the_transcendeum.mordhen_grass": "Mordhen Grass",
-      "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
+      "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.mergoany": "Mergoany",
+      "block.the_transcendeum.kelavus": "Kelavus",
+      "block.the_transcendeum.argoany": "Argoany",
+      "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_log": "Stariam Log",
-      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
+      "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
+      "block.the_transcendeum.kelave_woodlet": "Kelave Wood",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
+      "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
+      "block.the_transcendeum.chrysalium_vine": "Chrysalium Vine",
+      "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
+      "block.the_transcendeum.kelfae": "Kelfae",
       "block.the_transcendeum.mordhen_nyllium": " Mordhen Nyllium",
+      "block.the_transcendeum.kelave_planks": "Kelave Planks",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
+      "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
+      "block.the_transcendeum.acrium_flower": "Acrium Flower",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
       "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
@@ -833,9 +1061,11 @@
       "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
       "block.the_transcendeum.mordhen_leaves": "Mordhen Leaves",
+      "block.the_transcendeum.kelave_log": "Kelave Log",
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
+      "block.the_transcendeum.kelave_slab": "Kelave Slab",
       "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
@@ -846,7 +1076,8 @@
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
-      "block.the_transcendeum.crystalia_transium": "Crystalia Transium"
+      "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
+      "block.the_transcendeum.kelave_wood": "Kelave Wood"
     }
   },
   "foldersRoot": {

@@ -6,6 +6,9 @@
     "items": [
       {
         "value": "CUSTOM:StariamPlanks"
+      },
+      {
+        "value": "CUSTOM:KelavePlanks"
       }
     ],
     "blocks": [],

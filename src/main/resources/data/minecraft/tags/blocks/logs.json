@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "the_transcendeum:stariam_log",
-    "the_transcendeum:stariam_wood"
+    "the_transcendeum:stariam_wood",
+    "the_transcendeum:kelave_log",
+    "the_transcendeum:kelave_wood"
   ]
 }

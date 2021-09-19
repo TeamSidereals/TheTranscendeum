@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "the_transcendeum:block/kelave_woodlet"
+    },
+    "facing=east": {
+      "model": "the_transcendeum:block/kelave_woodlet",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_transcendeum:block/kelave_woodlet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_transcendeum:block/kelave_woodlet",
+      "y": 270
+    }
+  }
+}

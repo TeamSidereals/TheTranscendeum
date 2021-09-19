@@ -14,6 +14,9 @@
       },
       {
         "value": "CUSTOM:AureaPlains"
+      },
+      {
+        "value": "CUSTOM:AureaForest"
       }
     ],
     "worldGenType": "Normal world gen",

@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 12,
     "texture": "corium_flower",
-    "textureBottom": "corium_flower_bottom",
+    "textureBottom": "iaprie_flower_bottom",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
@@ -78,7 +78,7 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 7,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],

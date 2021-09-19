@@ -10,6 +10,12 @@
       },
       {
         "value": "CUSTOM:StariamWood"
+      },
+      {
+        "value": "CUSTOM:KelaveLog"
+      },
+      {
+        "value": "CUSTOM:KelaveWood"
       }
     ],
     "functions": [],
