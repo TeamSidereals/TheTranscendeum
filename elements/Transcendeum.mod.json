@@ -4,19 +4,34 @@
   "definition": {
     "biomesInDimension": [
       {
+        "value": "CUSTOM:AureaForest"
+      },
+      {
+        "value": "CUSTOM:AureaPlains"
+      },
+      {
+        "value": "CUSTOM:CrystaliaForest"
+      },
+      {
+        "value": "CUSTOM:SaltLowlands"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
         "value": "CUSTOM:SullenCrags"
       },
       {
         "value": "CUSTOM:SullenDesert"
       },
       {
-        "value": "CUSTOM:CrystaliaForest"
+        "value": "CUSTOM:TranscendentOcean"
       },
       {
-        "value": "CUSTOM:AureaPlains"
+        "value": "CUSTOM:TranscendentSea"
       },
       {
-        "value": "CUSTOM:AureaForest"
+        "value": "CUSTOM:ViridianMires"
       }
     ],
     "worldGenType": "Normal world gen",
