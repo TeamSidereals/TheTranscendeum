@@ -1,0 +1,13 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge/kelave_wood_blocks"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:kelave_planks",
+    "count": 4
+  }
+}

@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "kelave_woodlet:default",
+    "customModelName": "woodlet:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,

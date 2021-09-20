@@ -10,7 +10,7 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -16316642,
+      "value": -16306558,
       "falpha": 0.0
     },
     "waterColor": {
@@ -41,7 +41,7 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 0.1,
+    "baseHeight": -0.15,
     "heightVariation": 0.04,
     "biomeType": "COOL",
     "spawnBiome": false,

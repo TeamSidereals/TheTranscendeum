@@ -53,11 +53,11 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 1.4,
+    "baseHeight": 1.6,
     "heightVariation": 0.2,
     "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 100,
+    "biomeWeight": 50,
     "biomeDictionaryTypes": [
       "WASTELAND",
       "HOT",
