@@ -145,7 +145,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag",
-      "path": "~/Structures"
+      "path": "~/Structures/Natural"
     },
     {
       "name": "SullenCrag1",
@@ -155,7 +155,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag_1",
-      "path": "~/Structures"
+      "path": "~/Structures/Natural"
     },
     {
       "name": "SullenCrag2",
@@ -165,7 +165,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_crag_2",
-      "path": "~/Structures"
+      "path": "~/Structures/Natural"
     },
     {
       "name": "StariamSlab",
@@ -710,16 +710,6 @@
       "registry_name": "mordhen_nyllium"
     },
     {
-      "name": "MordhenWastes",
-      "type": "biome",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mordhen_wastes",
-      "path": "~/Biomes"
-    },
-    {
       "name": "IaprieGrassBlock",
       "type": "block",
       "sortid": 61,
@@ -1006,6 +996,16 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "kelavus"
+    },
+    {
+      "name": "ViridianMires",
+      "type": "biome",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_mires",
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [],
@@ -1018,17 +1018,18 @@
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
       "block.the_transcendeum.mordhen_grass": "Mordhen Grass",
-      "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
+      "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.mergoany": "Mergoany",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.argoany": "Argoany",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "biome.the_transcendeum.viridian_mires": "Viridian Mires",
       "block.the_transcendeum.stariam_log": "Stariam Log",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.kelave_button": "Kelave Button",
@@ -1071,7 +1072,6 @@
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
       "block.the_transcendeum.saltrock": "Saltrock",
-      "biome.the_transcendeum.mordhen_wastes": "Viridian Mires",
       "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
       "block.the_transcendeum.sombersoil": "Sombersoil",

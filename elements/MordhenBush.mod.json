@@ -22,7 +22,7 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:MordhenWastes"
+        "value": "CUSTOM:ViridianMires"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
