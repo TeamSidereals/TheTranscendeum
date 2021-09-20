@@ -16,6 +16,12 @@
       },
       {
         "value": "CUSTOM:KelaveFenceGate"
+      },
+      {
+        "value": "CUSTOM:ViridianFence"
+      },
+      {
+        "value": "CUSTOM:ViridianFenceGate"
       }
     ],
     "functions": [],

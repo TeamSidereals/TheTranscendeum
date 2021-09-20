@@ -16,6 +16,12 @@
       },
       {
         "value": "CUSTOM:KelaveWood"
+      },
+      {
+        "value": "CUSTOM:ViridianLog"
+      },
+      {
+        "value": "CUSTOM:ViridianWood"
       }
     ],
     "functions": [],

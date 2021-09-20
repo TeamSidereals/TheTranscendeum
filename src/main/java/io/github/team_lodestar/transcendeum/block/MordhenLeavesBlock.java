@@ -24,7 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class MordhenLeavesBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:mordhen_leaves")
+	@ObjectHolder("the_transcendeum:viridian_leaves")
 	public static final Block block = null;
 	public MordhenLeavesBlock(TheTranscendeumModElements instance) {
 		super(instance, 55);
@@ -39,7 +39,7 @@ public class MordhenLeavesBlock extends TheTranscendeumModElements.ModElement {
 	public static class CustomBlock extends LeavesBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
-			setRegistryName("mordhen_leaves");
+			setRegistryName("viridian_leaves");
 		}
 
 		@Override

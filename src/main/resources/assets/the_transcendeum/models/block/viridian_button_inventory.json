@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "the_transcendeum:blocks/viridian_planks"
+  }
+}
