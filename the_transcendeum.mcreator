@@ -710,16 +710,6 @@
       "registry_name": "mordhen_nyllium"
     },
     {
-      "name": "MordhenWastes",
-      "type": "biome",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mordhen_wastes",
-      "path": "~/Biomes"
-    },
-    {
       "name": "IaprieGrassBlock",
       "type": "block",
       "sortid": 61,
@@ -1026,6 +1016,16 @@
       "ids": {},
       "registry_name": "kelave_planks_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "ViridianMires",
+      "type": "biome",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_mires",
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [],
