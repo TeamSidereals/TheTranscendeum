@@ -1,9 +1,9 @@
 {
-	"credit": "Designed by Sajevius using Blockbench",
-	"parent": "azurily",
+	"credit": "Made with Blockbench",
+	"parent": "virilily",
 	"textures": {
-		"0": "References/azurily",
-		"particle": "References/azurily"
+		"0": "Desktop/azurily",
+		"particle": "Desktop/azurily"
 	},
 	"elements": [
 		{
