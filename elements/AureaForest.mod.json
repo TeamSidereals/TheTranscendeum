@@ -10,7 +10,7 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -16316642,
+      "value": -16309932,
       "falpha": 0.0
     },
     "waterColor": {
@@ -58,16 +58,16 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 4,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Savanna trees",
-    "treeType": 1,
+    "treeType": 0,
     "minHeight": 12,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "CUSTOM:KelaveLog"
+      "value": "CUSTOM:Kelavus"
     },
     "treeBranch": {
-      "value": "CUSTOM:Kelavus"
+      "value": "CUSTOM:KelaveLog"
     },
     "treeVines": {
       "value": "CUSTOM:ChrysaliumVine"
