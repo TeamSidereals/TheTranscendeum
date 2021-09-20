@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:KelaveWood"
+      },
+      {
+        "value": "CUSTOM:KelaveLog"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "kelave_wood_blocks",
+    "namespace": "forge"
+  }
+}
