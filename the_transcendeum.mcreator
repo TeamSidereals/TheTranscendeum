@@ -1151,8 +1151,8 @@
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
       "block.the_transcendeum.mordhen_grass": "Mordhen Grass",
-      "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
+      "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.mergoany": "Mergoany",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.argoany": "Argoany",
@@ -1161,8 +1161,8 @@
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "biome.the_transcendeum.viridian_mires": "Viridian Mires",
       "block.the_transcendeum.stariam_log": "Stariam Log",
-      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "block.the_transcendeum.azurily_block": "Azurily",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
@@ -1170,6 +1170,7 @@
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "block.the_transcendeum.kelave_woodlet": "Kelave Wood",
+      "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
@@ -1183,6 +1184,7 @@
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
       "block.the_transcendeum.acrium_flower": "Acrium Flower",
+      "entity.the_transcendeum.arffel": "Arffel",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
       "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
@@ -1194,6 +1196,7 @@
       "block.the_transcendeum.stariam_button": "Stariam Button",
       "biome.the_transcendeum.agarith": "Agarith",
       "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
+      "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
       "block.the_transcendeum.mordhen_leaves": "Mordhen Leaves",
       "block.the_transcendeum.kelave_log": "Kelave Log",
@@ -1213,7 +1216,8 @@
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
       "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
-      "block.the_transcendeum.kelave_wood": "Kelave Wood"
+      "block.the_transcendeum.kelave_wood": "Kelave Wood",
+      "entity.the_transcendeum.puffel": "Puffel"
     }
   },
   "foldersRoot": {
