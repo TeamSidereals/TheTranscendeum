@@ -5,7 +5,7 @@
     "structure": "kelave_tree",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 700000,
+    "spawnProbability": 650000,
     "minCountPerChunk": 2,
     "maxCountPerChunk": 4,
     "spawnLocation": "Ground",
