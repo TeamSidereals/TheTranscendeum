@@ -1036,6 +1036,16 @@
       "ids": {},
       "registry_name": "kelave_tree",
       "path": "~/Structures/Natural"
+    },
+    {
+      "name": "KelaveWoodRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_wood_recipe",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [],

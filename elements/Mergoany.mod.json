@@ -85,6 +85,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:AureaPlains"
+      },
+      {
+        "value": "CUSTOM:AureaForest"
       }
     ],
     "patchSize": 64

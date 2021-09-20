@@ -29,6 +29,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import java.util.Set;
@@ -37,8 +38,6 @@ import java.util.List;
 
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.IaprieGrassBlockBlock;
-import io.github.team_lodestar.transcendeum.block.ChrysaliumVineBottomBlock;
-import io.github.team_lodestar.transcendeum.block.ChrysaliumVineBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -52,8 +51,8 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16309932).setWaterColor(-8397575).setWaterFogColor(329011)
-						.withSkyColor(-16309932).withFoliageColor(10387789).withGrassColor(9470285).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16316642).setWaterColor(-8397575).setWaterFogColor(329011)
+						.withSkyColor(-16316642).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(IaprieGrassBlockBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
@@ -87,7 +86,7 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, ChrysaliumVineBlock.block.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -108,7 +107,7 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, ChrysaliumVineBlock.block.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -144,7 +143,7 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 							Direction direction1 = direction.getOpposite();
 							BlockPos blockpos = p_242865_5_.add(direction1.getXOffset(), 0, direction1.getZOffset());
 							if (Feature.isAirAt(p_225576_1_, blockpos)) {
-								BlockState blockstate = ChrysaliumVineBottomBlock.block.getDefaultState();
+								BlockState blockstate = Blocks.AIR.getDefaultState();
 								this.func_227423_a_(p_225576_1_, blockpos, blockstate, p_225576_5_, p_225576_6_);
 							}
 						}
