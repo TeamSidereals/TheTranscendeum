@@ -108,6 +108,8 @@ public class MergoanyBlock extends TheTranscendeumModElements.ModElement {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);

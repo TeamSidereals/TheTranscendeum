@@ -1038,6 +1038,15 @@
       "path": "~/Structures/Natural"
     },
     {
+      "name": "AzurilyBlock",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "azurily_block"
+    },
+    {
       "name": "Azurily",
       "type": "item",
       "sortid": 90,
@@ -1102,13 +1111,34 @@
       }
     },
     {
-      "name": "AzurilyBlock",
-      "type": "block",
-      "sortid": 93,
+      "name": "KelaveWoodRecipe",
+      "type": "recipe",
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "azurily_block"
+      "registry_name": "kelave_wood_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Puffel",
+      "type": "livingentity",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "puffel",
+      "path": "~/mobs"
+    },
+    {
+      "name": "Arffel",
+      "type": "livingentity",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arffel",
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [],
@@ -1121,8 +1151,8 @@
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
       "block.the_transcendeum.mordhen_grass": "Mordhen Grass",
-      "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
+      "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.mergoany": "Mergoany",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.argoany": "Argoany",
@@ -1131,8 +1161,8 @@
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "biome.the_transcendeum.viridian_mires": "Viridian Mires",
       "block.the_transcendeum.stariam_log": "Stariam Log",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "block.the_transcendeum.azurily_block": "Azurily",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
@@ -1209,6 +1239,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "mobs",
+        "children": []
       },
       {
         "name": "gear sets",
