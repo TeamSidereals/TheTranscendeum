@@ -138,11 +138,6 @@ public class AzurilyBlockBlock extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext context) {
-			return context.getItem().getItem() != this.asItem();
-		}
-
-		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
 			return new ItemStack(AzurilyItem.block);
 		}
