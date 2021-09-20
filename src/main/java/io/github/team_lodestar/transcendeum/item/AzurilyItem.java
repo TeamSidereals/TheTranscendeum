@@ -21,7 +21,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class AzurilyItem extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:azurily")
+	@ObjectHolder("the_transcendeum:virilily")
 	public static final Item block = null;
 	public AzurilyItem(TheTranscendeumModElements instance) {
 		super(instance, 90);
@@ -34,7 +34,7 @@ public class AzurilyItem extends TheTranscendeumModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(TranscendeumBlocksItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("azurily");
+			setRegistryName("virilily");
 		}
 
 		@Override

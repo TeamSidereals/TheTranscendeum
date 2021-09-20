@@ -46,7 +46,7 @@ import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class AzurilyBlockBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:azurily_block")
+	@ObjectHolder("the_transcendeum:virilily_block")
 	public static final Block block = null;
 	public AzurilyBlockBlock(TheTranscendeumModElements instance) {
 		super(instance, 93);
@@ -69,7 +69,7 @@ public class AzurilyBlockBlock extends TheTranscendeumModElements.ModElement {
 			super(Block.Properties.create(Material.PLANTS).sound(SoundType.LILY_PADS).hardnessAndResistance(0f, 0f).setLightLevel(s -> 3)
 					.speedFactor(1.0999999999999999f).jumpFactor(1.2000000000000002f).notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("azurily_block");
+			setRegistryName("virilily_block");
 		}
 
 		@Override
