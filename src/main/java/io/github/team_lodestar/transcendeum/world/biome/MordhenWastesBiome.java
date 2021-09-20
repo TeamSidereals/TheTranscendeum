@@ -95,7 +95,7 @@ public class MordhenWastesBiome extends TheTranscendeumModElements.ModElement {
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(-0.1f).scale(0.2f)
 						.temperature(0.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("the_transcendeum:mordhen_wastes"));
+				event.getRegistry().register(biome.setRegistryName("the_transcendeum:viridian_mires"));
 			}
 		}
 	}
@@ -109,7 +109,7 @@ public class MordhenWastesBiome extends TheTranscendeumModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("mordhen_wastes_lvtd");
+			tdt.setRegistryName("viridian_mires_lvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		@Override
@@ -130,7 +130,7 @@ public class MordhenWastesBiome extends TheTranscendeumModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("mordhen_wastes_tvtd");
+			tdt.setRegistryName("viridian_mires_tvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		@Override
@@ -151,7 +151,7 @@ public class MordhenWastesBiome extends TheTranscendeumModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("mordhen_wastes_ctd");
+			tdt.setRegistryName("viridian_mires_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		public CustomCocoaTreeDecorator() {
