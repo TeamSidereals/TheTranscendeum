@@ -1,0 +1,8 @@
+{
+  "parent": "the_transcendeum:custom/azurily",
+  "textures": {
+    "all": "the_transcendeum:blocks/azurily",
+    "particle": "the_transcendeum:blocks/azurily",
+    "0": "the_transcendeum:blocks/azurily"
+  }
+}

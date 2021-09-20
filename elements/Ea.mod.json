@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "EQUALS",
+    "keyBindingName": "Ea",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Lk"
+    }
+  }
+}

@@ -1036,6 +1036,79 @@
       "ids": {},
       "registry_name": "kelave_tree",
       "path": "~/Structures/Natural"
+    },
+    {
+      "name": "Azurily",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "azurily"
+    },
+    {
+      "name": "AzurilyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "azurily_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AzurilyBlockBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "azurily_block_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AzurilyBlock",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "azurily_block"
     }
   ],
   "variable_elements": [],
@@ -1061,6 +1134,7 @@
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
+      "block.the_transcendeum.azurily_block": "Azurily",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
@@ -1095,6 +1169,7 @@
       "block.the_transcendeum.kelave_log": "Kelave Log",
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
+      "item.the_transcendeum.azurily": "Azurily",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "block.the_transcendeum.kelave_slab": "Kelave Slab",
       "block.the_transcendeum.sullcactus": "Sullcactus",
