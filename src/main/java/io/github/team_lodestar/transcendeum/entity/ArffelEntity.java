@@ -17,11 +17,15 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
@@ -48,7 +52,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ArffelEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("arffel").setRegistryName("arffel");
+			.size(0.6f, 1.5999999999999999f)).build("arffel").setRegistryName("arffel");
 	public ArffelEntity(TheTranscendeumModElements instance) {
 		super(instance, 91);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ArffelRenderer.ModelRegisterHandler());
@@ -155,6 +159,15 @@ public class ArffelEntity extends TheTranscendeumModElements.ModElement {
 			if (source == DamageSource.FALL)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
+			ItemStack itemstack = sourceentity.getHeldItem(hand);
+			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
+			super.func_230254_b_(sourceentity, hand);
+			sourceentity.startRiding(this);
+			return retval;
 		}
 
 		@Override
