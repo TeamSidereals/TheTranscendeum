@@ -72,8 +72,8 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(IaprieGrassBlockBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(KelavusBlock.block.getDefaultState()),
-								new SimpleBlockStateProvider(KelaveLogBlock.block.getDefaultState()),
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(KelaveLogBlock.block.getDefaultState()),
+								new SimpleBlockStateProvider(KelavusBlock.block.getDefaultState()),
 								new AcaciaFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0)),
 								new ForkyTrunkPlacer(12, 2, 2), new TwoLayerFeature(1, 0, 2)))
 										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,

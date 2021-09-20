@@ -64,10 +64,10 @@
     "minHeight": 12,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "CUSTOM:Kelavus"
+      "value": "CUSTOM:KelaveLog"
     },
     "treeBranch": {
-      "value": "CUSTOM:KelaveLog"
+      "value": "CUSTOM:Kelavus"
     },
     "treeVines": {
       "value": "CUSTOM:ChrysaliumVine"
