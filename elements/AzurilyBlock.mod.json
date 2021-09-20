@@ -56,7 +56,7 @@
     },
     "tickRate": 10,
     "tickRandomly": true,
-    "isReplaceable": true,
+    "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
       "fixedValue": 15.0
