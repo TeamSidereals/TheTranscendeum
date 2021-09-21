@@ -1,13 +1,7 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
-
 public class BerthelCrystalUpAdditionalGenerationConditionProcedure {
+
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -29,10 +23,13 @@ public class BerthelCrystalUpAdditionalGenerationConditionProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure BerthelCrystalUpAdditionalGenerationCondition!");
 			return false;
 		}
+
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		return (!(world.canBlockSeeSky(new BlockPos((int) x, (int) y, (int) z))));
 	}
+
 }

@@ -10,11 +10,11 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -12290246,
+      "value": -8599833,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -13408196,
+      "value": -10984641,
       "falpha": 0.0
     },
     "waterFogColor": {
@@ -72,7 +72,7 @@
       "value": "CUSTOM:MordhenLeaves"
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.VINE"
     },
     "treeFruits": {
       "value": "Blocks.AIR"

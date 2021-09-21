@@ -2,19 +2,27 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Transcendent Sea",
+    "name": "Calid Woodlands",
     "groundBlock": {
-      "value": "CUSTOM:Sombersoil"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Somberstone"
+      "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -10581628,
+      "value": -5387974,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -4539102,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -6051526,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10357817,
+      "value": -10954026,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -35,19 +43,19 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "SAVANNA",
     "parent": {
       "value": "No parent"
     },
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
-    "baseHeight": -0.8,
+    "temperature": 1.6,
+    "baseHeight": 0.1,
     "heightVariation": 0.1,
-    "biomeType": "COOL",
+    "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 120,
+    "biomeWeight": 50,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 0,
+    "grassPerChunk": 8,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
@@ -57,21 +65,21 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
-    "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 5,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": ""
+      "value": "Blocks.LOG2#0"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.LEAVES2#0"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.VINE"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,

@@ -19,9 +19,6 @@
         "value": "CUSTOM:SullenCanyon"
       },
       {
-        "value": "CUSTOM:SullenCrags"
-      },
-      {
         "value": "CUSTOM:SullenDesert"
       },
       {
@@ -32,6 +29,9 @@
       },
       {
         "value": "CUSTOM:ViridianMires"
+      },
+      {
+        "value": "CUSTOM:SullenCliffs"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -42,10 +42,10 @@
       "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": true,
-    "hasFog": true,
-    "isDark": true,
+    "hasFog": false,
+    "isDark": false,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
+    "sleepResult": "DENY",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": true,
     "portalFrame": {

@@ -10,6 +10,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.state.EnumProperty;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.item.ItemStack;
@@ -57,23 +58,124 @@ public class VirililyRightClickedinAirProcedure {
 							entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance, entity.getLook(1f).y * raytrace_distance,
 									entity.getLook(1f).z * raytrace_distance),
 							RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getY()),
-					(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-							entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance, entity.getLook(1f).y * raytrace_distance,
-									entity.getLook(1f).z * raytrace_distance),
-							RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getZ())))).getBlock() == Blocks.WATER)
-					&& (world.isAirBlock(new BlockPos(
-							(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+					(int) (entity.world
+							.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance, entity.getLook(1f).y * raytrace_distance,
 											entity.getLook(1f).z * raytrace_distance),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getX()),
-							(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance, entity.getLook(1f).y * raytrace_distance,
-											entity.getLook(1f).z * raytrace_distance),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getY()) + 1),
-							(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance, entity.getLook(1f).y * raytrace_distance,
-											entity.getLook(1f).z * raytrace_distance),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getZ())))))) {
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+							.getPos().getZ())))).getBlock() == Blocks.WATER)
+					&& ((world
+							.isAirBlock(
+									new BlockPos(
+											(int) (entity.world
+													.rayTraceBlocks(
+															new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x
+																			* raytrace_distance, entity.getLook(1f).y * raytrace_distance,
+																			entity.getLook(1f).z * raytrace_distance),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+													.getPos().getX()),
+											(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+															entity.getLook(1f).y * raytrace_distance, entity.getLook(1f).z * raytrace_distance),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos()
+													.getY()) + 1),
+											(int) (entity.world
+													.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x
+																	* raytrace_distance, entity.getLook(1f).y * raytrace_distance,
+																	entity.getLook(1f).z * raytrace_distance),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+													.getPos().getZ()))))
+							&& (((!(BlockTags.getCollection()
+									.getTagByID(new ResourceLocation(("forge:large_lilies").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains((world.getBlockState(new BlockPos(
+											(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+															entity.getLook(1f).y * raytrace_distance, entity.getLook(1f).z * raytrace_distance),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getX()) + 1),
+											(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+															entity.getLook(1f).y * raytrace_distance, entity.getLook(1f).z * raytrace_distance),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getY()) + 1),
+											(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+															entity.getLook(1f).y * raytrace_distance, entity.getLook(1f).z * raytrace_distance),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getZ()))))
+															.getBlock())))
+									&& (!(BlockTags.getCollection()
+											.getTagByID(
+													new ResourceLocation(("forge:large_lilies").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(
+													(world.getBlockState(new BlockPos(
+															(int) ((entity.world
+																	.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																			entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+																					entity.getLook(1f).y * raytrace_distance,
+																					entity.getLook(1f).z * raytrace_distance),
+																			RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																	.getPos().getX()) - 1),
+															(int) ((entity.world
+																	.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																			entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+																					entity.getLook(1f).y * raytrace_distance,
+																					entity.getLook(1f).z * raytrace_distance),
+																			RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																	.getPos().getY()) + 1),
+															(int) (entity.world
+																	.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																			entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+																					entity.getLook(1f).y * raytrace_distance,
+																					entity.getLook(1f).z * raytrace_distance),
+																			RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																	.getPos().getZ())))).getBlock()))))
+									&& ((!(BlockTags.getCollection()
+											.getTagByID(new ResourceLocation(("forge:large_lilies").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(
+													(world.getBlockState(
+															new BlockPos((int) (entity.world
+																	.rayTraceBlocks(new RayTraceContext(
+																			entity.getEyePosition(1f),
+																			entity.getEyePosition(1f).add(
+																					entity.getLook(1f).x * raytrace_distance,
+																					entity.getLook(1f).y * raytrace_distance,
+																					entity.getLook(1f).z * raytrace_distance),
+																			RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																	.getPos().getX()),
+																	(int) ((entity.world.rayTraceBlocks(new RayTraceContext(
+																			entity.getEyePosition(1f),
+																			entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+																					entity.getLook(1f).y * raytrace_distance,
+																					entity.getLook(1f).z * raytrace_distance),
+																			RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																			.getPos().getY()) + 1),
+																	(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																			entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+																					entity.getLook(1f).y * raytrace_distance,
+																					entity.getLook(1f).z * raytrace_distance),
+																			RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																			.getPos().getZ()) + 1)))).getBlock())))
+											&& (!(BlockTags.getCollection()
+													.getTagByID(new ResourceLocation(("forge:large_lilies").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains((world.getBlockState(new BlockPos((int) (entity.world.rayTraceBlocks(
+															new RayTraceContext(entity.getEyePosition(1f), entity.getEyePosition(1f)
+																	.add(entity.getLook(1f).x * raytrace_distance, entity.getLook(1f).y
+																			* raytrace_distance, entity.getLook(1f).z * raytrace_distance),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+															.getPos().getX()),
+															(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+																			entity.getLook(1f).y * raytrace_distance,
+																			entity.getLook(1f).z * raytrace_distance),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																	.getPos().getY()) + 1),
+															(int) ((entity.world
+																	.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																			entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance,
+																					entity.getLook(1f).y * raytrace_distance,
+																					entity.getLook(1f).z * raytrace_distance),
+																			RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity))
+																	.getPos().getZ()) - 1)))).getBlock())))))))) {
 				if ((!(world.isRemote()))) {
 					if (world instanceof World && !world.isRemote()) {
 						((World) world).playSound(null,
