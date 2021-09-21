@@ -107,7 +107,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 
 			@Override
 			public boolean func_230493_a_(int x, int y) {
-				return false;
+				return true;
 			}
 		};
 		DeferredWorkQueue.runLater(() -> {
@@ -139,7 +139,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 	public static class CustomPortalBlock extends NetherPortalBlock {
 		public CustomPortalBlock() {
 			super(Block.Properties.create(Material.PORTAL).doesNotBlockMovement().tickRandomly().hardnessAndResistance(-1.0F).sound(SoundType.GLASS)
-					.setLightLevel(s -> 0).noDrops());
+					.setLightLevel(s -> 15).noDrops());
 			setRegistryName("transcendeum_portal");
 		}
 

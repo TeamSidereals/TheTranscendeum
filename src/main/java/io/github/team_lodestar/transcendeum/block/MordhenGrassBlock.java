@@ -55,7 +55,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class MordhenGrassBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:mordhen_grass")
+	@ObjectHolder("the_transcendeum:viridian_grass")
 	public static final Block block = null;
 	public MordhenGrassBlock(TheTranscendeumModElements instance) {
 		super(instance, 53);
@@ -96,8 +96,8 @@ public class MordhenGrassBlock extends TheTranscendeumModElements.ModElement {
 					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(64)
 							.build())
 					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 10)));
-			event.getRegistry().register(feature.setRegistryName("mordhen_grass"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:mordhen_grass"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("viridian_grass"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:viridian_grass"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
@@ -108,7 +108,7 @@ public class MordhenGrassBlock extends TheTranscendeumModElements.ModElement {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("mordhen_grass");
+			setRegistryName("viridian_grass");
 		}
 
 		@Override

@@ -2,17 +2,16 @@
 package io.github.team_lodestar.transcendeum.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -23,11 +22,11 @@ import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGrou
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class MordhenLeavesBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:viridian_leaves")
+public class CellcyteBlock extends TheTranscendeumModElements.ModElement {
+	@ObjectHolder("the_transcendeum:cellcyte")
 	public static final Block block = null;
-	public MordhenLeavesBlock(TheTranscendeumModElements instance) {
-		super(instance, 55);
+	public CellcyteBlock(TheTranscendeumModElements instance) {
+		super(instance, 143);
 	}
 
 	@Override
@@ -36,20 +35,16 @@ public class MordhenLeavesBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends LeavesBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
-			setRegistryName("viridian_leaves");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.9f, 0.9f).setLightLevel(s -> 0)
+					.harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool().tickRandomly());
+			setRegistryName("cellcyte");
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 1;
-		}
-
-		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 30;
+			return 15;
 		}
 
 		@Override

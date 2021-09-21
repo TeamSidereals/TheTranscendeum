@@ -42,7 +42,7 @@
       "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": true,
-    "hasFog": false,
+    "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",
@@ -54,7 +54,7 @@
     "portalParticles": {
       "value": "CRIT_MAGIC"
     },
-    "portalLuminance": 0,
+    "portalLuminance": 15,
     "portalSound": {
       "value": "block.portal.ambient"
     },
