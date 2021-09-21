@@ -1,0 +1,8 @@
+{
+  "parent": "the_transcendeum:custom/flowered_virilily",
+  "textures": {
+    "all": "the_transcendeum:blocks/acrium_virilily",
+    "particle": "the_transcendeum:blocks/acrium_virilily",
+    "0": "the_transcendeum:blocks/acrium_virilily"
+  }
+}

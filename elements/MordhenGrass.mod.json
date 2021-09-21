@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Mordhen Grass",
+    "name": "Viridian Grass",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
@@ -86,11 +86,7 @@
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:MordhenWastes"
-      }
-    ],
+    "restrictionBiomes": [],
     "patchSize": 64
   }
 }

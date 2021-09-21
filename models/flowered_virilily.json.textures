@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "corium_virilily"
+      },
+      "name": "default"
+    },
+    "corium": {
+      "map": {
+        "0": "corium_virilily"
+      },
+      "name": "corium"
+    },
+    "acrium": {
+      "map": {
+        "0": "acrium_virilily"
+      },
+      "name": "acrium"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "the_transcendeum:block/large_virilily_block"
+    },
+    "facing=east": {
+      "model": "the_transcendeum:block/large_virilily_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_transcendeum:block/large_virilily_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_transcendeum:block/large_virilily_block",
+      "y": 270
+    }
+  }
+}

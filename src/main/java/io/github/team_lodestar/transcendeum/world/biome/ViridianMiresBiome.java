@@ -44,6 +44,7 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
+import io.github.team_lodestar.transcendeum.block.ViridianLogBlock;
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
 import io.github.team_lodestar.transcendeum.block.MordhenLeavesBlock;
@@ -68,7 +69,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MordhenNylliumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ViridianLogBlock.block.getDefaultState()),
 								new SimpleBlockStateProvider(MordhenLeavesBlock.block.getDefaultState()),
 								new AcaciaFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0)),
 								new ForkyTrunkPlacer(20, 2, 2), new TwoLayerFeature(1, 0, 2)))

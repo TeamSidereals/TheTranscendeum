@@ -1,0 +1,32 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:viridian_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "the_transcendeum:viridian_planks"
+    },
+    "3": {
+      "item": "the_transcendeum:viridian_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "the_transcendeum:viridian_planks"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:deleted_mod_element",
+    "count": 3
+  }
+}

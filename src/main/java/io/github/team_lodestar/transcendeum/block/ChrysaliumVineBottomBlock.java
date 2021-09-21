@@ -28,14 +28,18 @@ import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.IWaterLoggable;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import java.util.List;
 import java.util.Collections;
 
+import io.github.team_lodestar.transcendeum.procedures.ChrysaliumVineBottomBlockValidPlacementConditionProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+
+import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class ChrysaliumVineBottomBlock extends TheTranscendeumModElements.ModElement {
@@ -78,6 +82,19 @@ public class ChrysaliumVineBottomBlock extends TheTranscendeumModElements.ModEle
 		}
 
 		@Override
+		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
+			if (worldIn instanceof IWorld) {
+				IWorld world = (IWorld) worldIn;
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				return ChrysaliumVineBottomBlockValidPlacementConditionProcedure
+						.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world));
+			}
+			return super.isValidPosition(blockstate, worldIn, pos);
+		}
+
+		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
 			boolean flag = context.getWorld().getFluidState(context.getPos()).getFluid() == Fluids.WATER;
 			return this.getDefaultState().with(WATERLOGGED, flag);
@@ -99,7 +116,9 @@ public class ChrysaliumVineBottomBlock extends TheTranscendeumModElements.ModEle
 			if (state.get(WATERLOGGED)) {
 				world.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(world));
 			}
-			return super.updatePostPlacement(state, facing, facingState, world, currentPos, facingPos);
+			return !state.isValidPosition(world, currentPos)
+					? Blocks.AIR.getDefaultState()
+					: super.updatePostPlacement(state, facing, facingState, world, currentPos, facingPos);
 		}
 
 		@Override

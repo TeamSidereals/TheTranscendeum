@@ -6,7 +6,7 @@
       "type": "dimension",
       "sortid": 1,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "transcendeum",
       "metadata": {
@@ -985,79 +985,6 @@
       "path": "~/Structures/Natural"
     },
     {
-      "name": "AzurilyBlock",
-      "type": "block",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "virilily_block"
-    },
-    {
-      "name": "Azurily",
-      "type": "item",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "virilily"
-    },
-    {
-      "name": "AzurilyRightClickedInAir",
-      "type": "procedure",
-      "sortid": 92,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "azurily_right_clicked_in_air",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AzurilyBlockBlockValidPlacementCondition",
-      "type": "procedure",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "azurily_block_block_valid_placement_condition",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "KelaveWoodRecipe",
       "type": "recipe",
       "sortid": 89,
@@ -1088,6 +1015,16 @@
       "path": "~/mobs"
     },
     {
+      "name": "SullenCliffs",
+      "type": "biome",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_cliffs",
+      "path": "~/Biomes"
+    },
+    {
       "name": "CalidWoodlands",
       "type": "biome",
       "sortid": 94,
@@ -1098,14 +1035,529 @@
       "path": "~/Biomes"
     },
     {
-      "name": "SullenCliffs",
-      "type": "biome",
+      "name": "LargeVirilily",
+      "type": "item",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_virilily"
+    },
+    {
+      "name": "Virilily",
+      "type": "item",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virilily"
+    },
+    {
+      "name": "ViridianWoodRecipe",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_wood_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridiaPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridia_pressure_plate_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelaveFenceRecipe",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_fence_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridianLog",
+      "type": "block",
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sullen_cliffs",
-      "path": "~/Biomes"
+      "registry_name": "viridian_log"
+    },
+    {
+      "name": "LilyPadValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_pad_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KelaveSlabRecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_slab_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LilyAssortment1",
+      "type": "structure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_assortment_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "LilyAssortment2",
+      "type": "structure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_assortment_2",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "ViridianPressurePlate",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_pressure_plate"
+    },
+    {
+      "name": "AcriumVirilily",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrium_virilily"
+    },
+    {
+      "name": "LilyAssortment3",
+      "type": "structure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_assortment_3",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "VirililyRightClickedinAir",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virilily_right_clickedin_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViridianStickRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_stick_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridianFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_fence_gate_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "CoriumVirililyBlock",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corium_virilily_block"
+    },
+    {
+      "name": "BerthelCrystal",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_crystal"
+    },
+    {
+      "name": "LilyPadBoatCollision",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_pad_boat_collision",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Twilighteris",
+      "type": "particle",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "twilighteris",
+      "path": "~/particles"
+    },
+    {
+      "name": "VirililyBlock",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virilily_block"
+    },
+    {
+      "name": "CoriumVirililyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corium_virilily_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KelaveStickRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_stick_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridianSlabRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_slab_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridianPlanks",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_planks"
+    },
+    {
+      "name": "CoriumVirilily",
+      "type": "item",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corium_virilily"
+    },
+    {
+      "name": "LargeVirililyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_virilily_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViridianWood",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_wood"
+    },
+    {
+      "name": "KelaveButtonRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_button_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridianFenceGate",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_fence_gate"
+    },
+    {
+      "name": "KelaveStairsRecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_stairs_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridianFenceRecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_fence_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelaveFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_fence_gate_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LargeVirililyBlock",
+      "type": "block",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_virilily_block"
+    },
+    {
+      "name": "ViridianSlab",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_slab"
+    },
+    {
+      "name": "AcriumVirililyBlock",
+      "type": "block",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrium_virilily_block"
+    },
+    {
+      "name": "ViridianStairs",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_stairs"
+    },
+    {
+      "name": "ViridianStairsRecipe",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_stairs_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "AcriumVirililyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrium_virilily_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViridianButton",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_button"
+    },
+    {
+      "name": "ViridianPlanksR2",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_planks_r_2",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelavePressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_pressure_plate_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ViridianFence",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_fence"
+    },
+    {
+      "name": "ViridianPlanksR1",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_planks_r_1",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [],
@@ -1192,6 +1644,10 @@
     "children": [
       {
         "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "particles",
         "children": []
       },
       {

@@ -3,6 +3,6 @@
   "textures": {
     "all": "the_transcendeum:blocks/virilily",
     "particle": "the_transcendeum:blocks/virilily",
-    "0": "the_transcendeum:blocks/virilily"
+    "0": "the_transcendeum:blocks/"
   }
 }

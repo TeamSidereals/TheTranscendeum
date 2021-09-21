@@ -11,7 +11,7 @@
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
-    "staticPlantGenerationType": "Flower",
+    "staticPlantGenerationType": "Grass",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
     "growapableSpawnType": "Plains",
@@ -82,7 +82,7 @@
         "value": "CUSTOM:CrystaliaTransium"
       }
     ],
-    "frequencyOnChunks": 10,
+    "frequencyOnChunks": 12,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
