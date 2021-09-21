@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "crystal:default",
-    "rotationMode": 2,
+    "rotationMode": 4,
     "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "berthel_crystal",

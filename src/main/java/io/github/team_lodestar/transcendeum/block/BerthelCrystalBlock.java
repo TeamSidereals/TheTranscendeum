@@ -93,8 +93,9 @@ public class BerthelCrystalBlock extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			Direction facing = context.getFace();
 			boolean flag = context.getWorld().getFluidState(context.getPos()).getFluid() == Fluids.WATER;;
-			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite()).with(WATERLOGGED, flag);
+			return this.getDefaultState().with(FACING, facing).with(WATERLOGGED, flag);
 		}
 
 		@Override

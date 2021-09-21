@@ -1591,6 +1591,86 @@
       "ids": {},
       "registry_name": "twilighteris",
       "path": "~/particles"
+    },
+    {
+      "name": "BerthelCrystalUp",
+      "type": "structure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_crystal_up",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "BerthelCrystalUpAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_crystal_up_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BerthelCrystalDownAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_crystal_down_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BerthelCrystalDown",
+      "type": "structure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_crystal_down",
+      "path": "~/Structures/Natural"
     }
   ],
   "variable_elements": [],
