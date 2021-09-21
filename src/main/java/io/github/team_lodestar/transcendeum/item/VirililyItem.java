@@ -15,16 +15,16 @@ import net.minecraft.block.BlockState;
 import java.util.Map;
 import java.util.HashMap;
 
-import io.github.team_lodestar.transcendeum.procedures.AzurilyRightClickedInAirProcedure;
+import io.github.team_lodestar.transcendeum.procedures.VirililyRightClickedinAirProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class AzurilyItem extends TheTranscendeumModElements.ModElement {
+public class VirililyItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:virilily")
 	public static final Item block = null;
-	public AzurilyItem(TheTranscendeumModElements instance) {
-		super(instance, 90);
+	public VirililyItem(TheTranscendeumModElements instance) {
+		super(instance, 120);
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public class AzurilyItem extends TheTranscendeumModElements.ModElement {
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("itemstack", itemstack);
 				$_dependencies.put("world", world);
-				AzurilyRightClickedInAirProcedure.executeProcedure($_dependencies);
+				VirililyRightClickedinAirProcedure.executeProcedure($_dependencies);
 			}
 			return ar;
 		}

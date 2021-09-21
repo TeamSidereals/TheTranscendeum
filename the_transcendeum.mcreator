@@ -998,15 +998,6 @@
       "registry_name": "kelavus"
     },
     {
-      "name": "AzurilyBlock",
-      "type": "block",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "virilily_block"
-    },
-    {
       "name": "KelaveWoodTag",
       "type": "tag",
       "sortid": 86,
@@ -1067,40 +1058,6 @@
       "path": "~/mobs"
     },
     {
-      "name": "Azurily",
-      "type": "item",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "virilily"
-    },
-    {
-      "name": "AzurilyRightClickedInAir",
-      "type": "procedure",
-      "sortid": 92,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "azurily_right_clicked_in_air",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "KelaveTree",
       "type": "structure",
       "sortid": 88,
@@ -1109,36 +1066,6 @@
       "ids": {},
       "registry_name": "kelave_tree",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "AzurilyBlockBlockValidPlacementCondition",
-      "type": "procedure",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "azurily_block_block_valid_placement_condition",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "ViridianWood",
@@ -1380,6 +1307,79 @@
       "ids": {},
       "registry_name": "kelave_button_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "VirililyBlock",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virilily_block"
+    },
+    {
+      "name": "Virilily",
+      "type": "item",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virilily"
+    },
+    {
+      "name": "VirililyRightClickedinAir",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virilily_right_clickedin_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VirililyBlockBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virilily_block_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

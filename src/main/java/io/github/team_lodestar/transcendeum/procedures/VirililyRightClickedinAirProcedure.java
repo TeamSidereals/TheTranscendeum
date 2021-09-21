@@ -21,24 +21,24 @@ import net.minecraft.block.BlockState;
 
 import java.util.Map;
 
-import io.github.team_lodestar.transcendeum.block.AzurilyBlockBlock;
+import io.github.team_lodestar.transcendeum.block.VirililyBlockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
-public class AzurilyRightClickedInAirProcedure {
+public class VirililyRightClickedinAirProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure AzurilyRightClickedInAir!");
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure VirililyRightClickedinAir!");
 			return;
 		}
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency itemstack for procedure AzurilyRightClickedInAir!");
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency itemstack for procedure VirililyRightClickedinAir!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure AzurilyRightClickedInAir!");
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure VirililyRightClickedinAir!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -122,7 +122,7 @@ public class AzurilyRightClickedInAirProcedure {
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * raytrace_distance, entity.getLook(1f).y * raytrace_distance,
 											entity.getLook(1f).z * raytrace_distance),
 									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.ANY, entity)).getPos().getZ())),
-							AzurilyBlockBlock.block.getDefaultState(), 3);
+							VirililyBlockBlock.block.getDefaultState(), 3);
 					try {
 						BlockState _bs = world.getBlockState(new BlockPos(
 								(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),

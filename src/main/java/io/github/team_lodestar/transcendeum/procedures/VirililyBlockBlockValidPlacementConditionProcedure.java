@@ -7,26 +7,26 @@ import java.util.Map;
 
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
-public class AzurilyBlockBlockValidPlacementConditionProcedure {
+public class VirililyBlockBlockValidPlacementConditionProcedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency x for procedure AzurilyBlockBlockValidPlacementCondition!");
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency x for procedure VirililyBlockBlockValidPlacementCondition!");
 			return false;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency y for procedure AzurilyBlockBlockValidPlacementCondition!");
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency y for procedure VirililyBlockBlockValidPlacementCondition!");
 			return false;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure AzurilyBlockBlockValidPlacementCondition!");
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure VirililyBlockBlockValidPlacementCondition!");
 			return false;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure AzurilyBlockBlockValidPlacementCondition!");
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure VirililyBlockBlockValidPlacementCondition!");
 			return false;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");

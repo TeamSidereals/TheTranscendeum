@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Azurily"
+      "value": "CUSTOM:Virilily"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:Azurily"
+      "value": "CUSTOM:Virilily"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -105,7 +105,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "placingCondition": {
-      "name": "AzurilyBlockBlockValidPlacementCondition"
+      "name": "VirililyBlockBlockValidPlacementCondition"
     },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

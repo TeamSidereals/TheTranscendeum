@@ -38,18 +38,18 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-import io.github.team_lodestar.transcendeum.procedures.AzurilyBlockBlockValidPlacementConditionProcedure;
-import io.github.team_lodestar.transcendeum.item.AzurilyItem;
+import io.github.team_lodestar.transcendeum.procedures.VirililyBlockBlockValidPlacementConditionProcedure;
+import io.github.team_lodestar.transcendeum.item.VirililyItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class AzurilyBlockBlock extends TheTranscendeumModElements.ModElement {
+public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:virilily_block")
 	public static final Block block = null;
-	public AzurilyBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 93);
+	public VirililyBlockBlock(TheTranscendeumModElements instance) {
+		super(instance, 119);
 	}
 
 	@Override
@@ -124,7 +124,7 @@ public class AzurilyBlockBlock extends TheTranscendeumModElements.ModElement {
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();
-				return AzurilyBlockBlockValidPlacementConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world));
+				return VirililyBlockBlockValidPlacementConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world));
 			}
 			return super.isValidPosition(blockstate, worldIn, pos);
 		}
@@ -139,7 +139,7 @@ public class AzurilyBlockBlock extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(AzurilyItem.block);
+			return new ItemStack(VirililyItem.block);
 		}
 
 		@Override
@@ -147,7 +147,7 @@ public class AzurilyBlockBlock extends TheTranscendeumModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(AzurilyItem.block));
+			return Collections.singletonList(new ItemStack(VirililyItem.block));
 		}
 	}
 }
