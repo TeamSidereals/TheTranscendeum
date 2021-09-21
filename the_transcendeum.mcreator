@@ -1310,6 +1310,76 @@
       "ids": {},
       "registry_name": "viridian_planks_r_2",
       "path": "~/recipes"
+    },
+    {
+      "name": "KelaveStairsRecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_stairs_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelaveFenceRecipe",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_fence_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelavePressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_pressure_plate_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelaveFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_fence_gate_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelaveStickRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_stick_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelaveSlabRecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_slab_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelaveButtonRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_button_recipe",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [],
