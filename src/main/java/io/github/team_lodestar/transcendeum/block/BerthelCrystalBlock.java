@@ -1,18 +1,49 @@
 
 package io.github.team_lodestar.transcendeum.block;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.Direction;
+import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.DirectionProperty;
+import net.minecraft.state.BooleanProperty;
+import net.minecraft.loot.LootContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.BlockItem;
+import net.minecraft.fluid.Fluids;
+import net.minecraft.fluid.FluidState;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
-import net.minecraft.util.SoundEvent;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.IWaterLoggable;
+import net.minecraft.block.DirectionalBlock;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+
+import java.util.List;
+import java.util.Collections;
+
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class BerthelCrystalBlock extends TheTranscendeumModElements.ModElement {
-
 	@ObjectHolder("the_transcendeum:berthel_crystal")
 	public static final Block block = null;
-
 	public BerthelCrystalBlock(TheTranscendeumModElements instance) {
 		super(instance, 137);
-
 	}
 
 	@Override
@@ -27,18 +58,13 @@ public class BerthelCrystalBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-
 	public static class CustomBlock extends Block implements IWaterLoggable {
-
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).setLightLevel(s -> 7).notSolid()
 					.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true).setOpaque((bs, br, bp) -> false));
-
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
-
 			setRegistryName("berthel_crystal");
 		}
 
@@ -87,13 +113,10 @@ public class BerthelCrystalBlock extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
-
 	}
-
 }
