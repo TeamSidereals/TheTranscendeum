@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Sullen Crags",
+    "name": "Sullen Cliffs",
     "groundBlock": {
       "value": "CUSTOM:SullenSand"
     },
@@ -10,7 +10,7 @@
       "value": "CUSTOM:SullenSandstone"
     },
     "airColor": {
-      "value": -5870182,
+      "value": -9665898,
       "falpha": 0.0
     },
     "grassColor": {
@@ -53,7 +53,7 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 1.6,
+    "baseHeight": 1.8,
     "heightVariation": 0.2,
     "biomeType": "DESERT",
     "spawnBiome": false,
@@ -100,10 +100,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

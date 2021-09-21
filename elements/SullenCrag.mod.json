@@ -5,7 +5,7 @@
     "structure": "sullen_crag",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 700000,
+    "spawnProbability": 500000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 2,
     "spawnLocation": "Ground",
@@ -17,12 +17,12 @@
     ],
     "restrictionBlocks": [
       {
-        "value": "CUSTOM:SullenSand"
+        "value": "CUSTOM:SullenSandstone"
       }
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:SullenCrags"
+        "value": "CUSTOM:SullenCanyon"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

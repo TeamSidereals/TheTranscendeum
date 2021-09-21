@@ -2,23 +2,27 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Viridian Mires",
+    "name": "Calid Woodlands",
     "groundBlock": {
-      "value": "CUSTOM:MordhenNyllium"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -8599833,
+      "value": -5387974,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -4539102,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -6051526,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10984641,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -13408196,
+      "value": -10954026,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -39,37 +43,37 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "SAVANNA",
     "parent": {
-      "value": "CUSTOM:CrystaliaForest"
+      "value": "No parent"
     },
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
-    "baseHeight": -0.2,
+    "temperature": 1.6,
+    "baseHeight": 0.1,
     "heightVariation": 0.1,
     "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 25,
+    "biomeWeight": 50,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 0,
+    "grassPerChunk": 8,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
-    "bigMushroomsChunk": 10,
+    "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 20,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Savanna trees",
     "treeType": 1,
-    "minHeight": 20,
-    "maxWaterDepth": 5,
+    "minHeight": 2,
+    "maxWaterDepth": 0,
     "treeStem": {
-      "value": "Blocks.LOG#0"
+      "value": "Blocks.LOG2#0"
     },
     "treeBranch": {
-      "value": "CUSTOM:MordhenLeaves"
+      "value": "Blocks.LEAVES2#0"
     },
     "treeVines": {
       "value": "Blocks.VINE"
@@ -88,9 +92,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Caves"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

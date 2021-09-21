@@ -31,7 +31,7 @@ import net.minecraft.block.BlockState;
 
 import java.util.Random;
 
-import io.github.team_lodestar.transcendeum.block.SullenSandBlock;
+import io.github.team_lodestar.transcendeum.block.SullenSandstoneBlock;
 
 @Mod.EventBusSubscriber
 public class SullenCragStructure {
@@ -52,7 +52,7 @@ public class SullenCragStructure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 700000) {
+					if ((random.nextInt(1000000) + 1) <= 500000) {
 						int count = random.nextInt(2) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -61,7 +61,7 @@ public class SullenCragStructure {
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == SullenSandBlock.block)
+							if (blockAt.getBlock() == SullenSandstoneBlock.block)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
@@ -93,7 +93,7 @@ public class SullenCragStructure {
 	@SubscribeEvent
 	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("the_transcendeum:sullen_crags").equals(event.getName()))
+		if (new ResourceLocation("the_transcendeum:sullen_canyon").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

@@ -19,9 +19,6 @@
         "value": "CUSTOM:SullenCanyon"
       },
       {
-        "value": "CUSTOM:SullenCrags"
-      },
-      {
         "value": "CUSTOM:SullenDesert"
       },
       {
@@ -32,6 +29,9 @@
       },
       {
         "value": "CUSTOM:ViridianMires"
+      },
+      {
+        "value": "CUSTOM:SullenCliffs"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -43,7 +43,7 @@
     },
     "canRespawnHere": true,
     "hasFog": true,
-    "isDark": true,
+    "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": false,

@@ -6,7 +6,7 @@
       "type": "dimension",
       "sortid": 1,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "transcendeum",
       "metadata": {
@@ -125,16 +125,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullen_desert",
-      "path": "~/Biomes"
-    },
-    {
-      "name": "SullenCrags",
-      "type": "biome",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sullen_crags",
       "path": "~/Biomes"
     },
     {
@@ -531,49 +521,6 @@
       "ids": {},
       "registry_name": "huge_sullcactus_1",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "Cursedbaseballbat",
-      "type": "tool",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cursedbaseballbat",
-      "path": "~/gear sets"
-    },
-    {
-      "name": "CursedbaseballbatLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cursedbaseballbat_living_entity_is_hit_with_tool",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "SullcactusBlockValidPlacementCondition",
@@ -1139,6 +1086,26 @@
       "ids": {},
       "registry_name": "arffel",
       "path": "~/mobs"
+    },
+    {
+      "name": "CalidWoodlands",
+      "type": "biome",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "calid_woodlands",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "SullenCliffs",
+      "type": "biome",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_cliffs",
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [],
@@ -1154,6 +1121,8 @@
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.mergoany": "Mergoany",
+      "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
+      "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.argoany": "Argoany",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
@@ -1166,7 +1135,6 @@
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.kelave_button": "Kelave Button",
-      "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "block.the_transcendeum.kelave_woodlet": "Kelave Wood",
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
@@ -1182,7 +1150,6 @@
       "block.the_transcendeum.kelave_planks": "Kelave Planks",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
-      "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
       "block.the_transcendeum.acrium_flower": "Acrium Flower",
       "entity.the_transcendeum.arffel": "Arffel",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",

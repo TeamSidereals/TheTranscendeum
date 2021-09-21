@@ -62,8 +62,8 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-12290246).setWaterColor(-13408196).setWaterFogColor(-13408196)
-						.withSkyColor(-12290246).withFoliageColor(10387789).withGrassColor(9470285).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-8599833).setWaterColor(-10984641).setWaterFogColor(-13408196)
+						.withSkyColor(-8599833).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MordhenNylliumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
@@ -119,7 +119,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -140,7 +140,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
 		}
 	}
 

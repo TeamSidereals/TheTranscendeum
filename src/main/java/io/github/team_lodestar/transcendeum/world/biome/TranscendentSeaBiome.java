@@ -13,8 +13,8 @@ import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
 
-import io.github.team_lodestar.transcendeum.block.SullenSandBlock;
 import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
+import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -28,10 +28,10 @@ public class TranscendentSeaBiome extends TheTranscendeumModElements.ModElement 
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6697729).setWaterColor(-3569952).setWaterFogColor(329011)
-						.withSkyColor(-6697729).withFoliageColor(10387789).withGrassColor(9470285).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6692906).setWaterColor(-10357817).setWaterFogColor(329011)
+						.withSkyColor(-6692906).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SullenSandBlock.block.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SombersoilBlock.block.getDefaultState(),
 								SomberstoneBlock.block.getDefaultState(), SomberstoneBlock.block.getDefaultState())));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(-0.8f).scale(0.1f)

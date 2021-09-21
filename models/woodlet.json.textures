@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": ""
+        "0": "kelave_log"
       },
       "name": "default"
     }

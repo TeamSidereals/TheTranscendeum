@@ -4,13 +4,13 @@
   "definition": {
     "name": "Sullen Canyon",
     "groundBlock": {
-      "value": "Blocks.STONE#1"
+      "value": "CUSTOM:SullenSandstone"
     },
     "undergroundBlock": {
       "value": "Blocks.STONE#1"
     },
     "airColor": {
-      "value": -8631982,
+      "value": -9665898,
       "falpha": 0.0
     },
     "grassColor": {
@@ -49,12 +49,12 @@
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:CalidWoodlands"
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.0,
-    "heightVariation": 0.1,
+    "heightVariation": 0.30000000000000004,
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 30,

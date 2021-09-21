@@ -86,7 +86,7 @@
           }
         },
         {
-          "biome": "the_transcendeum:sullen_crags",
+          "biome": "the_transcendeum:sullen_desert",
           "parameters": {
             "temperature": -0.111111111112,
             "humidity": 0.111111111112,
@@ -96,7 +96,7 @@
           }
         },
         {
-          "biome": "the_transcendeum:sullen_desert",
+          "biome": "the_transcendeum:transcendent_ocean",
           "parameters": {
             "temperature": -0.333333333334,
             "humidity": 0.333333333334,
@@ -106,7 +106,7 @@
           }
         },
         {
-          "biome": "the_transcendeum:transcendent_ocean",
+          "biome": "the_transcendeum:transcendent_sea",
           "parameters": {
             "temperature": -0.555555555556,
             "humidity": 0.555555555556,
@@ -116,7 +116,7 @@
           }
         },
         {
-          "biome": "the_transcendeum:transcendent_sea",
+          "biome": "the_transcendeum:viridian_mires",
           "parameters": {
             "temperature": -0.777777777778,
             "humidity": 0.777777777778,
@@ -126,7 +126,7 @@
           }
         },
         {
-          "biome": "the_transcendeum:viridian_mires",
+          "biome": "the_transcendeum:sullen_cliffs",
           "parameters": {
             "temperature": -1,
             "humidity": 1,

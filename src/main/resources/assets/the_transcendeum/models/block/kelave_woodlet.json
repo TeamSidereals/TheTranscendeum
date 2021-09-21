@@ -3,6 +3,6 @@
   "textures": {
     "all": "the_transcendeum:blocks/kelave_log",
     "particle": "the_transcendeum:blocks/stariam_log_side",
-    "0": "the_transcendeum:blocks/"
+    "0": "the_transcendeum:blocks/kelave_log"
   }
 }
