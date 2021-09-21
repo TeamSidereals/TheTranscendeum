@@ -1558,6 +1558,24 @@
       "ids": {},
       "registry_name": "viridian_planks_r_1",
       "path": "~/recipes"
+    },
+    {
+      "name": "Lilies",
+      "type": "tag",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lilies"
+    },
+    {
+      "name": "LargeLilies",
+      "type": "tag",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_lilies"
     }
   ],
   "variable_elements": [],

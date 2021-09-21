@@ -32,8 +32,8 @@ public class SullenCliffsBiome extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-9665898).setWaterColor(-13384205).setWaterFogColor(-6045906)
-						.withSkyColor(-9665898).withFoliageColor(-6307992).withGrassColor(-6307992).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-7383771).setWaterColor(-13384205).setWaterFogColor(-6045906)
+						.withSkyColor(-7383771).withFoliageColor(-6307992).withGrassColor(-6307992).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SullenSandBlock.block.getDefaultState(),
 								SullenSandstoneBlock.block.getDefaultState(), SullenSandstoneBlock.block.getDefaultState())));

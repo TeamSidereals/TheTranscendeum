@@ -67,7 +67,7 @@
     "treesPerChunk": 0,
     "vanillaTreeType": "Savanna trees",
     "treeType": 1,
-    "minHeight": 2,
+    "minHeight": 5,
     "maxWaterDepth": 0,
     "treeStem": {
       "value": "Blocks.LOG2#0"
