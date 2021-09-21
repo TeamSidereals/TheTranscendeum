@@ -15,6 +15,7 @@ import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
@@ -36,6 +37,7 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
+import io.github.team_lodestar.transcendeum.particle.TwilighterisParticle;
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.IaprieGrassBlockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -52,7 +54,8 @@ public class AureaPlainsBiome extends TheTranscendeumModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16306558).setWaterColor(-8397575).setWaterFogColor(329011)
-						.withSkyColor(-16306558).withFoliageColor(10387789).withGrassColor(9470285).build();
+						.withSkyColor(-16306558).withFoliageColor(10387789).withGrassColor(9470285)
+						.setParticle(new ParticleEffectAmbience(TwilighterisParticle.particle, 0.01f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(IaprieGrassBlockBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));

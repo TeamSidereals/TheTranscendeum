@@ -30,11 +30,11 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Twilighteris"
     },
-    "particlesProbability": 0.5,
+    "particlesProbability": 1.0,
     "biomeCategory": "PLAINS",
     "parent": {
       "value": "CUSTOM:AureaPlains"
