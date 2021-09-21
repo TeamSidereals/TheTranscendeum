@@ -2,14 +2,14 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "virilily",
+    "texture": "large_virilily",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "virilily:default",
+    "customModelName": "large_virilily:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -23,16 +23,16 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": -4.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
+        "mz": -4.0,
+        "Mx": 20.0,
         "My": 1.4,
-        "Mz": 16.0,
+        "Mz": 20.0,
         "subtract": false
       }
     ],
-    "name": "Virilily",
+    "name": "Large Virilily",
     "specialInfo": [],
     "hardness": 0.0,
     "resistance": 0.0,
@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Virilily"
+      "value": "CUSTOM:LargeVirilily"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:Virilily"
+      "value": "CUSTOM:LargeVirilily"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

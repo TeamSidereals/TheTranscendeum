@@ -1352,13 +1352,89 @@
       }
     },
     {
-      "name": "VirililyBlockBlockValidPlacementCondition",
+      "name": "LilyPadBoatCollision",
       "type": "procedure",
-      "sortid": 122,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "virilily_block_block_valid_placement_condition",
+      "registry_name": "lily_pad_boat_collision",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LargeVirililyBlock",
+      "type": "block",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_virilily_block"
+    },
+    {
+      "name": "LargeVirilily",
+      "type": "item",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_virilily"
+    },
+    {
+      "name": "LargeVirililyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_virilily_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LilyPadValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_pad_valid_placement_condition",
       "metadata": {
         "return_type": "logic",
         "dependencies": [
@@ -1380,6 +1456,122 @@
           }
         ]
       }
+    },
+    {
+      "name": "CoriumVirililyBlock",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corium_virilily_block"
+    },
+    {
+      "name": "AcriumVirililyBlock",
+      "type": "block",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrium_virilily_block"
+    },
+    {
+      "name": "CoriumVirililyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corium_virilily_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoriumVirilily",
+      "type": "item",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corium_virilily"
+    },
+    {
+      "name": "AcriumVirilily",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrium_virilily"
+    },
+    {
+      "name": "AcriumVirililyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrium_virilily_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LilyAssortment1",
+      "type": "structure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_assortment_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "LilyAssortment2",
+      "type": "structure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_assortment_2",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "LilyAssortment3",
+      "type": "structure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lily_assortment_3",
+      "path": "~/Structures/Natural"
     }
   ],
   "variable_elements": [],
@@ -1387,6 +1579,7 @@
   "language_map": {
     "en_us": {
       "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
+      "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.stariam_slab": "Stariam Slab",
       "biome.the_transcendeum.salt_lowlands": "Salt Lowlands",
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
@@ -1417,6 +1610,7 @@
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "block.the_transcendeum.viridian_stairs": "Viridian Stairs",
+      "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
@@ -1425,9 +1619,11 @@
       "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
       "block.the_transcendeum.kelfae": "Kelfae",
       "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
+      "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
       "block.the_transcendeum.viridian_slab": "Viridian Slab",
       "block.the_transcendeum.kelave_planks": "Kelave Planks",
       "block.the_transcendeum.viridian_leaves": "Viridian Leaves",
+      "item.the_transcendeum.corium_virilily": "Corium Virilily",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
@@ -1447,6 +1643,7 @@
       "biome.the_transcendeum.agarith": "Agarith",
       "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
       "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
+      "item.the_transcendeum.large_virilily": "Large Virilily",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
       "block.the_transcendeum.kelave_log": "Kelave Log",
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
@@ -1466,6 +1663,7 @@
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
       "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
       "block.the_transcendeum.kelave_wood": "Kelave Wood",
+      "block.the_transcendeum.acrium_virilily_block": "Corium Virilily",
       "entity.the_transcendeum.puffel": "Puffel"
     }
   },

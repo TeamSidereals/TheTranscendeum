@@ -1,5 +1,6 @@
 {
   "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
+  "block.the_transcendeum.large_virilily_block": "Large Virilily",
   "block.the_transcendeum.stariam_slab": "Stariam Slab",
   "biome.the_transcendeum.salt_lowlands": "Salt Lowlands",
   "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
@@ -30,6 +31,7 @@
   "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
   "block.the_transcendeum.stariam_fence": "Stariam Fence",
   "block.the_transcendeum.viridian_stairs": "Viridian Stairs",
+  "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
   "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
   "block.the_transcendeum.virilily_block": "Virilily",
   "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
@@ -38,9 +40,11 @@
   "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
   "block.the_transcendeum.kelfae": "Kelfae",
   "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
+  "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
   "block.the_transcendeum.viridian_slab": "Viridian Slab",
   "block.the_transcendeum.kelave_planks": "Kelave Planks",
   "block.the_transcendeum.viridian_leaves": "Viridian Leaves",
+  "item.the_transcendeum.corium_virilily": "Corium Virilily",
   "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
   "biome.the_transcendeum.aurea_forest": "Aurea Forest",
   "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
@@ -60,6 +64,7 @@
   "biome.the_transcendeum.agarith": "Agarith",
   "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
   "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
+  "item.the_transcendeum.large_virilily": "Large Virilily",
   "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
   "block.the_transcendeum.kelave_log": "Kelave Log",
   "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
@@ -79,5 +84,6 @@
   "itemGroup.tabtranscendeum_items": "Transcendeum Items",
   "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
   "block.the_transcendeum.kelave_wood": "Kelave Wood",
+  "block.the_transcendeum.acrium_virilily_block": "Corium Virilily",
   "entity.the_transcendeum.puffel": "Puffel"
 }

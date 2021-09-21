@@ -44,17 +44,17 @@ import java.util.Collections;
 
 import io.github.team_lodestar.transcendeum.procedures.LilyPadValidPlacementConditionProcedure;
 import io.github.team_lodestar.transcendeum.procedures.LilyPadBoatCollisionProcedure;
-import io.github.team_lodestar.transcendeum.item.VirililyItem;
+import io.github.team_lodestar.transcendeum.item.LargeVirililyItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:virilily_block")
+public class CoriumVirililyBlockBlock extends TheTranscendeumModElements.ModElement {
+	@ObjectHolder("the_transcendeum:corium_virilily_block")
 	public static final Block block = null;
-	public VirililyBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 119);
+	public CoriumVirililyBlockBlock(TheTranscendeumModElements instance) {
+		super(instance, 128);
 	}
 
 	@Override
@@ -71,10 +71,10 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.LILY_PADS).hardnessAndResistance(0f, 0f).setLightLevel(s -> 3)
+			super(Block.Properties.create(Material.PLANTS).sound(SoundType.LILY_PADS).hardnessAndResistance(0f, 0f).setLightLevel(s -> 15)
 					.speedFactor(1.0999999999999999f).jumpFactor(1.2000000000000002f).notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("virilily_block");
+			setRegistryName("corium_virilily_block");
 		}
 
 		@Override
@@ -93,13 +93,13 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(16, 0, 16, 0, 1.4, 0)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(20, 0, 20, -4, 1.4, -4)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1.4, 16)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(-4, 0, -4, 20, 1.4, 20)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(16, 0, 0, 0, 1.4, 16)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(20, 0, -4, -4, 1.4, 20)).withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(0, 0, 16, 16, 1.4, 0)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(-4, 0, 20, 20, 1.4, -4)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 
@@ -144,7 +144,7 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(VirililyItem.block);
+			return new ItemStack(LargeVirililyItem.block);
 		}
 
 		@Override
@@ -152,7 +152,7 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(VirililyItem.block));
+			return Collections.singletonList(new ItemStack(LargeVirililyItem.block));
 		}
 
 		@Override
