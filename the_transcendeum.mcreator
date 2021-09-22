@@ -1920,10 +1920,6 @@
         "children": []
       },
       {
-        "name": "Tools",
-        "children": []
-      },
-      {
         "name": "Structures",
         "children": [
           {
@@ -1942,7 +1938,16 @@
       },
       {
         "name": "gear sets",
-        "children": []
+        "children": [
+          {
+            "name": "Tools",
+            "children": []
+          },
+          {
+            "name": "armor",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Tags",
