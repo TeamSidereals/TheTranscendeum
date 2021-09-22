@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:LargeVirilily"
+      "value": "CUSTOM:CoriumVirilily"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:LargeVirilily"
+      "value": "CUSTOM:CoriumVirilily"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

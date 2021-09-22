@@ -44,7 +44,7 @@ import java.util.Collections;
 
 import io.github.team_lodestar.transcendeum.procedures.LilyPadValidPlacementConditionProcedure;
 import io.github.team_lodestar.transcendeum.procedures.LilyPadBoatCollisionProcedure;
-import io.github.team_lodestar.transcendeum.item.LargeVirililyItem;
+import io.github.team_lodestar.transcendeum.item.CoriumVirililyItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 import com.google.common.collect.ImmutableMap;
@@ -144,7 +144,7 @@ public class CoriumVirililyBlockBlock extends TheTranscendeumModElements.ModElem
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(LargeVirililyItem.block);
+			return new ItemStack(CoriumVirililyItem.block);
 		}
 
 		@Override
@@ -152,7 +152,7 @@ public class CoriumVirililyBlockBlock extends TheTranscendeumModElements.ModElem
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(LargeVirililyItem.block));
+			return Collections.singletonList(new ItemStack(CoriumVirililyItem.block));
 		}
 
 		@Override
