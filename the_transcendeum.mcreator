@@ -1800,7 +1800,7 @@
       "type": "livingentity",
       "sortid": 158,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "arcedeon",
       "path": "~/mobs"
