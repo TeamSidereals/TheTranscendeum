@@ -1612,8 +1612,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_sword",
-      "path": "~/Tools"
+      "registry_name": "berthel_sword"
     },
     {
       "name": "TranscendentMobs",
@@ -1641,8 +1640,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_axe",
-      "path": "~/Tools"
+      "registry_name": "berthel_axe"
     },
     {
       "name": "BerthelHoe",
@@ -1651,8 +1649,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_hoe",
-      "path": "~/Tools"
+      "registry_name": "berthel_hoe"
     },
     {
       "name": "BerthelShardsFromCrystalCrafting",
@@ -1671,8 +1668,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_pickaxe",
-      "path": "~/Tools"
+      "registry_name": "berthel_pickaxe"
     },
     {
       "name": "BerthelPickaxeCrafting",
@@ -1711,8 +1707,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_shovel",
-      "path": "~/Tools"
+      "registry_name": "berthel_shovel"
     },
     {
       "name": "BerthelHoeCrafting",
