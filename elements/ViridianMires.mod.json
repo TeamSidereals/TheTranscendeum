@@ -1,0 +1,96 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Viridian Mires",
+    "groundBlock": {
+      "value": "CUSTOM:MordhenNyllium"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Sombersoil"
+    },
+    "airColor": {
+      "value": -8599833,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10984641,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -13408196,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "CUSTOM:CrystaliaForest"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": -0.2,
+    "heightVariation": 0.1,
+    "biomeType": "WARM",
+    "spawnBiome": false,
+    "biomeWeight": 25,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 10,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 20,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 20,
+    "maxWaterDepth": 5,
+    "treeStem": {
+      "value": "CUSTOM:ViridianLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:MordhenLeaves"
+    },
+    "treeVines": {
+      "value": "Blocks.VINE"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves"
+    ],
+    "spawnEntries": []
+  }
+}

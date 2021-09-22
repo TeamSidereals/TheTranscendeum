@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "the_transcendeum:blocks/somberstone",
+    "bottom": "the_transcendeum:blocks/somberstone",
+    "top": "the_transcendeum:blocks/somberstone_top",
+    "side": "the_transcendeum:blocks/somberstone"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "particle": "the_transcendeum:blocks/stariam_planks",
+    "texture": "the_transcendeum:blocks/stariam_planks"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:StariamLeaves"
+      },
+      {
+        "value": "CUSTOM:KelaveLeaves"
+      },
+      {
+        "value": "CUSTOM:MordhenLeaves"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "leaves",
+    "namespace": "minecraft"
+  }
+}

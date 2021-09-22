@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "berthel_hoe",
+    "customModelName": "Normal",
+    "name": "Berthel Hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumGear"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 2,
+    "efficiency": 11.0,
+    "attackSpeed": 5.0,
+    "enchantability": 11,
+    "damageVsEntity": 1.0,
+    "usageCount": 1050,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BerthelShard"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

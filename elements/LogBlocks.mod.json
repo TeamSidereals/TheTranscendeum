@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:StariamLog"
+      },
+      {
+        "value": "CUSTOM:StariamWood"
+      },
+      {
+        "value": "CUSTOM:KelaveLog"
+      },
+      {
+        "value": "CUSTOM:KelaveWood"
+      },
+      {
+        "value": "CUSTOM:ViridianLog"
+      },
+      {
+        "value": "CUSTOM:ViridianWood"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}

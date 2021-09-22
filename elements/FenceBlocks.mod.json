@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:StariamFence"
+      },
+      {
+        "value": "CUSTOM:StariamFenceGate"
+      },
+      {
+        "value": "CUSTOM:KelaveFence"
+      },
+      {
+        "value": "CUSTOM:KelaveFenceGate"
+      },
+      {
+        "value": "CUSTOM:ViridianFence"
+      },
+      {
+        "value": "CUSTOM:ViridianFenceGate"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "fences",
+    "namespace": "minecraft"
+  }
+}

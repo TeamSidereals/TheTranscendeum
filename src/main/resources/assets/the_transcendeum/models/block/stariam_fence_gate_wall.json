@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate_wall",
+  "textures": {
+    "particle": "the_transcendeum:blocks/stariam_planks",
+    "texture": "the_transcendeum:blocks/stariam_planks"
+  }
+}

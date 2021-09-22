@@ -7,28 +7,28 @@
       "type": "minecraft:multi_noise",
       "seed": 0,
       "temperature_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -7,
         "amplitudes": [
           2,
           2
         ]
       },
       "humidity_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -7,
         "amplitudes": [
           2,
           2
         ]
       },
       "altitude_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -7,
         "amplitudes": [
           2,
           2
         ]
       },
       "weirdness_noise": {
-        "firstOctave": -5.74,
+        "firstOctave": -7,
         "amplitudes": [
           2,
           2
@@ -36,7 +36,7 @@
       },
       "biomes": [
         {
-          "biome": "badlands",
+          "biome": "the_transcendeum:aurea_forest",
           "parameters": {
             "temperature": 1,
             "humidity": -1,
@@ -46,7 +46,27 @@
           }
         },
         {
-          "biome": "badlands_plateau",
+          "biome": "the_transcendeum:aurea_plains",
+          "parameters": {
+            "temperature": 0.777777777778,
+            "humidity": -0.777777777778,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:crystalia_forest",
+          "parameters": {
+            "temperature": 0.555555555556,
+            "humidity": -0.555555555556,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:salt_lowlands",
           "parameters": {
             "temperature": 0.333333333334,
             "humidity": -0.333333333334,
@@ -56,7 +76,27 @@
           }
         },
         {
-          "biome": "desert_lakes",
+          "biome": "the_transcendeum:sullen_canyon",
+          "parameters": {
+            "temperature": 0.111111111112,
+            "humidity": -0.111111111112,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:sullen_desert",
+          "parameters": {
+            "temperature": -0.111111111112,
+            "humidity": 0.111111111112,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:transcendent_ocean",
           "parameters": {
             "temperature": -0.333333333334,
             "humidity": 0.333333333334,
@@ -66,7 +106,27 @@
           }
         },
         {
-          "biome": "mushroom_field_shore",
+          "biome": "the_transcendeum:transcendent_sea",
+          "parameters": {
+            "temperature": -0.555555555556,
+            "humidity": 0.555555555556,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:viridian_mires",
+          "parameters": {
+            "temperature": -0.777777777778,
+            "humidity": 0.777777777778,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "the_transcendeum:sullen_cliffs",
           "parameters": {
             "temperature": -1,
             "humidity": 1,
@@ -84,7 +144,7 @@
       "sea_level": 63,
       "disable_mob_generation": false,
       "default_block": {
-        "Name": "minecraft:diorite"
+        "Name": "the_transcendeum:somberstone"
       },
       "default_fluid": {
         "Name": "minecraft:water",

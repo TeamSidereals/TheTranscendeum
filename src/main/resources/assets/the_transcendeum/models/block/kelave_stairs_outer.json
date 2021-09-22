@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_transcendeum:blocks/kelave_planks",
+    "top": "the_transcendeum:blocks/kelave_planks",
+    "side": "the_transcendeum:blocks/kelave_planks"
+  }
+}

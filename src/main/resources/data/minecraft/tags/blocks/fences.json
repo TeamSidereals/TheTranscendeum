@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "the_transcendeum:stariam_fence",
+    "the_transcendeum:stariam_fence_gate",
+    "the_transcendeum:kelave_fence",
+    "the_transcendeum:kelave_fence_gate",
+    "the_transcendeum:viridian_fence",
+    "the_transcendeum:viridian_fence_gate"
+  ]
+}

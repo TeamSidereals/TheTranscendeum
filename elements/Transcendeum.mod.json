@@ -4,35 +4,49 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "badlands"
+        "value": "CUSTOM:AureaForest"
       },
       {
-        "value": "badlands_plateau"
+        "value": "CUSTOM:AureaPlains"
       },
       {
-        "value": "mutated_desert"
+        "value": "CUSTOM:CrystaliaForest"
       },
       {
-        "value": "mushroom_field_shore"
+        "value": "CUSTOM:SaltLowlands"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
+        "value": "CUSTOM:SullenDesert"
+      },
+      {
+        "value": "CUSTOM:TranscendentOcean"
+      },
+      {
+        "value": "CUSTOM:TranscendentSea"
+      },
+      {
+        "value": "CUSTOM:ViridianMires"
+      },
+      {
+        "value": "CUSTOM:SullenCliffs"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.STONE#3"
+      "value": "CUSTOM:Somberstone"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
-    "airColor": {
-      "value": -3381505,
-      "falpha": 0.0
-    },
-    "canRespawnHere": true,
+    "canRespawnHere": false,
     "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
-    "hasSkyLight": true,
+    "sleepResult": "DENY",
+    "hasSkyLight": false,
     "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "Blocks.PURPUR_BLOCK"
@@ -40,13 +54,13 @@
     "portalParticles": {
       "value": "CRIT_MAGIC"
     },
-    "portalLuminance": 0,
+    "portalLuminance": 15,
     "portalSound": {
       "value": "block.portal.ambient"
     },
     "igniterName": "Transcendent Powder",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:TranscendeumItems"
     },
     "texture": "transcendent_essence",
     "portalTexture": "transcendeum_portal",

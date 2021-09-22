@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CoriumVirililyBlock"
+      },
+      {
+        "value": "CUSTOM:LargeVirililyBlock"
+      },
+      {
+        "value": "CUSTOM:AcriumVirililyBlock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "large_lilies",
+    "namespace": "forge"
+  }
+}

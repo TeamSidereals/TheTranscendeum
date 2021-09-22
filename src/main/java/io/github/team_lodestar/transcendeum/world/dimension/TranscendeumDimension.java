@@ -65,6 +65,7 @@ import java.util.Comparator;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 
 import io.github.team_lodestar.transcendeum.item.TranscendeumItem;
+import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 import com.google.common.collect.Sets;
@@ -85,10 +86,10 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(Blocks.DIORITE).build(), "field_222718_j");
+						.add(SomberstoneBlock.block).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(Blocks.DIORITE).build(), "field_222718_j");
+						.add(SomberstoneBlock.block).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -101,7 +102,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(128, true, DimensionRenderInfo.FogType.NORMAL, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(0.8, 0.4, 1);
+				return color.mul(sunHeight * 0.94 + 0.06, sunHeight * 0.94 + 0.06, sunHeight * 0.91 + 0.09);
 			}
 
 			@Override
@@ -138,7 +139,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 	public static class CustomPortalBlock extends NetherPortalBlock {
 		public CustomPortalBlock() {
 			super(Block.Properties.create(Material.PORTAL).doesNotBlockMovement().tickRandomly().hardnessAndResistance(-1.0F).sound(SoundType.GLASS)
-					.setLightLevel(s -> 0).noDrops());
+					.setLightLevel(s -> 15).noDrops());
 			setRegistryName("transcendeum_portal");
 		}
 

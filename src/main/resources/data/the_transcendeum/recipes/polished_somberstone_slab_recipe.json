@@ -1,0 +1,22 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:polished_somberstone"
+    },
+    "1": {
+      "item": "the_transcendeum:polished_somberstone"
+    },
+    "2": {
+      "item": "the_transcendeum:polished_somberstone"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:polished_somberstone_slab",
+    "count": 6
+  }
+}

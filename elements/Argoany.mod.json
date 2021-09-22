@@ -1,0 +1,95 @@
+{
+  "_fv": 24,
+  "_type": "plant",
+  "definition": {
+    "renderType": 13,
+    "texture": "argoany",
+    "textureBottom": "",
+    "customModelName": "Crop model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "HASTE",
+    "suspiciousStewDuration": 5,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "doublePlantGenerationType": "Flower",
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 1.0,
+        "my": 0.0,
+        "mz": 1.0,
+        "Mx": 15.0,
+        "My": 15.0,
+        "Mz": 15.0,
+        "subtract": false
+      }
+    ],
+    "name": "Argoany",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumBlocks"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 15,
+    "unbreakable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": true,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XYZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "frequencyOnChunks": 10,
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AureaPlains"
+      },
+      {
+        "value": "CUSTOM:AureaForest"
+      }
+    ],
+    "patchSize": 64
+  }
+}

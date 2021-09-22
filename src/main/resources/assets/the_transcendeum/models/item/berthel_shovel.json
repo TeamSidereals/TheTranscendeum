@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "the_transcendeum:items/berthel_shovel"
+  }
+}
