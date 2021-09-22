@@ -22,7 +22,7 @@ public class TranscendeumMobsItemGroup extends TheTranscendeumModElements.ModEle
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Items.ENDERMAN_SPAWN_EGG);
+				return new ItemStack(Items.DROWNED_SPAWN_EGG);
 			}
 
 			@OnlyIn(Dist.CLIENT)

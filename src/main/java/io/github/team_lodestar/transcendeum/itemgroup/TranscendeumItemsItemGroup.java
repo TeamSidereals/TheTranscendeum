@@ -4,10 +4,10 @@ package io.github.team_lodestar.transcendeum.itemgroup;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
+import io.github.team_lodestar.transcendeum.item.BerthelShardItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class TranscendeumItemsItemGroup extends TheTranscendeumModElements.ModEl
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Items.COAL);
+				return new ItemStack(BerthelShardItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

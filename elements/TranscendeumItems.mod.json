@@ -4,7 +4,7 @@
   "definition": {
     "name": "Transcendeum Items",
     "icon": {
-      "value": "Items.COAL#0"
+      "value": "CUSTOM:BerthelShard"
     },
     "showSearch": false
   }

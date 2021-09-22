@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "berthel_axe",
+    "customModelName": "Normal",
+    "name": "Berthel Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumGear"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 11.0,
+    "attackSpeed": 0.9,
+    "enchantability": 11,
+    "damageVsEntity": 8.0,
+    "usageCount": 1050,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BerthelShard"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

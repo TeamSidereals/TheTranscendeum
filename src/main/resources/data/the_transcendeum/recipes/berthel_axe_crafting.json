@@ -1,0 +1,30 @@
+{
+  "group": "berthel_axe_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:berthel_shard"
+    },
+    "1": {
+      "item": "the_transcendeum:berthel_shard"
+    },
+    "2": {
+      "item": "the_transcendeum:berthel_shard"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:berthel_axe",
+    "count": 1
+  }
+}
