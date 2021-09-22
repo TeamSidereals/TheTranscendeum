@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "TAG:forge:kelave_wood_blocks"
+        "value": "CUSTOM:KelaveLog"
       },
       {
         "value": ""
@@ -40,7 +40,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:KelavePlanks"
     },
-    "name": "kelave_planks_recipe",
+    "name": "kelave_planks_recipe_1",
     "namespace": "mod"
   }
 }

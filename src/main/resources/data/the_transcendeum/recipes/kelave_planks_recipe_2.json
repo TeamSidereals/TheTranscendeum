@@ -3,7 +3,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:kelave_wood_blocks"
+      "item": "the_transcendeum:kelave_wood"
     }
   ],
   "result": {

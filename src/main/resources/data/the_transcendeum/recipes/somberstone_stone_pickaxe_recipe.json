@@ -1,0 +1,30 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "1": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "2": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:stone_pickaxe",
+    "count": 1
+  }
+}

@@ -39,7 +39,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "transcendeum_combat",
+      "registry_name": "transcendeum_gear",
       "path": "~/Creative Tabs"
     },
     {
@@ -955,16 +955,6 @@
       "path": "~/Tags"
     },
     {
-      "name": "KelavePlanksRecipe",
-      "type": "recipe",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kelave_planks_recipe",
-      "path": "~/recipes"
-    },
-    {
       "name": "ViridianMires",
       "type": "biome",
       "sortid": 86,
@@ -1626,6 +1616,25 @@
       "path": "~/Tools"
     },
     {
+      "name": "TranscendentMobs",
+      "type": "tag",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transcendent_mobs"
+    },
+    {
+      "name": "BerthelShovelCrafting",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_shovel_crafting",
+      "path": "~/recipes"
+    },
+    {
       "name": "BerthelAxe",
       "type": "tool",
       "sortid": 147,
@@ -1633,26 +1642,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_axe",
-      "path": "~/Tools"
-    },
-    {
-      "name": "BerthelPickaxe",
-      "type": "tool",
-      "sortid": 148,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "berthel_pickaxe",
-      "path": "~/Tools"
-    },
-    {
-      "name": "BerthelShovel",
-      "type": "tool",
-      "sortid": 149,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "berthel_shovel",
       "path": "~/Tools"
     },
     {
@@ -1666,13 +1655,34 @@
       "path": "~/Tools"
     },
     {
-      "name": "TranscendentMobs",
-      "type": "tag",
-      "sortid": 151,
+      "name": "BerthelShardsFromCrystalCrafting",
+      "type": "recipe",
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "transcendent_mobs"
+      "registry_name": "berthel_shards_from_crystal_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BerthelPickaxe",
+      "type": "tool",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_pickaxe",
+      "path": "~/Tools"
+    },
+    {
+      "name": "BerthelPickaxeCrafting",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_pickaxe_crafting",
+      "path": "~/recipes"
     },
     {
       "name": "BerthelSwordCrafting",
@@ -1695,24 +1705,14 @@
       "path": "~/recipes"
     },
     {
-      "name": "BerthelPickaxeCrafting",
-      "type": "recipe",
-      "sortid": 154,
+      "name": "BerthelShovel",
+      "type": "tool",
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_pickaxe_crafting",
-      "path": "~/recipes"
-    },
-    {
-      "name": "BerthelShovelCrafting",
-      "type": "recipe",
-      "sortid": 155,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "berthel_shovel_crafting",
-      "path": "~/recipes"
+      "registry_name": "berthel_shovel",
+      "path": "~/Tools"
     },
     {
       "name": "BerthelHoeCrafting",
@@ -1725,13 +1725,73 @@
       "path": "~/recipes"
     },
     {
-      "name": "BerthelShardsFromCrystalCrafting",
+      "name": "SomberstoneStonePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "somberstone_stone_pickaxe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SomberstoneStoneShovelRecipe",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "somberstone_stone_shovel_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelavePlanksRecipe2",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_planks_recipe_2",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SomberstoneStoneHoeRecipe",
       "type": "recipe",
       "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_shards_from_crystal_crafting",
+      "registry_name": "somberstone_stone_hoe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KelavePlanksRecipe1",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_planks_recipe_1",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SomberstoneStoneSwordRecipe",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "somberstone_stone_sword_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SomberstoneStoneAxeRecipe",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "somberstone_stone_axe_recipe",
       "path": "~/recipes"
     }
   ],
@@ -1748,7 +1808,6 @@
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.somberstone": "Somberstone",
@@ -1762,7 +1821,6 @@
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
-      "item.the_transcendeum.berthel_sword": "Berthel Sword",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
@@ -1804,7 +1862,6 @@
       "block.the_transcendeum.argoany": "Argoany",
       "biome.the_transcendeum.viridian_mires": "Viridian Mires",
       "block.the_transcendeum.stariam_log": "Stariam Log",
-      "item.the_transcendeum.berthel_hoe": "Berthel Hoe",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
@@ -1820,12 +1877,10 @@
       "item.the_transcendeum.corium_virilily": "Corium Virilily",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
       "block.the_transcendeum.acrium_flower": "Acrium Flower",
-      "item.the_transcendeum.berthel_axe": "Berthel Axe",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
       "block.the_transcendeum.viridian_planks": "Viridian Planks",
       "block.the_transcendeum.sullen_sandstone": "Sullen Sandstone",
       "item.the_transcendeum.virilily": "Virilily",
-      "item.the_transcendeum.berthel_pickaxe": "Berthel Pickaxe",
       "biome.the_transcendeum.aurea_plains": "Aurea Plains",
       "itemGroup.tabtranscendeum_combat": "Transcendeum Combat",
       "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
@@ -1859,6 +1914,10 @@
         "children": []
       },
       {
+        "name": "Tools",
+        "children": []
+      },
+      {
         "name": "Structures",
         "children": [
           {
@@ -1884,11 +1943,20 @@
         "children": []
       },
       {
-        "name": "recipes",
-        "children": []
+        "name": "loot tables",
+        "children": [
+          {
+            "name": "blocks",
+            "children": []
+          },
+          {
+            "name": "structure loot",
+            "children": []
+          }
+        ]
       },
       {
-        "name": "Tools",
+        "name": "recipes",
         "children": []
       }
     ]
