@@ -36,6 +36,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
+import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.entity.ai.goal.OwnerHurtTargetGoal;
 import net.minecraft.entity.ai.goal.OwnerHurtByTargetGoal;
@@ -55,10 +56,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 
-import java.util.Map;
-import java.util.HashMap;
-
-import io.github.team_lodestar.transcendeum.procedures.ArcedeonOnEntityTickUpdateProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.item.VirililyItem;
 import io.github.team_lodestar.transcendeum.entity.renderer.ArcedeonRenderer;
@@ -68,7 +65,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(1.2f, 0.8f)).build("arcedeon").setRegistryName("arcedeon");
+			.size(1.5f, 0.5f)).build("arcedeon").setRegistryName("arcedeon");
 	public ArcedeonEntity(TheTranscendeumModElements instance) {
 		super(instance, 158);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ArcedeonRenderer.ModelRegisterHandler());
@@ -182,12 +179,13 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 1.8, 40));
-			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.fromItems(VirililyItem.block), false));
-			this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-			this.goalSelector.addGoal(5, new OwnerHurtTargetGoal(this));
-			this.goalSelector.addGoal(6, new OwnerHurtByTargetGoal(this));
+			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 10, 40));
+			this.goalSelector.addGoal(2, new SwimGoal(this));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.fromItems(VirililyItem.block), false));
+			this.goalSelector.addGoal(5, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+			this.goalSelector.addGoal(6, new OwnerHurtTargetGoal(this));
+			this.goalSelector.addGoal(7, new OwnerHurtByTargetGoal(this));
 		}
 
 		@Override
@@ -208,13 +206,6 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.dolphin.death"));
-		}
-
-		@Override
-		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source == DamageSource.DROWN)
-				return false;
-			return super.attackEntityFrom(source, amount);
 		}
 
 		@Override
@@ -264,20 +255,6 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				ArcedeonOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
 		public AgeableEntity func_241840_a(ServerWorld serverWorld, AgeableEntity ageable) {
 			CustomEntity retval = (CustomEntity) entity.create(serverWorld);
 			retval.onInitialSpawn(serverWorld, serverWorld.getDifficultyForLocation(new BlockPos(retval.getPosition())), SpawnReason.BREEDING,
@@ -324,7 +301,7 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 				if (entity instanceof LivingEntity) {
 					this.setAIMoveSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
 					float forward = ((LivingEntity) entity).moveForward;
-					float strafe = 0;
+					float strafe = ((LivingEntity) entity).moveStrafing;
 					super.travel(new Vector3d(strafe, 0, forward));
 				}
 				this.prevLimbSwingAmount = this.limbSwingAmount;
