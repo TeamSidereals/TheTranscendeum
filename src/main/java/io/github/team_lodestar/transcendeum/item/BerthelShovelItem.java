@@ -1,12 +1,21 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+
 @TheTranscendeumModElements.ModElement.Tag
 public class BerthelShovelItem extends TheTranscendeumModElements.ModElement {
-
 	@ObjectHolder("the_transcendeum:berthel_shovel")
 	public static final Item block = null;
-
 	public BerthelShovelItem(TheTranscendeumModElements instance) {
 		super(instance, 149);
 	}
@@ -38,8 +47,6 @@ public class BerthelShovelItem extends TheTranscendeumModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(BerthelShardItem.block));
 			}
 		}, 1, -3.1f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
-
 		}.setRegistryName("berthel_shovel"));
 	}
-
 }
