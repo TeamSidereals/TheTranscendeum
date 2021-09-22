@@ -55,6 +55,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.procedures.ArcedeonOnEntityTickUpdateProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.item.VirililyItem;
 import io.github.team_lodestar.transcendeum.entity.renderer.ArcedeonRenderer;
@@ -64,7 +68,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("arcedeon").setRegistryName("arcedeon");
+			.size(1.2f, 0.8f)).build("arcedeon").setRegistryName("arcedeon");
 	public ArcedeonEntity(TheTranscendeumModElements instance) {
 		super(instance, 158);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ArcedeonRenderer.ModelRegisterHandler());
@@ -178,7 +182,7 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 1, 40));
+			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 1.8, 40));
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.fromItems(VirililyItem.block), false));
 			this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
@@ -257,6 +261,20 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 			}
 			sourceentity.startRiding(this);
 			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				ArcedeonOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

@@ -33,8 +33,8 @@ public class SullenCanyonBiome extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-3036015).setWaterColor(-13384205).setWaterFogColor(-6045906)
-						.withSkyColor(-3036015).withFoliageColor(-6307992).withGrassColor(-6307992).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-5321758).setWaterColor(-13384205).setWaterFogColor(-6045906)
+						.withSkyColor(-5321758).withFoliageColor(-6307992).withGrassColor(-6307992).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SullenSandstoneBlock.block.getDefaultState(),
 								Blocks.GRANITE.getDefaultState(), Blocks.GRANITE.getDefaultState())));
