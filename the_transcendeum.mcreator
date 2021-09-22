@@ -1804,23 +1804,6 @@
       "ids": {},
       "registry_name": "arcedeon",
       "path": "~/mobs"
-    },
-    {
-      "name": "ArcedeonOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 159,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "arcedeon_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],
