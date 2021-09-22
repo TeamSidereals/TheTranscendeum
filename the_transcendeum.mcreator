@@ -1613,7 +1613,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_sword",
-      "path": "~/Tools"
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "TranscendentMobs",
@@ -1622,7 +1622,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "transcendent_mobs"
+      "registry_name": "transcendent_mobs",
+      "path": "~/Tags"
     },
     {
       "name": "BerthelShovelCrafting",
@@ -1642,7 +1643,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_axe",
-      "path": "~/Tools"
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelHoe",
@@ -1652,7 +1653,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_hoe",
-      "path": "~/Tools"
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelShardsFromCrystalCrafting",
@@ -1672,7 +1673,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_pickaxe",
-      "path": "~/Tools"
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelPickaxeCrafting",
@@ -1712,7 +1713,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_shovel",
-      "path": "~/Tools"
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelHoeCrafting",
@@ -1807,12 +1808,12 @@
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
-      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
-      "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.viridian_fence": "Viridian Fence",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.viridian_fence_gate": "Viridian Fence Gate",
@@ -1830,8 +1831,8 @@
       "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
-      "entity.the_transcendeum.arffel": "Arffel",
       "item.the_transcendeum.berthel_shard": "Berthel Shard",
+      "entity.the_transcendeum.arffel": "Arffel",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
@@ -1851,8 +1852,8 @@
       "biome.the_transcendeum.mordhen_wastes": "Viridian Mires",
       "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
-      "block.the_transcendeum.acrium_virilily_block": "Corium Virilily",
       "block.the_transcendeum.kelave_wood": "Kelave Wood",
+      "block.the_transcendeum.acrium_virilily_block": "Corium Virilily",
       "block.the_transcendeum.stariam_slab": "Stariam Slab",
       "biome.the_transcendeum.salt_lowlands": "Salt Lowlands",
       "block.the_transcendeum.berthel_crystal_block": "Berthel Crystal Block",
