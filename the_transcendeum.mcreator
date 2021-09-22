@@ -1612,7 +1612,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_sword"
+      "registry_name": "berthel_sword",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "TranscendentMobs",
@@ -1621,7 +1622,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "transcendent_mobs"
+      "registry_name": "transcendent_mobs",
+      "path": "~/Tags"
     },
     {
       "name": "BerthelShovelCrafting",
@@ -1640,7 +1642,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_axe"
+      "registry_name": "berthel_axe",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelHoe",
@@ -1649,7 +1652,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_hoe"
+      "registry_name": "berthel_hoe",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelShardsFromCrystalCrafting",
@@ -1668,7 +1672,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_pickaxe"
+      "registry_name": "berthel_pickaxe",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelPickaxeCrafting",
@@ -1707,7 +1712,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_shovel"
+      "registry_name": "berthel_shovel",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "BerthelHoeCrafting",
@@ -1788,6 +1794,16 @@
       "ids": {},
       "registry_name": "somberstone_stone_axe_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "Arcedeon",
+      "type": "livingentity",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon",
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [],
@@ -1833,6 +1849,7 @@
       "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
+      "entity.the_transcendeum.arcedeon": "Arcedeon",
       "block.the_transcendeum.stariam_button": "Stariam Button",
       "biome.the_transcendeum.agarith": "Agarith",
       "item.the_transcendeum.large_virilily": "Large Virilily",
@@ -1883,6 +1900,7 @@
       "item.the_transcendeum.virilily": "Virilily",
       "item.the_transcendeum.berthel_pickaxe": "Berthel Pickaxe",
       "biome.the_transcendeum.aurea_plains": "Aurea Plains",
+      "item.the_transcendeum.arcedeon_spawn_egg": "Arcedeon Spawn Egg",
       "itemGroup.tabtranscendeum_combat": "Transcendeum Combat",
       "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
       "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
