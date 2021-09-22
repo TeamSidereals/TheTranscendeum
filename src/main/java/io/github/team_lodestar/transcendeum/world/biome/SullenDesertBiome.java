@@ -51,8 +51,8 @@ public class SullenDesertBiome extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6600957).setWaterColor(-13384205).setWaterFogColor(-6045906)
-						.withSkyColor(-6600957).withFoliageColor(-6307992).withGrassColor(-6307992).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6128027).setWaterColor(-13384205).setWaterFogColor(-6045906)
+						.withSkyColor(-6128027).withFoliageColor(-6307992).withGrassColor(-6307992).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SullenSandBlock.block.getDefaultState(),
 								SullenSandstoneBlock.block.getDefaultState(), SullenSandstoneBlock.block.getDefaultState())));

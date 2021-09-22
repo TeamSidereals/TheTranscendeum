@@ -27,6 +27,10 @@ import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
@@ -114,6 +118,12 @@ public class IaprieGrassBlock extends TheTranscendeumModElements.ModElement {
 			super(Effects.HASTE, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("iaprie_grass");
+		}
+
+		@Override
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			Vector3d offset = state.getOffset(world, pos);
+			return VoxelShapes.or(makeCuboidShape(1, 0, 1, 15, 8, 15)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

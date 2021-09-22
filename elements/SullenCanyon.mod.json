@@ -10,7 +10,7 @@
       "value": "Blocks.STONE#1"
     },
     "airColor": {
-      "value": -11785456,
+      "value": -3036015,
       "falpha": 0.0
     },
     "grassColor": {
@@ -49,7 +49,7 @@
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
     "parent": {
-      "value": "CUSTOM:CalidWoodlands"
+      "value": "No parent"
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
