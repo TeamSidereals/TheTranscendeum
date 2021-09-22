@@ -18,7 +18,7 @@ public class TranscendeumGearItemGroup extends TheTranscendeumModElements.ModEle
 
 	@Override
 	public void initElements() {
-		tab = new ItemGroup("tabtranscendeum_combat") {
+		tab = new ItemGroup("tabtranscendeum_gear") {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {

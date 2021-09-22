@@ -1613,7 +1613,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_sword",
-      "path": "~/gear sets/Tools"
+      "path": "~/Tools"
     },
     {
       "name": "TranscendentMobs",
@@ -1642,7 +1642,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_axe",
-      "path": "~/gear sets/Tools"
+      "path": "~/Tools"
     },
     {
       "name": "BerthelHoe",
@@ -1652,7 +1652,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_hoe",
-      "path": "~/gear sets/Tools"
+      "path": "~/Tools"
     },
     {
       "name": "BerthelShardsFromCrystalCrafting",
@@ -1672,7 +1672,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_pickaxe",
-      "path": "~/gear sets/Tools"
+      "path": "~/Tools"
     },
     {
       "name": "BerthelPickaxeCrafting",
@@ -1712,7 +1712,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "berthel_shovel",
-      "path": "~/gear sets/Tools"
+      "path": "~/Tools"
     },
     {
       "name": "BerthelHoeCrafting",
