@@ -1612,8 +1612,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_sword",
-      "path": "~/gear sets/Tools"
+      "registry_name": "berthel_sword"
     },
     {
       "name": "TranscendentMobs",
@@ -1622,8 +1621,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "transcendent_mobs",
-      "path": "~/Tags"
+      "registry_name": "transcendent_mobs"
     },
     {
       "name": "BerthelShovelCrafting",
@@ -1642,8 +1640,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_axe",
-      "path": "~/gear sets/Tools"
+      "registry_name": "berthel_axe"
     },
     {
       "name": "BerthelHoe",
@@ -1652,8 +1649,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_hoe",
-      "path": "~/gear sets/Tools"
+      "registry_name": "berthel_hoe"
     },
     {
       "name": "BerthelShardsFromCrystalCrafting",
@@ -1672,8 +1668,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_pickaxe",
-      "path": "~/gear sets/Tools"
+      "registry_name": "berthel_pickaxe"
     },
     {
       "name": "BerthelPickaxeCrafting",
@@ -1712,8 +1707,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_shovel",
-      "path": "~/gear sets/Tools"
+      "registry_name": "berthel_shovel"
     },
     {
       "name": "BerthelHoeCrafting",
@@ -1852,8 +1846,8 @@
       "biome.the_transcendeum.mordhen_wastes": "Viridian Mires",
       "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
-      "block.the_transcendeum.kelave_wood": "Kelave Wood",
       "block.the_transcendeum.acrium_virilily_block": "Corium Virilily",
+      "block.the_transcendeum.kelave_wood": "Kelave Wood",
       "block.the_transcendeum.stariam_slab": "Stariam Slab",
       "biome.the_transcendeum.salt_lowlands": "Salt Lowlands",
       "block.the_transcendeum.berthel_crystal_block": "Berthel Crystal Block",
