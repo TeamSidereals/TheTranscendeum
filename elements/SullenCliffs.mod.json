@@ -57,7 +57,7 @@
     "heightVariation": 0.2,
     "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 50,
+    "biomeWeight": 25,
     "biomeDictionaryTypes": [
       "WASTELAND",
       "HOT",

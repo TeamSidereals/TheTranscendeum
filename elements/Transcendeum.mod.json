@@ -41,7 +41,7 @@
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
-    "canRespawnHere": true,
+    "canRespawnHere": false,
     "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
