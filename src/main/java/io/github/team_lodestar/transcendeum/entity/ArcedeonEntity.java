@@ -35,6 +35,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.passive.SquidEntity;
+import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
@@ -179,13 +180,14 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 10, 40));
-			this.goalSelector.addGoal(2, new SwimGoal(this));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.fromItems(VirililyItem.block), false));
-			this.goalSelector.addGoal(5, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-			this.goalSelector.addGoal(6, new OwnerHurtTargetGoal(this));
-			this.goalSelector.addGoal(7, new OwnerHurtByTargetGoal(this));
+			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 5, 40));
+			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 5));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(5, new TemptGoal(this, 1, Ingredient.fromItems(VirililyItem.block), false));
+			this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+			this.goalSelector.addGoal(7, new OwnerHurtTargetGoal(this));
+			this.goalSelector.addGoal(8, new OwnerHurtByTargetGoal(this));
 		}
 
 		@Override

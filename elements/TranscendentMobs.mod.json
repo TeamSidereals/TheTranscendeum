@@ -12,6 +12,9 @@
       },
       {
         "value": "CUSTOM:Puffel"
+      },
+      {
+        "value": "CUSTOM:Arcedeon"
       }
     ],
     "name": "transcendent_mobs",
