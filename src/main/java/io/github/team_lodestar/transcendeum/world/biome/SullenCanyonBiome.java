@@ -17,7 +17,6 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.RegistryKey;
-import net.minecraft.block.Blocks;
 
 import io.github.team_lodestar.transcendeum.block.SullenSandstoneBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -37,7 +36,7 @@ public class SullenCanyonBiome extends TheTranscendeumModElements.ModElement {
 						.withSkyColor(-5321758).withFoliageColor(-6307992).withGrassColor(-6307992).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SullenSandstoneBlock.block.getDefaultState(),
-								Blocks.GRANITE.getDefaultState(), Blocks.GRANITE.getDefaultState())));
+								SullenSandstoneBlock.block.getDefaultState(), SullenSandstoneBlock.block.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.DESERT).depth(0f).scale(0.3f).temperature(2f)
