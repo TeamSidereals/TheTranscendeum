@@ -1362,7 +1362,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "LilyPadValidPlacementCondition",
@@ -1603,7 +1604,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_crystal_drops"
+      "registry_name": "berthel_crystal_drops",
+      "path": "~/loot tables/blocks"
     },
     {
       "name": "BerthelSword",
@@ -1898,6 +1900,79 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "polished_sulkstone_pressure_plate"
+    },
+    {
+      "name": "ArcedeonOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BerthelArmor",
+      "type": "armor",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/gear sets/armor"
+    },
+    {
+      "name": "BerthelArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_armor_helmet_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BerthelArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_armor_body_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BerthelArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_armor_leggings_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BerthelArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_armor_boots_recipe",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [],
@@ -1912,12 +1987,13 @@
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
-      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
-      "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.viridian_fence": "Viridian Fence",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.viridian_fence_gate": "Viridian Fence Gate",
@@ -1925,6 +2001,7 @@
       "block.the_transcendeum.viridian_wood": "Viridian Wood",
       "block.the_transcendeum.kelave_woodlet": "Kelave Wood",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
+      "item.the_transcendeum.berthel_armor_leggings": "Berthel Leggings",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.sulkstone_wall": "Sulkstone Wall",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
@@ -1937,8 +2014,8 @@
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
-      "entity.the_transcendeum.arffel": "Arffel",
       "item.the_transcendeum.berthel_shard": "Berthel Shard",
+      "entity.the_transcendeum.arffel": "Arffel",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
@@ -1993,6 +2070,7 @@
       "block.the_transcendeum.viridian_leaves": "Viridian Leaves",
       "item.the_transcendeum.corium_virilily": "Corium Virilily",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
+      "item.the_transcendeum.berthel_armor_boots": "Berthel Boots",
       "block.the_transcendeum.acrium_flower": "Acrium Flower",
       "item.the_transcendeum.berthel_axe": "Berthel Axe",
       "block.the_transcendeum.sulkstone": "Sulkstone",
@@ -2012,6 +2090,7 @@
       "block.the_transcendeum.kelave_slab": "Kelave Slab",
       "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
+      "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "block.the_transcendeum.sombersoil": "Sombersoil",

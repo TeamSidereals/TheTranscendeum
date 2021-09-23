@@ -32,7 +32,7 @@ public class BerthelAxeItem extends TheTranscendeumModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 6f;
+				return 6.5f;
 			}
 
 			public int getHarvestLevel() {

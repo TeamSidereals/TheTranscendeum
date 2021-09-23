@@ -32,7 +32,7 @@ public class BerthelSwordItem extends TheTranscendeumModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 2f;
+				return 2.5f;
 			}
 
 			public int getHarvestLevel() {
