@@ -2035,13 +2035,33 @@
       "path": "~/mobs"
     },
     {
-      "name": "SullenBoulder",
+      "name": "SullenHoodoo2",
       "type": "structure",
-      "sortid": 178,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sullen_boulder",
+      "registry_name": "sullen_hoodoo_2",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenHoodoo1",
+      "type": "structure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_hoodoo_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenHoodoo3",
+      "type": "structure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_hoodoo_3",
       "path": "~/Structures/Natural"
     },
     {
@@ -2065,34 +2085,24 @@
       "path": "~/Structures/Natural"
     },
     {
-      "name": "SullenHoodoo1",
+      "name": "SullenBoulder",
       "type": "structure",
-      "sortid": 181,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sullen_hoodoo_1",
+      "registry_name": "sullen_boulder",
       "path": "~/Structures/Natural"
     },
     {
-      "name": "SullenHoodoo2",
-      "type": "structure",
-      "sortid": 182,
+      "name": "AvoiderKillable",
+      "type": "tag",
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sullen_hoodoo_2",
-      "path": "~/Structures/Natural"
-    },
-    {
-      "name": "SullenHoodoo3",
-      "type": "structure",
-      "sortid": 183,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sullen_hoodoo_3",
-      "path": "~/Structures/Natural"
+      "registry_name": "avoider_killable",
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [],
