@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "berthel_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:TranscendeumGear"
     },
     "armorTextureFile": "berthel_",
     "helmetName": "Berthel Helmet",
