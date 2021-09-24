@@ -41,7 +41,7 @@
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
     "parent": {
-      "value": "CUSTOM:CrystaliaForest"
+      "value": "CUSTOM:AureaPlains"
     },
     "rainingPossibility": 0.0,
     "temperature": 0.5,

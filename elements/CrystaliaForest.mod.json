@@ -41,13 +41,13 @@
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:SaltLowlands"
     },
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "biomeType": "COOL",
     "spawnBiome": false,
     "biomeWeight": 30,
     "biomeDictionaryTypes": [],

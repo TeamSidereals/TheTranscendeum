@@ -49,7 +49,7 @@
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:ViridianMires"
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
