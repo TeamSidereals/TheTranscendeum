@@ -4,8 +4,8 @@
   "definition": {
     "structure": "kelave_tree",
     "randomlyRotateStructure": false,
-    "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 700000,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 720000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -25,6 +25,6 @@
         "value": "CUSTOM:AureaForest"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
   }
 }
