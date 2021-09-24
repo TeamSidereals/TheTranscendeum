@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "the_transcendeum:blocks/morosite",
+    "top": "the_transcendeum:blocks/morosite",
+    "side": "the_transcendeum:blocks/morosite"
+  }
+}
