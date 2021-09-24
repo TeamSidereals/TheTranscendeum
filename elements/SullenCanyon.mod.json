@@ -7,10 +7,10 @@
       "value": "CUSTOM:SullenSandstone"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#1"
+      "value": "CUSTOM:SullenSandstone"
     },
     "airColor": {
-      "value": -3036015,
+      "value": -5321758,
       "falpha": 0.0
     },
     "grassColor": {

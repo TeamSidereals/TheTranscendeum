@@ -1,0 +1,29 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:berthel_shard"
+    },
+    "1": {
+      "item": "the_transcendeum:berthel_shard"
+    },
+    "2": {
+      "item": "the_transcendeum:berthel_shard"
+    },
+    "3": {
+      "item": "the_transcendeum:berthel_shard"
+    },
+    "5": {
+      "item": "the_transcendeum:berthel_shard"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:berthel_armor_helmet",
+    "count": 1
+  }
+}

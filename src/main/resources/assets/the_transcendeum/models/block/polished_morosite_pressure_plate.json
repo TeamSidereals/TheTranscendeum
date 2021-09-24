@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "the_transcendeum:blocks/polished_morosite"
+  }
+}
