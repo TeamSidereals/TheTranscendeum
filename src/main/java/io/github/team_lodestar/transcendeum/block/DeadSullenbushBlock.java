@@ -100,9 +100,9 @@ public class DeadSullenbushBlock extends TheTranscendeumModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(
-					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(96)
+					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(64)
 							.build())
-					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 3)));
+					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 2)));
 			event.getRegistry().register(feature.setRegistryName("dead_sullenbush"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:dead_sullenbush"), configuredFeature);
 		}

@@ -4,7 +4,7 @@
   "definition": {
     "name": "Sullen Canyon",
     "groundBlock": {
-      "value": "CUSTOM:SullenSandstone"
+      "value": "CUSTOM:SullenSand"
     },
     "undergroundBlock": {
       "value": "CUSTOM:SullenSandstone"
@@ -54,7 +54,7 @@
     "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.0,
-    "heightVariation": 0.30000000000000004,
+    "heightVariation": 0.0,
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 25,

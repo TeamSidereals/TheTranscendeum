@@ -85,7 +85,7 @@
     "placingCondition": {
       "name": "TranscendeumPlantsAdditionalPlacinggrowthCondition"
     },
-    "frequencyOnChunks": 3,
+    "frequencyOnChunks": 2,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
@@ -100,6 +100,6 @@
         "value": "CUSTOM:SullenDesert"
       }
     ],
-    "patchSize": 96
+    "patchSize": 64
   }
 }
