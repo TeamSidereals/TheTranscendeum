@@ -2063,6 +2063,16 @@
       "ids": {},
       "registry_name": "hyrumae_ghoul",
       "path": "~/mobs"
+    },
+    {
+      "name": "AvoiderKillable",
+      "type": "tag",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "avoider_killable",
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [],
@@ -2077,10 +2087,10 @@
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
-      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
