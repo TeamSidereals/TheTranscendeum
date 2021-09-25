@@ -128,36 +128,6 @@
       "path": "~/Biomes"
     },
     {
-      "name": "SullenCrag",
-      "type": "structure",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sullen_crag",
-      "path": "~/Structures"
-    },
-    {
-      "name": "SullenCrag1",
-      "type": "structure",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sullen_crag_1",
-      "path": "~/Structures"
-    },
-    {
-      "name": "SullenCrag2",
-      "type": "structure",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sullen_crag_2",
-      "path": "~/Structures"
-    },
-    {
       "name": "StariamSlab",
       "type": "block",
       "sortid": 25,
@@ -2063,6 +2033,76 @@
       "ids": {},
       "registry_name": "hyrumae_ghoul",
       "path": "~/mobs"
+    },
+    {
+      "name": "SullenHoodoo2",
+      "type": "structure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_hoodoo_2",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenHoodoo1",
+      "type": "structure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_hoodoo_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenHoodoo3",
+      "type": "structure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_hoodoo_3",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenBoulder1",
+      "type": "structure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_boulder_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenHoodoo",
+      "type": "structure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_hoodoo",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenBoulder",
+      "type": "structure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_boulder",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "AvoiderKillable",
+      "type": "tag",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "avoider_killable",
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [],
@@ -2077,10 +2117,10 @@
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
-      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
@@ -2271,17 +2311,19 @@
     "modid": "the_transcendeum",
     "modName": "The Transcendeum",
     "version": "0.1.0",
+    "description": "Uncover and venture upon a new magnificent, alternate-Overworld dimension transcended beyond normal reality.",
     "author": "Team Lodestar",
     "websiteURL": "https://team-lodestar.github.io",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "Texturers: Sajevius, Aqu, Dylanvhs / Coders: Sajevius / Ideas: everyone from Team Lodestar / Special thanks to MCreator for making this possible!",
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },

@@ -2,24 +2,20 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "sullen_crag_2",
+    "structure": "sullen_hoodoo",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 500000,
+    "spawnProbability": 800000,
     "minCountPerChunk": 1,
-    "maxCountPerChunk": 2,
+    "maxCountPerChunk": 4,
     "spawnLocation": "Ground",
     "spawnHeightOffset": -1,
-    "spawnXOffset": -2,
-    "spawnZOffset": -2,
+    "spawnXOffset": -1,
+    "spawnZOffset": -1,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
-    "restrictionBlocks": [
-      {
-        "value": "CUSTOM:SullenSandstone"
-      }
-    ],
+    "restrictionBlocks": [],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:SullenCanyon"

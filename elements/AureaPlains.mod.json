@@ -37,7 +37,7 @@
     "particlesProbability": 1.0,
     "biomeCategory": "PLAINS",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:CrystaliaForest"
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,

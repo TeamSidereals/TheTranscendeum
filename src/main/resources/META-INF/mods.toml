@@ -6,9 +6,13 @@ license="MIT License"
 modId="the_transcendeum"
 version="0.1.0"
 displayName="The Transcendeum"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="Texturers: Sajevius, Aqu, Dylanvhs / Coders: Sajevius / Ideas: everyone from Team Lodestar / Special thanks to MCreator for making this possible!"
 displayURL="https://team-lodestar.github.io"
+logoFile="logo.png"
 authors="Team Lodestar"
+description='''
+Uncover and venture upon a new magnificent, alternate-Overworld dimension transcended beyond normal reality.
+'''
 
 [[dependencies.the_transcendeum]]
     modId="minecraft"
