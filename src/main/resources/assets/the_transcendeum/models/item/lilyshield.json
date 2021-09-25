@@ -1,0 +1,7 @@
+{
+  "parent": "the_transcendeum:custom/virilily_aegis",
+  "textures": {
+    "0": "the_transcendeum:blocks/corium_virilily",
+    "particle": "the_transcendeum:items/acrium_virilily"
+  }
+}

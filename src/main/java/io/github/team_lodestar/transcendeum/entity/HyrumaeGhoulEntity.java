@@ -47,8 +47,8 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("hyrumae_ghoul").setRegistryName("hyrumae_ghoul");
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 2f))
+					.build("hyrumae_ghoul").setRegistryName("hyrumae_ghoul");
 	public HyrumaeGhoulEntity(TheTranscendeumModElements instance) {
 		super(instance, 177);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new HyrumaeGhoulRenderer.ModelRegisterHandler());
@@ -72,7 +72,7 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 20, 2, 4));
+		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 30, 2, 4));
 	}
 
 	@Override

@@ -70,14 +70,14 @@
     "flammability": 30,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.7999999999999999,
+    "slipperiness": 0.6,
     "speedFactor": 1.0,
-    "jumpFactor": 1.5,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "SLIME"
+      "value": "SHROOMLIGHT"
     },
     "breakSound": {
       "value": ""

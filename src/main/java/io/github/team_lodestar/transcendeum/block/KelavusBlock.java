@@ -37,8 +37,7 @@ public class KelavusBlock extends TheTranscendeumModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.SLIME).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0)
-					.slipperiness(0.7999999999999999f).jumpFactor(1.5f));
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.SHROOMLIGHT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0));
 			setRegistryName("kelavus");
 		}
 
