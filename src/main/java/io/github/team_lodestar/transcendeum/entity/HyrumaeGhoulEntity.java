@@ -84,10 +84,10 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.33);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 27);
-			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 3);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 5);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 28);
+			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 5);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 7);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -99,7 +99,7 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 4;
+			experienceValue = 5;
 			setNoAI(false);
 		}
 
