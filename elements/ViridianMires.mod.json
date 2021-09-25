@@ -39,17 +39,17 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "SWAMP",
     "parent": {
       "value": "CUSTOM:AureaPlains"
     },
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
+    "temperature": 1.5,
     "baseHeight": -0.2,
     "heightVariation": 0.1,
     "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 25,
+    "biomeWeight": 40,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,

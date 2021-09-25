@@ -4,7 +4,7 @@
   "definition": {
     "name": "Sullen Cliffs",
     "groundBlock": {
-      "value": "CUSTOM:SullenSand"
+      "value": "CUSTOM:SullenSandstone"
     },
     "undergroundBlock": {
       "value": "CUSTOM:SullenSandstone"
@@ -53,7 +53,7 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 1.8,
+    "baseHeight": 2.0,
     "heightVariation": 0.2,
     "biomeType": "DESERT",
     "spawnBiome": false,

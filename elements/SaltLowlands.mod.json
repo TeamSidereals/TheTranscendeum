@@ -10,7 +10,7 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -9065043,
+      "value": -14404290,
       "falpha": 0.0
     },
     "waterColor": {
@@ -39,17 +39,17 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "ICY",
     "parent": {
       "value": "No parent"
     },
     "rainingPossibility": 0.0,
-    "temperature": 1.5,
+    "temperature": 0.2,
     "baseHeight": -0.1,
     "heightVariation": 0.0,
     "biomeType": "ICY",
     "spawnBiome": false,
-    "biomeWeight": 30,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,

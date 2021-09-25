@@ -10,7 +10,7 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -11055767,
+      "value": -13292701,
       "falpha": 0.0
     },
     "waterColor": {
@@ -39,17 +39,17 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "FOREST",
     "parent": {
       "value": "CUSTOM:SaltLowlands"
     },
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
+    "temperature": 0.7,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "biomeType": "COOL",
     "spawnBiome": false,
-    "biomeWeight": 30,
+    "biomeWeight": 60,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,

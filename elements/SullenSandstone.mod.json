@@ -123,14 +123,10 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "blocksToReplace": [],
+    "frequencyPerChunks": 30,
+    "frequencyOnChunk": 30,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 192
   }
 }

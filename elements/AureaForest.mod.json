@@ -35,17 +35,17 @@
       "value": "CUSTOM:Twilighteris"
     },
     "particlesProbability": 1.0,
-    "biomeCategory": "PLAINS",
+    "biomeCategory": "FOREST",
     "parent": {
       "value": "CUSTOM:AureaPlains"
     },
     "rainingPossibility": 0.0,
-    "temperature": 2.0,
+    "temperature": 1.0,
     "baseHeight": -0.16,
     "heightVariation": 0.03,
     "biomeType": "COOL",
     "spawnBiome": false,
-    "biomeWeight": 100,
+    "biomeWeight": 80,
     "biomeDictionaryTypes": [
       "PLAINS"
     ],

@@ -33,7 +33,7 @@ public class TranscendentOceanBiome extends TheTranscendeumModElements.ModElemen
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SomberstoneBlock.block.getDefaultState(),
 								SomberstoneBlock.block.getDefaultState(), SomberstoneBlock.block.getDefaultState())));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(-1.5f).scale(0.1f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.OCEAN).depth(-1.5f).scale(0.1f)
 						.temperature(0.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:transcendent_ocean"));

@@ -40,7 +40,7 @@
       "value": "CUSTOM:CrystaliaForest"
     },
     "rainingPossibility": 0.0,
-    "temperature": 2.0,
+    "temperature": 1.0,
     "baseHeight": -0.15,
     "heightVariation": 0.04,
     "biomeType": "COOL",
