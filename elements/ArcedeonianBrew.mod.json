@@ -1,0 +1,30 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Arcedeonian Brew",
+    "splashName": "Splash Arcedeonian Brew",
+    "lingeringName": "Lingering Arcedeonian Brew",
+    "arrowName": "Arcedeonian Arrow",
+    "effects": [
+      {
+        "effect": {
+          "value": "DOLPHINS_GRACE"
+        },
+        "duration": 600,
+        "amplifier": 0,
+        "ambient": true,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "WATER_BREATHING"
+        },
+        "duration": 600,
+        "amplifier": 0,
+        "ambient": true,
+        "showParticles": true
+      }
+    ]
+  }
+}
