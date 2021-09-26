@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Refreshing",
+    "type": "ARMOR_HEAD",
+    "rarity": "COMMON",
+    "minLevel": 1,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:Bubble"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": false,
+    "canGenerateInLootTables": false,
+    "canVillagerTrade": false
+  }
+}

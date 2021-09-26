@@ -3,6 +3,7 @@
   "block.the_transcendeum.large_virilily_block": "Large Virilily",
   "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
   "block.the_transcendeum.scalia_wart": "Scalia Wart",
+  "block.the_transcendeum.bubble": "Bubble",
   "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
   "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
   "block.the_transcendeum.kelavus": "Kelavus",
@@ -126,6 +127,7 @@
   "block.the_transcendeum.morosite_slab": "Morosite Slab",
   "block.the_transcendeum.sombersoil": "Sombersoil",
   "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+  "enchantment.the_transcendeum.refreshing": "Refreshing",
   "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
   "entity.the_transcendeum.puffel": "Puffel"
 }
