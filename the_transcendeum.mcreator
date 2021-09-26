@@ -2124,6 +2124,96 @@
           }
         ]
       }
+    },
+    {
+      "name": "Bubble",
+      "type": "block",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubble",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "Refreshing",
+      "type": "enchantment",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "refreshing",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "BubbleClickEquip",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubble_click_equip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "BubbleTouchGiveAir",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubble_touch_give_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "BubbleHelmGiveAir",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubble_helm_give_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LyofsPlace"
     }
   ],
   "variable_elements": [],
@@ -2134,6 +2224,7 @@
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
+      "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
@@ -2165,6 +2256,7 @@
       "block.the_transcendeum.morosite": "Morosite",
       "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
+      "item.the_transcendeum.lilyshield": "Lilyshield",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "entity.the_transcendeum.arffel": "Arffel",
@@ -2324,6 +2416,10 @@
       },
       {
         "name": "recipes",
+        "children": []
+      },
+      {
+        "name": "LyofsPlace",
         "children": []
       }
     ]
