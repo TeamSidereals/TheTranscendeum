@@ -5,6 +5,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -18,6 +20,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 import io.github.team_lodestar.transcendeum.enchantment.RefreshingEnchantment;
+import io.github.team_lodestar.transcendeum.enchantment.AquadynamicEnchantment;
 import io.github.team_lodestar.transcendeum.block.BubbleBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
@@ -53,6 +56,22 @@ public class BubbleHelmGiveAirProcedure {
 		if ((((entity instanceof LivingEntity)
 				? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 				: ItemStack.EMPTY).getItem() == BubbleBlock.block.asItem())) {
+			if (((EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
+					((entity instanceof LivingEntity)
+							? ((LivingEntity) entity)
+									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
+							: ItemStack.EMPTY))) != 0)) {
+				if ((entity.isInWater())) {
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20,
+								(int) (1 + (EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
+										((entity instanceof LivingEntity)
+												? ((LivingEntity) entity).getItemStackFromSlot(
+														EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
+												: ItemStack.EMPTY)))),
+								(false), (false)));
+				}
+			}
 			if (((entity.getAir()) == 0)) {
 				entity.setAir((int) 250);
 				if (entity instanceof LivingEntity)

@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "Items.POTIONITEM"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:EfowWeed"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:ArcedeonianBrew"
+    },
+    "name": "arcedeonian_brew_craft",
+    "namespace": "mod"
+  }
+}
