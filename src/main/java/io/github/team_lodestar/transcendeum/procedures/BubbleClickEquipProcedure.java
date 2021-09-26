@@ -1,7 +1,20 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class BubbleClickEquipProcedure {
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
+import java.util.Map;
+
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class BubbleClickEquipProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -28,13 +41,11 @@ public class BubbleClickEquipProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure BubbleClickEquip!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if ((entity.isSneaking())) {
 			if ((((entity instanceof LivingEntity)
 					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
@@ -56,5 +67,4 @@ public class BubbleClickEquipProcedure {
 			}
 		}
 	}
-
 }

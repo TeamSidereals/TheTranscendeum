@@ -2255,8 +2255,8 @@
       "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
       "block.the_transcendeum.morosite": "Morosite",
       "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
-      "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "item.the_transcendeum.lilyshield": "Lilyshield",
+      "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "entity.the_transcendeum.arffel": "Arffel",
@@ -2348,6 +2348,7 @@
       "block.the_transcendeum.morosite_slab": "Morosite Slab",
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+      "enchantment.the_transcendeum.refreshing": "Refreshing",
       "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
       "entity.the_transcendeum.puffel": "Puffel"
     }

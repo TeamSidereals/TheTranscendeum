@@ -1,7 +1,27 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class BubbleHelmGiveAirProcedure {
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.World;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.block.Blocks;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.enchantment.RefreshingEnchantment;
+import io.github.team_lodestar.transcendeum.block.BubbleBlock;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class BubbleHelmGiveAirProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -23,16 +43,13 @@ public class BubbleHelmGiveAirProcedure {
 			}
 		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure BubbleHelmGiveAir!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if ((((entity instanceof LivingEntity)
 				? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 				: ItemStack.EMPTY).getItem() == BubbleBlock.block.asItem())) {
@@ -58,5 +75,4 @@ public class BubbleHelmGiveAirProcedure {
 			}
 		}
 	}
-
 }

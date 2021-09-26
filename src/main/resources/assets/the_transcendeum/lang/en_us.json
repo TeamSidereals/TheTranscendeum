@@ -8,10 +8,10 @@
   "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
   "block.the_transcendeum.kelavus": "Kelavus",
   "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
-  "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
   "block.the_transcendeum.kelave_fence": "Kelave Fence",
-  "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+  "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
   "block.the_transcendeum.stariam_wood": "Stariam Wood",
+  "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
   "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
   "block.the_transcendeum.somberstone": "Somberstone",
   "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
@@ -127,6 +127,7 @@
   "block.the_transcendeum.morosite_slab": "Morosite Slab",
   "block.the_transcendeum.sombersoil": "Sombersoil",
   "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+  "enchantment.the_transcendeum.refreshing": "Refreshing",
   "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
   "entity.the_transcendeum.puffel": "Puffel"
 }
