@@ -2214,6 +2214,87 @@
         ]
       },
       "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowWeed",
+      "type": "block",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_weed",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowWeedBreakChange",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_weed_break_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowIfCanPlace",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_if_can_place",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowWeedGrowable",
+      "type": "tag",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_weed_growable",
+      "path": "~/LyofsPlace"
     }
   ],
   "variable_elements": [],
@@ -2229,10 +2310,10 @@
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
-      "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
-      "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
@@ -2255,8 +2336,8 @@
       "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
       "block.the_transcendeum.morosite": "Morosite",
       "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
-      "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "item.the_transcendeum.lilyshield": "Lilyshield",
+      "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "entity.the_transcendeum.arffel": "Arffel",
@@ -2280,6 +2361,7 @@
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "block.the_transcendeum.sullcactus": "Sullcactus",
+      "block.the_transcendeum.efow_weed": "Efow Weed",
       "block.the_transcendeum.viridian_log": "Viridian Log",
       "block.the_transcendeum.saltrock": "Saltrock",
       "biome.the_transcendeum.mordhen_wastes": "Viridian Mires",
@@ -2348,6 +2430,7 @@
       "block.the_transcendeum.morosite_slab": "Morosite Slab",
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+      "enchantment.the_transcendeum.refreshing": "Refreshing",
       "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
       "entity.the_transcendeum.puffel": "Puffel"
     }

@@ -59,6 +59,7 @@
   "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
   "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
   "block.the_transcendeum.sullcactus": "Sullcactus",
+  "block.the_transcendeum.efow_weed": "Efow Weed",
   "block.the_transcendeum.viridian_log": "Viridian Log",
   "block.the_transcendeum.saltrock": "Saltrock",
   "biome.the_transcendeum.mordhen_wastes": "Viridian Mires",
@@ -127,6 +128,7 @@
   "block.the_transcendeum.morosite_slab": "Morosite Slab",
   "block.the_transcendeum.sombersoil": "Sombersoil",
   "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+  "enchantment.the_transcendeum.refreshing": "Refreshing",
   "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
   "entity.the_transcendeum.puffel": "Puffel"
 }

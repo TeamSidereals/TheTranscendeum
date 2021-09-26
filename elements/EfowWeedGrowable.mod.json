@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:SullenSand"
+      },
+      {
+        "value": "CUSTOM:EfowWeed"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "efow_weed_growable",
+    "namespace": "forge"
+  }
+}
