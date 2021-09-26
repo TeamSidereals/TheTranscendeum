@@ -58,9 +58,9 @@ public class HyrumaeAttackWeaknessProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		if ((sourceentity instanceof HyrumaeGhoulEntity.CustomEntity)) {
-			if ((Math.random() < 0.5)) {
+			if ((Math.random() < 0.2)) {
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 60, (int) 1, (true), (true)));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 60, (int) 1, (false), (true)));
 			}
 		}
 	}
