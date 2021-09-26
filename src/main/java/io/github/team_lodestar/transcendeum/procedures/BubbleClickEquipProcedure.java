@@ -60,6 +60,9 @@ public class BubbleClickEquipProcedure {
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
+				(((entity instanceof LivingEntity)
+						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
+						: ItemStack.EMPTY)).setCount((int) 1);
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			}
 		}
