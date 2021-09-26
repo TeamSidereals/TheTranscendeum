@@ -64,12 +64,12 @@ public class BubbleHelmGiveAirProcedure {
 				if ((entity.isInWater())) {
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20,
-								(int) (1 + (EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
+								(int) (2 + (EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
 										((entity instanceof LivingEntity)
 												? ((LivingEntity) entity).getItemStackFromSlot(
 														EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 												: ItemStack.EMPTY)))),
-								(false), (false)));
+								(true), (false)));
 				}
 			}
 			if (((entity.getAir()) == 0)) {
@@ -82,6 +82,8 @@ public class BubbleHelmGiveAirProcedure {
 													EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 											: ItemStack.EMPTY)))
 									* 4)));
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WATER_BREATHING, (int) 100, (int) 0, (true), (false)));
 				if (entity instanceof LivingEntity) {
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).inventory.armorInventory.set((int) 3, new ItemStack(Blocks.AIR));

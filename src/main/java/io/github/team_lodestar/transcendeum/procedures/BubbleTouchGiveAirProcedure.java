@@ -14,7 +14,7 @@ public class BubbleTouchGiveAirProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((entity.getAir()) < 251)) {
+		if (((entity.getAir()) < 252)) {
 			entity.setAir((int) ((entity.getAir()) + 2));
 		}
 	}
