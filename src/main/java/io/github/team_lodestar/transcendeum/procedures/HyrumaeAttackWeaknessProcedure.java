@@ -60,7 +60,7 @@ public class HyrumaeAttackWeaknessProcedure {
 		if ((sourceentity instanceof HyrumaeGhoulEntity.CustomEntity)) {
 			if ((Math.random() < 0.2)) {
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 60, (int) 1, (false), (true)));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 60, (int) 1, (false), (true)));
 			}
 		}
 	}

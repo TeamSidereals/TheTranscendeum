@@ -15,6 +15,9 @@
       },
       {
         "value": "CUSTOM:Arcedeon"
+      },
+      {
+        "value": "CUSTOM:HyrumaeGhoul"
       }
     ],
     "name": "transcendent_mobs",
