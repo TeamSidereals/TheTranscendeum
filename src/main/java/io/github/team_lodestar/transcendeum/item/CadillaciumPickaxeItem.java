@@ -1,21 +1,12 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
-import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
-
 @TheTranscendeumModElements.ModElement.Tag
 public class CadillaciumPickaxeItem extends TheTranscendeumModElements.ModElement {
+
 	@ObjectHolder("the_transcendeum:cadillacium_pickaxe")
 	public static final Item block = null;
+
 	public CadillaciumPickaxeItem(TheTranscendeumModElements instance) {
 		super(instance, 204);
 	}
@@ -47,6 +38,8 @@ public class CadillaciumPickaxeItem extends TheTranscendeumModElements.ModElemen
 				return Ingredient.fromStacks(new ItemStack(CadillaciumIngotItem.block));
 			}
 		}, 1, -2.8f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+
 		}.setRegistryName("cadillacium_pickaxe"));
 	}
+
 }

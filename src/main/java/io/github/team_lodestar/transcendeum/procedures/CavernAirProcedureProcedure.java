@@ -1,0 +1,63 @@
+package io.github.team_lodestar.transcendeum.procedures;
+
+public class CavernAirProcedureProcedure {
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("x") == null) {
+			if (!dependencies.containsKey("x"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency x for procedure CavernAirProcedure!");
+			return;
+		}
+		if (dependencies.get("y") == null) {
+			if (!dependencies.containsKey("y"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency y for procedure CavernAirProcedure!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			if (!dependencies.containsKey("z"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure CavernAirProcedure!");
+			return;
+		}
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure CavernAirProcedure!");
+			return;
+		}
+
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		IWorld world = (IWorld) dependencies.get("world");
+
+		double zs = 0;
+		double ys = 0;
+		double xs = 0;
+		if ((y <= 40)) {
+			zs = (double) (-32);
+			for (int index0 = 0; index0 < (int) (64); index0++) {
+				xs = (double) (-32);
+				for (int index1 = 0; index1 < (int) (64); index1++) {
+					ys = (double) (-8);
+					for (int index2 = 0; index2 < (int) (16); index2++) {
+						ys = (double) (ys + 1);
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+
+							$_dependencies.put("world", world);
+
+							$_dependencies.put("x", (x + xs));
+							$_dependencies.put("y", (y + ys));
+							$_dependencies.put("z", (z + zs));
+
+							CavernAirUpdateTickProcedure.executeProcedure($_dependencies);
+						}
+					}
+					xs = (double) (xs + 1);
+				}
+				zs = (double) (zs + 1);
+			}
+		}
+		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SomberstoneBlock.block.getDefaultState(), 3);
+	}
+
+}
