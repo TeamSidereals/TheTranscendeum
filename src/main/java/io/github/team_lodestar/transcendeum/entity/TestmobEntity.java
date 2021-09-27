@@ -54,7 +54,7 @@ public class TestmobEntity extends TheTranscendeumModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("testmob").setRegistryName("testmob");
 	public TestmobEntity(TheTranscendeumModElements instance) {
-		super(instance, 191);
+		super(instance, 197);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TestmobRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -63,7 +63,7 @@ public class TestmobEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -3407668, -10092442, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -3381505, -154, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
 				.setRegistryName("testmob_spawn_egg"));
 	}
 

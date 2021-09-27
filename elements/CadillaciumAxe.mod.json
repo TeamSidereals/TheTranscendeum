@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "cadillacium_axe",
+    "customModelName": "Normal",
+    "name": "Cadillacium Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumGear"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 20,
+    "damageVsEntity": 8.0,
+    "usageCount": 916,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CadillaciumIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
