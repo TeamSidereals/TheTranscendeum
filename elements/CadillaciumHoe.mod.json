@@ -3,25 +3,25 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "berthel_sword",
+    "texture": "cadillacium_pickaxe",
     "customModelName": "Normal",
-    "name": "Berthel Sword",
+    "name": "Cadillacium Hoe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumGear"
     },
-    "toolType": "Sword",
+    "toolType": "Hoe",
     "harvestLevel": 1,
     "efficiency": 4.0,
-    "attackSpeed": 1.6,
-    "enchantability": 11,
-    "damageVsEntity": 4.5,
-    "usageCount": 532,
+    "attackSpeed": 4.0,
+    "enchantability": 20,
+    "damageVsEntity": 1.0,
+    "usageCount": 916,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:BerthelShard"
+        "value": "CUSTOM:CadillaciumIngot"
       }
     ],
     "immuneToFire": false,

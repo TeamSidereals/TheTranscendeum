@@ -24,7 +24,7 @@ public class BerthelAxeItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new AxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 1050;
+				return 532;
 			}
 
 			public float getEfficiency() {

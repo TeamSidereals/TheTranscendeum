@@ -3,9 +3,9 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "berthel_sword",
+    "texture": "cadillacium_sword",
     "customModelName": "Normal",
-    "name": "Berthel Sword",
+    "name": "Cadillacium Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumGear"
@@ -14,14 +14,14 @@
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.6,
-    "enchantability": 11,
-    "damageVsEntity": 4.5,
-    "usageCount": 532,
+    "enchantability": 20,
+    "damageVsEntity": 5.0,
+    "usageCount": 916,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:BerthelShard"
+        "value": "CUSTOM:CadillaciumIngot"
       }
     ],
     "immuneToFire": false,

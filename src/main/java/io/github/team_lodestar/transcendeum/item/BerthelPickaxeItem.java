@@ -24,7 +24,7 @@ public class BerthelPickaxeItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 1050;
+				return 532;
 			}
 
 			public float getEfficiency() {
