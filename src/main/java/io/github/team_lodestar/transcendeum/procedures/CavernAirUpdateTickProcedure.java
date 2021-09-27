@@ -12,7 +12,6 @@ import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
 import io.github.team_lodestar.transcendeum.block.ScaliaWartBlock;
 import io.github.team_lodestar.transcendeum.block.MergoanyBlock;
 import io.github.team_lodestar.transcendeum.block.IaprieGrassBlockBlock;
-import io.github.team_lodestar.transcendeum.block.ChrysaliumVineBottomBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class CavernAirUpdateTickProcedure {
@@ -59,7 +58,7 @@ public class CavernAirUpdateTickProcedure {
 					}
 				} else if (((0.2 >= Math.random())
 						&& (SomberstoneBlock.block == (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()))) {
-					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ChrysaliumVineBottomBlock.block.getDefaultState(), 3);
+					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
 				} else {
 					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
 				}
