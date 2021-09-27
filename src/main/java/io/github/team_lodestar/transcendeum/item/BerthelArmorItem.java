@@ -20,13 +20,13 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class BerthelArmorItem extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:berthel_helmet")
+	@ObjectHolder("the_transcendeum:berthel_armor_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("the_transcendeum:berthel_chestplate")
+	@ObjectHolder("the_transcendeum:berthel_armor_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("the_transcendeum:berthel_leggings")
+	@ObjectHolder("the_transcendeum:berthel_armor_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("the_transcendeum:berthel_boots")
+	@ObjectHolder("the_transcendeum:berthel_armor_boots")
 	public static final Item boots = null;
 	public BerthelArmorItem(TheTranscendeumModElements instance) {
 		super(instance, 169);
@@ -63,7 +63,7 @@ public class BerthelArmorItem extends TheTranscendeumModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public String getName() {
-				return "berthel";
+				return "berthel_armor";
 			}
 
 			@Override
@@ -81,24 +81,24 @@ public class BerthelArmorItem extends TheTranscendeumModElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "the_transcendeum:textures/models/armor/berthel__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("berthel_helmet"));
+		}.setRegistryName("berthel_armor_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "the_transcendeum:textures/models/armor/berthel__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("berthel_chestplate"));
+		}.setRegistryName("berthel_armor_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "the_transcendeum:textures/models/armor/berthel__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("berthel_leggings"));
+		}.setRegistryName("berthel_armor_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "the_transcendeum:textures/models/armor/berthel__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("berthel_boots"));
+		}.setRegistryName("berthel_armor_boots"));
 	}
 }

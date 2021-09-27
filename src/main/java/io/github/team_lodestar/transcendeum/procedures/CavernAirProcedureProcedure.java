@@ -1,7 +1,15 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class CavernAirProcedureProcedure {
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
 
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class CavernAirProcedureProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -23,12 +31,10 @@ public class CavernAirProcedureProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure CavernAirProcedure!");
 			return;
 		}
-
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		double zs = 0;
 		double ys = 0;
 		double xs = 0;
@@ -42,13 +48,10 @@ public class CavernAirProcedureProcedure {
 						ys = (double) (ys + 1);
 						{
 							Map<String, Object> $_dependencies = new HashMap<>();
-
 							$_dependencies.put("world", world);
-
 							$_dependencies.put("x", (x + xs));
 							$_dependencies.put("y", (y + ys));
 							$_dependencies.put("z", (z + zs));
-
 							CavernAirUpdateTickProcedure.executeProcedure($_dependencies);
 						}
 					}
@@ -59,5 +62,4 @@ public class CavernAirProcedureProcedure {
 		}
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SomberstoneBlock.block.getDefaultState(), 3);
 	}
-
 }
