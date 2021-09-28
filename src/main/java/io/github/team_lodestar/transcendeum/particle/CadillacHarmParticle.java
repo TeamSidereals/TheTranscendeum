@@ -2,13 +2,13 @@
 package io.github.team_lodestar.transcendeum.particle;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class SharpBerthelParticle {
+public class CadillacHarmParticle {
 
-	public static final BasicParticleType particle = new BasicParticleType(false);
+	public static final BasicParticleType particle = new BasicParticleType(true);
 
 	@SubscribeEvent
 	public static void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
-		event.getRegistry().register(particle.setRegistryName("sharp_berthel"));
+		event.getRegistry().register(particle.setRegistryName("cadillac_harm"));
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -29,18 +29,18 @@ public class SharpBerthelParticle {
 			this.spriteSet = spriteSet;
 
 			this.setSize((float) 0.2, (float) 0.2);
-			this.particleScale *= (float) 1;
+			this.particleScale *= (float) 0.8;
 
-			this.maxAge = 60;
+			this.maxAge = (int) Math.max(1, 20 + (this.rand.nextInt(12) - 6));
 
-			this.particleGravity = (float) 0.5;
+			this.particleGravity = (float) -0.3;
 			this.canCollide = true;
 
-			this.motionX = vx * 1.2000000000000002;
-			this.motionY = vy * 1.2000000000000002;
-			this.motionZ = vz * 1.2000000000000002;
+			this.motionX = vx * 1;
+			this.motionY = vy * 1;
+			this.motionZ = vz * 1;
 
-			this.angularVelocity = (float) 0.1;
+			this.angularVelocity = (float) 0.2;
 			this.angularAcceleration = (float) 0;
 
 			this.selectSpriteRandomly(spriteSet);

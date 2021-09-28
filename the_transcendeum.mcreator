@@ -2632,6 +2632,53 @@
           }
         ]
       }
+    },
+    {
+      "name": "CadillacHarm",
+      "type": "particle",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadillac_harm",
+      "path": "~/particles"
+    },
+    {
+      "name": "CadillaciumToolsHitLivingEntity",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadillacium_tools_hit_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2794,15 +2841,44 @@
     "name": "~",
     "children": [
       {
+        "name": "particles",
+        "children": []
+      },
+      {
+        "name": "custom elements",
+        "children": []
+      },
+      {
+        "name": "mobs",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "loot tables",
+        "children": [
+          {
+            "name": "blocks",
+            "children": []
+          },
+          {
+            "name": "structure loot",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "LyofsPlace",
+        "children": []
+      },
+      {
         "name": "Biomes",
         "children": []
       },
       {
         "name": "caves",
-        "children": []
-      },
-      {
-        "name": "particles",
         "children": []
       },
       {
@@ -2823,14 +2899,6 @@
         ]
       },
       {
-        "name": "custom elements",
-        "children": []
-      },
-      {
-        "name": "mobs",
-        "children": []
-      },
-      {
         "name": "gear sets",
         "children": [
           {
@@ -2844,28 +2912,7 @@
         ]
       },
       {
-        "name": "Tags",
-        "children": []
-      },
-      {
-        "name": "loot tables",
-        "children": [
-          {
-            "name": "blocks",
-            "children": []
-          },
-          {
-            "name": "structure loot",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "recipes",
-        "children": []
-      },
-      {
-        "name": "LyofsPlace",
         "children": []
       }
     ]
