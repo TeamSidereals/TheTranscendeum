@@ -34,6 +34,8 @@ public class EnigmaGloveRangedItemUsedProcedure {
 		entity.getPersistentData().putDouble("TT:EnigmaCharge", ((entity.getPersistentData().getDouble("TT:EnigmaCharge")) + 1));
 		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == (itemstack).getItem())
 				&& ((entity.getPersistentData().getDouble("TT:EnigmaCharge")) > 5))) {
+			entity.getPersistentData().putDouble("TT:EnigmaGloveDurability",
+					((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getDamage()));
 			if (entity instanceof LivingEntity) {
 				ItemStack _setstack = new ItemStack(EnigmaGlovePoweredItem.block);
 				_setstack.setCount((int) 1);
@@ -41,8 +43,12 @@ public class EnigmaGloveRangedItemUsedProcedure {
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
+			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
+					.setDamage((int) (entity.getPersistentData().getDouble("TT:EnigmaGloveDurability")));
 		} else if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == (itemstack)
 				.getItem()) && ((entity.getPersistentData().getDouble("TT:EnigmaCharge")) > 5))) {
+			entity.getPersistentData().putDouble("TT:EnigmaGloveDurability",
+					((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)).getDamage()));
 			if (entity instanceof LivingEntity) {
 				ItemStack _setstack = new ItemStack(EnigmaGlovePoweredItem.block);
 				_setstack.setCount((int) 1);
@@ -50,6 +56,8 @@ public class EnigmaGloveRangedItemUsedProcedure {
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
+			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY))
+					.setDamage((int) (entity.getPersistentData().getDouble("TT:EnigmaGloveDurability")));
 		}
 	}
 }

@@ -34,6 +34,8 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 		entity.getPersistentData().putDouble("TT:EnigmaCharge", 0);
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == (itemstack)
 				.getItem())) {
+			entity.getPersistentData().putDouble("TT:EnigmaGloveDurability",
+					((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getDamage()));
 			if (entity instanceof LivingEntity) {
 				ItemStack _setstack = new ItemStack(EnigmaGloveItem.block);
 				_setstack.setCount((int) 1);
@@ -41,8 +43,12 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
+			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
+					.setDamage((int) (entity.getPersistentData().getDouble("TT:EnigmaGloveDurability")));
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == (itemstack)
 				.getItem())) {
+			entity.getPersistentData().putDouble("TT:EnigmaGloveDurability",
+					((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)).getDamage()));
 			if (entity instanceof LivingEntity) {
 				ItemStack _setstack = new ItemStack(EnigmaGloveItem.block);
 				_setstack.setCount((int) 1);
@@ -50,6 +56,8 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
+			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY))
+					.setDamage((int) (entity.getPersistentData().getDouble("TT:EnigmaGloveDurability")));
 		}
 	}
 }
