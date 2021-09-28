@@ -134,10 +134,8 @@ public class ArcedeonRenderer {
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
 			this.tail2.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-			this.left_fin.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.tail.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-			this.right_fin.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.tail_fin.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+			this.left_fin.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.right_fin.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		}
 	}
 }

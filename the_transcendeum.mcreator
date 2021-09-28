@@ -746,15 +746,6 @@
       "registry_name": "kelave_planks"
     },
     {
-      "name": "KelaveWoodlet",
-      "type": "block",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kelave_woodlet"
-    },
-    {
       "name": "KelaveSlab",
       "type": "block",
       "sortid": 72,
@@ -1573,7 +1564,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "berthel_crystal_drops"
+      "registry_name": "berthel_crystal_drops",
+      "path": "~/loot tables/blocks"
     },
     {
       "name": "BerthelSword",
@@ -1770,7 +1762,7 @@
       "type": "livingentity",
       "sortid": 158,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "arcedeon",
       "path": "~/mobs"
@@ -2327,16 +2319,6 @@
       "path": "~/LyofsPlace"
     },
     {
-      "name": "Testmob",
-      "type": "livingentity",
-      "sortid": 197,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "testmob",
-      "path": "~/mobs"
-    },
-    {
       "name": "KelaveTree1",
       "type": "structure",
       "sortid": 197,
@@ -2691,23 +2673,22 @@
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
-      "block.the_transcendeum.cavern_air": "Cavern Air",
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
+      "block.the_transcendeum.cavern_air": "Cavern Air",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
-      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.viridian_fence": "Viridian Fence",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.viridian_fence_gate": "Viridian Fence Gate",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "block.the_transcendeum.viridian_wood": "Viridian Wood",
-      "block.the_transcendeum.kelave_woodlet": "Kelave Wood",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.berthel_armor_leggings": "Berthel Leggings",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
@@ -2718,7 +2699,6 @@
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "entity.the_transcendeum.hyrumae_ghoul": "Hyrumae Ghoul",
-      "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
       "block.the_transcendeum.morosite": "Morosite",
       "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
@@ -2734,7 +2714,6 @@
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
-      "entity.the_transcendeum.testmob": "testmob",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
       "entity.the_transcendeum.arcedeon": "Arcedeon",
