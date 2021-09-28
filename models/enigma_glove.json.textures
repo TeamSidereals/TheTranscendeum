@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "enigma_glove"
+      },
+      "name": "default"
+    },
+    "powered": {
+      "map": {
+        "0": "enigma_glove_powered"
+      },
+      "name": "powered"
+    }
+  }
+}
