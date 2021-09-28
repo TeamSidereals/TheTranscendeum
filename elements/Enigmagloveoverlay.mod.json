@@ -1,0 +1,136 @@
+{
+  "_fv": 24,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_empty.png",
+          "use1Xscale": false,
+          "name": "enigma_bar_empty.png",
+          "x": 175,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_empty.png",
+          "use1Xscale": false,
+          "name": "enigma_bar_empty.png",
+          "x": 190,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_empty.png",
+          "use1Xscale": false,
+          "name": "enigma_bar_empty.png",
+          "x": 205,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_empty.png",
+          "use1Xscale": false,
+          "name": "enigma_bar_empty.png",
+          "x": 220,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_empty.png",
+          "use1Xscale": false,
+          "name": "enigma_bar_empty.png",
+          "x": 235,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_flame.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Flame1Condition"
+          },
+          "name": "enigma_bar_flame.png",
+          "x": 175,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_flame.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Flame2Condition"
+          },
+          "name": "enigma_bar_flame.png",
+          "x": 190,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_flame.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Flame3Condition"
+          },
+          "name": "enigma_bar_flame.png",
+          "x": 205,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_flame.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Flame4Condition"
+          },
+          "name": "enigma_bar_flame.png",
+          "x": 220,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enigma_bar_powered.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoweredFlame5Condition"
+          },
+          "name": "enigma_bar_powered.png",
+          "x": 235,
+          "y": 0
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "EnigmagloveoverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

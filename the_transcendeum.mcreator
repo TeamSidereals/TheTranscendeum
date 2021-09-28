@@ -2815,9 +2815,139 @@
         ]
       },
       "path": "~/enigma_glove"
+    },
+    {
+      "name": "EnigmagloveoverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigmagloveoverlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flame1Condition",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_1_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "Enigmagloveoverlay",
+      "type": "overlay",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigmagloveoverlay",
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "Flame2Condition",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_2_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "Flame3Condition",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_3_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "Flame4Condition",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_4_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "PoweredFlame5Condition",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "powered_flame_5_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "TTEnigmaCharge",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -2827,17 +2957,17 @@
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
-      "block.the_transcendeum.cavern_air": "Cavern Air",
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
+      "block.the_transcendeum.cavern_air": "Cavern Air",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
-      "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
-      "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
-      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.viridian_fence": "Viridian Fence",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.viridian_fence_gate": "Viridian Fence Gate",
@@ -3056,7 +3186,12 @@
       },
       {
         "name": "enigma_glove",
-        "children": []
+        "children": [
+          {
+            "name": "overlay",
+            "children": []
+          }
+        ]
       }
     ]
   },

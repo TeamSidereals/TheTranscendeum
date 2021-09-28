@@ -28,7 +28,7 @@
     },
     "bulletPower": 2.0,
     "bulletDamage": 5.0,
-    "bulletKnockback": 5,
+    "bulletKnockback": 2,
     "bulletParticles": false,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
