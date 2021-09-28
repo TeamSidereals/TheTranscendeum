@@ -2543,6 +2543,56 @@
       "ids": {},
       "registry_name": "cavern_air",
       "path": "~/caves"
+    },
+    {
+      "name": "CadillaciumSwordCrafting",
+      "type": "recipe",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadillacium_sword_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "CadillaciumAxeCrafting",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadillacium_axe_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "CadillaciumPickaxeCrafting",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadillacium_pickaxe_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "CadillaciumShovelCrafting",
+      "type": "recipe",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadillacium_shovel_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "CadillaciumHoeCrafting",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadillacium_hoe_crafting",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [],

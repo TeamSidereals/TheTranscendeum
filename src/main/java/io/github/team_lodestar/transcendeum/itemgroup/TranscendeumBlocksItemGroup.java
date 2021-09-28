@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import io.github.team_lodestar.transcendeum.block.CellcyteBlock;
+import io.github.team_lodestar.transcendeum.block.BerthelCrystalBlockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class TranscendeumBlocksItemGroup extends TheTranscendeumModElements.ModE
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(CellcyteBlock.block);
+				return new ItemStack(BerthelCrystalBlockBlock.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

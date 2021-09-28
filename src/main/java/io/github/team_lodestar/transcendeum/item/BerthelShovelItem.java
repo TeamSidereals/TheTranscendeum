@@ -46,7 +46,7 @@ public class BerthelShovelItem extends TheTranscendeumModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(BerthelShardItem.block));
 			}
-		}, 1, -3.1f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		}, 1, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
 		}.setRegistryName("berthel_shovel"));
 	}
 }

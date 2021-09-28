@@ -46,7 +46,7 @@ public class CadillaciumShovelItem extends TheTranscendeumModElements.ModElement
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(CadillaciumIngotItem.block));
 			}
-		}, 1, -2.8f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		}, 1, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
 		}.setRegistryName("cadillacium_shovel"));
 	}
 }

@@ -32,7 +32,7 @@ public class CadillaciumAxeItem extends TheTranscendeumModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 6f;
+				return 7f;
 			}
 
 			public int getHarvestLevel() {

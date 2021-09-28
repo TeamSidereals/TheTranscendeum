@@ -13,7 +13,7 @@
     "toolType": "Spade",
     "harvestLevel": 1,
     "efficiency": 4.0,
-    "attackSpeed": 1.2,
+    "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 8.0,
     "usageCount": 916,

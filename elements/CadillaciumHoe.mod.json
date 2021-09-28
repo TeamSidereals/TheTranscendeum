@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "cadillacium_pickaxe",
+    "texture": "cadillacium_hoe",
     "customModelName": "Normal",
     "name": "Cadillacium Hoe",
     "specialInfo": [],
