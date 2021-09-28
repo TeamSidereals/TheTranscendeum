@@ -2593,6 +2593,45 @@
       "ids": {},
       "registry_name": "cadillacium_hoe_crafting",
       "path": "~/recipes"
+    },
+    {
+      "name": "SharpBerthel",
+      "type": "particle",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sharp_berthel",
+      "path": "~/particles"
+    },
+    {
+      "name": "BerthelSharpBlade",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berthel_sharp_blade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2605,17 +2644,17 @@
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
-      "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.cavern_air": "Cavern Air",
+      "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.viridian_fence": "Viridian Fence",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.viridian_fence_gate": "Viridian Fence Gate",
