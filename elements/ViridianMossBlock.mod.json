@@ -2,19 +2,19 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "soil",
-    "textureTop": "viridianmoss",
-    "textureLeft": "viridianside",
-    "textureFront": "viridianside",
-    "textureRight": "viridianside",
-    "textureBack": "viridianside",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "viridianmoss",
+    "textureTop": "efow_moss_top",
+    "textureLeft": "efow_moss_side",
+    "textureFront": "efow_moss_side",
+    "textureRight": "efow_moss_side",
+    "textureBack": "efow_moss_side",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "mordhen",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Viridian Nyllium",
+    "name": "Viridian Moss Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 1.0,
@@ -94,7 +94,7 @@
     "fallSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 3,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "spawnParticles": false,
@@ -121,11 +121,13 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:MordhenNyllium"
       }
     ],
     "frequencyPerChunks": 10,
