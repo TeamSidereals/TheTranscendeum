@@ -36,6 +36,7 @@ public class TheTranscendeumModVariables {
 	private void init(FMLCommonSetupEvent event) {
 		CapabilityManager.INSTANCE.register(PlayerVariables.class, new PlayerVariablesStorage(), PlayerVariables::new);
 	}
+	public static boolean NoEnigmaCooldown = false;
 	@CapabilityInject(PlayerVariables.class)
 	public static Capability<PlayerVariables> PLAYER_VARIABLES_CAPABILITY = null;
 	@SubscribeEvent

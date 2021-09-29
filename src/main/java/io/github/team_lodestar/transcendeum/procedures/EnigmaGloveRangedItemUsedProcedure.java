@@ -32,7 +32,7 @@ public class EnigmaGloveRangedItemUsedProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if ((!(new Object() {
+		if (((!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayerEntity) {
 					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
@@ -43,7 +43,7 @@ public class EnigmaGloveRangedItemUsedProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity)))) {
+		}.checkGamemode(entity))) || (TheTranscendeumModVariables.NoEnigmaCooldown == (false)))) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(EnigmaGloveItem.block, (int) 10);
 			if (entity instanceof PlayerEntity)

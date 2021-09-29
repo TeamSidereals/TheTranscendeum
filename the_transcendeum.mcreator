@@ -2943,6 +2943,59 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "viridwood_pressure_plate_crafting"
+    },
+    {
+      "name": "NoEnigmaGloveCooldown",
+      "type": "command",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "no_enigma_glove_cooldown",
+      "path": "~/gear sets/enigma_glove"
+    },
+    {
+      "name": "Test",
+      "type": "item",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
+    },
+    {
+      "name": "TestRightClicked",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NoEnigmaGloveCooldownCommandExecuted",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "no_enigma_glove_cooldown_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2951,6 +3004,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "NoEnigmaCooldown",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2959,6 +3018,7 @@
       "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
+      "item.the_transcendeum.test": "Test",
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
@@ -2968,11 +3028,11 @@
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "block.the_transcendeum.viridwood_planks": "Viridwood Planks",
