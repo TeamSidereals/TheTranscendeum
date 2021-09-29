@@ -65,9 +65,6 @@ public class BerthelPickaxeItem extends TheTranscendeumModElements.ModElement {
 					$_dependencies.put("entity", entity);
 					$_dependencies.put("sourceentity", sourceentity);
 					$_dependencies.put("itemstack", itemstack);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
 					BerthelSharpBladeProcedure.executeProcedure($_dependencies);
 				}

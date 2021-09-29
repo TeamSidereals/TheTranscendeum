@@ -26,10 +26,12 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -37,7 +39,6 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.BlockState;
@@ -47,6 +48,7 @@ import java.util.Random;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.TestmobRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+import io.github.team_lodestar.transcendeum.DashAttackGoal;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class TestmobEntity extends TheTranscendeumModElements.ModElement {
@@ -98,7 +100,7 @@ public class TestmobEntity extends TheTranscendeumModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends CreatureEntity {
+	public static class CustomEntity extends MonsterEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -132,6 +134,8 @@ public class TestmobEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
 			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.targetSelector.addGoal(1, new DashAttackGoal(this, 1.0F, 2.0F, 20, false));
 		}
 
 		@Override

@@ -15,7 +15,7 @@
     "efficiency": 4.0,
     "attackSpeed": 1.6,
     "enchantability": 20,
-    "damageVsEntity": 5.0,
+    "damageVsEntity": 4.0,
     "usageCount": 916,
     "blocksAffected": [],
     "hasGlow": false,

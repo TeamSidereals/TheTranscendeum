@@ -38,7 +38,7 @@ public class CadillaciumSwordItem extends TheTranscendeumModElements.ModElement 
 			}
 
 			public float getAttackDamage() {
-				return 3f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {

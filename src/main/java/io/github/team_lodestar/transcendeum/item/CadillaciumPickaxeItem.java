@@ -62,6 +62,8 @@ public class CadillaciumPickaxeItem extends TheTranscendeumModElements.ModElemen
 				World world = entity.world;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("sourceentity", sourceentity);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);

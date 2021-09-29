@@ -2029,7 +2029,7 @@
       "type": "livingentity",
       "sortid": 177,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "hyrumae_ghoul",
       "path": "~/mobs"
@@ -2331,7 +2331,7 @@
       "type": "livingentity",
       "sortid": 197,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "testmob",
       "path": "~/mobs"
@@ -2365,15 +2365,6 @@
       "ids": {},
       "registry_name": "kelave_tree_3",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "TestmobLungeAttackGoal",
-      "type": "code",
-      "sortid": 200,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "testmob_lunge_attack_goal"
     },
     {
       "name": "CadillaciumPickaxe",
@@ -2679,6 +2670,52 @@
           }
         ]
       }
+    },
+    {
+      "name": "DashAttackGoal",
+      "type": "code",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dash_attack_goal"
+    },
+    {
+      "name": "Das",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "das",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2691,17 +2728,17 @@
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
-      "block.the_transcendeum.cavern_air": "Cavern Air",
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
+      "block.the_transcendeum.cavern_air": "Cavern Air",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
-      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "block.the_transcendeum.somberstone": "Somberstone",
       "block.the_transcendeum.viridian_fence": "Viridian Fence",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.viridian_fence_gate": "Viridian Fence Gate",
