@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ViridwoodLog"
+      },
+      {
+        "value": "CUSTOM:ViridwoodLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ViridwoodLog"
+      },
+      {
+        "value": "CUSTOM:ViridwoodLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Viridwood"
+    },
+    "name": "viridwood_crafting",
+    "namespace": "mod"
+  }
+}

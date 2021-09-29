@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_transcendeum:blocks/viridwood_log_top",
+    "up": "the_transcendeum:blocks/viridwood_log_top",
+    "north": "the_transcendeum:blocks/viridwood_log",
+    "east": "the_transcendeum:blocks/viridwood_log",
+    "south": "the_transcendeum:blocks/viridwood_log",
+    "west": "the_transcendeum:blocks/viridwood_log",
+    "particle": "the_transcendeum:blocks/viridwood_log_top"
+  }
+}
