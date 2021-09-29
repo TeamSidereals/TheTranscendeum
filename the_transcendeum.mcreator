@@ -3185,15 +3185,6 @@
         ]
       },
       {
-        "name": "enigma_glove",
-        "children": [
-          {
-            "name": "overlay",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "gear sets",
         "children": [
           {
@@ -3203,6 +3194,15 @@
           {
             "name": "armor",
             "children": []
+          },
+          {
+            "name": "enigma_glove",
+            "children": [
+              {
+                "name": "overlay",
+                "children": []
+              }
+            ]
           },
           {
             "name": "other weapons",
