@@ -49,7 +49,6 @@ public class NoEnigmaGloveCooldownCommand {
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
 			$_dependencies.put("entity", entity);
-			$_dependencies.put("world", world);
 			NoEnigmaGloveCooldownCommandExecutedProcedure.executeProcedure($_dependencies);
 		}
 		return 0;

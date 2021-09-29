@@ -2622,10 +2622,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2667,10 +2663,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3015,10 +3007,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -3034,7 +3022,7 @@
     {
       "name": "NoEnigmaCooldown",
       "type": "logic",
-      "scope": "map",
+      "scope": "global",
       "value": "false"
     }
   ],
@@ -3054,11 +3042,11 @@
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "block.the_transcendeum.viridwood_planks": "Viridwood Planks",
