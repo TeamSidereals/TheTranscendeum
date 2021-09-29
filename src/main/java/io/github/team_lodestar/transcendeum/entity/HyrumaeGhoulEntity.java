@@ -43,7 +43,6 @@ import net.minecraft.block.BlockState;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.HyrumaeGhoulRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
-import io.github.team_lodestar.transcendeum.DashAttackGoal;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
@@ -119,7 +118,6 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 			this.goalSelector.addGoal(7, new BreakDoorGoal(this, e -> true));
-			this.targetSelector.addGoal(1, new DashAttackGoal(this, 0.4F, 1.0F, 20, false));
 		}
 
 		@Override

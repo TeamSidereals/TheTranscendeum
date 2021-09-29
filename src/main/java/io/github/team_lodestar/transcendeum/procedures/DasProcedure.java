@@ -1,7 +1,15 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class DasProcedure {
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.Explosion;
+import net.minecraft.entity.Entity;
 
+import java.util.Map;
+
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class DasProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -33,14 +41,12 @@ public class DasProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure Das!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		double vx = 0;
 		double vy = 0;
 		double vz = 0;
@@ -58,5 +64,4 @@ public class DasProcedure {
 			((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.BREAK);
 		}
 	}
-
 }

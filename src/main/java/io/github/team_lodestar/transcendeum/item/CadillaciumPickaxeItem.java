@@ -1,12 +1,27 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+import net.minecraft.entity.LivingEntity;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.procedures.CadillaciumToolsHitLivingEntityProcedure;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+
 @TheTranscendeumModElements.ModElement.Tag
 public class CadillaciumPickaxeItem extends TheTranscendeumModElements.ModElement {
-
 	@ObjectHolder("the_transcendeum:cadillacium_pickaxe")
 	public static final Item block = null;
-
 	public CadillaciumPickaxeItem(TheTranscendeumModElements instance) {
 		super(instance, 204);
 	}
@@ -38,7 +53,6 @@ public class CadillaciumPickaxeItem extends TheTranscendeumModElements.ModElemen
 				return Ingredient.fromStacks(new ItemStack(CadillaciumIngotItem.block));
 			}
 		}, 1, -2.8f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
-
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
@@ -48,20 +62,16 @@ public class CadillaciumPickaxeItem extends TheTranscendeumModElements.ModElemen
 				World world = entity.world;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-
 					$_dependencies.put("entity", entity);
 					$_dependencies.put("sourceentity", sourceentity);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-
 					CadillaciumToolsHitLivingEntityProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
-
 		}.setRegistryName("cadillacium_pickaxe"));
 	}
-
 }
