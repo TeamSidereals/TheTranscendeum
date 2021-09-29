@@ -2736,7 +2736,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove"
+      "path": "~/gear sets/enigma_glove"
     },
     {
       "name": "Flame1Condition",
@@ -2755,7 +2755,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove/overlay"
+      "path": "~/gear sets/enigma_glove/overlay"
     },
     {
       "name": "Flame4Condition",
@@ -2774,7 +2774,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove/overlay"
+      "path": "~/gear sets/enigma_glove/overlay"
     },
     {
       "name": "EnigmagloveoverlayDisplayOverlayIngame",
@@ -2814,7 +2814,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove"
+      "path": "~/gear sets/enigma_glove"
     },
     {
       "name": "Flame3Condition",
@@ -2833,7 +2833,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove/overlay"
+      "path": "~/gear sets/enigma_glove/overlay"
     },
     {
       "name": "EnigmaGlovePoweredRangedItemUsed",
@@ -2855,7 +2855,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove"
+      "path": "~/gear sets/enigma_glove"
     },
     {
       "name": "Enigmagloveoverlay",
@@ -2865,7 +2865,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enigmagloveoverlay",
-      "path": "~/enigma_glove/overlay"
+      "path": "~/gear sets/enigma_glove/overlay"
     },
     {
       "name": "EnigmaGlovePowered",
@@ -2875,7 +2875,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enigma_glove_powered",
-      "path": "~/enigma_glove"
+      "path": "~/gear sets/enigma_glove"
     },
     {
       "name": "EnigmaGlovePoweredBulletHitsLivingEntity",
@@ -2905,7 +2905,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove"
+      "path": "~/gear sets/enigma_glove"
     },
     {
       "name": "EnigmaGlove",
@@ -2915,7 +2915,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enigma_glove",
-      "path": "~/enigma_glove"
+      "path": "~/gear sets/enigma_glove"
     },
     {
       "name": "Flame2Condition",
@@ -2934,7 +2934,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove/overlay"
+      "path": "~/gear sets/enigma_glove/overlay"
     },
     {
       "name": "PoweredFlame5Condition",
@@ -2953,7 +2953,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove/overlay"
+      "path": "~/gear sets/enigma_glove/overlay"
     },
     {
       "name": "EnigmaGloveWhileBulletFlyingTick",
@@ -2983,7 +2983,7 @@
           }
         ]
       },
-      "path": "~/enigma_glove"
+      "path": "~/gear sets/enigma_glove"
     }
   ],
   "variable_elements": [
@@ -3213,15 +3213,6 @@
         ]
       },
       {
-        "name": "enigma_glove",
-        "children": [
-          {
-            "name": "overlay",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "gear sets",
         "children": [
           {
@@ -3235,6 +3226,15 @@
           {
             "name": "other weapons",
             "children": []
+          },
+          {
+            "name": "enigma_glove",
+            "children": [
+              {
+                "name": "overlay",
+                "children": []
+              }
+            ]
           }
         ]
       },

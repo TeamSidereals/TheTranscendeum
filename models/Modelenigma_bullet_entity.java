@@ -11,12 +11,12 @@ public static class Modelenigma_bullet_entity extends EntityModel<Entity> {
 
 		arrow = new ModelRenderer(this);
 		arrow.setRotationPoint(2.5F, 16.0F, 0.0F);
-		setRotationAngle(arrow, 0.0F, 0.0F, -1.5708F);
-		arrow.setTextureOffset(0, 15).addBox(-8.0F, -5.0F, -2.5F, 16.0F, 5.0F, 0.0F, 0.0F, false);
-		arrow.setTextureOffset(0, 10).addBox(-8.0F, -5.0F, 2.5F, 16.0F, 5.0F, 0.0F, 0.0F, false);
-		arrow.setTextureOffset(0, 20).addBox(-8.0F, -5.0F, -2.5F, 3.0F, 5.0F, 5.0F, 0.0F, false);
+		setRotationAngle(arrow, 0.0F, 0.0F, 1.5708F);
+		arrow.setTextureOffset(0, 15).addBox(-8.0F, 0.0F, -2.5F, 16.0F, 5.0F, 0.0F, 0.0F, false);
+		arrow.setTextureOffset(0, 10).addBox(-8.0F, 0.0F, 2.5F, 16.0F, 5.0F, 0.0F, 0.0F, false);
+		arrow.setTextureOffset(0, 20).addBox(-8.0F, 0.0F, -2.5F, 3.0F, 5.0F, 5.0F, 0.0F, false);
 		arrow.setTextureOffset(0, 5).addBox(-8.0F, 0.0F, -2.5F, 16.0F, 0.0F, 5.0F, 0.0F, false);
-		arrow.setTextureOffset(0, 0).addBox(-8.0F, -5.0F, -2.5F, 16.0F, 0.0F, 5.0F, 0.0F, false);
+		arrow.setTextureOffset(0, 0).addBox(-8.0F, 5.0F, -2.5F, 16.0F, 0.0F, 5.0F, 0.0F, false);
 	}
 
 	@Override

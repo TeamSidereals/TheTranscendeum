@@ -86,7 +86,7 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 10, 2);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 5.5, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 					{
@@ -209,8 +209,8 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 		double d3 = target.getPosZ() - entity.getPosZ();
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 2f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(10);
-		entityarrow.setKnockbackStrength(2);
+		entityarrow.setDamage(5.5);
+		entityarrow.setKnockbackStrength(0);
 		entityarrow.setIsCritical(false);
 		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);

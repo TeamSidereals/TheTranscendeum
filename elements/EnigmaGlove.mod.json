@@ -27,8 +27,8 @@
       "name": "EnigmaGloveRangedItemUsed"
     },
     "bulletPower": 2.0,
-    "bulletDamage": 5.0,
-    "bulletKnockback": 2,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
