@@ -682,25 +682,6 @@
       "registry_name": "mergoany"
     },
     {
-      "name": "MordhenBush",
-      "type": "structure",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mordhen_bush",
-      "path": "~/Structures/Natural"
-    },
-    {
-      "name": "MordhenLeaves",
-      "type": "block",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_leaves"
-    },
-    {
       "name": "Argoany",
       "type": "plant",
       "sortid": 66,
@@ -964,177 +945,6 @@
       "ids": {},
       "registry_name": "kelave_tree",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "ViridianWood",
-      "type": "block",
-      "sortid": 94,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_wood"
-    },
-    {
-      "name": "ViridianLog",
-      "type": "block",
-      "sortid": 95,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_log"
-    },
-    {
-      "name": "ViridianPlanks",
-      "type": "block",
-      "sortid": 96,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_planks"
-    },
-    {
-      "name": "ViridianSlab",
-      "type": "block",
-      "sortid": 97,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_slab"
-    },
-    {
-      "name": "ViridianFenceGate",
-      "type": "block",
-      "sortid": 98,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_fence_gate"
-    },
-    {
-      "name": "ViridianFence",
-      "type": "block",
-      "sortid": 99,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_fence"
-    },
-    {
-      "name": "ViridianPressurePlate",
-      "type": "block",
-      "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_pressure_plate"
-    },
-    {
-      "name": "ViridianButton",
-      "type": "block",
-      "sortid": 101,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_button"
-    },
-    {
-      "name": "ViridianWoodRecipe",
-      "type": "recipe",
-      "sortid": 102,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_wood_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridianStairsRecipe",
-      "type": "recipe",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_stairs_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridianStairs",
-      "type": "block",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_stairs"
-    },
-    {
-      "name": "ViridianFenceRecipe",
-      "type": "recipe",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_fence_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridiaPressurePlateRecipe",
-      "type": "recipe",
-      "sortid": 106,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridia_pressure_plate_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridianFenceGateRecipe",
-      "type": "recipe",
-      "sortid": 107,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_fence_gate_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridianStickRecipe",
-      "type": "recipe",
-      "sortid": 108,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_stick_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridianSlabRecipe",
-      "type": "recipe",
-      "sortid": 109,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_slab_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridianPlanksR1",
-      "type": "recipe",
-      "sortid": 110,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_planks_r_1",
-      "path": "~/recipes"
-    },
-    {
-      "name": "ViridianPlanksR2",
-      "type": "recipe",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viridian_planks_r_2",
-      "path": "~/recipes"
     },
     {
       "name": "KelaveStairsRecipe",
@@ -2736,7 +2546,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove"
+      "path": "~/enigma_glove"
     },
     {
       "name": "Flame1Condition",
@@ -2755,7 +2565,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove/overlay"
+      "path": "~/enigma_glove/overlay"
     },
     {
       "name": "Flame4Condition",
@@ -2774,7 +2584,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove/overlay"
+      "path": "~/enigma_glove/overlay"
     },
     {
       "name": "EnigmagloveoverlayDisplayOverlayIngame",
@@ -2814,7 +2624,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove"
+      "path": "~/enigma_glove"
     },
     {
       "name": "Flame3Condition",
@@ -2833,7 +2643,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove/overlay"
+      "path": "~/enigma_glove/overlay"
     },
     {
       "name": "EnigmaGlovePoweredRangedItemUsed",
@@ -2855,7 +2665,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove"
+      "path": "~/enigma_glove"
     },
     {
       "name": "Enigmagloveoverlay",
@@ -2865,7 +2675,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enigmagloveoverlay",
-      "path": "~/gear sets/enigma_glove/overlay"
+      "path": "~/enigma_glove/overlay"
     },
     {
       "name": "EnigmaGlovePowered",
@@ -2875,7 +2685,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enigma_glove_powered",
-      "path": "~/gear sets/enigma_glove"
+      "path": "~/enigma_glove"
     },
     {
       "name": "EnigmaGlovePoweredBulletHitsLivingEntity",
@@ -2905,7 +2715,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove"
+      "path": "~/enigma_glove"
     },
     {
       "name": "EnigmaGlove",
@@ -2915,7 +2725,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enigma_glove",
-      "path": "~/gear sets/enigma_glove"
+      "path": "~/enigma_glove"
     },
     {
       "name": "Flame2Condition",
@@ -2934,7 +2744,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove/overlay"
+      "path": "~/enigma_glove/overlay"
     },
     {
       "name": "PoweredFlame5Condition",
@@ -2953,7 +2763,7 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove/overlay"
+      "path": "~/enigma_glove/overlay"
     },
     {
       "name": "EnigmaGloveWhileBulletFlyingTick",
@@ -2983,7 +2793,169 @@
           }
         ]
       },
-      "path": "~/gear sets/enigma_glove"
+      "path": "~/enigma_glove"
+    },
+    {
+      "name": "ViridwoodPressurePlateCrafting",
+      "type": "recipe",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_pressure_plate_crafting"
+    },
+    {
+      "name": "Viridwood",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood"
+    },
+    {
+      "name": "ViridwoodPlanksCrafting1",
+      "type": "recipe",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_planks_crafting_1"
+    },
+    {
+      "name": "ViridwoodSlab",
+      "type": "block",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_slab"
+    },
+    {
+      "name": "ViridwoodLeaves",
+      "type": "block",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_leaves"
+    },
+    {
+      "name": "ViridwoodPlanks",
+      "type": "block",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_planks"
+    },
+    {
+      "name": "ViridwoodFence",
+      "type": "block",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_fence"
+    },
+    {
+      "name": "ViridwoodPlanksCrafting2",
+      "type": "recipe",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_planks_crafting_2"
+    },
+    {
+      "name": "ViridwoodLog",
+      "type": "block",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_log"
+    },
+    {
+      "name": "ViridwoodFenceGateCrafting",
+      "type": "recipe",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_fence_gate_crafting"
+    },
+    {
+      "name": "ViridwoodPressurePlate",
+      "type": "block",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_pressure_plate"
+    },
+    {
+      "name": "ViridwoodFenceGate",
+      "type": "block",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_fence_gate"
+    },
+    {
+      "name": "ViridwoodStairsCrafting",
+      "type": "recipe",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_stairs_crafting"
+    },
+    {
+      "name": "ViridwoodFenceCrafting",
+      "type": "recipe",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_fence_crafting"
+    },
+    {
+      "name": "ViridwoodCrafting",
+      "type": "recipe",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_crafting"
+    },
+    {
+      "name": "ViridwoodButton",
+      "type": "block",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_button"
+    },
+    {
+      "name": "ViridwoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_slab_recipe"
+    },
+    {
+      "name": "ViridwoodStairs",
+      "type": "block",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridwood_stairs"
     }
   ],
   "variable_elements": [
@@ -3003,17 +2975,17 @@
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
-      "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.cavern_air": "Cavern Air",
+      "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
+      "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.viridian_fence": "Viridian Fence",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "block.the_transcendeum.viridian_fence_gate": "Viridian Fence Gate",
@@ -3107,9 +3079,9 @@
       "item.the_transcendeum.cadillacium_shovel": "Cadillacium Shovel",
       "block.the_transcendeum.kelfae": "Kelfae",
       "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
-      "block.the_transcendeum.viridian_slab": "Viridian Slab",
       "block.the_transcendeum.mordhen_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.polished_morosite": "Polished Morosite",
+      "block.the_transcendeum.viridian_slab": "Viridian Slab",
       "block.the_transcendeum.kelave_planks": "Kelave Planks",
       "block.the_transcendeum.viridian_leaves": "Viridian Leaves",
       "item.the_transcendeum.corium_virilily": "Corium Virilily",
@@ -3224,10 +3196,6 @@
             "children": []
           },
           {
-            "name": "other weapons",
-            "children": []
-          },
-          {
             "name": "enigma_glove",
             "children": [
               {
@@ -3235,6 +3203,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "other weapons",
+            "children": []
           }
         ]
       },

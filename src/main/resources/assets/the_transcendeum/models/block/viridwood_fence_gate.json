@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "the_transcendeum:blocks/viridwood_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "the_transcendeum:blocks/viridwood_planks",
+    "particle": "the_transcendeum:blocks/viridwood_planks"
+  }
+}

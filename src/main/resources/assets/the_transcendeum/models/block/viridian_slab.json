@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "the_transcendeum:blocks/viridian_planks",
-    "top": "the_transcendeum:blocks/viridian_planks",
-    "side": "the_transcendeum:blocks/viridian_planks"
-  }
-}

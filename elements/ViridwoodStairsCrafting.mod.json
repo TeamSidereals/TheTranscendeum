@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ViridwoodPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ViridwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:ViridwoodPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ViridwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:ViridwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:ViridwoodPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ViridwoodStairs"
+    },
+    "name": "viridwood_stairs_crafting",
+    "namespace": "mod"
+  }
+}

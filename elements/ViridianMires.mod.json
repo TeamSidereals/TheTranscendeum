@@ -66,10 +66,10 @@
     "minHeight": 20,
     "maxWaterDepth": 5,
     "treeStem": {
-      "value": "CUSTOM:ViridianLog"
+      "value": "CUSTOM:ViridwoodLog"
     },
     "treeBranch": {
-      "value": "CUSTOM:MordhenLeaves"
+      "value": "CUSTOM:ViridwoodLeaves"
     },
     "treeVines": {
       "value": "Blocks.VINE"

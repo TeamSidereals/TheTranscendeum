@@ -1,0 +1,26 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:viridwood_log"
+    },
+    "1": {
+      "item": "the_transcendeum:viridwood_log"
+    },
+    "2": {
+      "item": "the_transcendeum:viridwood_log"
+    },
+    "3": {
+      "item": "the_transcendeum:viridwood_log"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:viridwood",
+    "count": 3
+  }
+}
