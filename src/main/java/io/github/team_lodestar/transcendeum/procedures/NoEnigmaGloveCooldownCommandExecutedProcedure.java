@@ -1,16 +1,7 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.TheTranscendeumModVariables;
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
-
 public class NoEnigmaGloveCooldownCommandExecutedProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -22,8 +13,10 @@ public class NoEnigmaGloveCooldownCommandExecutedProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure NoEnigmaGloveCooldownCommandExecuted!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if ((TheTranscendeumModVariables.MapVariables.get(world).NoEnigmaCooldown == (false))) {
 			TheTranscendeumModVariables.MapVariables.get(world).NoEnigmaCooldown = (boolean) (true);
 			TheTranscendeumModVariables.MapVariables.get(world).syncData(world);
@@ -38,4 +31,5 @@ public class NoEnigmaGloveCooldownCommandExecutedProcedure {
 			}
 		}
 	}
+
 }

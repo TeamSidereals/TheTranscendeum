@@ -1,25 +1,7 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.world.GameType;
-import net.minecraft.util.Hand;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.network.play.NetworkPlayerInfo;
-import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
-import net.minecraft.client.Minecraft;
-
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.item.EnigmaGlovePoweredItem;
-import io.github.team_lodestar.transcendeum.item.EnigmaGloveItem;
-import io.github.team_lodestar.transcendeum.TheTranscendeumModVariables;
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
-
 public class EnigmaGlovePoweredRangedItemUsedProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -36,9 +18,11 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure EnigmaGlovePoweredRangedItemUsed!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if (((!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayerEntity) {
@@ -91,4 +75,5 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 					.setDamage((int) (entity.getPersistentData().getDouble("TT:EnigmaGloveDurability")));
 		}
 	}
+
 }
