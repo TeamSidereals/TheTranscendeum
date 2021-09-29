@@ -746,15 +746,6 @@
       "registry_name": "kelave_planks"
     },
     {
-      "name": "KelaveWoodlet",
-      "type": "block",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kelave_woodlet"
-    },
-    {
       "name": "KelaveSlab",
       "type": "block",
       "sortid": 72,
@@ -2029,7 +2020,7 @@
       "type": "livingentity",
       "sortid": 177,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "hyrumae_ghoul",
       "path": "~/mobs"
@@ -2672,15 +2663,6 @@
       }
     },
     {
-      "name": "DashAttackGoal",
-      "type": "code",
-      "sortid": 214,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "dash_attack_goal"
-    },
-    {
       "name": "Das",
       "type": "procedure",
       "sortid": 215,
@@ -2716,9 +2698,302 @@
           }
         ]
       }
+    },
+    {
+      "name": "DashAttackGoal",
+      "type": "code",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dash_attack_goal"
+    },
+    {
+      "name": "EnigmaGlovePoweredWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_powered_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/enigma_glove"
+    },
+    {
+      "name": "Flame1Condition",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_1_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "Flame4Condition",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_4_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "EnigmagloveoverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigmagloveoverlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnigmaGloveRangedItemUsed",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/enigma_glove"
+    },
+    {
+      "name": "Flame3Condition",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_3_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "EnigmaGlovePoweredRangedItemUsed",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_powered_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/enigma_glove"
+    },
+    {
+      "name": "Enigmagloveoverlay",
+      "type": "overlay",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigmagloveoverlay",
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "EnigmaGlovePowered",
+      "type": "rangeditem",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_powered",
+      "path": "~/enigma_glove"
+    },
+    {
+      "name": "EnigmaGlovePoweredBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_powered_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/enigma_glove"
+    },
+    {
+      "name": "EnigmaGlove",
+      "type": "rangeditem",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove",
+      "path": "~/enigma_glove"
+    },
+    {
+      "name": "Flame2Condition",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flame_2_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "PoweredFlame5Condition",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "powered_flame_5_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enigma_glove/overlay"
+    },
+    {
+      "name": "EnigmaGloveWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/enigma_glove"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "TTEnigmaCharge",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -2755,7 +3030,6 @@
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "entity.the_transcendeum.hyrumae_ghoul": "Hyrumae Ghoul",
-      "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
       "block.the_transcendeum.morosite": "Morosite",
       "block.the_transcendeum.viridian_pressure_plate": "Viridian Pressure Plate",
@@ -2771,12 +3045,12 @@
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
-      "entity.the_transcendeum.testmob": "testmob",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
       "entity.the_transcendeum.arcedeon": "Arcedeon",
       "block.the_transcendeum.stariam_button": "Stariam Button",
       "biome.the_transcendeum.agarith": "Agarith",
+      "item.the_transcendeum.enigma_glove": "Enigma Glove",
       "item.the_transcendeum.large_virilily": "Large Virilily",
       "block.the_transcendeum.mordhen_leaves": "Viridian Leaves",
       "block.the_transcendeum.dead_sullenbush": "Dead Sullenbush",
@@ -2860,6 +3134,7 @@
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
       "block.the_transcendeum.polished_morosite_pressure_plate": "Polished Morosite Pressure Plate",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
+      "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
       "block.the_transcendeum.kelave_slab": "Kelave Slab",
       "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
@@ -2936,6 +3211,15 @@
         ]
       },
       {
+        "name": "enigma_glove",
+        "children": [
+          {
+            "name": "overlay",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "gear sets",
         "children": [
           {
@@ -2944,6 +3228,10 @@
           },
           {
             "name": "armor",
+            "children": []
+          },
+          {
+            "name": "other weapons",
             "children": []
           }
         ]

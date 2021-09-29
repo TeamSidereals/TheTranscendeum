@@ -1,0 +1,7 @@
+{
+  "parent": "the_transcendeum:custom/enigma_glove",
+  "textures": {
+    "0": "the_transcendeum:blocks/enigma_glove",
+    "particle": "the_transcendeum:items/enigma_glove"
+  }
+}

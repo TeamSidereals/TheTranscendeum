@@ -1,0 +1,43 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "enigma_glove",
+    "customModelName": "enigma_glove:default",
+    "name": "Enigma Glove",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumGear"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1500,
+    "actionSound": {
+      "value": "entity.shulker.shoot"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "EnigmaGloveRangedItemUsed"
+    },
+    "bulletPower": 2.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelenigma_bullet_entity",
+    "customBulletModelTexture": "enigma_bullet_entity.png",
+    "onBulletFlyingTick": {
+      "name": "EnigmaGloveWhileBulletFlyingTick"
+    }
+  }
+}

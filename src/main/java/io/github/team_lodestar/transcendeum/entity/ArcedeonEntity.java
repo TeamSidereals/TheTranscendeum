@@ -30,7 +30,6 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.WaterMobEntity;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.ai.goal.TemptGoal;
@@ -44,6 +43,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
 import java.util.Map;
@@ -117,12 +117,12 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 3.0);
+			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.3);
 			event.put(entity, ammma.create());
 		}
 	}
 
-	public static class CustomEntity extends WaterMobEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -163,11 +163,6 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 				}
 			};
 			this.navigator = new SwimmerPathNavigator(this, this.world);
-		}
-
-		@Override
-		public boolean canBeRiddenInWater() {
-			return true;
 		}
 
 		@Override
