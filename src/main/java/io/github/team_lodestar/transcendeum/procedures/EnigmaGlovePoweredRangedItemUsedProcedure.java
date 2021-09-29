@@ -1,5 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
+import net.minecraft.world.IWorld;
 import net.minecraft.world.GameType;
 import net.minecraft.util.Hand;
 import net.minecraft.item.ItemStack;
@@ -30,9 +31,15 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency itemstack for procedure EnigmaGlovePoweredRangedItemUsed!");
 			return;
 		}
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure EnigmaGlovePoweredRangedItemUsed!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if ((!(new Object() {
+		IWorld world = (IWorld) dependencies.get("world");
+		if (((!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayerEntity) {
 					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
@@ -43,7 +50,7 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity)))) {
+		}.checkGamemode(entity))) || (TheTranscendeumModVariables.MapVariables.get(world).NoEnigmaCooldown == (false)))) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(EnigmaGloveItem.block, (int) 150);
 			if (entity instanceof PlayerEntity)
