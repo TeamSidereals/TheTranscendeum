@@ -2011,6 +2011,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2996,6 +3012,36 @@
           }
         ]
       }
+    },
+    {
+      "name": "EfowMoss",
+      "type": "block",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_moss",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowMossBlock",
+      "type": "block",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_moss_block",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "BurstPopping",
+      "type": "enchantment",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burst_popping",
+      "path": "~/LyofsPlace"
     }
   ],
   "variable_elements": [
@@ -3018,6 +3064,7 @@
       "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
+      "enchantment.the_transcendeum.burst_popping": "Burst Popping",
       "item.the_transcendeum.test": "Test",
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
@@ -3031,6 +3078,7 @@
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
+      "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
@@ -3166,6 +3214,7 @@
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
       "enchantment.the_transcendeum.refreshing": "Refreshing",
+      "block.the_transcendeum.efow_moss": "Efow Moss",
       "block.the_transcendeum.crystalia_transium": "Crystalia Transium",
       "entity.the_transcendeum.puffel": "Puffel"
     }
