@@ -6,14 +6,14 @@
   ],
   "key": {
     "0": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:viridwood_planks"
     },
     "1": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:viridwood_planks"
     }
   },
   "result": {
-    "item": "the_transcendeum:deleted_mod_element",
+    "item": "the_transcendeum:viridwood_pressure_plate",
     "count": 1
   }
 }
