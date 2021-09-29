@@ -2545,8 +2545,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/enigma_glove"
+      }
     },
     {
       "name": "Flame1Condition",
@@ -2564,8 +2563,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/enigma_glove/overlay"
+      }
     },
     {
       "name": "Flame4Condition",
@@ -2583,8 +2581,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/enigma_glove/overlay"
+      }
     },
     {
       "name": "EnigmagloveoverlayDisplayOverlayIngame",
@@ -2623,8 +2620,7 @@
             "type": "itemstack"
           }
         ]
-      },
-      "path": "~/enigma_glove"
+      }
     },
     {
       "name": "Flame3Condition",
@@ -2642,8 +2638,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/enigma_glove/overlay"
+      }
     },
     {
       "name": "EnigmaGlovePoweredRangedItemUsed",
@@ -2664,8 +2659,7 @@
             "type": "itemstack"
           }
         ]
-      },
-      "path": "~/enigma_glove"
+      }
     },
     {
       "name": "Enigmagloveoverlay",
@@ -2674,8 +2668,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enigmagloveoverlay",
-      "path": "~/enigma_glove/overlay"
+      "registry_name": "enigmagloveoverlay"
     },
     {
       "name": "EnigmaGlovePowered",
@@ -2684,8 +2677,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enigma_glove_powered",
-      "path": "~/enigma_glove"
+      "registry_name": "enigma_glove_powered"
     },
     {
       "name": "EnigmaGlovePoweredBulletHitsLivingEntity",
@@ -2714,8 +2706,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/enigma_glove"
+      }
     },
     {
       "name": "EnigmaGlove",
@@ -2724,8 +2715,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enigma_glove",
-      "path": "~/enigma_glove"
+      "registry_name": "enigma_glove"
     },
     {
       "name": "Flame2Condition",
@@ -2743,8 +2733,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/enigma_glove/overlay"
+      }
     },
     {
       "name": "PoweredFlame5Condition",
@@ -2762,8 +2751,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/enigma_glove/overlay"
+      }
     },
     {
       "name": "EnigmaGloveWhileBulletFlyingTick",
@@ -2792,8 +2780,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/enigma_glove"
+      }
     },
     {
       "name": "Viridwood",
