@@ -382,7 +382,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crystalia_grass"
+      "registry_name": "crystalia_grass",
+      "path": "~/Plants/Grass"
     },
     {
       "name": "CrystaliaForest",
@@ -615,7 +616,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viridian_grass"
+      "registry_name": "viridian_grass",
+      "path": "~/Plants/Grass"
     },
     {
       "name": "MordhenNyllium",
@@ -642,7 +644,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "corium_flower"
+      "registry_name": "corium_flower",
+      "path": "~/Plants/Flowers"
     },
     {
       "name": "AureaPlains",
@@ -661,7 +664,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "iaprie_grass"
+      "registry_name": "iaprie_grass",
+      "path": "~/Plants/Grass"
     },
     {
       "name": "ScaliaWart",
@@ -670,7 +674,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "scalia_wart"
+      "registry_name": "scalia_wart",
+      "path": "~/Plants/Fungi"
     },
     {
       "name": "Mergoany",
@@ -679,7 +684,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "mergoany"
+      "registry_name": "mergoany",
+      "path": "~/Plants/Flowers"
     },
     {
       "name": "Argoany",
@@ -688,7 +694,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "argoany"
+      "registry_name": "argoany",
+      "path": "~/Plants/Flowers"
     },
     {
       "name": "AcriumFlower",
@@ -697,7 +704,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acrium_flower"
+      "registry_name": "acrium_flower",
+      "path": "~/Plants/Flowers"
     },
     {
       "name": "KelaveWood",
@@ -806,7 +814,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chrysalium_vine"
+      "registry_name": "chrysalium_vine",
+      "path": "~/Plants/Vines"
     },
     {
       "name": "ChrysaliumVineBottom",
@@ -815,7 +824,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chrysalium_vine_bottom"
+      "registry_name": "chrysalium_vine_bottom",
+      "path": "~/Plants/Vines"
     },
     {
       "name": "ChrysaliumVineBlockValidPlacementCondition",
@@ -1023,7 +1033,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "virilily_block"
+      "registry_name": "virilily_block",
+      "path": "~/Plants/Lily Pads"
     },
     {
       "name": "Virilily",
@@ -1099,7 +1110,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "large_virilily_block"
+      "registry_name": "large_virilily_block",
+      "path": "~/Plants/Lily Pads"
     },
     {
       "name": "LargeVirilily",
@@ -1172,7 +1184,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "corium_virilily_block"
+      "registry_name": "corium_virilily_block",
+      "path": "~/Plants/Lily Pads"
     },
     {
       "name": "AcriumVirililyBlock",
@@ -1181,7 +1194,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acrium_virilily_block"
+      "registry_name": "acrium_virilily_block",
+      "path": "~/Plants/Lily Pads"
     },
     {
       "name": "CoriumVirililyRightClickedInAir",
@@ -1596,7 +1610,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dead_sullenbush"
+      "registry_name": "dead_sullenbush",
+      "path": "~/Plants/Dead"
     },
     {
       "name": "Sulkstone",
@@ -2967,7 +2982,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viriclinger_base"
+      "registry_name": "viriclinger_base",
+      "path": "~/Plants/Vines"
     },
     {
       "name": "BurstPopping",
@@ -2995,7 +3011,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viriclinger"
+      "registry_name": "viriclinger",
+      "path": "~/Plants/Vines"
     },
     {
       "name": "ThelyariumHoe",
@@ -3177,8 +3194,8 @@
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
-      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
@@ -3413,6 +3430,35 @@
       {
         "name": "recipes",
         "children": []
+      },
+      {
+        "name": "Plants",
+        "children": [
+          {
+            "name": "Fungi",
+            "children": []
+          },
+          {
+            "name": "Vines",
+            "children": []
+          },
+          {
+            "name": "Grass",
+            "children": []
+          },
+          {
+            "name": "Flowers",
+            "children": []
+          },
+          {
+            "name": "Lily Pads",
+            "children": []
+          },
+          {
+            "name": "Dead",
+            "children": []
+          }
+        ]
       }
     ]
   },
