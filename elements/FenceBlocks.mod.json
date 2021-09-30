@@ -18,10 +18,13 @@
         "value": "CUSTOM:KelaveFenceGate"
       },
       {
-        "value": "CUSTOM:ViridianFence"
+        "value": "CUSTOM:ViridianFenceGate"
       },
       {
-        "value": "CUSTOM:ViridianFenceGate"
+        "value": "CUSTOM:ViridwoodFenceGate"
+      },
+      {
+        "value": "CUSTOM:ViridwoodFence"
       }
     ],
     "functions": [],

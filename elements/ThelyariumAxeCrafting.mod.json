@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "cadillacium_axe_crafting",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ThelyariumAxe"
+    },
+    "name": "thelyarium_axe_crafting",
+    "namespace": "mod"
+  }
+}

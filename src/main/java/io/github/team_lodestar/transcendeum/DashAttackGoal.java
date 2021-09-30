@@ -1,10 +1,14 @@
 package io.github.team_lodestar.transcendeum;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.CreatureEntity;
+
+import io.github.team_lodestar.transcendeum.particle.TwilighterisParticle;
 
 public class DashAttackGoal extends Goal {
 	protected final CreatureEntity attacker;
@@ -34,7 +38,7 @@ public class DashAttackGoal extends Goal {
 			return false;
 		} else {
 			this.targetY = target.getPosY();
-			if (--this.cooldown <= 0 && this.attackerY >= this.targetY) {
+			if (this.attackerY >= this.targetY) {
 				return true;
 			}
 		}
@@ -75,19 +79,26 @@ public class DashAttackGoal extends Goal {
 		this.targetZ = target.getPosZ();
 		this.attacker.getLookController().setLookPositionWithEntity(target, 30.0F, 30.0F);
 		double distance = this.attacker.getDistanceSq(target.getPosX(), target.getPosY(), target.getPosZ());
-		if ((int) distance <= this.detectDistance) {
-			double vx = this.targetX - this.attackerX;
-			double vy = this.targetY - this.attackerY;
-			double vz = this.targetZ - this.attackerZ;
-			float speed = this.dashSpeed;
-			double vm = (double) Math.sqrt((Math.pow(vx, 2) + (Math.pow(vy, 2) + Math.pow(vz, 2))));
-			vx = (double) ((vx / vm) * speed);
-			vy = (double) ((vy / vm) * speed);
-			vz = (double) ((vz / vm) * speed);
-			this.attacker.setMotion(vx, vy, vz);
-			this.hasDashed = true;
-			if (this.hasDashed) {
-				this.executeDamage(target, distance);
+		if (this.cooldown <= 0) {
+			if ((int) distance <= this.detectDistance) {
+				double vx = this.targetX - this.attackerX;
+				double vy = this.targetY - this.attackerY;
+				double vz = this.targetZ - this.attackerZ;
+				float speed = this.dashSpeed;
+				double vm = (double) Math.sqrt((Math.pow(vx, 2) + (Math.pow(vy, 2) + Math.pow(vz, 2))));
+				vx = (double) ((vx / vm) * speed);
+				vy = (double) ((vy / vm) * speed);
+				vz = (double) ((vz / vm) * speed);
+				this.attacker.setMotion(vx, vy, vz);
+				this.hasDashed = true;
+				if (this.hasDashed) {
+					IWorld world = attacker.world;
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(TwilighterisParticle.particle, (attacker.getPosX()), (attacker.getPosY()),
+								(attacker.getPosZ()), (int) 10, 0.2, 0.2, 0.2, 0.1);
+					}
+					this.executeDamage(target, distance);
+				}
 			}
 		}
 		if (this.cooldown > 0) {
@@ -101,7 +112,7 @@ public class DashAttackGoal extends Goal {
 			target.attackEntityFrom(DamageSource.causeMobDamage(attacker), (float) this.dashDamage);
 			target.setGlowing(true);
 			this.hasDashed = false;
-			this.cooldown = 20;
+			this.cooldown = 40;
 		}
 	}
 

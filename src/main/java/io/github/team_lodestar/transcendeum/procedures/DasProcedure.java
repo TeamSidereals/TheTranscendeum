@@ -1,5 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
@@ -7,6 +8,7 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
+import io.github.team_lodestar.transcendeum.particle.TwilighterisParticle;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class DasProcedure {
@@ -62,6 +64,12 @@ public class DasProcedure {
 		entity.setMotion(vx, vy, vz);
 		if (world instanceof World && !((World) world).isRemote) {
 			((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.BREAK);
+		}
+		if (((entity.world.getDimensionKey()) == (World.OVERWORLD))) {
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(TwilighterisParticle.particle, (entity.getPosX()), (entity.getPosY()), (entity.getPosZ()),
+						(int) 10, 0.2, 0.2, 0.2, 0.1);
+			}
 		}
 	}
 }

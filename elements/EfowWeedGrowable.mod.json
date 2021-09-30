@@ -6,10 +6,13 @@
     "items": [],
     "blocks": [
       {
-        "value": "CUSTOM:SullenSand"
+        "value": "CUSTOM:EfowWeed"
       },
       {
-        "value": "CUSTOM:EfowWeed"
+        "value": "CUSTOM:EfowMoss"
+      },
+      {
+        "value": "CUSTOM:EfowMossBlock"
       }
     ],
     "functions": [],

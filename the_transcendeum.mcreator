@@ -2168,65 +2168,6 @@
       "path": "~/Structures/Natural"
     },
     {
-      "name": "CadillaciumPickaxe",
-      "type": "tool",
-      "sortid": 204,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_pickaxe",
-      "path": "~/gear sets/Tools"
-    },
-    {
-      "name": "CadillaciumSword",
-      "type": "tool",
-      "sortid": 201,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_sword",
-      "path": "~/gear sets/Tools"
-    },
-    {
-      "name": "CadillaciumAxe",
-      "type": "tool",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_axe",
-      "path": "~/gear sets/Tools"
-    },
-    {
-      "name": "CadillaciumHoe",
-      "type": "tool",
-      "sortid": 206,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_hoe",
-      "path": "~/gear sets/Tools"
-    },
-    {
-      "name": "CadillaciumIngot",
-      "type": "item",
-      "sortid": 202,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_ingot"
-    },
-    {
-      "name": "CadillaciumShovel",
-      "type": "tool",
-      "sortid": 205,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_shovel",
-      "path": "~/gear sets/Tools"
-    },
-    {
       "name": "CavernScheduleTickUpdate",
       "type": "procedure",
       "sortid": 203,
@@ -2337,56 +2278,6 @@
       "path": "~/caves"
     },
     {
-      "name": "CadillaciumSwordCrafting",
-      "type": "recipe",
-      "sortid": 207,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_sword_crafting",
-      "path": "~/recipes"
-    },
-    {
-      "name": "CadillaciumAxeCrafting",
-      "type": "recipe",
-      "sortid": 208,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_axe_crafting",
-      "path": "~/recipes"
-    },
-    {
-      "name": "CadillaciumPickaxeCrafting",
-      "type": "recipe",
-      "sortid": 209,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_pickaxe_crafting",
-      "path": "~/recipes"
-    },
-    {
-      "name": "CadillaciumShovelCrafting",
-      "type": "recipe",
-      "sortid": 210,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_shovel_crafting",
-      "path": "~/recipes"
-    },
-    {
-      "name": "CadillaciumHoeCrafting",
-      "type": "recipe",
-      "sortid": 211,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_hoe_crafting",
-      "path": "~/recipes"
-    },
-    {
       "name": "SharpBerthel",
       "type": "particle",
       "sortid": 212,
@@ -2417,53 +2308,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "CadillacHarm",
-      "type": "particle",
-      "sortid": 213,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillac_harm",
-      "path": "~/particles"
-    },
-    {
-      "name": "CadillaciumToolsHitLivingEntity",
-      "type": "procedure",
-      "sortid": 212,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cadillacium_tools_hit_living_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -3010,6 +2854,296 @@
           }
         ]
       }
+    },
+    {
+      "name": "ThelyariumHoeCrafting",
+      "type": "recipe",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_hoe_crafting"
+    },
+    {
+      "name": "ThelyariumShovelCrafting",
+      "type": "recipe",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_shovel_crafting"
+    },
+    {
+      "name": "EfowMoss",
+      "type": "block",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_moss",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "ThelyariumSwordCrafting",
+      "type": "recipe",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_sword_crafting"
+    },
+    {
+      "name": "ViridianMossBlock",
+      "type": "block",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viridian_moss_block"
+    },
+    {
+      "name": "ViriclingerBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viriclinger_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViriclingerBaseNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viriclinger_base_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViriclingerBase",
+      "type": "block",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viriclinger_base"
+    },
+    {
+      "name": "BurstPopping",
+      "type": "enchantment",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burst_popping",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "ThelyariumSword",
+      "type": "tool",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_sword"
+    },
+    {
+      "name": "Viriclinger",
+      "type": "block",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viriclinger"
+    },
+    {
+      "name": "ThelyariumHoe",
+      "type": "tool",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_hoe"
+    },
+    {
+      "name": "ViriclingerNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viriclinger_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ThelyariumShovel",
+      "type": "tool",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_shovel"
+    },
+    {
+      "name": "ThelyarianHarm",
+      "type": "particle",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarian_harm"
+    },
+    {
+      "name": "ThelyariumPickaxe",
+      "type": "tool",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_pickaxe"
+    },
+    {
+      "name": "ThelyariumIngot",
+      "type": "item",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_ingot"
+    },
+    {
+      "name": "ThelyariumToolsHitLivingEntity",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_tools_hit_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ThelyariumAxe",
+      "type": "tool",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_axe"
+    },
+    {
+      "name": "ThelyariumAxeCrafting",
+      "type": "recipe",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_axe_crafting"
+    },
+    {
+      "name": "ThelyariumPickaxeCrafting",
+      "type": "recipe",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_pickaxe_crafting"
+    },
+    {
+      "name": "EfowMossBlock",
+      "type": "block",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_moss_block",
+      "path": "~/LyofsPlace"
     }
   ],
   "variable_elements": [
@@ -3036,6 +3170,7 @@
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
       "block.the_transcendeum.bubble": "Bubble",
       "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
+      "item.the_transcendeum.thelyarium_pickaxe": "Thelyarium Pickaxe",
       "block.the_transcendeum.cavern_air": "Cavern Air",
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
@@ -3055,6 +3190,7 @@
       "item.the_transcendeum.berthel_armor_leggings": "Berthel Leggings",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.sulkstone_wall": "Sulkstone Wall",
+      "block.the_transcendeum.viriclinger": "Viriclinger",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "item.the_transcendeum.berthel_sword": "Berthel Sword",
       "block.the_transcendeum.virilily_block": "Virilily",
@@ -3078,6 +3214,7 @@
       "block.the_transcendeum.morosite_wall": "Morosite Wall",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "item.the_transcendeum.thelyarium_hoe": "Thelyarium Hoe",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
@@ -3133,6 +3270,7 @@
       "item.minecraft.potion.effect.arcedeonian_brew": "Arcedeonian Brew",
       "item.the_transcendeum.cadillacium_hoe": "Cadillacium Hoe",
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
+      "item.the_transcendeum.thelyarium_sword": "Thelyarium Sword",
       "block.the_transcendeum.polished_morosite_slab": "Polished Morosite Slab",
       "block.the_transcendeum.viridwood": "Viridwood",
       "block.the_transcendeum.chrysalium_vine": "Chrysalium Vine",
@@ -3143,6 +3281,7 @@
       "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
       "block.the_transcendeum.mordhen_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.polished_morosite": "Polished Morosite",
+      "item.the_transcendeum.thelyarium_shovel": "Thelyarium Shovel",
       "block.the_transcendeum.kelave_planks": "Kelave Planks",
       "item.the_transcendeum.corium_virilily": "Corium Virilily",
       "item.minecraft.lingering_potion.effect.arcedeonian_brew": "Lingering Arcedeonian Brew",
