@@ -8,10 +8,10 @@
   ],
   "key": {
     "0": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:thelyarium_ingot"
     },
     "1": {
-      "item": "the_transcendeum:deleted_mod_element"
+      "item": "the_transcendeum:thelyarium_ingot"
     },
     "3": {
       "item": "minecraft:stick"
@@ -21,7 +21,7 @@
     }
   },
   "result": {
-    "item": "the_transcendeum:deleted_mod_element",
+    "item": "the_transcendeum:thelyarium_hoe",
     "count": 1
   }
 }
