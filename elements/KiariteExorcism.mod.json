@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "kiarite_exorcism.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 0.8,
+    "speedFactor": 1.0,
+    "gravity": 0.30000000000000004,
+    "maxAge": 20,
+    "maxAgeDiff": 6,
+    "angularVelocity": 0.2,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "LIT"
+  }
+}

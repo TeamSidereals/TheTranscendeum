@@ -2855,7 +2855,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/gear sets"
     },
     {
       "name": "ThelyariumHoeCrafting",
@@ -2992,7 +2993,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "thelyarium_sword"
+      "registry_name": "thelyarium_sword",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "Viriclinger",
@@ -3011,7 +3013,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "thelyarium_hoe"
+      "registry_name": "thelyarium_hoe",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "ViriclingerNeighbourBlockChanges",
@@ -3049,7 +3052,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "thelyarium_shovel"
+      "registry_name": "thelyarium_shovel",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "ThelyarianHarm",
@@ -3058,7 +3062,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "thelyarian_harm"
+      "registry_name": "thelyarian_harm",
+      "path": "~/particles"
     },
     {
       "name": "ThelyariumPickaxe",
@@ -3067,7 +3072,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "thelyarium_pickaxe"
+      "registry_name": "thelyarium_pickaxe",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "ThelyariumIngot",
@@ -3122,7 +3128,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "thelyarium_axe"
+      "registry_name": "thelyarium_axe",
+      "path": "~/gear sets/Tools"
     },
     {
       "name": "ThelyariumAxeCrafting",
@@ -3153,6 +3160,167 @@
       "ids": {},
       "registry_name": "efow_moss_block",
       "path": "~/LyofsPlace"
+    },
+    {
+      "name": "KiariteOre",
+      "type": "block",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_ore"
+    },
+    {
+      "name": "KiariteIngot",
+      "type": "item",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_ingot"
+    },
+    {
+      "name": "KiaritePickaxe",
+      "type": "tool",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_pickaxe",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteAxe",
+      "type": "tool",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_axe",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteSword",
+      "type": "tool",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_sword",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteShovel",
+      "type": "tool",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_shovel",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteHoe",
+      "type": "tool",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_hoe",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiaritePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_pickaxe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteAxeRecipe",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_axe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteSwordRecipe",
+      "type": "recipe",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_sword_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteShovelRecipe",
+      "type": "recipe",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_shovel_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteHoeRecipe",
+      "type": "recipe",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_hoe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteExorcism",
+      "type": "particle",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_exorcism",
+      "path": "~/particles"
+    },
+    {
+      "name": "KiariteToolLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_tool_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3190,6 +3358,7 @@
       "block.the_transcendeum.stariam_wood": "Stariam Wood",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
+      "item.the_transcendeum.kiarite_hoe": "Kiarite Hoe",
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
@@ -3217,12 +3386,14 @@
       "block.the_transcendeum.viridwood_button": "Viridwood Button",
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
+      "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "entity.the_transcendeum.arffel": "Arffel",
       "item.the_transcendeum.berthel_shard": "Berthel Shard",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
       "block.the_transcendeum.viridwood_log": "Viridwood Log",
+      "item.the_transcendeum.kiarite_axe": "Kiarite Axe",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "block.the_transcendeum.morosite_wall": "Morosite Wall",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
@@ -3233,6 +3404,7 @@
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
       "entity.the_transcendeum.arcedeon": "Arcedeon",
+      "item.the_transcendeum.kiarite_pickaxe": "Kiarite Pickaxe",
       "block.the_transcendeum.stariam_button": "Stariam Button",
       "biome.the_transcendeum.agarith": "Agarith",
       "item.the_transcendeum.enigma_glove": "Enigma Glove",
@@ -3240,6 +3412,7 @@
       "block.the_transcendeum.mordhen_leaves": "Viridian Leaves",
       "block.the_transcendeum.dead_sullenbush": "Dead Sullenbush",
       "item.the_transcendeum.hyrumae_ghoul_spawn_egg": "Hyrumae Ghoul Spawn Egg",
+      "item.the_transcendeum.kiarite_ingot": "Kiarite Ingot",
       "block.the_transcendeum.kelave_log": "Kelave Log",
       "item.minecraft.splash_potion.effect.arcedeonian_brew": "Splash Arcedeonian Brew",
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
@@ -3281,6 +3454,7 @@
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "block.the_transcendeum.viridwood_leaves": "Viridwood Leaves",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
+      "item.the_transcendeum.kiarite_shovel": "Kiarite Shovel",
       "item.minecraft.potion.effect.arcedeonian_brew": "Arcedeonian Brew",
       "item.the_transcendeum.cadillacium_hoe": "Cadillacium Hoe",
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
@@ -3292,6 +3466,7 @@
       "item.the_transcendeum.cadillacium_ingot": "Cadillacium Ingot",
       "item.the_transcendeum.cadillacium_shovel": "Cadillacium Shovel",
       "block.the_transcendeum.kelfae": "Kelfae",
+      "item.the_transcendeum.kiarite_sword": "Kiarite Sword",
       "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
       "block.the_transcendeum.mordhen_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.polished_morosite": "Polished Morosite",
