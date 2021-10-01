@@ -2,25 +2,24 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "polished_sulkstone",
-    "textureTop": "polished_sulkstone",
-    "textureLeft": "sullen_sandstone",
-    "textureFront": "polished_sulkstone",
-    "textureRight": "sullen_sandstone",
-    "textureBack": "sullen_sandstone",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "viralga",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "viralga:default",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "PressurePlate",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -28,23 +27,23 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 16.0,
+        "My": 1.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Polished Sulkstone Pressure Plate",
+    "name": "Viralga",
     "specialInfo": [],
-    "hardness": 0.9,
-    "resistance": 0.9,
+    "hardness": 0.0,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:TranscendeumBlocks"
+      "value": "No creative tab entry"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Viralga"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -53,18 +52,18 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "PLANTS"
     },
     "tickRate": 10,
     "tickRandomly": true,
-    "isReplaceable": false,
+    "isReplaceable": true,
     "canProvidePower": false,
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Viralga"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -72,13 +71,13 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 1.0,
+    "speedFactor": 0.9,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "WET_GRASS"
     },
     "breakSound": {
       "value": ""
@@ -97,10 +96,10 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Twilighteris"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -124,11 +123,7 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

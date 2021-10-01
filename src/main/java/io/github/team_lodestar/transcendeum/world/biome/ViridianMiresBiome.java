@@ -46,7 +46,6 @@ import java.util.List;
 
 import io.github.team_lodestar.transcendeum.block.ViridwoodLogBlock;
 import io.github.team_lodestar.transcendeum.block.ViridwoodLeavesBlock;
-import io.github.team_lodestar.transcendeum.block.ViriclingerBaseBlock;
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -94,7 +93,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 								10)));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.2f).scale(0.1f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.3f).scale(0.1f)
 						.temperature(1.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:viridian_mires"));
@@ -121,7 +120,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, ViriclingerBaseBlock.block.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -142,7 +141,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, ViriclingerBaseBlock.block.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 
