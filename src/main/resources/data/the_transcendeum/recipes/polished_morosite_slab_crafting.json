@@ -1,0 +1,22 @@
+{
+  "group": "polished_morosite_slab_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:polished_morosite"
+    },
+    "1": {
+      "item": "the_transcendeum:polished_morosite"
+    },
+    "2": {
+      "item": "the_transcendeum:polished_morosite"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:polished_morosite_slab",
+    "count": 6
+  }
+}

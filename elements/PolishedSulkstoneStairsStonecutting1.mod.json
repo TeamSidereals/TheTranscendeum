@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "polished_sulkstone_stairs_stonecutting1",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:Sulkstone"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PolishedSulkstoneStairs"
+    },
+    "name": "polished_sulkstone_stairs_stonecutting_1",
+    "namespace": "mod"
+  }
+}

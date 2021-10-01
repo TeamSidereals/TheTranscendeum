@@ -8,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "item": "the_transcendeum:kiarite_ingot"
+      "item": "the_transcendeum:deleted_mod_element"
     },
     "1": {
-      "item": "the_transcendeum:kiarite_ingot"
+      "item": "the_transcendeum:deleted_mod_element"
     },
     "2": {
-      "item": "the_transcendeum:kiarite_ingot"
+      "item": "the_transcendeum:deleted_mod_element"
     },
     "4": {
       "item": "minecraft:stick"
@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "the_transcendeum:kiarite_pickaxe",
+    "item": "the_transcendeum:deleted_mod_element",
     "count": 1
   }
 }

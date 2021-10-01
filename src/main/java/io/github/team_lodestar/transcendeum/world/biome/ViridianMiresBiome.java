@@ -46,6 +46,7 @@ import java.util.List;
 
 import io.github.team_lodestar.transcendeum.block.ViridwoodLogBlock;
 import io.github.team_lodestar.transcendeum.block.ViridwoodLeavesBlock;
+import io.github.team_lodestar.transcendeum.block.ViriclingerBaseBlock;
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -120,7 +121,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, ViriclingerBaseBlock.block.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -141,7 +142,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, ViriclingerBaseBlock.block.getDefaultState(), sbc, mbb);
 		}
 	}
 
