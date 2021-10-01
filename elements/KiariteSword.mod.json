@@ -1,0 +1,34 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "kiarite_sword",
+    "customModelName": "Normal",
+    "name": "Kiarite Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumGear"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 8.0,
+    "attackSpeed": 1.6,
+    "enchantability": 21,
+    "damageVsEntity": 9.0,
+    "usageCount": 2355,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:KiariteIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "KiariteToolLivingEntityIsHitWithTool"
+    }
+  }
+}

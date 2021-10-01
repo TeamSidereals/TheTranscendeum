@@ -3464,6 +3464,45 @@
       "registry_name": "viralga_block"
     },
     {
+      "name": "ViralgaFuel",
+      "type": "fuel",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viralga_fuel",
+      "path": "~/fuels"
+    },
+    {
+      "name": "ViralgaFeature2",
+      "type": "structure",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viralga_feature_2"
+    },
+    {
+      "name": "ViralgaFeature",
+      "type": "structure",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viralga_feature",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "GreenDyeFromViralgaCrafting",
+      "type": "recipe",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_dye_from_viralga_crafting",
+      "path": "~/recipes"
+    },
+    {
       "name": "Viralga",
       "type": "item",
       "sortid": 301,
@@ -3498,36 +3537,6 @@
       }
     },
     {
-      "name": "ViralgaFeature",
-      "type": "structure",
-      "sortid": 303,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viralga_feature",
-      "path": "~/Structures/Natural"
-    },
-    {
-      "name": "ViralgaFuel",
-      "type": "fuel",
-      "sortid": 304,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "viralga_fuel",
-      "path": "~/fuels"
-    },
-    {
-      "name": "GreenDyeFromViralgaCrafting",
-      "type": "recipe",
-      "sortid": 305,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "green_dye_from_viralga_crafting",
-      "path": "~/recipes"
-    },
-    {
       "name": "ViralgaFeature1",
       "type": "structure",
       "sortid": 306,
@@ -3538,13 +3547,192 @@
       "path": "~/Structures/Natural"
     },
     {
-      "name": "ViralgaFeature2",
-      "type": "structure",
-      "sortid": 307,
+      "name": "LethreumOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viralga_feature_2"
+      "registry_name": "lethreum_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KiariteSword",
+      "type": "tool",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_sword",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteSwordRecipe",
+      "type": "recipe",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_sword_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteToolLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_tool_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KiariteAxe",
+      "type": "tool",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_axe",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteExorcism",
+      "type": "particle",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_exorcism",
+      "path": "~/particles"
+    },
+    {
+      "name": "KiariteAxeRecipe",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_axe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteShovel",
+      "type": "tool",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_shovel",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteShovelRecipe",
+      "type": "recipe",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_shovel_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiaritePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_pickaxe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteHoeRecipe",
+      "type": "recipe",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_hoe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Lethreum",
+      "type": "livingentity",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lethreum",
+      "path": "~/mobs"
+    },
+    {
+      "name": "KiaritePickaxe",
+      "type": "tool",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_pickaxe",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "KiariteIngot",
+      "type": "item",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_ingot"
+    },
+    {
+      "name": "KiariteOre",
+      "type": "block",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_ore"
+    },
+    {
+      "name": "KiariteHoe",
+      "type": "tool",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_hoe",
+      "path": "~/gear sets/Tools"
     }
   ],
   "variable_elements": [
@@ -3626,7 +3814,6 @@
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
       "entity.the_transcendeum.arcedeon": "Arcedeon",
       "block.the_transcendeum.stariam_button": "Stariam Button",
-      "block.the_transcendeum.viralga_block": "Viralga",
       "biome.the_transcendeum.agarith": "Agarith",
       "item.the_transcendeum.enigma_glove": "Enigma Glove",
       "item.the_transcendeum.large_virilily": "Large Virilily",
@@ -3685,6 +3872,7 @@
       "item.the_transcendeum.cadillacium_ingot": "Cadillacium Ingot",
       "item.the_transcendeum.cadillacium_shovel": "Cadillacium Shovel",
       "block.the_transcendeum.kelfae": "Kelfae",
+      "item.the_transcendeum.kiarite_sword": "Kiarite Sword",
       "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
       "block.the_transcendeum.mordhen_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.polished_morosite": "Polished Morosite",
@@ -3741,6 +3929,35 @@
         "children": []
       },
       {
+        "name": "Plants",
+        "children": [
+          {
+            "name": "Lily Pads",
+            "children": []
+          },
+          {
+            "name": "Fungi",
+            "children": []
+          },
+          {
+            "name": "Grass",
+            "children": []
+          },
+          {
+            "name": "Vines",
+            "children": []
+          },
+          {
+            "name": "Dead",
+            "children": []
+          },
+          {
+            "name": "Flowers",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "custom elements",
         "children": []
       },
@@ -3779,6 +3996,10 @@
       },
       {
         "name": "Creative Tabs",
+        "children": []
+      },
+      {
+        "name": "fuels",
         "children": []
       },
       {
@@ -3822,39 +4043,6 @@
       },
       {
         "name": "recipes",
-        "children": []
-      },
-      {
-        "name": "Plants",
-        "children": [
-          {
-            "name": "Fungi",
-            "children": []
-          },
-          {
-            "name": "Vines",
-            "children": []
-          },
-          {
-            "name": "Grass",
-            "children": []
-          },
-          {
-            "name": "Flowers",
-            "children": []
-          },
-          {
-            "name": "Lily Pads",
-            "children": []
-          },
-          {
-            "name": "Dead",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "fuels",
         "children": []
       }
     ]
