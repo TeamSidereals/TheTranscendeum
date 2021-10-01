@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "morosite_stairs_crafting",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MorositeStairs"
+    },
+    "name": "morosite_stairs_crafting",
+    "namespace": "mod"
+  }
+}

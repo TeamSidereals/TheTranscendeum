@@ -3153,6 +3153,306 @@
       "ids": {},
       "registry_name": "efow_moss_block",
       "path": "~/LyofsPlace"
+    },
+    {
+      "name": "SulkstoneStairsCrafting",
+      "type": "recipe",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sulkstone_stairs_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SulkstoneStairsStonecutting",
+      "type": "recipe",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sulkstone_stairs_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SulkstoneSlabCrafting",
+      "type": "recipe",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sulkstone_slab_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SulkstoneSlabStonecutting",
+      "type": "recipe",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sulkstone_slab_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SulkstoneWallCrafting",
+      "type": "recipe",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sulkstone_wall_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SulkstoneWallStonecutting",
+      "type": "recipe",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sulkstone_wall_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneCrafting",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneStonecutting",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneStairsCrafting",
+      "type": "recipe",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_stairs_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneStairsStonecutting1",
+      "type": "recipe",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_stairs_stonecutting_1",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneStairsStonecutting2",
+      "type": "recipe",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_stairs_stonecutting_2",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneSlabCrafting",
+      "type": "recipe",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_slab_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneSlabStonecutting1",
+      "type": "recipe",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_slab_stonecutting_1",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstoneSlabStonecutting2",
+      "type": "recipe",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_slab_stonecutting_2",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedSulkstonePressurePlateCrafting",
+      "type": "recipe",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_sulkstone_pressure_plate_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MorositeStairsCrafting",
+      "type": "recipe",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morosite_stairs_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MorositeStairsStonecutting",
+      "type": "recipe",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morosite_stairs_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MorositeSlabCrafting",
+      "type": "recipe",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morosite_slab_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MorositeSlabStonecutting",
+      "type": "recipe",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morosite_slab_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MorositeWallCrafting",
+      "type": "recipe",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morosite_wall_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MorositeWallStonecutting",
+      "type": "recipe",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morosite_wall_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeCrafting",
+      "type": "recipe",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeStonecutting",
+      "type": "recipe",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_stonecutting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeStairsCrafting",
+      "type": "recipe",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_stairs_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeStairsStonecutting1",
+      "type": "recipe",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_stairs_stonecutting_1",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeStairsStonecutting2",
+      "type": "recipe",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_stairs_stonecutting_2",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeSlabCrafting",
+      "type": "recipe",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_slab_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeSlabStonecutting1",
+      "type": "recipe",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_slab_stonecutting_1",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositeSlabStonecutting2",
+      "type": "recipe",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_slab_stonecutting_2",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PolishedMorositePressurePlateCrafting",
+      "type": "recipe",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_morosite_pressure_plate_crafting",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [

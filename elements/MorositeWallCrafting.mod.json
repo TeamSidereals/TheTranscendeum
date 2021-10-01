@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "morosite_wall_crafting",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MorositeWall"
+    },
+    "name": "morosite_wall_crafting",
+    "namespace": "mod"
+  }
+}
