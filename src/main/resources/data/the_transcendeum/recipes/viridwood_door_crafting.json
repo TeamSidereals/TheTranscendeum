@@ -1,0 +1,33 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:viridwood_planks"
+    },
+    "1": {
+      "item": "the_transcendeum:viridwood_planks"
+    },
+    "2": {
+      "item": "the_transcendeum:viridwood_planks"
+    },
+    "3": {
+      "item": "the_transcendeum:viridwood_planks"
+    },
+    "4": {
+      "item": "the_transcendeum:viridwood_planks"
+    },
+    "5": {
+      "item": "the_transcendeum:viridwood_planks"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:viridwood_door",
+    "count": 3
+  }
+}

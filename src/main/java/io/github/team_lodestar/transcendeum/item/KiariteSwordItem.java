@@ -38,7 +38,7 @@ public class KiariteSwordItem extends TheTranscendeumModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 7f;
+				return 5f;
 			}
 
 			public int getHarvestLevel() {

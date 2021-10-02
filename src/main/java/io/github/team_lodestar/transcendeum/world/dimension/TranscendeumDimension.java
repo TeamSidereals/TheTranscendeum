@@ -65,7 +65,7 @@ import java.util.Comparator;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 
 import io.github.team_lodestar.transcendeum.item.TranscendeumItem;
-import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
+import io.github.team_lodestar.transcendeum.block.ExcerockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 import com.google.common.collect.Sets;
@@ -86,10 +86,10 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(SomberstoneBlock.block).build(), "field_222718_j");
+						.add(ExcerockBlock.block).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(SomberstoneBlock.block).build(), "field_222718_j");
+						.add(ExcerockBlock.block).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
