@@ -4,8 +4,6 @@ package io.github.team_lodestar.transcendeum.block;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -27,7 +25,7 @@ public class PolishedSulkstonePressurePlateBlock extends TheTranscendeumModEleme
 	@ObjectHolder("the_transcendeum:polished_sulkstone_pressure_plate")
 	public static final Block block = null;
 	public PolishedSulkstonePressurePlateBlock(TheTranscendeumModElements instance) {
-		super(instance, 167);
+		super(instance, 67);
 	}
 
 	@Override
@@ -41,11 +39,6 @@ public class PolishedSulkstonePressurePlateBlock extends TheTranscendeumModEleme
 			super(Sensitivity.MOBS, Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.9f, 0.9f)
 					.setLightLevel(s -> 0).harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool().tickRandomly());
 			setRegistryName("polished_sulkstone_pressure_plate");
-		}
-
-		@Override
-		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
 		}
 
 		@Override

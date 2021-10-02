@@ -46,7 +46,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class AureaPlainsBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public AureaPlainsBiome(TheTranscendeumModElements instance) {
-		super(instance, 62);
+		super(instance, 155);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

@@ -16,7 +16,7 @@ public class ThelyariumIngotItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:thelyarium_ingot")
 	public static final Item block = null;
 	public ThelyariumIngotItem(TheTranscendeumModElements instance) {
-		super(instance, 251);
+		super(instance, 3);
 	}
 
 	@Override

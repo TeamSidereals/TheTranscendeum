@@ -52,7 +52,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(8f, 1.7999999999999998f)).build("lethreum").setRegistryName("lethreum");
 	public LethreumEntity(TheTranscendeumModElements instance) {
-		super(instance, 300);
+		super(instance, 101);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LethreumRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

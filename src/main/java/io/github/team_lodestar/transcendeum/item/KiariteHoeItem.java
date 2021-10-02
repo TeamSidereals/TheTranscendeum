@@ -23,7 +23,7 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_hoe")
 	public static final Item block = null;
 	public KiariteHoeItem(TheTranscendeumModElements instance) {
-		super(instance, 275);
+		super(instance, 119);
 	}
 
 	@Override

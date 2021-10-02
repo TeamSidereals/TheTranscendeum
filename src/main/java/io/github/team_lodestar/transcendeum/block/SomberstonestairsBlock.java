@@ -26,7 +26,7 @@ public class SomberstonestairsBlock extends TheTranscendeumModElements.ModElemen
 	@ObjectHolder("the_transcendeum:somberstone_stairs")
 	public static final Block block = null;
 	public SomberstonestairsBlock(TheTranscendeumModElements instance) {
-		super(instance, 11);
+		super(instance, 7);
 	}
 
 	@Override

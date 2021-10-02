@@ -27,7 +27,7 @@ public class ViridwoodPressurePlateBlock extends TheTranscendeumModElements.ModE
 	@ObjectHolder("the_transcendeum:viridwood_pressure_plate")
 	public static final Block block = null;
 	public ViridwoodPressurePlateBlock(TheTranscendeumModElements instance) {
-		super(instance, 232);
+		super(instance, 82);
 	}
 
 	@Override

@@ -25,7 +25,7 @@ public class MordhenNylliumBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridian_nyllium")
 	public static final Block block = null;
 	public MordhenNylliumBlock(TheTranscendeumModElements instance) {
-		super(instance, 52);
+		super(instance, 27);
 	}
 
 	@Override

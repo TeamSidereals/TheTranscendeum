@@ -162,7 +162,7 @@ public class BubbleHelmGiveAirProcedure {
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if ((!(entityiterator == entity))) {
-							entityiterator.attackEntityFrom(DamageSource.DROWN, (float) 4);
+							entityiterator.attackEntityFrom(DamageSource.MAGIC, (float) 6);
 						}
 					}
 				}

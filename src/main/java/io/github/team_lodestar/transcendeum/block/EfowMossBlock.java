@@ -25,7 +25,7 @@ public class EfowMossBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:efow_moss")
 	public static final Block block = null;
 	public EfowMossBlock(TheTranscendeumModElements instance) {
-		super(instance, 247);
+		super(instance, 92);
 	}
 
 	@Override
