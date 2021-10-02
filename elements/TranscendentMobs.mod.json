@@ -18,6 +18,9 @@
       },
       {
         "value": "CUSTOM:HyrumaeGhoul"
+      },
+      {
+        "value": "CUSTOM:Lethreum"
       }
     ],
     "name": "transcendent_mobs",
