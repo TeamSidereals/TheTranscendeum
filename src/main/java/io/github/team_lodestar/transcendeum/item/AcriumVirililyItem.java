@@ -24,7 +24,7 @@ public class AcriumVirililyItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:acrium_virilily")
 	public static final Item block = null;
 	public AcriumVirililyItem(TheTranscendeumModElements instance) {
-		super(instance, 55);
+		super(instance, 132);
 	}
 
 	@Override

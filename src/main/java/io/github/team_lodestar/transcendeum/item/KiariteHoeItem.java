@@ -23,7 +23,7 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_hoe")
 	public static final Item block = null;
 	public KiariteHoeItem(TheTranscendeumModElements instance) {
-		super(instance, 119);
+		super(instance, 275);
 	}
 
 	@Override
@@ -63,9 +63,6 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
 					KiariteToolLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}

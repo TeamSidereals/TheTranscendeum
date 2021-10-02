@@ -28,7 +28,7 @@ public class ViridwoodSlabBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridwood_slab")
 	public static final Block block = null;
 	public ViridwoodSlabBlock(TheTranscendeumModElements instance) {
-		super(instance, 79);
+		super(instance, 229);
 	}
 
 	@Override

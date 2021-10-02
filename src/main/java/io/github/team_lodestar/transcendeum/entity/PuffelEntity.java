@@ -54,7 +54,7 @@ public class PuffelEntity extends TheTranscendeumModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("puffel").setRegistryName("puffel");
 	public PuffelEntity(TheTranscendeumModElements instance) {
-		super(instance, 96);
+		super(instance, 90);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PuffelRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

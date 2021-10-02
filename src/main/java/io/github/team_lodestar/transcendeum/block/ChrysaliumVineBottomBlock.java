@@ -46,7 +46,7 @@ public class ChrysaliumVineBottomBlock extends TheTranscendeumModElements.ModEle
 	@ObjectHolder("the_transcendeum:chrysalium_vine_bottom")
 	public static final Block block = null;
 	public ChrysaliumVineBottomBlock(TheTranscendeumModElements instance) {
-		super(instance, 50);
+		super(instance, 82);
 	}
 
 	@Override

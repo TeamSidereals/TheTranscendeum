@@ -23,7 +23,7 @@ public class KiaritePickaxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_pickaxe")
 	public static final Item block = null;
 	public KiaritePickaxeItem(TheTranscendeumModElements instance) {
-		super(instance, 114);
+		super(instance, 271);
 	}
 
 	@Override
@@ -63,9 +63,6 @@ public class KiaritePickaxeItem extends TheTranscendeumModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
 					KiariteToolLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}

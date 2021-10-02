@@ -24,7 +24,7 @@ public class VirililyItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:virilily")
 	public static final Item block = null;
 	public VirililyItem(TheTranscendeumModElements instance) {
-		super(instance, 52);
+		super(instance, 120);
 	}
 
 	@Override

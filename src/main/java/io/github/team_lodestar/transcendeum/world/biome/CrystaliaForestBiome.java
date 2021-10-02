@@ -54,7 +54,7 @@ import com.google.common.collect.ImmutableList;
 public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public CrystaliaForestBiome(TheTranscendeumModElements instance) {
-		super(instance, 140);
+		super(instance, 51);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

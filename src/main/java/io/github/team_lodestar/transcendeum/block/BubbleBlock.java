@@ -51,7 +51,7 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:bubble")
 	public static final Block block = null;
 	public BubbleBlock(TheTranscendeumModElements instance) {
-		super(instance, 95);
+		super(instance, 186);
 	}
 
 	@Override

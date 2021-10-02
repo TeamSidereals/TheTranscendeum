@@ -61,7 +61,7 @@ public class IaprieGrassBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:iaprie_grass")
 	public static final Block block = null;
 	public IaprieGrassBlock(TheTranscendeumModElements instance) {
-		super(instance, 35);
+		super(instance, 64);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

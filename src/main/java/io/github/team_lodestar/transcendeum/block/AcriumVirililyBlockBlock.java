@@ -54,7 +54,7 @@ public class AcriumVirililyBlockBlock extends TheTranscendeumModElements.ModElem
 	@ObjectHolder("the_transcendeum:acrium_virilily_block")
 	public static final Block block = null;
 	public AcriumVirililyBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 177);
+		super(instance, 129);
 	}
 
 	@Override

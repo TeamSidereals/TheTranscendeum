@@ -56,7 +56,7 @@ public class CoriumFlowerBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:corium_flower")
 	public static final Block block = null;
 	public CoriumFlowerBlock(TheTranscendeumModElements instance) {
-		super(instance, 36);
+		super(instance, 65);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -40,7 +40,7 @@ public class SulkstoneWallBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sulkstone_wall")
 	public static final Block block = null;
 	public SulkstoneWallBlock(TheTranscendeumModElements instance) {
-		super(instance, 64);
+		super(instance, 164);
 	}
 
 	@Override

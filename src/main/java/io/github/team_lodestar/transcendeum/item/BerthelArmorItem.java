@@ -29,7 +29,7 @@ public class BerthelArmorItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_armor_boots")
 	public static final Item boots = null;
 	public BerthelArmorItem(TheTranscendeumModElements instance) {
-		super(instance, 107);
+		super(instance, 169);
 	}
 
 	@Override

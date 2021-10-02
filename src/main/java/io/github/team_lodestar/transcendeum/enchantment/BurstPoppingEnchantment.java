@@ -16,7 +16,7 @@ public class BurstPoppingEnchantment extends TheTranscendeumModElements.ModEleme
 	@ObjectHolder("the_transcendeum:burst_popping")
 	public static final Enchantment enchantment = null;
 	public BurstPoppingEnchantment(TheTranscendeumModElements instance) {
-		super(instance, 269);
+		super(instance, 249);
 	}
 
 	@Override

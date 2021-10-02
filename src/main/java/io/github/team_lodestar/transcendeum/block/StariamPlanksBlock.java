@@ -26,7 +26,7 @@ public class StariamPlanksBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_planks")
 	public static final Block block = null;
 	public StariamPlanksBlock(TheTranscendeumModElements instance) {
-		super(instance, 14);
+		super(instance, 22);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class CellcyteBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:cellcyte")
 	public static final Block block = null;
 	public CellcyteBlock(TheTranscendeumModElements instance) {
-		super(instance, 58);
+		super(instance, 143);
 	}
 
 	@Override
