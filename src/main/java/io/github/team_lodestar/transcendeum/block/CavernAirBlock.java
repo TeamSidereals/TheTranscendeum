@@ -55,7 +55,7 @@ public class CavernAirBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:cavern_air")
 	public static final Block block = null;
 	public CavernAirBlock(TheTranscendeumModElements instance) {
-		super(instance, 200);
+		super(instance, 235);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

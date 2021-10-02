@@ -24,7 +24,7 @@ public class ViralgaItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viralga")
 	public static final Item block = null;
 	public ViralgaItem(TheTranscendeumModElements instance) {
-		super(instance, 301);
+		super(instance, 89);
 	}
 
 	@Override

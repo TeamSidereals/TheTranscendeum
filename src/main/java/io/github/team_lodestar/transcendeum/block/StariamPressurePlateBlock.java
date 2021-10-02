@@ -27,7 +27,7 @@ public class StariamPressurePlateBlock extends TheTranscendeumModElements.ModEle
 	@ObjectHolder("the_transcendeum:stariam_pressure_plate")
 	public static final Block block = null;
 	public StariamPressurePlateBlock(TheTranscendeumModElements instance) {
-		super(instance, 28);
+		super(instance, 20);
 	}
 
 	@Override
