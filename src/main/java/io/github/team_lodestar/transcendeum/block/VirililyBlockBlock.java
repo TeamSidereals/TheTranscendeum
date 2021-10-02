@@ -54,7 +54,7 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:virilily_block")
 	public static final Block block = null;
 	public VirililyBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 170);
+		super(instance, 119);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class BerthelAxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_axe")
 	public static final Item block = null;
 	public BerthelAxeItem(TheTranscendeumModElements instance) {
-		super(instance, 103);
+		super(instance, 147);
 	}
 
 	@Override

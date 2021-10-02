@@ -65,7 +65,7 @@ public class DeadSullenbushBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:dead_sullenbush")
 	public static final Block block = null;
 	public DeadSullenbushBlock(TheTranscendeumModElements instance) {
-		super(instance, 59);
+		super(instance, 159);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

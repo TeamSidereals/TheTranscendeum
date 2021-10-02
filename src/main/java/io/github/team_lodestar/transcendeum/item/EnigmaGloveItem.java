@@ -47,7 +47,7 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletenigma_glove").setRegistryName("entitybulletenigma_glove");
 	public EnigmaGloveItem(TheTranscendeumModElements instance) {
-		super(instance, 108);
+		super(instance, 214);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EnigmaGloveRenderer.ModelRegisterHandler());
 	}
 
