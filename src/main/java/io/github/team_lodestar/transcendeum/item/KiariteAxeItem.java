@@ -1,14 +1,29 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.AxeItem;
+import net.minecraft.entity.LivingEntity;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.procedures.KiariteToolLivingEntityIsHitWithToolProcedure;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+
 @TheTranscendeumModElements.ModElement.Tag
 public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
-
 	@ObjectHolder("the_transcendeum:kiarite_axe")
 	public static final Item block = null;
-
 	public KiariteAxeItem(TheTranscendeumModElements instance) {
-		super(instance, 272);
+		super(instance, 115);
 	}
 
 	@Override
@@ -38,7 +53,6 @@ public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(KiariteIngotItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
-
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
@@ -48,19 +62,15 @@ public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
 				World world = entity.world;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-
 					$_dependencies.put("entity", entity);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-
 					KiariteToolLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
-
 		}.setRegistryName("kiarite_axe"));
 	}
-
 }

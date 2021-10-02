@@ -27,7 +27,7 @@ public class ViridwoodFenceGateBlock extends TheTranscendeumModElements.ModEleme
 	@ObjectHolder("the_transcendeum:viridwood_fence_gate")
 	public static final Block block = null;
 	public ViridwoodFenceGateBlock(TheTranscendeumModElements instance) {
-		super(instance, 230);
+		super(instance, 80);
 	}
 
 	@Override

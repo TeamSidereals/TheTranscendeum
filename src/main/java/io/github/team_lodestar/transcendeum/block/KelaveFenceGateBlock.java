@@ -27,7 +27,7 @@ public class KelaveFenceGateBlock extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:kelave_fence_gate")
 	public static final Block block = null;
 	public KelaveFenceGateBlock(TheTranscendeumModElements instance) {
-		super(instance, 74);
+		super(instance, 44);
 	}
 
 	@Override

@@ -59,7 +59,7 @@ public class ScaliaWartBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:scalia_wart")
 	public static final Block block = null;
 	public ScaliaWartBlock(TheTranscendeumModElements instance) {
-		super(instance, 62);
+		super(instance, 33);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

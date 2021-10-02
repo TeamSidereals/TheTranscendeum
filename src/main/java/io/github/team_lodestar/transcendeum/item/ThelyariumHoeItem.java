@@ -23,7 +23,7 @@ public class ThelyariumHoeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:thelyarium_hoe")
 	public static final Item block = null;
 	public ThelyariumHoeItem(TheTranscendeumModElements instance) {
-		super(instance, 257);
+		super(instance, 111);
 	}
 
 	@Override

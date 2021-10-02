@@ -26,7 +26,7 @@ public class ViridwoodPlanksBlock extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:viridwood_planks")
 	public static final Block block = null;
 	public ViridwoodPlanksBlock(TheTranscendeumModElements instance) {
-		super(instance, 228);
+		super(instance, 78);
 	}
 
 	@Override

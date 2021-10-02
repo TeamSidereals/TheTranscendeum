@@ -54,7 +54,7 @@ public class CoriumVirililyBlockBlock extends TheTranscendeumModElements.ModElem
 	@ObjectHolder("the_transcendeum:corium_virilily_block")
 	public static final Block block = null;
 	public CoriumVirililyBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 128);
+		super(instance, 176);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class BlockOfCrystakBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:block_of_crystak")
 	public static final Block block = null;
 	public BlockOfCrystakBlock(TheTranscendeumModElements instance) {
-		super(instance, 50);
+		super(instance, 25);
 	}
 
 	@Override

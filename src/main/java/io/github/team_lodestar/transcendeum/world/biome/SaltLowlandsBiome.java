@@ -22,7 +22,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SaltLowlandsBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public SaltLowlandsBiome(TheTranscendeumModElements instance) {
-		super(instance, 59);
+		super(instance, 151);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

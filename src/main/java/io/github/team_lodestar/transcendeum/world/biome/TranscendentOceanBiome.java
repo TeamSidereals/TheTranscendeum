@@ -20,7 +20,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class TranscendentOceanBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public TranscendentOceanBiome(TheTranscendeumModElements instance) {
-		super(instance, 23);
+		super(instance, 144);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

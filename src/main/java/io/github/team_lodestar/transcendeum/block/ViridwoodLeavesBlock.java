@@ -27,7 +27,7 @@ public class ViridwoodLeavesBlock extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:viridwood_leaves")
 	public static final Block block = null;
 	public ViridwoodLeavesBlock(TheTranscendeumModElements instance) {
-		super(instance, 242);
+		super(instance, 85);
 	}
 
 	@Override

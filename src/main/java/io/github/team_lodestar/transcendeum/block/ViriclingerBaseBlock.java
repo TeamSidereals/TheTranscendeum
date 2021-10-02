@@ -47,7 +47,7 @@ public class ViriclingerBaseBlock extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:viriclinger_base")
 	public static final Block block = null;
 	public ViriclingerBaseBlock(TheTranscendeumModElements instance) {
-		super(instance, 266);
+		super(instance, 268);
 	}
 
 	@Override
