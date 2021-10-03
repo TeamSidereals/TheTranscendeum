@@ -9,6 +9,7 @@ import java.util.Map;
 import io.github.team_lodestar.transcendeum.block.ScaliaWartBlock;
 import io.github.team_lodestar.transcendeum.block.MergoanyBlock;
 import io.github.team_lodestar.transcendeum.block.IaprieGrassBlockBlock;
+import io.github.team_lodestar.transcendeum.block.ExcerockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class CavernAirUpdateTickProcedure {
@@ -38,7 +39,7 @@ public class CavernAirUpdateTickProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((Blocks.CAVE_AIR == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
-			if ((ExcerockItem.block == (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock())) {
+			if ((ExcerockBlock.block == (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock())) {
 				world.setBlockState(new BlockPos((int) x, (int) (y - 1), (int) z), IaprieGrassBlockBlock.block.getDefaultState(), 3);
 				if ((0.05 >= Math.random())) {
 					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), MergoanyBlock.block.getDefaultState(), 3);
@@ -48,7 +49,7 @@ public class CavernAirUpdateTickProcedure {
 					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
 				}
 			} else if (((0.2 >= Math.random())
-					&& (ExcerockItem.block == (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()))) {
+					&& (ExcerockBlock.block == (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()))) {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
 			} else {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
