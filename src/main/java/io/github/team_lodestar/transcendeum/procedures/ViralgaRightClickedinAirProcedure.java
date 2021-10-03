@@ -1,7 +1,27 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class ViralgaRightClickedinAirProcedure {
+import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.RayTraceContext;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
+
+import java.util.Map;
+
+import io.github.team_lodestar.transcendeum.block.ViralgaBlockBlock;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class ViralgaRightClickedinAirProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -18,11 +38,9 @@ public class ViralgaRightClickedinAirProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure ViralgaRightClickedinAir!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		double raytrace_distance = 0;
 		raytrace_distance = (double) 1;
 		for (int index0 = 0; index0 < (int) (5); index0++) {
@@ -222,5 +240,4 @@ public class ViralgaRightClickedinAirProcedure {
 			}
 		}
 	}
-
 }

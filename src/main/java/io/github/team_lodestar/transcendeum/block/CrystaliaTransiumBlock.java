@@ -25,7 +25,7 @@ public class CrystaliaTransiumBlock extends TheTranscendeumModElements.ModElemen
 	@ObjectHolder("the_transcendeum:crystalia_transium")
 	public static final Block block = null;
 	public CrystaliaTransiumBlock(TheTranscendeumModElements instance) {
-		super(instance, 23);
+		super(instance, 48);
 	}
 
 	@Override

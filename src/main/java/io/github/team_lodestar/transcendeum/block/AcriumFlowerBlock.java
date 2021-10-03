@@ -56,7 +56,7 @@ public class AcriumFlowerBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:acrium_flower")
 	public static final Block block = null;
 	public AcriumFlowerBlock(TheTranscendeumModElements instance) {
-		super(instance, 38);
+		super(instance, 67);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

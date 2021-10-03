@@ -31,7 +31,7 @@ public class StariamWoodBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_wood")
 	public static final Block block = null;
 	public StariamWoodBlock(TheTranscendeumModElements instance) {
-		super(instance, 11);
+		super(instance, 20);
 	}
 
 	@Override

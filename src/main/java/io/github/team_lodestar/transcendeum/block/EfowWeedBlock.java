@@ -55,7 +55,7 @@ public class EfowWeedBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:efow_weed")
 	public static final Block block = null;
 	public EfowWeedBlock(TheTranscendeumModElements instance) {
-		super(instance, 94);
+		super(instance, 191);
 	}
 
 	@Override

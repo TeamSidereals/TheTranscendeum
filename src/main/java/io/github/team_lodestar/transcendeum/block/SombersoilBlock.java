@@ -25,7 +25,7 @@ public class SombersoilBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sombersoil")
 	public static final Block block = null;
 	public SombersoilBlock(TheTranscendeumModElements instance) {
-		super(instance, 22);
+		super(instance, 47);
 	}
 
 	@Override

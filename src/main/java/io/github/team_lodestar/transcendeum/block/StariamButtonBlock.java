@@ -27,7 +27,7 @@ public class StariamButtonBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_button")
 	public static final Block block = null;
 	public StariamButtonBlock(TheTranscendeumModElements instance) {
-		super(instance, 21);
+		super(instance, 29);
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class StariamStairsBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_stairs")
 	public static final Block block = null;
 	public StariamStairsBlock(TheTranscendeumModElements instance) {
-		super(instance, 16);
+		super(instance, 24);
 	}
 
 	@Override

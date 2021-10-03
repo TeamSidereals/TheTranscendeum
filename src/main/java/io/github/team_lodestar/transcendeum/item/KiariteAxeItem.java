@@ -23,7 +23,7 @@ public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_axe")
 	public static final Item block = null;
 	public KiariteAxeItem(TheTranscendeumModElements instance) {
-		super(instance, 115);
+		super(instance, 272);
 	}
 
 	@Override
@@ -63,9 +63,6 @@ public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
 					KiariteToolLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}
