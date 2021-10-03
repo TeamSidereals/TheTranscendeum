@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "indigo_berries",
+    "texture": "indigoberry",
     "customModelName": "Normal",
     "name": "Indigo Berries",
     "rarity": "COMMON",
