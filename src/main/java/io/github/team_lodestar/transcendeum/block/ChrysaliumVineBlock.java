@@ -136,7 +136,7 @@ public class ChrysaliumVineBlock extends TheTranscendeumModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(ChrysaliumVineBottomBlock.block));
 		}
 
 		@Override

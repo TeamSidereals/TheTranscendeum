@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ChrysaliumVineBottom"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
