@@ -42,9 +42,12 @@ import java.util.Map;
 import java.util.HashMap;
 
 import io.github.team_lodestar.transcendeum.procedures.LethreumOnEntityTickUpdateProcedure;
+import io.github.team_lodestar.transcendeum.procedures.LethreumNaturalEntitySpawningConditionProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.LethreumRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+
+import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class LethreumEntity extends TheTranscendeumModElements.ModElement {
@@ -84,7 +87,12 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
+				(entityType, world, reason, pos, random) -> {
+					int x = pos.getX();
+					int y = pos.getY();
+					int z = pos.getZ();
+					return LethreumNaturalEntitySpawningConditionProcedure.executeProcedure(ImmutableMap.of());
+				});
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -120,7 +128,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
+			this.goalSelector.addGoal(1, new LookAtGoal(this, ArcedeonEntity.CustomEntity.class, (float) 1024));
 			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
 			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.8));

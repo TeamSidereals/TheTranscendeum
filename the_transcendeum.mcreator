@@ -3797,6 +3797,19 @@
       "ids": {},
       "registry_name": "ancient_excerock_tiles",
       "path": "~/LyofsPlace"
+    },
+    {
+      "name": "LethreumNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lethreum_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
