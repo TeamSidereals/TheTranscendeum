@@ -21,12 +21,10 @@ import net.minecraft.world.gen.feature.TwoLayerFeature;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
@@ -36,7 +34,6 @@ import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
-import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -77,23 +74,9 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 												new CustomCocoaTreeDecorator()))
 										.setMaxWaterDepth(5).build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(20, 0.1F, 1))));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.HUGE_BROWN_MUSHROOM.withConfiguration(new BigMushroomFeatureConfig(
-								new SimpleBlockStateProvider(Blocks.BROWN_MUSHROOM_BLOCK.getDefaultState().with(HugeMushroomBlock.UP, Boolean.TRUE)
-										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
-								new SimpleBlockStateProvider(Blocks.MUSHROOM_STEM.getDefaultState().with(HugeMushroomBlock.UP, Boolean.FALSE)
-										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
-								10)));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.HUGE_RED_MUSHROOM.withConfiguration(new BigMushroomFeatureConfig(
-								new SimpleBlockStateProvider(Blocks.RED_MUSHROOM_BLOCK.getDefaultState().with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
-								new SimpleBlockStateProvider(Blocks.MUSHROOM_STEM.getDefaultState().with(HugeMushroomBlock.UP, Boolean.FALSE)
-										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
-								10)));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(15, 0.1F, 1))));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.2f).scale(0.1f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.4f).scale(0.05f)
 						.temperature(1.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:viridian_mires"));
@@ -120,7 +103,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -141,7 +124,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 

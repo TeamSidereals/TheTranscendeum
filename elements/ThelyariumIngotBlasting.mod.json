@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "thelyarium_ingot_blasting",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:ThelyariumOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:ThelyariumIngot"
+    },
+    "name": "thelyarium_ingot_blasting",
+    "namespace": "mod"
+  }
+}

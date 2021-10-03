@@ -41,8 +41,13 @@ public class IaprieGrassBlockBlock extends TheTranscendeumModElements.ModElement
 		}
 
 		@Override
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+			return true;
+		}
+
+		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+			return 0;
 		}
 
 		@Override

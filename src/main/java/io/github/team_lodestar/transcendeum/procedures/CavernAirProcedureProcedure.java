@@ -4,9 +4,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 
 import java.util.Map;
-import java.util.HashMap;
 
-import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class CavernAirProcedureProcedure {
@@ -46,20 +44,12 @@ public class CavernAirProcedureProcedure {
 					ys = (double) (-8);
 					for (int index2 = 0; index2 < (int) (16); index2++) {
 						ys = (double) (ys + 1);
-						{
-							Map<String, Object> $_dependencies = new HashMap<>();
-							$_dependencies.put("world", world);
-							$_dependencies.put("x", (x + xs));
-							$_dependencies.put("y", (y + ys));
-							$_dependencies.put("z", (z + zs));
-							CavernAirUpdateTickProcedure.executeProcedure($_dependencies);
-						}
 					}
 					xs = (double) (xs + 1);
 				}
 				zs = (double) (zs + 1);
 			}
 		}
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SomberstoneBlock.block.getDefaultState(), 3);
+		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ExcerockItem.block.getDefaultState(), 3);
 	}
 }

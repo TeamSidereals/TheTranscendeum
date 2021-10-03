@@ -1,0 +1,16 @@
+{
+  "group": "green_dye",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:viralga"
+    }
+  },
+  "result": {
+    "item": "minecraft:green_dye",
+    "count": 2
+  }
+}

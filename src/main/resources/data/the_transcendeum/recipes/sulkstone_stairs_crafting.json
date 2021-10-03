@@ -1,0 +1,33 @@
+{
+  "group": "sulkstone_stairs_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:sulkstone"
+    },
+    "3": {
+      "item": "the_transcendeum:sulkstone"
+    },
+    "4": {
+      "item": "the_transcendeum:sulkstone"
+    },
+    "6": {
+      "item": "the_transcendeum:sulkstone"
+    },
+    "7": {
+      "item": "the_transcendeum:sulkstone"
+    },
+    "8": {
+      "item": "the_transcendeum:sulkstone"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:sulkstone_stairs",
+    "count": 4
+  }
+}

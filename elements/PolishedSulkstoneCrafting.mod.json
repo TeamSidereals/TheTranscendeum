@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "polished_sulkstone_crafting",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PolishedSulkstone"
+    },
+    "name": "polished_sulkstone_crafting",
+    "namespace": "mod"
+  }
+}

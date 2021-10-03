@@ -45,8 +45,8 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 1.5,
-    "baseHeight": -0.2,
-    "heightVariation": 0.1,
+    "baseHeight": -0.4,
+    "heightVariation": 0.05,
     "biomeType": "WARM",
     "spawnBiome": false,
     "biomeWeight": 40,
@@ -55,12 +55,12 @@
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
-    "bigMushroomsChunk": 10,
+    "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 20,
+    "treesPerChunk": 15,
     "vanillaTreeType": "Savanna trees",
     "treeType": 1,
     "minHeight": 20,
@@ -72,7 +72,7 @@
       "value": "CUSTOM:ViridwoodLeaves"
     },
     "treeVines": {
-      "value": "Blocks.VINE"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
       "value": "Blocks.AIR"
@@ -88,9 +88,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Caves"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

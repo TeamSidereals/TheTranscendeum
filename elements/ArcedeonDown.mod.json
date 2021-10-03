@@ -1,0 +1,15 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LCONTROL",
+    "keyBindingName": "Arcedeon Descend",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ArcedeonDescend"
+    },
+    "onKeyReleased": {
+      "name": "ArcedeonKeyReleased"
+    }
+  }
+}
