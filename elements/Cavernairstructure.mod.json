@@ -16,7 +16,14 @@
       "CUSTOM:Transcendeum"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AureaForest"
+      },
+      {
+        "value": "CUSTOM:AureaPlains"
+      }
+    ],
     "ignoreBlocks": "STRUCTURE_BLOCK",
     "onStructureGenerated": {
       "name": "CavernScheduleTickUpdate"

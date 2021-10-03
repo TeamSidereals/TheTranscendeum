@@ -162,7 +162,7 @@ public class CavernAirBlock extends TheTranscendeumModElements.ModElement {
 			boolean blockCriteria = false;
 			if (blockAt.getBlock() == Blocks.CAVE_AIR)
 				blockCriteria = true;
-			if (blockAt.getBlock() == SomberstoneBlock.block)
+			if (blockAt.getBlock() == ExcerockBlock.block)
 				blockCriteria = true;
 			return blockCriteria;
 		}
