@@ -858,36 +858,6 @@
       }
     },
     {
-      "name": "ChrysaliumVineBottomBlockValidPlacementCondition",
-      "type": "procedure",
-      "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chrysalium_vine_bottom_block_valid_placement_condition",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Kelavus",
       "type": "block",
       "sortid": 85,
@@ -3931,6 +3901,64 @@
       "ids": {},
       "registry_name": "indigo_juice_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "ChrysaliumVineNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChrysaliumVineBottomNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_bottom_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3952,7 +3980,7 @@
     "en_us": {
       "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
-      "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
+      "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine",
       "enchantment.the_transcendeum.burst_popping": "Burst Popping",
       "block.the_transcendeum.excerock": "Excerock",
       "item.the_transcendeum.test": "Test",
