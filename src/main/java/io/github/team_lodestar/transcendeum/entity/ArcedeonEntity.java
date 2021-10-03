@@ -113,11 +113,11 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.1);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
-			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
+			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 3);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.3);
+			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.1);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -177,7 +177,7 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
-			this.goalSelector.addGoal(5, new RandomSwimmingGoal(this, 3.5, 40));
+			this.goalSelector.addGoal(5, new RandomSwimmingGoal(this, 5, 40));
 		}
 
 		@Override
