@@ -41,7 +41,7 @@
     "particlesProbability": 0.5,
     "biomeCategory": "SWAMP",
     "parent": {
-      "value": "CUSTOM:AureaPlains"
+      "value": "CUSTOM:ViridianHills"
     },
     "rainingPossibility": 0.0,
     "temperature": 1.5,
