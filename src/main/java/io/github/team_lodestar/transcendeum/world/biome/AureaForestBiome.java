@@ -55,7 +55,7 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16307657).setWaterColor(-8397575).setWaterFogColor(329011)
-						.withSkyColor(-16307657).withFoliageColor(10387789).withGrassColor(9470285)
+						.withSkyColor(-16307657).withFoliageColor(10387789).withGrassColor(-13728842)
 						.setParticle(new ParticleEffectAmbience(TwilighterisParticle.particle, 0.01f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(IaprieGrassBlockBlock.block.getDefaultState(),

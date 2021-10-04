@@ -62,7 +62,7 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-13292701).setWaterColor(-4360492).setWaterFogColor(-4360492)
-						.withSkyColor(-13292701).withFoliageColor(10387789).withGrassColor(9470285).build();
+						.withSkyColor(-13292701).withFoliageColor(10387789).withGrassColor(-12636046).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(CrystaliaTransiumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
