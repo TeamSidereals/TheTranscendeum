@@ -117,7 +117,7 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 3);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.1);
+			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.2);
 			event.put(entity, ammma.create());
 		}
 	}

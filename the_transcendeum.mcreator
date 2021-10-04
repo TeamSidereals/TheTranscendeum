@@ -3986,6 +3986,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "Woodhutloot",
+      "type": "loottable",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "woodhutloot",
+      "path": "~/loot tables/structure loot"
+    },
+    {
+      "name": "Kelavehut",
+      "type": "structure",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelavehut",
+      "path": "~/Structures/Constructed"
     }
   ],
   "variable_elements": [
