@@ -118,7 +118,7 @@
       "name": "LethreumNaturalEntitySpawningCondition"
     },
     "spawningProbability": 100,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [

@@ -61,7 +61,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-8599833).setWaterColor(-10984641).setWaterFogColor(-13408196)
-						.withSkyColor(-8599833).withFoliageColor(10387789).withGrassColor(9470285).build();
+						.withSkyColor(-8599833).withFoliageColor(10387789).withGrassColor(-10132655).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MordhenNylliumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));

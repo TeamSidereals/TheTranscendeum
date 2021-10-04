@@ -858,36 +858,6 @@
       }
     },
     {
-      "name": "ChrysaliumVineBottomBlockValidPlacementCondition",
-      "type": "procedure",
-      "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chrysalium_vine_bottom_block_valid_placement_condition",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Kelavus",
       "type": "block",
       "sortid": 85,
@@ -3943,6 +3913,35 @@
       "path": "~/Plants/Vines"
     },
     {
+      "name": "FloweredViriclingerBlocChanges",
+      "type": "procedure",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flowered_viriclinger_bloc_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "FloweredVirilclingerNeighbourBlockChanges",
       "type": "procedure",
       "sortid": 326,
@@ -3972,13 +3971,79 @@
       }
     },
     {
-      "name": "FloweredViriclingerBlocChanges",
+      "name": "Kelavehut",
+      "type": "structure",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelavehut",
+      "path": "~/Structures/Constructed"
+    },
+    {
+      "name": "ChrysaliumVineNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ArcedeonRiddenByPlayer",
       "type": "procedure",
       "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "flowered_viriclinger_bloc_changes",
+      "registry_name": "arcedeon_ridden_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Woodhutloot",
+      "type": "loottable",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "woodhutloot",
+      "path": "~/loot tables/structure loot"
+    },
+    {
+      "name": "ChrysaliumVineBottomNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_bottom_neighbour_block_changes",
       "metadata": {
         "dependencies": [
           {

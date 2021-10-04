@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Chrysalium Vine Bottom",
+    "name": "Chrysalium Vine",
     "specialInfo": [],
     "hardness": 0.0,
     "resistance": 0.0,
@@ -105,7 +105,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "placingCondition": {
-      "name": "ChrysaliumVineBottomBlockValidPlacementCondition"
+      "name": "ChrysaliumVineBlockValidPlacementCondition"
     },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -124,6 +124,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "ChrysaliumVineBottomNeighbourBlockChanges"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
