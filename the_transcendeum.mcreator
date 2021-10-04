@@ -3969,6 +3969,23 @@
       "ids": {},
       "registry_name": "flowered_viriclinger",
       "path": "~/Plants/Vines"
+    },
+    {
+      "name": "ArcedeonRiddenByPlayer",
+      "type": "procedure",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_ridden_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
