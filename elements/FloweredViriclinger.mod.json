@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Viriclinger"
+      "value": "CUSTOM:IndigoBerries"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:Viriclinger"
+      "value": "CUSTOM:IndigoBerries"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -125,7 +125,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
-      "name": "ViriclingerBaseNeighbourBlockChanges"
+      "name": "FloweredVirilclingerNeighbourBlockChanges"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

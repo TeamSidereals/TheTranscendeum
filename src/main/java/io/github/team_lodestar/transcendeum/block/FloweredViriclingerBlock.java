@@ -37,7 +37,8 @@ import java.util.HashMap;
 import java.util.Collections;
 
 import io.github.team_lodestar.transcendeum.procedures.ViriclingerBlockValidPlacementConditionProcedure;
-import io.github.team_lodestar.transcendeum.procedures.ViriclingerBaseNeighbourBlockChangesProcedure;
+import io.github.team_lodestar.transcendeum.procedures.FloweredVirilclingerNeighbourBlockChangesProcedure;
+import io.github.team_lodestar.transcendeum.item.IndigoBerriesItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 import com.google.common.collect.ImmutableMap;
@@ -106,7 +107,7 @@ public class FloweredViriclingerBlock extends TheTranscendeumModElements.ModElem
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(ViriclingerBlock.block);
+			return new ItemStack(IndigoBerriesItem.block);
 		}
 
 		@Override
@@ -119,7 +120,7 @@ public class FloweredViriclingerBlock extends TheTranscendeumModElements.ModElem
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(ViriclingerBlock.block));
+			return Collections.singletonList(new ItemStack(IndigoBerriesItem.block));
 		}
 
 		@Override
@@ -137,7 +138,7 @@ public class FloweredViriclingerBlock extends TheTranscendeumModElements.ModElem
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ViriclingerBaseNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+				FloweredVirilclingerNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

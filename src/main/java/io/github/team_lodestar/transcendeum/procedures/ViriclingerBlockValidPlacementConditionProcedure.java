@@ -8,6 +8,7 @@ import java.util.Map;
 import io.github.team_lodestar.transcendeum.block.ViridwoodLeavesBlock;
 import io.github.team_lodestar.transcendeum.block.ViriclingerBlock;
 import io.github.team_lodestar.transcendeum.block.ViriclingerBaseBlock;
+import io.github.team_lodestar.transcendeum.block.FloweredViriclingerBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class ViriclingerBlockValidPlacementConditionProcedure {
@@ -36,8 +37,9 @@ public class ViriclingerBlockValidPlacementConditionProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		return (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViridwoodLeavesBlock.block)
+		return (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViridwoodLeavesBlock.block) || (((world
+				.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViriclingerBlock.block)
 				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViriclingerBaseBlock.block)
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViriclingerBlock.block)));
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == FloweredViriclingerBlock.block))));
 	}
 }
