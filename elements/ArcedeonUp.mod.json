@@ -1,0 +1,15 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Arcedeon Ascend",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ArcedeonAscend"
+    },
+    "onKeyReleased": {
+      "name": "ArcedeonKeyReleased"
+    }
+  }
+}

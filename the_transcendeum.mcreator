@@ -858,36 +858,6 @@
       }
     },
     {
-      "name": "ChrysaliumVineBottomBlockValidPlacementCondition",
-      "type": "procedure",
-      "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chrysalium_vine_bottom_block_valid_placement_condition",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Kelavus",
       "type": "block",
       "sortid": 85,
@@ -3810,6 +3780,195 @@
         "return_type": "logic",
         "dependencies": []
       }
+    },
+    {
+      "name": "ArcedeonUp",
+      "type": "keybind",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_up",
+      "path": "~/mobs/functions/ArcedeonVerticalControl"
+    },
+    {
+      "name": "ArcedeonAscend",
+      "type": "procedure",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_ascend",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs/functions/ArcedeonVerticalControl"
+    },
+    {
+      "name": "ArcedeonDown",
+      "type": "keybind",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_down",
+      "path": "~/mobs/functions/ArcedeonVerticalControl"
+    },
+    {
+      "name": "ArcedeonDescend",
+      "type": "procedure",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_descend",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs/functions/ArcedeonVerticalControl"
+    },
+    {
+      "name": "ArcedeonKeyReleased",
+      "type": "procedure",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_key_released",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs/functions/ArcedeonVerticalControl"
+    },
+    {
+      "name": "IndigoBerries",
+      "type": "food",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_berries"
+    },
+    {
+      "name": "IndigoSoup",
+      "type": "food",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_soup"
+    },
+    {
+      "name": "IndigoJuice",
+      "type": "food",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_juice"
+    },
+    {
+      "name": "IndigoSoupRecipe",
+      "type": "recipe",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_soup_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "IndigoJuiceRecipe",
+      "type": "recipe",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_juice_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ChrysaliumVineNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChrysaliumVineBottomNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chrysalium_vine_bottom_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FloweredViriclinger",
+      "type": "block",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flowered_viriclinger",
+      "path": "~/Plants/Vines"
     }
   ],
   "variable_elements": [
@@ -3852,6 +4011,7 @@
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "block.the_transcendeum.somberstone": "Somberstone",
+      "item.the_transcendeum.indigo_soup": "Indigo Soup",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
       "block.the_transcendeum.viridwood_planks": "Viridwood Planks",
@@ -3878,6 +4038,7 @@
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
+      "block.the_transcendeum.flowered_viriclinger": "Viriclinger",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "entity.the_transcendeum.arffel": "Arffel",
@@ -3911,6 +4072,7 @@
       "item.the_transcendeum.cadillacium_sword": "Cadillacium Sword",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
       "item.the_transcendeum.berthel_helmet": "Berthel Helmet",
+      "item.the_transcendeum.indigo_berries": "Indigo Berries",
       "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.viridwood_fence_gate": "Viridwood Fence Gate",
       "block.the_transcendeum.efow_weed": "Efow Weed",
@@ -3954,6 +4116,7 @@
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
       "block.the_transcendeum.thelyarium_ore": "Thelyarium Ore",
       "item.the_transcendeum.thelyarium_sword": "Thelyarium Sword",
+      "key.the_transcendeum.arcedeon_down": "Arcedeon Descend",
       "block.the_transcendeum.polished_morosite_slab": "Polished Morosite Slab",
       "item.the_transcendeum.lethreum_spawn_egg": "Lethreum Spawn Egg",
       "block.the_transcendeum.viridwood": "Viridwood",
@@ -3983,6 +4146,7 @@
       "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.virilily": "Virilily",
       "item.the_transcendeum.berthel_pickaxe": "Berthel Pickaxe",
+      "key.the_transcendeum.arcedeon_up": "Arcedeon Ascend",
       "entity.the_transcendeum.lethreum": "Lethreum",
       "biome.the_transcendeum.aurea_plains": "Aurea Plains",
       "item.the_transcendeum.arcedeon_spawn_egg": "Arcedeon Spawn Egg",
@@ -4004,6 +4168,7 @@
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "block.the_transcendeum.morosite_slab": "Morosite Slab",
       "block.the_transcendeum.viridwood_slab": "Viridwood Slab",
+      "item.the_transcendeum.indigo_juice": "Indigo Juice",
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items",
       "enchantment.the_transcendeum.refreshing": "Refreshing",
@@ -4054,7 +4219,17 @@
       },
       {
         "name": "mobs",
-        "children": []
+        "children": [
+          {
+            "name": "functions",
+            "children": [
+              {
+                "name": "ArcedeonVerticalControl",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Tags",

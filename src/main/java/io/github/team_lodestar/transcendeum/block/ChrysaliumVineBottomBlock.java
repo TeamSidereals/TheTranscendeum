@@ -6,6 +6,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
@@ -32,10 +33,13 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
-import io.github.team_lodestar.transcendeum.procedures.ChrysaliumVineBottomBlockValidPlacementConditionProcedure;
+import io.github.team_lodestar.transcendeum.procedures.ChrysaliumVineBottomNeighbourBlockChangesProcedure;
+import io.github.team_lodestar.transcendeum.procedures.ChrysaliumVineBlockValidPlacementConditionProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
@@ -88,8 +92,7 @@ public class ChrysaliumVineBottomBlock extends TheTranscendeumModElements.ModEle
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();
-				return ChrysaliumVineBottomBlockValidPlacementConditionProcedure
-						.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world));
+				return ChrysaliumVineBlockValidPlacementConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world));
 			}
 			return super.isValidPosition(blockstate, worldIn, pos);
 		}
@@ -137,6 +140,25 @@ public class ChrysaliumVineBottomBlock extends TheTranscendeumModElements.ModEle
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public void neighborChanged(BlockState blockstate, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ChrysaliumVineBottomNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

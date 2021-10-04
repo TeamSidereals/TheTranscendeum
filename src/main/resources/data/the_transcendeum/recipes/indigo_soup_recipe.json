@@ -1,0 +1,16 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "the_transcendeum:indigo_berries"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:indigo_soup",
+    "count": 1
+  }
+}
