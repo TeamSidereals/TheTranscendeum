@@ -30,7 +30,7 @@ public class SaltLowlandsBiome extends TheTranscendeumModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-14404290).setWaterColor(-3807771).setWaterFogColor(-3807771)
-						.withSkyColor(-14404290).withFoliageColor(10387789).withGrassColor(9470285).build();
+						.withSkyColor(-14404290).withFoliageColor(10387789).withGrassColor(-14016696).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SaltrockBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
