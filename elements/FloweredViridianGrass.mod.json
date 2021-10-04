@@ -3,11 +3,11 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "mordhen_grass",
+    "texture": "flowered_flowered_grass",
     "textureBottom": "",
     "customModelName": "Cross model",
-    "itemTexture": "mordhen_grass",
-    "particleTexture": "mordhen_grass",
+    "itemTexture": "flowered_flowered_grass",
+    "particleTexture": "flowered_flowered_grass",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Viridian Grass",
+    "name": "Flowered Viridian Grass",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:IndigoBerries"
     },
     "dropAmount": 1,
     "forceTicking": false,
@@ -82,7 +82,7 @@
         "value": "CUSTOM:MordhenNyllium"
       }
     ],
-    "frequencyOnChunks": 10,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
@@ -91,6 +91,6 @@
         "value": "CUSTOM:ViridianMires"
       }
     ],
-    "patchSize": 64
+    "patchSize": 5
   }
 }

@@ -3903,74 +3903,6 @@
       "path": "~/recipes"
     },
     {
-      "name": "FloweredViriclinger",
-      "type": "block",
-      "sortid": 325,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "flowered_viriclinger",
-      "path": "~/Plants/Vines"
-    },
-    {
-      "name": "FloweredViriclingerBlocChanges",
-      "type": "procedure",
-      "sortid": 327,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "flowered_viriclinger_bloc_changes",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "FloweredVirilclingerNeighbourBlockChanges",
-      "type": "procedure",
-      "sortid": 326,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "flowered_virilclinger_neighbour_block_changes",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Kelavehut",
       "type": "structure",
       "sortid": 329,
@@ -4064,6 +3996,16 @@
           }
         ]
       }
+    },
+    {
+      "name": "FloweredViridianGrass",
+      "type": "plant",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flowered_viridian_grass",
+      "path": "~/Plants/Grass"
     }
   ],
   "variable_elements": [
@@ -4085,7 +4027,7 @@
     "en_us": {
       "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
-      "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
+      "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine",
       "enchantment.the_transcendeum.burst_popping": "Burst Popping",
       "block.the_transcendeum.excerock": "Excerock",
       "item.the_transcendeum.test": "Test",
@@ -4133,7 +4075,6 @@
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
-      "block.the_transcendeum.flowered_viriclinger": "Viriclinger",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "entity.the_transcendeum.arffel": "Arffel",
@@ -4215,6 +4156,7 @@
       "block.the_transcendeum.polished_morosite_slab": "Polished Morosite Slab",
       "item.the_transcendeum.lethreum_spawn_egg": "Lethreum Spawn Egg",
       "block.the_transcendeum.viridwood": "Viridwood",
+      "block.the_transcendeum.flowered_viridian_grass": "Flowered Viridian Grass",
       "block.the_transcendeum.chrysalium_vine": "Chrysalium Vine",
       "block.the_transcendeum.viridwood_stairs": "Viridwood Stairs",
       "item.the_transcendeum.cadillacium_ingot": "Cadillacium Ingot",

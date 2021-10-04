@@ -76,7 +76,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(15, 0.1F, 1))));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.4f).scale(0.05f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.1f).scale(0.05f)
 						.temperature(1.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:viridian_mires"));

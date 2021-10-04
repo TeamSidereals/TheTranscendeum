@@ -1,7 +1,22 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class ArcedeonRiddenByPlayerProcedure {
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.World;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.entity.ArcedeonEntity;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class ArcedeonRiddenByPlayerProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -23,20 +38,16 @@ public class ArcedeonRiddenByPlayerProcedure {
 			}
 		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure ArcedeonRiddenByPlayer!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if (((entity.getRidingEntity()) instanceof ArcedeonEntity.CustomEntity)) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WATER_BREATHING, (int) 2, (int) 1, (false), (false)));
 		}
 	}
-
 }

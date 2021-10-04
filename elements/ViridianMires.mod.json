@@ -45,11 +45,11 @@
     "particlesProbability": 0.5,
     "biomeCategory": "SWAMP",
     "parent": {
-      "value": "CUSTOM:ViridianHills"
+      "value": "No parent"
     },
     "rainingPossibility": 0.0,
     "temperature": 1.5,
-    "baseHeight": -0.4,
+    "baseHeight": -0.1,
     "heightVariation": 0.05,
     "biomeType": "WARM",
     "spawnBiome": false,

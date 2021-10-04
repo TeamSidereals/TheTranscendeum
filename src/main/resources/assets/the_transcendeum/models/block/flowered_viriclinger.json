@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "the_transcendeum:blocks/flowered_viriclinger",
-    "particle": "the_transcendeum:blocks/flowered_viriclinger"
-  }
-}
