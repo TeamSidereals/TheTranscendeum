@@ -3969,6 +3969,23 @@
       "ids": {},
       "registry_name": "flowered_viriclinger",
       "path": "~/Plants/Vines"
+    },
+    {
+      "name": "ArcedeonRiddenByPlayer",
+      "type": "procedure",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcedeon_ridden_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3990,7 +4007,7 @@
     "en_us": {
       "block.the_transcendeum.polished_somberstone": "Polished Somberstone",
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
-      "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine Bottom",
+      "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine",
       "enchantment.the_transcendeum.burst_popping": "Burst Popping",
       "block.the_transcendeum.excerock": "Excerock",
       "item.the_transcendeum.test": "Test",
