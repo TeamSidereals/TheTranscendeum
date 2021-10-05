@@ -2,10 +2,10 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "kelave_hut",
+    "structure": "kelavehut",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 8000,
+    "spawnProbability": 2000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
