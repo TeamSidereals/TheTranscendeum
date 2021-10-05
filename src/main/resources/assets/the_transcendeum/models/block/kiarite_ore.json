@@ -1,12 +1,10 @@
 {
-  "parent": "block/cube",
+  "parent": "block/grass_block",
   "textures": {
-    "down": "the_transcendeum:blocks/kiarite_ore_top",
-    "up": "the_transcendeum:blocks/kiarite_ore_top",
-    "north": "the_transcendeum:blocks/kiarite_ore",
-    "east": "the_transcendeum:blocks/kiarite_ore",
-    "south": "the_transcendeum:blocks/kiarite_ore",
-    "west": "the_transcendeum:blocks/kiarite_ore",
+    "bottom": "the_transcendeum:blocks/kiarite_ore_overlay",
+    "top": "the_transcendeum:blocks/kiarite_ore_overlay",
+    "side": "the_transcendeum:blocks/kiarite_ore_overlay",
+    "overlay": "the_transcendeum:blocks/kiarite_ore",
     "particle": "the_transcendeum:blocks/somberstone"
   }
 }

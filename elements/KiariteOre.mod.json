@@ -2,20 +2,20 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "kiarite_ore_top",
-    "textureTop": "kiarite_ore_top",
+    "texture": "kiarite_ore_overlay",
+    "textureTop": "kiarite_ore_overlay",
     "textureLeft": "kiarite_ore",
-    "textureFront": "kiarite_ore",
+    "textureFront": "kiarite_ore_overlay",
     "textureRight": "kiarite_ore",
     "textureBack": "kiarite_ore",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 14,
+    "customModelName": "Grass block",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "somberstone",
-    "tintType": "No tint",
+    "tintType": "Grass",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
@@ -127,7 +127,7 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:Somberstone"
+        "value": "CUSTOM:Excerock"
       }
     ],
     "frequencyPerChunks": 10,
