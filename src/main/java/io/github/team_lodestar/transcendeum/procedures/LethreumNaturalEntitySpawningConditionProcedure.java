@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class LethreumNaturalEntitySpawningConditionProcedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
-		if ((Math.random() < 0.2)) {
+		if ((Math.random() < 0.02)) {
 			return (true);
 		}
 		return (false);
