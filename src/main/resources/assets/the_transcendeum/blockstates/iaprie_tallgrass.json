@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "the_transcendeum:block/iaprie_tallgrass"
+    },
+    "half=lower": {
+      "model": "the_transcendeum:block/iaprie_tallgrass_bottom"
+    }
+  }
+}

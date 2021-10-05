@@ -4006,6 +4006,26 @@
       "ids": {},
       "registry_name": "flowered_viridian_grass",
       "path": "~/Plants/Grass"
+    },
+    {
+      "name": "IaprieTallgrass",
+      "type": "plant",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iaprie_tallgrass",
+      "path": "~/Plants/Grass"
+    },
+    {
+      "name": "AzuraMushroom",
+      "type": "plant",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "azura_mushroom",
+      "path": "~/Plants/Fungi"
     }
   ],
   "variable_elements": [
@@ -4130,6 +4150,7 @@
       "block.the_transcendeum.mordhen_grass": "Viridian Grass",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.ancient_excerock_tiles": "Ancient Excerock Tiles",
+      "block.the_transcendeum.azura_mushroom": "Scalia Wart",
       "block.the_transcendeum.mergoany": "Mergoany",
       "block.the_transcendeum.viridian_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.sulkstone_slab": "Sulkstone Slab",
@@ -4196,6 +4217,7 @@
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
       "block.the_transcendeum.polished_morosite_pressure_plate": "Polished Morosite Pressure Plate",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
+      "block.the_transcendeum.iaprie_tallgrass": "Mergoany",
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
       "block.the_transcendeum.kelave_slab": "Kelave Slab",
       "block.the_transcendeum.iaprie_grass": "Mergoany",
