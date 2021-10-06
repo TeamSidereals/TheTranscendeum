@@ -121,7 +121,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(3, new LookAtGoal(this, ArcedeonEntity.CustomEntity.class, (float) 1024));
+			this.goalSelector.addGoal(3, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
 			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
 			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
 			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, false));
