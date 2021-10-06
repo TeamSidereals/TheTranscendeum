@@ -42,12 +42,9 @@ import java.util.Map;
 import java.util.HashMap;
 
 import io.github.team_lodestar.transcendeum.procedures.LethreumOnEntityTickUpdateProcedure;
-import io.github.team_lodestar.transcendeum.procedures.LethreumNaturalEntitySpawningConditionProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.LethreumRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
-
-import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class LethreumEntity extends TheTranscendeumModElements.ModElement {
@@ -87,12 +84,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> {
-					int x = pos.getX();
-					int y = pos.getY();
-					int z = pos.getZ();
-					return LethreumNaturalEntitySpawningConditionProcedure.executeProcedure(ImmutableMap.of());
-				});
+				MonsterEntity::canMonsterSpawn);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent

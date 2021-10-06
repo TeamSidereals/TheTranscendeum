@@ -186,6 +186,11 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
+		public double getMountedYOffset() {
+			return super.getMountedYOffset() + -0.4;
+		}
+
+		@Override
 		public net.minecraft.util.SoundEvent getAmbientSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.dolphin.ambient"));
 		}
