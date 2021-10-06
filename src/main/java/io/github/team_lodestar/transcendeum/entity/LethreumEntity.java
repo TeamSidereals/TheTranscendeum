@@ -117,7 +117,6 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			super(type, world);
 			experienceValue = 15;
 			setNoAI(false);
-			enablePersistence();
 		}
 
 		@Override
@@ -140,11 +139,6 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		@Override
-		public boolean canDespawn(double distanceToClosestPlayer) {
-			return false;
 		}
 
 		@Override

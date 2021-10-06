@@ -4026,6 +4026,24 @@
       "ids": {},
       "registry_name": "azura_mushroom",
       "path": "~/Plants/Fungi"
+    },
+    {
+      "name": "HyrumaeGhoulVariant",
+      "type": "procedure",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyrumae_ghoul_variant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs/functions"
     }
   ],
   "variable_elements": [
