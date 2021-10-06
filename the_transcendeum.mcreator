@@ -4406,7 +4406,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Texturers: Sajevius, Aqu, Dylanvhs / Coders: Sajevius / Ideas: everyone from Team Lodestar / Special thanks to MCreator for making this possible!",
+    "credits": "Texturers: Sajevius, Aquex, Dylanvhs, Lyof, Ddx11 / Coders: Aquex, Sajevius / Ideas: everyone from Team Lodestar / Special thanks to MCreator for making this possible!",
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },

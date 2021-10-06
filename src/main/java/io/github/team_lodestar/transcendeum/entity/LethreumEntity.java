@@ -22,12 +22,12 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -35,13 +35,8 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
-import java.util.Map;
-import java.util.HashMap;
-
-import io.github.team_lodestar.transcendeum.procedures.LethreumOnEntityTickUpdateProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.LethreumRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -50,7 +45,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
-			.size(8f, 1.7999999999999998f)).build("lethreum").setRegistryName("lethreum");
+			.size(2f, 1.7999999999999998f)).build("lethreum").setRegistryName("lethreum");
 	public LethreumEntity(TheTranscendeumModElements instance) {
 		super(instance, 300);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LethreumRenderer.ModelRegisterHandler());
@@ -90,7 +85,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.35);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.25);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 110);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 16);
@@ -121,16 +116,16 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(3, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
-			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
-			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
 			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
-			return CreatureAttribute.UNDEFINED;
+			return CreatureAttribute.ARTHROPOD;
 		}
 
 		@Override
@@ -156,20 +151,6 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			if (source == DamageSource.ANVIL)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				LethreumOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
 		}
 	}
 }
