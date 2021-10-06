@@ -121,7 +121,7 @@ public class AzuraMushroomBlock extends TheTranscendeumModElements.ModElement {
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5,
-					Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT).hardnessAndResistance(0f, 0f)
+					Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.FUNGUS).hardnessAndResistance(0.2f, 0f)
 							.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true).setLightLevel(s -> 15));
 			setRegistryName("azura_mushroom");
 		}

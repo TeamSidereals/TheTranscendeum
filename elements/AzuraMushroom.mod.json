@@ -30,18 +30,18 @@
         "subtract": false
       }
     ],
-    "name": "Scalia Wart",
+    "name": "Azura Mushroom",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
     },
-    "hardness": 0.0,
+    "hardness": 0.2,
     "resistance": 0.0,
     "luminance": 15,
     "unbreakable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "FUNGUS"
     },
     "breakSound": {
       "value": ""

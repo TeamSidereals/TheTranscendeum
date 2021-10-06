@@ -426,18 +426,18 @@ public static class Modellethreum extends EntityModel<Entity> {
 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
-		this.body2.rotateAngleY = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-		this.body3.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.body4.rotateAngleY = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-		this.body5.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.body6.rotateAngleY = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-		this.body7.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.body8.rotateAngleY = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+		this.body2.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
+		this.body3.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.body4.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
+		this.body5.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.body6.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
+		this.body7.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.body8.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
 		this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 		this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
-		this.body1.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.tail.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.tailfin.rotateAngleZ = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.tail2.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+		this.body1.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.tail.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.tailfin.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.tail2.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 	}
 }

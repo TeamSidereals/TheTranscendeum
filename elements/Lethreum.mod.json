@@ -111,6 +111,9 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
+    "spawningCondition": {
+      "name": "LethreumNaturalEntitySpawningCondition"
+    },
     "spawningProbability": 5,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
