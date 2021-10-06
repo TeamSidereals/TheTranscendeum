@@ -120,7 +120,7 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new SwimGoal(this));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ArcedeonEntity.CustomEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
 			this.goalSelector.addGoal(7, new BreakDoorGoal(this, e -> true));
 		}
 
