@@ -32,6 +32,9 @@
       },
       {
         "value": "CUSTOM:SullenCliffs"
+      },
+      {
+        "value": "CUSTOM:KalaisicWastes"
       }
     ],
     "worldGenType": "Normal world gen",
