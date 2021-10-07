@@ -78,22 +78,22 @@ public class BerthelSharpBladeProcedure {
 						}
 					}
 					if (sourceentity instanceof LivingEntity) {
-						((LivingEntity) sourceentity).attackEntityFrom(new DamageSource("glassbroken").setDamageBypassesArmor(), (float) 1);
+						((LivingEntity) sourceentity).attackEntityFrom(new DamageSource("berthelspiked").setDamageBypassesArmor(), (float) 2);
 					}
-				}
-				entity.attackEntityFrom(DamageSource.causeMobDamage((LivingEntity) sourceentity), (float) 4);
-				if (world instanceof World && !world.isRemote()) {
-					((World) world).playSound(null, new BlockPos((int) (entity.getPosX()), (int) ((entity.getPosY()) + 1), (int) (entity.getPosZ())),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1);
-				} else {
-					((World) world).playSound((entity.getPosX()), ((entity.getPosY()) + 1), (entity.getPosZ()),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-				}
-				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(SharpBerthelParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
-							(entity.getPosZ()), (int) 12, 0.2, 0.4, 0.2, 0.3);
+					if (world instanceof World && !world.isRemote()) {
+						((World) world).playSound(null,
+								new BlockPos((int) (entity.getPosX()), (int) ((entity.getPosY()) + 1), (int) (entity.getPosZ())),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					} else {
+						((World) world).playSound((entity.getPosX()), ((entity.getPosY()) + 1), (entity.getPosZ()),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(SharpBerthelParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
+								(entity.getPosZ()), (int) 12, 0.2, 0.4, 0.2, 0.3);
+					}
 				}
 			}
 		}
