@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.model.ModelRenderer;
@@ -135,6 +136,7 @@ public class HyrumaeGhoulRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+			LivingEntity entityL = (LivingEntity) e;
 			float a = this.swingProgress;
 			float PI = (float) Math.PI;
 			a = 1 - a;
@@ -143,6 +145,9 @@ public class HyrumaeGhoulRenderer {
 			if (this.swingProgress > 0) {
 				this.RightArm.rotateAngleX = -PI / 2 - MathHelper.sin(a * PI);
 				this.LeftArm.rotateAngleX = -PI / 2 - MathHelper.sin(a * PI);
+			} else {
+				this.RightArm.rotateAngleX = -PI / 2;
+				this.LeftArm.rotateAngleX = -PI / 2;
 			}
 			this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 			this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);

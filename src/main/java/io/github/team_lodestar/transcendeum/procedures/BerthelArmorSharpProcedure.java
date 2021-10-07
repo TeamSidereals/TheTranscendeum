@@ -1,7 +1,31 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class BerthelArmorSharpProcedure {
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.DamageSource;
+import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.particle.SharpBerthelParticle;
+import io.github.team_lodestar.transcendeum.item.BerthelArmorItem;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class BerthelArmorSharpProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -29,7 +53,6 @@ public class BerthelArmorSharpProcedure {
 			}
 		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -46,11 +69,9 @@ public class BerthelArmorSharpProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure BerthelArmorSharp!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if ((EntityTypeTags.getCollection().getTagByID(new ResourceLocation(("forge:transcendent_mobs").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains(sourceentity.getType()))) {
 			if ((((((entity instanceof LivingEntity)
@@ -120,5 +141,4 @@ public class BerthelArmorSharpProcedure {
 			}
 		}
 	}
-
 }
