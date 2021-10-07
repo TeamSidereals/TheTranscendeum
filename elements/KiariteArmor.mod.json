@@ -3,21 +3,21 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "berthel_helmet",
+    "textureHelmet": "kiarite_helmet",
     "enableBody": true,
-    "textureBody": "berthel_chestplate",
+    "textureBody": "kiarite_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "berthel_leggings",
+    "textureLeggings": "kiarite_leggings",
     "enableBoots": true,
-    "textureBoots": "berthel_boots",
+    "textureBoots": "kiarite_boots",
     "creativeTab": {
       "value": "CUSTOM:TranscendeumGear"
     },
-    "armorTextureFile": "berthel_",
-    "helmetName": "Berthel Helmet",
-    "bodyName": "Berthel Chestplate",
-    "leggingsName": "Berthel Leggings",
-    "bootsName": "Berthel Boots",
+    "armorTextureFile": "kiarite_",
+    "helmetName": "Kiarite Helmet",
+    "bodyName": "Kiarite Chestplate",
+    "leggingsName": "Kiarite Leggings",
+    "bootsName": "Kiarite Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -42,20 +42,20 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 22,
-    "damageValueHelmet": 3,
-    "damageValueBody": 7,
-    "damageValueLeggings": 6,
-    "damageValueBoots": 2,
-    "enchantability": 12,
-    "toughness": 0.5,
-    "knockbackResistance": 0.0,
+    "maxDamage": 26,
+    "damageValueHelmet": 4,
+    "damageValueBody": 9,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 4,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.1,
     "equipSound": {
-      "value": "item.armor.equip_diamond"
+      "value": "item.armor.equip_netherite"
     },
     "repairItems": [
       {
-        "value": "CUSTOM:BerthelShard"
+        "value": "CUSTOM:KiariteIngot"
       }
     ]
   }
