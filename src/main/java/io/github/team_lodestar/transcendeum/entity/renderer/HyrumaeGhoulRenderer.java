@@ -135,6 +135,15 @@ public class HyrumaeGhoulRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+			float a = this.swingProgress;
+			float PI = (float) Math.PI;
+			a = 1 - a;
+			a = a * a;
+			a = a * a;
+			if (this.swingProgress > 0) {
+				this.RightArm.rotateAngleX = -PI / 2 - MathHelper.sin(a * PI);
+				this.LeftArm.rotateAngleX = -PI / 2 - MathHelper.sin(a * PI);
+			}
 			this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 			this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);

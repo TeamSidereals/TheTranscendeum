@@ -1,0 +1,121 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Kalaisic Wastes",
+    "groundBlock": {
+      "value": "CUSTOM:Morosite"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Morosite"
+    },
+    "airColor": {
+      "value": -5593439,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -9939126,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -11190224,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10250864,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -6834766,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Twilighteris"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "DESERT",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.2,
+    "temperature": 1.8,
+    "baseHeight": 0.7,
+    "heightVariation": 0.2,
+    "biomeType": "DESERT",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [
+      "MESA",
+      "WASTELAND",
+      "HOT",
+      "DRY"
+    ],
+    "grassPerChunk": 2,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 3,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.COAL_BLOCK"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "TaigaRocks"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityWitherSkeleton"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 1,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}
