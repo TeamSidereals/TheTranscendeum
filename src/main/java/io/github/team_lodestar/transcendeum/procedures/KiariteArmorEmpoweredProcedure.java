@@ -112,6 +112,9 @@ public class KiariteArmorEmpoweredProcedure {
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
 					}
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 2));
 					if (dependencies.get("event") != null) {
 						Object _obj = dependencies.get("event");
 						if (_obj instanceof Event) {
@@ -142,6 +145,9 @@ public class KiariteArmorEmpoweredProcedure {
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
 					}
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 2));
 					if (dependencies.get("event") != null) {
 						Object _obj = dependencies.get("event");
 						if (_obj instanceof Event) {
@@ -172,6 +178,9 @@ public class KiariteArmorEmpoweredProcedure {
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
 					}
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 2));
 					if (dependencies.get("event") != null) {
 						Object _obj = dependencies.get("event");
 						if (_obj instanceof Event) {
@@ -202,6 +211,9 @@ public class KiariteArmorEmpoweredProcedure {
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
 					}
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 2));
 					if (dependencies.get("event") != null) {
 						Object _obj = dependencies.get("event");
 						if (_obj instanceof Event) {
