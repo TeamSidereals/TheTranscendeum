@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "sulkstone_wall_crafting",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SulkstoneWall"
+    },
+    "name": "sulkstone_wall_crafting",
+    "namespace": "mod"
+  }
+}

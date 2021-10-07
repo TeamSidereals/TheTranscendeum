@@ -6,7 +6,7 @@ import net.minecraft.util.math.BlockPos;
 import java.util.Map;
 import java.util.HashMap;
 
-import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
+import io.github.team_lodestar.transcendeum.block.ExcerockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class CavernAirProcedureProcedure {
@@ -60,6 +60,6 @@ public class CavernAirProcedureProcedure {
 				zs = (double) (zs + 1);
 			}
 		}
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SomberstoneBlock.block.getDefaultState(), 3);
+		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ExcerockBlock.block.getDefaultState(), 3);
 	}
 }

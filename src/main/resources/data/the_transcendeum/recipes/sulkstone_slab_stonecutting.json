@@ -1,0 +1,9 @@
+{
+  "group": "sulkstone_slab_stonecutting",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "the_transcendeum:sulkstone"
+  },
+  "result": "the_transcendeum:sulkstone_slab"
+}

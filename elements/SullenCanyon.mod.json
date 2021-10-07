@@ -14,7 +14,7 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -6307992,
+      "value": -6136001,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -53,7 +53,7 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 0.0,
+    "baseHeight": -0.4,
     "heightVariation": 0.0,
     "biomeType": "DESERT",
     "spawnBiome": false,

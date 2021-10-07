@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "the_transcendeum:blocks/transstone",
+    "particle": "the_transcendeum:blocks/transstone"
+  }
+}

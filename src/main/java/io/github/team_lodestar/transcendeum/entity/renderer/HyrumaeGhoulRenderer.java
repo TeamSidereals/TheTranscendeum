@@ -36,7 +36,8 @@ public class HyrumaeGhoulRenderer {
 					}
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("the_transcendeum:textures/hyrumae_ghoul.png");
+						HyrumaeGhoulEntity.CustomEntity _ghoul = (HyrumaeGhoulEntity.CustomEntity) entity;
+						return new ResourceLocation("the_transcendeum:textures/hyrumae_ghoul_" + String.valueOf(_ghoul.getVariant()) + ".png");
 					}
 				};
 			});

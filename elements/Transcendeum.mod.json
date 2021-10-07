@@ -36,7 +36,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:Somberstone"
+      "value": "CUSTOM:Excerock"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
@@ -46,7 +46,7 @@
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",
-    "hasSkyLight": false,
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "Blocks.PURPUR_BLOCK"

@@ -1,3 +1,4 @@
+
 package io.github.team_lodestar.transcendeum.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,7 +17,11 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.IPacket;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
@@ -42,7 +47,6 @@ import net.minecraft.block.BlockState;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.HyrumaeGhoulRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
-import io.github.team_lodestar.transcendeum.DashAttackGoal;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
@@ -84,7 +88,7 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.25);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 28);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 5);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 7);
@@ -93,6 +97,7 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class CustomEntity extends MonsterEntity {
+		public static final DataParameter<Integer> VARIANT = EntityDataManager.createKey(CustomEntity.class, DataSerializers.VARINT);
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -116,9 +121,8 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new SwimGoal(this));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
 			this.goalSelector.addGoal(7, new BreakDoorGoal(this, e -> true));
-			this.targetSelector.addGoal(1, new DashAttackGoal(this, 0.4F, 1.0F, 20, false));
 		}
 
 		@Override
@@ -150,6 +154,29 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.zombie.death"));
+		}
+
+		public void setVariant(int varIn) {
+			this.dataManager.set(VARIANT, varIn);
+		}
+
+		public int getVariant() {
+			return this.dataManager.get(VARIANT);
+		}
+
+		protected void registerData() {
+			super.registerData();
+			this.dataManager.register(VARIANT, 0);
+		}
+
+		public void writeAdditional(CompoundNBT compound) {
+			super.writeAdditional(compound);
+			compound.putInt("Variant", this.getVariant());
+		}
+
+		public void readAdditional(CompoundNBT compound) {
+			super.readAdditional(compound);
+			this.setVariant(compound.getInt("Variant"));
 		}
 	}
 }

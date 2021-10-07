@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "the_transcendeum:blocks/viridwood_door_bottom",
+    "top": "the_transcendeum:blocks/viridwood_door_top"
+  }
+}

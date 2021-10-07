@@ -4,7 +4,7 @@
   "definition": {
     "name": "Transcendeum Mobs",
     "icon": {
-      "value": "Items.DROWNED_SPAWN_EGG"
+      "value": "Blocks.TURTLE_EGG"
     },
     "showSearch": false
   }

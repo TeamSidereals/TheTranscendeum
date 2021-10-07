@@ -86,7 +86,11 @@
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:ViridianMires"
+      }
+    ],
     "patchSize": 64
   }
 }
