@@ -4100,6 +4100,16 @@
       "ids": {},
       "registry_name": "kiarite_armor_boots_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "KalaisicWastes",
+      "type": "biome",
+      "sortid": 339,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kalaisic_wastes",
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [
@@ -4280,6 +4290,7 @@
       "item.the_transcendeum.cadillacium_axe": "Cadillacium Axe",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "block.the_transcendeum.sulkstone_stairs": "Sulkstone Stairs",
+      "biome.the_transcendeum.kalaisic_wastes": "Kalaisic Wastes",
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.kiarite_shovel": "Kiarite Shovel",
