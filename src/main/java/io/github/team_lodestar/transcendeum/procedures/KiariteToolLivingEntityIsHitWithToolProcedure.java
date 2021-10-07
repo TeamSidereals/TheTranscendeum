@@ -5,6 +5,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import java.util.Map;
@@ -33,7 +34,9 @@ public class KiariteToolLivingEntityIsHitWithToolProcedure {
 				((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
 						(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 			}
-			entity.attackEntityFrom(DamageSource.GENERIC, (float) 4);
+			if (entity instanceof LivingEntity) {
+				((LivingEntity) entity).attackEntityFrom(new DamageSource("empowered").setDamageBypassesArmor(), (float) 1);
+			}
 		}
 	}
 }
