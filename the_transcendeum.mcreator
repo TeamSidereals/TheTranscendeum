@@ -1891,27 +1891,6 @@
       "path": "~/Tags"
     },
     {
-      "name": "HyrumaeAttackWeakness",
-      "type": "procedure",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hyrumae_attack_weakness",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Bubble",
       "type": "block",
       "sortid": 186,
