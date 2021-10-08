@@ -2303,7 +2303,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "dash_attack_goal"
+      "registry_name": "dash_attack_goal",
+      "path": "~/custom elements"
     },
     {
       "name": "EnigmaGlovePoweredWhileBulletFlyingTick",
@@ -4201,6 +4202,16 @@
         ]
       },
       "path": "~/Structures/others/InstantPortal"
+    },
+    {
+      "name": "Pisces",
+      "type": "livingentity",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "pisces",
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [
@@ -4377,8 +4388,10 @@
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.ancient_excerock_tiles": "Ancient Excerock Tiles",
       "block.the_transcendeum.viridian_nyllium": "Viridian Nyllium",
+      "item.the_transcendeum.pisces_spawn_egg": "Pisces Spawn Egg",
       "biome.the_transcendeum.viridian_mires": "Viridian Mires",
       "item.the_transcendeum.cadillacium_axe": "Cadillacium Axe",
+      "entity.the_transcendeum.pisces": "Pisces",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "block.the_transcendeum.sulkstone_stairs": "Sulkstone Stairs",
       "biome.the_transcendeum.kalaisic_wastes": "Kalaisic Wastes",

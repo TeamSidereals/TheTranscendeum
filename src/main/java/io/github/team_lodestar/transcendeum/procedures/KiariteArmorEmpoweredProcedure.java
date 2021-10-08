@@ -128,7 +128,7 @@ public class KiariteArmorEmpoweredProcedure {
 			if ((((entity instanceof LivingEntity)
 					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 2))
 					: ItemStack.EMPTY).getItem() == KiariteArmorItem.body)) {
-				if ((Math.random() < 0.05)) {
+				if ((Math.random() < 0.09)) {
 					sourceentity.setMotion((sourceentity.getMotion().getX()), 0.55, (sourceentity.getMotion().getZ()));
 					if (world instanceof ServerWorld) {
 						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
@@ -161,7 +161,7 @@ public class KiariteArmorEmpoweredProcedure {
 			if ((((entity instanceof LivingEntity)
 					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 1))
 					: ItemStack.EMPTY).getItem() == KiariteArmorItem.legs)) {
-				if ((Math.random() < 0.05)) {
+				if ((Math.random() < 0.06)) {
 					sourceentity.setMotion((sourceentity.getMotion().getX()), 0.55, (sourceentity.getMotion().getZ()));
 					if (world instanceof ServerWorld) {
 						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
