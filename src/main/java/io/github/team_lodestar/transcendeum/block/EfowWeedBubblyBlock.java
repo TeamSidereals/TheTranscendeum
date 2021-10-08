@@ -19,8 +19,6 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
@@ -39,9 +37,7 @@ import net.minecraft.block.Block;
 
 import java.util.Random;
 import java.util.Map;
-import java.util.List;
 import java.util.HashMap;
-import java.util.Collections;
 
 import io.github.team_lodestar.transcendeum.procedures.EfowWeedBreakChangeProcedure;
 import io.github.team_lodestar.transcendeum.procedures.EfowIfCanPlaceProcedure;
@@ -51,11 +47,11 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class EfowWeedBlock extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:efow_weed")
+public class EfowWeedBubblyBlock extends TheTranscendeumModElements.ModElement {
+	@ObjectHolder("the_transcendeum:efow_weed_bubbly")
 	public static final Block block = null;
-	public EfowWeedBlock(TheTranscendeumModElements instance) {
-		super(instance, 191);
+	public EfowWeedBubblyBlock(TheTranscendeumModElements instance) {
+		super(instance, 314);
 	}
 
 	@Override
@@ -77,7 +73,7 @@ public class EfowWeedBlock extends TheTranscendeumModElements.ModElement {
 					.doesNotBlockMovement().notSolid().setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true)
 					.setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(WATERLOGGED, false));
-			setRegistryName("efow_weed");
+			setRegistryName("efow_weed_bubbly");
 		}
 
 		@Override
@@ -135,14 +131,6 @@ public class EfowWeedBlock extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
 		public void neighborChanged(BlockState blockstate, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 			super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 			int x = pos.getX();
@@ -170,7 +158,7 @@ public class EfowWeedBlock extends TheTranscendeumModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (true)
-				for (int l = 0; l < 2; ++l) {
+				for (int l = 0; l < 5; ++l) {
 					double d0 = (x + random.nextFloat());
 					double d1 = (y + random.nextFloat());
 					double d2 = (z + random.nextFloat());

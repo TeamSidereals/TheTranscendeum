@@ -3768,7 +3768,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "excerock"
+      "registry_name": "excerock",
+      "path": "~/LyofsPlace"
     },
     {
       "name": "ViridwoodDoor",
@@ -3786,16 +3787,65 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "excerock_tiles"
+      "registry_name": "excerock_tiles",
+      "path": "~/LyofsPlace"
     },
     {
-      "name": "AncientExcerockTiles",
+      "name": "EfowWeedBubbly",
       "type": "block",
-      "sortid": 91,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ancient_excerock_tiles",
+      "registry_name": "efow_weed_bubbly",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowWeedBubblyDrops",
+      "type": "loottable",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_weed_bubbly_drops",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "ExcerockTilesCraft",
+      "type": "recipe",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_tiles_craft",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowFruitEaten",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_fruit_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowFruit",
+      "type": "food",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_fruit",
       "path": "~/LyofsPlace"
     }
   ],
@@ -3872,6 +3922,7 @@
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
       "block.the_transcendeum.viridwood_log": "Viridwood Log",
       "item.the_transcendeum.kiarite_axe": "Kiarite Axe",
+      "block.the_transcendeum.efow_weed_bubbly": "Bubbly Efow Weed",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "block.the_transcendeum.morosite_wall": "Morosite Wall",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
@@ -3918,7 +3969,6 @@
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
       "block.the_transcendeum.mordhen_grass": "Viridian Grass",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
-      "block.the_transcendeum.ancient_excerock_tiles": "Ancient Excerock Tiles",
       "block.the_transcendeum.mergoany": "Mergoany",
       "block.the_transcendeum.viridian_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.sulkstone_slab": "Sulkstone Slab",
@@ -3987,6 +4037,7 @@
       "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
       "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
+      "item.the_transcendeum.efow_fruit": "Efow Fruit",
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "block.the_transcendeum.morosite_slab": "Morosite Slab",

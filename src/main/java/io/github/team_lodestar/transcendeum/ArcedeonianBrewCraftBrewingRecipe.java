@@ -10,7 +10,7 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 
 import io.github.team_lodestar.transcendeum.potion.ArcedeonianBrewPotion;
-import io.github.team_lodestar.transcendeum.block.EfowWeedBlock;
+import io.github.team_lodestar.transcendeum.block.EfowWeedBubblyBlock;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class ArcedeonianBrewCraftBrewingRecipe extends TheTranscendeumModElements.ModElement {
@@ -30,7 +30,7 @@ public class ArcedeonianBrewCraftBrewingRecipe extends TheTranscendeumModElement
 
 		@Override
 		public boolean isIngredient(ItemStack ingredient) {
-			return ingredient.getItem() == EfowWeedBlock.block.asItem();
+			return ingredient.getItem() == EfowWeedBubblyBlock.block.asItem();
 		}
 
 		@Override
