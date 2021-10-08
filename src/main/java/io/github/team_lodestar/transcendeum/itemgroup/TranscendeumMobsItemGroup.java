@@ -4,9 +4,9 @@ package io.github.team_lodestar.transcendeum.itemgroup;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.block.Blocks;
 
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
@@ -22,7 +22,7 @@ public class TranscendeumMobsItemGroup extends TheTranscendeumModElements.ModEle
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Items.DROWNED_SPAWN_EGG);
+				return new ItemStack(Blocks.TURTLE_EGG);
 			}
 
 			@OnlyIn(Dist.CLIENT)

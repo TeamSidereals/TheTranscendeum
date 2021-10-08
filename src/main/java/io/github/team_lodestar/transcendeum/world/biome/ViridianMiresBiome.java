@@ -61,7 +61,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-8599833).setWaterColor(-10984641).setWaterFogColor(-13408196)
-						.withSkyColor(-8599833).withFoliageColor(10387789).withGrassColor(9470285).build();
+						.withSkyColor(-8599833).withFoliageColor(10387789).withGrassColor(-10132655).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MordhenNylliumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
@@ -76,7 +76,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(15, 0.1F, 1))));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.4f).scale(0.05f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.SWAMP).depth(-0.1f).scale(0.05f)
 						.temperature(1.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:viridian_mires"));

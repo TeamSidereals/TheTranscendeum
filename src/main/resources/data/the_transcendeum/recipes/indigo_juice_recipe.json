@@ -1,0 +1,19 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "the_transcendeum:indigo_berries"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:deleted_mod_element",
+    "count": 1
+  }
+}

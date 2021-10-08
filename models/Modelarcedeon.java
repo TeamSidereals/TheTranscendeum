@@ -10,7 +10,7 @@ public static class Modelarcedeon extends EntityModel<Entity> {
 	private final ModelRenderer tail2;
 	private final ModelRenderer tail_fin;
 	private final ModelRenderer right_fin;
-	private final ModelRenderer left_fin_r1;
+	private final ModelRenderer right_fin_r3;
 	private final ModelRenderer left_fin;
 	private final ModelRenderer left_fin_r2;
 	private final ModelRenderer back_fin;
@@ -49,11 +49,11 @@ public static class Modelarcedeon extends EntityModel<Entity> {
 		right_fin = new ModelRenderer(this);
 		right_fin.setRotationPoint(-3.5F, 22.0F, 3.0F);
 
-		left_fin_r1 = new ModelRenderer(this);
-		left_fin_r1.setRotationPoint(3.5F, 2.0F, -3.0F);
-		right_fin.addChild(left_fin_r1);
-		setRotationAngle(left_fin_r1, 0.0F, 0.0F, -1.5708F);
-		left_fin_r1.setTextureOffset(0, 20).addBox(2.0F, -20.0F, -2.0F, 0.0F, 16.0F, 15.0F, 0.0F, false);
+		right_fin_r3 = new ModelRenderer(this);
+		right_fin_r3.setRotationPoint(3.5F, 2.0F, -3.0F);
+		right_fin.addChild(right_fin_r3);
+		setRotationAngle(right_fin_r3, 0.0F, 0.0F, -1.5708F);
+		right_fin_r3.setTextureOffset(0, 20).addBox(2.0F, -20.0F, -2.0F, 0.0F, 16.0F, 15.0F, 0.0F, true);
 
 		left_fin = new ModelRenderer(this);
 		left_fin.setRotationPoint(3.5F, 22.0F, 3.0F);
@@ -88,8 +88,9 @@ public static class Modelarcedeon extends EntityModel<Entity> {
 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
-		this.tail2.rotateAngleY = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.left_fin.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-		this.right_fin.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.tail2.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.left_fin.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
+		this.right_fin.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.tail_fin.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 	}
 }

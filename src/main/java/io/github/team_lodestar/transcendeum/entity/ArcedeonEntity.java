@@ -25,15 +25,17 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.network.IPacket;
-import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.SquidEntity;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
-import net.minecraft.entity.ai.goal.TemptGoal;
+import net.minecraft.entity.passive.DolphinEntity;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.MovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -43,7 +45,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
 import java.util.Map;
@@ -51,7 +52,6 @@ import java.util.HashMap;
 
 import io.github.team_lodestar.transcendeum.procedures.ArcedeonOnEntityTickUpdateProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
-import io.github.team_lodestar.transcendeum.item.VirililyItem;
 import io.github.team_lodestar.transcendeum.entity.renderer.ArcedeonRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
@@ -113,16 +113,16 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.1);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
-			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
+			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 3);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.3);
+			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.1);
 			event.put(entity, ammma.create());
 		}
 	}
 
-	public static class CustomEntity extends CreatureEntity {
+	public static class CustomEntity extends DolphinEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -174,13 +174,20 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 5, 40));
-			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 5));
-			this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.fromItems(VirililyItem.block), false));
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 5, true));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.5));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.WATER;
+		}
+
+		@Override
+		public double getMountedYOffset() {
+			return super.getMountedYOffset() + -0.4;
 		}
 
 		@Override
@@ -244,6 +251,11 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
+		public boolean canBeRiddenInWater() {
+			return true;
+		}
+
+		@Override
 		public void travel(Vector3d dir) {
 			Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
 			if (this.isBeingRidden()) {
@@ -258,7 +270,7 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 				if (entity instanceof LivingEntity) {
 					this.setAIMoveSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
 					float forward = ((LivingEntity) entity).moveForward;
-					float strafe = 0;
+					float strafe = ((LivingEntity) entity).moveStrafing;
 					super.travel(new Vector3d(strafe, 0, forward));
 				}
 				this.prevLimbSwingAmount = this.limbSwingAmount;

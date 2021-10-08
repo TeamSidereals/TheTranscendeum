@@ -22,12 +22,12 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -35,22 +35,20 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
-import java.util.Map;
-import java.util.HashMap;
-
-import io.github.team_lodestar.transcendeum.procedures.LethreumOnEntityTickUpdateProcedure;
+import io.github.team_lodestar.transcendeum.procedures.LethreumNaturalEntitySpawningConditionProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.LethreumRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
+import com.google.common.collect.ImmutableMap;
+
 @TheTranscendeumModElements.ModElement.Tag
 public class LethreumEntity extends TheTranscendeumModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
-			.size(8f, 1.7999999999999998f)).build("lethreum").setRegistryName("lethreum");
+			.size(2f, 1.7999999999999998f)).build("lethreum").setRegistryName("lethreum");
 	public LethreumEntity(TheTranscendeumModElements instance) {
 		super(instance, 300);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LethreumRenderer.ModelRegisterHandler());
@@ -78,19 +76,24 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 100, 1, 1));
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 5, 1, 1));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
+				(entityType, world, reason, pos, random) -> {
+					int x = pos.getX();
+					int y = pos.getY();
+					int z = pos.getZ();
+					return LethreumNaturalEntitySpawningConditionProcedure.executeProcedure(ImmutableMap.of());
+				});
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.35);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.25);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 110);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 16);
@@ -109,7 +112,6 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			super(type, world);
 			experienceValue = 15;
 			setNoAI(false);
-			enablePersistence();
 		}
 
 		@Override
@@ -120,23 +122,18 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
-			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.5));
-			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.goalSelector.addGoal(1, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
-			return CreatureAttribute.UNDEFINED;
-		}
-
-		@Override
-		public boolean canDespawn(double distanceToClosestPlayer) {
-			return false;
+			return CreatureAttribute.ARTHROPOD;
 		}
 
 		@Override
@@ -162,20 +159,6 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			if (source == DamageSource.ANVIL)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				LethreumOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
 		}
 	}
 }

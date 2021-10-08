@@ -123,7 +123,7 @@ public class LethreumRenderer {
 			textureWidth = 176;
 			textureHeight = 176;
 			head = new ModelRenderer(this);
-			head.setRotationPoint(0.0F, 18.0F, -60.0F);
+			head.setRotationPoint(0.0F, 18.0F, -1.0F);
 			head_r1 = new ModelRenderer(this);
 			head_r1.setRotationPoint(-4.7754F, 6.0F, 3.0217F);
 			head.addChild(head_r1);
@@ -193,7 +193,7 @@ public class LethreumRenderer {
 			setRotationAngle(head_r13, 0.9031F, 0.2217F, 0.2719F);
 			head_r13.setTextureOffset(52, 98).addBox(2.0F, -12.0F, 0.5F, 7.0F, 6.0F, 18.0F, 0.0F, false);
 			body = new ModelRenderer(this);
-			body.setRotationPoint(0.0F, 18.0F, -64.0F);
+			body.setRotationPoint(0.0F, 18.0F, -5.0F);
 			body1 = new ModelRenderer(this);
 			body1.setRotationPoint(0.0F, -1.0F, -1.0F);
 			body.addChild(body1);
@@ -424,19 +424,19 @@ public class LethreumRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.body2.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.body3.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
-			this.body4.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.body5.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
-			this.body6.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.body7.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
-			this.body8.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.body2.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
+			this.body3.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.body4.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
+			this.body5.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.body6.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
+			this.body7.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.body8.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
-			this.body1.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
-			this.tail.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
-			this.tailfin.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
-			this.tail2.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.body1.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.tail.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.tailfin.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.tail2.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		}
 	}
 }

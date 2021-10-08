@@ -32,6 +32,9 @@
       },
       {
         "value": "CUSTOM:SullenCliffs"
+      },
+      {
+        "value": "CUSTOM:KalaisicWastes"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -46,7 +49,7 @@
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",
-    "hasSkyLight": false,
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "Blocks.PURPUR_BLOCK"
