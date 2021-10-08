@@ -1,19 +1,39 @@
 
 package io.github.team_lodestar.transcendeum.keybind;
 
+import org.lwjgl.glfw.GLFW;
+
+import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.client.Minecraft;
+
+import java.util.function.Supplier;
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.procedures.ArcedeonKeyReleasedProcedure;
+import io.github.team_lodestar.transcendeum.procedures.ArcedeonAscendProcedure;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class ArcedeonUpKeyBinding extends TheTranscendeumModElements.ModElement {
-
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
-
 	private long lastpress = 0;
-
 	public ArcedeonUpKeyBinding(TheTranscendeumModElements instance) {
 		super(instance, 315);
-
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -34,7 +54,6 @@ public class ArcedeonUpKeyBinding extends TheTranscendeumModElements.ModElement 
 				if (event.getAction() == GLFW.GLFW_PRESS) {
 					TheTranscendeumMod.PACKET_HANDLER.sendToServer(new KeyBindingPressedMessage(0, 0));
 					pressAction(Minecraft.getInstance().player, 0, 0);
-
 					lastpress = System.currentTimeMillis();
 				} else if (event.getAction() == GLFW.GLFW_RELEASE) {
 					int dt = (int) (System.currentTimeMillis() - lastpress);
@@ -44,11 +63,8 @@ public class ArcedeonUpKeyBinding extends TheTranscendeumModElements.ModElement 
 			}
 		}
 	}
-
 	public static class KeyBindingPressedMessage {
-
 		int type, pressedms;
-
 		public KeyBindingPressedMessage(int type, int pressedms) {
 			this.type = type;
 			this.pressedms = pressedms;
@@ -71,38 +87,28 @@ public class ArcedeonUpKeyBinding extends TheTranscendeumModElements.ModElement 
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
-
 	private static void pressAction(PlayerEntity entity, int type, int pressedms) {
 		World world = entity.world;
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 		if (type == 0) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-
 				$_dependencies.put("entity", entity);
-
 				ArcedeonAscendProcedure.executeProcedure($_dependencies);
 			}
 		}
-
 		if (type == 1) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-
 				$_dependencies.put("entity", entity);
-
 				ArcedeonKeyReleasedProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}
-
 }

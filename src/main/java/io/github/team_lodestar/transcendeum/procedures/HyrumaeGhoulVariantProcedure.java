@@ -1,7 +1,20 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class HyrumaeGhoulVariantProcedure {
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 
+import net.minecraft.world.World;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.renderer.model.Variant;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.entity.HyrumaeGhoulEntity;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class HyrumaeGhoulVariantProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -21,16 +34,13 @@ public class HyrumaeGhoulVariantProcedure {
 			executeProcedure(dependencies);
 		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure HyrumaeGhoulVariant!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		double Variant = 0;
 		if ((entity instanceof HyrumaeGhoulEntity.CustomEntity)) {
 			if ((((HyrumaeGhoulEntity.CustomEntity) entity).getVariant() == 0)) {
@@ -39,5 +49,4 @@ public class HyrumaeGhoulVariantProcedure {
 			}
 		}
 	}
-
 }
