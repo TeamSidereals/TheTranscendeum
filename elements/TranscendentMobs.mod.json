@@ -21,6 +21,12 @@
       },
       {
         "value": "CUSTOM:Lethreum"
+      },
+      {
+        "value": "CUSTOM:Kefgaell"
+      },
+      {
+        "value": "CUSTOM:Pisces"
       }
     ],
     "name": "transcendent_mobs",
