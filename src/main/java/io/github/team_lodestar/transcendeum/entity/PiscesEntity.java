@@ -18,7 +18,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.SwimmerPathNavigator;
@@ -31,7 +30,6 @@ import net.minecraft.entity.passive.fish.SalmonEntity;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.controller.MovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -40,7 +38,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.block.BlockState;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.PiscesRenderer;
@@ -50,9 +47,9 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.8f, 0.5f)).build("pisces").setRegistryName("pisces");
+			.size(0.6f, 0.6f)).build("pisces").setRegistryName("pisces");
 	public PiscesEntity(TheTranscendeumModElements instance) {
-		super(instance, 344);
+		super(instance, 346);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PiscesRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -61,13 +58,38 @@ public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16737844, -16764007, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -6710785, -16764058, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
 				.setRegistryName("pisces_spawn_egg"));
 	}
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:calid_woodlands").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:crystalia_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:kalaisic_wastes").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:salt_lowlands").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:sullen_canyon").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:sullen_cliffs").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:transcendent_sea").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:transcendent_ocean").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:viridian_mires").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 1, 4));
 	}
 
 	@Override
@@ -95,7 +117,7 @@ public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 3;
+			experienceValue = 2;
 			setNoAI(false);
 			this.moveController = new MovementController(this) {
 				@Override
@@ -140,8 +162,7 @@ public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 5, 40));
-			this.goalSelector.addGoal(2, new PanicGoal(this, 5));
-			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(2, new PanicGoal(this, 1.2));
 		}
 
 		@Override
@@ -160,12 +181,6 @@ public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
-		public void playStepSound(BlockPos pos, BlockState blockIn) {
-			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.salmon.flop")), 0.15f,
-					1);
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.salmon.hurt"));
 		}
@@ -173,6 +188,13 @@ public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.salmon.death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source == DamageSource.DROWN)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 
 		@Override
