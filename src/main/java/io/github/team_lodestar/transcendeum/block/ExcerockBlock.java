@@ -34,7 +34,6 @@ public class ExcerockBlock extends TheTranscendeumModElements.ModElement {
 	public ExcerockBlock(TheTranscendeumModElements instance) {
 		super(instance, 308);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
-		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 	}
 
 	@Override
@@ -49,16 +48,6 @@ public class ExcerockBlock extends TheTranscendeumModElements.ModElement {
 		public void blockColorLoad(ColorHandlerEvent.Block event) {
 			event.getBlockColors().register((bs, world, pos, index) -> {
 				return world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.get(0.5D, 1.0D);
-			}, block);
-		}
-	}
-
-	private static class ItemColorRegisterHandler {
-		@OnlyIn(Dist.CLIENT)
-		@SubscribeEvent
-		public void itemColorLoad(ColorHandlerEvent.Item event) {
-			event.getItemColors().register((stack, index) -> {
-				return GrassColors.get(0.5D, 1.0D);
 			}, block);
 		}
 	}
