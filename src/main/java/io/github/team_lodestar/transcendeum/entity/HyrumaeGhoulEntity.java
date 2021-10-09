@@ -96,6 +96,7 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 28);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 5);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 7);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 12);
 			event.put(entity, ammma.create());
 		}
 	}
