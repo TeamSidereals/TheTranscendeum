@@ -3739,16 +3739,6 @@
       "registry_name": "excerock_tiles"
     },
     {
-      "name": "AncientExcerockTiles",
-      "type": "block",
-      "sortid": 91,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ancient_excerock_tiles",
-      "path": "~/LyofsPlace"
-    },
-    {
       "name": "LethreumNaturalEntitySpawningCondition",
       "type": "procedure",
       "sortid": 314,
@@ -4222,6 +4212,64 @@
       "ids": {},
       "registry_name": "kefgaell",
       "path": "~/mobs"
+    },
+    {
+      "name": "EfowFruitEaten",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_fruit_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowFruit",
+      "type": "food",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_fruit",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowWeedBubblyDrops",
+      "type": "loottable",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_weed_bubbly_drops",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowWeedBubbly",
+      "type": "block",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "efow_weed_bubbly",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "ExcerockTilesCraft",
+      "type": "recipe",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_tiles_craft",
+      "path": "~/LyofsPlace"
     }
   ],
   "variable_elements": [
@@ -4540,14 +4588,6 @@
         "name": "Structures",
         "children": [
           {
-            "name": "Natural",
-            "children": []
-          },
-          {
-            "name": "Constructed",
-            "children": []
-          },
-          {
             "name": "others",
             "children": [
               {
@@ -4555,6 +4595,14 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Natural",
+            "children": []
+          },
+          {
+            "name": "Constructed",
+            "children": []
           }
         ]
       },

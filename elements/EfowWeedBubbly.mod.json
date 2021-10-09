@@ -2,42 +2,42 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "transstone_tiles",
+    "texture": "efow_weed",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 110,
-    "customModelName": "Single texture",
+    "renderType": 12,
+    "customModelName": "Cross model",
     "rotationMode": 0,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "efow_weed",
     "particleTexture": "",
-    "tintType": "Grass",
-    "isItemTinted": true,
-    "hasTransparency": false,
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
-    "disableOffset": false,
+    "transparencyType": "CUTOUT_MIPPED",
+    "disableOffset": true,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 4.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
+        "mz": 4.0,
+        "Mx": 12.0,
         "My": 16.0,
-        "Mz": 16.0,
+        "Mz": 12.0,
         "subtract": false
       }
     ],
-    "name": "Ancient Excerock Tiles",
+    "name": "Bubbly Efow Weed",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.05,
+    "resistance": 0.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
     },
@@ -46,13 +46,13 @@
       "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "PLANTS"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -74,10 +74,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "LILY_PADS"
     },
     "breakSound": {
       "value": ""
@@ -94,16 +94,19 @@
     "fallSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 2,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "CUSTOM:Twilighteris"
+      "value": "WATER_BUBBLE"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleSpawningRadious": 0.19999999850988387,
+    "particleAmount": 5,
+    "placingCondition": {
+      "name": "EfowIfCanPlace"
+    },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -121,6 +124,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "EfowWeedBreakChange"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

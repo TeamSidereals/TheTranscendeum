@@ -101,9 +101,9 @@
     "particleToSpawn": {
       "value": "WATER_BUBBLE"
     },
-    "particleSpawningShape": "Tube",
+    "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.19999999850988387,
-    "particleAmount": 3,
+    "particleAmount": 2,
     "placingCondition": {
       "name": "EfowIfCanPlace"
     },
