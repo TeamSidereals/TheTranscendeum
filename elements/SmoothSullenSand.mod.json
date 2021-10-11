@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "sullen_sand",
+    "texture": "smooth_sullen_sand",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "sullen_sand",
+    "particleTexture": "smooth_sullen_sand",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Sullen Sand",
+    "name": "Smooth Sullen Sand",
     "specialInfo": [],
     "hardness": 0.6,
     "resistance": 0.6,
@@ -121,16 +121,28 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
+    "restrictionBiomes": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:SullenDesert"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
+        "value": "CUSTOM:SullenCliffs"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "blocksToReplace": [
+      {
+        "value": "CUSTOM:SullenSand"
+      }
+    ],
+    "frequencyPerChunks": 24,
+    "frequencyOnChunk": 30,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 140
   }
 }
