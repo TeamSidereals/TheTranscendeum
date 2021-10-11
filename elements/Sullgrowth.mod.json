@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "dead_sullenbush",
+    "texture": "sullgrowth",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
@@ -12,7 +12,7 @@
     "isItemTinted": false,
     "plantType": "normal",
     "staticPlantGenerationType": "Grass",
-    "suspiciousStewEffect": "MINING_FATIGUE",
+    "suspiciousStewEffect": "WEAKNESS",
     "suspiciousStewDuration": 5,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
@@ -25,12 +25,12 @@
         "my": 0.0,
         "mz": 1.0,
         "Mx": 15.0,
-        "My": 15.0,
+        "My": 5.0,
         "Mz": 15.0,
         "subtract": false
       }
     ],
-    "name": "Dead Sullenbush",
+    "name": "Sullgrowth",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
@@ -41,7 +41,7 @@
     "unbreakable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "NETHER_SPROUT"
     },
     "breakSound": {
       "value": ""
@@ -80,19 +80,19 @@
     "canBePlacedOn": [
       {
         "value": "CUSTOM:SullenSand"
+      },
+      {
+        "value": "CUSTOM:SullenSandstone"
       }
     ],
     "placingCondition": {
       "name": "TranscendeumPlantsAdditionalPlacinggrowthCondition"
     },
-    "frequencyOnChunks": 1,
+    "frequencyOnChunks": 2,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:SullenCanyon"
-      },
       {
         "value": "CUSTOM:SullenCliffs"
       },
@@ -100,6 +100,6 @@
         "value": "CUSTOM:SullenDesert"
       }
     ],
-    "patchSize": 64
+    "patchSize": 128
   }
 }

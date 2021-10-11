@@ -111,7 +111,7 @@ public class SomberstoneBlock extends TheTranscendeumModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(256)
-					.square().func_242731_b(9);
+					.square().func_242731_b(20);
 			event.getRegistry().register(feature.setRegistryName("somberstone"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:somberstone"), configuredFeature);
 		}

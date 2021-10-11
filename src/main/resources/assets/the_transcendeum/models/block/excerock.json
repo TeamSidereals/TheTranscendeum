@@ -1,7 +1,7 @@
 {
-  "parent": "block/leaves",
+  "parent": "block/cube_all",
   "textures": {
-    "all": "the_transcendeum:blocks/transstone",
-    "particle": "the_transcendeum:blocks/transstone"
+    "all": "the_transcendeum:blocks/excerock",
+    "particle": "the_transcendeum:blocks/excerock"
   }
 }

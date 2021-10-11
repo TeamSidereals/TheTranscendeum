@@ -4288,6 +4288,64 @@
       "path": "~/mobs"
     },
     {
+      "name": "ThelyariumBootsCrafting",
+      "type": "recipe",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_boots_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ThelyariumHelmetCrafting",
+      "type": "recipe",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_helmet_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ThelyariumLeggingsCrafting",
+      "type": "recipe",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_leggings_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Sullgrowth",
+      "type": "plant",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullgrowth"
+    },
+    {
+      "name": "ThelyariumChestplateCrafting",
+      "type": "recipe",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_chestplate_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Sullenbush",
+      "type": "plant",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullenbush"
+    },
+    {
       "name": "SmoothSullenSand",
       "type": "block",
       "sortid": 347,
@@ -4342,7 +4400,6 @@
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
-      "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",

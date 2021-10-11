@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "dead_sullenbush",
+    "texture": "sullenbush",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Dead Sullenbush",
+    "name": "Wilting Sullenbush",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
@@ -90,9 +90,6 @@
       "CUSTOM:Transcendeum"
     ],
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:SullenCanyon"
-      },
       {
         "value": "CUSTOM:SullenCliffs"
       },

@@ -130,7 +130,7 @@
         "value": "CUSTOM:Excerock"
       }
     ],
-    "frequencyPerChunks": 9,
+    "frequencyPerChunks": 20,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 256
