@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_transcendeum:blocks/smooth_sullen_sand",
+    "particle": "the_transcendeum:blocks/smooth_sullen_sand"
+  }
+}
