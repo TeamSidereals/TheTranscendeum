@@ -36,13 +36,11 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.material.Material;
 
-import io.github.team_lodestar.transcendeum.procedures.LethreumNaturalEntitySpawningConditionProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.LethreumRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
-
-import com.google.common.collect.ImmutableMap;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class LethreumEntity extends TheTranscendeumModElements.ModElement {
@@ -76,18 +74,14 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 5, 1, 1));
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 7, 1, 1));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> {
-					int x = pos.getX();
-					int y = pos.getY();
-					int z = pos.getZ();
-					return LethreumNaturalEntitySpawningConditionProcedure.executeProcedure(ImmutableMap.of());
-				});
+				(entityType, world, reason, pos,
+						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -125,7 +119,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(1, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, ArcedeonEntity.CustomEntity.class, true, true));
 			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false));
 			this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
 			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
