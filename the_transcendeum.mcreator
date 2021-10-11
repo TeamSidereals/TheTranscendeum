@@ -4287,6 +4287,64 @@
       "ids": {},
       "registry_name": "kefgaell",
       "path": "~/mobs"
+    },
+    {
+      "name": "ThelyariumHelmetCrafting",
+      "type": "recipe",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_helmet_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ThelyariumChestplateCrafting",
+      "type": "recipe",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_chestplate_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ThelyariumLeggingsCrafting",
+      "type": "recipe",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_leggings_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ThelyariumBootsCrafting",
+      "type": "recipe",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_boots_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Sullenbush",
+      "type": "plant",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullenbush"
+    },
+    {
+      "name": "Sullgrowth",
+      "type": "plant",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullgrowth"
     }
   ],
   "variable_elements": [
@@ -4362,6 +4420,7 @@
       "item.the_transcendeum.thelyarium_chestplate": "Thelyarium Chestplate",
       "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.efow_weed": "Efow Weed",
+      "block.the_transcendeum.sullenbush": "Wilting Sullenbush",
       "block.the_transcendeum.viridwood_door": "Viridwood Door",
       "block.the_transcendeum.saltrock": "Saltrock",
       "item.minecraft.tipped_arrow.effect.arcedeonian_brew": "Arcedeonian Arrow",
@@ -4508,6 +4567,7 @@
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
+      "block.the_transcendeum.sullgrowth": "Sullgrowth",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }

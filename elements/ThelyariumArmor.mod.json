@@ -51,7 +51,7 @@
     "toughness": 0.4,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_iron"
     },
     "repairItems": [
       {
