@@ -83,7 +83,8 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 				return 0.1f;
 			}
 		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD,
+				new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
@@ -100,7 +101,8 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 				return "the_transcendeum:textures/models/armor/kiarite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("kiarite_armor_helmet"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST,
+				new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
@@ -119,7 +121,8 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 				return "the_transcendeum:textures/models/armor/kiarite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("kiarite_armor_chestplate"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS,
+				new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
@@ -137,7 +140,8 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 				return "the_transcendeum:textures/models/armor/kiarite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("kiarite_armor_leggings"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET,
+				new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
@@ -216,6 +220,8 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 		private final ModelRenderer horn3;
 		private final ModelRenderer horn1_r2;
 		private final ModelRenderer chestplate;
+		private final ModelRenderer horn3_r3_r1;
+		private final ModelRenderer horn2_r2_r1;
 		private final ModelRenderer rightarm;
 		private final ModelRenderer leftarm;
 		private final ModelRenderer rightboot;
@@ -285,6 +291,18 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			chestplate = new ModelRenderer(this);
 			chestplate.setRotationPoint(0.0F, 0.0F, 0.0F);
 			chestplate.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 1.01F, false);
+			chestplate.setTextureOffset(72, 24).addBox(0.9F, 1.0F, 3.0F, 2.0F, 7.0F, 1.0F, 0.4F, true);
+			chestplate.setTextureOffset(72, 24).addBox(-2.9F, 1.0F, 3.0F, 2.0F, 7.0F, 1.0F, 0.4F, false);
+			horn3_r3_r1 = new ModelRenderer(this);
+			horn3_r3_r1.setRotationPoint(0.0F, 24.0F, 0.0F);
+			chestplate.addChild(horn3_r3_r1);
+			setRotationAngle(horn3_r3_r1, -0.582F, 0.1975F, 0.2898F);
+			horn3_r3_r1.setTextureOffset(78, 18).addBox(-4.0F, -22.0F, -8.0F, 0.0F, 4.0F, 0.0F, 0.95F, true);
+			horn2_r2_r1 = new ModelRenderer(this);
+			horn2_r2_r1.setRotationPoint(0.0F, 24.0F, 0.0F);
+			chestplate.addChild(horn2_r2_r1);
+			setRotationAngle(horn2_r2_r1, -0.582F, -0.1975F, -0.2898F);
+			horn2_r2_r1.setTextureOffset(78, 18).addBox(4.0F, -22.0F, -8.0F, 0.0F, 4.0F, 0.0F, 0.95F, false);
 			rightarm = new ModelRenderer(this);
 			rightarm.setRotationPoint(-5.0F, 2.0F, 0.0F);
 			rightarm.setTextureOffset(40, 16).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);

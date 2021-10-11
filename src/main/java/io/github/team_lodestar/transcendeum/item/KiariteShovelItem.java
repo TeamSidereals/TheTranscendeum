@@ -52,7 +52,7 @@ public class KiariteShovelItem extends TheTranscendeumModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(KiariteIngotItem.block));
 			}
-		}, 1, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		}, 1, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
