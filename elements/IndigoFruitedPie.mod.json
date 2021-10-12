@@ -3,24 +3,24 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "indigo_juice",
+    "texture": "indigo_juiced_pie",
     "customModelName": "Normal",
-    "name": "Indigo Juice",
+    "name": "Indigo Fruited Pie",
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumItems"
     },
-    "stackSize": 16,
-    "nutritionalValue": 5,
-    "saturation": 0.7999999999999999,
+    "stackSize": 64,
+    "nutritionalValue": 8,
+    "saturation": 0.6,
     "eatingSpeed": 32,
     "resultItem": {
-      "value": "Items.GLASS_BOTTLE"
+      "value": ""
     },
     "forDogs": false,
     "isAlwaysEdible": false,
-    "animation": "drink",
+    "animation": "eat",
     "hasGlow": false
   }
 }

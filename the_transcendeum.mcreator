@@ -1786,6 +1786,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -4048,7 +4064,7 @@
       "name": "Pisces",
       "type": "livingentity",
       "sortid": 344,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {},
       "registry_name": "pisces",
@@ -4072,16 +4088,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "indigo_berries"
-    },
-    {
-      "name": "IndigoJuiceRecipe",
-      "type": "recipe",
-      "sortid": 324,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "indigo_juice_recipe",
-      "path": "~/recipes"
     },
     {
       "name": "LethreumNaturalEntitySpawningCondition",
@@ -4237,15 +4243,6 @@
       "path": "~/mobs/functions/ArcedeonVerticalControl"
     },
     {
-      "name": "IndigoJuice",
-      "type": "food",
-      "sortid": 322,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "indigo_juice"
-    },
-    {
       "name": "ThelyariumBootsCrafting",
       "type": "recipe",
       "sortid": 351,
@@ -4347,6 +4344,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sullenbush"
+    },
+    {
+      "name": "IndigoJam",
+      "type": "food",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_jam"
+    },
+    {
+      "name": "IndigoJamRecipe",
+      "type": "recipe",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_jam_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "IndigoFruitedPie",
+      "type": "food",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_fruited_pie"
+    },
+    {
+      "name": "IndigoPieRecipe",
+      "type": "recipe",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_pie_recipe",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [
@@ -4379,8 +4414,9 @@
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.kiarite_hoe": "Kiarite Hoe",
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
-      "item.the_transcendeum.indigo_soup": "Indigo Soup",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "item.the_transcendeum.indigo_soup": "Indigo Soup",
+      "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.viriclinger": "Viriclinger",
@@ -4390,19 +4426,21 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
+      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
+      "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
-      "entity.the_transcendeum.arffel": "Arffel",
+      "item.the_transcendeum.thelyarium_leggings": "Thelyarium Leggings",
       "item.the_transcendeum.berthel_shard": "Berthel Shard",
+      "entity.the_transcendeum.arffel": "Arffel",
       "block.the_transcendeum.viridwood_log": "Viridwood Log",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
+      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4417,8 +4455,10 @@
       "item.minecraft.splash_potion.effect.arcedeonian_brew": "Splash Arcedeonian Brew",
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "item.the_transcendeum.cadillacium_sword": "Cadillacium Sword",
+      "item.the_transcendeum.thelyarium_chestplate": "Thelyarium Chestplate",
       "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.efow_weed": "Efow Weed",
+      "block.the_transcendeum.sullenbush": "Wilting Sullenbush",
       "block.the_transcendeum.viridwood_door": "Viridwood Door",
       "block.the_transcendeum.saltrock": "Saltrock",
       "item.minecraft.tipped_arrow.effect.arcedeonian_brew": "Arcedeonian Arrow",
@@ -4448,16 +4488,16 @@
       "block.the_transcendeum.viridwood_stairs": "Viridwood Stairs",
       "item.the_transcendeum.cadillacium_ingot": "Cadillacium Ingot",
       "item.the_transcendeum.cadillacium_shovel": "Cadillacium Shovel",
-      "block.the_transcendeum.polished_morosite": "Polished Morosite",
       "item.the_transcendeum.thelyarium_shovel": "Thelyarium Shovel",
+      "block.the_transcendeum.polished_morosite": "Polished Morosite",
       "item.the_transcendeum.corium_virilily": "Corium Virilily",
       "item.minecraft.lingering_potion.effect.arcedeonian_brew": "Lingering Arcedeonian Brew",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
-      "block.the_transcendeum.acrium_flower": "Acrium Flower",
       "block.the_transcendeum.sulkstone": "Sulkstone",
+      "block.the_transcendeum.acrium_flower": "Acrium Flower",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
-      "block.the_transcendeum.polished_morosite_stairs": "Polished Morosite Stairs",
       "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
+      "block.the_transcendeum.polished_morosite_stairs": "Polished Morosite Stairs",
       "item.the_transcendeum.virilily": "Virilily",
       "key.the_transcendeum.arcedeon_up": "Arcedeon Ascend",
       "entity.the_transcendeum.lethreum": "Lethreum",
@@ -4473,7 +4513,6 @@
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
       "block.the_transcendeum.morosite_slab": "Morosite Slab",
       "block.the_transcendeum.viridwood_slab": "Viridwood Slab",
-      "item.the_transcendeum.indigo_juice": "Indigo Juice",
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "block.the_transcendeum.efow_moss": "Efow Moss",
       "enchantment.the_transcendeum.refreshing": "Refreshing",
@@ -4483,6 +4522,7 @@
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine",
       "block.the_transcendeum.bubble": "Bubble",
       "item.the_transcendeum.thelyarium_pickaxe": "Thelyarium Pickaxe",
+      "item.the_transcendeum.excrearer_spawn_egg": "Excrearer Spawn Egg",
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
@@ -4508,6 +4548,7 @@
       "block.the_transcendeum.morosite_wall": "Morosite Wall",
       "item.the_transcendeum.thelyarium_hoe": "Thelyarium Hoe",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
+      "item.the_transcendeum.thelyarium_helmet": "Thelyarium Helmet",
       "entity.the_transcendeum.arcedeon": "Arcedeon",
       "item.the_transcendeum.kiarite_pickaxe": "Kiarite Pickaxe",
       "block.the_transcendeum.viralga_block": "Viralga",
@@ -4523,6 +4564,7 @@
       "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",
       "block.the_transcendeum.berthel_crystal_block": "Berthel Crystal Block",
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
+      "item.the_transcendeum.indigo_jam": "Indigo Jam",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.ancient_excerock_tiles": "Ancient Excerock Tiles",
       "block.the_transcendeum.viridian_nyllium": "Viridian Nyllium",
@@ -4543,6 +4585,7 @@
       "block.the_transcendeum.flowered_viridian_grass": "Flowered Viridian Grass",
       "block.the_transcendeum.chrysalium_vine": "Chrysalium Vine",
       "item.the_transcendeum.kefgaell_spawn_egg": "Kefgaell Spawn Egg",
+      "entity.the_transcendeum.excrearer": "Excrearer",
       "block.the_transcendeum.kelfae": "Kelfae",
       "item.the_transcendeum.kiarite_sword": "Kiarite Sword",
       "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
@@ -4564,7 +4607,9 @@
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
+      "block.the_transcendeum.sullgrowth": "Sullgrowth",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
+      "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
   },

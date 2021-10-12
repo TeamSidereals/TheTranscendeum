@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "flowered_flowered_grass",
+    "texture": "flowered_grass",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "flowered_flowered_grass",
