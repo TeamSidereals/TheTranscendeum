@@ -49,8 +49,8 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 2.5f))
-					.build("excrearer").setRegistryName("excrearer");
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(1.2f, 2.7f)).build("excrearer").setRegistryName("excrearer");
 	public ExcrearerEntity(TheTranscendeumModElements instance) {
 		super(instance, 354);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ExcrearerRenderer.ModelRegisterHandler());
