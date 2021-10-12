@@ -4353,6 +4353,16 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "smooth_sullen_sand"
+    },
+    {
+      "name": "Excrearer",
+      "type": "livingentity",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excrearer",
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [
@@ -4400,6 +4410,7 @@
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
+      "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
@@ -4428,6 +4439,7 @@
       "item.the_transcendeum.thelyarium_chestplate": "Thelyarium Chestplate",
       "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.efow_weed": "Efow Weed",
+      "block.the_transcendeum.sullenbush": "Wilting Sullenbush",
       "block.the_transcendeum.viridwood_door": "Viridwood Door",
       "block.the_transcendeum.saltrock": "Saltrock",
       "item.minecraft.tipped_arrow.effect.arcedeonian_brew": "Arcedeonian Arrow",
@@ -4492,6 +4504,7 @@
       "block.the_transcendeum.chrysalium_vine_bottom": "Chrysalium Vine",
       "block.the_transcendeum.bubble": "Bubble",
       "item.the_transcendeum.thelyarium_pickaxe": "Thelyarium Pickaxe",
+      "item.the_transcendeum.excrearer_spawn_egg": "Excrearer Spawn Egg",
       "biome.the_transcendeum.sullen_cliffs": "Sullen Cliffs",
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
@@ -4553,6 +4566,7 @@
       "block.the_transcendeum.flowered_viridian_grass": "Flowered Viridian Grass",
       "block.the_transcendeum.chrysalium_vine": "Chrysalium Vine",
       "item.the_transcendeum.kefgaell_spawn_egg": "Kefgaell Spawn Egg",
+      "entity.the_transcendeum.excrearer": "Excrearer",
       "block.the_transcendeum.kelfae": "Kelfae",
       "item.the_transcendeum.kiarite_sword": "Kiarite Sword",
       "block.the_transcendeum.corium_virilily_block": "Corium Virilily",
@@ -4574,6 +4588,7 @@
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
+      "block.the_transcendeum.sullgrowth": "Sullgrowth",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
