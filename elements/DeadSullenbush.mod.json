@@ -85,7 +85,7 @@
     "placingCondition": {
       "name": "TranscendeumPlantsAdditionalPlacinggrowthCondition"
     },
-    "frequencyOnChunks": 2,
+    "frequencyOnChunks": 1,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],

@@ -30,7 +30,7 @@ public class PiscesRenderer {
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(PiscesEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelpisces(), 0.1f) {
+				return new MobRenderer(renderManager, new Modelpisces(), 0.5f) {
 					{
 						this.addLayer(new GlowingLayer<>(this));
 					}

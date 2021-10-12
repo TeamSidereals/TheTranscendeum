@@ -3871,23 +3871,6 @@
       "path": "~/gear sets/armor"
     },
     {
-      "name": "ArcedeonRiddenByPlayer",
-      "type": "procedure",
-      "sortid": 327,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "arcedeon_ridden_by_player",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "KiariteArmorLeggingsRecipe",
       "type": "recipe",
       "sortid": 337,
@@ -4261,6 +4244,109 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "indigo_juice"
+    },
+    {
+      "name": "ThelyariumBootsCrafting",
+      "type": "recipe",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_boots_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SmoothSullenSand",
+      "type": "block",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_sullen_sand"
+    },
+    {
+      "name": "ThelyariumHelmetCrafting",
+      "type": "recipe",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_helmet_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Kefgaell",
+      "type": "livingentity",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "kefgaell",
+      "path": "~/mobs"
+    },
+    {
+      "name": "Excrearer",
+      "type": "livingentity",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excrearer",
+      "path": "~/mobs"
+    },
+    {
+      "name": "ThelyariumArmor",
+      "type": "armor",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/gear sets/armor"
+    },
+    {
+      "name": "ThelyariumLeggingsCrafting",
+      "type": "recipe",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_leggings_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Sullgrowth",
+      "type": "plant",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullgrowth"
+    },
+    {
+      "name": "ThelyariumChestplateCrafting",
+      "type": "recipe",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelyarium_chestplate_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Sullenbush",
+      "type": "plant",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullenbush"
     }
   ],
   "variable_elements": [
@@ -4301,6 +4387,7 @@
       "item.the_transcendeum.thelyarium_axe": "Thelyarium Axe",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "item.the_transcendeum.berthel_sword": "Berthel Sword",
+      "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
@@ -4455,6 +4542,7 @@
       "block.the_transcendeum.viridwood": "Viridwood",
       "block.the_transcendeum.flowered_viridian_grass": "Flowered Viridian Grass",
       "block.the_transcendeum.chrysalium_vine": "Chrysalium Vine",
+      "item.the_transcendeum.kefgaell_spawn_egg": "Kefgaell Spawn Egg",
       "block.the_transcendeum.kelfae": "Kelfae",
       "item.the_transcendeum.kiarite_sword": "Kiarite Sword",
       "block.the_transcendeum.corium_virilily_block": "Corium Virilily",

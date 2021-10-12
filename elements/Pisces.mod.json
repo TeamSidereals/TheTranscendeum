@@ -7,17 +7,17 @@
     "mobModelName": "Modelpisces",
     "mobModelTexture": "pisces.png",
     "mobModelGlowTexture": "pisces_glow.png",
-    "modelWidth": 0.8,
-    "modelHeight": 0.5,
-    "modelShadowSize": 0.1,
+    "modelWidth": 0.6,
+    "modelHeight": 0.6,
+    "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16737844,
+      "value": -6710785,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16764007,
+      "value": -16764058,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -44,7 +44,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "WATER",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -53,7 +53,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "health": 5,
-    "xpAmount": 3,
+    "xpAmount": 2,
     "waterMob": true,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -67,7 +67,7 @@
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToDrowning": true,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -89,7 +89,7 @@
       "value": "entity.salmon.death"
     },
     "stepSound": {
-      "value": "entity.salmon.flop"
+      "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim\"><field name=\"speed\">5</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">5</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim\"><field name=\"speed\">5</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -113,9 +113,43 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "waterCreature",
-    "minNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AureaForest"
+      },
+      {
+        "value": "CUSTOM:AureaPlains"
+      },
+      {
+        "value": "CUSTOM:CalidWoodlands"
+      },
+      {
+        "value": "CUSTOM:CrystaliaForest"
+      },
+      {
+        "value": "CUSTOM:KalaisicWastes"
+      },
+      {
+        "value": "CUSTOM:SaltLowlands"
+      },
+      {
+        "value": "CUSTOM:SullenCanyon"
+      },
+      {
+        "value": "CUSTOM:SullenCliffs"
+      },
+      {
+        "value": "CUSTOM:TranscendentSea"
+      },
+      {
+        "value": "CUSTOM:TranscendentOcean"
+      },
+      {
+        "value": "CUSTOM:ViridianMires"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

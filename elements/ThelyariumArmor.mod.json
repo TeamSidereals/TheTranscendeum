@@ -1,0 +1,62 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "thelyarium_helmet",
+    "enableBody": true,
+    "textureBody": "thelyarium_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "thelyarium_leggings",
+    "enableBoots": true,
+    "textureBoots": "thelyarium_boots",
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumGear"
+    },
+    "armorTextureFile": "berthel_",
+    "helmetName": "Thelyarium Helmet",
+    "bodyName": "Thelyarium Chestplate",
+    "leggingsName": "Thelyarium Leggings",
+    "bootsName": "Thelyarium Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelthelyarium_layer_1",
+    "helmetModelPart": "helmet",
+    "helmetModelTexture": "thelyarium_layer_1.png",
+    "bodyModelName": "Modelthelyarium_layer_1",
+    "bodyModelPart": "chestplate",
+    "armsModelPartL": "leftarm",
+    "armsModelPartR": "rightarm",
+    "bodyModelTexture": "thelyarium_layer_1.png",
+    "leggingsModelName": "Modelthelyarium_layer_2",
+    "leggingsModelPartL": "leftleg",
+    "leggingsModelPartR": "rightleg",
+    "leggingsModelTexture": "thelyarium_layer_2.png",
+    "bootsModelName": "Modelthelyarium_layer_1",
+    "bootsModelPartL": "leftboot",
+    "bootsModelPartR": "rightboot",
+    "bootsModelTexture": "thelyarium_layer_1.png",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 31,
+    "damageValueHelmet": 3,
+    "damageValueBody": 7,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 11,
+    "toughness": 0.4,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "group": "thelyarium_chestplate_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    },
+    "2": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    },
+    "3": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    },
+    "4": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    },
+    "5": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    },
+    "6": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    },
+    "7": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    },
+    "8": {
+      "item": "the_transcendeum:thelyarium_ingot"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:thelyarium_chestplate",
+    "count": 1
+  }
+}
