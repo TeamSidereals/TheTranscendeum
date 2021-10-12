@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "chorus_jam",
+    "customModelName": "Normal",
+    "name": "Chorus Jam",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumItems"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 7,
+    "saturation": 0.9,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "Items.GLASS_BOTTLE"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "drink",
+    "hasGlow": false
+  }
+}

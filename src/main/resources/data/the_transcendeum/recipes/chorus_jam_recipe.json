@@ -1,0 +1,26 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glass_bottle"
+    },
+    "1": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "2": {
+      "item": "minecraft:sugar"
+    },
+    "3": {
+      "item": "minecraft:honeycomb"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:chorus_jam",
+    "count": 1
+  }
+}
