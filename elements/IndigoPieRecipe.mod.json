@@ -10,19 +10,19 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Items.GLASS_BOTTLE"
+        "value": "Items.PUMPKIN_PIE"
       },
       {
-        "value": "Items.SUGAR"
+        "value": "CUSTOM:IndigoJam"
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
       },
       {
         "value": ""
-      },
-      {
-        "value": "CUSTOM:IndigoBerries"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:IndigoJuice"
+      "value": "CUSTOM:IndigoFruitedPie"
     },
-    "name": "indigo_juice_recipe",
+    "name": "indigo_pie_recipe",
     "namespace": "mod"
   }
 }

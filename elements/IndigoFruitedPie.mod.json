@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "indigo_juiced_pie",
+    "customModelName": "Normal",
+    "name": "Indigo Fruited Pie",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumItems"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 8,
+    "saturation": 0.6,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

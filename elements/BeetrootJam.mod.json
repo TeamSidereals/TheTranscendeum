@@ -3,17 +3,17 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "indigo_juice",
+    "texture": "beetroot_jam",
     "customModelName": "Normal",
-    "name": "Indigo Juice",
+    "name": "Beetroot Jam",
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumItems"
     },
     "stackSize": 16,
-    "nutritionalValue": 5,
-    "saturation": 0.7999999999999999,
+    "nutritionalValue": 7,
+    "saturation": 0.9,
     "eatingSpeed": 32,
     "resultItem": {
       "value": "Items.GLASS_BOTTLE"

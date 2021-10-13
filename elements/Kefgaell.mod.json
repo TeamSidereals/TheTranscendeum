@@ -111,8 +111,8 @@
     "rangedItemType": "EnigmaGlovePowered",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 7,
-    "mobSpawningType": "creature",
+    "spawningProbability": 12,
+    "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [
