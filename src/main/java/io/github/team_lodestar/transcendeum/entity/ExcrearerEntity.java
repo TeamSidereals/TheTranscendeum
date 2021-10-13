@@ -1,28 +1,66 @@
 
 package io.github.team_lodestar.transcendeum.entity;
 
-import net.minecraft.block.material.Material;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.world.gen.Heightmap;
+import net.minecraft.world.biome.MobSpawnInfo;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.DamageSource;
+import net.minecraft.network.IPacket;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.ai.goal.SwimGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
+import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.BlockState;
+
+import java.util.Random;
+
+import io.github.team_lodestar.transcendeum.particle.TwilighterisParticle;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
+import io.github.team_lodestar.transcendeum.entity.renderer.ExcrearerRenderer;
+import io.github.team_lodestar.transcendeum.block.KelaveWoodBlock;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
-
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(1.2f, 2.7f)).build("excrearer").setRegistryName("excrearer");
-
 	public ExcrearerEntity(TheTranscendeumModElements instance) {
 		super(instance, 354);
-
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ExcrearerRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-
 		elements.items.add(() -> new SpawnEggItem(entity, -6697729, -12372176, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
 				.setRegistryName("excrearer_spawn_egg"));
 	}
@@ -36,7 +74,6 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-
 		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 20, 1, 2));
 	}
 
@@ -44,11 +81,8 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 	public void init(FMLCommonSetupEvent event) {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.NO_RESTRICTIONS,
 				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canSpawnOn);
-
 	}
-
 	private static class EntityAttributesRegisterHandler {
-
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
@@ -56,16 +90,12 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 60);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 15);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 11);
-
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5);
-
 			event.put(entity, ammma.create());
 		}
-
 	}
 
 	public static class CustomEntity extends CreatureEntity {
-
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -74,7 +104,6 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-
 		}
 
 		@Override
@@ -85,14 +114,12 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-
 			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
 			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ArcedeonEntity.CustomEntity.class, false, false));
-
 		}
 
 		@Override
@@ -135,7 +162,6 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 
 		public void livingTick() {
 			super.livingTick();
-
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
@@ -153,7 +179,5 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 					world.addParticle(TwilighterisParticle.particle, d0, d1, d2, d3, d4, d5);
 				}
 		}
-
 	}
-
 }

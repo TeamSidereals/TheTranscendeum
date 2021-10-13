@@ -140,8 +140,8 @@
         "value": "CUSTOM:SullenSand"
       }
     ],
-    "frequencyPerChunks": 32,
-    "frequencyOnChunk": 32,
+    "frequencyPerChunks": 24,
+    "frequencyOnChunk": 30,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 140
   }
