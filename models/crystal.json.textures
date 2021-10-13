@@ -5,6 +5,12 @@
         "0": "berthel_crystal"
       },
       "name": "default"
+    },
+    "thorn": {
+      "map": {
+        "0": "sullen_thorn"
+      },
+      "name": "thorn"
     }
   }
 }
