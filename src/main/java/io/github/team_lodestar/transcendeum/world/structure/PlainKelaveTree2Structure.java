@@ -52,7 +52,7 @@ public class PlainKelaveTree2Structure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 5000) {
+					if ((random.nextInt(1000000) + 1) <= 5500) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
