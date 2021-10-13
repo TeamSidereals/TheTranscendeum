@@ -6,11 +6,11 @@
       "item": "minecraft:pumpkin_pie"
     },
     {
-      "item": "the_transcendeum:indigo_jam"
+      "item": "the_transcendeum:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "the_transcendeum:indigo_fruited_pie",
+    "item": "the_transcendeum:deleted_mod_element",
     "count": 1
   }
 }
