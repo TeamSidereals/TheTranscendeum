@@ -1786,22 +1786,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -4536,6 +4520,15 @@
       "registry_name": "sweet_berry_jam"
     },
     {
+      "name": "SullenThorn",
+      "type": "block",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_thorn"
+    },
+    {
       "name": "SullenThornEntityCollidesInTheBlock",
       "type": "procedure",
       "sortid": 370,
@@ -4551,15 +4544,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "SullenThorn",
-      "type": "block",
-      "sortid": 370,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sullen_thorn"
     }
   ],
   "variable_elements": [

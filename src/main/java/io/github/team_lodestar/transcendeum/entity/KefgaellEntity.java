@@ -52,7 +52,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(2f, 2f))
 					.build("kefgaell").setRegistryName("kefgaell");
 	public KefgaellEntity(TheTranscendeumModElements instance) {
@@ -78,13 +78,13 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 12, 1, 1));
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 5, 1, 1));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.NO_RESTRICTIONS,
-				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canSpawnOn);
+		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
+				MonsterEntity::canMonsterSpawn);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -145,7 +145,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 				public void startExecuting() {
 					LivingEntity livingentity = CustomEntity.this.getAttackTarget();
 					Vector3d vec3d = livingentity.getEyePosition(1);
-					CustomEntity.this.moveController.setMoveTo(vec3d.x, vec3d.y, vec3d.z, 4);
+					CustomEntity.this.moveController.setMoveTo(vec3d.x, vec3d.y, vec3d.z, 1);
 				}
 
 				@Override
@@ -157,12 +157,12 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 						double d0 = CustomEntity.this.getDistanceSq(livingentity);
 						if (d0 < 16) {
 							Vector3d vec3d = livingentity.getEyePosition(1);
-							CustomEntity.this.moveController.setMoveTo(vec3d.x, vec3d.y, vec3d.z, 4);
+							CustomEntity.this.moveController.setMoveTo(vec3d.x, vec3d.y, vec3d.z, 1);
 						}
 					}
 				}
 			});
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 4, 20) {
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8, 20) {
 				@Override
 				protected Vector3d getPosition() {
 					Random random = CustomEntity.this.getRNG();
