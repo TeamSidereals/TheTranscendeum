@@ -4363,6 +4363,52 @@
       "ids": {},
       "registry_name": "excrearer",
       "path": "~/mobs"
+    },
+    {
+      "name": "KefgaellHeartItemInHandTick",
+      "type": "procedure",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kefgaell_heart_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KefgaellHeart",
+      "type": "item",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kefgaell_heart"
+    },
+    {
+      "name": "KefgaellLootTable",
+      "type": "loottable",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kefgaell_loot_table",
+      "path": "~/loot tables/mobs"
+    },
+    {
+      "name": "EnigmaGloveCraftingRecipe",
+      "type": "recipe",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_crafting_recipe",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [
@@ -4395,8 +4441,8 @@
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.kiarite_hoe": "Kiarite Hoe",
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.indigo_soup": "Indigo Soup",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
@@ -4407,21 +4453,21 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
       "item.the_transcendeum.thelyarium_leggings": "Thelyarium Leggings",
-      "item.the_transcendeum.berthel_shard": "Berthel Shard",
       "entity.the_transcendeum.arffel": "Arffel",
+      "item.the_transcendeum.berthel_shard": "Berthel Shard",
       "block.the_transcendeum.viridwood_log": "Viridwood Log",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4469,8 +4515,8 @@
       "block.the_transcendeum.viridwood_stairs": "Viridwood Stairs",
       "item.the_transcendeum.cadillacium_ingot": "Cadillacium Ingot",
       "item.the_transcendeum.cadillacium_shovel": "Cadillacium Shovel",
-      "item.the_transcendeum.thelyarium_shovel": "Thelyarium Shovel",
       "block.the_transcendeum.polished_morosite": "Polished Morosite",
+      "item.the_transcendeum.thelyarium_shovel": "Thelyarium Shovel",
       "item.the_transcendeum.corium_virilily": "Corium Virilily",
       "item.minecraft.lingering_potion.effect.arcedeonian_brew": "Lingering Arcedeonian Brew",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
@@ -4509,6 +4555,7 @@
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "item.the_transcendeum.kefgaell_heart": "Kefgaell Heart",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
@@ -4664,6 +4711,10 @@
           },
           {
             "name": "structure loot",
+            "children": []
+          },
+          {
+            "name": "mobs",
             "children": []
           }
         ]

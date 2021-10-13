@@ -21,7 +21,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -71,9 +70,11 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 2, 1, 2));
+		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 20, 1, 2));
 	}
 
 	@Override
@@ -118,7 +119,7 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ArcedeonEntity.CustomEntity.class, false, false));
 		}
 
 		@Override

@@ -79,7 +79,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 7, 1, 1));
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 15, 1, 1));
 	}
 
 	@Override
@@ -98,7 +98,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 15);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 64.0D);
 			event.put(entity, ammma.create());
 		}
 	}
