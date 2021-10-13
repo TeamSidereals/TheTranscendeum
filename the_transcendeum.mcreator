@@ -4080,16 +4080,6 @@
       "registry_name": "indigo_berries"
     },
     {
-      "name": "IndigoJuiceRecipe",
-      "type": "recipe",
-      "sortid": 324,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "indigo_juice_recipe",
-      "path": "~/recipes"
-    },
-    {
       "name": "LethreumNaturalEntitySpawningCondition",
       "type": "procedure",
       "sortid": 314,
@@ -4243,15 +4233,6 @@
       "path": "~/mobs/functions/ArcedeonVerticalControl"
     },
     {
-      "name": "IndigoJuice",
-      "type": "food",
-      "sortid": 322,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "indigo_juice"
-    },
-    {
       "name": "ThelyariumArmor",
       "type": "armor",
       "sortid": 344,
@@ -4365,6 +4346,16 @@
       "path": "~/mobs"
     },
     {
+      "name": "KefgaellLootTable",
+      "type": "loottable",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kefgaell_loot_table",
+      "path": "~/loot tables/mobs"
+    },
+    {
       "name": "KefgaellHeartItemInHandTick",
       "type": "procedure",
       "sortid": 355,
@@ -4382,6 +4373,16 @@
       }
     },
     {
+      "name": "EnigmaGloveCraftingRecipe",
+      "type": "recipe",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enigma_glove_crafting_recipe",
+      "path": "~/recipes"
+    },
+    {
       "name": "KefgaellHeart",
       "type": "item",
       "sortid": 355,
@@ -4391,24 +4392,118 @@
       "registry_name": "kefgaell_heart"
     },
     {
-      "name": "KefgaellLootTable",
-      "type": "loottable",
-      "sortid": 356,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kefgaell_loot_table",
-      "path": "~/loot tables/mobs"
-    },
-    {
-      "name": "EnigmaGloveCraftingRecipe",
-      "type": "recipe",
+      "name": "IndigoFruitedPie",
+      "type": "food",
       "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enigma_glove_crafting_recipe",
+      "registry_name": "indigo_fruited_pie"
+    },
+    {
+      "name": "IndigoJamRecipe",
+      "type": "recipe",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_jam_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "BeetrootJamRecipe",
+      "type": "recipe",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beetroot_jam_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ChorusJam",
+      "type": "food",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_jam"
+    },
+    {
+      "name": "AppleJamRecipe",
+      "type": "recipe",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apple_jam_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BeetrootJam",
+      "type": "food",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beetroot_jam"
+    },
+    {
+      "name": "AppleJam",
+      "type": "food",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apple_jam"
+    },
+    {
+      "name": "IndigoJam",
+      "type": "food",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_jam"
+    },
+    {
+      "name": "IndigoPieRecipe",
+      "type": "recipe",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indigo_pie_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ChorusJamRecipe",
+      "type": "recipe",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_jam_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SweetBerryJamRecipe",
+      "type": "recipe",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sweet_berry_jam_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "SweetBerryJam",
+      "type": "food",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sweet_berry_jam"
     }
   ],
   "variable_elements": [
@@ -4555,7 +4650,6 @@
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
-      "item.the_transcendeum.kefgaell_heart": "Kefgaell Heart",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
@@ -4710,11 +4804,11 @@
             "children": []
           },
           {
-            "name": "structure loot",
+            "name": "mobs",
             "children": []
           },
           {
-            "name": "mobs",
+            "name": "structure loot",
             "children": []
           }
         ]
