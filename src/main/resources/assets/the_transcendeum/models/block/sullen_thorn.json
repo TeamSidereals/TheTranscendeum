@@ -1,0 +1,8 @@
+{
+  "parent": "the_transcendeum:custom/crystal",
+  "textures": {
+    "all": "the_transcendeum:blocks/sullen_thorn",
+    "particle": "the_transcendeum:blocks/sullen_thorn",
+    "0": "the_transcendeum:blocks/sullen_thorn"
+  }
+}

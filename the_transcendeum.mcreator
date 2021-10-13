@@ -4518,6 +4518,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sweet_berry_jam"
+    },
+    {
+      "name": "SullenThorn",
+      "type": "block",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_thorn"
+    },
+    {
+      "name": "SullenThornEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullen_thorn_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4585,6 +4611,7 @@
       "item.the_transcendeum.kiarite_armor_chestplate": "Kiarite Chestplate",
       "biome.the_transcendeum.agarith": "Agarith",
       "item.the_transcendeum.enigma_glove": "Enigma Glove",
+      "block.the_transcendeum.sullen_thorn": "Sullen Thorn",
       "item.the_transcendeum.beetroot_jam": "Beetroot Jam",
       "block.the_transcendeum.mordhen_leaves": "Viridian Leaves",
       "block.the_transcendeum.dead_sullenbush": "Dead Sullenbush",
@@ -4596,7 +4623,7 @@
       "item.the_transcendeum.thelyarium_chestplate": "Thelyarium Chestplate",
       "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.efow_weed": "Efow Weed",
-      "block.the_transcendeum.sullenbush": "Wilting Sullenbush",
+      "block.the_transcendeum.sullenbush": "Sullenbush",
       "block.the_transcendeum.viridwood_door": "Viridwood Door",
       "block.the_transcendeum.saltrock": "Saltrock",
       "item.minecraft.tipped_arrow.effect.arcedeonian_brew": "Arcedeonian Arrow",
