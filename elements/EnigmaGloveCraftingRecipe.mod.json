@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:KefgaellHeart"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Items.LAVA_BUCKET"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnigmaGlove"
+    },
+    "name": "enigma_glove_crafting_recipe",
+    "namespace": "mod"
+  }
+}

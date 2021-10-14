@@ -29,7 +29,6 @@ import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -44,7 +43,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.BlockState;
 
 import java.util.Random;
-import java.util.EnumSet;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.item.EnigmaGlovePoweredItem;
@@ -79,7 +77,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 7, 1, 1));
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 25, 1, 1));
 	}
 
 	@Override
@@ -98,7 +96,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 15);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 40D);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -125,46 +123,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.goalSelector.addGoal(2, new Goal() {
-				{
-					this.setMutexFlags(EnumSet.of(Goal.Flag.MOVE));
-				}
-				public boolean shouldExecute() {
-					if (CustomEntity.this.getAttackTarget() != null && !CustomEntity.this.getMoveHelper().isUpdating()) {
-						return true;
-					} else {
-						return false;
-					}
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					return CustomEntity.this.getMoveHelper().isUpdating() && CustomEntity.this.getAttackTarget() != null
-							&& CustomEntity.this.getAttackTarget().isAlive();
-				}
-
-				@Override
-				public void startExecuting() {
-					LivingEntity livingentity = CustomEntity.this.getAttackTarget();
-					Vector3d vec3d = livingentity.getEyePosition(1);
-					CustomEntity.this.moveController.setMoveTo(vec3d.x, vec3d.y, vec3d.z, 4);
-				}
-
-				@Override
-				public void tick() {
-					LivingEntity livingentity = CustomEntity.this.getAttackTarget();
-					if (CustomEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
-						CustomEntity.this.attackEntityAsMob(livingentity);
-					} else {
-						double d0 = CustomEntity.this.getDistanceSq(livingentity);
-						if (d0 < 16) {
-							Vector3d vec3d = livingentity.getEyePosition(1);
-							CustomEntity.this.moveController.setMoveTo(vec3d.x, vec3d.y, vec3d.z, 4);
-						}
-					}
-				}
-			});
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 4, 20) {
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8, 20) {
 				@Override
 				protected Vector3d getPosition() {
 					Random random = CustomEntity.this.getRNG();
@@ -174,9 +133,9 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 					return new Vector3d(dir_x, dir_y, dir_z);
 				}
 			});
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 40, 10) {
 				@Override
 				public boolean shouldContinueExecuting() {
 					return this.shouldExecute();

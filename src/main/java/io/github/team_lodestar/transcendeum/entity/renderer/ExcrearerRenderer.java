@@ -61,6 +61,10 @@ public class ExcrearerRenderer {
 	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 	// Paste this class into your mod and generate all required imports
 	public static class Modelexcecrear extends EntityModel<Entity> {
+		private final ModelRenderer body;
+		private final ModelRenderer rotation;
+		private final ModelRenderer rotation_r1;
+		private final ModelRenderer rotation_r2;
 		private final ModelRenderer head;
 		private final ModelRenderer flower;
 		private final ModelRenderer head_r1;
@@ -79,10 +83,6 @@ public class ExcrearerRenderer {
 		private final ModelRenderer head_r14;
 		private final ModelRenderer head_r15;
 		private final ModelRenderer head_r16;
-		private final ModelRenderer body;
-		private final ModelRenderer rotation;
-		private final ModelRenderer rotation_r1;
-		private final ModelRenderer rotation_r2;
 		private final ModelRenderer backleg1;
 		private final ModelRenderer frontleg1;
 		private final ModelRenderer leg4_r1;
@@ -96,8 +96,26 @@ public class ExcrearerRenderer {
 		public Modelexcecrear() {
 			textureWidth = 256;
 			textureHeight = 256;
+			body = new ModelRenderer(this);
+			body.setRotationPoint(0.0F, 14.0F, 0.0F);
+			rotation = new ModelRenderer(this);
+			rotation.setRotationPoint(0.0F, -4.0F, 0.0F);
+			body.addChild(rotation);
+			setRotationAngle(rotation, 1.5708F, 0.0F, 0.0F);
+			rotation.setTextureOffset(46, 38).addBox(-8.5F, -9.0F, -4.5F, 17.0F, 17.0F, 24.0F, 0.0F, false);
+			rotation_r1 = new ModelRenderer(this);
+			rotation_r1.setRotationPoint(0.0F, 14.0F, 0.0F);
+			rotation.addChild(rotation_r1);
+			setRotationAngle(rotation_r1, 0.0F, 0.0F, -0.3927F);
+			rotation_r1.setTextureOffset(60, 79).addBox(-15.5F, -17.0F, -4.5F, 14.0F, 0.0F, 24.0F, 0.0F, true);
+			rotation_r2 = new ModelRenderer(this);
+			rotation_r2.setRotationPoint(0.0F, 14.0F, 0.0F);
+			rotation.addChild(rotation_r2);
+			setRotationAngle(rotation_r2, 0.0F, 0.0F, 0.3927F);
+			rotation_r2.setTextureOffset(60, 79).addBox(1.5F, -17.0F, -4.5F, 14.0F, 0.0F, 24.0F, 0.0F, false);
 			head = new ModelRenderer(this);
-			head.setRotationPoint(0.0F, -10.5F, -1.0F);
+			head.setRotationPoint(0.0F, -24.5F, -1.0F);
+			body.addChild(head);
 			head.setTextureOffset(0, 79).addBox(-10.5F, -9.0F, -10.0F, 21.0F, 10.0F, 21.0F, 0.0F, false);
 			flower = new ModelRenderer(this);
 			flower.setRotationPoint(0.0F, 22.0F, -16.0F);
@@ -182,23 +200,6 @@ public class ExcrearerRenderer {
 			flower.addChild(head_r16);
 			setRotationAngle(head_r16, -0.0873F, 0.0F, 0.0F);
 			head_r16.setTextureOffset(0, 0).addBox(-9.5F, -5.5F, -28.0F, 19.0F, 6.0F, 28.0F, 0.0F, false);
-			body = new ModelRenderer(this);
-			body.setRotationPoint(0.0F, 14.0F, 0.0F);
-			rotation = new ModelRenderer(this);
-			rotation.setRotationPoint(0.0F, -4.0F, 0.0F);
-			body.addChild(rotation);
-			setRotationAngle(rotation, 1.5708F, 0.0F, 0.0F);
-			rotation.setTextureOffset(46, 38).addBox(-8.5F, -9.0F, -4.5F, 17.0F, 17.0F, 24.0F, 0.0F, false);
-			rotation_r1 = new ModelRenderer(this);
-			rotation_r1.setRotationPoint(0.0F, 14.0F, 0.0F);
-			rotation.addChild(rotation_r1);
-			setRotationAngle(rotation_r1, 0.0F, 0.0F, -0.3927F);
-			rotation_r1.setTextureOffset(60, 79).addBox(-15.5F, -17.0F, -4.5F, 14.0F, 0.0F, 24.0F, 0.0F, true);
-			rotation_r2 = new ModelRenderer(this);
-			rotation_r2.setRotationPoint(0.0F, 14.0F, 0.0F);
-			rotation.addChild(rotation_r2);
-			setRotationAngle(rotation_r2, 0.0F, 0.0F, 0.3927F);
-			rotation_r2.setTextureOffset(60, 79).addBox(1.5F, -17.0F, -4.5F, 14.0F, 0.0F, 24.0F, 0.0F, false);
 			backleg1 = new ModelRenderer(this);
 			backleg1.setRotationPoint(-5.5F, 15.0F, 6.0F);
 			backleg1.setTextureOffset(75, 103).addBox(-7.0F, -2.0F, -4.0F, 10.0F, 11.0F, 9.0F, 0.0F, false);
@@ -246,7 +247,6 @@ public class ExcrearerRenderer {
 		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
-			head.render(matrixStack, buffer, packedLight, packedOverlay);
 			body.render(matrixStack, buffer, packedLight, packedOverlay);
 			backleg1.render(matrixStack, buffer, packedLight, packedOverlay);
 			frontleg1.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -264,8 +264,8 @@ public class ExcrearerRenderer {
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
 			this.frontleg1.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-			this.frontleg2.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-			this.backleg2.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+			this.frontleg2.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+			this.backleg2.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 			this.backleg1.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 		}
 	}
