@@ -4384,15 +4384,6 @@
       "path": "~/recipes"
     },
     {
-      "name": "AppleJam",
-      "type": "food",
-      "sortid": 359,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "apple_jam"
-    },
-    {
       "name": "AppleJamRecipe",
       "type": "recipe",
       "sortid": 360,
@@ -4401,15 +4392,6 @@
       "ids": {},
       "registry_name": "apple_jam_recipe",
       "path": "~/recipes"
-    },
-    {
-      "name": "SweetBerryJam",
-      "type": "food",
-      "sortid": 361,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sweet_berry_jam"
     },
     {
       "name": "SweetBerryJamRecipe",
@@ -4422,15 +4404,6 @@
       "path": "~/recipes"
     },
     {
-      "name": "BeetrootJam",
-      "type": "food",
-      "sortid": 363,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "beetroot_jam"
-    },
-    {
       "name": "BeetrootJamRecipe",
       "type": "recipe",
       "sortid": 364,
@@ -4439,15 +4412,6 @@
       "ids": {},
       "registry_name": "beetroot_jam_recipe",
       "path": "~/recipes"
-    },
-    {
-      "name": "ChorusJam",
-      "type": "food",
-      "sortid": 365,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chorus_jam"
     },
     {
       "name": "ChorusJamRecipe",
@@ -4513,7 +4477,6 @@
       "entity.the_transcendeum.arffel": "Arffel",
       "item.the_transcendeum.berthel_shard": "Berthel Shard",
       "block.the_transcendeum.viridwood_log": "Viridwood Log",
-      "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
       "block.the_transcendeum.cellcyte": "Cellcyte",
@@ -4525,7 +4488,6 @@
       "item.the_transcendeum.kiarite_armor_chestplate": "Kiarite Chestplate",
       "biome.the_transcendeum.agarith": "Agarith",
       "item.the_transcendeum.enigma_glove": "Enigma Glove",
-      "item.the_transcendeum.beetroot_jam": "Beetroot Jam",
       "block.the_transcendeum.mordhen_leaves": "Viridian Leaves",
       "block.the_transcendeum.dead_sullenbush": "Dead Sullenbush",
       "item.the_transcendeum.hyrumae_ghoul_spawn_egg": "Hyrumae Ghoul Spawn Egg",
@@ -4630,7 +4592,6 @@
       "entity.the_transcendeum.arcedeon": "Arcedeon",
       "item.the_transcendeum.kiarite_pickaxe": "Kiarite Pickaxe",
       "block.the_transcendeum.viralga_block": "Viralga",
-      "item.the_transcendeum.sweet_berry_jam": "Sweet Berry Jam",
       "item.the_transcendeum.large_virilily": "Large Virilily",
       "block.the_transcendeum.kelave_log": "Kelave Log",
       "item.the_transcendeum.kiarite_armor_boots": "Kiarite Boots",
@@ -4671,7 +4632,6 @@
       "block.the_transcendeum.mordhen_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.kelave_planks": "Kelave Planks",
       "item.the_transcendeum.kiarite_armor_helmet": "Kiarite Helmet",
-      "item.the_transcendeum.chorus_jam": "Chorus Jam",
       "item.the_transcendeum.viralga": "Viralga",
       "item.the_transcendeum.berthel_armor_boots": "Berthel Boots",
       "item.the_transcendeum.thelyarium_ingot": "Thelyarium Ingot",
