@@ -23,7 +23,7 @@ public class ThelyariumPickaxeItem extends TheTranscendeumModElements.ModElement
 	@ObjectHolder("the_transcendeum:thelyarium_pickaxe")
 	public static final Item block = null;
 	public ThelyariumPickaxeItem(TheTranscendeumModElements instance) {
-		super(instance, 254);
+		super(instance, 132);
 	}
 
 	@Override

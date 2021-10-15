@@ -32,7 +32,7 @@ public class SullcactusBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullcactus")
 	public static final Block block = null;
 	public SullcactusBlock(TheTranscendeumModElements instance) {
-		super(instance, 20);
+		super(instance, 22);
 	}
 
 	@Override

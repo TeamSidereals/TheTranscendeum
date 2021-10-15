@@ -17,7 +17,7 @@ public class IndigoFruitedPieItem extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:indigo_fruited_pie")
 	public static final Item block = null;
 	public IndigoFruitedPieItem(TheTranscendeumModElements instance) {
-		super(instance, 357);
+		super(instance, 10);
 	}
 
 	@Override

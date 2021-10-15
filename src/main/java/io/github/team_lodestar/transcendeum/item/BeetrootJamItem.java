@@ -21,7 +21,7 @@ public class BeetrootJamItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:beetroot_jam")
 	public static final Item block = null;
 	public BeetrootJamItem(TheTranscendeumModElements instance) {
-		super(instance, 363);
+		super(instance, 13);
 	}
 
 	@Override

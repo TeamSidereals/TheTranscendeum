@@ -39,7 +39,7 @@ public class SomberstonewallBlock extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:somberstone_wall")
 	public static final Block block = null;
 	public SomberstonewallBlock(TheTranscendeumModElements instance) {
-		super(instance, 12);
+		super(instance, 18);
 	}
 
 	@Override

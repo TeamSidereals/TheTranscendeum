@@ -21,6 +21,7 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -52,7 +53,7 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(1.2f, 2.7f)).build("excrearer").setRegistryName("excrearer");
 	public ExcrearerEntity(TheTranscendeumModElements instance) {
-		super(instance, 354);
+		super(instance, 123);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ExcrearerRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -119,7 +120,7 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ArcedeonEntity.CustomEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 		}
 
 		@Override

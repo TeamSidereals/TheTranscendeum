@@ -23,7 +23,7 @@ public class ThelyariumAxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:thelyarium_axe")
 	public static final Item block = null;
 	public ThelyariumAxeItem(TheTranscendeumModElements instance) {
-		super(instance, 256);
+		super(instance, 131);
 	}
 
 	@Override

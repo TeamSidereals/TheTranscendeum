@@ -8,7 +8,7 @@
     "name": "Kiarite Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:TranscendeumGear"
     },
     "toolType": "Hoe",
     "harvestLevel": 3,

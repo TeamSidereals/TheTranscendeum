@@ -21,7 +21,7 @@ public class SweetBerryJamItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sweet_berry_jam")
 	public static final Item block = null;
 	public SweetBerryJamItem(TheTranscendeumModElements instance) {
-		super(instance, 361);
+		super(instance, 12);
 	}
 
 	@Override

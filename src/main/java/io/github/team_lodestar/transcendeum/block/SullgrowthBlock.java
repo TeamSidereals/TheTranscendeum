@@ -66,7 +66,7 @@ public class SullgrowthBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullgrowth")
 	public static final Block block = null;
 	public SullgrowthBlock(TheTranscendeumModElements instance) {
-		super(instance, 353);
+		super(instance, 113);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

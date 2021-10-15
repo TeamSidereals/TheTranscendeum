@@ -31,7 +31,7 @@ public class StariamLogBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_log")
 	public static final Block block = null;
 	public StariamLogBlock(TheTranscendeumModElements instance) {
-		super(instance, 21);
+		super(instance, 23);
 	}
 
 	@Override

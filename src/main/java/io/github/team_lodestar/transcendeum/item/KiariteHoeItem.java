@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
@@ -16,6 +15,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 import io.github.team_lodestar.transcendeum.procedures.KiariteToolLivingEntityIsHitWithToolProcedure;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -23,7 +23,7 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_hoe")
 	public static final Item block = null;
 	public KiariteHoeItem(TheTranscendeumModElements instance) {
-		super(instance, 275);
+		super(instance, 140);
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(KiariteIngotItem.block));
 			}
-		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS).isImmuneToFire()) {
+		}, 0, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);

@@ -36,7 +36,7 @@ public class ThelyariumArmorItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:thelyarium_boots")
 	public static final Item boots = null;
 	public ThelyariumArmorItem(TheTranscendeumModElements instance) {
-		super(instance, 344);
+		super(instance, 135);
 	}
 
 	@Override

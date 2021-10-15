@@ -25,7 +25,7 @@ public class PolishedMorositePressurePlateBlock extends TheTranscendeumModElemen
 	@ObjectHolder("the_transcendeum:polished_morosite_pressure_plate")
 	public static final Block block = null;
 	public PolishedMorositePressurePlateBlock(TheTranscendeumModElements instance) {
-		super(instance, 176);
+		super(instance, 85);
 	}
 
 	@Override

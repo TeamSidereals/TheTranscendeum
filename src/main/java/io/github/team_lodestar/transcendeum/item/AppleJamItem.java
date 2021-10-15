@@ -21,7 +21,7 @@ public class AppleJamItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:apple_jam")
 	public static final Item block = null;
 	public AppleJamItem(TheTranscendeumModElements instance) {
-		super(instance, 359);
+		super(instance, 11);
 	}
 
 	@Override

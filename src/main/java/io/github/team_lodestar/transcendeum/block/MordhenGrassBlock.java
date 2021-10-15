@@ -62,7 +62,7 @@ public class MordhenGrassBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridian_grass")
 	public static final Block block = null;
 	public MordhenGrassBlock(TheTranscendeumModElements instance) {
-		super(instance, 53);
+		super(instance, 39);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

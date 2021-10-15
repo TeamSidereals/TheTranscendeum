@@ -21,7 +21,7 @@ public class ChorusJamItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:chorus_jam")
 	public static final Item block = null;
 	public ChorusJamItem(TheTranscendeumModElements instance) {
-		super(instance, 365);
+		super(instance, 14);
 	}
 
 	@Override

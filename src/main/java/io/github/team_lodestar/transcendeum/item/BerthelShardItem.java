@@ -16,7 +16,7 @@ public class BerthelShardItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_shard")
 	public static final Item block = null;
 	public BerthelShardItem(TheTranscendeumModElements instance) {
-		super(instance, 144);
+		super(instance, 2);
 	}
 
 	@Override

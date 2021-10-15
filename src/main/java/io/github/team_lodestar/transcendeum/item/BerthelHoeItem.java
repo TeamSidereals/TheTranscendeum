@@ -23,7 +23,7 @@ public class BerthelHoeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_hoe")
 	public static final Item block = null;
 	public BerthelHoeItem(TheTranscendeumModElements instance) {
-		super(instance, 150);
+		super(instance, 128);
 	}
 
 	@Override
