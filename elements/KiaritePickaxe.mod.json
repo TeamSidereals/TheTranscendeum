@@ -8,8 +8,7 @@
     "name": "Kiarite Pickaxe",
     "specialInfo": [
       "§8A tool empowered by the ancient dragons.",
-      "§6Knocks up and deals extra 2 damage to the target",
-      "only if the target is a mob of the Transcendeum dimension."
+      "§6Knocks up and deals extra 2 damage to the target, only if the target is a mob of the Transcendeum dimension."
     ],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumGear"

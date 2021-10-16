@@ -61,8 +61,8 @@ public class KiariteShovelItem extends TheTranscendeumModElements.ModElement {
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent("\u00A78A tool empowered by the ancient dragons."));
-				list.add(new StringTextComponent("\u00A76Knocks up and deals extra 2 damage to the target"));
-				list.add(new StringTextComponent("only if the target is a mob of the Transcendeum dimension."));
+				list.add(new StringTextComponent(
+						"\u00A76Knocks up and deals extra 2 damage to the target, only if the target is a mob of the Transcendeum dimension."));
 			}
 
 			@Override
