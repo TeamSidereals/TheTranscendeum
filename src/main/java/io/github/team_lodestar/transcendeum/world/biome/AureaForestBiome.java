@@ -30,6 +30,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.BlockState;
 
 import java.util.Set;
@@ -37,6 +38,14 @@ import java.util.Random;
 import java.util.List;
 
 import io.github.team_lodestar.transcendeum.particle.TwilighterisParticle;
+import io.github.team_lodestar.transcendeum.entity.PuffelEntity;
+import io.github.team_lodestar.transcendeum.entity.PiscesEntity;
+import io.github.team_lodestar.transcendeum.entity.LethreumEntity;
+import io.github.team_lodestar.transcendeum.entity.KefgaellEntity;
+import io.github.team_lodestar.transcendeum.entity.HyrumaeGhoulEntity;
+import io.github.team_lodestar.transcendeum.entity.ExcrearerEntity;
+import io.github.team_lodestar.transcendeum.entity.ArffelEntity;
+import io.github.team_lodestar.transcendeum.entity.ArcedeonEntity;
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.IaprieGrassBlockBlock;
 import io.github.team_lodestar.transcendeum.block.ChrysaliumVineBottomBlock;
@@ -62,6 +71,14 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
+				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(ArcedeonEntity.entity, 20, 1, 2));
+				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ArffelEntity.entity, 175, 4, 6));
+				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(PuffelEntity.entity, 175, 4, 6));
+				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ExcrearerEntity.entity, 100, 2, 3));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(HyrumaeGhoulEntity.entity, 940, 1, 2));
+				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(KefgaellEntity.entity, 50, 1, 1));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(LethreumEntity.entity, 60, 1, 1));
+				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(PiscesEntity.entity, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST).depth(-0.16f).scale(0.03f)
 						.temperature(1f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();

@@ -12,7 +12,10 @@ import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.entity.EntityClassification;
 
+import io.github.team_lodestar.transcendeum.entity.PiscesEntity;
+import io.github.team_lodestar.transcendeum.entity.ArcedeonEntity;
 import io.github.team_lodestar.transcendeum.block.SomberstoneBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
@@ -33,6 +36,8 @@ public class TranscendentOceanBiome extends TheTranscendeumModElements.ModElemen
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SomberstoneBlock.block.getDefaultState(),
 								SomberstoneBlock.block.getDefaultState(), SomberstoneBlock.block.getDefaultState())));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
+				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(ArcedeonEntity.entity, 45, 1, 5));
+				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(PiscesEntity.entity, 75, 3, 7));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.OCEAN).depth(-1.5f).scale(0.1f)
 						.temperature(0.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
