@@ -75,9 +75,9 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ArffelEntity.entity, 175, 4, 6));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(PuffelEntity.entity, 175, 4, 6));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ExcrearerEntity.entity, 100, 2, 3));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(HyrumaeGhoulEntity.entity, 940, 1, 2));
+				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(HyrumaeGhoulEntity.entity, 940, 1, 2));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(KefgaellEntity.entity, 50, 1, 1));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(LethreumEntity.entity, 60, 1, 1));
+				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(LethreumEntity.entity, 60, 1, 1));
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(PiscesEntity.entity, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST).depth(-0.16f).scale(0.03f)
 						.temperature(1f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
