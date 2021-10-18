@@ -32,7 +32,7 @@ public class ExcerockTilesBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:excerock_tiles")
 	public static final Block block = null;
 	public ExcerockTilesBlock(TheTranscendeumModElements instance) {
-		super(instance, 61);
+		super(instance, 90);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 	}

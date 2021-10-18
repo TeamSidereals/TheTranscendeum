@@ -27,7 +27,7 @@ public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_axe")
 	public static final Item block = null;
 	public KiariteAxeItem(TheTranscendeumModElements instance) {
-		super(instance, 137);
+		super(instance, 272);
 	}
 
 	@Override

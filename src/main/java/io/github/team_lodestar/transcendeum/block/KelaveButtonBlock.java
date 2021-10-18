@@ -27,7 +27,7 @@ public class KelaveButtonBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_button")
 	public static final Block block = null;
 	public KelaveButtonBlock(TheTranscendeumModElements instance) {
-		super(instance, 57);
+		super(instance, 77);
 	}
 
 	@Override

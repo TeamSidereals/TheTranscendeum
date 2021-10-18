@@ -17,7 +17,7 @@ public class IndigoBerriesItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:indigo_berries")
 	public static final Item block = null;
 	public IndigoBerriesItem(TheTranscendeumModElements instance) {
-		super(instance, 6);
+		super(instance, 320);
 	}
 
 	@Override

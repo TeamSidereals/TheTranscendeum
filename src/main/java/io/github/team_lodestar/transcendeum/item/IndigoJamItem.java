@@ -21,7 +21,7 @@ public class IndigoJamItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:indigo_jam")
 	public static final Item block = null;
 	public IndigoJamItem(TheTranscendeumModElements instance) {
-		super(instance, 9);
+		super(instance, 355);
 	}
 
 	@Override

@@ -38,7 +38,7 @@ public class BerthelCrystalBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_crystal")
 	public static final Block block = null;
 	public BerthelCrystalBlock(TheTranscendeumModElements instance) {
-		super(instance, 66);
+		super(instance, 137);
 	}
 
 	@Override

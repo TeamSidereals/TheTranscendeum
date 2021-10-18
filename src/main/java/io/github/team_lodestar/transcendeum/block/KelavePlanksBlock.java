@@ -26,7 +26,7 @@ public class KelavePlanksBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_planks")
 	public static final Block block = null;
 	public KelavePlanksBlock(TheTranscendeumModElements instance) {
-		super(instance, 51);
+		super(instance, 70);
 	}
 
 	@Override

@@ -45,7 +45,7 @@ public class ViridianMossBlockBlock extends TheTranscendeumModElements.ModElemen
 	@ObjectHolder("the_transcendeum:viridian_moss_block")
 	public static final Block block = null;
 	public ViridianMossBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 100);
+		super(instance, 250);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

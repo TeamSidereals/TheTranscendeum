@@ -31,7 +31,7 @@ public class KelaveLogBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_log")
 	public static final Block block = null;
 	public KelaveLogBlock(TheTranscendeumModElements instance) {
-		super(instance, 50);
+		super(instance, 69);
 	}
 
 	@Override

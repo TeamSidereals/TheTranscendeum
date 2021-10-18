@@ -3,11 +3,11 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "flowered_grass",
+    "texture": "flowered_virid",
     "textureBottom": "",
     "customModelName": "Cross model",
-    "itemTexture": "flowered_flowered_grass",
-    "particleTexture": "flowered_flowered_grass",
+    "itemTexture": "flowered_virid_grass",
+    "particleTexture": "flowered_virid",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
@@ -37,7 +37,7 @@
     },
     "hardness": 0.0,
     "resistance": 0.0,
-    "luminance": 0,
+    "luminance": 7,
     "unbreakable": false,
     "isCustomSoundType": false,
     "soundOnStep": {

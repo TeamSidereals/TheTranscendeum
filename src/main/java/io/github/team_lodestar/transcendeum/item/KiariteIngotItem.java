@@ -16,7 +16,7 @@ public class KiariteIngotItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_ingot")
 	public static final Item block = null;
 	public KiariteIngotItem(TheTranscendeumModElements instance) {
-		super(instance, 4);
+		super(instance, 270);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public class CoriumVirililyItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:corium_virilily")
 	public static final Item block = null;
 	public CoriumVirililyItem(TheTranscendeumModElements instance) {
-		super(instance, 64);
+		super(instance, 131);
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class PolishedSulkstoneStairsBlock extends TheTranscendeumModElements.Mod
 	@ObjectHolder("the_transcendeum:polished_sulkstone_stairs")
 	public static final Block block = null;
 	public PolishedSulkstoneStairsBlock(TheTranscendeumModElements instance) {
-		super(instance, 75);
+		super(instance, 165);
 	}
 
 	@Override

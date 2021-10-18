@@ -59,7 +59,7 @@ public class AzuraMushroomBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:azura_mushroom")
 	public static final Block block = null;
 	public AzuraMushroomBlock(TheTranscendeumModElements instance) {
-		super(instance, 110);
+		super(instance, 332);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

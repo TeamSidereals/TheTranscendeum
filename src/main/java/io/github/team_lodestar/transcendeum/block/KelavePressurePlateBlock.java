@@ -27,7 +27,7 @@ public class KelavePressurePlateBlock extends TheTranscendeumModElements.ModElem
 	@ObjectHolder("the_transcendeum:kelave_pressure_plate")
 	public static final Block block = null;
 	public KelavePressurePlateBlock(TheTranscendeumModElements instance) {
-		super(instance, 56);
+		super(instance, 76);
 	}
 
 	@Override

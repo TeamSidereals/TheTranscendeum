@@ -51,7 +51,7 @@ public class EfowWeedBubblyBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:efow_weed_bubbly")
 	public static final Block block = null;
 	public EfowWeedBubblyBlock(TheTranscendeumModElements instance) {
-		super(instance, 107);
+		super(instance, 314);
 	}
 
 	@Override

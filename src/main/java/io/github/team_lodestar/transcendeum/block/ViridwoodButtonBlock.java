@@ -27,7 +27,7 @@ public class ViridwoodButtonBlock extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:viridwood_button")
 	public static final Block block = null;
 	public ViridwoodButtonBlock(TheTranscendeumModElements instance) {
-		super(instance, 95);
+		super(instance, 233);
 	}
 
 	@Override

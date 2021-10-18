@@ -26,7 +26,7 @@ public class SaltrockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:saltrock")
 	public static final Block block = null;
 	public SaltrockBlock(TheTranscendeumModElements instance) {
-		super(instance, 41);
+		super(instance, 58);
 	}
 
 	@Override

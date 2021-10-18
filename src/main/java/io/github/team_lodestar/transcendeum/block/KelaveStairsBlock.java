@@ -27,7 +27,7 @@ public class KelaveStairsBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_stairs")
 	public static final Block block = null;
 	public KelaveStairsBlock(TheTranscendeumModElements instance) {
-		super(instance, 53);
+		super(instance, 73);
 	}
 
 	@Override

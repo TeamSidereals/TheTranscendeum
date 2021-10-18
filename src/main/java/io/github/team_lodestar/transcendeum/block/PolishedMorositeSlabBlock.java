@@ -28,7 +28,7 @@ public class PolishedMorositeSlabBlock extends TheTranscendeumModElements.ModEle
 	@ObjectHolder("the_transcendeum:polished_morosite_slab")
 	public static final Block block = null;
 	public PolishedMorositeSlabBlock(TheTranscendeumModElements instance) {
-		super(instance, 84);
+		super(instance, 175);
 	}
 
 	@Override

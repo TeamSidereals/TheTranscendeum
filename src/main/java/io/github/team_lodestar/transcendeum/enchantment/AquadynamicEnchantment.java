@@ -16,7 +16,7 @@ public class AquadynamicEnchantment extends TheTranscendeumModElements.ModElemen
 	@ObjectHolder("the_transcendeum:aquadynamic")
 	public static final Enchantment enchantment = null;
 	public AquadynamicEnchantment(TheTranscendeumModElements instance) {
-		super(instance, 250);
+		super(instance, 196);
 	}
 
 	@Override

@@ -59,7 +59,7 @@ public class ArgoanyBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:argoany")
 	public static final Block block = null;
 	public ArgoanyBlock(TheTranscendeumModElements instance) {
-		super(instance, 47);
+		super(instance, 66);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

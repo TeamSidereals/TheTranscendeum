@@ -31,7 +31,7 @@ public class KelaveWoodBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_wood")
 	public static final Block block = null;
 	public KelaveWoodBlock(TheTranscendeumModElements instance) {
-		super(instance, 49);
+		super(instance, 68);
 	}
 
 	@Override

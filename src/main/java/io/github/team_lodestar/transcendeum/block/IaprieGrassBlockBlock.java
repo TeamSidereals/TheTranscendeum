@@ -25,7 +25,7 @@ public class IaprieGrassBlockBlock extends TheTranscendeumModElements.ModElement
 	@ObjectHolder("the_transcendeum:iaprie_grass_block")
 	public static final Block block = null;
 	public IaprieGrassBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 42);
+		super(instance, 61);
 	}
 
 	@Override
