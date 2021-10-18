@@ -115,6 +115,15 @@
         "maxGroup": 4,
         "weight": 1,
         "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySpider"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 10,
+        "spawnType": "monster"
       }
     ]
   }
