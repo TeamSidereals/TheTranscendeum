@@ -13,7 +13,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class TranscendeumMobsItemGroup extends TheTranscendeumModElements.ModElement {
 	public TranscendeumMobsItemGroup(TheTranscendeumModElements instance) {
-		super(instance, 8);
+		super(instance, 147);
 	}
 
 	@Override

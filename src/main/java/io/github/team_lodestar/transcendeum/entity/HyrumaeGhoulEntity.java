@@ -7,18 +7,14 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
+import net.minecraft.world.IServerWorld;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.DataParameter;
@@ -39,15 +35,21 @@ import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.BreakDoorGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
+import javax.annotation.Nullable;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.procedures.HyrumaeGhoulVariantProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.HyrumaeGhoulRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -58,10 +60,9 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 2f))
 					.build("hyrumae_ghoul").setRegistryName("hyrumae_ghoul");
 	public HyrumaeGhoulEntity(TheTranscendeumModElements instance) {
-		super(instance, 177);
+		super(instance, 118);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new HyrumaeGhoulRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -71,22 +72,8 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 				.setRegistryName("hyrumae_ghoul_spawn_egg"));
 	}
 
-	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		boolean biomeCriteria = false;
-		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
-			biomeCriteria = true;
-		if (!biomeCriteria)
-			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 30, 2, 4));
-	}
-
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.NO_RESTRICTIONS,
-				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canSpawnOn);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -96,7 +83,7 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 28);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 5);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 7);
-			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 12);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 24);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -126,20 +113,13 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new SwimGoal(this));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 			this.goalSelector.addGoal(7, new BreakDoorGoal(this, e -> true));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEAD;
-		}
-
-		public boolean attackEntityAsMob(Entity entityIn) {
-			if (this.rand.nextInt(5) == 0) {
-				((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 60, (int) 1, (false), (true)));
-			}
-			return super.attackEntityAsMob(entityIn);
 		}
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -189,6 +169,22 @@ public class HyrumaeGhoulEntity extends TheTranscendeumModElements.ModElement {
 		public void readAdditional(CompoundNBT compound) {
 			super.readAdditional(compound);
 			this.setVariant(compound.getInt("Variant"));
+		}
+
+		@Override
+		public ILivingEntityData onInitialSpawn(IServerWorld world, DifficultyInstance difficulty, SpawnReason reason,
+				@Nullable ILivingEntityData livingdata, @Nullable CompoundNBT tag) {
+			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				HyrumaeGhoulVariantProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

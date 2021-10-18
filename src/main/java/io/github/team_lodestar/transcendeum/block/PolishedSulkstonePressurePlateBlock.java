@@ -25,7 +25,7 @@ public class PolishedSulkstonePressurePlateBlock extends TheTranscendeumModEleme
 	@ObjectHolder("the_transcendeum:polished_sulkstone_pressure_plate")
 	public static final Block block = null;
 	public PolishedSulkstonePressurePlateBlock(TheTranscendeumModElements instance) {
-		super(instance, 167);
+		super(instance, 77);
 	}
 
 	@Override

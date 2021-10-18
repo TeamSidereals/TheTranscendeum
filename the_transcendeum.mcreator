@@ -4002,6 +4002,16 @@
       "path": "~/Structures/others/InstantPortal"
     },
     {
+      "name": "Kelavehut",
+      "type": "structure",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelavehut",
+      "path": "~/Structures/Constructed"
+    },
+    {
       "name": "ChrysaliumVineNeighbourBlockChanges",
       "type": "procedure",
       "sortid": 325,
@@ -4422,15 +4432,6 @@
       "path": "~/loot tables/mobs"
     },
     {
-      "name": "ChorusJam",
-      "type": "food",
-      "sortid": 365,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chorus_jam"
-    },
-    {
       "name": "PlainKelaveTree2",
       "type": "structure",
       "sortid": 368,
@@ -4459,24 +4460,6 @@
       "ids": {},
       "registry_name": "plain_kelave_tree_3",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "BeetrootJam",
-      "type": "food",
-      "sortid": 363,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "beetroot_jam"
-    },
-    {
-      "name": "AppleJam",
-      "type": "food",
-      "sortid": 359,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "apple_jam"
     },
     {
       "name": "KefgaellHeart",
@@ -4517,15 +4500,6 @@
       "path": "~/recipes"
     },
     {
-      "name": "SweetBerryJam",
-      "type": "food",
-      "sortid": 361,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sweet_berry_jam"
-    },
-    {
       "name": "SullenThorn",
       "type": "block",
       "sortid": 370,
@@ -4552,16 +4526,6 @@
       }
     },
     {
-      "name": "NaturalSullcactus",
-      "type": "structure",
-      "sortid": 371,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "natural_sullcactus",
-      "path": "~/Structures/Natural"
-    },
-    {
       "name": "KelaveHut",
       "type": "structure",
       "sortid": 373,
@@ -4570,6 +4534,26 @@
       "ids": {},
       "registry_name": "kelave_hut",
       "path": "~/Structures/Constructed"
+    },
+    {
+      "name": "DeadSullenbushDrops",
+      "type": "loottable",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dead_sullenbush_drops",
+      "path": "~/loot tables/blocks"
+    },
+    {
+      "name": "NaturalSullcactus",
+      "type": "structure",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "natural_sullcactus",
+      "path": "~/Structures/Natural"
     },
     {
       "name": "SullenbushDrops",
@@ -4592,14 +4576,49 @@
       "path": "~/loot tables/blocks"
     },
     {
-      "name": "DeadSullenbushDrops",
-      "type": "loottable",
-      "sortid": 376,
+      "name": "PyrrhicBush",
+      "type": "plant",
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dead_sullenbush_drops",
-      "path": "~/loot tables/blocks"
+      "registry_name": "pyrrhic_bush",
+      "path": "~/Plants/Dead"
+    },
+    {
+      "name": "DragonarShield",
+      "type": "item",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dragonar_shield",
+      "path": "~/gear sets/shields"
+    },
+    {
+      "name": "DragonarShieldOnAttackBlocked",
+      "type": "procedure",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragonar_shield_on_attack_blocked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4981,6 +5000,10 @@
           },
           {
             "name": "other weapons",
+            "children": []
+          },
+          {
+            "name": "shields",
             "children": []
           }
         ]

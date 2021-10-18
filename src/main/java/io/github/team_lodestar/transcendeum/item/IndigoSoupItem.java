@@ -21,7 +21,7 @@ public class IndigoSoupItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:indigo_soup")
 	public static final Item block = null;
 	public IndigoSoupItem(TheTranscendeumModElements instance) {
-		super(instance, 321);
+		super(instance, 7);
 	}
 
 	@Override

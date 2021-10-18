@@ -45,7 +45,7 @@ public class ViridianMossBlockBlock extends TheTranscendeumModElements.ModElemen
 	@ObjectHolder("the_transcendeum:viridian_moss_block")
 	public static final Block block = null;
 	public ViridianMossBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 250);
+		super(instance, 100);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -58,14 +58,19 @@ public class ViridianMossBlockBlock extends TheTranscendeumModElements.ModElemen
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 3)
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0)
 					.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true));
 			setRegistryName("viridian_moss_block");
 		}
 
 		@Override
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+			return true;
+		}
+
+		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+			return 0;
 		}
 
 		@Override

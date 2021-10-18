@@ -42,7 +42,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class CalidWoodlandsBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public CalidWoodlandsBiome(TheTranscendeumModElements instance) {
-		super(instance, 94);
+		super(instance, 211);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

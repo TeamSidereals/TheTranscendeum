@@ -6,6 +6,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
@@ -15,9 +18,12 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.model.BipedModel;
+
+import java.util.List;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -36,7 +42,7 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_armor_boots")
 	public static final Item boots = null;
 	public KiariteArmorItem(TheTranscendeumModElements instance) {
-		super(instance, 334);
+		super(instance, 141);
 	}
 
 	@Override
@@ -97,6 +103,14 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			}
 
 			@Override
+			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+				super.addInformation(itemstack, world, list, flag);
+				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent(
+						"\u00A76Adds a 5% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
+			}
+
+			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "the_transcendeum:textures/models/armor/kiarite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
@@ -114,6 +128,14 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 				armorModel.isSitting = defaultModel.isSitting;
 				armorModel.isChild = living.isChild();
 				return armorModel;
+			}
+
+			@Override
+			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+				super.addInformation(itemstack, world, list, flag);
+				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent(
+						"\u00A76Adds a 9% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
 			}
 
 			@Override
@@ -136,6 +158,14 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			}
 
 			@Override
+			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+				super.addInformation(itemstack, world, list, flag);
+				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent(
+						"\u00A76Adds a 6% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
+			}
+
+			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "the_transcendeum:textures/models/armor/kiarite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
@@ -152,6 +182,14 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 				armorModel.isSitting = defaultModel.isSitting;
 				armorModel.isChild = living.isChild();
 				return armorModel;
+			}
+
+			@Override
+			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+				super.addInformation(itemstack, world, list, flag);
+				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent(
+						"\u00A76Adds a 5% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
 			}
 
 			@Override

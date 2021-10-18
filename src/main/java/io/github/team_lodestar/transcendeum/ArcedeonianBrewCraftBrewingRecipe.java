@@ -15,7 +15,7 @@ import io.github.team_lodestar.transcendeum.block.EfowWeedBubblyBlock;
 @TheTranscendeumModElements.ModElement.Tag
 public class ArcedeonianBrewCraftBrewingRecipe extends TheTranscendeumModElements.ModElement {
 	public ArcedeonianBrewCraftBrewingRecipe(TheTranscendeumModElements instance) {
-		super(instance, 195);
+		super(instance, 249);
 	}
 
 	@Override
