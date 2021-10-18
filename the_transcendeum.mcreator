@@ -4526,6 +4526,16 @@
       }
     },
     {
+      "name": "ViridTree2",
+      "type": "structure",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virid_tree_2",
+      "path": "~/Structures/Natural"
+    },
+    {
       "name": "ViridTree1",
       "type": "structure",
       "sortid": 371,
@@ -4536,14 +4546,74 @@
       "path": "~/Structures/Natural"
     },
     {
-      "name": "ViridTree2",
+      "name": "KelaveHut",
       "type": "structure",
-      "sortid": 372,
+      "sortid": 373,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "virid_tree_2",
+      "registry_name": "kelave_hut",
+      "path": "~/Structures/Constructed"
+    },
+    {
+      "name": "DeadSullenbushDrops",
+      "type": "loottable",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dead_sullenbush_drops",
+      "path": "~/loot tables/blocks"
+    },
+    {
+      "name": "PyrrhicBush",
+      "type": "plant",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pyrrhic_bush",
+      "path": "~/Plants/Dead"
+    },
+    {
+      "name": "DragonarShield",
+      "type": "item",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dragonar_shield",
+      "path": "~/gear sets/shields"
+    },
+    {
+      "name": "NaturalSullcactus",
+      "type": "structure",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "natural_sullcactus",
       "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenbushDrops",
+      "type": "loottable",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullenbush_drops",
+      "path": "~/loot tables/blocks"
+    },
+    {
+      "name": "SullgrowthDrops",
+      "type": "loottable",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullgrowth_drops",
+      "path": "~/loot tables/blocks"
     }
   ],
   "variable_elements": [
@@ -4596,8 +4666,8 @@
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
       "item.the_transcendeum.thelyarium_leggings": "Thelyarium Leggings",
-      "item.the_transcendeum.berthel_shard": "Berthel Shard",
       "entity.the_transcendeum.arffel": "Arffel",
+      "item.the_transcendeum.berthel_shard": "Berthel Shard",
       "block.the_transcendeum.viridwood_log": "Viridwood Log",
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
@@ -4621,6 +4691,7 @@
       "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "item.the_transcendeum.cadillacium_sword": "Cadillacium Sword",
       "item.the_transcendeum.thelyarium_chestplate": "Thelyarium Chestplate",
+      "block.the_transcendeum.pyrrhic_bush": "Pyrrhic Bush",
       "block.the_transcendeum.sullcactus": "Sullcactus",
       "block.the_transcendeum.efow_weed": "Efow Weed",
       "block.the_transcendeum.sullenbush": "Wilting Sullenbush",
@@ -4658,11 +4729,11 @@
       "item.the_transcendeum.corium_virilily": "Corium Virilily",
       "item.minecraft.lingering_potion.effect.arcedeonian_brew": "Lingering Arcedeonian Brew",
       "item.the_transcendeum.cursedbaseballbat": "Cursed Baseball Bat",
-      "block.the_transcendeum.sulkstone": "Sulkstone",
       "block.the_transcendeum.acrium_flower": "Acrium Flower",
+      "block.the_transcendeum.sulkstone": "Sulkstone",
       "block.the_transcendeum.somberstone_slab": "Somberstone Slab",
-      "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
       "block.the_transcendeum.polished_morosite_stairs": "Polished Morosite Stairs",
+      "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.virilily": "Virilily",
       "key.the_transcendeum.arcedeon_up": "Arcedeon Ascend",
       "entity.the_transcendeum.lethreum": "Lethreum",
@@ -4925,6 +4996,10 @@
           },
           {
             "name": "other weapons",
+            "children": []
+          },
+          {
+            "name": "shields",
             "children": []
           }
         ]

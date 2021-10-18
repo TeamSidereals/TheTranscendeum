@@ -27,7 +27,7 @@ public class StariamFenceGateBlock extends TheTranscendeumModElements.ModElement
 	@ObjectHolder("the_transcendeum:stariam_fence_gate")
 	public static final Block block = null;
 	public StariamFenceGateBlock(TheTranscendeumModElements instance) {
-		super(instance, 27);
+		super(instance, 29);
 	}
 
 	@Override

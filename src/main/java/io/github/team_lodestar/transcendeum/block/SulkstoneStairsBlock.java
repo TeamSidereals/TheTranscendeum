@@ -27,7 +27,7 @@ public class SulkstoneStairsBlock extends TheTranscendeumModElements.ModElement 
 	@ObjectHolder("the_transcendeum:sulkstone_stairs")
 	public static final Block block = null;
 	public SulkstoneStairsBlock(TheTranscendeumModElements instance) {
-		super(instance, 162);
+		super(instance, 72);
 	}
 
 	@Override

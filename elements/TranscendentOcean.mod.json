@@ -89,6 +89,25 @@
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
     "defaultFeatures": [],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Arcedeon"
+        },
+        "minGroup": 1,
+        "maxGroup": 5,
+        "weight": 45,
+        "spawnType": "waterCreature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Pisces"
+        },
+        "minGroup": 3,
+        "maxGroup": 7,
+        "weight": 75,
+        "spawnType": "waterCreature"
+      }
+    ]
   }
 }

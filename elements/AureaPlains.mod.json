@@ -101,6 +101,79 @@
     "defaultFeatures": [
       "Caves"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Arcedeon"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 20,
+        "spawnType": "waterCreature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Arffel"
+        },
+        "minGroup": 4,
+        "maxGroup": 6,
+        "weight": 175,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Puffel"
+        },
+        "minGroup": 4,
+        "maxGroup": 6,
+        "weight": 175,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Excrearer"
+        },
+        "minGroup": 2,
+        "maxGroup": 3,
+        "weight": 75,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:HyrumaeGhoul"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 940,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Kefgaell"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 50,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Lethreum"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 60,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Pisces"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "waterCreature"
+      }
+    ]
   }
 }

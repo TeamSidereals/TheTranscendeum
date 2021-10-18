@@ -4,18 +4,22 @@ package io.github.team_lodestar.transcendeum.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.client.util.ITooltipFlag;
 
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 import io.github.team_lodestar.transcendeum.procedures.KiariteToolLivingEntityIsHitWithToolProcedure;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -23,7 +27,7 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_hoe")
 	public static final Item block = null;
 	public KiariteHoeItem(TheTranscendeumModElements instance) {
-		super(instance, 275);
+		super(instance, 140);
 	}
 
 	@Override
@@ -52,7 +56,15 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(KiariteIngotItem.block));
 			}
-		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS).isImmuneToFire()) {
+		}, 0, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
+			@Override
+			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+				super.addInformation(itemstack, world, list, flag);
+				list.add(new StringTextComponent("\u00A78A tool empowered by the ancient dragons."));
+				list.add(new StringTextComponent(
+						"\u00A76Knocks up and deals extra 2 damage to the target, only if the target is a mob of the Transcendeum dimension."));
+			}
+
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
@@ -63,6 +75,7 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					KiariteToolLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}

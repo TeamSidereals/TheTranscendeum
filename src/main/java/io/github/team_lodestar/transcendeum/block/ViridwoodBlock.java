@@ -31,7 +31,7 @@ public class ViridwoodBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridwood")
 	public static final Block block = null;
 	public ViridwoodBlock(TheTranscendeumModElements instance) {
-		super(instance, 226);
+		super(instance, 88);
 	}
 
 	@Override

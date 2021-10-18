@@ -6,9 +6,12 @@
     "texture": "kiarite_hoe",
     "customModelName": "Normal",
     "name": "Kiarite Hoe",
-    "specialInfo": [],
+    "specialInfo": [
+      "§8A tool empowered by the ancient dragons.",
+      "§6Knocks up and deals extra 2 damage to the target, only if the target is a mob of the Transcendeum dimension."
+    ],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:TranscendeumGear"
     },
     "toolType": "Hoe",
     "harvestLevel": 3,

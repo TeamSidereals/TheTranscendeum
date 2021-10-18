@@ -28,7 +28,7 @@ public class StariamSlabBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_slab")
 	public static final Block block = null;
 	public StariamSlabBlock(TheTranscendeumModElements instance) {
-		super(instance, 25);
+		super(instance, 27);
 	}
 
 	@Override

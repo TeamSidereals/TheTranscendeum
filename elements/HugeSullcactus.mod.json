@@ -5,7 +5,7 @@
     "structure": "sullcactus",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 500000,
+    "spawnProbability": 0,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 2,
     "spawnLocation": "Ground",

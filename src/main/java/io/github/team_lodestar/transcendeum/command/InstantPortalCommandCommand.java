@@ -48,6 +48,7 @@ public class InstantPortalCommandCommand {
 		});
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
 			$_dependencies.put("x", x);
 			$_dependencies.put("y", y);
 			$_dependencies.put("z", z);

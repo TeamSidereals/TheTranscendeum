@@ -47,7 +47,7 @@ public class SullenSandBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullen_sand")
 	public static final Block block = null;
 	public SullenSandBlock(TheTranscendeumModElements instance) {
-		super(instance, 13);
+		super(instance, 19);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
