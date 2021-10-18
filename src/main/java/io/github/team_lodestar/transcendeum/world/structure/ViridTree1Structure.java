@@ -31,10 +31,10 @@ import net.minecraft.block.BlockState;
 
 import java.util.Random;
 
-import io.github.team_lodestar.transcendeum.block.IaprieGrassBlockBlock;
+import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
 
 @Mod.EventBusSubscriber
-public class PlainKelaveTree3Structure {
+public class ViridTree1Structure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -52,7 +52,7 @@ public class PlainKelaveTree3Structure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 5000) {
+					if ((random.nextInt(1000000) + 1) <= 720000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -61,18 +61,18 @@ public class PlainKelaveTree3Structure {
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == IaprieGrassBlockBlock.block)
+							if (blockAt.getBlock() == MordhenNylliumBlock.block)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
 							Rotation rotation = Rotation.NONE;
 							Mirror mirror = Mirror.NONE;
-							BlockPos spawnTo = new BlockPos(i + -4, j + 0, k + -4);
+							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("the_transcendeum", "kelave_tree_3"));
+									.getTemplateDefaulted(new ResourceLocation("the_transcendeum", "virid_tree1"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
@@ -85,14 +85,14 @@ public class PlainKelaveTree3Structure {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("plain_kelave_tree_3"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:plain_kelave_tree_3"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("virid_tree_1"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:virid_tree_1"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
+		if (new ResourceLocation("the_transcendeum:viridian_mires").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

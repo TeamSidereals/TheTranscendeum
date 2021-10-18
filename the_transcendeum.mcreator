@@ -4524,6 +4524,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "ViridTree1",
+      "type": "structure",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virid_tree_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "ViridTree2",
+      "type": "structure",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virid_tree_2",
+      "path": "~/Structures/Natural"
     }
   ],
   "variable_elements": [
@@ -4673,6 +4693,7 @@
       "block.the_transcendeum.kelavus": "Kelavus",
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
+      "item.the_transcendeum.kefgaell_heart": "Kefgaell Heart",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
