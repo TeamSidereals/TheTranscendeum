@@ -1,21 +1,7 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.DamageSource;
-import net.minecraft.tags.EntityTypeTags;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Random;
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.particle.KiariteExorcismParticle;
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
-
 public class DragonarShieldOnAttackBlockedProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -32,9 +18,11 @@ public class DragonarShieldOnAttackBlockedProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure DragonarShieldOnAttackBlocked!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if ((EntityTypeTags.getCollection().getTagByID(new ResourceLocation(("forge:transcendent_mobs").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains(entity.getType()))) {
 			entity.setMotion((entity.getMotion().getX()), 0.25, (entity.getMotion().getZ()));
@@ -54,4 +42,5 @@ public class DragonarShieldOnAttackBlockedProcedure {
 			}
 		}
 	}
+
 }

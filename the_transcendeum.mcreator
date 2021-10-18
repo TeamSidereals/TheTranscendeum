@@ -4567,6 +4567,16 @@
           }
         ]
       }
+    },
+    {
+      "name": "PyrrhicBush",
+      "type": "plant",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pyrrhic_bush",
+      "path": "~/Plants/Dead"
     }
   ],
   "variable_elements": [

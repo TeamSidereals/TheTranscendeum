@@ -1,0 +1,92 @@
+{
+  "_fv": 24,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "pyrrhic_bush",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "staticPlantGenerationType": "Grass",
+    "suspiciousStewEffect": "BAD_OMEN",
+    "suspiciousStewDuration": 5,
+    "growapableSpawnType": "Cave",
+    "growapableMaxHeight": 3,
+    "doublePlantGenerationType": "Flower",
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": 2.0,
+        "Mx": 14.0,
+        "My": 10.0,
+        "Mz": 14.0,
+        "subtract": false
+      }
+    ],
+    "name": "Pyrrhic Bush",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumBlocks"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "frequencyOnChunks": 1,
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:KalaisicWastes"
+      }
+    ],
+    "patchSize": 32
+  }
+}
