@@ -4552,6 +4552,56 @@
       "ids": {},
       "registry_name": "pyrrhic_bush",
       "path": "~/Plants/Dead"
+    },
+    {
+      "name": "KelaveHut",
+      "type": "structure",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kelave_hut",
+      "path": "~/Structures/Constructed"
+    },
+    {
+      "name": "DeadSullenbushDrops",
+      "type": "loottable",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dead_sullenbush_drops",
+      "path": "~/loot tables/blocks"
+    },
+    {
+      "name": "NaturalSullcactus",
+      "type": "structure",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "natural_sullcactus",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "SullenbushDrops",
+      "type": "loottable",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullenbush_drops",
+      "path": "~/loot tables/blocks"
+    },
+    {
+      "name": "SullgrowthDrops",
+      "type": "loottable",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sullgrowth_drops",
+      "path": "~/loot tables/blocks"
     }
   ],
   "variable_elements": [
@@ -4607,6 +4657,7 @@
       "entity.the_transcendeum.arffel": "Arffel",
       "item.the_transcendeum.berthel_shard": "Berthel Shard",
       "block.the_transcendeum.viridwood_log": "Viridwood Log",
+      "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
       "block.the_transcendeum.cellcyte": "Cellcyte",
@@ -4619,6 +4670,7 @@
       "biome.the_transcendeum.agarith": "Agarith",
       "item.the_transcendeum.enigma_glove": "Enigma Glove",
       "block.the_transcendeum.sullen_thorn": "Sullen Thorn",
+      "item.the_transcendeum.beetroot_jam": "Beetroot Jam",
       "block.the_transcendeum.mordhen_leaves": "Viridian Leaves",
       "block.the_transcendeum.dead_sullenbush": "Dead Sullenbush",
       "item.the_transcendeum.hyrumae_ghoul_spawn_egg": "Hyrumae Ghoul Spawn Egg",
@@ -4701,7 +4753,6 @@
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.kefgaell_heart": "Kefgaell Heart",
-      "item.the_transcendeum.dragonar_shield": "Dragonar Shield",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
@@ -4727,6 +4778,7 @@
       "entity.the_transcendeum.arcedeon": "Arcedeon",
       "item.the_transcendeum.kiarite_pickaxe": "Kiarite Pickaxe",
       "block.the_transcendeum.viralga_block": "Viralga",
+      "item.the_transcendeum.sweet_berry_jam": "Sweet Berry Jam",
       "item.the_transcendeum.large_virilily": "Large Virilily",
       "block.the_transcendeum.kelave_log": "Kelave Log",
       "item.the_transcendeum.kiarite_armor_boots": "Kiarite Boots",
@@ -4767,6 +4819,7 @@
       "block.the_transcendeum.mordhen_nyllium": "Viridian Nyllium",
       "block.the_transcendeum.kelave_planks": "Kelave Planks",
       "item.the_transcendeum.kiarite_armor_helmet": "Kiarite Helmet",
+      "item.the_transcendeum.chorus_jam": "Chorus Jam",
       "item.the_transcendeum.viralga": "Viralga",
       "item.the_transcendeum.berthel_armor_boots": "Berthel Boots",
       "item.the_transcendeum.thelyarium_ingot": "Thelyarium Ingot",
