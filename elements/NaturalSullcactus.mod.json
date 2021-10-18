@@ -2,16 +2,16 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "sullcactus_1",
+    "structure": "natural_sullcactus",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 0,
+    "spawnProbability": 600000,
     "minCountPerChunk": 1,
-    "maxCountPerChunk": 2,
+    "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
-    "spawnXOffset": 0,
-    "spawnZOffset": 0,
+    "spawnXOffset": -3,
+    "spawnZOffset": -3,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],

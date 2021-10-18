@@ -25,10 +25,6 @@
       "value": -13384205,
       "falpha": 0.0
     },
-    "waterFogColor": {
-      "value": -6045906,
-      "falpha": 0.0
-    },
     "ambientSound": {
       "value": ""
     },
@@ -100,10 +96,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

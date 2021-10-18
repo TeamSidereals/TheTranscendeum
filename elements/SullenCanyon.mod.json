@@ -25,10 +25,6 @@
       "value": -13384205,
       "falpha": 0.0
     },
-    "waterFogColor": {
-      "value": -6045906,
-      "falpha": 0.0
-    },
     "ambientSound": {
       "value": ""
     },
@@ -53,8 +49,8 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": -0.4,
-    "heightVariation": 0.0,
+    "baseHeight": -0.25,
+    "heightVariation": 0.05,
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 10,

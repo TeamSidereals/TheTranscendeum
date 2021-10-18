@@ -52,7 +52,7 @@ public class HugeSullcactus2Structure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 500000) {
+					if ((random.nextInt(1000000) + 1) <= 0) {
 						int count = random.nextInt(2) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
