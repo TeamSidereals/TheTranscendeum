@@ -45,7 +45,7 @@ public class SomberstoneBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:somberstone")
 	public static final Block block = null;
 	public SomberstoneBlock(TheTranscendeumModElements instance) {
-		super(instance, 3);
+		super(instance, 15);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -27,7 +27,7 @@ public class KiaritePickaxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_pickaxe")
 	public static final Item block = null;
 	public KiaritePickaxeItem(TheTranscendeumModElements instance) {
-		super(instance, 271);
+		super(instance, 138);
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class KiariteShovelItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_shovel")
 	public static final Item block = null;
 	public KiariteShovelItem(TheTranscendeumModElements instance) {
-		super(instance, 274);
+		super(instance, 139);
 	}
 
 	@Override

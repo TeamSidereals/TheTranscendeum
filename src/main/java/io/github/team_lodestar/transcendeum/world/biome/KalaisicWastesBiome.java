@@ -59,7 +59,7 @@ import com.google.common.collect.ImmutableList;
 public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public KalaisicWastesBiome(TheTranscendeumModElements instance) {
-		super(instance, 339);
+		super(instance, 360);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

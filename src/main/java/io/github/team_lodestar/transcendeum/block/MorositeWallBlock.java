@@ -40,7 +40,7 @@ public class MorositeWallBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:morosite_wall")
 	public static final Block block = null;
 	public MorositeWallBlock(TheTranscendeumModElements instance) {
-		super(instance, 172);
+		super(instance, 81);
 	}
 
 	@Override

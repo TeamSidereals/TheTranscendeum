@@ -23,7 +23,7 @@ public class EfowFruitItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:efow_fruit")
 	public static final Item block = null;
 	public EfowFruitItem(TheTranscendeumModElements instance) {
-		super(instance, 317);
+		super(instance, 5);
 	}
 
 	@Override

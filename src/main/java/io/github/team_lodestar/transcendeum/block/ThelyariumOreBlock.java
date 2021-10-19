@@ -46,7 +46,7 @@ public class ThelyariumOreBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:thelyarium_ore")
 	public static final Block block = null;
 	public ThelyariumOreBlock(TheTranscendeumModElements instance) {
-		super(instance, 309);
+		super(instance, 105);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

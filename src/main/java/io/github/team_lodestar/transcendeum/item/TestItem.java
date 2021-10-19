@@ -28,7 +28,7 @@ public class TestItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:test")
 	public static final Item block = null;
 	public TestItem(TheTranscendeumModElements instance) {
-		super(instance, 246);
+		super(instance, 143);
 	}
 
 	@Override

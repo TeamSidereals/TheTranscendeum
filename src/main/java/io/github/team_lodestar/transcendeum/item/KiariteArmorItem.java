@@ -42,7 +42,7 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_armor_boots")
 	public static final Item boots = null;
 	public KiariteArmorItem(TheTranscendeumModElements instance) {
-		super(instance, 334);
+		super(instance, 141);
 	}
 
 	@Override

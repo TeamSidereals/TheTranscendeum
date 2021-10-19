@@ -16,7 +16,7 @@ public class RefreshingEnchantment extends TheTranscendeumModElements.ModElement
 	@ObjectHolder("the_transcendeum:refreshing")
 	public static final Enchantment enchantment = null;
 	public RefreshingEnchantment(TheTranscendeumModElements instance) {
-		super(instance, 189);
+		super(instance, 241);
 	}
 
 	@Override

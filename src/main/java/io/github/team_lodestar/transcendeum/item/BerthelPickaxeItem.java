@@ -23,7 +23,7 @@ public class BerthelPickaxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_pickaxe")
 	public static final Item block = null;
 	public BerthelPickaxeItem(TheTranscendeumModElements instance) {
-		super(instance, 148);
+		super(instance, 126);
 	}
 
 	@Override
