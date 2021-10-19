@@ -43,7 +43,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SullenDesertBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public SullenDesertBiome(TheTranscendeumModElements instance) {
-		super(instance, 149);
+		super(instance, 15);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

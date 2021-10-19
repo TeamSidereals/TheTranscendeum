@@ -33,7 +33,7 @@ public class ArcedeonUpKeyBinding extends TheTranscendeumModElements.ModElement 
 	private KeyBinding keys;
 	private long lastpress = 0;
 	public ArcedeonUpKeyBinding(TheTranscendeumModElements instance) {
-		super(instance, 370);
+		super(instance, 315);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

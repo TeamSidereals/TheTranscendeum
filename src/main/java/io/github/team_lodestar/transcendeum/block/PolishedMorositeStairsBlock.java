@@ -27,7 +27,7 @@ public class PolishedMorositeStairsBlock extends TheTranscendeumModElements.ModE
 	@ObjectHolder("the_transcendeum:polished_morosite_stairs")
 	public static final Block block = null;
 	public PolishedMorositeStairsBlock(TheTranscendeumModElements instance) {
-		super(instance, 83);
+		super(instance, 174);
 	}
 
 	@Override

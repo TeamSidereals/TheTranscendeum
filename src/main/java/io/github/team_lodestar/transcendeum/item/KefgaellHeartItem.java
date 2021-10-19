@@ -22,7 +22,7 @@ public class KefgaellHeartItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kefgaell_heart")
 	public static final Item block = null;
 	public KefgaellHeartItem(TheTranscendeumModElements instance) {
-		super(instance, 8);
+		super(instance, 355);
 	}
 
 	@Override

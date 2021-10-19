@@ -26,7 +26,7 @@ public class KelfaeBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelfae")
 	public static final Block block = null;
 	public KelfaeBlock(TheTranscendeumModElements instance) {
-		super(instance, 58);
+		super(instance, 80);
 	}
 
 	@Override

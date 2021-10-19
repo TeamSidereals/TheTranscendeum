@@ -37,7 +37,7 @@ public class ViralgaBlockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viralga_block")
 	public static final Block block = null;
 	public ViralgaBlockBlock(TheTranscendeumModElements instance) {
-		super(instance, 328);
+		super(instance, 300);
 	}
 
 	@Override

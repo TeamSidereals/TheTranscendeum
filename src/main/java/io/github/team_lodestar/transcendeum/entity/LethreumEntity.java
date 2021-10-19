@@ -42,7 +42,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(2f, 1.7999999999999998f)).build("lethreum").setRegistryName("lethreum");
 	public LethreumEntity(TheTranscendeumModElements instance) {
-		super(instance, 120);
+		super(instance, 300);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LethreumRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

@@ -48,7 +48,7 @@ public class SullenThornBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullen_thorn")
 	public static final Block block = null;
 	public SullenThornBlock(TheTranscendeumModElements instance) {
-		super(instance, 114);
+		super(instance, 370);
 	}
 
 	@Override

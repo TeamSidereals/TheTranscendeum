@@ -25,7 +25,7 @@ public class ExcerockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:excerock")
 	public static final Block block = null;
 	public ExcerockBlock(TheTranscendeumModElements instance) {
-		super(instance, 104);
+		super(instance, 308);
 	}
 
 	@Override

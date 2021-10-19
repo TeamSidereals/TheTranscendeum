@@ -1,0 +1,30 @@
+{
+  "group": "pyrrhic_bush_net",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "the_transcendeum:pyrrhic_bush"
+    },
+    "3": {
+      "item": "the_transcendeum:pyrrhic_bush"
+    },
+    "4": {
+      "item": "minecraft:string"
+    },
+    "5": {
+      "item": "the_transcendeum:pyrrhic_bush"
+    },
+    "7": {
+      "item": "the_transcendeum:pyrrhic_bush"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:pyrrhic_bush_net",
+    "count": 1
+  }
+}

@@ -26,7 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SullenCanyonBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public SullenCanyonBiome(TheTranscendeumModElements instance) {
-		super(instance, 174);
+		super(instance, 22);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

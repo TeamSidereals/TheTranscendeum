@@ -63,7 +63,7 @@ public class FloweredViridianGrassBlock extends TheTranscendeumModElements.ModEl
 	@ObjectHolder("the_transcendeum:flowered_viridian_grass")
 	public static final Block block = null;
 	public FloweredViridianGrassBlock(TheTranscendeumModElements instance) {
-		super(instance, 108);
+		super(instance, 330);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -118,7 +118,7 @@ public class FloweredViridianGrassBlock extends TheTranscendeumModElements.ModEl
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
-					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
+					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 7));
 			setRegistryName("flowered_viridian_grass");
 		}
 

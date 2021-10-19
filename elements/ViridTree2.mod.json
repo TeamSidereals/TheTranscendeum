@@ -1,0 +1,30 @@
+{
+  "_fv": 24,
+  "_type": "structure",
+  "definition": {
+    "structure": "virid_tree2",
+    "randomlyRotateStructure": false,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 1000000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:MordhenNyllium"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:ViridianMires"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}

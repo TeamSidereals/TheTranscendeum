@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "the_transcendeum:block/virid_roses_bush"
+    },
+    "half=lower": {
+      "model": "the_transcendeum:block/virid_roses_bush_bottom"
+    }
+  }
+}

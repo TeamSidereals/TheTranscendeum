@@ -1,7 +1,7 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "the_transcendeum:blocks/flowered_grass",
-    "particle": "the_transcendeum:blocks/flowered_flowered_grass"
+    "cross": "the_transcendeum:blocks/flowered_virid",
+    "particle": "the_transcendeum:blocks/flowered_virid"
   }
 }

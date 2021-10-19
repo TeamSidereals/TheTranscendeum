@@ -62,7 +62,7 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:crystalia_grass")
 	public static final Block block = null;
 	public CrystaliaGrassBlock(TheTranscendeumModElements instance) {
-		super(instance, 34);
+		super(instance, 49);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

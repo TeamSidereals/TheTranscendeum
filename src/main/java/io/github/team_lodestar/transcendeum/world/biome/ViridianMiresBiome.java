@@ -53,7 +53,7 @@ import com.google.common.collect.ImmutableList;
 public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public ViridianMiresBiome(TheTranscendeumModElements instance) {
-		super(instance, 184);
+		super(instance, 86);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

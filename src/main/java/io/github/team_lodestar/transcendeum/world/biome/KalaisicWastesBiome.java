@@ -59,7 +59,7 @@ import com.google.common.collect.ImmutableList;
 public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 	public KalaisicWastesBiome(TheTranscendeumModElements instance) {
-		super(instance, 360);
+		super(instance, 339);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -90,6 +90,7 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.WITHER_SKELETON, 1, 2, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.SPIDER, 10, 1, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.DESERT).depth(0.7f).scale(0.2f)
 						.temperature(1.8f).downfall(0.2f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
