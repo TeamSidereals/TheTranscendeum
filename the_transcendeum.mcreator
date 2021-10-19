@@ -4010,16 +4010,6 @@
       "path": "~/Structures/others/InstantPortal"
     },
     {
-      "name": "Kelavehut",
-      "type": "structure",
-      "sortid": 358,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kelavehut",
-      "path": "~/Structures/Constructed"
-    },
-    {
       "name": "ChrysaliumVineNeighbourBlockChanges",
       "type": "procedure",
       "sortid": 359,
