@@ -1,0 +1,42 @@
+{
+  "group": "the_transcendeum",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "1": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "2": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "3": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "4": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "5": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "6": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "7": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "8": {
+      "item": "the_transcendeum:kiarite_ingot"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:kiarite_block",
+    "count": 1
+  }
+}

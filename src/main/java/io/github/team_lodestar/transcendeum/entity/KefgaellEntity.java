@@ -75,7 +75,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 15);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 32);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 24);
 			event.put(entity, ammma.create());
 		}
 	}

@@ -4260,7 +4260,7 @@
       "name": "Kefgaell",
       "type": "livingentity",
       "sortid": 121,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {},
       "registry_name": "kefgaell",
@@ -4674,6 +4674,45 @@
       "ids": {},
       "registry_name": "kelave_hut",
       "path": "~/Structures/Constructed"
+    },
+    {
+      "name": "KiariteBlock",
+      "type": "block",
+      "sortid": 394,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_block"
+    },
+    {
+      "name": "KiariteBlockToIngotRecipe",
+      "type": "recipe",
+      "sortid": 395,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_block_to_ingot_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteIngotToBlockRecipe",
+      "type": "recipe",
+      "sortid": 396,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_ingot_to_block_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "KiariteOreSmelt",
+      "type": "recipe",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiarite_ore_smelt",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [
@@ -4694,6 +4733,7 @@
   "language_map": {
     "en_us": {
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
+      "block.the_transcendeum.kiarite_block": "Kiarite Block",
       "enchantment.the_transcendeum.burst_popping": "Burst Popping",
       "block.the_transcendeum.excerock": "Excerock",
       "item.the_transcendeum.test": "Test",
@@ -4706,8 +4746,8 @@
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.kiarite_hoe": "Kiarite Hoe",
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
-      "item.the_transcendeum.indigo_soup": "Indigo Soup",
       "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
+      "item.the_transcendeum.indigo_soup": "Indigo Soup",
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
@@ -4718,8 +4758,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
+      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4732,8 +4772,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
+      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
