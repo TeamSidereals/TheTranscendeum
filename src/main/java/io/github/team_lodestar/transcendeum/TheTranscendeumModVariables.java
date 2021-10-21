@@ -69,6 +69,7 @@ public class TheTranscendeumModVariables {
 		public INBT writeNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side) {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putDouble("TTEnigmaCharge", instance.TTEnigmaCharge);
+			nbt.putBoolean("DoExcerockAttack", instance.DoExcerockAttack);
 			return nbt;
 		}
 
@@ -76,11 +77,13 @@ public class TheTranscendeumModVariables {
 		public void readNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side, INBT inbt) {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.TTEnigmaCharge = nbt.getDouble("TTEnigmaCharge");
+			instance.DoExcerockAttack = nbt.getBoolean("DoExcerockAttack");
 		}
 	}
 
 	public static class PlayerVariables {
 		public double TTEnigmaCharge = 0;
+		public boolean DoExcerockAttack = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				TheTranscendeumMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -115,6 +118,7 @@ public class TheTranscendeumModVariables {
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 		if (!event.isWasDeath()) {
 			clone.TTEnigmaCharge = original.TTEnigmaCharge;
+			clone.DoExcerockAttack = original.DoExcerockAttack;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -139,6 +143,7 @@ public class TheTranscendeumModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
 					variables.TTEnigmaCharge = message.data.TTEnigmaCharge;
+					variables.DoExcerockAttack = message.data.DoExcerockAttack;
 				}
 			});
 			context.setPacketHandled(true);

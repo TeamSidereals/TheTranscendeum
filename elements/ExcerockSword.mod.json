@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "excerock_sword",
+    "customModelName": "Normal",
+    "name": "Excerock Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumItems"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 9,
+    "damageVsEntity": 3.0,
+    "usageCount": 201,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Excerock"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ExcerockSwordRightClickedInAir"
+    },
+    "onItemInUseTick": {
+      "name": "ExcerockSwordToolInHandTick"
+    }
+  }
+}

@@ -4260,7 +4260,7 @@
       "name": "Kefgaell",
       "type": "livingentity",
       "sortid": 121,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {},
       "registry_name": "kefgaell",
@@ -4713,6 +4713,118 @@
       "ids": {},
       "registry_name": "kiarite_ore_smelt",
       "path": "~/recipes"
+    },
+    {
+      "name": "ExcerockTools",
+      "type": "tag",
+      "sortid": 398,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_tools",
+      "path": "~/Tags"
+    },
+    {
+      "name": "ExcerockSwordRightClickedInAir",
+      "type": "procedure",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_sword_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExcerockSwordToolInHandTick",
+      "type": "procedure",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_sword_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExcerockSword",
+      "type": "tool",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_sword",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "PerformExcerockAttack",
+      "type": "procedure",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perform_excerock_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "distance",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExcerockDataManagement",
+      "type": "procedure",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_data_management",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4726,6 +4838,12 @@
       "name": "NoEnigmaCooldown",
       "type": "logic",
       "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "DoExcerockAttack",
+      "type": "logic",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -4746,8 +4864,8 @@
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.kiarite_hoe": "Kiarite Hoe",
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.indigo_soup": "Indigo Soup",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
@@ -4758,8 +4876,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4772,8 +4890,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4894,6 +5012,7 @@
       "block.the_transcendeum.viralga_block": "Viralga",
       "item.the_transcendeum.sweet_berry_jam": "Sweet Berry Jam",
       "item.the_transcendeum.large_virilily": "Large Virilily",
+      "item.the_transcendeum.excerock_sword": "Excerock Sword",
       "block.the_transcendeum.kelave_log": "Kelave Log",
       "item.the_transcendeum.kiarite_armor_boots": "Kiarite Boots",
       "itemGroup.tabtranscendeum_blocks": "Transcendeum Blocks",
