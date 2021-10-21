@@ -4524,16 +4524,6 @@
       }
     },
     {
-      "name": "DragonarShield",
-      "type": "item",
-      "sortid": 388,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "dragonar_shield",
-      "path": "~/gear sets/shields"
-    },
-    {
       "name": "PyrrhicBush",
       "type": "plant",
       "sortid": 388,
@@ -4825,6 +4815,16 @@
           }
         ]
       }
+    },
+    {
+      "name": "DragonarShield",
+      "type": "tool",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dragonar_shield",
+      "path": "~/gear sets/shields"
     }
   ],
   "variable_elements": [
@@ -4985,6 +4985,7 @@
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.kefgaell_heart": "Kefgaell Heart",
+      "item.the_transcendeum.dragonar_shield": "Dragonar Shield",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",
       "item.the_transcendeum.transcendeum": "Transcendent Powder",
