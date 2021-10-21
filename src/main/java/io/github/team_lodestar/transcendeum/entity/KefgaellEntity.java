@@ -75,7 +75,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 15);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 24);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 40D);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -101,7 +101,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new LookAtGoal(this, ArcedeonEntity.CustomEntity.class, (float) 32));
+			this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, (float) 32));
 			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8, 20) {
 				@Override
