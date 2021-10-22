@@ -904,7 +904,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "puffel",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "Arffel",
@@ -914,7 +914,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "arffel",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "KelaveTree",
@@ -1558,7 +1558,7 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "arcedeon",
-      "path": "~/mobs"
+      "path": "~/mobs/global spawning"
     },
     {
       "name": "TranscendeumPlantsAdditionalPlacinggrowthCondition",
@@ -1834,7 +1834,7 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "hyrumae_ghoul",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "SullenHoodoo2",
@@ -3651,7 +3651,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lethreum",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "KiaritePickaxe",
@@ -4254,7 +4254,7 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "pisces",
-      "path": "~/mobs"
+      "path": "~/mobs/global spawning"
     },
     {
       "name": "Kefgaell",
@@ -4264,7 +4264,7 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "kefgaell",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "ThelyariumBootsCrafting",
@@ -4388,7 +4388,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "excrearer",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "PlainKelaveTree1",
@@ -5126,6 +5126,14 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "global spawning",
+            "children": []
+          },
+          {
+            "name": "biome specific",
+            "children": []
           }
         ]
       },

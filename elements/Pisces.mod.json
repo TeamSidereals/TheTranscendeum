@@ -44,7 +44,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "WATER",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -111,10 +111,10 @@
     "rangedItemType": "Default item",
     "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 60,
     "mobSpawningType": "waterCreature",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 8,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:AureaForest"

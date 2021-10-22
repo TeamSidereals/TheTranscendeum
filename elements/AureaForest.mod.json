@@ -104,15 +104,6 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "CUSTOM:Arcedeon"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 20,
-        "spawnType": "waterCreature"
-      },
-      {
-        "entity": {
           "value": "CUSTOM:Arffel"
         },
         "minGroup": 4,
@@ -164,15 +155,6 @@
         "maxGroup": 1,
         "weight": 60,
         "spawnType": "ambient"
-      },
-      {
-        "entity": {
-          "value": "CUSTOM:Pisces"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "waterCreature"
       }
     ]
   }

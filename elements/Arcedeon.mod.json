@@ -112,12 +112,12 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "waterCreature",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 6,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:AureaForest"
