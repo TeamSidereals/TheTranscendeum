@@ -4825,6 +4825,16 @@
       "ids": {},
       "registry_name": "dragonar_shield",
       "path": "~/gear sets/shields"
+    },
+    {
+      "name": "Ellum",
+      "type": "livingentity",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "ellum",
+      "path": "~/mobs/zone specific"
     }
   ],
   "variable_elements": [
@@ -4864,9 +4874,10 @@
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.kiarite_hoe": "Kiarite Hoe",
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.indigo_soup": "Indigo Soup",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
+      "entity.the_transcendeum.ellum": "Ellum",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.viriclinger": "Viriclinger",
@@ -4876,8 +4887,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4890,8 +4901,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4967,6 +4978,7 @@
       "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
       "item.the_transcendeum.efow_fruit": "Efow Fruit",
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
+      "item.the_transcendeum.ellum_spawn_egg": "Ellum Spawn Egg",
       "block.the_transcendeum.morosite_slab": "Morosite Slab",
       "block.the_transcendeum.viridwood_slab": "Viridwood Slab",
       "item.the_transcendeum.indigo_juice": "Indigo Juice",
@@ -5133,6 +5145,10 @@
           },
           {
             "name": "biome specific",
+            "children": []
+          },
+          {
+            "name": "zone specific",
             "children": []
           }
         ]
