@@ -4831,10 +4831,42 @@
       "type": "livingentity",
       "sortid": 404,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "ellum",
       "path": "~/mobs/zone specific"
+    },
+    {
+      "name": "Erellum",
+      "type": "livingentity",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "erellum",
+      "path": "~/mobs/zone specific"
+    },
+    {
+      "name": "EllumErellumAttackTrigger",
+      "type": "procedure",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ellum_erellum_attack_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs/functions"
     }
   ],
   "variable_elements": [
@@ -4887,8 +4919,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
+      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4901,8 +4933,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
+      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4950,6 +4982,7 @@
       "item.the_transcendeum.cadillacium_hoe": "Cadillacium Hoe",
       "item.the_transcendeum.thelyarium_sword": "Thelyarium Sword",
       "block.the_transcendeum.polished_morosite_slab": "Polished Morosite Slab",
+      "entity.the_transcendeum.erellum": "Erellum",
       "item.the_transcendeum.lethreum_spawn_egg": "Lethreum Spawn Egg",
       "block.the_transcendeum.viridwood_stairs": "Viridwood Stairs",
       "item.the_transcendeum.cadillacium_ingot": "Cadillacium Ingot",
@@ -5084,6 +5117,7 @@
       "block.the_transcendeum.sullgrowth": "Sullgrowth",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
+      "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
   },

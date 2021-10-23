@@ -7,12 +7,8 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
@@ -38,7 +34,6 @@ import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
@@ -47,53 +42,38 @@ import java.util.Random;
 import java.util.EnumSet;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
-import io.github.team_lodestar.transcendeum.entity.renderer.EllumRenderer;
+import io.github.team_lodestar.transcendeum.entity.renderer.ErellumRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class EllumEntity extends TheTranscendeumModElements.ModElement {
+public class ErellumEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 0.6f)).build("ellum").setRegistryName("ellum");
-	public EllumEntity(TheTranscendeumModElements instance) {
-		super(instance, 404);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new EllumRenderer.ModelRegisterHandler());
+			.size(0.8f, 0.8f)).build("erellum").setRegistryName("erellum");
+	public ErellumEntity(TheTranscendeumModElements instance) {
+		super(instance, 405);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ErellumRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -3355444, -13421569, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
-				.setRegistryName("ellum_spawn_egg"));
-	}
-
-	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		boolean biomeCriteria = false;
-		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
-			biomeCriteria = true;
-		if (!biomeCriteria)
-			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 100, 4, 10));
+		elements.items.add(() -> new SpawnEggItem(entity, -6710887, -10066177, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
+				.setRegistryName("erellum_spawn_egg"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.NO_RESTRICTIONS,
-				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canSpawnOn);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 40);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 13);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
 			event.put(entity, ammma.create());
 		}
