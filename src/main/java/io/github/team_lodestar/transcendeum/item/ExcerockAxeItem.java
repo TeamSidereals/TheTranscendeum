@@ -4,36 +4,36 @@ package io.github.team_lodestar.transcendeum.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.AxeItem;
 
-import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
 import io.github.team_lodestar.transcendeum.block.ExcerockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class ExcerockSwordItem extends TheTranscendeumModElements.ModElement {
-	@ObjectHolder("the_transcendeum:excerock_sword")
+public class ExcerockAxeItem extends TheTranscendeumModElements.ModElement {
+	@ObjectHolder("the_transcendeum:excerock_axe")
 	public static final Item block = null;
-	public ExcerockSwordItem(TheTranscendeumModElements instance) {
-		super(instance, 399);
+	public ExcerockAxeItem(TheTranscendeumModElements instance) {
+		super(instance, 404);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new SwordItem(new IItemTier() {
+		elements.items.add(() -> new AxeItem(new IItemTier() {
 			public int getMaxUses() {
 				return 201;
 			}
 
 			public float getEfficiency() {
-				return 4f;
+				return 7f;
 			}
 
 			public float getAttackDamage() {
-				return 1f;
+				return 6f;
 			}
 
 			public int getHarvestLevel() {
@@ -47,7 +47,7 @@ public class ExcerockSwordItem extends TheTranscendeumModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(ExcerockBlock.block));
 			}
-		}, 3, -2.4f, new Item.Properties().group(TranscendeumItemsItemGroup.tab)) {
-		}.setRegistryName("excerock_sword"));
+		}, 1, -3.1f, new Item.Properties().group(TranscendeumGearItemGroup.tab)) {
+		}.setRegistryName("excerock_axe"));
 	}
 }
