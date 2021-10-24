@@ -4916,6 +4916,105 @@
         ]
       },
       "path": "~/mobs/functions"
+    },
+    {
+      "name": "RemobrenOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Remobren",
+      "type": "livingentity",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren",
+      "path": "~/mobs"
+    },
+    {
+      "name": "RemobrenOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemobrenNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemobrenEntityIsHurt",
+      "type": "procedure",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4955,9 +5054,10 @@
       "item.the_transcendeum.berthel_armor_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.kiarite_hoe": "Kiarite Hoe",
       "block.the_transcendeum.efow_moss_block": "Efow Moss Block",
-      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.indigo_soup": "Indigo Soup",
+      "block.the_transcendeum.stariam_stairs": "Stariam Stairs",
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
+      "entity.the_transcendeum.ellum": "Ellum",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.viriclinger": "Viriclinger",
@@ -4967,8 +5067,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4981,8 +5081,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5021,6 +5121,7 @@
       "block.the_transcendeum.sulkstone_slab": "Sulkstone Slab",
       "block.the_transcendeum.viriclinger_base": "Viriclinger",
       "block.the_transcendeum.argoany": "Argoany",
+      "entity.the_transcendeum.remobren": "Remobren",
       "block.the_transcendeum.stariam_log": "Stariam Log",
       "item.the_transcendeum.berthel_hoe": "Berthel Hoe",
       "block.the_transcendeum.polished_sulkstone_stairs": "Polished Sulkstone Stairs",
@@ -5030,6 +5131,7 @@
       "item.the_transcendeum.cadillacium_hoe": "Cadillacium Hoe",
       "item.the_transcendeum.thelyarium_sword": "Thelyarium Sword",
       "block.the_transcendeum.polished_morosite_slab": "Polished Morosite Slab",
+      "entity.the_transcendeum.erellum": "Erellum",
       "item.the_transcendeum.lethreum_spawn_egg": "Lethreum Spawn Egg",
       "block.the_transcendeum.viridwood_stairs": "Viridwood Stairs",
       "item.the_transcendeum.cadillacium_ingot": "Cadillacium Ingot",
@@ -5058,6 +5160,7 @@
       "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
       "item.the_transcendeum.efow_fruit": "Efow Fruit",
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
+      "item.the_transcendeum.ellum_spawn_egg": "Ellum Spawn Egg",
       "block.the_transcendeum.morosite_slab": "Morosite Slab",
       "block.the_transcendeum.viridwood_slab": "Viridwood Slab",
       "item.the_transcendeum.indigo_juice": "Indigo Juice",
@@ -5147,6 +5250,7 @@
       "item.the_transcendeum.kiarite_armor_helmet": "Kiarite Helmet",
       "item.the_transcendeum.chorus_jam": "Chorus Jam",
       "item.the_transcendeum.viralga": "Viralga",
+      "item.the_transcendeum.excerock_axe": "Excerock Axe",
       "item.the_transcendeum.berthel_armor_boots": "Berthel Boots",
       "item.the_transcendeum.thelyarium_ingot": "Thelyarium Ingot",
       "item.the_transcendeum.berthel_axe": "Berthel Axe",
@@ -5158,12 +5262,14 @@
       "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
       "block.the_transcendeum.viridwood_pressure_plate": "Viridwood Pressure Plate",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
+      "item.the_transcendeum.remobren_spawn_egg": "Remobren Spawn Egg",
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
       "block.the_transcendeum.sullgrowth": "Sullgrowth",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
+      "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
   },
