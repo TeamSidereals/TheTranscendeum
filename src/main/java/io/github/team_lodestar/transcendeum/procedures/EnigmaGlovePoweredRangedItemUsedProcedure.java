@@ -43,7 +43,7 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity))) || (TheTranscendeumModVariables.NoEnigmaCooldown == (false)))) {
+		}.checkGamemode(entity))) && (TheTranscendeumModVariables.NoEnigmaCooldown == (false)))) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(EnigmaGloveItem.block, (int) 150);
 			if (entity instanceof PlayerEntity)

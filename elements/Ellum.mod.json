@@ -2,22 +2,22 @@
   "_fv": 24,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Pisces",
+    "mobName": "Ellum",
     "mobLabel": "",
-    "mobModelName": "Modelpisces",
-    "mobModelTexture": "pisces.png",
-    "mobModelGlowTexture": "pisces_glow.png",
+    "mobModelName": "Modelellum",
+    "mobModelTexture": "ellum.png",
+    "mobModelGlowTexture": "ellum_glow.png",
     "modelWidth": 0.6,
     "modelHeight": 0.6,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -6710785,
+      "value": -3355444,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16764058,
+      "value": -13421569,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -44,18 +44,18 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
-    "mobCreatureType": "WATER",
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEAD",
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 5,
-    "xpAmount": 2,
-    "waterMob": true,
-    "flyingMob": false,
+    "health": 10,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -67,7 +67,7 @@
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": true,
+    "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -77,16 +77,16 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.FISH#1"
+      "value": ""
     },
     "livingSound": {
-      "value": "entity.salmon.ambient"
+      "value": ""
     },
     "hurtSound": {
-      "value": "entity.salmon.hurt"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.salmon.death"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim\"><field name=\"speed\">5</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">1</field><field name=\"maxrange\">10</field><field name=\"followarea\">5</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">32</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -109,45 +109,18 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 60,
-    "mobSpawningType": "waterCreature",
-    "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 8,
+    "spawningProbability": 100,
+    "mobSpawningType": "ambient",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 10,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:AureaForest"
-      },
       {
         "value": "CUSTOM:AureaPlains"
       },
       {
-        "value": "CUSTOM:CalidWoodlands"
-      },
-      {
-        "value": "CUSTOM:CrystaliaForest"
-      },
-      {
-        "value": "CUSTOM:KalaisicWastes"
-      },
-      {
-        "value": "CUSTOM:SaltLowlands"
-      },
-      {
-        "value": "CUSTOM:SullenCanyon"
-      },
-      {
-        "value": "CUSTOM:SullenCliffs"
-      },
-      {
-        "value": "CUSTOM:TranscendentSea"
-      },
-      {
-        "value": "CUSTOM:TranscendentOcean"
-      },
-      {
-        "value": "CUSTOM:ViridianMires"
+        "value": "CUSTOM:AureaForest"
       }
     ],
     "spawnInDungeons": false
