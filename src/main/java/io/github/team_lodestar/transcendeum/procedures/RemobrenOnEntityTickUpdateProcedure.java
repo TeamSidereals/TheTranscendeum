@@ -1,13 +1,18 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
 import net.minecraft.entity.projectile.SpectralArrowEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import java.util.function.Function;
@@ -74,7 +79,9 @@ public class RemobrenOnEntityTickUpdateProcedure {
 										}
 									}.compareDistOf(x, y, z)).findFirst().orElse(null))).abilities.isCreativeMode
 							: false))) {
-				entity.getPersistentData().putBoolean("Active", (true));
+				if ((!(entity.getPersistentData().getBoolean("Active")))) {
+					entity.getPersistentData().putBoolean("Active", (true));
+				}
 			}
 		}
 		if ((entity.getPersistentData().getBoolean("Active"))) {
@@ -123,8 +130,14 @@ public class RemobrenOnEntityTickUpdateProcedure {
 			if (((entity.getPersistentData().getDouble("DodgeCooldown")) > 0)) {
 				entity.getPersistentData().putDouble("DodgeCooldown", ((entity.getPersistentData().getDouble("DodgeCooldown")) - 1));
 			}
-		} else {
+		}
+		if ((!(entity.getPersistentData().getBoolean("Active")))) {
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 20, (true), (false)));
 			entity.setMotion(0, (-0.5), 0);
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(ParticleTypes.SMOKE, x, y, z, (int) 3, 0.3, 0.3, 0.3, 0);
+			}
 		}
 	}
 }

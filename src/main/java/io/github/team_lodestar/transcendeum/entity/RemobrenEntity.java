@@ -95,7 +95,7 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 5, 1, 2));
+		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 15, 1, 2));
 	}
 
 	@Override
