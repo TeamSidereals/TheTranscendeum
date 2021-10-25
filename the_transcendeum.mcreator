@@ -4410,16 +4410,6 @@
       "registry_name": "indigo_fruited_pie"
     },
     {
-      "name": "BeetrootJamRecipe",
-      "type": "recipe",
-      "sortid": 380,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "beetroot_jam_recipe",
-      "path": "~/recipes"
-    },
-    {
       "name": "KefgaellLootTable",
       "type": "loottable",
       "sortid": 381,
@@ -4438,16 +4428,6 @@
       "ids": {},
       "registry_name": "plain_kelave_tree_2",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "AppleJamRecipe",
-      "type": "recipe",
-      "sortid": 383,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "apple_jam_recipe",
-      "path": "~/recipes"
     },
     {
       "name": "PlainKelaveTree3",
@@ -4476,26 +4456,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "indigo_jam"
-    },
-    {
-      "name": "ChorusJamRecipe",
-      "type": "recipe",
-      "sortid": 385,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chorus_jam_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "SweetBerryJamRecipe",
-      "type": "recipe",
-      "sortid": 386,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sweet_berry_jam_recipe",
-      "path": "~/recipes"
     },
     {
       "name": "SullenThorn",
