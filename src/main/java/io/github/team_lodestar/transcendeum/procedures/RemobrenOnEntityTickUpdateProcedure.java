@@ -1,7 +1,27 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-public class RemobrenOnEntityTickUpdateProcedure {
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.particles.ParticleTypes;
+import net.minecraft.entity.projectile.TridentEntity;
+import net.minecraft.entity.projectile.ThrowableEntity;
+import net.minecraft.entity.projectile.SpectralArrowEntity;
+import net.minecraft.entity.projectile.ArrowEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 
+import java.util.function.Function;
+import java.util.Map;
+import java.util.Comparator;
+
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+
+public class RemobrenOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -28,13 +48,11 @@ public class RemobrenOnEntityTickUpdateProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure RemobrenOnEntityTickUpdate!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if ((!(((Entity) world
 				.getEntitiesWithinAABB(PlayerEntity.class,
 						new AxisAlignedBB(x - (11 / 2d), y - (11 / 2d), z - (11 / 2d), x + (11 / 2d), y + (11 / 2d), z + (11 / 2d)), null)
@@ -122,5 +140,4 @@ public class RemobrenOnEntityTickUpdateProcedure {
 			}
 		}
 	}
-
 }
