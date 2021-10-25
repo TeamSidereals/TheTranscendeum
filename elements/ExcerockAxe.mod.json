@@ -3,19 +3,19 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "excerock_sword",
+    "texture": "excerock_axe",
     "customModelName": "Normal",
-    "name": "Excerock Sword",
+    "name": "Excerock Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:TranscendeumItems"
+      "value": "CUSTOM:TranscendeumGear"
     },
-    "toolType": "Sword",
+    "toolType": "Axe",
     "harvestLevel": 1,
-    "efficiency": 4.0,
-    "attackSpeed": 1.6,
+    "efficiency": 7.0,
+    "attackSpeed": 0.9,
     "enchantability": 9,
-    "damageVsEntity": 3.0,
+    "damageVsEntity": 8.0,
     "usageCount": 201,
     "blocksAffected": [],
     "hasGlow": false,

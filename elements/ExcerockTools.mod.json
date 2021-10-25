@@ -6,6 +6,9 @@
     "items": [
       {
         "value": "CUSTOM:ExcerockSword"
+      },
+      {
+        "value": "CUSTOM:Excelhammer"
       }
     ],
     "blocks": [],

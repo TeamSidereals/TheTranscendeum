@@ -1,5 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import java.util.Map;
@@ -16,9 +17,10 @@ public class ExcerockSwordToolInHandTickProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if ((((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack) && (!(entity.isOnGround())))) {
-			if (((entity.getMotion().getY()) > 0)) {
-				entity.setMotion((entity.getMotion().getX()), (-0.7), (entity.getMotion().getZ()));
+				.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack)
+				&& ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false))) {
+			if ((((PlayerEntity) entity).abilities.isFlying)) {
+				(((PlayerEntity) entity).abilities.isFlying) = false;
 			}
 		}
 	}

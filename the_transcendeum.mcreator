@@ -4410,16 +4410,6 @@
       "registry_name": "indigo_fruited_pie"
     },
     {
-      "name": "BeetrootJamRecipe",
-      "type": "recipe",
-      "sortid": 380,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "beetroot_jam_recipe",
-      "path": "~/recipes"
-    },
-    {
       "name": "KefgaellLootTable",
       "type": "loottable",
       "sortid": 381,
@@ -4438,16 +4428,6 @@
       "ids": {},
       "registry_name": "plain_kelave_tree_2",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "AppleJamRecipe",
-      "type": "recipe",
-      "sortid": 383,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "apple_jam_recipe",
-      "path": "~/recipes"
     },
     {
       "name": "PlainKelaveTree3",
@@ -4476,26 +4456,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "indigo_jam"
-    },
-    {
-      "name": "ChorusJamRecipe",
-      "type": "recipe",
-      "sortid": 385,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chorus_jam_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "SweetBerryJamRecipe",
-      "type": "recipe",
-      "sortid": 386,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sweet_berry_jam_recipe",
-      "path": "~/recipes"
     },
     {
       "name": "SullenThorn",
@@ -4898,6 +4858,16 @@
       "path": "~/Biomes"
     },
     {
+      "name": "Effly",
+      "type": "particle",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "effly",
+      "path": "~/particles"
+    },
+    {
       "name": "PurpureanGrass",
       "type": "plant",
       "sortid": 409,
@@ -4908,14 +4878,170 @@
       "path": "~/Plants/Grass"
     },
     {
-      "name": "Effly",
-      "type": "particle",
+      "name": "WaterViridTree1",
+      "type": "structure",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_virid_tree_1"
+    },
+    {
+      "name": "WaterViridTree2",
+      "type": "structure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_virid_tree_2"
+    },
+    {
+      "name": "RemobrenOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemobrenOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemobrenNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remobren_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemobrenEntityIsHurt",
+      "type": "procedure",
       "sortid": 410,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "effly",
-      "path": "~/particles"
+      "registry_name": "remobren_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExcerockAxe",
+      "type": "tool",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excerock_axe",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "Excelhammer",
+      "type": "tool",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excelhammer",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "Remobren",
+      "type": "livingentity",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "remobren",
+      "path": "~/mobs"
+    },
+    {
+      "name": "ExcelhammerBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "excelhammer_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4974,7 +5100,6 @@
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
       "block.the_transcendeum.polished_sulkstone_pressure_plate": "Polished Sulkstone Pressure Plate",
-      "block.the_transcendeum.purpurean_grass": "Purpurean Grass",
       "block.the_transcendeum.kiarite_ore": "Kiarite Ore",
       "item.the_transcendeum.thelyarium_leggings": "Thelyarium Leggings",
       "entity.the_transcendeum.arffel": "Arffel",
@@ -5023,6 +5148,7 @@
       "block.the_transcendeum.sulkstone_slab": "Sulkstone Slab",
       "block.the_transcendeum.viriclinger_base": "Viriclinger",
       "block.the_transcendeum.argoany": "Argoany",
+      "entity.the_transcendeum.remobren": "Remobren",
       "block.the_transcendeum.stariam_log": "Stariam Log",
       "item.the_transcendeum.berthel_hoe": "Berthel Hoe",
       "block.the_transcendeum.polished_sulkstone_stairs": "Polished Sulkstone Stairs",
@@ -5089,12 +5215,12 @@
       "item.the_transcendeum.berthel_armor_leggings": "Berthel Leggings",
       "block.the_transcendeum.sulkstone_wall": "Sulkstone Wall",
       "block.the_transcendeum.viridian_moss_block": "Viridian Moss Block",
-      "block.the_transcendeum.purpurean_grass_block": "Purpurean Grass Block",
       "entity.the_transcendeum.hyrumae_ghoul": "Hyrumae Ghoul",
       "block.the_transcendeum.excerock_tiles": "Excerock Tiles",
       "block.the_transcendeum.kelave_fence_gate": "Kelave Fence Gate",
       "block.the_transcendeum.morosite": "Morosite",
       "block.the_transcendeum.viridwood_button": "Viridwood Button",
+      "item.the_transcendeum.excelhammer": "Excelhammer",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
@@ -5162,12 +5288,11 @@
       "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
       "block.the_transcendeum.viridwood_pressure_plate": "Viridwood Pressure Plate",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
+      "item.the_transcendeum.remobren_spawn_egg": "Remobren Spawn Egg",
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
       "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
       "block.the_transcendeum.sullgrowth": "Sullgrowth",
-      "block.the_transcendeum.lilac_buds": "Lilac Buds",
-      "biome.the_transcendeum.lavenderfare": "Lavender Fare",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
       "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
@@ -5218,6 +5343,14 @@
         "name": "mobs",
         "children": [
           {
+            "name": "global spawning",
+            "children": []
+          },
+          {
+            "name": "biome specific",
+            "children": []
+          },
+          {
             "name": "functions",
             "children": [
               {
@@ -5225,14 +5358,6 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "global spawning",
-            "children": []
-          },
-          {
-            "name": "biome specific",
-            "children": []
           },
           {
             "name": "zone specific",

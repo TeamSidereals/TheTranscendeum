@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "excelhammer",
+    "customModelName": "Normal",
+    "name": "Excelhammer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TranscendeumGear"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 3,
+    "efficiency": 20.0,
+    "attackSpeed": 0.7,
+    "enchantability": 2,
+    "damageVsEntity": 8.0,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Excerock"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ExcerockSwordRightClickedInAir"
+    },
+    "onItemInUseTick": {
+      "name": "ExcerockSwordToolInHandTick"
+    },
+    "onBlockDestroyedWithTool": {
+      "name": "ExcelhammerBlockDestroyedWithTool"
+    }
+  }
+}
