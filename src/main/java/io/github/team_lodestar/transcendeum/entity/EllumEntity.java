@@ -76,6 +76,8 @@ public class EllumEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:lavenderfare").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 100, 4, 10));
@@ -172,7 +174,7 @@ public class EllumEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(3, new FollowMobGoal(this, (float) 1, 10, 5));
 			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, (float) 32));
+			this.goalSelector.addGoal(6, new LookAtGoal(this, ArcedeonEntity.CustomEntity.class, (float) 32));
 			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 			this.targetSelector.addGoal(8, new HurtByTargetGoal(this));
 		}

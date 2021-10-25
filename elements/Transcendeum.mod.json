@@ -35,6 +35,9 @@
       },
       {
         "value": "CUSTOM:KalaisicWastes"
+      },
+      {
+        "value": "CUSTOM:Lavenderfare"
       }
     ],
     "worldGenType": "Normal world gen",

@@ -26,6 +26,9 @@
       },
       {
         "value": "CUSTOM:AureaPlains"
+      },
+      {
+        "value": "CUSTOM:Lavenderfare"
       }
     ],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
