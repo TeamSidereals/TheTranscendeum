@@ -4854,7 +4854,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lavenderfare",
+      "registry_name": "lavender_fare",
       "path": "~/Biomes"
     },
     {
@@ -5250,6 +5250,7 @@
       "block.the_transcendeum.berthel_crystal_block": "Berthel Crystal Block",
       "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
       "item.the_transcendeum.indigo_jam": "Indigo Jam",
+      "biome.the_transcendeum.lavender_fare": "Lavender Fare",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
       "block.the_transcendeum.ancient_excerock_tiles": "Ancient Excerock Tiles",
       "block.the_transcendeum.viridian_nyllium": "Viridian Nyllium",
@@ -5297,7 +5298,6 @@
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
       "block.the_transcendeum.sullgrowth": "Sullgrowth",
       "block.the_transcendeum.lilac_buds": "Lilac Buds",
-      "biome.the_transcendeum.lavenderfare": "Lavender Fare",
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
       "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
@@ -5476,7 +5476,7 @@
   "workspaceSettings": {
     "modid": "the_transcendeum",
     "modName": "The Transcendeum",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Uncover and venture upon a new magnificent, alternate-Overworld dimension transcended beyond normal reality.",
     "author": "Team Lodestar",
     "websiteURL": "https://team-lodestar.github.io",
@@ -5489,7 +5489,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Texturers: Sajevius, Aqu, Dylanvhs / Coders: Sajevius / Ideas: everyone from Team Lodestar / Special thanks to MCreator for making this possible!",
+    "credits": "Texturers: Sajevius, Aqu, Dylanvhs, Ddx11, Lyof / Coders: Aqu, Sajevius / Ideas: everyone from Team Lodestar / Special thanks: MCreator, for making this mod possible!",
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
