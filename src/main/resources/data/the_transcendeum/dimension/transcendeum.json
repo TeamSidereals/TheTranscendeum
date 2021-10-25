@@ -146,7 +146,7 @@
           }
         },
         {
-          "biome": "the_transcendeum:lavenderfare",
+          "biome": "the_transcendeum:lavender_fare",
           "parameters": {
             "temperature": -1,
             "humidity": 1,

@@ -106,7 +106,7 @@ public class PurpureanGrassBlock extends TheTranscendeumModElements.ModElement {
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("the_transcendeum:lavenderfare").equals(event.getName()))
+		if (new ResourceLocation("the_transcendeum:lavender_fare").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
