@@ -3,14 +3,14 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "lilac_buds",
-    "textureBottom": "iaprie_flower_bottom",
+    "texture": "twighlire_top",
+    "textureBottom": "twighlire",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "normal",
+    "plantType": "double",
     "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "HASTE",
     "suspiciousStewDuration": 5,
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Lilac Buds",
+    "name": "Twighlire",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
@@ -78,7 +78,7 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 9,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],

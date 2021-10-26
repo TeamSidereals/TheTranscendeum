@@ -109,7 +109,7 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 60,
     "mobSpawningType": "waterCreature",
@@ -148,6 +148,9 @@
       },
       {
         "value": "CUSTOM:ViridianMires"
+      },
+      {
+        "value": "CUSTOM:Lavenderfare"
       }
     ],
     "spawnInDungeons": false
