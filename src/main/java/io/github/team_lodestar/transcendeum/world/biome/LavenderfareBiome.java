@@ -5,7 +5,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
@@ -38,8 +37,8 @@ public class LavenderfareBiome extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-10066177).setWaterFogColor(-6710785)
-						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285)
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-10998696).setWaterColor(-10066177).setWaterFogColor(-6710785)
+						.withSkyColor(-10998696).withFoliageColor(10387789).withGrassColor(9470285)
 						.setParticle(new ParticleEffectAmbience(EfflyParticle.particle, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(PurpureanGrassBlockBlock.block.getDefaultState(),
@@ -59,7 +58,5 @@ public class LavenderfareBiome extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.FOREST);
-		BiomeManager.addBiome(BiomeManager.BiomeType.COOL,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 100));
 	}
 }

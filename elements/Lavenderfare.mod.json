@@ -9,6 +9,10 @@
     "undergroundBlock": {
       "value": "CUSTOM:Sombersoil"
     },
+    "airColor": {
+      "value": -10998696,
+      "falpha": 0.0
+    },
     "waterColor": {
       "value": -10066177,
       "falpha": 0.0
@@ -44,7 +48,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "biomeType": "COOL",
-    "spawnBiome": true,
+    "spawnBiome": false,
     "biomeWeight": 100,
     "biomeDictionaryTypes": [
       "FOREST"
