@@ -1,85 +1,28 @@
 
 package io.github.team_lodestar.transcendeum.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.World;
-import net.minecraft.world.IServerWorld;
-import net.minecraft.world.DifficultyInstance;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.DamageSource;
-import net.minecraft.pathfinding.FlyingPathNavigator;
-import net.minecraft.network.IPacket;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.GolemEntity;
-import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.controller.FlyingMovementController;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifierMap;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.block.BlockState;
-
-import javax.annotation.Nullable;
-
-import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.EnumSet;
-
-import io.github.team_lodestar.transcendeum.procedures.RemobrenOnInitialEntitySpawnProcedure;
-import io.github.team_lodestar.transcendeum.procedures.RemobrenOnEntityTickUpdateProcedure;
-import io.github.team_lodestar.transcendeum.procedures.RemobrenNaturalEntitySpawningConditionProcedure;
-import io.github.team_lodestar.transcendeum.procedures.RemobrenEntityIsHurtProcedure;
-import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
-import io.github.team_lodestar.transcendeum.entity.renderer.RemobrenRenderer;
-import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
-
-import com.google.common.collect.ImmutableMap;
+import net.minecraft.block.material.Material;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
+
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(2f, 1f)).build("remobren").setRegistryName("remobren");
+
 	public RemobrenEntity(TheTranscendeumModElements instance) {
 		super(instance, 407);
+
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RemobrenRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
+
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
+
 		elements.items.add(() -> new SpawnEggItem(entity, -39424, -10079233, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
 				.setRegistryName("remobren_spawn_egg"));
 	}
@@ -95,7 +38,8 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 15, 1, 2));
+
+		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 40, 1, 3));
 	}
 
 	@Override
@@ -105,10 +49,15 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 					int x = pos.getX();
 					int y = pos.getY();
 					int z = pos.getZ();
-					return RemobrenNaturalEntitySpawningConditionProcedure.executeProcedure(ImmutableMap.of("y", y));
+					return
+
+				RemobrenNaturalEntitySpawningConditionProcedure.executeProcedure(ImmutableMap.of("y", y));
 				});
+
 	}
+
 	private static class EntityAttributesRegisterHandler {
+
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
@@ -116,12 +65,16 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 20);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
+
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
+
 			event.put(entity, ammma.create());
 		}
+
 	}
 
 	public static class CustomEntity extends MonsterEntity {
+
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -130,6 +83,7 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			super(type, world);
 			experienceValue = 40;
 			setNoAI(false);
+
 			this.moveController = new FlyingMovementController(this, 10, true);
 			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
@@ -142,10 +96,12 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+
 			this.goalSelector.addGoal(1, new Goal() {
 				{
 					this.setMutexFlags(EnumSet.of(Goal.Flag.MOVE));
 				}
+
 				public boolean shouldExecute() {
 					if (CustomEntity.this.getAttackTarget() != null && !CustomEntity.this.getMoveHelper().isUpdating()) {
 						return true;
@@ -182,6 +138,7 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 				}
 			});
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1.8, 20) {
+
 				@Override
 				protected Vector3d getPosition() {
 					Random random = CustomEntity.this.getRNG();
@@ -190,12 +147,14 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 					double dir_z = CustomEntity.this.getPosZ() + ((random.nextFloat() * 2 - 1) * 16);
 					return new Vector3d(dir_x, dir_y, dir_z);
 				}
+
 			});
 			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 2, true));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, false));
 			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, GolemEntity.class, true, false));
 			this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+
 		}
 
 		@Override
@@ -220,6 +179,7 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public boolean onLivingFall(float l, float d) {
+
 			return false;
 		}
 
@@ -232,8 +192,10 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			Entity sourceentity = source.getTrueSource();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("sourceentity", sourceentity);
+
 				RemobrenEntityIsHurtProcedure.executeProcedure($_dependencies);
 			}
 			if (source == DamageSource.DROWN)
@@ -251,7 +213,9 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+
 				$_dependencies.put("entity", entity);
+
 				RemobrenOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -266,11 +230,13 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
+
 				RemobrenOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
@@ -286,7 +252,11 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 
 		public void livingTick() {
 			super.livingTick();
+
 			this.setNoGravity(true);
+
 		}
+
 	}
+
 }

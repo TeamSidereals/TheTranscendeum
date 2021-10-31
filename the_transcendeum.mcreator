@@ -4410,16 +4410,6 @@
       "registry_name": "indigo_fruited_pie"
     },
     {
-      "name": "BeetrootJamRecipe",
-      "type": "recipe",
-      "sortid": 380,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "beetroot_jam_recipe",
-      "path": "~/recipes"
-    },
-    {
       "name": "KefgaellLootTable",
       "type": "loottable",
       "sortid": 381,
@@ -4438,16 +4428,6 @@
       "ids": {},
       "registry_name": "plain_kelave_tree_2",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "AppleJamRecipe",
-      "type": "recipe",
-      "sortid": 383,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "apple_jam_recipe",
-      "path": "~/recipes"
     },
     {
       "name": "PlainKelaveTree3",
@@ -4476,26 +4456,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "indigo_jam"
-    },
-    {
-      "name": "ChorusJamRecipe",
-      "type": "recipe",
-      "sortid": 385,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chorus_jam_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "SweetBerryJamRecipe",
-      "type": "recipe",
-      "sortid": 386,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sweet_berry_jam_recipe",
-      "path": "~/recipes"
     },
     {
       "name": "SullenThorn",
@@ -5017,6 +4977,16 @@
       }
     },
     {
+      "name": "ViridLights",
+      "type": "particle",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "virid_lights",
+      "path": "~/particles"
+    },
+    {
       "name": "ViridianMushroom",
       "type": "plant",
       "sortid": 411,
@@ -5027,14 +4997,81 @@
       "path": "~/Plants/Fungi"
     },
     {
-      "name": "ViridLights",
-      "type": "particle",
+      "name": "WaterViridTree1",
+      "type": "structure",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_virid_tree_1"
+    },
+    {
+      "name": "PurpureanGrassBlock",
+      "type": "block",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purpurean_grass_block"
+    },
+    {
+      "name": "WaterViridTree2",
+      "type": "structure",
       "sortid": 412,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "virid_lights",
+      "registry_name": "water_virid_tree_2"
+    },
+    {
+      "name": "LilacBuds",
+      "type": "plant",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lilac_buds",
+      "path": "~/Plants/Flowers"
+    },
+    {
+      "name": "Twighlire",
+      "type": "plant",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "twighlire",
+      "path": "~/Plants/Flowers"
+    },
+    {
+      "name": "Lavenderfare",
+      "type": "biome",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lavender_fare",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "Effly",
+      "type": "particle",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "effly",
       "path": "~/particles"
+    },
+    {
+      "name": "PurpureanGrass",
+      "type": "plant",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purpurean_grass",
+      "path": "~/Plants/Grass"
     }
   ],
   "variable_elements": [
@@ -5087,8 +5124,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -5101,8 +5138,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5235,7 +5272,6 @@
       "item.the_transcendeum.berthel_helmet": "Berthel Helmet",
       "item.the_transcendeum.indigo_berries": "Indigo Berries",
       "block.the_transcendeum.viridwood_fence_gate": "Viridwood Fence Gate",
-      "block.the_transcendeum.viridian_mushroom": "Viridian Mushroom",
       "item.the_transcendeum.cadillacium_pickaxe": "Cadillacium Pickaxe",
       "item.the_transcendeum.berthel_boots": "Berthel Boots",
       "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",

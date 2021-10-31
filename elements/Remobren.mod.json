@@ -123,10 +123,10 @@
     "spawningCondition": {
       "name": "RemobrenNaturalEntitySpawningCondition"
     },
-    "spawningProbability": 15,
+    "spawningProbability": 40,
     "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:KalaisicWastes"

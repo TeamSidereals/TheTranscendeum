@@ -99,6 +99,8 @@ public class ArcedeonEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (new ResourceLocation("the_transcendeum:viridian_mires").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:lavender_fare").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 2, 6));

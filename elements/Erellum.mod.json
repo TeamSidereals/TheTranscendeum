@@ -121,6 +121,9 @@
       },
       {
         "value": "CUSTOM:AureaForest"
+      },
+      {
+        "value": "CUSTOM:Lavenderfare"
       }
     ],
     "spawnInDungeons": false

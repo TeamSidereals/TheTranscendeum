@@ -7,9 +7,13 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ForgeMod;
 
+import net.minecraft.world.gen.Heightmap;
+import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
@@ -23,6 +27,7 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.passive.fish.SalmonEntity;
+import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
 import net.minecraft.entity.ai.controller.MovementController;
@@ -30,6 +35,7 @@ import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
@@ -46,6 +52,7 @@ public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 		super(instance, 122);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PiscesRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -55,8 +62,42 @@ public class PiscesEntity extends TheTranscendeumModElements.ModElement {
 				.setRegistryName("pisces_spawn_egg"));
 	}
 
+	@SubscribeEvent
+	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:calid_woodlands").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:crystalia_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:kalaisic_wastes").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:salt_lowlands").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:sullen_canyon").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:sullen_cliffs").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:transcendent_sea").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:transcendent_ocean").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:viridian_mires").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:lavender_fare").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(entity, 60, 1, 8));
+	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
+		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
+				SquidEntity::func_223365_b);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
