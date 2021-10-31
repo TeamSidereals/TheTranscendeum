@@ -38,11 +38,11 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:ViridLights"
     },
-    "particlesProbability": 0.5,
+    "particlesProbability": 1.3,
     "biomeCategory": "SWAMP",
     "parent": {
       "value": "No parent"
