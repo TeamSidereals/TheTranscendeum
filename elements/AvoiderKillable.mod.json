@@ -9,6 +9,9 @@
     "entities": [
       {
         "value": "CUSTOM:HyrumaeGhoul"
+      },
+      {
+        "value": "CUSTOM:Remobren"
       }
     ],
     "name": "avoider_killable",

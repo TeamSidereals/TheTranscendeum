@@ -53,7 +53,7 @@
     },
     "rainingPossibility": 0.2,
     "temperature": 1.8,
-    "baseHeight": 0.7,
+    "baseHeight": 0.2,
     "heightVariation": 0.2,
     "biomeType": "DESERT",
     "spawnBiome": false,
@@ -102,37 +102,14 @@
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
-      "Caves",
       "Ores",
       "TaigaRocks",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
       "Caves",
       "Caves",
       "Caves",
       "Caves"
     ],
     "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityWitherSkeleton"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 1,
-        "spawnType": "monster"
-      },
       {
         "entity": {
           "value": "EntitySpider"

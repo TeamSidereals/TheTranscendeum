@@ -13,7 +13,7 @@
     "rotationMode": 4,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "sullen_thorn",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
