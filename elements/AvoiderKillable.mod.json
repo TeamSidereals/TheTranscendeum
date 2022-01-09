@@ -12,6 +12,12 @@
       },
       {
         "value": "CUSTOM:Remobren"
+      },
+      {
+        "value": "CUSTOM:Ellum"
+      },
+      {
+        "value": "CUSTOM:Erellum"
       }
     ],
     "name": "avoider_killable",

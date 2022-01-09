@@ -1,0 +1,25 @@
+{
+  "_fv": 24,
+  "_type": "structure",
+  "definition": {
+    "structure": "border_spike_2",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 1000000,
+    "minCountPerChunk": 4,
+    "maxCountPerChunk": 9,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": -1,
+    "spawnZOffset": -1,
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "BorderSpikesAdditionalGenerationCondition"
+    }
+  }
+}
