@@ -4631,6 +4631,24 @@
       "locked_code": false,
       "registry_name": "twighlire",
       "path": "~/Plants/Flowers"
+    },
+    {
+      "name": "ViridLights",
+      "type": "particle",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virid_lights",
+      "path": "~/particles"
+    },
+    {
+      "name": "ViridianMushroom",
+      "type": "plant",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_mushroom",
+      "path": "~/Plants/Fungi"
     }
   ],
   "variable_elements": [
@@ -4683,8 +4701,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4698,8 +4716,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4834,6 +4852,7 @@
       "item.the_transcendeum.berthel_helmet": "Berthel Helmet",
       "item.the_transcendeum.indigo_berries": "Indigo Berries",
       "block.the_transcendeum.viridwood_fence_gate": "Viridwood Fence Gate",
+      "block.the_transcendeum.viridian_mushroom": "Viridian Mushroom",
       "item.the_transcendeum.cadillacium_pickaxe": "Cadillacium Pickaxe",
       "item.the_transcendeum.berthel_boots": "Berthel Boots",
       "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",
@@ -5083,5 +5102,5 @@
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100353117
+  "mcreatorVersion": 202100236710
 }

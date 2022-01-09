@@ -14,6 +14,7 @@ import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
@@ -32,6 +33,7 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
+import io.github.team_lodestar.transcendeum.particle.ViridLightsParticle;
 import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -50,7 +52,8 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-8599833).setWaterColor(-10984641).setWaterFogColor(-13408196)
-						.withSkyColor(-8599833).withFoliageColor(10387789).withGrassColor(-10132655).build();
+						.withSkyColor(-8599833).withFoliageColor(10387789).withGrassColor(-10132655)
+						.setParticle(new ParticleEffectAmbience(ViridLightsParticle.particle, 0.013f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MordhenNylliumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
