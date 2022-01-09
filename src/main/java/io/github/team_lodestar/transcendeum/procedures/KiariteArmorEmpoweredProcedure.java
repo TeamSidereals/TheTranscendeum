@@ -53,15 +53,11 @@ public class KiariteArmorEmpoweredProcedure {
 			}
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure KiariteArmorEmpowered!");
-			return;
-		}
-		if (dependencies.get("sourceentity") == null) {
-			if (!dependencies.containsKey("sourceentity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency sourceentity for procedure KiariteArmorEmpowered!");
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure KiariteArmorEmpowered!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -79,26 +75,29 @@ public class KiariteArmorEmpoweredProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure KiariteArmorEmpowered!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure KiariteArmorEmpowered!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure KiariteArmorEmpowered!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
-		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency sourceentity for procedure KiariteArmorEmpowered!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
-		if ((EntityTypeTags.getCollection().getTagByID(new ResourceLocation(("forge:transcendent_mobs").toLowerCase(java.util.Locale.ENGLISH)))
-				.contains(sourceentity.getType()))) {
-			if ((((entity instanceof LivingEntity)
-					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-					: ItemStack.EMPTY).getItem() == KiariteArmorItem.helmet)) {
-				if ((Math.random() < 0.05)) {
+		Entity entity = (Entity) dependencies.get("entity");
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		if (EntityTypeTags.getCollection().getTagByID(new ResourceLocation("forge:transcendent_mobs")).contains(sourceentity.getType())) {
+			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD) : ItemStack.EMPTY)
+					.getItem() == KiariteArmorItem.helmet) {
+				if (Math.random() < 0.05) {
 					sourceentity.setMotion((sourceentity.getMotion().getX()), 0.55, (sourceentity.getMotion().getZ()));
 					if (world instanceof ServerWorld) {
-						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
+						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), (entity.getPosY() + 1),
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {
@@ -125,13 +124,12 @@ public class KiariteArmorEmpoweredProcedure {
 					}
 				}
 			}
-			if ((((entity instanceof LivingEntity)
-					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 2))
-					: ItemStack.EMPTY).getItem() == KiariteArmorItem.body)) {
-				if ((Math.random() < 0.09)) {
+			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.CHEST) : ItemStack.EMPTY)
+					.getItem() == KiariteArmorItem.body) {
+				if (Math.random() < 0.09) {
 					sourceentity.setMotion((sourceentity.getMotion().getX()), 0.55, (sourceentity.getMotion().getZ()));
 					if (world instanceof ServerWorld) {
-						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
+						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), (entity.getPosY() + 1),
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {
@@ -158,13 +156,12 @@ public class KiariteArmorEmpoweredProcedure {
 					}
 				}
 			}
-			if ((((entity instanceof LivingEntity)
-					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 1))
-					: ItemStack.EMPTY).getItem() == KiariteArmorItem.legs)) {
-				if ((Math.random() < 0.06)) {
+			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.LEGS) : ItemStack.EMPTY)
+					.getItem() == KiariteArmorItem.legs) {
+				if (Math.random() < 0.06) {
 					sourceentity.setMotion((sourceentity.getMotion().getX()), 0.55, (sourceentity.getMotion().getZ()));
 					if (world instanceof ServerWorld) {
-						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
+						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), (entity.getPosY() + 1),
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {
@@ -191,13 +188,12 @@ public class KiariteArmorEmpoweredProcedure {
 					}
 				}
 			}
-			if ((((entity instanceof LivingEntity)
-					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
-					: ItemStack.EMPTY).getItem() == KiariteArmorItem.boots)) {
-				if ((Math.random() < 0.05)) {
+			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.FEET) : ItemStack.EMPTY)
+					.getItem() == KiariteArmorItem.boots) {
+				if (Math.random() < 0.05) {
 					sourceentity.setMotion((sourceentity.getMotion().getX()), 0.55, (sourceentity.getMotion().getZ()));
 					if (world instanceof ServerWorld) {
-						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), ((entity.getPosY()) + 1),
+						((ServerWorld) world).spawnParticle(KiariteExorcismParticle.particle, (entity.getPosX()), (entity.getPosY() + 1),
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {

@@ -34,6 +34,7 @@ public class ExcrearerRenderer {
 					{
 						this.addLayer(new GlowingLayer<>(this));
 					}
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("the_transcendeum:textures/excecrear.png");
@@ -93,6 +94,7 @@ public class ExcrearerRenderer {
 		private final ModelRenderer leg5_r1;
 		private final ModelRenderer leg4_r2;
 		private final ModelRenderer leg3_r2;
+
 		public Modelexcecrear() {
 			textureWidth = 256;
 			textureHeight = 256;
@@ -261,6 +263,7 @@ public class ExcrearerRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
 			this.frontleg1.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
@@ -269,4 +272,5 @@ public class ExcrearerRenderer {
 			this.backleg1.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 		}
 	}
+
 }

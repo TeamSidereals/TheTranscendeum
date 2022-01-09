@@ -11,8 +11,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.EfowFruitEatenProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
@@ -22,6 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class EfowFruitItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:efow_fruit")
 	public static final Item block = null;
+
 	public EfowFruitItem(TheTranscendeumModElements instance) {
 		super(instance, 5);
 	}
@@ -30,10 +33,13 @@ public class EfowFruitItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new FoodItemCustom());
 	}
+
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(0).saturation(0.3f).setAlwaysEdible().build()));
+					.food((new Food.Builder()).hunger(0).saturation(0.3f).setAlwaysEdible()
+
+							.build()));
 			setRegistryName("efow_fruit");
 		}
 
@@ -48,11 +54,9 @@ public class EfowFruitItem extends TheTranscendeumModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				EfowFruitEatenProcedure.executeProcedure($_dependencies);
-			}
+
+			EfowFruitEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}

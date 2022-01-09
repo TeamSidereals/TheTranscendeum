@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SulkstoneStairsBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sulkstone_stairs")
 	public static final Block block = null;
+
 	public SulkstoneStairsBlock(TheTranscendeumModElements instance) {
 		super(instance, 72);
 	}
@@ -36,6 +37,7 @@ public class SulkstoneStairsBlock extends TheTranscendeumModElements.ModElement 
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
 			super(() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.9f, 0.9f)

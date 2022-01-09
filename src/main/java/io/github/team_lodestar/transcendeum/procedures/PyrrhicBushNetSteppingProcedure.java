@@ -17,10 +17,11 @@ import io.github.team_lodestar.transcendeum.block.PyrrhicBushNetBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class PyrrhicBushNetSteppingProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure PyrrhicBushNetStepping!");
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure PyrrhicBushNetStepping!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -38,20 +39,20 @@ public class PyrrhicBushNetSteppingProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure PyrrhicBushNetStepping!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure PyrrhicBushNetStepping!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure PyrrhicBushNetStepping!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 1, (false), (true)));
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
-		if ((Math.random() <= 0.25)) {
+		if (Math.random() <= 0.25) {
 			if (world instanceof World && !world.isRemote()) {
 				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(PyrrhicBushNetBlock.block));
 				entityToSpawn.setPickupDelay((int) 10);

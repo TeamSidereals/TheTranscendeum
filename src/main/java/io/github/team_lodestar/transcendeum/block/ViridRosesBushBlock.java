@@ -62,6 +62,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ViridRosesBushBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:virid_roses_bush")
 	public static final Block block = null;
+
 	public ViridRosesBushBlock(TheTranscendeumModElements instance) {
 		super(instance, 389);
 		MinecraftForge.EVENT_BUS.register(this);
@@ -80,8 +81,10 @@ public class ViridRosesBushBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	private static Feature<BlockClusterFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
+
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
@@ -105,6 +108,7 @@ public class ViridRosesBushBlock extends TheTranscendeumModElements.ModElement {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:virid_roses_bush"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
@@ -114,6 +118,7 @@ public class ViridRosesBushBlock extends TheTranscendeumModElements.ModElement {
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
+
 	public static class BlockCustomFlower extends DoublePlantBlock {
 		public BlockCustomFlower() {
 			super(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT).hardnessAndResistance(0f, 0f)
@@ -124,7 +129,11 @@ public class ViridRosesBushBlock extends TheTranscendeumModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 8, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 8, 16)
+
+			)
+
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -155,7 +164,11 @@ public class ViridRosesBushBlock extends TheTranscendeumModElements.ModElement {
 		@Override
 		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			Block ground = state.getBlock();
-			return (ground == MordhenNylliumBlock.block);
+			return (ground == MordhenNylliumBlock.block
+
+			)
+
+			;
 		}
 
 		@Override

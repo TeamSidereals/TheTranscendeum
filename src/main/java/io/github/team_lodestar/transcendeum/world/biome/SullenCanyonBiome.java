@@ -25,10 +25,12 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class SullenCanyonBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
+
 	public SullenCanyonBiome(TheTranscendeumModElements instance) {
 		super(instance, 174);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -64,6 +66,7 @@ public class SullenCanyonBiome extends TheTranscendeumModElements.ModElement {
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)),

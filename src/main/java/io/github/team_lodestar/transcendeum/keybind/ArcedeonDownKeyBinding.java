@@ -18,9 +18,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.Minecraft;
 
+import java.util.stream.Stream;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.ArcedeonKeyReleasedProcedure;
 import io.github.team_lodestar.transcendeum.procedures.ArcedeonDescendProcedure;
@@ -32,6 +34,7 @@ public class ArcedeonDownKeyBinding extends TheTranscendeumModElements.ModElemen
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	private long lastpress = 0;
+
 	public ArcedeonDownKeyBinding(TheTranscendeumModElements instance) {
 		super(instance, 364);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
@@ -63,8 +66,10 @@ public class ArcedeonDownKeyBinding extends TheTranscendeumModElements.ModElemen
 			}
 		}
 	}
+
 	public static class KeyBindingPressedMessage {
 		int type, pressedms;
+
 		public KeyBindingPressedMessage(int type, int pressedms) {
 			this.type = type;
 			this.pressedms = pressedms;
@@ -88,6 +93,7 @@ public class ArcedeonDownKeyBinding extends TheTranscendeumModElements.ModElemen
 			context.setPacketHandled(true);
 		}
 	}
+
 	private static void pressAction(PlayerEntity entity, int type, int pressedms) {
 		World world = entity.world;
 		double x = entity.getPosX();
@@ -97,18 +103,14 @@ public class ArcedeonDownKeyBinding extends TheTranscendeumModElements.ModElemen
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
 		if (type == 0) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				ArcedeonDescendProcedure.executeProcedure($_dependencies);
-			}
+
+			ArcedeonDescendProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 		if (type == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				ArcedeonKeyReleasedProcedure.executeProcedure($_dependencies);
-			}
+
+			ArcedeonKeyReleasedProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

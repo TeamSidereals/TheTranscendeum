@@ -25,6 +25,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class PolishedMorositeBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:polished_morosite")
 	public static final Block block = null;
+
 	public PolishedMorositeBlock(TheTranscendeumModElements instance) {
 		super(instance, 82);
 	}
@@ -35,6 +36,7 @@ public class PolishedMorositeBlock extends TheTranscendeumModElements.ModElement
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.9f, 0.9f).setLightLevel(s -> 0)

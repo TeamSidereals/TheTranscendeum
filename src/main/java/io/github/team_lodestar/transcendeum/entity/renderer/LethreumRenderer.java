@@ -34,6 +34,7 @@ public class LethreumRenderer {
 					{
 						this.addLayer(new GlowingLayer<>(this));
 					}
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("the_transcendeum:textures/lethreum.png");
@@ -119,6 +120,7 @@ public class LethreumRenderer {
 		private final ModelRenderer tail;
 		private final ModelRenderer tail2;
 		private final ModelRenderer tailfin;
+
 		public Modellethreum() {
 			textureWidth = 176;
 			textureHeight = 176;
@@ -424,6 +426,7 @@ public class LethreumRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.body2.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
 			this.body3.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 			this.body4.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
@@ -439,4 +442,5 @@ public class LethreumRenderer {
 			this.tail2.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		}
 	}
+
 }

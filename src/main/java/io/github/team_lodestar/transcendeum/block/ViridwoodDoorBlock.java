@@ -33,6 +33,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ViridwoodDoorBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridwood_door")
 	public static final Block block = null;
+
 	public ViridwoodDoorBlock(TheTranscendeumModElements instance) {
 		super(instance, 106);
 	}
@@ -49,6 +50,7 @@ public class ViridwoodDoorBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends DoorBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).notSolid()

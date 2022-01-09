@@ -58,10 +58,12 @@ import com.google.common.collect.ImmutableList;
 @TheTranscendeumModElements.ModElement.Tag
 public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
+
 	public KalaisicWastesBiome(TheTranscendeumModElements instance) {
 		super(instance, 360);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -79,7 +81,7 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 								new StraightTrunkPlacer(3, 2, 0), new TwoLayerFeature(1, 0, 1)))
 										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
 												new CustomCocoaTreeDecorator()))
-										.setMaxWaterDepth(0).build())
+										.build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
@@ -115,11 +117,13 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.MESA,
 				BiomeDictionary.Type.WASTELAND, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY);
 	}
+
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
 		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
 		public static com.mojang.serialization.Codec<LeaveVineTreeDecorator> codec;
@@ -130,6 +134,7 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("kalaisic_wastes_lvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -151,6 +156,7 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("kalaisic_wastes_tvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -172,6 +178,7 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("kalaisic_wastes_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		public CustomCocoaTreeDecorator() {
 			super(0.2f);
 		}

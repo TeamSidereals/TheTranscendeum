@@ -14,9 +14,11 @@ import net.minecraft.item.AxeItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.KiariteToolLivingEntityIsHitWithToolProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
@@ -26,6 +28,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_axe")
 	public static final Item block = null;
+
 	public KiariteAxeItem(TheTranscendeumModElements instance) {
 		super(instance, 137);
 	}
@@ -72,13 +75,11 @@ public class KiariteAxeItem extends TheTranscendeumModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				World world = entity.world;
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("itemstack", itemstack);
-					$_dependencies.put("world", world);
-					KiariteToolLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
-				}
+
+				KiariteToolLivingEntityIsHitWithToolProcedure.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+								new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}
 		}.setRegistryName("kiarite_axe"));

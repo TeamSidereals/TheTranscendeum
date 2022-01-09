@@ -41,6 +41,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(2f, 1.7999999999999998f)).build("lethreum").setRegistryName("lethreum");
+
 	public LethreumEntity(TheTranscendeumModElements instance) {
 		super(instance, 120);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LethreumRenderer.ModelRegisterHandler());
@@ -57,6 +58,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {

@@ -20,6 +20,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class IndigoJamItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:indigo_jam")
 	public static final Item block = null;
+
 	public IndigoJamItem(TheTranscendeumModElements instance) {
 		super(instance, 9);
 	}
@@ -28,10 +29,13 @@ public class IndigoJamItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new FoodItemCustom());
 	}
+
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(7).saturation(0.9f).build()));
+					.food((new Food.Builder()).hunger(7).saturation(0.9f)
+
+							.build()));
 			setRegistryName("indigo_jam");
 		}
 

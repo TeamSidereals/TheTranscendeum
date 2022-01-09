@@ -25,6 +25,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class BlockOfCrystakBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:block_of_crystak")
 	public static final Block block = null;
+
 	public BlockOfCrystakBlock(TheTranscendeumModElements instance) {
 		super(instance, 35);
 	}
@@ -35,6 +36,7 @@ public class BlockOfCrystakBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(2f, 2f).setLightLevel(s -> 0).harvestLevel(2)

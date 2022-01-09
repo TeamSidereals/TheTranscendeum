@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class StariamPressurePlateBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_pressure_plate")
 	public static final Block block = null;
+
 	public StariamPressurePlateBlock(TheTranscendeumModElements instance) {
 		super(instance, 30);
 	}
@@ -36,6 +37,7 @@ public class StariamPressurePlateBlock extends TheTranscendeumModElements.ModEle
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends PressurePlateBlock {
 		public CustomBlock() {
 			super(Sensitivity.EVERYTHING,

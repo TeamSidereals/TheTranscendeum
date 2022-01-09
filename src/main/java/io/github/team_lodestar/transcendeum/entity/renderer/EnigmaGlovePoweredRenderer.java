@@ -36,6 +36,7 @@ public class EnigmaGlovePoweredRenderer {
 	@OnlyIn(Dist.CLIENT)
 	public static class CustomRender extends EntityRenderer<EnigmaGlovePoweredItem.ArrowCustomEntity> {
 		private static final ResourceLocation texture = new ResourceLocation("the_transcendeum:textures/enigma_bullet_entity_powered.png");
+
 		public CustomRender(EntityRendererManager renderManager) {
 			super(renderManager);
 		}
@@ -64,6 +65,7 @@ public class EnigmaGlovePoweredRenderer {
 	// Paste this class into your mod and generate all required imports
 	public static class Modelenigma_bullet_entity extends EntityModel<Entity> {
 		private final ModelRenderer arrow;
+
 		public Modelenigma_bullet_entity() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -94,4 +96,5 @@ public class EnigmaGlovePoweredRenderer {
 			modelRenderer.rotateAngleZ = z;
 		}
 	}
+
 }

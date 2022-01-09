@@ -7,6 +7,7 @@ import java.util.Map;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class BubbleTouchGiveAirProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -14,8 +15,8 @@ public class BubbleTouchGiveAirProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((entity.getAir()) < 252)) {
-			entity.setAir((int) ((entity.getAir()) + 2));
+		if (entity.getAir() < 252) {
+			entity.setAir((int) (entity.getAir() + 2));
 			entity.extinguish();
 		}
 	}

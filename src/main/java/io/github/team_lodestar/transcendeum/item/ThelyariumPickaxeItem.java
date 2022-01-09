@@ -11,8 +11,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.entity.LivingEntity;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.ThelyariumToolsHitLivingEntityProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
@@ -22,6 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ThelyariumPickaxeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:thelyarium_pickaxe")
 	public static final Item block = null;
+
 	public ThelyariumPickaxeItem(TheTranscendeumModElements instance) {
 		super(instance, 132);
 	}
@@ -60,16 +63,12 @@ public class ThelyariumPickaxeItem extends TheTranscendeumModElements.ModElement
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				World world = entity.world;
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("sourceentity", sourceentity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					ThelyariumToolsHitLivingEntityProcedure.executeProcedure($_dependencies);
-				}
+
+				ThelyariumToolsHitLivingEntityProcedure.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z),
+								new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("sourceentity", sourceentity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}
 		}.setRegistryName("thelyarium_pickaxe"));

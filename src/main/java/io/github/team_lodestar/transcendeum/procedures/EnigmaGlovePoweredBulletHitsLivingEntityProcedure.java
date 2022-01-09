@@ -9,7 +9,13 @@ import java.util.Map;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class EnigmaGlovePoweredBulletHitsLivingEntityProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure EnigmaGlovePoweredBulletHitsLivingEntity!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency x for procedure EnigmaGlovePoweredBulletHitsLivingEntity!");
@@ -25,15 +31,10 @@ public class EnigmaGlovePoweredBulletHitsLivingEntityProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure EnigmaGlovePoweredBulletHitsLivingEntity!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure EnigmaGlovePoweredBulletHitsLivingEntity!");
-			return;
-		}
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof World && !((World) world).isRemote) {
 			((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 1.5, Explosion.Mode.BREAK);
 		}

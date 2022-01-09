@@ -76,7 +76,7 @@
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
-    "speedFactor": 0.8,
+    "speedFactor": 1.0,
     "canBePlacedOn": [
       {
         "value": "CUSTOM:SullenSand"

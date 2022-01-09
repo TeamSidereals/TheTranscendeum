@@ -36,6 +36,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SullcactusBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullcactus")
 	public static final Block block = null;
+
 	public SullcactusBlock(TheTranscendeumModElements instance) {
 		super(instance, 22);
 	}
@@ -52,8 +53,10 @@ public class SullcactusBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.CACTUS).sound(SoundType.CLOTH).hardnessAndResistance(0.5f, 0.5f).setLightLevel(s -> 0).notSolid()
 					.tickRandomly().setOpaque((bs, br, bp) -> false));

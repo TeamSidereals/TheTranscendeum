@@ -21,10 +21,12 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class SaltLowlandsBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
+
 	public SaltLowlandsBiome(TheTranscendeumModElements instance) {
 		super(instance, 175);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -44,6 +46,7 @@ public class SaltLowlandsBiome extends TheTranscendeumModElements.ModElement {
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}

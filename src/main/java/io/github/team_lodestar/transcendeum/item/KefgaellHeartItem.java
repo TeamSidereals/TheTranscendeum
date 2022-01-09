@@ -10,8 +10,10 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.KefgaellHeartItemInHandTickProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
@@ -21,6 +23,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KefgaellHeartItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kefgaell_heart")
 	public static final Item block = null;
+
 	public KefgaellHeartItem(TheTranscendeumModElements instance) {
 		super(instance, 8);
 	}
@@ -29,6 +32,7 @@ public class KefgaellHeartItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.UNCOMMON));
@@ -56,11 +60,10 @@ public class KefgaellHeartItem extends TheTranscendeumModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			if (selected) {
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				KefgaellHeartItemInHandTickProcedure.executeProcedure($_dependencies);
-			}
+			if (selected)
+
+				KefgaellHeartItemInHandTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

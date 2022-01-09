@@ -28,6 +28,7 @@ public class BerthelArmorItem extends TheTranscendeumModElements.ModElement {
 	public static final Item legs = null;
 	@ObjectHolder("the_transcendeum:berthel_armor_boots")
 	public static final Item boots = null;
+
 	public BerthelArmorItem(TheTranscendeumModElements instance) {
 		super(instance, 129);
 	}
@@ -101,4 +102,5 @@ public class BerthelArmorItem extends TheTranscendeumModElements.ModElement {
 			}
 		}.setRegistryName("berthel_armor_boots"));
 	}
+
 }

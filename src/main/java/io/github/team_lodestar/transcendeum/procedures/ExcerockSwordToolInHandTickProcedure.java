@@ -9,6 +9,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModVariables;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class ExcerockSwordToolInHandTickProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -16,10 +17,10 @@ public class ExcerockSwordToolInHandTickProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack)
-				&& ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false))) {
-			if ((((PlayerEntity) entity).abilities.isFlying)) {
+		if ((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack
+				&& ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false)) {
+			if (((PlayerEntity) entity).abilities.isFlying) {
 				(((PlayerEntity) entity).abilities.isFlying) = false;
 			}
 		}

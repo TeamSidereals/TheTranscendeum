@@ -59,12 +59,11 @@ import io.github.team_lodestar.transcendeum.procedures.TranscendeumPlantsAdditio
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
-import com.google.common.collect.ImmutableMap;
-
 @TheTranscendeumModElements.ModElement.Tag
 public class SullgrowthBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullgrowth")
 	public static final Block block = null;
+
 	public SullgrowthBlock(TheTranscendeumModElements instance) {
 		super(instance, 113);
 		MinecraftForge.EVENT_BUS.register(this);
@@ -83,8 +82,10 @@ public class SullgrowthBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	private static Feature<BlockClusterFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
+
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
@@ -108,6 +109,7 @@ public class SullgrowthBlock extends TheTranscendeumModElements.ModElement {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:sullgrowth"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
@@ -119,17 +121,27 @@ public class SullgrowthBlock extends TheTranscendeumModElements.ModElement {
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
+
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.WEAKNESS, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.NETHER_SPROUT)
-					.hardnessAndResistance(0f, 0f).speedFactor(0.8f).setLightLevel(s -> 0));
+					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("sullgrowth");
+		}
+
+		@Override
+		public int getStewEffectDuration() {
+			return 5;
 		}
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(1, 0, 1, 15, 5, 15)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(1, 0, 1, 15, 5, 15)
+
+			)
+
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -164,10 +176,12 @@ public class SullgrowthBlock extends TheTranscendeumModElements.ModElement {
 				int y = pos.getY() + 1;
 				int z = pos.getZ();
 				BlockState blockstate = world.getBlockState(pos.up());
-				additionalCondition = TranscendeumPlantsAdditionalPlacinggrowthConditionProcedure.executeProcedure(ImmutableMap.of());
+				additionalCondition = TranscendeumPlantsAdditionalPlacinggrowthConditionProcedure.executeProcedure(Collections.EMPTY_MAP);
 			}
 			Block ground = state.getBlock();
-			return (ground == SullenSandBlock.block || ground == SullenSandstoneBlock.block) && additionalCondition;
+			return (ground == SullenSandBlock.block || ground == SullenSandstoneBlock.block
+
+			) && additionalCondition;
 		}
 
 		@Override

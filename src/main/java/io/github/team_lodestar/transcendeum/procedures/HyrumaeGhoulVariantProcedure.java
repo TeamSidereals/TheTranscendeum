@@ -34,6 +34,7 @@ public class HyrumaeGhoulVariantProcedure {
 			executeProcedure(dependencies);
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -42,9 +43,9 @@ public class HyrumaeGhoulVariantProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		double Variant = 0;
-		if ((entity instanceof HyrumaeGhoulEntity.CustomEntity)) {
-			if ((((HyrumaeGhoulEntity.CustomEntity) entity).getVariant() == 0)) {
-				Variant = (double) Math.ceil((2 * Math.random()));
+		if (entity instanceof HyrumaeGhoulEntity.CustomEntity) {
+			if (((HyrumaeGhoulEntity.CustomEntity) entity).getVariant() == 0) {
+				Variant = Math.ceil(2 * Math.random());
 				((HyrumaeGhoulEntity.CustomEntity) entity).setVariant((int) Variant);
 			}
 		}

@@ -49,11 +49,11 @@
     },
     "canRespawnHere": false,
     "hasFog": true,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": false,
+    "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "Blocks.PURPUR_BLOCK"
     },

@@ -46,6 +46,7 @@ public class TheTranscendeumMod {
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("the_transcendeum", "the_transcendeum"),
 			() -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public TheTranscendeumModElements elements;
+
 	public TheTranscendeumMod() {
 		elements = new TheTranscendeumModElements();
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -86,8 +87,10 @@ public class TheTranscendeumMod {
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
 		elements.registerSounds(event);
 	}
+
 	private static class TheTranscendeumModFMLBusEvents {
 		private final TheTranscendeumMod parent;
+
 		TheTranscendeumModFMLBusEvents(TheTranscendeumMod parent) {
 			this.parent = parent;
 		}

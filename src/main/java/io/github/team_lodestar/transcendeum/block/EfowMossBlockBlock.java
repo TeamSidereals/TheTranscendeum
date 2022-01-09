@@ -24,6 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class EfowMossBlockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:efow_moss_block")
 	public static final Block block = null;
+
 	public EfowMossBlockBlock(TheTranscendeumModElements instance) {
 		super(instance, 99);
 	}
@@ -34,6 +35,7 @@ public class EfowMossBlockBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 3)

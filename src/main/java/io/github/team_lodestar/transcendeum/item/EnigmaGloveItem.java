@@ -29,9 +29,11 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 
+import java.util.stream.Stream;
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.EnigmaGloveWhileBulletFlyingTickProcedure;
 import io.github.team_lodestar.transcendeum.procedures.EnigmaGloveRangedItemUsedProcedure;
@@ -46,6 +48,7 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletenigma_glove").setRegistryName("entitybulletenigma_glove");
+
 	public EnigmaGloveItem(TheTranscendeumModElements instance) {
 		super(instance, 142);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EnigmaGloveRenderer.ModelRegisterHandler());
@@ -56,6 +59,7 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> arrow);
 	}
+
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
 			super(new Item.Properties().group(TranscendeumGearItemGroup.tab).maxDamage(1500));
@@ -89,12 +93,10 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 3, 1);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
-					{
-						Map<String, Object> $_dependencies = new HashMap<>();
-						$_dependencies.put("entity", entity);
-						$_dependencies.put("itemstack", itemstack);
-						EnigmaGloveRangedItemUsedProcedure.executeProcedure($_dependencies);
-					}
+
+					EnigmaGloveRangedItemUsedProcedure.executeProcedure(
+							Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+									.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				}
 			}
 		}
@@ -149,19 +151,17 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
 			Entity imediatesourceentity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				EnigmaGloveWhileBulletFlyingTickProcedure.executeProcedure($_dependencies);
-			}
+
+			EnigmaGloveWhileBulletFlyingTickProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			if (this.inGround) {
 				this.remove();
 			}
 		}
 	}
+
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);

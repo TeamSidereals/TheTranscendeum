@@ -53,10 +53,12 @@ import com.google.common.collect.ImmutableList;
 @TheTranscendeumModElements.ModElement.Tag
 public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
+
 	public CrystaliaForestBiome(TheTranscendeumModElements instance) {
 		super(instance, 164);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -73,7 +75,7 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 								new ForkyTrunkPlacer(10, 2, 2), new TwoLayerFeature(1, 0, 2)))
 										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
 												new CustomCocoaTreeDecorator()))
-										.setMaxWaterDepth(0).build())
+										.build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(10, 0.1F, 1))));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
@@ -102,9 +104,11 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
 		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
 		public static com.mojang.serialization.Codec<LeaveVineTreeDecorator> codec;
@@ -115,6 +119,7 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 			tdt.setRegistryName("crystalia_forest_lvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -136,6 +141,7 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 			tdt.setRegistryName("crystalia_forest_tvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -157,6 +163,7 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 			tdt.setRegistryName("crystalia_forest_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		public CustomCocoaTreeDecorator() {
 			super(0.2f);
 		}

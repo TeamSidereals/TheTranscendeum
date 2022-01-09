@@ -19,10 +19,12 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class TranscendentOceanBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
+
 	public TranscendentOceanBiome(TheTranscendeumModElements instance) {
 		super(instance, 168);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -40,6 +42,7 @@ public class TranscendentOceanBiome extends TheTranscendeumModElements.ModElemen
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}

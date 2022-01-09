@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KelaveButtonBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_button")
 	public static final Block block = null;
+
 	public KelaveButtonBlock(TheTranscendeumModElements instance) {
 		super(instance, 57);
 	}
@@ -36,6 +37,7 @@ public class KelaveButtonBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends WoodButtonBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0));

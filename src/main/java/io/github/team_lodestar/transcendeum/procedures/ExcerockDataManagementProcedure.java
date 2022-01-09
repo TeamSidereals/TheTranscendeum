@@ -39,6 +39,7 @@ public class ExcerockDataManagementProcedure {
 			}
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -46,16 +47,15 @@ public class ExcerockDataManagementProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((((entity.isInWater()) || (entity.isSneaking())) || ((!(ItemTags.getCollection()
-				.getTagByID(new ResourceLocation(("forge:excerock_tools").toLowerCase(java.util.Locale.ENGLISH)))
-				.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem())))
-				&& (!(ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:excerock_tools").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains(
-								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem())))))) {
-			if (((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack)) {
+		if (entity.isInWater() || entity.isSneaking()
+				|| !(ItemTags.getCollection().getTagByID(new ResourceLocation("forge:excerock_tools"))
+						.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
+						&& !(ItemTags.getCollection().getTagByID(new ResourceLocation("forge:excerock_tools")).contains(
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem()))) {
+			if ((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack) {
 				{
-					boolean _setval = (boolean) (false);
+					boolean _setval = (false);
 					entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.DoExcerockAttack = _setval;
 						capability.syncPlayerVariables(entity);

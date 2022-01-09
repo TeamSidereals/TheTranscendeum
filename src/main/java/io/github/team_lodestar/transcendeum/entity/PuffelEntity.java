@@ -47,6 +47,7 @@ public class PuffelEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("puffel").setRegistryName("puffel");
+
 	public PuffelEntity(TheTranscendeumModElements instance) {
 		super(instance, 115);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PuffelRenderer.ModelRegisterHandler());
@@ -63,6 +64,7 @@ public class PuffelEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {

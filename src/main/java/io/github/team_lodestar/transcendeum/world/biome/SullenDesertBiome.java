@@ -43,10 +43,12 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class SullenDesertBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
+
 	public SullenDesertBiome(TheTranscendeumModElements instance) {
 		super(instance, 149);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -82,11 +84,13 @@ public class SullenDesertBiome extends TheTranscendeumModElements.ModElement {
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)),
 				BiomeDictionary.Type.WASTELAND, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY);
 	}
+
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
 		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
 		public static com.mojang.serialization.Codec<LeaveVineTreeDecorator> codec;
@@ -97,6 +101,7 @@ public class SullenDesertBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("sullen_desert_lvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -118,6 +123,7 @@ public class SullenDesertBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("sullen_desert_tvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -139,6 +145,7 @@ public class SullenDesertBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("sullen_desert_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		public CustomCocoaTreeDecorator() {
 			super(0.2f);
 		}

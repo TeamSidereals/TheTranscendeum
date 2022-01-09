@@ -15,6 +15,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class BurstPoppingEnchantment extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:burst_popping")
 	public static final Enchantment enchantment = null;
+
 	public BurstPoppingEnchantment(TheTranscendeumModElements instance) {
 		super(instance, 292);
 	}
@@ -23,6 +24,7 @@ public class BurstPoppingEnchantment extends TheTranscendeumModElements.ModEleme
 	public void initElements() {
 		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("burst_popping"));
 	}
+
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
 			super(Enchantment.Rarity.COMMON, EnchantmentType.ARMOR_HEAD, slots);

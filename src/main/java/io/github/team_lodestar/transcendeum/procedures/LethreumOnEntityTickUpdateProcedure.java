@@ -7,6 +7,7 @@ import java.util.Map;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class LethreumOnEntityTickUpdateProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -14,9 +15,9 @@ public class LethreumOnEntityTickUpdateProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((entity.isInWater())) {
-			entity.setMotion((Math.sin(Math.toRadians(((entity.rotationYaw) + 180))) - 1),
-					(Math.sin(Math.toRadians((0 - (entity.rotationPitch)))) + 0.4), (Math.cos(Math.toRadians((entity.rotationYaw))) - 1));
+		if (entity.isInWater()) {
+			entity.setMotion((Math.sin(Math.toRadians(entity.rotationYaw + 180)) - 1), (Math.sin(Math.toRadians(0 - entity.rotationPitch)) + 0.4),
+					(Math.cos(Math.toRadians(entity.rotationYaw)) - 1));
 		}
 	}
 }

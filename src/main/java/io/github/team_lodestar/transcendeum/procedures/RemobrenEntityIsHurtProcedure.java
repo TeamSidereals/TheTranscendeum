@@ -8,6 +8,7 @@ import java.util.Map;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class RemobrenEntityIsHurtProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -21,8 +22,8 @@ public class RemobrenEntityIsHurtProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if ((sourceentity instanceof LivingEntity)) {
-			if ((!(entity.getPersistentData().getBoolean("Active")))) {
+		if (sourceentity instanceof LivingEntity) {
+			if (!entity.getPersistentData().getBoolean("Active")) {
 				entity.getPersistentData().putBoolean("Active", (true));
 			}
 		}

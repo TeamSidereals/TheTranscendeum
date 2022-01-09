@@ -54,6 +54,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class LilacBudsBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:lilac_buds")
 	public static final Block block = null;
+
 	public LilacBudsBlock(TheTranscendeumModElements instance) {
 		super(instance, 408);
 		MinecraftForge.EVENT_BUS.register(this);
@@ -72,8 +73,10 @@ public class LilacBudsBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	private static Feature<BlockClusterFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
+
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
@@ -103,6 +106,7 @@ public class LilacBudsBlock extends TheTranscendeumModElements.ModElement {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:lilac_buds"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
@@ -112,12 +116,18 @@ public class LilacBudsBlock extends TheTranscendeumModElements.ModElement {
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
+
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.HASTE, 5,
 					Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT).hardnessAndResistance(0f, 0f)
 							.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true).setLightLevel(s -> 15));
 			setRegistryName("lilac_buds");
+		}
+
+		@Override
+		public int getStewEffectDuration() {
+			return 5;
 		}
 
 		@Override

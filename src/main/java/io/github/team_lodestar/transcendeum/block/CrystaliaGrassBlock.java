@@ -61,6 +61,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:crystalia_grass")
 	public static final Block block = null;
+
 	public CrystaliaGrassBlock(TheTranscendeumModElements instance) {
 		super(instance, 34);
 		MinecraftForge.EVENT_BUS.register(this);
@@ -79,8 +80,10 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	private static Feature<BlockClusterFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
+
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
@@ -104,6 +107,7 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:crystalia_grass"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
@@ -113,6 +117,7 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
+
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
@@ -121,9 +126,18 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
+		public int getStewEffectDuration() {
+			return 5;
+		}
+
+		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 8, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 8, 16)
+
+			)
+
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -152,7 +166,11 @@ public class CrystaliaGrassBlock extends TheTranscendeumModElements.ModElement {
 		@Override
 		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			Block ground = state.getBlock();
-			return (ground == CrystaliaTransiumBlock.block);
+			return (ground == CrystaliaTransiumBlock.block
+
+			)
+
+			;
 		}
 
 		@Override

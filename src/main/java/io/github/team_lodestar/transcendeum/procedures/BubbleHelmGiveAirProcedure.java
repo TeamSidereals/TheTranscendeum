@@ -54,10 +54,11 @@ public class BubbleHelmGiveAirProcedure {
 			}
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure BubbleHelmGiveAir!");
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure BubbleHelmGiveAir!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -75,85 +76,75 @@ public class BubbleHelmGiveAirProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure BubbleHelmGiveAir!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure BubbleHelmGiveAir!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure BubbleHelmGiveAir!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
-		if ((((entity instanceof LivingEntity)
-				? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-				: ItemStack.EMPTY).getItem() == BubbleBlock.block.asItem())) {
-			if (((EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
+		Entity entity = (Entity) dependencies.get("entity");
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD) : ItemStack.EMPTY)
+				.getItem() == BubbleBlock.block.asItem()) {
+			if (EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
 					((entity instanceof LivingEntity)
-							? ((LivingEntity) entity)
-									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-							: ItemStack.EMPTY))) != 0)) {
-				if ((entity.isInWater())) {
+							? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+							: ItemStack.EMPTY)) != 0) {
+				if (entity.isInWater()) {
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20,
-								(int) (2 + (EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
+								(int) (2 + EnchantmentHelper.getEnchantmentLevel(AquadynamicEnchantment.enchantment,
 										((entity instanceof LivingEntity)
-												? ((LivingEntity) entity).getItemStackFromSlot(
-														EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-												: ItemStack.EMPTY)))),
+												? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+												: ItemStack.EMPTY))),
 								(true), (false)));
 				}
 			}
-			if (((entity.getAir()) == 0)) {
+			if (entity.getAir() == 0) {
 				entity.setAir((int) 250);
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1)
-							+ ((EnchantmentHelper.getEnchantmentLevel(RefreshingEnchantment.enchantment,
+							+ EnchantmentHelper.getEnchantmentLevel(RefreshingEnchantment.enchantment,
 									((entity instanceof LivingEntity)
-											? ((LivingEntity) entity).getItemStackFromSlot(
-													EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-											: ItemStack.EMPTY)))
-									* 4)));
+											? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+											: ItemStack.EMPTY))
+									* 4));
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WATER_BREATHING, (int) 100, (int) 0, (true), (false)));
 				{
 					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
 							new AxisAlignedBB(
-									x - (((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
+									x - ((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
 											((entity instanceof LivingEntity)
-													? ((LivingEntity) entity).getItemStackFromSlot(
-															EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-													: ItemStack.EMPTY)))
+													? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+													: ItemStack.EMPTY))
 											* 3) / 2d),
-									y - (((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
+									y - ((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
 											((entity instanceof LivingEntity)
-													? ((LivingEntity) entity).getItemStackFromSlot(
-															EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-													: ItemStack.EMPTY)))
+													? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+													: ItemStack.EMPTY))
 											* 3) / 2d),
-									z - (((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
+									z - ((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
 											((entity instanceof LivingEntity)
-													? ((LivingEntity) entity).getItemStackFromSlot(
-															EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-													: ItemStack.EMPTY)))
+													? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+													: ItemStack.EMPTY))
 											* 3) / 2d),
-									x + (((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
+									x + ((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
 											((entity instanceof LivingEntity)
-													? ((LivingEntity) entity).getItemStackFromSlot(
-															EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-													: ItemStack.EMPTY)))
+													? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+													: ItemStack.EMPTY))
 											* 3) / 2d),
-									y + (((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
+									y + ((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
 											((entity instanceof LivingEntity)
-													? ((LivingEntity) entity).getItemStackFromSlot(
-															EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-													: ItemStack.EMPTY)))
+													? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+													: ItemStack.EMPTY))
 											* 3) / 2d),
-									z + (((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
+									z + ((EnchantmentHelper.getEnchantmentLevel(BurstPoppingEnchantment.enchantment,
 											((entity instanceof LivingEntity)
-													? ((LivingEntity) entity).getItemStackFromSlot(
-															EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-													: ItemStack.EMPTY)))
+													? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD)
+													: ItemStack.EMPTY))
 											* 3) / 2d)),
 							null).stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -161,7 +152,7 @@ public class BubbleHelmGiveAirProcedure {
 								}
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if ((!(entityiterator == entity))) {
+						if (!(entityiterator == entity)) {
 							entityiterator.attackEntityFrom(DamageSource.MAGIC, (float) 6);
 						}
 					}
@@ -170,8 +161,7 @@ public class BubbleHelmGiveAirProcedure {
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).inventory.armorInventory.set((int) 3, new ItemStack(Blocks.AIR));
 					else
-						((LivingEntity) entity).setItemStackToSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3),
-								new ItemStack(Blocks.AIR));
+						((LivingEntity) entity).setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(Blocks.AIR));
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}

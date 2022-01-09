@@ -68,7 +68,6 @@
     "vanillaTreeType": "Savanna trees",
     "treeType": 1,
     "minHeight": 5,
-    "maxWaterDepth": 0,
     "treeStem": {
       "value": "Blocks.LOG2#0"
     },
@@ -83,15 +82,24 @@
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
     "defaultFeatures": [],
     "spawnEntries": []
   }

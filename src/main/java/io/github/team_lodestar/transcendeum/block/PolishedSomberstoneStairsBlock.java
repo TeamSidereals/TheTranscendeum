@@ -24,6 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class PolishedSomberstoneStairsBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:polished_somberstone_stairs")
 	public static final Block block = null;
+
 	public PolishedSomberstoneStairsBlock(TheTranscendeumModElements instance) {
 		super(instance, 40);
 	}
@@ -34,6 +35,7 @@ public class PolishedSomberstoneStairsBlock extends TheTranscendeumModElements.M
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
 			super(() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 2f).setLightLevel(s -> 0)

@@ -36,10 +36,12 @@ import net.minecraft.block.IWaterLoggable;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.BubbleTouchGiveAirProcedure;
 import io.github.team_lodestar.transcendeum.procedures.BubbleClickEquipProcedure;
@@ -50,6 +52,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:bubble")
 	public static final Block block = null;
+
 	public BubbleBlock(TheTranscendeumModElements instance) {
 		super(instance, 86);
 	}
@@ -66,8 +69,10 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getTranslucent());
 	}
+
 	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WATER)
 					.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.bubble_column.bubble_pop")),
@@ -150,11 +155,9 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				BubbleTouchGiveAirProcedure.executeProcedure($_dependencies);
-			}
+
+			BubbleTouchGiveAirProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -163,15 +166,11 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BubbleClickEquipProcedure.executeProcedure($_dependencies);
-			}
+
+			BubbleClickEquipProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

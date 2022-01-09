@@ -39,10 +39,12 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 @TheTranscendeumModElements.ModElement.Tag
 public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
+
 	public ViridianMiresBiome(TheTranscendeumModElements instance) {
 		super(instance, 184);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -78,9 +80,11 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
 		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
 		public static com.mojang.serialization.Codec<LeaveVineTreeDecorator> codec;
@@ -91,6 +95,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("viridian_mires_lvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -112,6 +117,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("viridian_mires_tvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		@Override
 		protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
@@ -133,6 +139,7 @@ public class ViridianMiresBiome extends TheTranscendeumModElements.ModElement {
 			tdt.setRegistryName("viridian_mires_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
+
 		public CustomCocoaTreeDecorator() {
 			super(0.2f);
 		}

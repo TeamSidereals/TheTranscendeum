@@ -13,6 +13,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
 import io.github.team_lodestar.transcendeum.procedures.PoweredFlame5ConditionProcedure;
 import io.github.team_lodestar.transcendeum.procedures.Flame4ConditionProcedure;
 import io.github.team_lodestar.transcendeum.procedures.Flame3ConditionProcedure;
@@ -22,8 +27,6 @@ import io.github.team_lodestar.transcendeum.procedures.EnigmagloveoverlayDisplay
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
-
-import com.google.common.collect.ImmutableMap;
 
 @Mod.EventBusSubscriber
 public class EnigmagloveoverlayOverlay {
@@ -56,34 +59,45 @@ public class EnigmagloveoverlayOverlay {
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.disableAlphaTest();
-			if (EnigmagloveoverlayDisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
+			if (EnigmagloveoverlayDisplayOverlayIngameProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_empty.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -38, posY + -120, 0, 0, 16, 16, 16, 16);
+
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_empty.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -23, posY + -120, 0, 0, 16, 16, 16, 16);
+
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_empty.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -8, posY + -120, 0, 0, 16, 16, 16, 16);
+
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_empty.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 7, posY + -120, 0, 0, 16, 16, 16, 16);
+
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_empty.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 22, posY + -120, 0, 0, 16, 16, 16, 16);
-				if (Flame1ConditionProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
+
+				if (Flame1ConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_flame.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -38, posY + -120, 0, 0, 16, 16, 16, 16);
 				}
-				if (Flame2ConditionProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
+				if (Flame2ConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_flame.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -23, posY + -120, 0, 0, 16, 16, 16, 16);
 				}
-				if (Flame3ConditionProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
+				if (Flame3ConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_flame.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -8, posY + -120, 0, 0, 16, 16, 16, 16);
 				}
-				if (Flame4ConditionProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
+				if (Flame4ConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_flame.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 7, posY + -120, 0, 0, 16, 16, 16, 16);
 				}
-				if (PoweredFlame5ConditionProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
+				if (PoweredFlame5ConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_transcendeum:textures/enigma_bar_powered.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 22, posY + -120, 0, 0, 16, 16, 16, 16);
 				}

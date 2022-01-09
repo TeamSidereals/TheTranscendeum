@@ -2,12 +2,12 @@
   "replace": false,
   "values": [
     "the_transcendeum:arffel",
-    "the_transcendeum:puffel",
-    "the_transcendeum:arcedeon",
-    "the_transcendeum:hyrumae_ghoul",
-    "the_transcendeum:lethreum",
-    "the_transcendeum:kefgaell",
     "the_transcendeum:pisces",
-    "the_transcendeum:excrearer"
+    "the_transcendeum:arcedeon",
+    "the_transcendeum:lethreum",
+    "the_transcendeum:excrearer",
+    "the_transcendeum:hyrumae_ghoul",
+    "the_transcendeum:kefgaell",
+    "the_transcendeum:puffel"
   ]
 }

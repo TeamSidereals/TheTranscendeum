@@ -25,6 +25,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SaltrockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:saltrock")
 	public static final Block block = null;
+
 	public SaltrockBlock(TheTranscendeumModElements instance) {
 		super(instance, 41);
 	}
@@ -35,6 +36,7 @@ public class SaltrockBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.BASALT).hardnessAndResistance(2f, 2f).setLightLevel(s -> 0).harvestLevel(0)

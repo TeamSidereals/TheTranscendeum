@@ -6,7 +6,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
@@ -46,6 +45,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SullenSandBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullen_sand")
 	public static final Block block = null;
+
 	public SullenSandBlock(TheTranscendeumModElements instance) {
 		super(instance, 19);
 		MinecraftForge.EVENT_BUS.register(this);
@@ -58,10 +58,11 @@ public class SullenSandBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.SAND).sound(SoundType.SAND).hardnessAndResistance(0.6f, 0.6f).setLightLevel(s -> 0)
-					.harvestLevel(-1).harvestTool(ToolType.SHOVEL).setRequiresTool().speedFactor(0.9f).tickRandomly());
+					.speedFactor(0.9f).tickRandomly());
 			setRegistryName("sullen_sand");
 		}
 
@@ -78,12 +79,15 @@ public class SullenSandBlock extends TheTranscendeumModElements.ModElement {
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
+
 	private static Feature<OreFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	private static IRuleTestType<CustomRuleTest> CUSTOM_MATCH = null;
+
 	private static class CustomRuleTest extends RuleTest {
 		static final CustomRuleTest INSTANCE = new CustomRuleTest();
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
 			if (blockAt.getBlock() == SullenSandstoneBlock.block)
@@ -119,6 +123,7 @@ public class SullenSandBlock extends TheTranscendeumModElements.ModElement {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:sullen_sand"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;

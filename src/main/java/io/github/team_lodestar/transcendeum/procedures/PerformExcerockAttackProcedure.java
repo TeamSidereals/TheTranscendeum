@@ -56,15 +56,11 @@ public class PerformExcerockAttackProcedure {
 			}
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure PerformExcerockAttack!");
-			return;
-		}
-		if (dependencies.get("distance") == null) {
-			if (!dependencies.containsKey("distance"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency distance for procedure PerformExcerockAttack!");
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure PerformExcerockAttack!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -82,25 +78,30 @@ public class PerformExcerockAttackProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure PerformExcerockAttack!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure PerformExcerockAttack!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure PerformExcerockAttack!");
 			return;
 		}
+		if (dependencies.get("distance") == null) {
+			if (!dependencies.containsKey("distance"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency distance for procedure PerformExcerockAttack!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		double distance = dependencies.get("distance") instanceof Integer
 				? (int) dependencies.get("distance")
 				: (double) dependencies.get("distance");
-		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
-		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
-		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
 		double damage = 0;
-		if (((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack)) {
-			damage = (double) (5 + ((distance) / 0.5));
+		if ((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack) {
+			damage = (5 + distance / 0.5);
 			{
-				boolean _setval = (boolean) (false);
+				boolean _setval = (false);
 				entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.DoExcerockAttack = _setval;
 					capability.syncPlayerVariables(entity);
@@ -116,7 +117,7 @@ public class PerformExcerockAttackProcedure {
 							}
 						}.compareDistOf(x, y, z)).collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					if (((entityiterator instanceof LivingEntity) && (!(entityiterator == entity)))) {
+					if (entityiterator instanceof LivingEntity && !(entityiterator == entity)) {
 						entityiterator.attackEntityFrom(DamageSource.causeMobDamage((LivingEntity) entity), (float) damage);
 					}
 				}
@@ -133,13 +134,13 @@ public class PerformExcerockAttackProcedure {
 			if (world instanceof ServerWorld) {
 				((ServerWorld) world).spawnParticle(ParticleTypes.CLOUD, x, (y + 0.3), z, (int) 50, 3, 0.2, 3, 0);
 			}
-			if ((ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:excerock_tools").toLowerCase(java.util.Locale.ENGLISH)))
-					.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))) {
+			if (ItemTags.getCollection().getTagByID(new ResourceLocation("forge:excerock_tools"))
+					.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem())) {
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
 				}
-			} else if ((ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:excerock_tools").toLowerCase(java.util.Locale.ENGLISH)))
-					.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem()))) {
+			} else if (ItemTags.getCollection().getTagByID(new ResourceLocation("forge:excerock_tools"))
+					.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem())) {
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).swing(Hand.OFF_HAND, true);
 				}

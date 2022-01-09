@@ -25,6 +25,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SomberstonestairsBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:somberstone_stairs")
 	public static final Block block = null;
+
 	public SomberstonestairsBlock(TheTranscendeumModElements instance) {
 		super(instance, 17);
 	}
@@ -35,6 +36,7 @@ public class SomberstonestairsBlock extends TheTranscendeumModElements.ModElemen
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
 			super(() -> new Block(

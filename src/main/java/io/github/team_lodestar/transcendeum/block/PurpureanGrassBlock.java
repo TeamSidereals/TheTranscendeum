@@ -60,6 +60,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class PurpureanGrassBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:purpurean_grass")
 	public static final Block block = null;
+
 	public PurpureanGrassBlock(TheTranscendeumModElements instance) {
 		super(instance, 409);
 		MinecraftForge.EVENT_BUS.register(this);
@@ -78,8 +79,10 @@ public class PurpureanGrassBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	private static Feature<BlockClusterFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
+
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
@@ -103,6 +106,7 @@ public class PurpureanGrassBlock extends TheTranscendeumModElements.ModElement {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:purpurean_grass"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
@@ -112,6 +116,7 @@ public class PurpureanGrassBlock extends TheTranscendeumModElements.ModElement {
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
+
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.HASTE, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
@@ -120,9 +125,18 @@ public class PurpureanGrassBlock extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
+		public int getStewEffectDuration() {
+			return 5;
+		}
+
+		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(1, 0, 1, 15, 8, 15)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(1, 0, 1, 15, 8, 15)
+
+			)
+
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

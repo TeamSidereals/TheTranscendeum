@@ -15,6 +15,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KiariteIngotItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kiarite_ingot")
 	public static final Item block = null;
+
 	public KiariteIngotItem(TheTranscendeumModElements instance) {
 		super(instance, 4);
 	}
@@ -23,6 +24,7 @@ public class KiariteIngotItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));

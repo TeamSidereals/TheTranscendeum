@@ -34,10 +34,12 @@ import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.SullenThornEntityCollidesInTheBlockProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
@@ -47,6 +49,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SullenThornBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:sullen_thorn")
 	public static final Block block = null;
+
 	public SullenThornBlock(TheTranscendeumModElements instance) {
 		super(instance, 114);
 	}
@@ -63,9 +66,11 @@ public class SullenThornBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(0.1f, 0.1f).setLightLevel(s -> 0)
 					.doesNotBlockMovement().notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
@@ -131,11 +136,9 @@ public class SullenThornBlock extends TheTranscendeumModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				SullenThornEntityCollidesInTheBlockProcedure.executeProcedure($_dependencies);
-			}
+
+			SullenThornEntityCollidesInTheBlockProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

@@ -12,8 +12,10 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.VirililyRightClickedinAirProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
@@ -23,6 +25,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class VirililyItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:virilily")
 	public static final Item block = null;
+
 	public VirililyItem(TheTranscendeumModElements instance) {
 		super(instance, 62);
 	}
@@ -31,6 +34,7 @@ public class VirililyItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(TranscendeumBlocksItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
@@ -59,13 +63,11 @@ public class VirililyItem extends TheTranscendeumModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("itemstack", itemstack);
-				$_dependencies.put("world", world);
-				VirililyRightClickedinAirProcedure.executeProcedure($_dependencies);
-			}
+
+			VirililyRightClickedinAirProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+							new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return ar;
 		}
 	}

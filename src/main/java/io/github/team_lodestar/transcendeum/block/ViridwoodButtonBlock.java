@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ViridwoodButtonBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridwood_button")
 	public static final Block block = null;
+
 	public ViridwoodButtonBlock(TheTranscendeumModElements instance) {
 		super(instance, 95);
 	}
@@ -36,6 +37,7 @@ public class ViridwoodButtonBlock extends TheTranscendeumModElements.ModElement 
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends WoodButtonBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0));

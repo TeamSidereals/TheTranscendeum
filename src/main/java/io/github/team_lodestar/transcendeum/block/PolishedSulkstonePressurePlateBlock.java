@@ -24,6 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class PolishedSulkstonePressurePlateBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:polished_sulkstone_pressure_plate")
 	public static final Block block = null;
+
 	public PolishedSulkstonePressurePlateBlock(TheTranscendeumModElements instance) {
 		super(instance, 77);
 	}
@@ -34,6 +35,7 @@ public class PolishedSulkstonePressurePlateBlock extends TheTranscendeumModEleme
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends PressurePlateBlock {
 		public CustomBlock() {
 			super(Sensitivity.MOBS, Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.9f, 0.9f)

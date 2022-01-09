@@ -17,6 +17,7 @@ import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup
 public class TranscendeumItem extends Item {
 	@ObjectHolder("the_transcendeum:transcendeum")
 	public static final Item block = null;
+
 	public TranscendeumItem() {
 		super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxDamage(64));
 	}
