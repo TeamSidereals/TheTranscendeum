@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "thelyarium_block_crafting",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      },
+      {
+        "value": "CUSTOM:ThelyariumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ThelyariumBlock"
+    },
+    "name": "thelyarium_block_crafting",
+    "namespace": "mod"
+  }
+}

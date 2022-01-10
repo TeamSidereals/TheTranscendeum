@@ -4724,6 +4724,32 @@
       "locked_code": false,
       "registry_name": "border_spike_5",
       "path": "~/Structures/Natural"
+    },
+    {
+      "name": "ThelyariumBlock",
+      "type": "block",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_block"
+    },
+    {
+      "name": "ThelyariumBlockCrafting",
+      "type": "recipe",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_block_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "ThelyariumIngotFromBlock",
+      "type": "recipe",
+      "sortid": 422,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_ingot_from_block",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [
@@ -4751,6 +4777,7 @@
     "en_us": {
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.kiarite_block": "Kiarite Block",
+      "block.the_transcendeum.thelyarium_block": "Block of Thelyarium ",
       "enchantment.the_transcendeum.burst_popping": "Burst Popping",
       "block.the_transcendeum.excerock": "Excerock",
       "item.the_transcendeum.test": "Test",
