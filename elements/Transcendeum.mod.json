@@ -48,7 +48,7 @@
       "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": false,
-    "hasFog": true,
+    "hasFog": false,
     "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",

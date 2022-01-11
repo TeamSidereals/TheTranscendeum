@@ -159,7 +159,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 
 			@Override
 			public boolean func_230493_a_(int x, int y) {
-				return true;
+				return false;
 			}
 		};
 		DeferredWorkQueue.runLater(() -> {

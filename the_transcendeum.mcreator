@@ -4750,6 +4750,14 @@
       "locked_code": false,
       "registry_name": "thelyarium_ingot_from_block",
       "path": "~/recipes"
+    },
+    {
+      "name": "HethiliteBlock",
+      "type": "block",
+      "sortid": 423,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hethilite_block"
     }
   ],
   "variable_elements": [
@@ -4971,6 +4979,7 @@
       "entity.the_transcendeum.pisces": "Pisces",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "block.the_transcendeum.sulkstone_stairs": "Sulkstone Stairs",
+      "block.the_transcendeum.hethilite_block": "Hethilite Block",
       "biome.the_transcendeum.kalaisic_wastes": "Kalaisic Wastes",
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
