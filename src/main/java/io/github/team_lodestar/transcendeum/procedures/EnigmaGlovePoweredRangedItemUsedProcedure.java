@@ -19,6 +19,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModVariables;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class EnigmaGlovePoweredRangedItemUsedProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -32,7 +33,7 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if (((!(new Object() {
+		if (!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayerEntity) {
 					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
@@ -43,21 +44,20 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity))) && (TheTranscendeumModVariables.NoEnigmaCooldown == (false)))) {
+		}.checkGamemode(entity)) && TheTranscendeumModVariables.NoEnigmaCooldown == false) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(EnigmaGloveItem.block, (int) 150);
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(EnigmaGlovePoweredItem.block, (int) 150);
 		}
 		{
-			double _setval = (double) 0;
+			double _setval = 0;
 			entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.TTEnigmaCharge = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == (itemstack)
-				.getItem())) {
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
 			entity.getPersistentData().putDouble("TT:EnigmaGloveDurability",
 					((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getDamage()));
 			if (entity instanceof LivingEntity) {
@@ -69,8 +69,8 @@ public class EnigmaGlovePoweredRangedItemUsedProcedure {
 			}
 			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
 					.setDamage((int) (entity.getPersistentData().getDouble("TT:EnigmaGloveDurability")));
-		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == (itemstack)
-				.getItem())) {
+		} else if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == itemstack
+				.getItem()) {
 			entity.getPersistentData().putDouble("TT:EnigmaGloveDurability",
 					((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)).getDamage()));
 			if (entity instanceof LivingEntity) {

@@ -38,6 +38,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class BerthelCrystalBlockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_crystal_block")
 	public static final Block block = null;
+
 	public BerthelCrystalBlockBlock(TheTranscendeumModElements instance) {
 		super(instance, 67);
 	}
@@ -54,8 +55,10 @@ public class BerthelCrystalBlockBlock extends TheTranscendeumModElements.ModElem
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).setLightLevel(s -> 7).notSolid()
 					.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true).setOpaque((bs, br, bp) -> false));

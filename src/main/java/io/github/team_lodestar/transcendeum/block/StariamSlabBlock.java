@@ -27,6 +27,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class StariamSlabBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:stariam_slab")
 	public static final Block block = null;
+
 	public StariamSlabBlock(TheTranscendeumModElements instance) {
 		super(instance, 27);
 	}
@@ -37,6 +38,7 @@ public class StariamSlabBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0));

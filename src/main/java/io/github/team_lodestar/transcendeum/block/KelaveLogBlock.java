@@ -30,6 +30,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KelaveLogBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_log")
 	public static final Block block = null;
+
 	public KelaveLogBlock(TheTranscendeumModElements instance) {
 		super(instance, 50);
 	}
@@ -40,8 +41,10 @@ public class KelaveLogBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 2f).setLightLevel(s -> 0));
 			this.setDefaultState(this.stateContainer.getBaseState().with(AXIS, Direction.Axis.Y));

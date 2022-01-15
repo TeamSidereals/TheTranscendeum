@@ -33,21 +33,22 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.ChrysaliumVineNeighbourBlockChangesProcedure;
 import io.github.team_lodestar.transcendeum.procedures.ChrysaliumVineBlockValidPlacementConditionProcedure;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
-import com.google.common.collect.ImmutableMap;
-
 @TheTranscendeumModElements.ModElement.Tag
 public class ChrysaliumVineBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:chrysalium_vine")
 	public static final Block block = null;
+
 	public ChrysaliumVineBlock(TheTranscendeumModElements instance) {
 		super(instance, 181);
 	}
@@ -63,8 +64,10 @@ public class ChrysaliumVineBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.NETHER_PLANTS).sound(SoundType.NETHER_VINE).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0)
 					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
@@ -89,7 +92,10 @@ public class ChrysaliumVineBlock extends TheTranscendeumModElements.ModElement {
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();
-				return ChrysaliumVineBlockValidPlacementConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world));
+				return ChrysaliumVineBlockValidPlacementConditionProcedure.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 			return super.isValidPosition(blockstate, worldIn, pos);
 		}
@@ -148,14 +154,11 @@ public class ChrysaliumVineBlock extends TheTranscendeumModElements.ModElement {
 			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
 			} else {
 			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ChrysaliumVineNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
-			}
+
+			ChrysaliumVineNeighbourBlockChangesProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

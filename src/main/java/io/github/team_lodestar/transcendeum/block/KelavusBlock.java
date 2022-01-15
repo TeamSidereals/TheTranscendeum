@@ -25,6 +25,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KelavusBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelavus")
 	public static final Block block = null;
+
 	public KelavusBlock(TheTranscendeumModElements instance) {
 		super(instance, 60);
 	}
@@ -35,6 +36,7 @@ public class KelavusBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.LEAVES).sound(SoundType.SHROOMLIGHT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0));

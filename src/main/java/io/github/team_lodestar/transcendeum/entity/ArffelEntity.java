@@ -47,6 +47,7 @@ public class ArffelEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("arffel").setRegistryName("arffel");
+
 	public ArffelEntity(TheTranscendeumModElements instance) {
 		super(instance, 116);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ArffelRenderer.ModelRegisterHandler());
@@ -63,6 +64,7 @@ public class ArffelEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {

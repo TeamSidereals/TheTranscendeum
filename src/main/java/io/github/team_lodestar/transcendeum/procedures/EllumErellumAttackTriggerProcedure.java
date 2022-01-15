@@ -42,6 +42,7 @@ public class EllumErellumAttackTriggerProcedure {
 			}
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -55,9 +56,9 @@ public class EllumErellumAttackTriggerProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if (((sourceentity instanceof EllumEntity.CustomEntity) || (sourceentity instanceof ErellumEntity.CustomEntity))) {
-			entity.setMotion((Math.sin(Math.toRadians(((sourceentity.rotationYaw) + 180))) * (-0.5)), 0.35,
-					(Math.cos(Math.toRadians((sourceentity.rotationYaw))) * (-0.5)));
+		if (sourceentity instanceof EllumEntity.CustomEntity || sourceentity instanceof ErellumEntity.CustomEntity) {
+			entity.setMotion((Math.sin(Math.toRadians(sourceentity.rotationYaw + 180)) * (-0.5)), 0.35,
+					(Math.cos(Math.toRadians(sourceentity.rotationYaw)) * (-0.5)));
 		}
 	}
 }

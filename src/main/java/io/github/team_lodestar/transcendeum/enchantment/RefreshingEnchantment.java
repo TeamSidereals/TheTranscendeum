@@ -15,6 +15,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class RefreshingEnchantment extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:refreshing")
 	public static final Enchantment enchantment = null;
+
 	public RefreshingEnchantment(TheTranscendeumModElements instance) {
 		super(instance, 241);
 	}
@@ -23,6 +24,7 @@ public class RefreshingEnchantment extends TheTranscendeumModElements.ModElement
 	public void initElements() {
 		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("refreshing"));
 	}
+
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
 			super(Enchantment.Rarity.COMMON, EnchantmentType.ARMOR_HEAD, slots);

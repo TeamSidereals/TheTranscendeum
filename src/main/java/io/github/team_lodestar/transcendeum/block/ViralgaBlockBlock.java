@@ -36,6 +36,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ViralgaBlockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viralga_block")
 	public static final Block block = null;
+
 	public ViralgaBlockBlock(TheTranscendeumModElements instance) {
 		super(instance, 328);
 	}
@@ -51,6 +52,7 @@ public class ViralgaBlockBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.PLANTS).sound(SoundType.WET_GRASS).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0)
@@ -71,7 +73,11 @@ public class ViralgaBlockBlock extends TheTranscendeumModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1, 16)
+
+			)
+
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

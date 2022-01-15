@@ -21,6 +21,7 @@ import net.minecraft.client.Minecraft;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class EfflyParticle {
 	public static final BasicParticleType particle = new BasicParticleType(false);
+
 	@SubscribeEvent
 	public static void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
 		event.getRegistry().register(particle.setRegistryName("effly"));
@@ -31,9 +32,11 @@ public class EfflyParticle {
 	public static void registerParticle(ParticleFactoryRegisterEvent event) {
 		Minecraft.getInstance().particles.registerFactory(particle, CustomParticleFactory::new);
 	}
+
 	@OnlyIn(Dist.CLIENT)
 	private static class CustomParticle extends SpriteTexturedParticle {
 		private final IAnimatedSprite spriteSet;
+
 		protected CustomParticle(ClientWorld world, double x, double y, double z, double vx, double vy, double vz, IAnimatedSprite spriteSet) {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
@@ -67,6 +70,7 @@ public class EfflyParticle {
 	@OnlyIn(Dist.CLIENT)
 	private static class CustomParticleFactory implements IParticleFactory<BasicParticleType> {
 		private final IAnimatedSprite spriteSet;
+
 		public CustomParticleFactory(IAnimatedSprite spriteSet) {
 			this.spriteSet = spriteSet;
 		}

@@ -33,6 +33,7 @@ public class EllumRenderer {
 					{
 						this.addLayer(new GlowingLayer<>(this));
 					}
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("the_transcendeum:textures/ellum.png");
@@ -73,6 +74,7 @@ public class EllumRenderer {
 		private final ModelRenderer tentacle4;
 		private final ModelRenderer tentacle5;
 		private final ModelRenderer tentacle6;
+
 		public Modelellum() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -158,6 +160,7 @@ public class EllumRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.tentacle1.rotateAngleZ = f3 / (180F / (float) Math.PI);
 			this.tentacle6.rotateAngleZ = f4 / (180F / (float) Math.PI);
 			this.tentacle4.rotateAngleZ = f4 / (180F / (float) Math.PI);
@@ -166,4 +169,5 @@ public class EllumRenderer {
 			this.tentacle3.rotateAngleZ = f3 / (180F / (float) Math.PI);
 		}
 	}
+
 }

@@ -20,6 +20,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class IndigoSoupItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:indigo_soup")
 	public static final Item block = null;
+
 	public IndigoSoupItem(TheTranscendeumModElements instance) {
 		super(instance, 7);
 	}
@@ -28,10 +29,13 @@ public class IndigoSoupItem extends TheTranscendeumModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new FoodItemCustom());
 	}
+
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(5).saturation(0.7f).build()));
+					.food((new Food.Builder()).hunger(5).saturation(0.7f)
+
+							.build()));
 			setRegistryName("indigo_soup");
 		}
 

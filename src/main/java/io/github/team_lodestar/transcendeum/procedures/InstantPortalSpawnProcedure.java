@@ -21,10 +21,11 @@ import io.github.team_lodestar.transcendeum.item.TranscendeumItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class InstantPortalSpawnProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure InstantPortalSpawn!");
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure InstantPortalSpawn!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -42,16 +43,16 @@ public class InstantPortalSpawnProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure InstantPortalSpawn!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure InstantPortalSpawn!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure InstantPortalSpawn!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
 		if (world instanceof ServerWorld) {
 			Template template = ((ServerWorld) world).getStructureTemplateManager()
 					.getTemplateDefaulted(new ResourceLocation("the_transcendeum", "instant_portal"));

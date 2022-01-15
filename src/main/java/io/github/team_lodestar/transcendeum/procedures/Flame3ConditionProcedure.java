@@ -8,6 +8,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModVariables;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class Flame3ConditionProcedure {
+
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -15,10 +16,10 @@ public class Flame3ConditionProcedure {
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TheTranscendeumModVariables.PlayerVariables())).TTEnigmaCharge) >= 3)) {
-			return (true);
+		if ((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheTranscendeumModVariables.PlayerVariables())).TTEnigmaCharge >= 3) {
+			return true;
 		}
-		return (false);
+		return false;
 	}
 }

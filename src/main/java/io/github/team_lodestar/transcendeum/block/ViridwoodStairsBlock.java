@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ViridwoodStairsBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridwood_stairs")
 	public static final Block block = null;
+
 	public ViridwoodStairsBlock(TheTranscendeumModElements instance) {
 		super(instance, 96);
 	}
@@ -36,6 +37,7 @@ public class ViridwoodStairsBlock extends TheTranscendeumModElements.ModElement 
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
 			super(() -> new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0))

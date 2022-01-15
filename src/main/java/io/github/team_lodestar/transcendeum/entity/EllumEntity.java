@@ -55,6 +55,7 @@ public class EllumEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 0.6f)).build("ellum").setRegistryName("ellum");
+
 	public EllumEntity(TheTranscendeumModElements instance) {
 		super(instance, 404);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EllumRenderer.ModelRegisterHandler());
@@ -88,6 +89,7 @@ public class EllumEntity extends TheTranscendeumModElements.ModElement {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.NO_RESTRICTIONS,
 				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canSpawnOn);
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
@@ -126,6 +128,7 @@ public class EllumEntity extends TheTranscendeumModElements.ModElement {
 				{
 					this.setMutexFlags(EnumSet.of(Goal.Flag.MOVE));
 				}
+
 				public boolean shouldExecute() {
 					if (CustomEntity.this.getAttackTarget() != null && !CustomEntity.this.getMoveHelper().isUpdating()) {
 						return true;

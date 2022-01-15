@@ -24,6 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ExcerockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:excerock")
 	public static final Block block = null;
+
 	public ExcerockBlock(TheTranscendeumModElements instance) {
 		super(instance, 104);
 	}
@@ -34,6 +35,7 @@ public class ExcerockBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 6f).setLightLevel(s -> 0).tickRandomly());

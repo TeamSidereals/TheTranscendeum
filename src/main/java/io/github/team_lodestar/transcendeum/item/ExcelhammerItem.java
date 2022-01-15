@@ -17,8 +17,10 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.ExcerockSwordToolInHandTickProcedure;
 import io.github.team_lodestar.transcendeum.procedures.ExcerockSwordRightClickedInAirProcedure;
@@ -31,6 +33,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ExcelhammerItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:excelhammer")
 	public static final Item block = null;
+
 	public ExcelhammerItem(TheTranscendeumModElements instance) {
 		super(instance, 403);
 	}
@@ -69,12 +72,10 @@ public class ExcelhammerItem extends TheTranscendeumModElements.ModElement {
 				double x = entity.getPosX();
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("itemstack", itemstack);
-					ExcerockSwordRightClickedInAirProcedure.executeProcedure($_dependencies);
-				}
+
+				ExcerockSwordRightClickedInAirProcedure.executeProcedure(
+						Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+								.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}
 
@@ -84,14 +85,11 @@ public class ExcelhammerItem extends TheTranscendeumModElements.ModElement {
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					ExcelhammerBlockDestroyedWithToolProcedure.executeProcedure($_dependencies);
-				}
+
+				ExcelhammerBlockDestroyedWithToolProcedure.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}
 
@@ -101,11 +99,10 @@ public class ExcelhammerItem extends TheTranscendeumModElements.ModElement {
 				double x = entity.getPosX();
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
-				if (selected) {
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					ExcerockSwordToolInHandTickProcedure.executeProcedure($_dependencies);
-				}
+				if (selected)
+
+					ExcerockSwordToolInHandTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 		}.setRegistryName("excelhammer"));
 	}

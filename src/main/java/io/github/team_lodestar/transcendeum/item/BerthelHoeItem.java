@@ -11,8 +11,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.entity.LivingEntity;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.BerthelSharpBladeProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
@@ -22,6 +24,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class BerthelHoeItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:berthel_hoe")
 	public static final Item block = null;
+
 	public BerthelHoeItem(TheTranscendeumModElements instance) {
 		super(instance, 128);
 	}
@@ -60,14 +63,11 @@ public class BerthelHoeItem extends TheTranscendeumModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				World world = entity.world;
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("sourceentity", sourceentity);
-					$_dependencies.put("itemstack", itemstack);
-					$_dependencies.put("world", world);
-					BerthelSharpBladeProcedure.executeProcedure($_dependencies);
-				}
+
+				BerthelSharpBladeProcedure.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+								new AbstractMap.SimpleEntry<>("sourceentity", sourceentity), new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}
 		}.setRegistryName("berthel_hoe"));

@@ -16,10 +16,11 @@ import java.util.Comparator;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class ArcedeonOnEntityTickUpdateProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure ArcedeonOnEntityTickUpdate!");
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure ArcedeonOnEntityTickUpdate!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -37,23 +38,23 @@ public class ArcedeonOnEntityTickUpdateProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure ArcedeonOnEntityTickUpdate!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure ArcedeonOnEntityTickUpdate!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure ArcedeonOnEntityTickUpdate!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
-		if ((entity.isBeingRidden())) {
+		Entity entity = (Entity) dependencies.get("entity");
+		if (entity.isBeingRidden()) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.DOLPHINS_GRACE, (int) 2, (int) 1, (false), (false)));
 		}
-		if ((((entity.getPersistentData().getDouble("TT:ArcedeonVerticalMovement")) == 1) && (entity.isInWater()))) {
+		if (entity.getPersistentData().getDouble("TT:ArcedeonVerticalMovement") == 1 && entity.isInWater()) {
 			entity.setMotion((entity.getMotion().getX()), 0.3, (entity.getMotion().getZ()));
-		} else if (((entity.getPersistentData().getDouble("TT:ArcedeonVerticalMovement")) == (-1))) {
+		} else if (entity.getPersistentData().getDouble("TT:ArcedeonVerticalMovement") == -1) {
 			entity.setMotion((entity.getMotion().getX()), (-0.3), (entity.getMotion().getZ()));
 		}
 		{
@@ -66,7 +67,7 @@ public class ArcedeonOnEntityTickUpdateProcedure {
 						}
 					}.compareDistOf(x, y, z)).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (((entityiterator.getRidingEntity()) == entity)) {
+				if ((entityiterator.getRidingEntity()) == entity) {
 					if (entityiterator instanceof LivingEntity)
 						((LivingEntity) entityiterator)
 								.addPotionEffect(new EffectInstance(Effects.WATER_BREATHING, (int) 2, (int) 1, (false), (true)));

@@ -46,6 +46,7 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(1.2f, 2.7f)).build("excrearer").setRegistryName("excrearer");
+
 	public ExcrearerEntity(TheTranscendeumModElements instance) {
 		super(instance, 123);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ExcrearerRenderer.ModelRegisterHandler());
@@ -62,6 +63,7 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {

@@ -35,6 +35,7 @@ public class ThelyariumArmorItem extends TheTranscendeumModElements.ModElement {
 	public static final Item legs = null;
 	@ObjectHolder("the_transcendeum:thelyarium_boots")
 	public static final Item boots = null;
+
 	public ThelyariumArmorItem(TheTranscendeumModElements instance) {
 		super(instance, 135);
 	}
@@ -156,10 +157,12 @@ public class ThelyariumArmorItem extends TheTranscendeumModElements.ModElement {
 			}
 		}.setRegistryName("thelyarium_boots"));
 	}
+
 	public static class Modelthelyarium_layer_2 extends EntityModel<Entity> {
 		private final ModelRenderer body;
 		private final ModelRenderer rightleg;
 		private final ModelRenderer leftleg;
+
 		public Modelthelyarium_layer_2() {
 			textureWidth = 64;
 			textureHeight = 32;
@@ -213,6 +216,7 @@ public class ThelyariumArmorItem extends TheTranscendeumModElements.ModElement {
 		private final ModelRenderer rightboot_r1;
 		private final ModelRenderer leftboot;
 		private final ModelRenderer leftboot_r1;
+
 		public Modelthelyarium_layer_1() {
 			textureWidth = 80;
 			textureHeight = 32;
@@ -308,4 +312,5 @@ public class ThelyariumArmorItem extends TheTranscendeumModElements.ModElement {
 			modelRenderer.rotateAngleZ = z;
 		}
 	}
+
 }

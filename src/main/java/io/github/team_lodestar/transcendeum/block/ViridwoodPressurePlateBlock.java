@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ViridwoodPressurePlateBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridwood_pressure_plate")
 	public static final Block block = null;
+
 	public ViridwoodPressurePlateBlock(TheTranscendeumModElements instance) {
 		super(instance, 94);
 	}
@@ -36,6 +37,7 @@ public class ViridwoodPressurePlateBlock extends TheTranscendeumModElements.ModE
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends PressurePlateBlock {
 		public CustomBlock() {
 			super(Sensitivity.EVERYTHING,

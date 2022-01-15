@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ViridwoodFenceGateBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:viridwood_fence_gate")
 	public static final Block block = null;
+
 	public ViridwoodFenceGateBlock(TheTranscendeumModElements instance) {
 		super(instance, 92);
 	}
@@ -36,6 +37,7 @@ public class ViridwoodFenceGateBlock extends TheTranscendeumModElements.ModEleme
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends FenceGateBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0));

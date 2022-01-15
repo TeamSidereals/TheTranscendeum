@@ -27,6 +27,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KelaveFenceBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_fence")
 	public static final Block block = null;
+
 	public KelaveFenceBlock(TheTranscendeumModElements instance) {
 		super(instance, 55);
 	}
@@ -37,6 +38,7 @@ public class KelaveFenceBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends FenceBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0));

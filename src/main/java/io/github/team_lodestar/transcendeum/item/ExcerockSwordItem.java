@@ -17,6 +17,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ExcerockSwordItem extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:excerock_sword")
 	public static final Item block = null;
+
 	public ExcerockSwordItem(TheTranscendeumModElements instance) {
 		super(instance, 399);
 	}

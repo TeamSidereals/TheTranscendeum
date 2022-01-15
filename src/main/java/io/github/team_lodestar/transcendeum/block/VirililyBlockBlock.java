@@ -37,22 +37,23 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.LilyPadValidPlacementConditionProcedure;
 import io.github.team_lodestar.transcendeum.procedures.LilyPadBoatCollisionProcedure;
 import io.github.team_lodestar.transcendeum.item.VirililyItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
-import com.google.common.collect.ImmutableMap;
-
 @TheTranscendeumModElements.ModElement.Tag
 public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:virilily_block")
 	public static final Block block = null;
+
 	public VirililyBlockBlock(TheTranscendeumModElements instance) {
 		super(instance, 194);
 	}
@@ -68,8 +69,10 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.PLANTS).sound(SoundType.LILY_PADS).hardnessAndResistance(0f, 0f).setLightLevel(s -> 3)
 					.speedFactor(1.0999999999999999f).jumpFactor(1.2000000000000002f).notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
@@ -93,13 +96,29 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(16, 0, 16, 0, 1.4, 0)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(16, 0, 16, 0, 1.4, 0)
+
+					)
+
+							.withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1.4, 16)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1.4, 16)
+
+					)
+
+							.withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(16, 0, 0, 0, 1.4, 16)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(16, 0, 0, 0, 1.4, 16)
+
+					)
+
+							.withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(0, 0, 16, 16, 1.4, 0)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(0, 0, 16, 16, 1.4, 0)
+
+					)
+
+							.withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 
@@ -129,7 +148,10 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();
-				return LilyPadValidPlacementConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world));
+				return LilyPadValidPlacementConditionProcedure.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 			return super.isValidPosition(blockstate, worldIn, pos);
 		}
@@ -161,15 +183,11 @@ public class VirililyBlockBlock extends TheTranscendeumModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				LilyPadBoatCollisionProcedure.executeProcedure($_dependencies);
-			}
+
+			LilyPadBoatCollisionProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

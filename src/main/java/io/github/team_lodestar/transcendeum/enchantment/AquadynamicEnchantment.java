@@ -15,6 +15,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class AquadynamicEnchantment extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:aquadynamic")
 	public static final Enchantment enchantment = null;
+
 	public AquadynamicEnchantment(TheTranscendeumModElements instance) {
 		super(instance, 250);
 	}
@@ -23,6 +24,7 @@ public class AquadynamicEnchantment extends TheTranscendeumModElements.ModElemen
 	public void initElements() {
 		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("aquadynamic"));
 	}
+
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
 			super(Enchantment.Rarity.COMMON, EnchantmentType.ARMOR_HEAD, slots);

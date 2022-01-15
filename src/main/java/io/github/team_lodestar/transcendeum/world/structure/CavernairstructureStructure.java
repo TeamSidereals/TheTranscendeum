@@ -28,9 +28,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
 
+import java.util.stream.Stream;
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.CavernScheduleTickUpdateProcedure;
 
@@ -38,6 +40,7 @@ import io.github.team_lodestar.transcendeum.procedures.CavernScheduleTickUpdateP
 public class CavernairstructureStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
+
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
@@ -74,14 +77,11 @@ public class CavernairstructureStructure {
 									new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
 											.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
 									random);
-							{
-								Map<String, Object> $_dependencies = new HashMap<>();
-								$_dependencies.put("x", x);
-								$_dependencies.put("y", y);
-								$_dependencies.put("z", z);
-								$_dependencies.put("world", world);
-								CavernScheduleTickUpdateProcedure.executeProcedure($_dependencies);
-							}
+
+							CavernScheduleTickUpdateProcedure.executeProcedure(Stream
+									.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+											new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+									.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 						}
 					}
 					return true;
@@ -93,6 +93,7 @@ public class CavernairstructureStructure {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:cavernairstructure"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;

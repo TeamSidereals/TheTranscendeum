@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class SomberstoneslabBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:somberstone_slab")
 	public static final Block block = null;
+
 	public SomberstoneslabBlock(TheTranscendeumModElements instance) {
 		super(instance, 16);
 	}
@@ -36,6 +37,7 @@ public class SomberstoneslabBlock extends TheTranscendeumModElements.ModElement 
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 7.5f).setLightLevel(s -> 0));

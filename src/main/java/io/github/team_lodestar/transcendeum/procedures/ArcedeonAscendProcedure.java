@@ -8,6 +8,7 @@ import io.github.team_lodestar.transcendeum.entity.ArcedeonEntity;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class ArcedeonAscendProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -15,7 +16,7 @@ public class ArcedeonAscendProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((((entity.getRidingEntity()) instanceof ArcedeonEntity.CustomEntity) == (true))) {
+		if ((entity.getRidingEntity()) instanceof ArcedeonEntity.CustomEntity == true) {
 			(entity.getRidingEntity()).getPersistentData().putDouble("TT:ArcedeonVerticalMovement", 1);
 		}
 	}

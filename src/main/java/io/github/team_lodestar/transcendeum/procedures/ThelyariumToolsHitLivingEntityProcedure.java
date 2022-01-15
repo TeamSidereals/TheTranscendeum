@@ -25,15 +25,11 @@ import io.github.team_lodestar.transcendeum.particle.ThelyarianHarmParticle;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class ThelyariumToolsHitLivingEntityProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure ThelyariumToolsHitLivingEntity!");
-			return;
-		}
-		if (dependencies.get("sourceentity") == null) {
-			if (!dependencies.containsKey("sourceentity"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency sourceentity for procedure ThelyariumToolsHitLivingEntity!");
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure ThelyariumToolsHitLivingEntity!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -51,21 +47,26 @@ public class ThelyariumToolsHitLivingEntityProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure ThelyariumToolsHitLivingEntity!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				TheTranscendeumMod.LOGGER.warn("Failed to load dependency world for procedure ThelyariumToolsHitLivingEntity!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure ThelyariumToolsHitLivingEntity!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
-		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				TheTranscendeumMod.LOGGER.warn("Failed to load dependency sourceentity for procedure ThelyariumToolsHitLivingEntity!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		boolean success = false;
-		success = (boolean) (false);
-		if ((!(world.isRemote()))) {
-			if ((Math.random() < 0.3)) {
+		success = (false);
+		if (!world.isRemote()) {
+			if (Math.random() < 0.3) {
 				{
 					List<Entity> _entfound = world
 							.getEntitiesWithinAABB(Entity.class,
@@ -76,16 +77,16 @@ public class ThelyariumToolsHitLivingEntityProcedure {
 								}
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if ((((!(entityiterator == entity)) && (!(entityiterator == sourceentity)))
-								&& ((entityiterator instanceof LivingEntity) && ((entityiterator.world.getDimensionKey()) == (RegistryKey
-										.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("the_transcendeum:transcendeum"))))))) {
+						if (!(entityiterator == entity) && !(entityiterator == sourceentity) && entityiterator instanceof LivingEntity
+								&& (entityiterator.world.getDimensionKey()) == (RegistryKey.getOrCreateKey(Registry.WORLD_KEY,
+										new ResourceLocation("the_transcendeum:transcendeum")))) {
 							entityiterator.attackEntityFrom(DamageSource.causeMobDamage((LivingEntity) sourceentity), 2.5F);
 							entityiterator.setMotion((entityiterator.getMotion().getX()), 0.4, (entityiterator.getMotion().getZ()));
 							if (world instanceof ServerWorld) {
 								((ServerWorld) world).spawnParticle(ThelyarianHarmParticle.particle, (entityiterator.getPosX()),
-										((entityiterator.getPosY()) + 1), (entityiterator.getPosZ()), (int) 8, 0.2, 0.4, 0.2, 0.1);
+										(entityiterator.getPosY() + 1), (entityiterator.getPosZ()), (int) 8, 0.2, 0.4, 0.2, 0.1);
 							}
-							success = (boolean) (true);
+							success = (true);
 						}
 					}
 				}

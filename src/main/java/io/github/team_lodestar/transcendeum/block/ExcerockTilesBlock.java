@@ -31,6 +31,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class ExcerockTilesBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:excerock_tiles")
 	public static final Block block = null;
+
 	public ExcerockTilesBlock(TheTranscendeumModElements instance) {
 		super(instance, 61);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
@@ -43,6 +44,7 @@ public class ExcerockTilesBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	private static class BlockColorRegisterHandler {
 		@OnlyIn(Dist.CLIENT)
 		@SubscribeEvent

@@ -34,6 +34,7 @@ public class ErellumRenderer {
 					{
 						this.addLayer(new GlowingLayer<>(this));
 					}
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("the_transcendeum:textures/erellum.png");
@@ -102,6 +103,7 @@ public class ErellumRenderer {
 		private final ModelRenderer cube_r27;
 		private final ModelRenderer tentacle5;
 		private final ModelRenderer cube_r28;
+
 		public Modelerellum() {
 			textureWidth = 128;
 			textureHeight = 128;
@@ -315,6 +317,7 @@ public class ErellumRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.armR.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 			this.tentacle4.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 			this.armL.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
@@ -324,4 +327,5 @@ public class ErellumRenderer {
 			this.tentacle1.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
+
 }

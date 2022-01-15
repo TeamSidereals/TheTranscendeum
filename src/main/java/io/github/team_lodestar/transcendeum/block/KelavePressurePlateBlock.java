@@ -26,6 +26,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KelavePressurePlateBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelave_pressure_plate")
 	public static final Block block = null;
+
 	public KelavePressurePlateBlock(TheTranscendeumModElements instance) {
 		super(instance, 56);
 	}
@@ -36,6 +37,7 @@ public class KelavePressurePlateBlock extends TheTranscendeumModElements.ModElem
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends PressurePlateBlock {
 		public CustomBlock() {
 			super(Sensitivity.EVERYTHING,

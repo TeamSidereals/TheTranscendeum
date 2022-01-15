@@ -9,6 +9,7 @@ import java.util.Map;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class SullenThornEntityCollidesInTheBlockProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -16,7 +17,7 @@ public class SullenThornEntityCollidesInTheBlockProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((entity instanceof LivingEntity)) {
+		if (entity instanceof LivingEntity) {
 			if (entity instanceof LivingEntity) {
 				((LivingEntity) entity).attackEntityFrom(new DamageSource("sullen_thorn").setDamageBypassesArmor(), (float) 2);
 			}

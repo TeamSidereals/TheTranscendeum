@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "Transcendeum",
@@ -7,7 +6,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendeum",
       "metadata": {
         "ep": true
@@ -19,7 +17,6 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone"
     },
     {
@@ -28,7 +25,6 @@
       "sortid": 144,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendeum_blocks",
       "path": "~/Creative Tabs"
     },
@@ -38,7 +34,6 @@
       "sortid": 145,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendeum_gear",
       "path": "~/Creative Tabs"
     },
@@ -48,7 +43,6 @@
       "sortid": 146,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendeum_items",
       "path": "~/Creative Tabs"
     },
@@ -58,7 +52,6 @@
       "sortid": 147,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendeum_mobs",
       "path": "~/Creative Tabs"
     },
@@ -68,7 +61,6 @@
       "sortid": 148,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstonefurnacerec",
       "path": "~/recipes"
     },
@@ -78,7 +70,6 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_slab"
     },
     {
@@ -87,7 +78,6 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_stairs"
     },
     {
@@ -96,7 +86,6 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_wall"
     },
     {
@@ -105,7 +94,6 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_sand"
     },
     {
@@ -114,7 +102,6 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_sandstone"
     },
     {
@@ -123,7 +110,6 @@
       "sortid": 149,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_desert",
       "path": "~/Biomes"
     },
@@ -133,7 +119,6 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_slab"
     },
     {
@@ -142,7 +127,6 @@
       "sortid": 150,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_wood_recipe",
       "path": "~/recipes"
     },
@@ -152,7 +136,6 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_log"
     },
     {
@@ -161,7 +144,6 @@
       "sortid": 151,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_stairs_recipe",
       "path": "~/recipes"
     },
@@ -171,7 +153,6 @@
       "sortid": 152,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_fence_recipe",
       "path": "~/recipes"
     },
@@ -181,7 +162,6 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_fence_gate"
     },
     {
@@ -190,7 +170,6 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_pressure_plate"
     },
     {
@@ -199,7 +178,6 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystalia_transium"
     },
     {
@@ -208,7 +186,6 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_wood"
     },
     {
@@ -217,7 +194,6 @@
       "sortid": 153,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "leave_blocks",
       "path": "~/Tags"
     },
@@ -227,7 +203,6 @@
       "sortid": 154,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "log_blocks",
       "path": "~/Tags"
     },
@@ -237,7 +212,6 @@
       "sortid": 155,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_pressure_plate_recipe",
       "path": "~/recipes"
     },
@@ -247,7 +221,6 @@
       "sortid": 156,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "wall_blocks",
       "path": "~/Tags"
     },
@@ -257,7 +230,6 @@
       "sortid": 157,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_fence_gate_recipe",
       "path": "~/recipes"
     },
@@ -267,7 +239,6 @@
       "sortid": 158,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "wooden_fence_blocks",
       "path": "~/Tags"
     },
@@ -277,7 +248,6 @@
       "sortid": 159,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_stick_recipe",
       "path": "~/recipes"
     },
@@ -287,7 +257,6 @@
       "sortid": 160,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_slab_recipe",
       "path": "~/recipes"
     },
@@ -297,7 +266,6 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_fence"
     },
     {
@@ -306,7 +274,6 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sombersoil"
     },
     {
@@ -315,7 +282,6 @@
       "sortid": 161,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_planks_recipe",
       "path": "~/recipes"
     },
@@ -325,7 +291,6 @@
       "sortid": 162,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fence_blocks",
       "path": "~/Tags"
     },
@@ -335,7 +300,6 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "block_of_crystak"
     },
     {
@@ -344,7 +308,6 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_planks"
     },
     {
@@ -353,7 +316,6 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_leaves"
     },
     {
@@ -362,7 +324,6 @@
       "sortid": 163,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_button_recipe",
       "path": "~/recipes"
     },
@@ -372,7 +333,6 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_button"
     },
     {
@@ -381,7 +341,6 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystalia_grass",
       "path": "~/Plants/Grass"
     },
@@ -391,7 +350,6 @@
       "sortid": 164,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystalia_forest",
       "path": "~/Biomes"
     },
@@ -401,7 +359,6 @@
       "sortid": 165,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_items_tag",
       "path": "~/Tags"
     },
@@ -411,7 +368,6 @@
       "sortid": 166,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "plank_items",
       "path": "~/Tags"
     },
@@ -421,7 +377,6 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stariam_stairs"
     },
     {
@@ -430,7 +385,6 @@
       "sortid": 167,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dirt_blocks",
       "path": "~/Tags"
     },
@@ -440,7 +394,6 @@
       "sortid": 168,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendent_ocean",
       "path": "~/Biomes"
     },
@@ -450,7 +403,6 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullcactus"
     },
     {
@@ -459,7 +411,6 @@
       "sortid": 169,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "huge_sullcactus_2",
       "path": "~/Structures/Natural"
     },
@@ -469,7 +420,6 @@
       "sortid": 170,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "huge_sullcactus",
       "path": "~/Structures/Natural"
     },
@@ -479,7 +429,6 @@
       "sortid": 171,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendent_sea",
       "path": "~/Biomes"
     },
@@ -489,7 +438,6 @@
       "sortid": 172,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "huge_sullcactus_1",
       "path": "~/Structures/Natural"
     },
@@ -499,7 +447,6 @@
       "sortid": 173,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullcactus_block_valid_placement_condition",
       "metadata": {
         "return_type": "logic",
@@ -529,7 +476,6 @@
       "sortid": 174,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_canyon",
       "path": "~/Biomes"
     },
@@ -539,7 +485,6 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_somberstone_stairs"
     },
     {
@@ -548,7 +493,6 @@
       "sortid": 175,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "salt_lowlands",
       "path": "~/Biomes"
     },
@@ -558,7 +502,6 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_somberstone_stairs_recipe",
       "path": "~/recipes"
     },
@@ -568,7 +511,6 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "saltrock"
     },
     {
@@ -577,7 +519,6 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_somberstone"
     },
     {
@@ -586,7 +527,6 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_somberstone_recipe",
       "path": "~/recipes"
     },
@@ -596,7 +536,6 @@
       "sortid": 178,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_somberstone_slab_recipe",
       "path": "~/recipes"
     },
@@ -606,7 +545,6 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_somberstone_slab"
     },
     {
@@ -615,7 +553,6 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridian_grass",
       "path": "~/Plants/Grass"
     },
@@ -625,7 +562,6 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridian_nyllium"
     },
     {
@@ -634,7 +570,6 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iaprie_grass_block"
     },
     {
@@ -643,7 +578,6 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "corium_flower",
       "path": "~/Plants/Flowers"
     },
@@ -653,7 +587,6 @@
       "sortid": 179,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "aurea_plains",
       "path": "~/Biomes"
     },
@@ -663,7 +596,6 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iaprie_grass",
       "path": "~/Plants/Grass"
     },
@@ -673,7 +605,6 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "scalia_wart",
       "path": "~/Plants/Fungi"
     },
@@ -683,7 +614,6 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mergoany",
       "path": "~/Plants/Flowers"
     },
@@ -693,7 +623,6 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "argoany",
       "path": "~/Plants/Flowers"
     },
@@ -703,7 +632,6 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acrium_flower",
       "path": "~/Plants/Flowers"
     },
@@ -713,7 +641,6 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_wood"
     },
     {
@@ -722,7 +649,6 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_log"
     },
     {
@@ -731,7 +657,6 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_planks"
     },
     {
@@ -740,7 +665,6 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_slab"
     },
     {
@@ -749,7 +673,6 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_stairs"
     },
     {
@@ -758,7 +681,6 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_fence_gate"
     },
     {
@@ -767,7 +689,6 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_fence"
     },
     {
@@ -776,7 +697,6 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_pressure_plate"
     },
     {
@@ -785,7 +705,6 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_button"
     },
     {
@@ -794,7 +713,6 @@
       "sortid": 180,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "aurea_forest",
       "path": "~/Biomes"
     },
@@ -804,7 +722,6 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelfae"
     },
     {
@@ -813,7 +730,6 @@
       "sortid": 181,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chrysalium_vine",
       "path": "~/Plants/Vines"
     },
@@ -823,7 +739,6 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chrysalium_vine_bottom",
       "path": "~/Plants/Vines"
     },
@@ -833,7 +748,6 @@
       "sortid": 182,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chrysalium_vine_block_valid_placement_condition",
       "metadata": {
         "return_type": "logic",
@@ -863,7 +777,6 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelavus"
     },
     {
@@ -872,7 +785,6 @@
       "sortid": 183,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_wood_tag",
       "path": "~/Tags"
     },
@@ -882,7 +794,6 @@
       "sortid": 184,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridian_mires",
       "path": "~/Biomes"
     },
@@ -892,7 +803,6 @@
       "sortid": 185,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_wood_recipe",
       "path": "~/recipes"
     },
@@ -902,7 +812,6 @@
       "sortid": 115,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "puffel",
       "path": "~/mobs"
     },
@@ -912,7 +821,6 @@
       "sortid": 116,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arffel",
       "path": "~/mobs"
     },
@@ -922,7 +830,6 @@
       "sortid": 186,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_tree",
       "path": "~/Structures/Natural"
     },
@@ -932,7 +839,6 @@
       "sortid": 187,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_stairs_recipe",
       "path": "~/recipes"
     },
@@ -942,7 +848,6 @@
       "sortid": 188,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_fence_recipe",
       "path": "~/recipes"
     },
@@ -952,7 +857,6 @@
       "sortid": 189,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_pressure_plate_recipe",
       "path": "~/recipes"
     },
@@ -962,7 +866,6 @@
       "sortid": 190,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_fence_gate_recipe",
       "path": "~/recipes"
     },
@@ -972,7 +875,6 @@
       "sortid": 191,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_stick_recipe",
       "path": "~/recipes"
     },
@@ -982,7 +884,6 @@
       "sortid": 192,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_slab_recipe",
       "path": "~/recipes"
     },
@@ -992,7 +893,6 @@
       "sortid": 193,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_button_recipe",
       "path": "~/recipes"
     },
@@ -1002,7 +902,6 @@
       "sortid": 194,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "virilily_block",
       "path": "~/Plants/Lily Pads"
     },
@@ -1012,7 +911,6 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "virilily"
     },
     {
@@ -1021,7 +919,6 @@
       "sortid": 195,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "virilily_right_clickedin_air",
       "metadata": {
         "dependencies": [
@@ -1046,7 +943,6 @@
       "sortid": 196,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lily_pad_boat_collision",
       "metadata": {
         "dependencies": [
@@ -1079,7 +975,6 @@
       "sortid": 197,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "large_virilily_block",
       "path": "~/Plants/Lily Pads"
     },
@@ -1089,7 +984,6 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "large_virilily"
     },
     {
@@ -1098,7 +992,6 @@
       "sortid": 198,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "large_virilily_right_clicked_in_air",
       "metadata": {
         "dependencies": [
@@ -1123,7 +1016,6 @@
       "sortid": 199,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lily_pad_valid_placement_condition",
       "metadata": {
         "return_type": "logic",
@@ -1153,7 +1045,6 @@
       "sortid": 200,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "corium_virilily_block",
       "path": "~/Plants/Lily Pads"
     },
@@ -1163,7 +1054,6 @@
       "sortid": 201,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acrium_virilily_block",
       "path": "~/Plants/Lily Pads"
     },
@@ -1173,7 +1063,6 @@
       "sortid": 202,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "corium_virilily_right_clicked_in_air",
       "metadata": {
         "dependencies": [
@@ -1198,7 +1087,6 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "corium_virilily"
     },
     {
@@ -1207,7 +1095,6 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acrium_virilily"
     },
     {
@@ -1216,7 +1103,6 @@
       "sortid": 203,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acrium_virilily_right_clicked_in_air",
       "metadata": {
         "dependencies": [
@@ -1241,7 +1127,6 @@
       "sortid": 204,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lily_assortment_1",
       "path": "~/Structures/Natural"
     },
@@ -1251,7 +1136,6 @@
       "sortid": 205,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lily_assortment_2",
       "path": "~/Structures/Natural"
     },
@@ -1261,7 +1145,6 @@
       "sortid": 206,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lily_assortment_3",
       "path": "~/Structures/Natural"
     },
@@ -1271,7 +1154,6 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_crystal"
     },
     {
@@ -1280,7 +1162,6 @@
       "sortid": 207,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "twilighteris",
       "path": "~/particles"
     },
@@ -1290,7 +1171,6 @@
       "sortid": 208,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lilies",
       "path": "~/Tags"
     },
@@ -1300,7 +1180,6 @@
       "sortid": 209,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "large_lilies",
       "path": "~/Tags"
     },
@@ -1310,7 +1189,6 @@
       "sortid": 210,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_cliffs",
       "path": "~/Biomes"
     },
@@ -1320,7 +1198,6 @@
       "sortid": 211,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "calid_woodlands",
       "path": "~/Biomes"
     },
@@ -1330,7 +1207,6 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_crystal_block"
     },
     {
@@ -1339,7 +1215,6 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cellcyte"
     },
     {
@@ -1348,7 +1223,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_shard"
     },
     {
@@ -1357,7 +1231,6 @@
       "sortid": 212,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_crystal_drops"
     },
     {
@@ -1366,7 +1239,6 @@
       "sortid": 124,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_sword",
       "path": "~/gear sets/Tools"
     },
@@ -1376,7 +1248,6 @@
       "sortid": 213,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendent_mobs",
       "path": "~/Tags"
     },
@@ -1386,7 +1257,6 @@
       "sortid": 214,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_shovel_crafting",
       "path": "~/recipes"
     },
@@ -1396,7 +1266,6 @@
       "sortid": 125,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_axe",
       "path": "~/gear sets/Tools"
     },
@@ -1406,7 +1275,6 @@
       "sortid": 128,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_hoe",
       "path": "~/gear sets/Tools"
     },
@@ -1416,7 +1284,6 @@
       "sortid": 215,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_shards_from_crystal_crafting",
       "path": "~/recipes"
     },
@@ -1426,7 +1293,6 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_pickaxe",
       "path": "~/gear sets/Tools"
     },
@@ -1436,7 +1302,6 @@
       "sortid": 216,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_pickaxe_crafting",
       "path": "~/recipes"
     },
@@ -1446,7 +1311,6 @@
       "sortid": 217,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_sword_crafting",
       "path": "~/recipes"
     },
@@ -1456,7 +1320,6 @@
       "sortid": 218,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_axe_crafting",
       "path": "~/recipes"
     },
@@ -1466,7 +1329,6 @@
       "sortid": 127,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_shovel",
       "path": "~/gear sets/Tools"
     },
@@ -1476,7 +1338,6 @@
       "sortid": 219,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_hoe_crafting",
       "path": "~/recipes"
     },
@@ -1486,7 +1347,6 @@
       "sortid": 220,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_stone_pickaxe_recipe",
       "path": "~/recipes"
     },
@@ -1496,7 +1356,6 @@
       "sortid": 221,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_stone_shovel_recipe",
       "path": "~/recipes"
     },
@@ -1506,7 +1365,6 @@
       "sortid": 222,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_planks_recipe_2",
       "path": "~/recipes"
     },
@@ -1516,7 +1374,6 @@
       "sortid": 223,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_stone_hoe_recipe",
       "path": "~/recipes"
     },
@@ -1526,7 +1383,6 @@
       "sortid": 224,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_planks_recipe_1",
       "path": "~/recipes"
     },
@@ -1536,7 +1392,6 @@
       "sortid": 225,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_stone_sword_recipe",
       "path": "~/recipes"
     },
@@ -1546,7 +1401,6 @@
       "sortid": 226,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "somberstone_stone_axe_recipe",
       "path": "~/recipes"
     },
@@ -1556,7 +1410,6 @@
       "sortid": 117,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "arcedeon",
       "path": "~/mobs"
     },
@@ -1566,7 +1419,6 @@
       "sortid": 227,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "transcendeum_plants_additional_placinggrowth_condition",
       "metadata": {
         "return_type": "logic",
@@ -1579,7 +1431,6 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dead_sullenbush",
       "path": "~/Plants/Dead"
     },
@@ -1589,7 +1440,6 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone"
     },
     {
@@ -1598,7 +1448,6 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone"
     },
     {
@@ -1607,7 +1456,6 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_stairs"
     },
     {
@@ -1616,7 +1464,6 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_slab"
     },
     {
@@ -1625,7 +1472,6 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_wall"
     },
     {
@@ -1634,7 +1480,6 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_stairs"
     },
     {
@@ -1643,7 +1488,6 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_slab"
     },
     {
@@ -1652,7 +1496,6 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_pressure_plate"
     },
     {
@@ -1661,7 +1504,6 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_slab"
     },
     {
@@ -1670,7 +1512,6 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_wall"
     },
     {
@@ -1679,7 +1520,6 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_stairs"
     },
     {
@@ -1688,7 +1528,6 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_slab"
     },
     {
@@ -1697,7 +1536,6 @@
       "sortid": 228,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "single_virilily",
       "path": "~/Structures/Natural"
     },
@@ -1707,7 +1545,6 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite"
     },
     {
@@ -1716,7 +1553,6 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_stairs"
     },
     {
@@ -1725,7 +1561,6 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_pressure_plate"
     },
     {
@@ -1734,7 +1569,6 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite"
     },
     {
@@ -1743,7 +1577,6 @@
       "sortid": 229,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_armor_helmet_recipe",
       "path": "~/recipes"
     },
@@ -1753,7 +1586,6 @@
       "sortid": 129,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_armor",
       "metadata": {
         "eh": true,
@@ -1769,7 +1601,6 @@
       "sortid": 230,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_armor_leggings_recipe",
       "path": "~/recipes"
     },
@@ -1779,7 +1610,6 @@
       "sortid": 231,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeon_on_entity_tick_update",
       "metadata": {
         "dependencies": [
@@ -1812,7 +1642,6 @@
       "sortid": 232,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_armor_boots_recipe",
       "path": "~/recipes"
     },
@@ -1822,7 +1651,6 @@
       "sortid": 233,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_armor_body_recipe",
       "path": "~/recipes"
     },
@@ -1832,7 +1660,6 @@
       "sortid": 118,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "hyrumae_ghoul",
       "path": "~/mobs"
     },
@@ -1842,7 +1669,6 @@
       "sortid": 234,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_hoodoo_2",
       "path": "~/Structures/Natural"
     },
@@ -1852,7 +1678,6 @@
       "sortid": 235,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_hoodoo_1",
       "path": "~/Structures/Natural"
     },
@@ -1862,7 +1687,6 @@
       "sortid": 236,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_hoodoo_3",
       "path": "~/Structures/Natural"
     },
@@ -1872,7 +1696,6 @@
       "sortid": 237,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_boulder_1",
       "path": "~/Structures/Natural"
     },
@@ -1882,7 +1705,6 @@
       "sortid": 238,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_hoodoo",
       "path": "~/Structures/Natural"
     },
@@ -1892,7 +1714,6 @@
       "sortid": 239,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_boulder",
       "path": "~/Structures/Natural"
     },
@@ -1902,7 +1723,6 @@
       "sortid": 240,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "avoider_killable",
       "path": "~/Tags"
     },
@@ -1912,7 +1732,6 @@
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bubble",
       "path": "~/LyofsPlace"
     },
@@ -1922,7 +1741,6 @@
       "sortid": 241,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "refreshing",
       "path": "~/LyofsPlace"
     },
@@ -1932,7 +1750,6 @@
       "sortid": 242,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bubble_click_equip",
       "metadata": {
         "dependencies": [
@@ -1966,7 +1783,6 @@
       "sortid": 243,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bubble_touch_give_air",
       "metadata": {
         "dependencies": [
@@ -1984,7 +1800,6 @@
       "sortid": 244,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bubble_helm_give_air",
       "metadata": {
         "dependencies": [
@@ -2018,7 +1833,6 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_weed",
       "path": "~/LyofsPlace"
     },
@@ -2028,7 +1842,6 @@
       "sortid": 245,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_weed_break_change",
       "metadata": {
         "dependencies": [
@@ -2058,7 +1871,6 @@
       "sortid": 246,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_if_can_place",
       "metadata": {
         "return_type": "logic",
@@ -2089,7 +1901,6 @@
       "sortid": 247,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_weed_growable",
       "path": "~/LyofsPlace"
     },
@@ -2099,7 +1910,6 @@
       "sortid": 248,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeonian_brew",
       "path": "~/LyofsPlace"
     },
@@ -2109,7 +1919,6 @@
       "sortid": 249,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeonian_brew_craft",
       "path": "~/LyofsPlace"
     },
@@ -2119,7 +1928,6 @@
       "sortid": 250,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "aquadynamic",
       "path": "~/LyofsPlace"
     },
@@ -2129,7 +1937,6 @@
       "sortid": 119,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "testmob",
       "path": "~/mobs"
     },
@@ -2139,7 +1946,6 @@
       "sortid": 251,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_tree_1",
       "path": "~/Structures/Natural"
     },
@@ -2149,7 +1955,6 @@
       "sortid": 252,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_tree_2",
       "path": "~/Structures/Natural"
     },
@@ -2159,7 +1964,6 @@
       "sortid": 253,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_tree_3",
       "path": "~/Structures/Natural"
     },
@@ -2169,7 +1973,6 @@
       "sortid": 254,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cavern_schedule_tick_update",
       "metadata": {
         "dependencies": [
@@ -2199,7 +2002,6 @@
       "sortid": 255,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cavern_air_procedure",
       "metadata": {
         "dependencies": [
@@ -2229,7 +2031,6 @@
       "sortid": 256,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cavernairstructure",
       "path": "~/caves"
     },
@@ -2239,7 +2040,6 @@
       "sortid": 257,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cavern_air_update_tick",
       "metadata": {
         "dependencies": [
@@ -2269,7 +2069,6 @@
       "sortid": 258,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cavern_air",
       "path": "~/caves"
     },
@@ -2279,7 +2078,6 @@
       "sortid": 259,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sharp_berthel",
       "path": "~/particles"
     },
@@ -2289,7 +2087,6 @@
       "sortid": 260,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_sharp_blade",
       "metadata": {
         "dependencies": [
@@ -2318,7 +2115,6 @@
       "sortid": 261,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "dash_attack_goal"
     },
     {
@@ -2327,7 +2123,6 @@
       "sortid": 262,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove_powered_while_bullet_flying_tick",
       "metadata": {
         "dependencies": [
@@ -2357,7 +2152,6 @@
       "sortid": 263,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "flame_1_condition",
       "metadata": {
         "return_type": "logic",
@@ -2376,7 +2170,6 @@
       "sortid": 264,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "flame_4_condition",
       "metadata": {
         "return_type": "logic",
@@ -2395,7 +2188,6 @@
       "sortid": 265,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigmagloveoverlay_display_overlay_ingame",
       "metadata": {
         "return_type": "logic",
@@ -2414,7 +2206,6 @@
       "sortid": 266,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove_ranged_item_used",
       "metadata": {
         "dependencies": [
@@ -2436,7 +2227,6 @@
       "sortid": 267,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "flame_3_condition",
       "metadata": {
         "return_type": "logic",
@@ -2455,7 +2245,6 @@
       "sortid": 268,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove_powered_ranged_item_used",
       "metadata": {
         "dependencies": [
@@ -2477,7 +2266,6 @@
       "sortid": 269,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigmagloveoverlay",
       "path": "~/gear sets/enigma_glove/overlay"
     },
@@ -2487,7 +2275,6 @@
       "sortid": 270,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove_powered",
       "path": "~/gear sets/enigma_glove"
     },
@@ -2497,7 +2284,6 @@
       "sortid": 271,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove_powered_bullet_hits_living_entity",
       "metadata": {
         "dependencies": [
@@ -2527,7 +2313,6 @@
       "sortid": 142,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove",
       "path": "~/gear sets/enigma_glove"
     },
@@ -2537,7 +2322,6 @@
       "sortid": 272,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "flame_2_condition",
       "metadata": {
         "return_type": "logic",
@@ -2556,7 +2340,6 @@
       "sortid": 273,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "powered_flame_5_condition",
       "metadata": {
         "return_type": "logic",
@@ -2575,7 +2358,6 @@
       "sortid": 274,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove_while_bullet_flying_tick",
       "metadata": {
         "dependencies": [
@@ -2605,7 +2387,6 @@
       "sortid": 275,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_pressure_plate_crafting",
       "path": "~/recipes"
     },
@@ -2615,7 +2396,6 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood"
     },
     {
@@ -2624,7 +2404,6 @@
       "sortid": 276,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_planks_crafting_1",
       "path": "~/recipes"
     },
@@ -2634,7 +2413,6 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_slab"
     },
     {
@@ -2643,7 +2421,6 @@
       "sortid": 97,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_leaves"
     },
     {
@@ -2652,7 +2429,6 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_planks"
     },
     {
@@ -2661,7 +2437,6 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_fence"
     },
     {
@@ -2670,7 +2445,6 @@
       "sortid": 277,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_planks_crafting_2",
       "path": "~/recipes"
     },
@@ -2680,7 +2454,6 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_log"
     },
     {
@@ -2689,7 +2462,6 @@
       "sortid": 278,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_fence_gate_crafting",
       "path": "~/recipes"
     },
@@ -2699,7 +2471,6 @@
       "sortid": 94,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_pressure_plate"
     },
     {
@@ -2708,7 +2479,6 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_fence_gate"
     },
     {
@@ -2717,7 +2487,6 @@
       "sortid": 279,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_stairs_crafting",
       "path": "~/recipes"
     },
@@ -2727,7 +2496,6 @@
       "sortid": 280,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_fence_crafting",
       "path": "~/recipes"
     },
@@ -2737,7 +2505,6 @@
       "sortid": 281,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_crafting",
       "path": "~/recipes"
     },
@@ -2747,7 +2514,6 @@
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_button"
     },
     {
@@ -2756,7 +2522,6 @@
       "sortid": 282,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_slab_recipe",
       "path": "~/recipes"
     },
@@ -2766,7 +2531,6 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_stairs"
     },
     {
@@ -2775,7 +2539,6 @@
       "sortid": 283,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "no_enigma_glove_cooldown",
       "path": "~/gear sets/enigma_glove"
     },
@@ -2785,7 +2548,6 @@
       "sortid": 143,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "test"
     },
     {
@@ -2794,7 +2556,6 @@
       "sortid": 284,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "test_right_clicked",
       "metadata": {
         "dependencies": [
@@ -2811,7 +2572,6 @@
       "sortid": 285,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "no_enigma_glove_cooldown_command_executed",
       "metadata": {
         "dependencies": [
@@ -2828,7 +2588,6 @@
       "sortid": 286,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_hoe_crafting",
       "path": "~/recipes"
     },
@@ -2838,7 +2597,6 @@
       "sortid": 287,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_shovel_crafting",
       "path": "~/recipes"
     },
@@ -2848,7 +2606,6 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_moss",
       "path": "~/LyofsPlace"
     },
@@ -2858,7 +2615,6 @@
       "sortid": 288,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_sword_crafting",
       "path": "~/recipes"
     },
@@ -2868,7 +2624,6 @@
       "sortid": 100,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridian_moss_block"
     },
     {
@@ -2877,7 +2632,6 @@
       "sortid": 289,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viriclinger_block_valid_placement_condition",
       "metadata": {
         "return_type": "logic",
@@ -2907,7 +2661,6 @@
       "sortid": 290,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viriclinger_base_neighbour_block_changes",
       "metadata": {
         "dependencies": [
@@ -2936,7 +2689,6 @@
       "sortid": 291,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viriclinger_base",
       "path": "~/Plants/Vines"
     },
@@ -2946,7 +2698,6 @@
       "sortid": 292,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "burst_popping",
       "path": "~/LyofsPlace"
     },
@@ -2956,7 +2707,6 @@
       "sortid": 130,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_sword"
     },
     {
@@ -2965,7 +2715,6 @@
       "sortid": 101,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viriclinger",
       "path": "~/Plants/Vines"
     },
@@ -2975,7 +2724,6 @@
       "sortid": 134,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_hoe"
     },
     {
@@ -2984,7 +2732,6 @@
       "sortid": 293,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viriclinger_neighbour_block_changes",
       "metadata": {
         "dependencies": [
@@ -3013,7 +2760,6 @@
       "sortid": 133,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_shovel"
     },
     {
@@ -3022,7 +2768,6 @@
       "sortid": 294,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarian_harm"
     },
     {
@@ -3031,7 +2776,6 @@
       "sortid": 132,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_pickaxe"
     },
     {
@@ -3040,7 +2784,6 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_ingot"
     },
     {
@@ -3049,7 +2792,6 @@
       "sortid": 295,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_tools_hit_living_entity",
       "metadata": {
         "dependencies": [
@@ -3086,7 +2828,6 @@
       "sortid": 131,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_axe"
     },
     {
@@ -3095,7 +2836,6 @@
       "sortid": 296,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_axe_crafting",
       "path": "~/recipes"
     },
@@ -3105,7 +2845,6 @@
       "sortid": 297,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_pickaxe_crafting",
       "path": "~/recipes"
     },
@@ -3115,7 +2854,6 @@
       "sortid": 99,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_moss_block",
       "path": "~/LyofsPlace"
     },
@@ -3125,7 +2863,6 @@
       "sortid": 298,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_stairs_crafting",
       "path": "~/recipes"
     },
@@ -3135,7 +2872,6 @@
       "sortid": 299,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_stairs_stonecutting",
       "path": "~/recipes"
     },
@@ -3145,7 +2881,6 @@
       "sortid": 300,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_slab_crafting",
       "path": "~/recipes"
     },
@@ -3155,7 +2890,6 @@
       "sortid": 301,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_slab_stonecutting",
       "path": "~/recipes"
     },
@@ -3165,7 +2899,6 @@
       "sortid": 302,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_wall_crafting",
       "path": "~/recipes"
     },
@@ -3175,7 +2908,6 @@
       "sortid": 303,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sulkstone_wall_stonecutting",
       "path": "~/recipes"
     },
@@ -3185,7 +2917,6 @@
       "sortid": 304,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_crafting",
       "path": "~/recipes"
     },
@@ -3195,7 +2926,6 @@
       "sortid": 305,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_stonecutting",
       "path": "~/recipes"
     },
@@ -3205,7 +2935,6 @@
       "sortid": 306,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_stairs_crafting",
       "path": "~/recipes"
     },
@@ -3215,7 +2944,6 @@
       "sortid": 307,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_stairs_stonecutting_1",
       "path": "~/recipes"
     },
@@ -3225,7 +2953,6 @@
       "sortid": 308,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_stairs_stonecutting_2",
       "path": "~/recipes"
     },
@@ -3235,7 +2962,6 @@
       "sortid": 309,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_slab_crafting",
       "path": "~/recipes"
     },
@@ -3245,7 +2971,6 @@
       "sortid": 310,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_slab_stonecutting_1",
       "path": "~/recipes"
     },
@@ -3255,7 +2980,6 @@
       "sortid": 311,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_slab_stonecutting_2",
       "path": "~/recipes"
     },
@@ -3265,7 +2989,6 @@
       "sortid": 312,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_sulkstone_pressure_plate_crafting",
       "path": "~/recipes"
     },
@@ -3275,7 +2998,6 @@
       "sortid": 313,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_stairs_crafting",
       "path": "~/recipes"
     },
@@ -3285,7 +3007,6 @@
       "sortid": 314,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_stairs_stonecutting",
       "path": "~/recipes"
     },
@@ -3295,7 +3016,6 @@
       "sortid": 315,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_slab_crafting",
       "path": "~/recipes"
     },
@@ -3305,7 +3025,6 @@
       "sortid": 316,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_slab_stonecutting",
       "path": "~/recipes"
     },
@@ -3315,7 +3034,6 @@
       "sortid": 317,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_wall_crafting",
       "path": "~/recipes"
     },
@@ -3325,7 +3043,6 @@
       "sortid": 318,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "morosite_wall_stonecutting",
       "path": "~/recipes"
     },
@@ -3335,7 +3052,6 @@
       "sortid": 319,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_crafting",
       "path": "~/recipes"
     },
@@ -3345,7 +3061,6 @@
       "sortid": 320,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_stonecutting",
       "path": "~/recipes"
     },
@@ -3355,7 +3070,6 @@
       "sortid": 321,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_stairs_crafting",
       "path": "~/recipes"
     },
@@ -3365,7 +3079,6 @@
       "sortid": 322,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_stairs_stonecutting_1",
       "path": "~/recipes"
     },
@@ -3375,7 +3088,6 @@
       "sortid": 323,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_stairs_stonecutting_2",
       "path": "~/recipes"
     },
@@ -3385,7 +3097,6 @@
       "sortid": 324,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_slab_crafting",
       "path": "~/recipes"
     },
@@ -3395,7 +3106,6 @@
       "sortid": 325,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_slab_stonecutting_1",
       "path": "~/recipes"
     },
@@ -3405,7 +3115,6 @@
       "sortid": 326,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_slab_stonecutting_2",
       "path": "~/recipes"
     },
@@ -3415,7 +3124,6 @@
       "sortid": 327,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_morosite_pressure_plate_crafting",
       "path": "~/recipes"
     },
@@ -3425,7 +3133,6 @@
       "sortid": 328,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viralga_block"
     },
     {
@@ -3434,7 +3141,6 @@
       "sortid": 329,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viralga_fuel",
       "path": "~/fuels"
     },
@@ -3444,7 +3150,6 @@
       "sortid": 330,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viralga_feature_2"
     },
     {
@@ -3453,7 +3158,6 @@
       "sortid": 331,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viralga_feature",
       "path": "~/Structures/Natural"
     },
@@ -3463,7 +3167,6 @@
       "sortid": 332,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "green_dye_from_viralga_crafting",
       "path": "~/recipes"
     },
@@ -3473,7 +3176,6 @@
       "sortid": 103,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viralga"
     },
     {
@@ -3482,7 +3184,6 @@
       "sortid": 333,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viralga_right_clickedin_air",
       "metadata": {
         "dependencies": [
@@ -3507,7 +3208,6 @@
       "sortid": 334,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viralga_feature_1",
       "path": "~/Structures/Natural"
     },
@@ -3517,7 +3217,6 @@
       "sortid": 335,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lethreum_on_entity_tick_update",
       "metadata": {
         "dependencies": [
@@ -3534,7 +3233,6 @@
       "sortid": 136,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "kiarite_sword",
       "path": "~/gear sets/Tools"
     },
@@ -3544,7 +3242,6 @@
       "sortid": 336,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_sword_recipe",
       "path": "~/recipes"
     },
@@ -3554,7 +3251,6 @@
       "sortid": 337,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_tool_living_entity_is_hit_with_tool",
       "metadata": {
         "dependencies": [
@@ -3579,7 +3275,6 @@
       "sortid": 137,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_axe",
       "path": "~/gear sets/Tools"
     },
@@ -3589,7 +3284,6 @@
       "sortid": 338,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_exorcism",
       "path": "~/particles"
     },
@@ -3599,7 +3293,6 @@
       "sortid": 339,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_axe_recipe",
       "path": "~/recipes"
     },
@@ -3609,7 +3302,6 @@
       "sortid": 139,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_shovel",
       "path": "~/gear sets/Tools"
     },
@@ -3619,7 +3311,6 @@
       "sortid": 340,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_shovel_recipe",
       "path": "~/recipes"
     },
@@ -3629,7 +3320,6 @@
       "sortid": 341,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_pickaxe_recipe",
       "path": "~/recipes"
     },
@@ -3639,7 +3329,6 @@
       "sortid": 342,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_hoe_recipe",
       "path": "~/recipes"
     },
@@ -3649,7 +3338,6 @@
       "sortid": 120,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lethreum",
       "path": "~/mobs"
     },
@@ -3659,7 +3347,6 @@
       "sortid": 138,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_pickaxe",
       "path": "~/gear sets/Tools"
     },
@@ -3669,7 +3356,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_ingot"
     },
     {
@@ -3678,7 +3364,6 @@
       "sortid": 102,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_ore"
     },
     {
@@ -3687,7 +3372,6 @@
       "sortid": 140,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_hoe",
       "path": "~/gear sets/Tools"
     },
@@ -3697,7 +3381,6 @@
       "sortid": 105,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_ore"
     },
     {
@@ -3706,7 +3389,6 @@
       "sortid": 343,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_door_crafting",
       "path": "~/recipes"
     },
@@ -3716,7 +3398,6 @@
       "sortid": 344,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_ingot_smelting",
       "path": "~/recipes"
     },
@@ -3726,7 +3407,6 @@
       "sortid": 345,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_ingot_blasting",
       "path": "~/recipes"
     },
@@ -3736,7 +3416,6 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock",
       "path": "~/LyofsPlace"
     },
@@ -3746,7 +3425,6 @@
       "sortid": 106,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridwood_door"
     },
     {
@@ -3755,7 +3433,6 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_tiles",
       "path": "~/LyofsPlace"
     },
@@ -3765,7 +3442,6 @@
       "sortid": 346,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_fruit_eaten",
       "metadata": {
         "dependencies": [
@@ -3783,7 +3459,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_fruit",
       "path": "~/LyofsPlace"
     },
@@ -3793,7 +3468,6 @@
       "sortid": 347,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_weed_bubbly_drops",
       "path": "~/LyofsPlace"
     },
@@ -3803,7 +3477,6 @@
       "sortid": 107,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "efow_weed_bubbly",
       "path": "~/LyofsPlace"
     },
@@ -3813,7 +3486,6 @@
       "sortid": 348,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_tiles_craft",
       "path": "~/LyofsPlace"
     },
@@ -3823,7 +3495,6 @@
       "sortid": 349,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_armor_empowered",
       "metadata": {
         "dependencies": [
@@ -3860,7 +3531,6 @@
       "sortid": 350,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "instant_portal",
       "path": "~/Structures/others/InstantPortal"
     },
@@ -3870,7 +3540,6 @@
       "sortid": 351,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_armor_body_recipe",
       "path": "~/recipes"
     },
@@ -3880,7 +3549,6 @@
       "sortid": 141,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_armor",
       "metadata": {
         "eh": true,
@@ -3896,7 +3564,6 @@
       "sortid": 352,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_armor_leggings_recipe",
       "path": "~/recipes"
     },
@@ -3906,7 +3573,6 @@
       "sortid": 353,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_armor_boots_recipe",
       "path": "~/recipes"
     },
@@ -3916,7 +3582,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "indigo_soup"
     },
     {
@@ -3925,7 +3590,6 @@
       "sortid": 354,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeon_key_released",
       "metadata": {
         "dependencies": [
@@ -3943,7 +3607,6 @@
       "sortid": 355,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "hyrumae_ghoul_variant",
       "metadata": {
         "dependencies": [
@@ -3961,7 +3624,6 @@
       "sortid": 356,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_armor_helmet_recipe",
       "path": "~/recipes"
     },
@@ -3971,7 +3633,6 @@
       "sortid": 109,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iaprie_tallgrass",
       "path": "~/Plants/Grass"
     },
@@ -3981,7 +3642,6 @@
       "sortid": 357,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "instant_portal_spawn",
       "metadata": {
         "dependencies": [
@@ -4015,7 +3675,6 @@
       "sortid": 359,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chrysalium_vine_neighbour_block_changes",
       "metadata": {
         "dependencies": [
@@ -4044,7 +3703,6 @@
       "sortid": 360,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kalaisic_wastes",
       "path": "~/Biomes"
     },
@@ -4054,7 +3712,6 @@
       "sortid": 110,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "azura_mushroom",
       "path": "~/Plants/Fungi"
     },
@@ -4064,7 +3721,6 @@
       "sortid": 361,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "indigo_soup_recipe",
       "path": "~/recipes"
     },
@@ -4074,7 +3730,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "indigo_berries"
     },
     {
@@ -4083,7 +3738,6 @@
       "sortid": 362,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lethreum_natural_entity_spawning_condition",
       "metadata": {
         "return_type": "logic",
@@ -4096,7 +3750,6 @@
       "sortid": 363,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "berthel_armor_sharp",
       "metadata": {
         "dependencies": [
@@ -4121,7 +3774,6 @@
       "sortid": 364,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeon_down",
       "path": "~/mobs/functions/ArcedeonVerticalControl"
     },
@@ -4131,7 +3783,6 @@
       "sortid": 365,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeon_descend",
       "metadata": {
         "dependencies": [
@@ -4149,7 +3800,6 @@
       "sortid": 366,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "instant_portal_command",
       "path": "~/Structures/others/InstantPortal"
     },
@@ -4159,7 +3809,6 @@
       "sortid": 367,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "woodhutloot",
       "path": "~/loot tables/structure loot"
     },
@@ -4169,7 +3818,6 @@
       "sortid": 108,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "flowered_viridian_grass",
       "path": "~/Plants/Grass"
     },
@@ -4179,7 +3827,6 @@
       "sortid": 368,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeon_ascend",
       "metadata": {
         "dependencies": [
@@ -4197,7 +3844,6 @@
       "sortid": 369,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chrysalium_vine_bottom_neighbour_block_changes",
       "metadata": {
         "dependencies": [
@@ -4226,7 +3872,6 @@
       "sortid": 370,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "arcedeon_up",
       "path": "~/mobs/functions/ArcedeonVerticalControl"
     },
@@ -4236,7 +3881,6 @@
       "sortid": 135,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium",
       "metadata": {
         "eh": true,
@@ -4252,7 +3896,6 @@
       "sortid": 122,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "pisces",
       "path": "~/mobs"
     },
@@ -4262,7 +3905,6 @@
       "sortid": 121,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "kefgaell",
       "path": "~/mobs"
     },
@@ -4272,7 +3914,6 @@
       "sortid": 371,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_boots_crafting",
       "path": "~/recipes"
     },
@@ -4282,7 +3923,6 @@
       "sortid": 372,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_helmet_crafting",
       "path": "~/recipes"
     },
@@ -4292,7 +3932,6 @@
       "sortid": 373,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_leggings_crafting",
       "path": "~/recipes"
     },
@@ -4302,7 +3941,6 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullgrowth"
     },
     {
@@ -4311,7 +3949,6 @@
       "sortid": 374,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "thelyarium_chestplate_crafting",
       "path": "~/recipes"
     },
@@ -4321,7 +3958,6 @@
       "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullenbush"
     },
     {
@@ -4330,7 +3966,6 @@
       "sortid": 111,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "smooth_sullen_sand"
     },
     {
@@ -4339,7 +3974,6 @@
       "sortid": 375,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "indigo_jam_recipe",
       "path": "~/recipes"
     },
@@ -4349,7 +3983,6 @@
       "sortid": 376,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kefgaell_heart_item_in_hand_tick",
       "metadata": {
         "dependencies": [
@@ -4366,7 +3999,6 @@
       "sortid": 377,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enigma_glove_crafting_recipe",
       "path": "~/recipes"
     },
@@ -4376,7 +4008,6 @@
       "sortid": 378,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "indigo_pie_recipe",
       "path": "~/recipes"
     },
@@ -4386,7 +4017,6 @@
       "sortid": 123,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excrearer",
       "path": "~/mobs"
     },
@@ -4396,7 +4026,6 @@
       "sortid": 379,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "plain_kelave_tree_1",
       "path": "~/Structures/Natural"
     },
@@ -4406,7 +4035,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "indigo_fruited_pie"
     },
     {
@@ -4415,7 +4043,6 @@
       "sortid": 381,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kefgaell_loot_table",
       "path": "~/loot tables/mobs"
     },
@@ -4425,7 +4052,6 @@
       "sortid": 382,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "plain_kelave_tree_2",
       "path": "~/Structures/Natural"
     },
@@ -4435,7 +4061,6 @@
       "sortid": 384,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "plain_kelave_tree_3",
       "path": "~/Structures/Natural"
     },
@@ -4445,7 +4070,6 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kefgaell_heart"
     },
     {
@@ -4454,7 +4078,6 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "indigo_jam"
     },
     {
@@ -4463,7 +4086,6 @@
       "sortid": 114,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_thorn"
     },
     {
@@ -4472,7 +4094,6 @@
       "sortid": 387,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullen_thorn_entity_collides_in_the_block",
       "metadata": {
         "dependencies": [
@@ -4489,7 +4110,6 @@
       "sortid": 388,
       "compiles": true,
       "locked_code": true,
-      "ids": {},
       "registry_name": "dragonar_shield",
       "path": "~/gear sets/shields"
     },
@@ -4499,7 +4119,6 @@
       "sortid": 388,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "pyrrhic_bush",
       "path": "~/Plants/Dead"
     },
@@ -4509,7 +4128,6 @@
       "sortid": 376,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dead_sullenbush_drops",
       "path": "~/loot tables/blocks"
     },
@@ -4519,7 +4137,6 @@
       "sortid": 371,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "natural_sullcactus",
       "path": "~/Structures/Natural"
     },
@@ -4529,7 +4146,6 @@
       "sortid": 374,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullenbush_drops",
       "path": "~/loot tables/blocks"
     },
@@ -4539,7 +4155,6 @@
       "sortid": 375,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sullgrowth_drops",
       "path": "~/loot tables/blocks"
     },
@@ -4549,7 +4164,6 @@
       "sortid": 372,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "virid_tree_2",
       "path": "~/Structures/Natural"
     },
@@ -4559,7 +4173,6 @@
       "sortid": 371,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "virid_tree_1",
       "path": "~/Structures/Natural"
     },
@@ -4569,7 +4182,6 @@
       "sortid": 389,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "virid_roses_bush",
       "path": "~/Plants/Grass"
     },
@@ -4579,7 +4191,6 @@
       "sortid": 391,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "pyrrhic_bush_net_stepping",
       "metadata": {
         "dependencies": [
@@ -4612,7 +4223,6 @@
       "sortid": 390,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "pyrrhic_bush_net"
     },
     {
@@ -4621,7 +4231,6 @@
       "sortid": 392,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "pyrrhic_bush_net_recipe",
       "path": "~/recipes"
     },
@@ -4631,7 +4240,6 @@
       "sortid": 393,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kelave_hut",
       "path": "~/Structures/Constructed"
     },
@@ -4641,7 +4249,6 @@
       "sortid": 394,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_block"
     },
     {
@@ -4650,7 +4257,6 @@
       "sortid": 395,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_block_to_ingot_recipe",
       "path": "~/recipes"
     },
@@ -4660,7 +4266,6 @@
       "sortid": 396,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_ingot_to_block_recipe",
       "path": "~/recipes"
     },
@@ -4670,7 +4275,6 @@
       "sortid": 397,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kiarite_ore_smelt",
       "path": "~/recipes"
     },
@@ -4680,7 +4284,6 @@
       "sortid": 398,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_tools",
       "path": "~/Tags"
     },
@@ -4690,7 +4293,6 @@
       "sortid": 399,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_sword_right_clicked_in_air",
       "metadata": {
         "dependencies": [
@@ -4711,7 +4313,6 @@
       "sortid": 400,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_sword_tool_in_hand_tick",
       "metadata": {
         "dependencies": [
@@ -4728,7 +4329,6 @@
       "sortid": 399,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_sword",
       "path": "~/gear sets/Tools"
     },
@@ -4738,7 +4338,6 @@
       "sortid": 401,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "perform_excerock_attack",
       "metadata": {
         "dependencies": [
@@ -4775,7 +4374,6 @@
       "sortid": 402,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_data_management",
       "metadata": {
         "dependencies": [
@@ -4792,7 +4390,6 @@
       "sortid": 404,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excerock_axe",
       "path": "~/gear sets/Tools"
     },
@@ -4802,7 +4399,6 @@
       "sortid": 403,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excelhammer",
       "path": "~/gear sets/Tools"
     },
@@ -4812,7 +4408,6 @@
       "sortid": 403,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "excelhammer_block_destroyed_with_tool",
       "metadata": {
         "dependencies": [
@@ -4841,7 +4436,6 @@
       "sortid": 404,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ellum",
       "path": "~/mobs/zone specific"
     },
@@ -4851,7 +4445,6 @@
       "sortid": 405,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "erellum",
       "path": "~/mobs/zone specific"
     },
@@ -4861,7 +4454,6 @@
       "sortid": 406,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ellum_erellum_attack_trigger",
       "metadata": {
         "dependencies": [
@@ -4883,7 +4475,6 @@
       "sortid": 407,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "remobren_on_entity_tick_update",
       "metadata": {
         "dependencies": [
@@ -4916,7 +4507,6 @@
       "sortid": 407,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "remobren",
       "path": "~/mobs"
     },
@@ -4926,7 +4516,6 @@
       "sortid": 408,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "remobren_on_initial_entity_spawn",
       "metadata": {
         "dependencies": [
@@ -4943,7 +4532,6 @@
       "sortid": 409,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "remobren_natural_entity_spawning_condition",
       "metadata": {
         "return_type": "logic",
@@ -4961,7 +4549,6 @@
       "sortid": 410,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "remobren_entity_is_hurt",
       "metadata": {
         "dependencies": [
@@ -4982,7 +4569,6 @@
       "sortid": 412,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "virid_lights",
       "path": "~/particles"
     },
@@ -4992,7 +4578,6 @@
       "sortid": 411,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "viridian_mushroom",
       "path": "~/Plants/Fungi"
     },
@@ -5002,7 +4587,6 @@
       "sortid": 411,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_virid_tree_1"
     },
     {
@@ -5011,7 +4595,6 @@
       "sortid": 407,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "purpurean_grass_block"
     },
     {
@@ -5020,7 +4603,6 @@
       "sortid": 412,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_virid_tree_2"
     },
     {
@@ -5029,7 +4611,6 @@
       "sortid": 408,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lilac_buds",
       "path": "~/Plants/Flowers"
     },
@@ -5039,7 +4620,6 @@
       "sortid": 413,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "twighlire",
       "path": "~/Plants/Flowers"
     },
@@ -5049,7 +4629,6 @@
       "sortid": 407,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lavender_fare",
       "path": "~/Biomes"
     },
@@ -5059,7 +4638,6 @@
       "sortid": 410,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "effly",
       "path": "~/particles"
     },
@@ -5069,7 +4647,6 @@
       "sortid": 409,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "purpurean_grass",
       "path": "~/Plants/Grass"
     }
@@ -5525,5 +5102,5 @@
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100236710
+  "mcreatorVersion": 202100353117
 }

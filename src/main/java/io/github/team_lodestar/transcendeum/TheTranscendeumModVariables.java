@@ -36,16 +36,20 @@ public class TheTranscendeumModVariables {
 	private void init(FMLCommonSetupEvent event) {
 		CapabilityManager.INSTANCE.register(PlayerVariables.class, new PlayerVariablesStorage(), PlayerVariables::new);
 	}
+
 	public static boolean NoEnigmaCooldown = false;
 	@CapabilityInject(PlayerVariables.class)
 	public static Capability<PlayerVariables> PLAYER_VARIABLES_CAPABILITY = null;
+
 	@SubscribeEvent
 	public void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
 		if (event.getObject() instanceof PlayerEntity && !(event.getObject() instanceof FakePlayer))
 			event.addCapability(new ResourceLocation("the_transcendeum", "player_variables"), new PlayerVariablesProvider());
 	}
+
 	private static class PlayerVariablesProvider implements ICapabilitySerializable<INBT> {
 		private final LazyOptional<PlayerVariables> instance = LazyOptional.of(PLAYER_VARIABLES_CAPABILITY::getDefaultInstance);
+
 		@Override
 		public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
 			return cap == PLAYER_VARIABLES_CAPABILITY ? instance.cast() : LazyOptional.empty();
@@ -84,12 +88,14 @@ public class TheTranscendeumModVariables {
 	public static class PlayerVariables {
 		public double TTEnigmaCharge = 0;
 		public boolean DoExcerockAttack = false;
+
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				TheTranscendeumMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
 						new PlayerVariablesSyncMessage(this));
 		}
 	}
+
 	@SubscribeEvent
 	public void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
 		if (!event.getPlayer().world.isRemote())
@@ -121,8 +127,10 @@ public class TheTranscendeumModVariables {
 			clone.DoExcerockAttack = original.DoExcerockAttack;
 		}
 	}
+
 	public static class PlayerVariablesSyncMessage {
 		public PlayerVariables data;
+
 		public PlayerVariablesSyncMessage(PacketBuffer buffer) {
 			this.data = new PlayerVariables();
 			new PlayerVariablesStorage().readNBT(null, this.data, null, buffer.readCompoundTag());

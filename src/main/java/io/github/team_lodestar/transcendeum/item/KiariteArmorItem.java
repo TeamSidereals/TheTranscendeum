@@ -41,6 +41,7 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 	public static final Item legs = null;
 	@ObjectHolder("the_transcendeum:kiarite_armor_boots")
 	public static final Item boots = null;
+
 	public KiariteArmorItem(TheTranscendeumModElements instance) {
 		super(instance, 141);
 	}
@@ -198,6 +199,7 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			}
 		}.setRegistryName("kiarite_armor_boots"));
 	}
+
 	// Made with Blockbench 3.9.3
 	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 	// Paste this class into your mod and generate all required imports
@@ -205,6 +207,7 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 		private final ModelRenderer rightleg;
 		private final ModelRenderer leftleg;
 		private final ModelRenderer bb_main;
+
 		public Modelkiarite_layer_2() {
 			textureWidth = 64;
 			textureHeight = 32;
@@ -266,6 +269,7 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 		private final ModelRenderer rightboot_r1;
 		private final ModelRenderer leftboot;
 		private final ModelRenderer leftboot_r1;
+
 		public Modelkiarite_layer_1() {
 			textureWidth = 80;
 			textureHeight = 32;
@@ -389,4 +393,5 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			modelRenderer.rotateAngleZ = z;
 		}
 	}
+
 }

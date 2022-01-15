@@ -25,6 +25,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class KelfaeBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:kelfae")
 	public static final Block block = null;
+
 	public KelfaeBlock(TheTranscendeumModElements instance) {
 		super(instance, 58);
 	}
@@ -35,6 +36,7 @@ public class KelfaeBlock extends TheTranscendeumModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(TranscendeumBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.NETHER_WOOD).sound(SoundType.SHROOMLIGHT).hardnessAndResistance(2f, 3f).setLightLevel(s -> 15)

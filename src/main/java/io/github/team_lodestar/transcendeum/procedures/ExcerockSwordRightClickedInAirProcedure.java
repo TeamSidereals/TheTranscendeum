@@ -10,6 +10,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModVariables;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class ExcerockSwordRightClickedInAirProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -23,16 +24,16 @@ public class ExcerockSwordRightClickedInAirProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if (((!(entity.isOnGround())) && (!(entity.isInWater())))) {
+		if (!entity.isOnGround() && !entity.isInWater()) {
 			{
-				boolean _setval = (boolean) (true);
+				boolean _setval = (true);
 				entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.DoExcerockAttack = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 60);
+				((PlayerEntity) entity).getCooldownTracker().setCooldown(itemstack.getItem(), (int) 60);
 		}
 	}
 }

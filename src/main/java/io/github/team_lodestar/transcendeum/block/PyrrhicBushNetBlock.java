@@ -27,10 +27,12 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.PyrrhicBushNetSteppingProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
@@ -40,6 +42,7 @@ import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 public class PyrrhicBushNetBlock extends TheTranscendeumModElements.ModElement {
 	@ObjectHolder("the_transcendeum:pyrrhic_bush_net")
 	public static final Block block = null;
+
 	public PyrrhicBushNetBlock(TheTranscendeumModElements instance) {
 		super(instance, 390);
 	}
@@ -56,6 +59,7 @@ public class PyrrhicBushNetBlock extends TheTranscendeumModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutoutMipped());
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WEB).sound(SoundType.VINE).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0).harvestLevel(0)
@@ -76,7 +80,12 @@ public class PyrrhicBushNetBlock extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1, 16));
+
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1, 16)
+
+			)
+
+			;
 		}
 
 		@Override
@@ -113,15 +122,11 @@ public class PyrrhicBushNetBlock extends TheTranscendeumModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				PyrrhicBushNetSteppingProcedure.executeProcedure($_dependencies);
-			}
+
+			PyrrhicBushNetSteppingProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

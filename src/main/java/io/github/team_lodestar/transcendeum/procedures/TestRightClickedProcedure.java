@@ -11,6 +11,7 @@ import io.github.team_lodestar.transcendeum.item.EnigmaGloveItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class TestRightClickedProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

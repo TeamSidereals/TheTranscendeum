@@ -31,5 +31,6 @@ public class TranscendeumGearItemGroup extends TheTranscendeumModElements.ModEle
 			}
 		};
 	}
+
 	public static ItemGroup tab;
 }
