@@ -1,6 +1,7 @@
 {
   "block.the_transcendeum.large_virilily_block": "Large Virilily",
   "block.the_transcendeum.kiarite_block": "Kiarite Block",
+  "block.the_transcendeum.thelyarium_block": "Block of Thelyarium ",
   "enchantment.the_transcendeum.burst_popping": "Burst Popping",
   "block.the_transcendeum.excerock": "Excerock",
   "item.the_transcendeum.test": "Test",
@@ -194,6 +195,7 @@
   "entity.the_transcendeum.pisces": "Pisces",
   "block.the_transcendeum.sullen_sand": "Sullen Sand",
   "block.the_transcendeum.sulkstone_stairs": "Sulkstone Stairs",
+  "block.the_transcendeum.hethilite_block": "Hethilite Block",
   "biome.the_transcendeum.kalaisic_wastes": "Kalaisic Wastes",
   "block.the_transcendeum.kelave_button": "Kelave Button",
   "biome.the_transcendeum.sullen_crags": "Sullen Crags",

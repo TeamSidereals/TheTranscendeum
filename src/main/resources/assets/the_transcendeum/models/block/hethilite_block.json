@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_transcendeum:blocks/hethilite_block",
+    "particle": "the_transcendeum:blocks/hethilite_block"
+  }
+}

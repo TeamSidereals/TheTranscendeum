@@ -111,11 +111,7 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Ores",
-      "TaigaRocks",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves"
+      "TaigaRocks"
     ],
     "spawnEntries": [
       {

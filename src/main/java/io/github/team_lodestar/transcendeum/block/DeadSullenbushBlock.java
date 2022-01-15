@@ -126,7 +126,7 @@ public class DeadSullenbushBlock extends TheTranscendeumModElements.ModElement {
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.MINING_FATIGUE, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
-					.hardnessAndResistance(0f, 0f).speedFactor(0.8f).setLightLevel(s -> 0));
+					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("dead_sullenbush");
 		}
 

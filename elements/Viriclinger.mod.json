@@ -37,7 +37,7 @@
     "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
     },
@@ -52,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "PLANTS"
+      "value": "LEAVES"
     },
     "tickRate": 10,
     "tickRandomly": true,

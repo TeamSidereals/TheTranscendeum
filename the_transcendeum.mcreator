@@ -4649,6 +4649,115 @@
       "locked_code": false,
       "registry_name": "purpurean_grass",
       "path": "~/Plants/Grass"
+    },
+    {
+      "name": "ThelyariumBlock",
+      "type": "block",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_block"
+    },
+    {
+      "name": "BorderSpikesAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_spikes_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "HethiliteBlock",
+      "type": "block",
+      "sortid": 423,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hethilite_block"
+    },
+    {
+      "name": "BorderSpike1",
+      "type": "structure",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_spike_1",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "ThelyariumBlockCrafting",
+      "type": "recipe",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_block_crafting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BorderSpike2",
+      "type": "structure",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_spike_2",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "BorderSpike3",
+      "type": "structure",
+      "sortid": 417,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_spike_3",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "BorderSpike4",
+      "type": "structure",
+      "sortid": 418,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_spike_4",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "ThelyariumIngotFromBlock",
+      "type": "recipe",
+      "sortid": 422,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_ingot_from_block",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BorderSpike5",
+      "type": "structure",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_spike_5",
+      "path": "~/Structures/Natural"
     }
   ],
   "variable_elements": [
@@ -4676,6 +4785,7 @@
     "en_us": {
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.kiarite_block": "Kiarite Block",
+      "block.the_transcendeum.thelyarium_block": "Block of Thelyarium ",
       "enchantment.the_transcendeum.burst_popping": "Burst Popping",
       "block.the_transcendeum.excerock": "Excerock",
       "item.the_transcendeum.test": "Test",
@@ -4701,8 +4811,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4716,8 +4826,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4869,6 +4979,7 @@
       "entity.the_transcendeum.pisces": "Pisces",
       "block.the_transcendeum.sullen_sand": "Sullen Sand",
       "block.the_transcendeum.sulkstone_stairs": "Sulkstone Stairs",
+      "block.the_transcendeum.hethilite_block": "Hethilite Block",
       "biome.the_transcendeum.kalaisic_wastes": "Kalaisic Wastes",
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
@@ -5102,5 +5213,5 @@
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100353117
+  "mcreatorVersion": 202100236710
 }

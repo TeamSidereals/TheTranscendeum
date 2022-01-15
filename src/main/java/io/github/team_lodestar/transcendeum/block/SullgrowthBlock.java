@@ -125,7 +125,7 @@ public class SullgrowthBlock extends TheTranscendeumModElements.ModElement {
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.WEAKNESS, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.NETHER_SPROUT)
-					.hardnessAndResistance(0f, 0f).speedFactor(0.8f).setLightLevel(s -> 0));
+					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("sullgrowth");
 		}
 
