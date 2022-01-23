@@ -294,18 +294,18 @@ public class ExcrearerRenderer {
 						this.body.rotateAngleX *= (1 - MathHelper.sin(a * pi / 2));
 						this.frontleg1.rotateAngleX *= (1 - MathHelper.sin(a * pi / 2));
 						this.frontleg2.rotateAngleX *= (1 - MathHelper.sin(a * pi / 2));
-						this.body.rotateAngleX -= MathHelper.sin(a * pi * 1.16667f) * pi / 4;
-						this.frontleg1.rotateAngleX -= MathHelper.sin(a * pi * 0.66667f) * pi / 4;
-						this.frontleg2.rotateAngleX -= MathHelper.sin(a * pi * 0.66667f) * pi / 4;
+						this.body.rotateAngleX -= MathHelper.sin(a * pi * 1.5f) * pi / 3;
+						this.frontleg1.rotateAngleX -= MathHelper.sin(a * pi * 0.5f) * pi / 3;
+						this.frontleg2.rotateAngleX -= MathHelper.sin(a * pi * 0.5f) * pi / 3;
 					} else {
 						float a = (1 - this.swingProgress) * 5;
 						a = (float) Math.pow((double) a, 3);
 						this.body.rotateAngleX *= (1 - MathHelper.sin(a * pi / 2));
 						this.frontleg1.rotateAngleX *= (1 - MathHelper.sin(a * pi / 2));
 						this.frontleg2.rotateAngleX *= (1 - MathHelper.sin(a * pi / 2));
-						this.body.rotateAngleX += MathHelper.sin(a * pi / 2) * pi / 8;
-						this.frontleg1.rotateAngleX -= MathHelper.sin(a * pi / 2) * pi / 4;
-						this.frontleg2.rotateAngleX -= MathHelper.sin(a * pi / 2) * pi / 4;
+						this.body.rotateAngleX += MathHelper.sin(a * pi / 2) * pi / 3;
+						this.frontleg1.rotateAngleX -= MathHelper.sin(a * pi / 2) * pi / 3;
+						this.frontleg2.rotateAngleX -= MathHelper.sin(a * pi / 2) * pi / 3;
 					}
 				}
 			}
