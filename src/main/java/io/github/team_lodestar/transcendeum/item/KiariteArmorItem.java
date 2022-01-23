@@ -106,9 +106,9 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent("\uFFFD8A gear piece blessed by the power of the destructive winged lizards."));
 				list.add(new StringTextComponent(
-						"\u00A76Adds a 5% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
+						"\uFFFD6Adds a 5% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
 			}
 
 			@Override
@@ -134,9 +134,9 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent("\uFFFD8A gear piece blessed by the power of the destructive winged lizards."));
 				list.add(new StringTextComponent(
-						"\u00A76Adds a 9% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
+						"\uFFFD6Adds a 9% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
 			}
 
 			@Override
@@ -161,9 +161,9 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent("\uFFFD8A gear piece blessed by the power of the destructive winged lizards."));
 				list.add(new StringTextComponent(
-						"\u00A76Adds a 6% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
+						"\uFFFD6Adds a 6% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
 			}
 
 			@Override
@@ -188,9 +188,9 @@ public class KiariteArmorItem extends TheTranscendeumModElements.ModElement {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("\u00A78A gear piece blessed by the power of the destructive winged lizards."));
+				list.add(new StringTextComponent("\uFFFD8A gear piece blessed by the power of the destructive winged lizards."));
 				list.add(new StringTextComponent(
-						"\u00A76Adds a 5% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
+						"\uFFFD6Adds a 5% chance to nullify any Trancendeum mobs' attacks while knocking them up, also regenerates 1 heart for the user when the effect takes place."));
 			}
 
 			@Override
