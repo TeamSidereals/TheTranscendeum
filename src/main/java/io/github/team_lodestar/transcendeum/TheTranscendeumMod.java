@@ -17,6 +17,7 @@
  */
 package io.github.team_lodestar.transcendeum;
 
+import io.github.team_lodestar.transcendeum.item.mixcode.MixCodeItemRegister;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -46,6 +47,7 @@ public class TheTranscendeumMod {
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("the_transcendeum", "the_transcendeum"),
 			() -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public TheTranscendeumModElements elements;
+	public static final String MODID = "the_transcendeum";
 
 	public TheTranscendeumMod() {
 		elements = new TheTranscendeumModElements();
@@ -53,6 +55,7 @@ public class TheTranscendeumMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
 		MinecraftForge.EVENT_BUS.register(new TheTranscendeumModFMLBusEvents(this));
+		MixCodeItemRegister.init(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
 	private void init(FMLCommonSetupEvent event) {
