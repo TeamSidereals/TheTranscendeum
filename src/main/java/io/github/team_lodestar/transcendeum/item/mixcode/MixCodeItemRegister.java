@@ -1,6 +1,7 @@
 package io.github.team_lodestar.transcendeum.item.mixcode;
 
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import io.github.team_lodestar.transcendeum.item.mixcode.custom.GreedScepterItem;
 import io.github.team_lodestar.transcendeum.item.mixcode.custom.StaffOfBiosphereItem;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
 import net.minecraft.item.Item;
@@ -22,6 +23,11 @@ public class MixCodeItemRegister {
     );
     public static final RegistryObject<Item> STAFF_OF_BIOSPHERE = ITEMS.register("staff_of_biosphere", () ->
             new StaffOfBiosphereItem(
+                    new Item.Properties().group(TranscendeumItemsItemGroup.tab)
+            )
+    );
+    public static final RegistryObject<Item> GREED_SCEPTER = ITEMS.register("greed_scepter", () ->
+            new GreedScepterItem(
                     new Item.Properties().group(TranscendeumItemsItemGroup.tab)
             )
     );
