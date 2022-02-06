@@ -1,7 +1,9 @@
 package io.github.team_lodestar.transcendeum.item.mixcode;
 
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import io.github.team_lodestar.transcendeum.block.mixcode.MixCodeBlockRegister;
 import io.github.team_lodestar.transcendeum.item.mixcode.custom.StaffOfBiosphereItem;
+import io.github.team_lodestar.transcendeum.item.mixcode.custom.ViriclingerBlockItem;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
 import net.minecraft.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +24,12 @@ public class MixCodeItemRegister {
     );
     public static final RegistryObject<Item> STAFF_OF_BIOSPHERE = ITEMS.register("staff_of_biosphere", () ->
             new StaffOfBiosphereItem(
+                    new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(1)
+            )
+    );
+    public static final RegistryObject<Item> VIRICLINGER_ROPE = ITEMS.register("viriclinger_rope", () ->
+            new ViriclingerBlockItem(
+                    MixCodeBlockRegister.VIRICLINGER_ROPE.get(),
                     new Item.Properties().group(TranscendeumItemsItemGroup.tab)
             )
     );

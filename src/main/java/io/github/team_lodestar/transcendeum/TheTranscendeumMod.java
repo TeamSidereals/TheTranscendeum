@@ -17,6 +17,7 @@
  */
 package io.github.team_lodestar.transcendeum;
 
+import io.github.team_lodestar.transcendeum.block.mixcode.MixCodeBlockRegister;
 import io.github.team_lodestar.transcendeum.item.mixcode.MixCodeItemRegister;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -56,6 +57,7 @@ public class TheTranscendeumMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
 		MinecraftForge.EVENT_BUS.register(new TheTranscendeumModFMLBusEvents(this));
 		MixCodeItemRegister.init(FMLJavaModLoadingContext.get().getModEventBus());
+		MixCodeBlockRegister.init(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
 	private void init(FMLCommonSetupEvent event) {
