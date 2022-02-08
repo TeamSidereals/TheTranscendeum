@@ -109,7 +109,6 @@
   "block.the_transcendeum.polished_morosite_stairs": "Polished Morosite Stairs",
   "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
   "item.the_transcendeum.virilily": "Virilily",
-  "item.the_transcendeum.viridian_bush_spawn_egg": "Viridian Bush Spawn Egg",
   "key.the_transcendeum.arcedeon_up": "Arcedeon Ascend",
   "entity.the_transcendeum.lethreum": "Lethreum",
   "biome.the_transcendeum.aurea_plains": "Aurea Plains",
@@ -240,8 +239,6 @@
   "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
   "itemGroup.tabtranscendeum_items": "Transcendeum Items",
   "item.the_transcendeum.medal" : "Medal",
-  "item.the_transcendeum.staff_of_biosphere" : "Staff of Biosphere"
-  "item.the_transcendeum.medal" : "Medal"
-  "entity.the_transcendeum.viridian_bush": "Viridian Bush",
-  "itemGroup.tabtranscendeum_items": "Transcendeum Items"
+  "item.the_transcendeum.staff_of_biosphere" : "Staff of Biosphere",
+  "item.the_transcendeum.greed_scepter" : "Greed Scepter"
 }
