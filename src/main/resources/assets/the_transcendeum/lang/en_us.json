@@ -240,5 +240,6 @@
   "itemGroup.tabtranscendeum_items": "Transcendeum Items",
   "item.the_transcendeum.medal" : "Medal",
   "item.the_transcendeum.staff_of_biosphere" : "Staff of Biosphere",
-  "item.the_transcendeum.greed_scepter" : "Greed Scepter"
+  "block.the_transcendeum.viriclinger_rope" : "Viriclinger Rope",
+  "item.the_transcendeum.purify_powder" : "Purify Powder"
 }

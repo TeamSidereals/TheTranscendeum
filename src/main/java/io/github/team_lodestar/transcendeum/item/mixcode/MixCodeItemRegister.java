@@ -2,6 +2,7 @@ package io.github.team_lodestar.transcendeum.item.mixcode;
 
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 import io.github.team_lodestar.transcendeum.block.mixcode.MixCodeBlockRegister;
+import io.github.team_lodestar.transcendeum.item.mixcode.custom.PurifyPowderItem;
 import io.github.team_lodestar.transcendeum.item.mixcode.custom.StaffOfBiosphereItem;
 import io.github.team_lodestar.transcendeum.item.mixcode.custom.ViriclingerBlockItem;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
@@ -30,6 +31,11 @@ public class MixCodeItemRegister {
     public static final RegistryObject<Item> VIRICLINGER_ROPE = ITEMS.register("viriclinger_rope", () ->
             new ViriclingerBlockItem(
                     MixCodeBlockRegister.VIRICLINGER_ROPE.get(),
+                    new Item.Properties().group(TranscendeumItemsItemGroup.tab)
+            )
+    );
+    public static final RegistryObject<Item> PURIFY_POWDER = ITEMS.register("purify_powder", () ->
+            new PurifyPowderItem(
                     new Item.Properties().group(TranscendeumItemsItemGroup.tab)
             )
     );
