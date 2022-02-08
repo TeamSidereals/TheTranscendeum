@@ -30,7 +30,7 @@ public class ViriclingerBlockItem extends BlockItem {
             while(world.getBlockState(blockpos$mutable).getBlock() == MixCodeBlockRegister.VIRICLINGER_ROPE.get()) {
                 blockpos$mutable.move(direction);
             }
-            if (blockstate.isReplaceable(context)) {
+            if (world.getBlockState(blockpos$mutable).isReplaceable(context)) {
                 return BlockItemUseContext.func_221536_a(context, blockpos$mutable, direction);
             }
             else {
