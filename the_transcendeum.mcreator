@@ -4760,14 +4760,6 @@
       "registry_name": "hethilite_block"
     },
     {
-      "name": "BeaconBaseBlockBlocks",
-      "type": "tag",
-      "sortid": 424,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beacon_base_block_blocks"
-    },
-    {
       "name": "KalaisicWaterEvaporation",
       "type": "procedure",
       "sortid": 425,
@@ -4802,6 +4794,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "BeaconBaseBlockBlocks",
+      "type": "tag",
+      "sortid": 424,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_base_block_blocks"
     }
   ],
   "variable_elements": [

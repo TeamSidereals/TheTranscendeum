@@ -50,10 +50,12 @@ import net.minecraft.block.BlockState;
 
 import javax.annotation.Nullable;
 
+import java.util.stream.Stream;
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.EnumSet;
+import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.RemobrenOnInitialEntitySpawnProcedure;
 import io.github.team_lodestar.transcendeum.procedures.RemobrenOnEntityTickUpdateProcedure;
@@ -63,13 +65,12 @@ import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.RemobrenRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
-import com.google.common.collect.ImmutableMap;
-
 @TheTranscendeumModElements.ModElement.Tag
 public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(2f, 1f)).build("remobren").setRegistryName("remobren");
+
 	public RemobrenEntity(TheTranscendeumModElements instance) {
 		super(instance, 407);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RemobrenRenderer.ModelRegisterHandler());
@@ -105,9 +106,11 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 					int x = pos.getX();
 					int y = pos.getY();
 					int z = pos.getZ();
-					return RemobrenNaturalEntitySpawningConditionProcedure.executeProcedure(ImmutableMap.of("y", y));
+					return RemobrenNaturalEntitySpawningConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("y", y))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				});
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
@@ -146,6 +149,7 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 				{
 					this.setMutexFlags(EnumSet.of(Goal.Flag.MOVE));
 				}
+
 				public boolean shouldExecute() {
 					if (CustomEntity.this.getAttackTarget() != null && !CustomEntity.this.getMoveHelper().isUpdating()) {
 						return true;
@@ -230,12 +234,10 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			double z = this.getPosZ();
 			Entity entity = this;
 			Entity sourceentity = source.getTrueSource();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("sourceentity", sourceentity);
-				RemobrenEntityIsHurtProcedure.executeProcedure($_dependencies);
-			}
+
+			RemobrenEntityIsHurtProcedure.executeProcedure(
+					Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("sourceentity", sourceentity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			if (source == DamageSource.DROWN)
 				return false;
 			return super.attackEntityFrom(source, amount);
@@ -249,11 +251,9 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				RemobrenOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
-			}
+
+			RemobrenOnInitialEntitySpawnProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 
@@ -264,15 +264,11 @@ public class RemobrenEntity extends TheTranscendeumModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				RemobrenOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
+
+			RemobrenOnEntityTickUpdateProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

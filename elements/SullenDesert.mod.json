@@ -104,7 +104,26 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [],
+    "defaultFeatures": [
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves",
+      "Caves"
+    ],
     "spawnEntries": []
   }
 }
