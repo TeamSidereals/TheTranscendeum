@@ -162,7 +162,7 @@
       "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
       "sea_level": 63,
-      "disable_mob_generation": false,
+      "disable_mob_generation": true,
       "default_block": {
         "Name": "the_transcendeum:excerock"
       },
