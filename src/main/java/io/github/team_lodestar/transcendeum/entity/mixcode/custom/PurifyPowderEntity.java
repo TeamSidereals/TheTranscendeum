@@ -1,19 +1,13 @@
 package io.github.team_lodestar.transcendeum.entity.mixcode.custom;
 
 import io.github.team_lodestar.transcendeum.entity.mixcode.MixCodeEntityType;
-import io.github.team_lodestar.transcendeum.item.mixcode.MixCodeItemRegister;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.*;
-import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.monster.ZombieVillagerEntity;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
-import net.minecraft.entity.projectile.FireworkRocketEntity;
-import net.minecraft.entity.projectile.ProjectileEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileItemEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.network.IPacket;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
@@ -24,7 +18,6 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
-import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 import java.util.Random;
@@ -68,7 +61,11 @@ public class PurifyPowderEntity extends ProjectileItemEntity {
                     if (entity instanceof ZombieVillagerEntity){
                         Random roll = new Random();
                         if (roll.nextDouble() < 0.1D) {
-                            ((ZombieVillagerEntity) entity).cureZombie((ServerWorld) world);
+                            PlayerEntity player = null;
+                            if (this.func_234616_v_() instanceof PlayerEntity){
+                                player = (PlayerEntity) this.func_234616_v_();
+                            }
+                            ((ZombieVillagerEntity) entity).startConverting(player.getUniqueID(), roll.nextInt(2401) + 3600);
                         }
                     }
                 }
