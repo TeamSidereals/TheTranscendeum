@@ -50,6 +50,7 @@ public class PurifyPowderItem extends Item {
                 worldIn.addEntity(purifyPowderEntity);
             }
         }
+        stack.shrink(1);
         return ActionResult.resultSuccess(stack);
     }
 }
