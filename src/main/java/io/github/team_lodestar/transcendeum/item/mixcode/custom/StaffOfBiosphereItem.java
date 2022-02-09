@@ -1,8 +1,6 @@
 package io.github.team_lodestar.transcendeum.item.mixcode.custom;
 
-import io.github.team_lodestar.transcendeum.item.EnigmaGloveItem;
-import io.github.team_lodestar.transcendeum.world.biome.TranscendentOceanBiome;
-import io.github.team_lodestar.transcendeum.world.biome.TranscendentSeaBiome;
+import io.github.team_lodestar.transcendeum.world.biome.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -35,6 +33,11 @@ public class StaffOfBiosphereItem extends Item {
             if (world.getBiome(entity.getPosition()).getRegistryName().equals(TranscendentOceanBiome.biome.getRegistryName())
             || world.getBiome(entity.getPosition()).getRegistryName().equals(TranscendentSeaBiome.biome.getRegistryName())){
                 System.out.println("in ocean/sea biome");
+            }
+            if (world.getBiome(entity.getPosition()).getRegistryName().equals(SullenCanyonBiome.biome.getRegistryName())
+                    || world.getBiome(entity.getPosition()).getRegistryName().equals(SullenCliffsBiome.biome.getRegistryName())
+                    || world.getBiome(entity.getPosition()).getRegistryName().equals(SullenDesertBiome.biome.getRegistryName())){
+                System.out.println("in Sullen Desert biome");
             }
             if (!((PlayerEntity) entity).isCreative() && !entity.isSpectator()) {
                 ((PlayerEntity) entity).getCooldownTracker().setCooldown(this, (int) 200);
