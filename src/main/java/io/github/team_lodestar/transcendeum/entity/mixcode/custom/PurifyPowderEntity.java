@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.*;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.monster.ZombieEntity;
+import net.minecraft.entity.monster.ZombieVillagerEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.projectile.FireworkRocketEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
@@ -23,7 +24,10 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.fml.network.NetworkHooks;
+
+import java.util.Random;
 
 public class PurifyPowderEntity extends ProjectileItemEntity {
 
@@ -60,6 +64,12 @@ public class PurifyPowderEntity extends ProjectileItemEntity {
                         entity.attackEntityFrom(DamageSource.MAGIC, 2);
                         ((MobEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, 100, 0));
                         ((MobEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, 100, 0));
+                    }
+                    if (entity instanceof ZombieVillagerEntity){
+                        Random roll = new Random();
+                        if (roll.nextDouble() < 0.1D) {
+                            ((ZombieVillagerEntity) entity).cureZombie((ServerWorld) world);
+                        }
                     }
                 }
             }
