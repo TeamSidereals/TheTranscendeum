@@ -4802,6 +4802,82 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "beacon_base_block_blocks"
+    },
+    {
+      "name": "ViridianBush",
+      "type": "livingentity",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_bush",
+      "path": "~/mobs/biome specific"
+    },
+    {
+      "name": "ViridInfection",
+      "type": "particle",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virid_infection",
+      "path": "~/particles"
+    },
+    {
+      "name": "ViridianBushEntityIsHurt",
+      "type": "procedure",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_bush_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/particles"
+    },
+    {
+      "name": "ViridianBushEntityDies",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_bush_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/particles"
     }
   ],
   "variable_elements": [
@@ -4855,8 +4931,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4870,8 +4946,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4937,6 +5013,7 @@
       "block.the_transcendeum.polished_morosite_stairs": "Polished Morosite Stairs",
       "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.virilily": "Virilily",
+      "item.the_transcendeum.viridian_bush_spawn_egg": "Viridian Bush Spawn Egg",
       "key.the_transcendeum.arcedeon_up": "Arcedeon Ascend",
       "entity.the_transcendeum.lethreum": "Lethreum",
       "biome.the_transcendeum.aurea_plains": "Aurea Plains",
@@ -5065,6 +5142,7 @@
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
       "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
+      "entity.the_transcendeum.viridian_bush": "Viridian Bush",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
   },
