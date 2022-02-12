@@ -19,16 +19,10 @@ public class MixCodeStructureGeneration {
 
     public static void generateStructures(final BiomeLoadingEvent event) {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
-        //Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
         if (key.getLocation().equals(AureaPlainsBiome.biome.getRegistryName())){
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
             structures.add(() -> MixCodeStructureRegister.BIG_KELAVE_TREE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         }
-//        if(types.contains(BiomeDictionary.Type.PLAINS)) {
-//            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
-//
-//            structures.add(() -> MixCodeStructureRegister.BIG_KELAVE_TREE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-//        }
     }
 }
