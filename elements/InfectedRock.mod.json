@@ -2,18 +2,18 @@
   "_fv": 24,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Viridian Bush",
+    "mobName": "Infected Rock",
     "mobLabel": "",
-    "mobModelName": "Modelviridian_shurb4",
-    "mobModelTexture": "viridianshrub.png",
+    "mobModelName": "Modelinfested_rock",
+    "mobModelTexture": "infectedrock2.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.5,
-    "modelHeight": 0.5,
-    "modelShadowSize": 0.4,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -14463954,
+      "value": -11713203,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
@@ -44,15 +44,15 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
+    "attackStrength": 1,
     "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
-    "armorBaseValue": 0.0,
+    "knockbackResistance": 0.6,
+    "movementSpeed": 0.01,
+    "armorBaseValue": 1.0,
     "trackingRange": 64,
-    "health": 4,
+    "health": 10,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -64,8 +64,8 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,
-    "immuneToArrows": false,
-    "immuneToFallDamage": true,
+    "immuneToArrows": true,
+    "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
@@ -83,48 +83,44 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.silverfish.hurt"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.silverfish.hurt"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:ViridLights"
+      "value": "CUSTOM:Twilighteris"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "whenMobDies": {
-      "name": "ViridianBushEntityDies"
+      "name": "InfectedRockEntityDies"
     },
     "whenMobIsHurt": {
-      "name": "ViridianBushEntityIsHurt"
+      "name": "InfectedRockEntityIsHurt"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"38\" y=\"52\"><next><block type=\"breed\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">TRUE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:IndigoBerries</field></block></value><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"swim\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": true,
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"124\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
+    "breedable": false,
     "tameable": false,
-    "breedTriggerItems": [
-      {
-        "value": "CUSTOM:IndigoBerries"
-      }
-    ],
-    "ranged": false,
+    "breedTriggerItems": [],
+    "ranged": true,
     "rangedAttackItem": {
-      "value": ""
+      "value": "CUSTOM:ViridInfectionItem"
     },
     "rangedItemType": "Default item",
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": false,
-    "spawningProbability": 35,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 15,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:ViridianMires"

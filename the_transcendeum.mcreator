@@ -4878,6 +4878,81 @@
         ]
       },
       "path": "~/particles"
+    },
+    {
+      "name": "ViridInfectionItem",
+      "type": "item",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virid_infection_item"
+    },
+    {
+      "name": "InfectedRockEntityDies",
+      "type": "procedure",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infected_rock_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mobs/biome specific"
+    },
+    {
+      "name": "InfectedRockEntityIsHurt",
+      "type": "procedure",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infected_rock_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mobs/biome specific"
+    },
+    {
+      "name": "InfectedRock",
+      "type": "livingentity",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infected_rock",
+      "path": "~/mobs/biome specific"
     }
   ],
   "variable_elements": [
@@ -4971,6 +5046,7 @@
       "block.the_transcendeum.efow_weed": "Efow Weed",
       "block.the_transcendeum.sullenbush": "Wilting Sullenbush",
       "block.the_transcendeum.viridwood_door": "Viridwood Door",
+      "item.the_transcendeum.infected_rock_spawn_egg": "Infected Rock Spawn Egg",
       "block.the_transcendeum.saltrock": "Saltrock",
       "item.minecraft.tipped_arrow.effect.arcedeonian_brew": "Arcedeonian Arrow",
       "biome.the_transcendeum.mordhen_wastes": "Viridian Mires",
@@ -5068,6 +5144,7 @@
       "item.the_transcendeum.kiarite_axe": "Kiarite Axe",
       "block.the_transcendeum.efow_weed_bubbly": "Bubbly Efow Weed",
       "block.the_transcendeum.morosite_wall": "Morosite Wall",
+      "item.the_transcendeum.virid_infection_item": "Virid Infection",
       "item.the_transcendeum.thelyarium_hoe": "Thelyarium Hoe",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
       "item.the_transcendeum.thelyarium_helmet": "Thelyarium Helmet",
@@ -5083,6 +5160,7 @@
       "item.the_transcendeum.berthel_helmet": "Berthel Helmet",
       "item.the_transcendeum.indigo_berries": "Indigo Berries",
       "block.the_transcendeum.viridwood_fence_gate": "Viridwood Fence Gate",
+      "entity.the_transcendeum.infected_rock": "Infected Rock",
       "block.the_transcendeum.viridian_mushroom": "Viridian Mushroom",
       "item.the_transcendeum.cadillacium_pickaxe": "Cadillacium Pickaxe",
       "item.the_transcendeum.berthel_boots": "Berthel Boots",
