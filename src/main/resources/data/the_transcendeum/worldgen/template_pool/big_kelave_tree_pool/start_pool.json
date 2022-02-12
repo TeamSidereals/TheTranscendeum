@@ -1,0 +1,15 @@
+{
+  "name": "the_transcendeum:big_kelave_tree_pool/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "the_transcendeum:tree_main",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

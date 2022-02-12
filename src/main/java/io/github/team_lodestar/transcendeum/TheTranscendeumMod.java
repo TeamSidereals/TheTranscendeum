@@ -20,6 +20,7 @@ package io.github.team_lodestar.transcendeum;
 import io.github.team_lodestar.transcendeum.block.mixcode.MixCodeBlockRegister;
 import io.github.team_lodestar.transcendeum.entity.mixcode.MixCodeEntityType;
 import io.github.team_lodestar.transcendeum.item.mixcode.MixCodeItemRegister;
+import io.github.team_lodestar.transcendeum.world.structure.mixcode.MixCodeStructureRegister;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemRenderer;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
@@ -64,10 +65,14 @@ public class TheTranscendeumMod {
 		MixCodeItemRegister.init(FMLJavaModLoadingContext.get().getModEventBus());
 		MixCodeBlockRegister.init(FMLJavaModLoadingContext.get().getModEventBus());
 		MixCodeEntityType.init(FMLJavaModLoadingContext.get().getModEventBus());
+		MixCodeStructureRegister.init(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
 	private void init(FMLCommonSetupEvent event) {
 		elements.getElements().forEach(element -> element.init(event));
+		event.enqueueWork(() -> {
+			MixCodeStructureRegister.setupStructures();
+		});
 	}
 
 	public void clientLoad(FMLClientSetupEvent event) {
