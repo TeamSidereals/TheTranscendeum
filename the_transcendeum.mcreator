@@ -813,7 +813,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "puffel",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "Arffel",
@@ -822,7 +822,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "arffel",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "KelaveTree",
@@ -1411,7 +1411,7 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "arcedeon",
-      "path": "~/mobs"
+      "path": "~/mobs/global spawning"
     },
     {
       "name": "TranscendeumPlantsAdditionalPlacinggrowthCondition",
@@ -1661,7 +1661,7 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "hyrumae_ghoul",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "SullenHoodoo2",
@@ -3339,7 +3339,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lethreum",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "KiaritePickaxe",
@@ -3897,7 +3897,7 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "pisces",
-      "path": "~/mobs"
+      "path": "~/mobs/global spawning"
     },
     {
       "name": "Kefgaell",
@@ -3906,7 +3906,7 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "kefgaell",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "ThelyariumBootsCrafting",
@@ -4016,9 +4016,9 @@
       "type": "livingentity",
       "sortid": 123,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "excrearer",
-      "path": "~/mobs"
+      "path": "~/mobs/biome specific"
     },
     {
       "name": "PlainKelaveTree1",
@@ -4103,15 +4103,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "DragonarShield",
-      "type": "item",
-      "sortid": 388,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "dragonar_shield",
-      "path": "~/gear sets/shields"
     },
     {
       "name": "PyrrhicBush",
@@ -4385,50 +4376,13 @@
       }
     },
     {
-      "name": "ExcerockAxe",
-      "type": "tool",
-      "sortid": 404,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "excerock_axe",
-      "path": "~/gear sets/Tools"
-    },
-    {
-      "name": "Excelhammer",
+      "name": "DragonarShield",
       "type": "tool",
       "sortid": 403,
       "compiles": true,
-      "locked_code": false,
-      "registry_name": "excelhammer",
-      "path": "~/gear sets/Tools"
-    },
-    {
-      "name": "ExcelhammerBlockDestroyedWithTool",
-      "type": "procedure",
-      "sortid": 403,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "excelhammer_block_destroyed_with_tool",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "locked_code": true,
+      "registry_name": "dragonar_shield",
+      "path": "~/gear sets/shields"
     },
     {
       "name": "Ellum",
@@ -4470,6 +4424,66 @@
       "path": "~/mobs/functions"
     },
     {
+      "name": "PurpureanGrassBlock",
+      "type": "block",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpurean_grass_block"
+    },
+    {
+      "name": "LilacBuds",
+      "type": "plant",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lilac_buds",
+      "path": "~/Plants/Flowers"
+    },
+    {
+      "name": "Lavenderfare",
+      "type": "biome",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lavender_fare",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "Effly",
+      "type": "particle",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effly",
+      "path": "~/particles"
+    },
+    {
+      "name": "PurpureanGrass",
+      "type": "plant",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpurean_grass",
+      "path": "~/Plants/Grass"
+    },
+    {
+      "name": "WaterViridTree1",
+      "type": "structure",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_virid_tree_1"
+    },
+    {
+      "name": "WaterViridTree2",
+      "type": "structure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_virid_tree_2"
+    },
+    {
       "name": "RemobrenOnEntityTickUpdate",
       "type": "procedure",
       "sortid": 407,
@@ -4500,15 +4514,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Remobren",
-      "type": "livingentity",
-      "sortid": 407,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "remobren",
-      "path": "~/mobs"
     },
     {
       "name": "RemobrenOnInitialEntitySpawn",
@@ -4564,6 +4569,70 @@
       }
     },
     {
+      "name": "ExcerockAxe",
+      "type": "tool",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "excerock_axe",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "Excelhammer",
+      "type": "tool",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "excelhammer",
+      "path": "~/gear sets/Tools"
+    },
+    {
+      "name": "Remobren",
+      "type": "livingentity",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "remobren",
+      "path": "~/mobs/biome specific"
+    },
+    {
+      "name": "ExcelhammerBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "excelhammer_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Twighlire",
+      "type": "plant",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "twighlire",
+      "path": "~/Plants/Flowers"
+    },
+    {
       "name": "ViridLights",
       "type": "particle",
       "sortid": 412,
@@ -4582,81 +4651,13 @@
       "path": "~/Plants/Fungi"
     },
     {
-      "name": "WaterViridTree1",
+      "name": "BorderSpike1",
       "type": "structure",
-      "sortid": 411,
+      "sortid": 414,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "water_virid_tree_1"
-    },
-    {
-      "name": "PurpureanGrassBlock",
-      "type": "block",
-      "sortid": 407,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purpurean_grass_block"
-    },
-    {
-      "name": "WaterViridTree2",
-      "type": "structure",
-      "sortid": 412,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "water_virid_tree_2"
-    },
-    {
-      "name": "LilacBuds",
-      "type": "plant",
-      "sortid": 408,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lilac_buds",
-      "path": "~/Plants/Flowers"
-    },
-    {
-      "name": "Twighlire",
-      "type": "plant",
-      "sortid": 413,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "twighlire",
-      "path": "~/Plants/Flowers"
-    },
-    {
-      "name": "Lavenderfare",
-      "type": "biome",
-      "sortid": 407,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lavender_fare",
-      "path": "~/Biomes"
-    },
-    {
-      "name": "Effly",
-      "type": "particle",
-      "sortid": 410,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "effly",
-      "path": "~/particles"
-    },
-    {
-      "name": "PurpureanGrass",
-      "type": "plant",
-      "sortid": 409,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purpurean_grass",
-      "path": "~/Plants/Grass"
-    },
-    {
-      "name": "ThelyariumBlock",
-      "type": "block",
-      "sortid": 420,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thelyarium_block"
+      "registry_name": "border_spike_1",
+      "path": "~/Structures/Natural"
     },
     {
       "name": "BorderSpikesAdditionalGenerationCondition",
@@ -4689,32 +4690,6 @@
       "path": "~/Structures/Natural"
     },
     {
-      "name": "HethiliteBlock",
-      "type": "block",
-      "sortid": 423,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hethilite_block"
-    },
-    {
-      "name": "BorderSpike1",
-      "type": "structure",
-      "sortid": 414,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "border_spike_1",
-      "path": "~/Structures/Natural"
-    },
-    {
-      "name": "ThelyariumBlockCrafting",
-      "type": "recipe",
-      "sortid": 421,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thelyarium_block_crafting",
-      "path": "~/recipes"
-    },
-    {
       "name": "BorderSpike2",
       "type": "structure",
       "sortid": 416,
@@ -4742,6 +4717,32 @@
       "path": "~/Structures/Natural"
     },
     {
+      "name": "BorderSpike5",
+      "type": "structure",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_spike_5",
+      "path": "~/Structures/Natural"
+    },
+    {
+      "name": "ThelyariumBlock",
+      "type": "block",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_block"
+    },
+    {
+      "name": "ThelyariumBlockCrafting",
+      "type": "recipe",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_block_crafting",
+      "path": "~/recipes"
+    },
+    {
       "name": "ThelyariumIngotFromBlock",
       "type": "recipe",
       "sortid": 422,
@@ -4751,13 +4752,132 @@
       "path": "~/recipes"
     },
     {
-      "name": "BorderSpike5",
-      "type": "structure",
-      "sortid": 419,
+      "name": "HethiliteBlock",
+      "type": "block",
+      "sortid": 423,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "border_spike_5",
-      "path": "~/Structures/Natural"
+      "registry_name": "hethilite_block"
+    },
+    {
+      "name": "KalaisicWaterEvaporation",
+      "type": "procedure",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kalaisic_water_evaporation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeaconBaseBlockBlocks",
+      "type": "tag",
+      "sortid": 424,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_base_block_blocks"
+    },
+    {
+      "name": "ViridianBush",
+      "type": "livingentity",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_bush",
+      "path": "~/mobs/biome specific"
+    },
+    {
+      "name": "ViridInfection",
+      "type": "particle",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virid_infection",
+      "path": "~/particles"
+    },
+    {
+      "name": "ViridianBushEntityIsHurt",
+      "type": "procedure",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_bush_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/particles"
+    },
+    {
+      "name": "ViridianBushEntityDies",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_bush_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/particles"
     }
   ],
   "variable_elements": [
@@ -4893,6 +5013,7 @@
       "block.the_transcendeum.polished_morosite_stairs": "Polished Morosite Stairs",
       "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
       "item.the_transcendeum.virilily": "Virilily",
+      "item.the_transcendeum.viridian_bush_spawn_egg": "Viridian Bush Spawn Egg",
       "key.the_transcendeum.arcedeon_up": "Arcedeon Ascend",
       "entity.the_transcendeum.lethreum": "Lethreum",
       "biome.the_transcendeum.aurea_plains": "Aurea Plains",
@@ -5021,6 +5142,7 @@
       "block.the_transcendeum.viridian_grass": "Viridian Grass",
       "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
       "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
+      "entity.the_transcendeum.viridian_bush": "Viridian Bush",
       "itemGroup.tabtranscendeum_items": "Transcendeum Items"
     }
   },
@@ -5196,7 +5318,7 @@
   "workspaceSettings": {
     "modid": "the_transcendeum",
     "modName": "The Transcendeum",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Uncover and venture upon a new magnificent, alternate-Overworld dimension transcended beyond normal reality.",
     "author": "Team Lodestar",
     "websiteURL": "https://team-lodestar.github.io",
@@ -5209,9 +5331,9 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Texturers: Sajevius, Aqu, Dylanvhs / Coders: Sajevius / Ideas: everyone from Team Lodestar / Special thanks to MCreator for making this possible!",
+    "credits": "Texturers: Sajevius, Aqu, Dylanvhs, Ddx11, Lyof / Coders: Aqu, Sajevius / Ideas: everyone from Team Lodestar / Special thanks: MCreator, for making this mod possible!",
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100353117
+  "mcreatorVersion": 202100354000
 }

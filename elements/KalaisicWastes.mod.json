@@ -10,7 +10,7 @@
       "value": "CUSTOM:Morosite"
     },
     "airColor": {
-      "value": -5593439,
+      "value": -12699857,
       "falpha": 0.0
     },
     "grassColor": {
@@ -51,10 +51,10 @@
     "parent": {
       "value": "No parent"
     },
-    "rainingPossibility": 0.2,
-    "temperature": 1.8,
-    "baseHeight": 0.2,
-    "heightVariation": 0.2,
+    "rainingPossibility": 0.0,
+    "temperature": 1.9000000000000001,
+    "baseHeight": 0.30000000000000004,
+    "heightVariation": 0.19999999999999998,
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 10,
@@ -64,7 +64,7 @@
       "HOT",
       "DRY"
     ],
-    "grassPerChunk": 2,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
@@ -73,21 +73,21 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
-    "vanillaTreeType": "Default",
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Savanna trees",
     "treeType": 1,
-    "minHeight": 3,
+    "minHeight": 6,
     "treeStem": {
       "value": "Blocks.COAL_BLOCK"
     },
     "treeBranch": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.COAL_BLOCK"
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.COAL_BLOCK"
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.COAL_BLOCK"
     },
     "spawnStronghold": false,
     "spawnMineshaft": true,
