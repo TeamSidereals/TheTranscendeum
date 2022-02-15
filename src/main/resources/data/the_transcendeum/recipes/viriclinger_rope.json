@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_transcendeum:viriclinger"
+    },
+    {
+      "item": "the_transcendeum:viriclinger"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:viriclinger_rope"
+  }
+}

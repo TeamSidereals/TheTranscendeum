@@ -1,7 +1,21 @@
 {
-  "parent": "block/cross",
+  "parent": "block/block",
   "textures": {
-    "cross": "the_transcendeum:blocks/viriclinger_bottom",
-    "particle": "the_transcendeum:blocks/viriclinger_bottom"
-  }
+    "viriclinger": "the_transcendeum:blocks/viriclinger_rope",
+    "particle": "the_transcendeum:blocks/viriclinger_rope"
+  },
+  "elements": [
+    {
+      "from": [ 6, 0, 6 ],
+      "to": [ 10, 16, 10 ],
+      "faces": {
+        "down":  { "uv": [ 6, 6, 10, 10 ], "texture": "#viriclinger", "cullface": "down" },
+        "up":    { "uv": [ 10, 10, 6, 6 ], "texture": "#viriclinger" },
+        "north": { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" },
+        "south": { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" },
+        "west":  { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" },
+        "east":  { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" }
+      }
+    }
+  ]
 }

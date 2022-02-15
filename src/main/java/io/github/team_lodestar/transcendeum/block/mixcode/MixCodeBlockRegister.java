@@ -34,7 +34,7 @@ public class MixCodeBlockRegister {
     public static final RegistryObject<Block> VIRICLINGER_ROPE = BLOCKS.register("viriclinger_rope", () ->
             new ViriclingerRopeBlock(AbstractBlock.Properties.create(Material.MISCELLANEOUS)
                     .doesNotBlockMovement()
-                    .hardnessAndResistance(0,0)
+                    .zeroHardnessAndResistance()
             )
     );
 }
