@@ -35,6 +35,7 @@ public class MixCodeBlockRegister {
             new ViriclingerRopeBlock(AbstractBlock.Properties.create(Material.MISCELLANEOUS)
                     .doesNotBlockMovement()
                     .zeroHardnessAndResistance()
+                    .tickRandomly()
             )
     );
 }

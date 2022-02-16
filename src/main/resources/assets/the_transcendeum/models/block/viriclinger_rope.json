@@ -11,10 +11,10 @@
       "faces": {
         "down":  { "uv": [ 6, 6, 10, 10 ], "texture": "#viriclinger", "cullface": "down" },
         "up":    { "uv": [ 10, 10, 6, 6 ], "texture": "#viriclinger" },
-        "north": { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" },
-        "south": { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" },
-        "west":  { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" },
-        "east":  { "uv": [ 6, 16, 10, 0 ], "texture": "#viriclinger" }
+        "north": { "uv": [ 6, 0, 10, 16 ], "texture": "#viriclinger" },
+        "south": { "uv": [ 6, 0, 10, 16 ], "texture": "#viriclinger" },
+        "west":  { "uv": [ 6, 0, 10, 16 ], "texture": "#viriclinger" },
+        "east":  { "uv": [ 6, 0, 10, 16 ], "texture": "#viriclinger" }
       }
     }
   ]

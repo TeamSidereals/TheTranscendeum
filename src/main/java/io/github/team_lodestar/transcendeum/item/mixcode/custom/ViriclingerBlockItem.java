@@ -18,12 +18,12 @@ public class ViriclingerBlockItem extends BlockItem {
 
     @Nullable
     public BlockItemUseContext getBlockItemUseContext(BlockItemUseContext context) {
-        BlockPos blockpos = context.getPos();
+        BlockPos blockpos = context.getPos().toMutable().move(context.getFace().getOpposite());
         World world = context.getWorld();
         BlockState blockstate = world.getBlockState(blockpos);
         Block block = this.getBlock();
         Direction direction= Direction.DOWN;
-        if (!blockstate.isIn(block)) {
+        if (blockstate.getBlock() != block) {
             return context;
         } else {
             BlockPos.Mutable blockpos$mutable = blockpos.toMutable().move(direction);

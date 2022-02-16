@@ -1,7 +1,17 @@
 {
-  "variants": {
-    "": {
-      "model": "the_transcendeum:block/viriclinger_rope"
+  "multipart": [
+    {   "apply": { "model": "the_transcendeum:block/viriclinger_rope" }},
+    {   "when": { "north": "true" },
+      "apply": { "model": "the_transcendeum:block/viriclinger_rope_side", "uvlock": false }
+    },
+    {   "when": { "east": "true" },
+      "apply": { "model": "the_transcendeum:block/viriclinger_rope_side", "y": 90, "uvlock": false }
+    },
+    {   "when": { "south": "true" },
+      "apply": { "model": "the_transcendeum:block/viriclinger_rope_side", "y": 180, "uvlock": false }
+    },
+    {   "when": { "west": "true" },
+      "apply": { "model": "the_transcendeum:block/viriclinger_rope_side", "y": 270, "uvlock": false }
     }
-  }
+  ]
 }
