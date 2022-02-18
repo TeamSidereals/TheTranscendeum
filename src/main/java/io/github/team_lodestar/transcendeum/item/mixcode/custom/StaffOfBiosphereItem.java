@@ -39,6 +39,9 @@ public class StaffOfBiosphereItem extends Item {
                     || world.getBiome(entity.getPosition()).getRegistryName().equals(SullenDesertBiome.biome.getRegistryName())){
                 System.out.println("in Sullen Desert biome");
             }
+            if (world.getBiome(entity.getPosition()).getRegistryName().equals(KalaisicWastesBiome.biome.getRegistryName())){
+                System.out.println("in Kalaisic Wastes");
+            }
             if (!((PlayerEntity) entity).isCreative() && !entity.isSpectator()) {
                 ((PlayerEntity) entity).getCooldownTracker().setCooldown(this, (int) 200);
                 System.out.println("on cooldown");
