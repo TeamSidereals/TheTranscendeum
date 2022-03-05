@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_transcendeum:block/sullen_sandstone_slab"
+    },
+    "type=top": {
+      "model": "the_transcendeum:block/sullen_sandstone_slab_top"
+    },
+    "type=double": {
+      "model": "the_transcendeum:block/sullen_sandstone_slab_full"
+    }
+  }
+}

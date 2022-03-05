@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "the_transcendeum:block/viridian_tall_grass"
+    },
+    "half=lower": {
+      "model": "the_transcendeum:block/viridian_tall_grass_bottom"
+    }
+  }
+}
