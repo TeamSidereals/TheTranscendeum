@@ -2,19 +2,20 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "soil",
-    "textureTop": "viridian_top2",
-    "textureLeft": "viridian",
-    "textureFront": "viridian",
-    "textureRight": "viridian",
-    "textureBack": "viridian",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "sullen_sandstone_bottom",
+    "textureTop": "sullen_sandstone_top",
+    "textureLeft": "sullen_sandstone",
+    "textureFront": "sullen_sandstone",
+    "textureRight": "sullen_sandstone",
+    "textureBack": "sullen_sandstone",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "viridianmoss",
+    "particleTexture": "",
+    "blockBase": "Slab",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,16 +33,16 @@
         "subtract": false
       }
     ],
-    "name": "Viridian Nyllium",
+    "name": "Sullen Sandstone Slab",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 1.0,
+    "hardness": 0.9,
+    "resistance": 0.9,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -52,10 +53,10 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "GRASS"
+      "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -77,7 +78,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -123,14 +124,10 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "blocksToReplace": [],
+    "frequencyPerChunks": 30,
+    "frequencyOnChunk": 30,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 192
   }
 }

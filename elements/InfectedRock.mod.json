@@ -83,10 +83,10 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "block.stone.break"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "block.stone.break"
     },
     "stepSound": {
       "value": ""
