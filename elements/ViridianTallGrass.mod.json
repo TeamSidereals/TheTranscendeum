@@ -3,20 +3,20 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "viridgrass",
-    "textureBottom": "",
+    "texture": "viridian_tallgrass_top",
+    "textureBottom": "viridian_tallgrass_bottom",
     "customModelName": "Cross model",
     "itemTexture": "viridgrass",
     "particleTexture": "viridgrass",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "normal",
+    "plantType": "double",
     "staticPlantGenerationType": "Grass",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
-    "doublePlantGenerationType": "Flower",
+    "doublePlantGenerationType": "Grass",
     "customBoundingBox": true,
     "disableOffset": false,
     "boundingBoxes": [
@@ -82,7 +82,7 @@
         "value": "CUSTOM:MordhenNyllium"
       }
     ],
-    "frequencyOnChunks": 8,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
