@@ -54,7 +54,7 @@
     "material": {
       "value": "SAND"
     },
-    "tickRate": 10,
+    "tickRate": 40,
     "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "SmoothSullenSandRenewability"
+    },
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],

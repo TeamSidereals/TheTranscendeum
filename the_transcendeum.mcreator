@@ -5172,6 +5172,35 @@
       "locked_code": false,
       "registry_name": "smooth_sullen_sand_wall_recipe",
       "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SmoothSullenSandRenewability",
+      "type": "procedure",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_sullen_sand_renewability",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Renewabilities"
     }
   ],
   "variable_elements": [
@@ -5219,9 +5248,9 @@
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "entity.the_transcendeum.ellum": "Ellum",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
-      "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
-      "block.the_transcendeum.viriclinger": "Viriclinger",
       "item.the_transcendeum.thelyarium_axe": "Thelyarium Axe",
+      "block.the_transcendeum.viriclinger": "Viriclinger",
+      "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "item.the_transcendeum.berthel_sword": "Berthel Sword",
       "entity.the_transcendeum.kefgaell": "Kefgaell",
@@ -5242,8 +5271,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
+      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5625,6 +5654,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Renewabilities",
+        "children": []
       }
     ]
   },
