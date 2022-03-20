@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_transcendeum:blocks/viridian_tallgrass_bottom",
+    "particle": "the_transcendeum:blocks/viridgrass"
+  }
+}

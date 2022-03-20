@@ -1,4 +1,4 @@
-// Made with Blockbench 4.0.3
+// Made with Blockbench 4.1.4
 // Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 // Paste this class into your mod and generate all required imports
 
@@ -6,8 +6,8 @@ public static class Modelviridian_shurb4 extends EntityModel<Entity> {
 	private final ModelRenderer bb_main;
 
 	public Modelviridian_shurb4() {
-		textureWidth = 16;
-		textureHeight = 16;
+		textureWidth = 32;
+		textureHeight = 32;
 
 		bb_main = new ModelRenderer(this);
 		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
@@ -27,6 +27,5 @@ public static class Modelviridian_shurb4 extends EntityModel<Entity> {
 	}
 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
-		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 	}
 }
