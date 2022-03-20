@@ -62,7 +62,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstonefurnacerec",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "Somberstoneslab",
@@ -503,7 +503,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_stairs_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "Saltrock",
@@ -528,7 +528,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "PolishedSomberstoneSlabRecipe",
@@ -537,7 +537,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_slab_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "PolishedSomberstoneSlab",
@@ -1348,7 +1348,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_pickaxe_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "SomberstoneStoneShovelRecipe",
@@ -1357,7 +1357,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_shovel_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "KelavePlanksRecipe2",
@@ -1375,7 +1375,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_hoe_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "KelavePlanksRecipe1",
@@ -1393,7 +1393,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_sword_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "SomberstoneStoneAxeRecipe",
@@ -1402,7 +1402,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_axe_recipe",
-      "path": "~/recipes"
+      "path": "~/recipes/Somberstone"
     },
     {
       "name": "Arcedeon",
@@ -5010,6 +5010,87 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_sullen_sand_wall"
+    },
+    {
+      "name": "SomberstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "somberstone_stairs_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "SomberstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "somberstone_slab_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "PolishedSomberstoneStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_somberstone_stonecutter_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "SomberstoneStairsStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "somberstone_stairs_stonecutter_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "SomberstoneSlabStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "somberstone_slab_stonecutter_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "SomberstoneWallStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "somberstone_wall_stonecutter_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "SomberstoneWallRecipe",
+      "type": "recipe",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "somberstone_wall_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "PolishedSomberstoneSlabStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_somberstone_slab_stonecutter_recipe",
+      "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "PolishedSomberstoneStairsStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_somberstone_stairs_stonecutter_recipe",
+      "path": "~/recipes/Somberstone"
     }
   ],
   "variable_elements": [
@@ -5057,9 +5138,9 @@
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "entity.the_transcendeum.ellum": "Ellum",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
-      "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
-      "block.the_transcendeum.viriclinger": "Viriclinger",
       "item.the_transcendeum.thelyarium_axe": "Thelyarium Axe",
+      "block.the_transcendeum.viriclinger": "Viriclinger",
+      "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "item.the_transcendeum.berthel_sword": "Berthel Sword",
       "entity.the_transcendeum.kefgaell": "Kefgaell",
@@ -5080,8 +5161,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
+      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5453,7 +5534,12 @@
       },
       {
         "name": "recipes",
-        "children": []
+        "children": [
+          {
+            "name": "Somberstone",
+            "children": []
+          }
+        ]
       }
     ]
   },

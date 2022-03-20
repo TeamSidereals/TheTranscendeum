@@ -1,10 +1,9 @@
 {
-  "group": "somberstone_furnace",
+  "group": "somberstone_wall",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
-    "3 5",
-    "678"
+    "345"
   ],
   "key": {
     "0": {
@@ -19,21 +18,15 @@
     "3": {
       "item": "the_transcendeum:somberstone"
     },
+    "4": {
+      "item": "the_transcendeum:somberstone"
+    },
     "5": {
-      "item": "the_transcendeum:somberstone"
-    },
-    "6": {
-      "item": "the_transcendeum:somberstone"
-    },
-    "7": {
-      "item": "the_transcendeum:somberstone"
-    },
-    "8": {
       "item": "the_transcendeum:somberstone"
     }
   },
   "result": {
-    "item": "minecraft:furnace",
-    "count": 1
+    "item": "the_transcendeum:somberstone_wall",
+    "count": 6
   }
 }

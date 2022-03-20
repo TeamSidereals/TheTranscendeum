@@ -5,14 +5,23 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
-    "group": "somberstone_tools",
+    "recipeRetstackSize": 4,
+    "group": "somberstone_stairs",
     "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": "CUSTOM:Somberstone"
       },
       {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Somberstone"
+      },
+      {
         "value": "CUSTOM:Somberstone"
       },
       {
@@ -22,25 +31,16 @@
         "value": "CUSTOM:Somberstone"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:Somberstone"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:Somberstone"
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.STONE_AXE"
+      "value": "CUSTOM:Somberstonestairs"
     },
-    "name": "somberstone_stone_axe_recipe",
+    "name": "somberstone_stairs_recipe",
     "namespace": "mod"
   }
 }
