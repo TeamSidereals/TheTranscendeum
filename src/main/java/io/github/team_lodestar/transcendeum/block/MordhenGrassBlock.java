@@ -102,7 +102,7 @@ public class MordhenGrassBlock extends TheTranscendeumModElements.ModElement {
 			configuredFeature = feature.withConfiguration(
 					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(64)
 							.build())
-					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 8)));
+					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 10)));
 			event.getRegistry().register(feature.setRegistryName("viridian_grass"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("the_transcendeum:viridian_grass"), configuredFeature);
 		}

@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "viridian_top2",
+    "texture": "virid_top",
     "textureTop": "efow_moss_top",
     "textureLeft": "efow_moss_side",
     "textureFront": "efow_moss_side",
@@ -124,11 +124,7 @@
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:ViridianMires"
-      }
-    ],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "CUSTOM:MordhenNyllium"

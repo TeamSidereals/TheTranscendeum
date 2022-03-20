@@ -3,11 +3,11 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "viridgrass",
+    "texture": "virid_grass",
     "textureBottom": "",
     "customModelName": "Cross model",
-    "itemTexture": "viridgrass",
-    "particleTexture": "viridgrass",
+    "itemTexture": "virid_grass",
+    "particleTexture": "virid_grass",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
@@ -82,7 +82,7 @@
         "value": "CUSTOM:MordhenNyllium"
       }
     ],
-    "frequencyOnChunks": 8,
+    "frequencyOnChunks": 10,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
