@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "sullen_sandstone_stairs",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SullenSandstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SullenSandstone"
+      },
+      {
+        "value": "CUSTOM:SullenSandstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SullenSandstone"
+      },
+      {
+        "value": "CUSTOM:SullenSandstone"
+      },
+      {
+        "value": "CUSTOM:SullenSandstone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SullenSandstoneStairs"
+    },
+    "name": "sullen_sandstone_stairs_recipe",
+    "namespace": "mod"
+  }
+}

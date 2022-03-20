@@ -14,7 +14,7 @@
     {
       "name": "Somberstone",
       "type": "block",
-      "sortid": 15,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone"
@@ -22,7 +22,7 @@
     {
       "name": "TranscendeumBlocks",
       "type": "tab",
-      "sortid": 144,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendeum_blocks",
@@ -31,7 +31,7 @@
     {
       "name": "TranscendeumGear",
       "type": "tab",
-      "sortid": 145,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendeum_gear",
@@ -40,7 +40,7 @@
     {
       "name": "TranscendeumItems",
       "type": "tab",
-      "sortid": 146,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendeum_items",
@@ -49,7 +49,7 @@
     {
       "name": "TranscendeumMobs",
       "type": "tab",
-      "sortid": 147,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendeum_mobs",
@@ -58,7 +58,7 @@
     {
       "name": "Somberstonefurnacerec",
       "type": "recipe",
-      "sortid": 148,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstonefurnacerec",
@@ -67,7 +67,7 @@
     {
       "name": "Somberstoneslab",
       "type": "block",
-      "sortid": 16,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_slab"
@@ -75,7 +75,7 @@
     {
       "name": "Somberstonestairs",
       "type": "block",
-      "sortid": 17,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stairs"
@@ -83,7 +83,7 @@
     {
       "name": "Somberstonewall",
       "type": "block",
-      "sortid": 18,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_wall"
@@ -91,7 +91,7 @@
     {
       "name": "SullenSand",
       "type": "block",
-      "sortid": 19,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_sand"
@@ -99,7 +99,7 @@
     {
       "name": "SullenSandstone",
       "type": "block",
-      "sortid": 20,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_sandstone"
@@ -107,7 +107,7 @@
     {
       "name": "SullenDesert",
       "type": "biome",
-      "sortid": 149,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_desert",
@@ -116,7 +116,7 @@
     {
       "name": "StariamSlab",
       "type": "block",
-      "sortid": 27,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_slab"
@@ -124,7 +124,7 @@
     {
       "name": "StariamWoodRecipe",
       "type": "recipe",
-      "sortid": 150,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_wood_recipe",
@@ -133,7 +133,7 @@
     {
       "name": "StariamLog",
       "type": "block",
-      "sortid": 23,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_log"
@@ -141,7 +141,7 @@
     {
       "name": "StariamStairsRecipe",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_stairs_recipe",
@@ -150,7 +150,7 @@
     {
       "name": "StariamFenceRecipe",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_fence_recipe",
@@ -159,7 +159,7 @@
     {
       "name": "StariamFenceGate",
       "type": "block",
-      "sortid": 29,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_fence_gate"
@@ -167,7 +167,7 @@
     {
       "name": "StariamPressurePlate",
       "type": "block",
-      "sortid": 30,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_pressure_plate"
@@ -175,7 +175,7 @@
     {
       "name": "CrystaliaTransium",
       "type": "block",
-      "sortid": 33,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystalia_transium"
@@ -183,7 +183,7 @@
     {
       "name": "StariamWood",
       "type": "block",
-      "sortid": 21,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_wood"
@@ -191,7 +191,7 @@
     {
       "name": "LeaveBlocks",
       "type": "tag",
-      "sortid": 153,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_blocks",
@@ -200,7 +200,7 @@
     {
       "name": "LogBlocks",
       "type": "tag",
-      "sortid": 154,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "log_blocks",
@@ -209,7 +209,7 @@
     {
       "name": "StariamPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 155,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_pressure_plate_recipe",
@@ -218,7 +218,7 @@
     {
       "name": "WallBlocks",
       "type": "tag",
-      "sortid": 156,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wall_blocks",
@@ -227,7 +227,7 @@
     {
       "name": "StariamFenceGateRecipe",
       "type": "recipe",
-      "sortid": 157,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_fence_gate_recipe",
@@ -236,7 +236,7 @@
     {
       "name": "WoodenFenceBlocks",
       "type": "tag",
-      "sortid": 158,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_fence_blocks",
@@ -245,7 +245,7 @@
     {
       "name": "StariamStickRecipe",
       "type": "recipe",
-      "sortid": 159,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_stick_recipe",
@@ -254,7 +254,7 @@
     {
       "name": "StariamSlabRecipe",
       "type": "recipe",
-      "sortid": 160,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_slab_recipe",
@@ -263,7 +263,7 @@
     {
       "name": "StariamFence",
       "type": "block",
-      "sortid": 28,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_fence"
@@ -271,7 +271,7 @@
     {
       "name": "Sombersoil",
       "type": "block",
-      "sortid": 32,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sombersoil"
@@ -279,7 +279,7 @@
     {
       "name": "StariamPlanksRecipe",
       "type": "recipe",
-      "sortid": 161,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_planks_recipe",
@@ -288,7 +288,7 @@
     {
       "name": "FenceBlocks",
       "type": "tag",
-      "sortid": 162,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fence_blocks",
@@ -297,7 +297,7 @@
     {
       "name": "BlockOfCrystak",
       "type": "block",
-      "sortid": 35,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_crystak"
@@ -305,7 +305,7 @@
     {
       "name": "StariamPlanks",
       "type": "block",
-      "sortid": 24,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_planks"
@@ -313,7 +313,7 @@
     {
       "name": "StariamLeaves",
       "type": "block",
-      "sortid": 25,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_leaves"
@@ -321,7 +321,7 @@
     {
       "name": "StariamButtonRecipe",
       "type": "recipe",
-      "sortid": 163,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_button_recipe",
@@ -330,7 +330,7 @@
     {
       "name": "StariamButton",
       "type": "block",
-      "sortid": 31,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_button"
@@ -338,7 +338,7 @@
     {
       "name": "CrystaliaGrass",
       "type": "plant",
-      "sortid": 34,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystalia_grass",
@@ -347,7 +347,7 @@
     {
       "name": "CrystaliaForest",
       "type": "biome",
-      "sortid": 164,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystalia_forest",
@@ -356,7 +356,7 @@
     {
       "name": "StariamItemsTag",
       "type": "tag",
-      "sortid": 165,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_items_tag",
@@ -365,7 +365,7 @@
     {
       "name": "PlankItems",
       "type": "tag",
-      "sortid": 166,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plank_items",
@@ -374,7 +374,7 @@
     {
       "name": "StariamStairs",
       "type": "block",
-      "sortid": 26,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stariam_stairs"
@@ -382,7 +382,7 @@
     {
       "name": "DirtBlocks",
       "type": "tag",
-      "sortid": 167,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_blocks",
@@ -391,7 +391,7 @@
     {
       "name": "TranscendentOcean",
       "type": "biome",
-      "sortid": 168,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendent_ocean",
@@ -400,7 +400,7 @@
     {
       "name": "Sullcactus",
       "type": "block",
-      "sortid": 22,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullcactus"
@@ -408,7 +408,7 @@
     {
       "name": "HugeSullcactus2",
       "type": "structure",
-      "sortid": 169,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "huge_sullcactus_2",
@@ -417,7 +417,7 @@
     {
       "name": "HugeSullcactus",
       "type": "structure",
-      "sortid": 170,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "huge_sullcactus",
@@ -426,7 +426,7 @@
     {
       "name": "TranscendentSea",
       "type": "biome",
-      "sortid": 171,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendent_sea",
@@ -435,7 +435,7 @@
     {
       "name": "HugeSullcactus1",
       "type": "structure",
-      "sortid": 172,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "huge_sullcactus_1",
@@ -444,7 +444,7 @@
     {
       "name": "SullcactusBlockValidPlacementCondition",
       "type": "procedure",
-      "sortid": 173,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullcactus_block_valid_placement_condition",
@@ -473,7 +473,7 @@
     {
       "name": "SullenCanyon",
       "type": "biome",
-      "sortid": 174,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_canyon",
@@ -482,7 +482,7 @@
     {
       "name": "PolishedSomberstoneStairs",
       "type": "block",
-      "sortid": 40,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_stairs"
@@ -490,7 +490,7 @@
     {
       "name": "SaltLowlands",
       "type": "biome",
-      "sortid": 175,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "salt_lowlands",
@@ -499,7 +499,7 @@
     {
       "name": "PolishedSomberstoneStairsRecipe",
       "type": "recipe",
-      "sortid": 176,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_stairs_recipe",
@@ -508,7 +508,7 @@
     {
       "name": "Saltrock",
       "type": "block",
-      "sortid": 41,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "saltrock"
@@ -516,7 +516,7 @@
     {
       "name": "PolishedSomberstone",
       "type": "block",
-      "sortid": 36,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone"
@@ -524,7 +524,7 @@
     {
       "name": "PolishedSomberstoneRecipe",
       "type": "recipe",
-      "sortid": 177,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_recipe",
@@ -533,7 +533,7 @@
     {
       "name": "PolishedSomberstoneSlabRecipe",
       "type": "recipe",
-      "sortid": 178,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_slab_recipe",
@@ -542,7 +542,7 @@
     {
       "name": "PolishedSomberstoneSlab",
       "type": "block",
-      "sortid": 38,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_slab"
@@ -550,7 +550,7 @@
     {
       "name": "MordhenGrass",
       "type": "plant",
-      "sortid": 39,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_grass",
@@ -559,7 +559,7 @@
     {
       "name": "MordhenNyllium",
       "type": "block",
-      "sortid": 37,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_nyllium"
@@ -567,7 +567,7 @@
     {
       "name": "IaprieGrassBlock",
       "type": "block",
-      "sortid": 42,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iaprie_grass_block"
@@ -575,7 +575,7 @@
     {
       "name": "CoriumFlower",
       "type": "plant",
-      "sortid": 46,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corium_flower",
@@ -584,7 +584,7 @@
     {
       "name": "AureaPlains",
       "type": "biome",
-      "sortid": 179,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aurea_plains",
@@ -593,7 +593,7 @@
     {
       "name": "IaprieGrass",
       "type": "plant",
-      "sortid": 45,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iaprie_grass",
@@ -602,7 +602,7 @@
     {
       "name": "ScaliaWart",
       "type": "plant",
-      "sortid": 43,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scalia_wart",
@@ -611,7 +611,7 @@
     {
       "name": "Mergoany",
       "type": "plant",
-      "sortid": 44,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mergoany",
@@ -620,7 +620,7 @@
     {
       "name": "Argoany",
       "type": "plant",
-      "sortid": 47,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "argoany",
@@ -629,7 +629,7 @@
     {
       "name": "AcriumFlower",
       "type": "plant",
-      "sortid": 48,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acrium_flower",
@@ -638,7 +638,7 @@
     {
       "name": "KelaveWood",
       "type": "block",
-      "sortid": 49,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_wood"
@@ -646,7 +646,7 @@
     {
       "name": "KelaveLog",
       "type": "block",
-      "sortid": 50,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_log"
@@ -654,7 +654,7 @@
     {
       "name": "KelavePlanks",
       "type": "block",
-      "sortid": 51,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_planks"
@@ -662,7 +662,7 @@
     {
       "name": "KelaveSlab",
       "type": "block",
-      "sortid": 52,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_slab"
@@ -670,7 +670,7 @@
     {
       "name": "KelaveStairs",
       "type": "block",
-      "sortid": 53,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_stairs"
@@ -678,7 +678,7 @@
     {
       "name": "KelaveFenceGate",
       "type": "block",
-      "sortid": 54,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_fence_gate"
@@ -686,7 +686,7 @@
     {
       "name": "KelaveFence",
       "type": "block",
-      "sortid": 55,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_fence"
@@ -694,7 +694,7 @@
     {
       "name": "KelavePressurePlate",
       "type": "block",
-      "sortid": 56,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_pressure_plate"
@@ -702,7 +702,7 @@
     {
       "name": "KelaveButton",
       "type": "block",
-      "sortid": 57,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_button"
@@ -710,7 +710,7 @@
     {
       "name": "AureaForest",
       "type": "biome",
-      "sortid": 180,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aurea_forest",
@@ -719,7 +719,7 @@
     {
       "name": "Kelfae",
       "type": "block",
-      "sortid": 58,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelfae"
@@ -727,7 +727,7 @@
     {
       "name": "ChrysaliumVine",
       "type": "block",
-      "sortid": 181,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chrysalium_vine",
@@ -736,7 +736,7 @@
     {
       "name": "ChrysaliumVineBottom",
       "type": "block",
-      "sortid": 59,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chrysalium_vine_bottom",
@@ -745,7 +745,7 @@
     {
       "name": "ChrysaliumVineBlockValidPlacementCondition",
       "type": "procedure",
-      "sortid": 182,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chrysalium_vine_block_valid_placement_condition",
@@ -774,7 +774,7 @@
     {
       "name": "Kelavus",
       "type": "block",
-      "sortid": 60,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelavus"
@@ -782,7 +782,7 @@
     {
       "name": "KelaveWoodTag",
       "type": "tag",
-      "sortid": 183,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_wood_tag",
@@ -791,7 +791,7 @@
     {
       "name": "ViridianMires",
       "type": "biome",
-      "sortid": 184,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_mires",
@@ -800,7 +800,7 @@
     {
       "name": "KelaveWoodRecipe",
       "type": "recipe",
-      "sortid": 185,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_wood_recipe",
@@ -809,7 +809,7 @@
     {
       "name": "Puffel",
       "type": "livingentity",
-      "sortid": 115,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "puffel",
@@ -818,7 +818,7 @@
     {
       "name": "Arffel",
       "type": "livingentity",
-      "sortid": 116,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arffel",
@@ -827,7 +827,7 @@
     {
       "name": "KelaveTree",
       "type": "structure",
-      "sortid": 186,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_tree",
@@ -836,7 +836,7 @@
     {
       "name": "KelaveStairsRecipe",
       "type": "recipe",
-      "sortid": 187,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_stairs_recipe",
@@ -845,7 +845,7 @@
     {
       "name": "KelaveFenceRecipe",
       "type": "recipe",
-      "sortid": 188,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_fence_recipe",
@@ -854,7 +854,7 @@
     {
       "name": "KelavePressurePlateRecipe",
       "type": "recipe",
-      "sortid": 189,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_pressure_plate_recipe",
@@ -863,7 +863,7 @@
     {
       "name": "KelaveFenceGateRecipe",
       "type": "recipe",
-      "sortid": 190,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_fence_gate_recipe",
@@ -872,7 +872,7 @@
     {
       "name": "KelaveStickRecipe",
       "type": "recipe",
-      "sortid": 191,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_stick_recipe",
@@ -881,7 +881,7 @@
     {
       "name": "KelaveSlabRecipe",
       "type": "recipe",
-      "sortid": 192,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_slab_recipe",
@@ -890,7 +890,7 @@
     {
       "name": "KelaveButtonRecipe",
       "type": "recipe",
-      "sortid": 193,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_button_recipe",
@@ -899,7 +899,7 @@
     {
       "name": "VirililyBlock",
       "type": "block",
-      "sortid": 194,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virilily_block",
@@ -908,7 +908,7 @@
     {
       "name": "Virilily",
       "type": "item",
-      "sortid": 62,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virilily"
@@ -916,7 +916,7 @@
     {
       "name": "VirililyRightClickedinAir",
       "type": "procedure",
-      "sortid": 195,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virilily_right_clickedin_air",
@@ -940,7 +940,7 @@
     {
       "name": "LilyPadBoatCollision",
       "type": "procedure",
-      "sortid": 196,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lily_pad_boat_collision",
@@ -972,7 +972,7 @@
     {
       "name": "LargeVirililyBlock",
       "type": "block",
-      "sortid": 197,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "large_virilily_block",
@@ -981,7 +981,7 @@
     {
       "name": "LargeVirilily",
       "type": "item",
-      "sortid": 63,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "large_virilily"
@@ -989,7 +989,7 @@
     {
       "name": "LargeVirililyRightClickedInAir",
       "type": "procedure",
-      "sortid": 198,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "large_virilily_right_clicked_in_air",
@@ -1013,7 +1013,7 @@
     {
       "name": "LilyPadValidPlacementCondition",
       "type": "procedure",
-      "sortid": 199,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lily_pad_valid_placement_condition",
@@ -1042,7 +1042,7 @@
     {
       "name": "CoriumVirililyBlock",
       "type": "block",
-      "sortid": 200,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corium_virilily_block",
@@ -1051,7 +1051,7 @@
     {
       "name": "AcriumVirililyBlock",
       "type": "block",
-      "sortid": 201,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acrium_virilily_block",
@@ -1060,7 +1060,7 @@
     {
       "name": "CoriumVirililyRightClickedInAir",
       "type": "procedure",
-      "sortid": 202,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corium_virilily_right_clicked_in_air",
@@ -1084,7 +1084,7 @@
     {
       "name": "CoriumVirilily",
       "type": "item",
-      "sortid": 64,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corium_virilily"
@@ -1092,7 +1092,7 @@
     {
       "name": "AcriumVirilily",
       "type": "item",
-      "sortid": 65,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acrium_virilily"
@@ -1100,7 +1100,7 @@
     {
       "name": "AcriumVirililyRightClickedInAir",
       "type": "procedure",
-      "sortid": 203,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acrium_virilily_right_clicked_in_air",
@@ -1124,7 +1124,7 @@
     {
       "name": "LilyAssortment1",
       "type": "structure",
-      "sortid": 204,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lily_assortment_1",
@@ -1133,7 +1133,7 @@
     {
       "name": "LilyAssortment2",
       "type": "structure",
-      "sortid": 205,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lily_assortment_2",
@@ -1142,7 +1142,7 @@
     {
       "name": "LilyAssortment3",
       "type": "structure",
-      "sortid": 206,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lily_assortment_3",
@@ -1151,7 +1151,7 @@
     {
       "name": "BerthelCrystal",
       "type": "block",
-      "sortid": 66,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_crystal"
@@ -1159,7 +1159,7 @@
     {
       "name": "Twilighteris",
       "type": "particle",
-      "sortid": 207,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "registry_name": "twilighteris",
@@ -1168,7 +1168,7 @@
     {
       "name": "Lilies",
       "type": "tag",
-      "sortid": 208,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lilies",
@@ -1177,7 +1177,7 @@
     {
       "name": "LargeLilies",
       "type": "tag",
-      "sortid": 209,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "registry_name": "large_lilies",
@@ -1186,7 +1186,7 @@
     {
       "name": "SullenCliffs",
       "type": "biome",
-      "sortid": 210,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_cliffs",
@@ -1195,7 +1195,7 @@
     {
       "name": "CalidWoodlands",
       "type": "biome",
-      "sortid": 211,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calid_woodlands",
@@ -1204,7 +1204,7 @@
     {
       "name": "BerthelCrystalBlock",
       "type": "block",
-      "sortid": 67,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_crystal_block"
@@ -1212,7 +1212,7 @@
     {
       "name": "Cellcyte",
       "type": "block",
-      "sortid": 68,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cellcyte"
@@ -1228,7 +1228,7 @@
     {
       "name": "BerthelCrystalDrops",
       "type": "loottable",
-      "sortid": 212,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_crystal_drops"
@@ -1236,7 +1236,7 @@
     {
       "name": "BerthelSword",
       "type": "tool",
-      "sortid": 124,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_sword",
@@ -1245,7 +1245,7 @@
     {
       "name": "TranscendentMobs",
       "type": "tag",
-      "sortid": 213,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendent_mobs",
@@ -1254,7 +1254,7 @@
     {
       "name": "BerthelShovelCrafting",
       "type": "recipe",
-      "sortid": 214,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_shovel_crafting",
@@ -1263,7 +1263,7 @@
     {
       "name": "BerthelAxe",
       "type": "tool",
-      "sortid": 125,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_axe",
@@ -1272,7 +1272,7 @@
     {
       "name": "BerthelHoe",
       "type": "tool",
-      "sortid": 128,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_hoe",
@@ -1281,7 +1281,7 @@
     {
       "name": "BerthelShardsFromCrystalCrafting",
       "type": "recipe",
-      "sortid": 215,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_shards_from_crystal_crafting",
@@ -1290,7 +1290,7 @@
     {
       "name": "BerthelPickaxe",
       "type": "tool",
-      "sortid": 126,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_pickaxe",
@@ -1299,7 +1299,7 @@
     {
       "name": "BerthelPickaxeCrafting",
       "type": "recipe",
-      "sortid": 216,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_pickaxe_crafting",
@@ -1308,7 +1308,7 @@
     {
       "name": "BerthelSwordCrafting",
       "type": "recipe",
-      "sortid": 217,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_sword_crafting",
@@ -1317,7 +1317,7 @@
     {
       "name": "BerthelAxeCrafting",
       "type": "recipe",
-      "sortid": 218,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_axe_crafting",
@@ -1326,7 +1326,7 @@
     {
       "name": "BerthelShovel",
       "type": "tool",
-      "sortid": 127,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_shovel",
@@ -1335,7 +1335,7 @@
     {
       "name": "BerthelHoeCrafting",
       "type": "recipe",
-      "sortid": 219,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_hoe_crafting",
@@ -1344,7 +1344,7 @@
     {
       "name": "SomberstoneStonePickaxeRecipe",
       "type": "recipe",
-      "sortid": 220,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_pickaxe_recipe",
@@ -1353,7 +1353,7 @@
     {
       "name": "SomberstoneStoneShovelRecipe",
       "type": "recipe",
-      "sortid": 221,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_shovel_recipe",
@@ -1362,7 +1362,7 @@
     {
       "name": "KelavePlanksRecipe2",
       "type": "recipe",
-      "sortid": 222,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_planks_recipe_2",
@@ -1371,7 +1371,7 @@
     {
       "name": "SomberstoneStoneHoeRecipe",
       "type": "recipe",
-      "sortid": 223,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_hoe_recipe",
@@ -1380,7 +1380,7 @@
     {
       "name": "KelavePlanksRecipe1",
       "type": "recipe",
-      "sortid": 224,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_planks_recipe_1",
@@ -1389,7 +1389,7 @@
     {
       "name": "SomberstoneStoneSwordRecipe",
       "type": "recipe",
-      "sortid": 225,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_sword_recipe",
@@ -1398,7 +1398,7 @@
     {
       "name": "SomberstoneStoneAxeRecipe",
       "type": "recipe",
-      "sortid": 226,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stone_axe_recipe",
@@ -1407,7 +1407,7 @@
     {
       "name": "Arcedeon",
       "type": "livingentity",
-      "sortid": 117,
+      "sortid": 132,
       "compiles": true,
       "locked_code": true,
       "registry_name": "arcedeon",
@@ -1416,7 +1416,7 @@
     {
       "name": "TranscendeumPlantsAdditionalPlacinggrowthCondition",
       "type": "procedure",
-      "sortid": 227,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendeum_plants_additional_placinggrowth_condition",
@@ -1428,7 +1428,7 @@
     {
       "name": "DeadSullenbush",
       "type": "plant",
-      "sortid": 69,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dead_sullenbush",
@@ -1437,7 +1437,7 @@
     {
       "name": "Sulkstone",
       "type": "block",
-      "sortid": 70,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone"
@@ -1445,7 +1445,7 @@
     {
       "name": "PolishedSulkstone",
       "type": "block",
-      "sortid": 71,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone"
@@ -1453,7 +1453,7 @@
     {
       "name": "SulkstoneStairs",
       "type": "block",
-      "sortid": 72,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_stairs"
@@ -1461,7 +1461,7 @@
     {
       "name": "SulkstoneSlab",
       "type": "block",
-      "sortid": 73,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_slab"
@@ -1469,7 +1469,7 @@
     {
       "name": "SulkstoneWall",
       "type": "block",
-      "sortid": 74,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_wall"
@@ -1477,7 +1477,7 @@
     {
       "name": "PolishedSulkstoneStairs",
       "type": "block",
-      "sortid": 75,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stairs"
@@ -1485,7 +1485,7 @@
     {
       "name": "PolishedSulkstoneSlab",
       "type": "block",
-      "sortid": 76,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_slab"
@@ -1493,7 +1493,7 @@
     {
       "name": "PolishedSulkstonePressurePlate",
       "type": "block",
-      "sortid": 77,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_pressure_plate"
@@ -1501,7 +1501,7 @@
     {
       "name": "MorositeSlab",
       "type": "block",
-      "sortid": 80,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_slab"
@@ -1509,7 +1509,7 @@
     {
       "name": "MorositeWall",
       "type": "block",
-      "sortid": 81,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_wall"
@@ -1517,7 +1517,7 @@
     {
       "name": "MorositeStairs",
       "type": "block",
-      "sortid": 79,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_stairs"
@@ -1525,7 +1525,7 @@
     {
       "name": "PolishedMorositeSlab",
       "type": "block",
-      "sortid": 84,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_slab"
@@ -1533,7 +1533,7 @@
     {
       "name": "SingleVirilily",
       "type": "structure",
-      "sortid": 228,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "single_virilily",
@@ -1542,7 +1542,7 @@
     {
       "name": "PolishedMorosite",
       "type": "block",
-      "sortid": 82,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite"
@@ -1550,7 +1550,7 @@
     {
       "name": "PolishedMorositeStairs",
       "type": "block",
-      "sortid": 83,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_stairs"
@@ -1558,7 +1558,7 @@
     {
       "name": "PolishedMorositePressurePlate",
       "type": "block",
-      "sortid": 85,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_pressure_plate"
@@ -1566,7 +1566,7 @@
     {
       "name": "Morosite",
       "type": "block",
-      "sortid": 78,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite"
@@ -1574,7 +1574,7 @@
     {
       "name": "BerthelArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 229,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_armor_helmet_recipe",
@@ -1583,7 +1583,7 @@
     {
       "name": "BerthelArmor",
       "type": "armor",
-      "sortid": 129,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_armor",
@@ -1598,7 +1598,7 @@
     {
       "name": "BerthelArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 230,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_armor_leggings_recipe",
@@ -1607,7 +1607,7 @@
     {
       "name": "ArcedeonOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 231,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeon_on_entity_tick_update",
@@ -1639,7 +1639,7 @@
     {
       "name": "BerthelArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 232,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_armor_boots_recipe",
@@ -1648,7 +1648,7 @@
     {
       "name": "BerthelArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 233,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_armor_body_recipe",
@@ -1657,7 +1657,7 @@
     {
       "name": "HyrumaeGhoul",
       "type": "livingentity",
-      "sortid": 118,
+      "sortid": 133,
       "compiles": true,
       "locked_code": true,
       "registry_name": "hyrumae_ghoul",
@@ -1666,7 +1666,7 @@
     {
       "name": "SullenHoodoo2",
       "type": "structure",
-      "sortid": 234,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_hoodoo_2",
@@ -1675,7 +1675,7 @@
     {
       "name": "SullenHoodoo1",
       "type": "structure",
-      "sortid": 235,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_hoodoo_1",
@@ -1684,7 +1684,7 @@
     {
       "name": "SullenHoodoo3",
       "type": "structure",
-      "sortid": 236,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_hoodoo_3",
@@ -1693,7 +1693,7 @@
     {
       "name": "SullenBoulder1",
       "type": "structure",
-      "sortid": 237,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_boulder_1",
@@ -1702,7 +1702,7 @@
     {
       "name": "SullenHoodoo",
       "type": "structure",
-      "sortid": 238,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_hoodoo",
@@ -1711,25 +1711,16 @@
     {
       "name": "SullenBoulder",
       "type": "structure",
-      "sortid": 239,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_boulder",
       "path": "~/Structures/Natural"
     },
     {
-      "name": "AvoiderKillable",
-      "type": "tag",
-      "sortid": 240,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avoider_killable",
-      "path": "~/Tags"
-    },
-    {
       "name": "Bubble",
       "type": "block",
-      "sortid": 86,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bubble",
@@ -1738,7 +1729,7 @@
     {
       "name": "Refreshing",
       "type": "enchantment",
-      "sortid": 241,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "refreshing",
@@ -1747,7 +1738,7 @@
     {
       "name": "BubbleClickEquip",
       "type": "procedure",
-      "sortid": 242,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bubble_click_equip",
@@ -1780,7 +1771,7 @@
     {
       "name": "BubbleTouchGiveAir",
       "type": "procedure",
-      "sortid": 243,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bubble_touch_give_air",
@@ -1797,7 +1788,7 @@
     {
       "name": "BubbleHelmGiveAir",
       "type": "procedure",
-      "sortid": 244,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bubble_helm_give_air",
@@ -1830,7 +1821,7 @@
     {
       "name": "EfowWeed",
       "type": "block",
-      "sortid": 87,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_weed",
@@ -1839,7 +1830,7 @@
     {
       "name": "EfowWeedBreakChange",
       "type": "procedure",
-      "sortid": 245,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_weed_break_change",
@@ -1868,7 +1859,7 @@
     {
       "name": "EfowIfCanPlace",
       "type": "procedure",
-      "sortid": 246,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_if_can_place",
@@ -1898,7 +1889,7 @@
     {
       "name": "EfowWeedGrowable",
       "type": "tag",
-      "sortid": 247,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_weed_growable",
@@ -1907,7 +1898,7 @@
     {
       "name": "ArcedeonianBrew",
       "type": "potion",
-      "sortid": 248,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeonian_brew",
@@ -1916,7 +1907,7 @@
     {
       "name": "ArcedeonianBrewCraft",
       "type": "recipe",
-      "sortid": 249,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeonian_brew_craft",
@@ -1925,7 +1916,7 @@
     {
       "name": "Aquadynamic",
       "type": "enchantment",
-      "sortid": 250,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aquadynamic",
@@ -1934,7 +1925,7 @@
     {
       "name": "Testmob",
       "type": "livingentity",
-      "sortid": 119,
+      "sortid": 134,
       "compiles": true,
       "locked_code": true,
       "registry_name": "testmob",
@@ -1943,7 +1934,7 @@
     {
       "name": "KelaveTree1",
       "type": "structure",
-      "sortid": 251,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_tree_1",
@@ -1952,7 +1943,7 @@
     {
       "name": "KelaveTree2",
       "type": "structure",
-      "sortid": 252,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_tree_2",
@@ -1961,7 +1952,7 @@
     {
       "name": "KelaveTree3",
       "type": "structure",
-      "sortid": 253,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_tree_3",
@@ -1970,7 +1961,7 @@
     {
       "name": "CavernScheduleTickUpdate",
       "type": "procedure",
-      "sortid": 254,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cavern_schedule_tick_update",
@@ -1999,7 +1990,7 @@
     {
       "name": "CavernAirProcedure",
       "type": "procedure",
-      "sortid": 255,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cavern_air_procedure",
@@ -2028,7 +2019,7 @@
     {
       "name": "Cavernairstructure",
       "type": "structure",
-      "sortid": 256,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cavernairstructure",
@@ -2037,7 +2028,7 @@
     {
       "name": "CavernAirUpdateTick",
       "type": "procedure",
-      "sortid": 257,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cavern_air_update_tick",
@@ -2066,7 +2057,7 @@
     {
       "name": "CavernAir",
       "type": "block",
-      "sortid": 258,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cavern_air",
@@ -2075,7 +2066,7 @@
     {
       "name": "SharpBerthel",
       "type": "particle",
-      "sortid": 259,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sharp_berthel",
@@ -2084,7 +2075,7 @@
     {
       "name": "BerthelSharpBlade",
       "type": "procedure",
-      "sortid": 260,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_sharp_blade",
@@ -2112,7 +2103,7 @@
     {
       "name": "DashAttackGoal",
       "type": "code",
-      "sortid": 261,
+      "sortid": 283,
       "compiles": true,
       "locked_code": true,
       "registry_name": "dash_attack_goal"
@@ -2120,7 +2111,7 @@
     {
       "name": "EnigmaGlovePoweredWhileBulletFlyingTick",
       "type": "procedure",
-      "sortid": 262,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove_powered_while_bullet_flying_tick",
@@ -2149,7 +2140,7 @@
     {
       "name": "Flame1Condition",
       "type": "procedure",
-      "sortid": 263,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flame_1_condition",
@@ -2167,7 +2158,7 @@
     {
       "name": "Flame4Condition",
       "type": "procedure",
-      "sortid": 264,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flame_4_condition",
@@ -2185,7 +2176,7 @@
     {
       "name": "EnigmagloveoverlayDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 265,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigmagloveoverlay_display_overlay_ingame",
@@ -2203,7 +2194,7 @@
     {
       "name": "EnigmaGloveRangedItemUsed",
       "type": "procedure",
-      "sortid": 266,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove_ranged_item_used",
@@ -2224,7 +2215,7 @@
     {
       "name": "Flame3Condition",
       "type": "procedure",
-      "sortid": 267,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flame_3_condition",
@@ -2242,7 +2233,7 @@
     {
       "name": "EnigmaGlovePoweredRangedItemUsed",
       "type": "procedure",
-      "sortid": 268,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove_powered_ranged_item_used",
@@ -2263,7 +2254,7 @@
     {
       "name": "Enigmagloveoverlay",
       "type": "overlay",
-      "sortid": 269,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigmagloveoverlay",
@@ -2272,7 +2263,7 @@
     {
       "name": "EnigmaGlovePowered",
       "type": "rangeditem",
-      "sortid": 270,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove_powered",
@@ -2281,7 +2272,7 @@
     {
       "name": "EnigmaGlovePoweredBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 271,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove_powered_bullet_hits_living_entity",
@@ -2310,7 +2301,7 @@
     {
       "name": "EnigmaGlove",
       "type": "rangeditem",
-      "sortid": 142,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove",
@@ -2319,7 +2310,7 @@
     {
       "name": "Flame2Condition",
       "type": "procedure",
-      "sortid": 272,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flame_2_condition",
@@ -2337,7 +2328,7 @@
     {
       "name": "PoweredFlame5Condition",
       "type": "procedure",
-      "sortid": 273,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "registry_name": "powered_flame_5_condition",
@@ -2355,7 +2346,7 @@
     {
       "name": "EnigmaGloveWhileBulletFlyingTick",
       "type": "procedure",
-      "sortid": 274,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove_while_bullet_flying_tick",
@@ -2384,7 +2375,7 @@
     {
       "name": "ViridwoodPressurePlateCrafting",
       "type": "recipe",
-      "sortid": 275,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_pressure_plate_crafting",
@@ -2393,7 +2384,7 @@
     {
       "name": "Viridwood",
       "type": "block",
-      "sortid": 88,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood"
@@ -2401,7 +2392,7 @@
     {
       "name": "ViridwoodPlanksCrafting1",
       "type": "recipe",
-      "sortid": 276,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_planks_crafting_1",
@@ -2410,7 +2401,7 @@
     {
       "name": "ViridwoodSlab",
       "type": "block",
-      "sortid": 91,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_slab"
@@ -2418,7 +2409,7 @@
     {
       "name": "ViridwoodLeaves",
       "type": "block",
-      "sortid": 97,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_leaves"
@@ -2426,7 +2417,7 @@
     {
       "name": "ViridwoodPlanks",
       "type": "block",
-      "sortid": 90,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_planks"
@@ -2434,7 +2425,7 @@
     {
       "name": "ViridwoodFence",
       "type": "block",
-      "sortid": 93,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_fence"
@@ -2442,7 +2433,7 @@
     {
       "name": "ViridwoodPlanksCrafting2",
       "type": "recipe",
-      "sortid": 277,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_planks_crafting_2",
@@ -2451,7 +2442,7 @@
     {
       "name": "ViridwoodLog",
       "type": "block",
-      "sortid": 89,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_log"
@@ -2459,7 +2450,7 @@
     {
       "name": "ViridwoodFenceGateCrafting",
       "type": "recipe",
-      "sortid": 278,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_fence_gate_crafting",
@@ -2468,7 +2459,7 @@
     {
       "name": "ViridwoodPressurePlate",
       "type": "block",
-      "sortid": 94,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_pressure_plate"
@@ -2476,7 +2467,7 @@
     {
       "name": "ViridwoodFenceGate",
       "type": "block",
-      "sortid": 92,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_fence_gate"
@@ -2484,7 +2475,7 @@
     {
       "name": "ViridwoodStairsCrafting",
       "type": "recipe",
-      "sortid": 279,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_stairs_crafting",
@@ -2493,7 +2484,7 @@
     {
       "name": "ViridwoodFenceCrafting",
       "type": "recipe",
-      "sortid": 280,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_fence_crafting",
@@ -2502,7 +2493,7 @@
     {
       "name": "ViridwoodCrafting",
       "type": "recipe",
-      "sortid": 281,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_crafting",
@@ -2511,7 +2502,7 @@
     {
       "name": "ViridwoodButton",
       "type": "block",
-      "sortid": 95,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_button"
@@ -2519,7 +2510,7 @@
     {
       "name": "ViridwoodSlabRecipe",
       "type": "recipe",
-      "sortid": 282,
+      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_slab_recipe",
@@ -2528,7 +2519,7 @@
     {
       "name": "ViridwoodStairs",
       "type": "block",
-      "sortid": 96,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_stairs"
@@ -2536,7 +2527,7 @@
     {
       "name": "NoEnigmaGloveCooldown",
       "type": "command",
-      "sortid": 283,
+      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "registry_name": "no_enigma_glove_cooldown",
@@ -2545,7 +2536,7 @@
     {
       "name": "Test",
       "type": "item",
-      "sortid": 143,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test"
@@ -2553,7 +2544,7 @@
     {
       "name": "TestRightClicked",
       "type": "procedure",
-      "sortid": 284,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test_right_clicked",
@@ -2569,7 +2560,7 @@
     {
       "name": "NoEnigmaGloveCooldownCommandExecuted",
       "type": "procedure",
-      "sortid": 285,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "registry_name": "no_enigma_glove_cooldown_command_executed",
@@ -2585,7 +2576,7 @@
     {
       "name": "ThelyariumHoeCrafting",
       "type": "recipe",
-      "sortid": 286,
+      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_hoe_crafting",
@@ -2594,7 +2585,7 @@
     {
       "name": "ThelyariumShovelCrafting",
       "type": "recipe",
-      "sortid": 287,
+      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_shovel_crafting",
@@ -2603,7 +2594,7 @@
     {
       "name": "EfowMoss",
       "type": "block",
-      "sortid": 98,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_moss",
@@ -2612,7 +2603,7 @@
     {
       "name": "ThelyariumSwordCrafting",
       "type": "recipe",
-      "sortid": 288,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_sword_crafting",
@@ -2621,7 +2612,7 @@
     {
       "name": "ViridianMossBlock",
       "type": "block",
-      "sortid": 100,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_moss_block"
@@ -2629,7 +2620,7 @@
     {
       "name": "ViriclingerBlockValidPlacementCondition",
       "type": "procedure",
-      "sortid": 289,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viriclinger_block_valid_placement_condition",
@@ -2658,7 +2649,7 @@
     {
       "name": "ViriclingerBaseNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 290,
+      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viriclinger_base_neighbour_block_changes",
@@ -2686,7 +2677,7 @@
     {
       "name": "ViriclingerBase",
       "type": "block",
-      "sortid": 291,
+      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viriclinger_base",
@@ -2695,7 +2686,7 @@
     {
       "name": "BurstPopping",
       "type": "enchantment",
-      "sortid": 292,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "registry_name": "burst_popping",
@@ -2704,7 +2695,7 @@
     {
       "name": "ThelyariumSword",
       "type": "tool",
-      "sortid": 130,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_sword"
@@ -2712,7 +2703,7 @@
     {
       "name": "Viriclinger",
       "type": "block",
-      "sortid": 101,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viriclinger",
@@ -2721,7 +2712,7 @@
     {
       "name": "ThelyariumHoe",
       "type": "tool",
-      "sortid": 134,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_hoe"
@@ -2729,7 +2720,7 @@
     {
       "name": "ViriclingerNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 293,
+      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viriclinger_neighbour_block_changes",
@@ -2757,7 +2748,7 @@
     {
       "name": "ThelyariumShovel",
       "type": "tool",
-      "sortid": 133,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_shovel"
@@ -2765,7 +2756,7 @@
     {
       "name": "ThelyarianHarm",
       "type": "particle",
-      "sortid": 294,
+      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarian_harm"
@@ -2773,7 +2764,7 @@
     {
       "name": "ThelyariumPickaxe",
       "type": "tool",
-      "sortid": 132,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_pickaxe"
@@ -2789,7 +2780,7 @@
     {
       "name": "ThelyariumToolsHitLivingEntity",
       "type": "procedure",
-      "sortid": 295,
+      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_tools_hit_living_entity",
@@ -2825,7 +2816,7 @@
     {
       "name": "ThelyariumAxe",
       "type": "tool",
-      "sortid": 131,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_axe"
@@ -2833,7 +2824,7 @@
     {
       "name": "ThelyariumAxeCrafting",
       "type": "recipe",
-      "sortid": 296,
+      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_axe_crafting",
@@ -2842,7 +2833,7 @@
     {
       "name": "ThelyariumPickaxeCrafting",
       "type": "recipe",
-      "sortid": 297,
+      "sortid": 319,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_pickaxe_crafting",
@@ -2851,7 +2842,7 @@
     {
       "name": "EfowMossBlock",
       "type": "block",
-      "sortid": 99,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_moss_block",
@@ -2860,7 +2851,7 @@
     {
       "name": "SulkstoneStairsCrafting",
       "type": "recipe",
-      "sortid": 298,
+      "sortid": 320,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_stairs_crafting",
@@ -2869,7 +2860,7 @@
     {
       "name": "SulkstoneStairsStonecutting",
       "type": "recipe",
-      "sortid": 299,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_stairs_stonecutting",
@@ -2878,7 +2869,7 @@
     {
       "name": "SulkstoneSlabCrafting",
       "type": "recipe",
-      "sortid": 300,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_slab_crafting",
@@ -2887,7 +2878,7 @@
     {
       "name": "SulkstoneSlabStonecutting",
       "type": "recipe",
-      "sortid": 301,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_slab_stonecutting",
@@ -2896,7 +2887,7 @@
     {
       "name": "SulkstoneWallCrafting",
       "type": "recipe",
-      "sortid": 302,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_wall_crafting",
@@ -2905,7 +2896,7 @@
     {
       "name": "SulkstoneWallStonecutting",
       "type": "recipe",
-      "sortid": 303,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_wall_stonecutting",
@@ -2914,7 +2905,7 @@
     {
       "name": "PolishedSulkstoneCrafting",
       "type": "recipe",
-      "sortid": 304,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_crafting",
@@ -2923,7 +2914,7 @@
     {
       "name": "PolishedSulkstoneStonecutting",
       "type": "recipe",
-      "sortid": 305,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stonecutting",
@@ -2932,7 +2923,7 @@
     {
       "name": "PolishedSulkstoneStairsCrafting",
       "type": "recipe",
-      "sortid": 306,
+      "sortid": 328,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stairs_crafting",
@@ -2941,7 +2932,7 @@
     {
       "name": "PolishedSulkstoneStairsStonecutting1",
       "type": "recipe",
-      "sortid": 307,
+      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stairs_stonecutting_1",
@@ -2950,7 +2941,7 @@
     {
       "name": "PolishedSulkstoneStairsStonecutting2",
       "type": "recipe",
-      "sortid": 308,
+      "sortid": 330,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stairs_stonecutting_2",
@@ -2959,7 +2950,7 @@
     {
       "name": "PolishedSulkstoneSlabCrafting",
       "type": "recipe",
-      "sortid": 309,
+      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_slab_crafting",
@@ -2968,7 +2959,7 @@
     {
       "name": "PolishedSulkstoneSlabStonecutting1",
       "type": "recipe",
-      "sortid": 310,
+      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_slab_stonecutting_1",
@@ -2977,7 +2968,7 @@
     {
       "name": "PolishedSulkstoneSlabStonecutting2",
       "type": "recipe",
-      "sortid": 311,
+      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_slab_stonecutting_2",
@@ -2986,7 +2977,7 @@
     {
       "name": "PolishedSulkstonePressurePlateCrafting",
       "type": "recipe",
-      "sortid": 312,
+      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_pressure_plate_crafting",
@@ -2995,7 +2986,7 @@
     {
       "name": "MorositeStairsCrafting",
       "type": "recipe",
-      "sortid": 313,
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_stairs_crafting",
@@ -3004,7 +2995,7 @@
     {
       "name": "MorositeStairsStonecutting",
       "type": "recipe",
-      "sortid": 314,
+      "sortid": 336,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_stairs_stonecutting",
@@ -3013,7 +3004,7 @@
     {
       "name": "MorositeSlabCrafting",
       "type": "recipe",
-      "sortid": 315,
+      "sortid": 337,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_slab_crafting",
@@ -3022,7 +3013,7 @@
     {
       "name": "MorositeSlabStonecutting",
       "type": "recipe",
-      "sortid": 316,
+      "sortid": 338,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_slab_stonecutting",
@@ -3031,7 +3022,7 @@
     {
       "name": "MorositeWallCrafting",
       "type": "recipe",
-      "sortid": 317,
+      "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_wall_crafting",
@@ -3040,7 +3031,7 @@
     {
       "name": "MorositeWallStonecutting",
       "type": "recipe",
-      "sortid": 318,
+      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "registry_name": "morosite_wall_stonecutting",
@@ -3049,7 +3040,7 @@
     {
       "name": "PolishedMorositeCrafting",
       "type": "recipe",
-      "sortid": 319,
+      "sortid": 341,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_crafting",
@@ -3058,7 +3049,7 @@
     {
       "name": "PolishedMorositeStonecutting",
       "type": "recipe",
-      "sortid": 320,
+      "sortid": 342,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_stonecutting",
@@ -3067,7 +3058,7 @@
     {
       "name": "PolishedMorositeStairsCrafting",
       "type": "recipe",
-      "sortid": 321,
+      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_stairs_crafting",
@@ -3076,7 +3067,7 @@
     {
       "name": "PolishedMorositeStairsStonecutting1",
       "type": "recipe",
-      "sortid": 322,
+      "sortid": 344,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_stairs_stonecutting_1",
@@ -3085,7 +3076,7 @@
     {
       "name": "PolishedMorositeStairsStonecutting2",
       "type": "recipe",
-      "sortid": 323,
+      "sortid": 345,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_stairs_stonecutting_2",
@@ -3094,7 +3085,7 @@
     {
       "name": "PolishedMorositeSlabCrafting",
       "type": "recipe",
-      "sortid": 324,
+      "sortid": 346,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_slab_crafting",
@@ -3103,7 +3094,7 @@
     {
       "name": "PolishedMorositeSlabStonecutting1",
       "type": "recipe",
-      "sortid": 325,
+      "sortid": 347,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_slab_stonecutting_1",
@@ -3112,7 +3103,7 @@
     {
       "name": "PolishedMorositeSlabStonecutting2",
       "type": "recipe",
-      "sortid": 326,
+      "sortid": 348,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_slab_stonecutting_2",
@@ -3121,7 +3112,7 @@
     {
       "name": "PolishedMorositePressurePlateCrafting",
       "type": "recipe",
-      "sortid": 327,
+      "sortid": 349,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_morosite_pressure_plate_crafting",
@@ -3130,7 +3121,7 @@
     {
       "name": "ViralgaBlock",
       "type": "block",
-      "sortid": 328,
+      "sortid": 350,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viralga_block"
@@ -3138,7 +3129,7 @@
     {
       "name": "ViralgaFuel",
       "type": "fuel",
-      "sortid": 329,
+      "sortid": 351,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viralga_fuel",
@@ -3147,7 +3138,7 @@
     {
       "name": "ViralgaFeature2",
       "type": "structure",
-      "sortid": 330,
+      "sortid": 352,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viralga_feature_2"
@@ -3155,7 +3146,7 @@
     {
       "name": "ViralgaFeature",
       "type": "structure",
-      "sortid": 331,
+      "sortid": 353,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viralga_feature",
@@ -3164,7 +3155,7 @@
     {
       "name": "GreenDyeFromViralgaCrafting",
       "type": "recipe",
-      "sortid": 332,
+      "sortid": 354,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_dye_from_viralga_crafting",
@@ -3173,7 +3164,7 @@
     {
       "name": "Viralga",
       "type": "item",
-      "sortid": 103,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viralga"
@@ -3181,7 +3172,7 @@
     {
       "name": "ViralgaRightClickedinAir",
       "type": "procedure",
-      "sortid": 333,
+      "sortid": 355,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viralga_right_clickedin_air",
@@ -3205,7 +3196,7 @@
     {
       "name": "ViralgaFeature1",
       "type": "structure",
-      "sortid": 334,
+      "sortid": 356,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viralga_feature_1",
@@ -3214,7 +3205,7 @@
     {
       "name": "LethreumOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 335,
+      "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lethreum_on_entity_tick_update",
@@ -3230,7 +3221,7 @@
     {
       "name": "KiariteSword",
       "type": "tool",
-      "sortid": 136,
+      "sortid": 156,
       "compiles": true,
       "locked_code": true,
       "registry_name": "kiarite_sword",
@@ -3239,7 +3230,7 @@
     {
       "name": "KiariteSwordRecipe",
       "type": "recipe",
-      "sortid": 336,
+      "sortid": 358,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_sword_recipe",
@@ -3248,7 +3239,7 @@
     {
       "name": "KiariteToolLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 337,
+      "sortid": 359,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_tool_living_entity_is_hit_with_tool",
@@ -3272,7 +3263,7 @@
     {
       "name": "KiariteAxe",
       "type": "tool",
-      "sortid": 137,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_axe",
@@ -3281,7 +3272,7 @@
     {
       "name": "KiariteExorcism",
       "type": "particle",
-      "sortid": 338,
+      "sortid": 360,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_exorcism",
@@ -3290,7 +3281,7 @@
     {
       "name": "KiariteAxeRecipe",
       "type": "recipe",
-      "sortid": 339,
+      "sortid": 361,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_axe_recipe",
@@ -3299,7 +3290,7 @@
     {
       "name": "KiariteShovel",
       "type": "tool",
-      "sortid": 139,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_shovel",
@@ -3308,7 +3299,7 @@
     {
       "name": "KiariteShovelRecipe",
       "type": "recipe",
-      "sortid": 340,
+      "sortid": 362,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_shovel_recipe",
@@ -3317,7 +3308,7 @@
     {
       "name": "KiaritePickaxeRecipe",
       "type": "recipe",
-      "sortid": 341,
+      "sortid": 363,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_pickaxe_recipe",
@@ -3326,7 +3317,7 @@
     {
       "name": "KiariteHoeRecipe",
       "type": "recipe",
-      "sortid": 342,
+      "sortid": 364,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_hoe_recipe",
@@ -3335,7 +3326,7 @@
     {
       "name": "Lethreum",
       "type": "livingentity",
-      "sortid": 120,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lethreum",
@@ -3344,7 +3335,7 @@
     {
       "name": "KiaritePickaxe",
       "type": "tool",
-      "sortid": 138,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_pickaxe",
@@ -3361,7 +3352,7 @@
     {
       "name": "KiariteOre",
       "type": "block",
-      "sortid": 102,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_ore"
@@ -3369,7 +3360,7 @@
     {
       "name": "KiariteHoe",
       "type": "tool",
-      "sortid": 140,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_hoe",
@@ -3378,7 +3369,7 @@
     {
       "name": "ThelyariumOre",
       "type": "block",
-      "sortid": 105,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_ore"
@@ -3386,7 +3377,7 @@
     {
       "name": "ViridwoodDoorCrafting",
       "type": "recipe",
-      "sortid": 343,
+      "sortid": 365,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_door_crafting",
@@ -3395,7 +3386,7 @@
     {
       "name": "ThelyariumIngotSmelting",
       "type": "recipe",
-      "sortid": 344,
+      "sortid": 366,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_ingot_smelting",
@@ -3404,7 +3395,7 @@
     {
       "name": "ThelyariumIngotBlasting",
       "type": "recipe",
-      "sortid": 345,
+      "sortid": 367,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_ingot_blasting",
@@ -3413,7 +3404,7 @@
     {
       "name": "Excerock",
       "type": "block",
-      "sortid": 104,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock",
@@ -3422,7 +3413,7 @@
     {
       "name": "ViridwoodDoor",
       "type": "block",
-      "sortid": 106,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridwood_door"
@@ -3430,7 +3421,7 @@
     {
       "name": "ExcerockTiles",
       "type": "block",
-      "sortid": 61,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_tiles",
@@ -3439,7 +3430,7 @@
     {
       "name": "EfowFruitEaten",
       "type": "procedure",
-      "sortid": 346,
+      "sortid": 368,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_fruit_eaten",
@@ -3465,7 +3456,7 @@
     {
       "name": "EfowWeedBubblyDrops",
       "type": "loottable",
-      "sortid": 347,
+      "sortid": 369,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_weed_bubbly_drops",
@@ -3474,7 +3465,7 @@
     {
       "name": "EfowWeedBubbly",
       "type": "block",
-      "sortid": 107,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "efow_weed_bubbly",
@@ -3483,7 +3474,7 @@
     {
       "name": "ExcerockTilesCraft",
       "type": "recipe",
-      "sortid": 348,
+      "sortid": 370,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_tiles_craft",
@@ -3492,7 +3483,7 @@
     {
       "name": "KiariteArmorEmpowered",
       "type": "procedure",
-      "sortid": 349,
+      "sortid": 371,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_armor_empowered",
@@ -3528,7 +3519,7 @@
     {
       "name": "InstantPortal",
       "type": "structure",
-      "sortid": 350,
+      "sortid": 372,
       "compiles": true,
       "locked_code": false,
       "registry_name": "instant_portal",
@@ -3537,7 +3528,7 @@
     {
       "name": "KiariteArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 351,
+      "sortid": 373,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_armor_body_recipe",
@@ -3546,7 +3537,7 @@
     {
       "name": "KiariteArmor",
       "type": "armor",
-      "sortid": 141,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_armor",
@@ -3561,7 +3552,7 @@
     {
       "name": "KiariteArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 352,
+      "sortid": 374,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_armor_leggings_recipe",
@@ -3570,7 +3561,7 @@
     {
       "name": "KiariteArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 353,
+      "sortid": 375,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_armor_boots_recipe",
@@ -3587,7 +3578,7 @@
     {
       "name": "ArcedeonKeyReleased",
       "type": "procedure",
-      "sortid": 354,
+      "sortid": 376,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeon_key_released",
@@ -3604,7 +3595,7 @@
     {
       "name": "HyrumaeGhoulVariant",
       "type": "procedure",
-      "sortid": 355,
+      "sortid": 377,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hyrumae_ghoul_variant",
@@ -3621,7 +3612,7 @@
     {
       "name": "KiariteArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 356,
+      "sortid": 378,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_armor_helmet_recipe",
@@ -3630,7 +3621,7 @@
     {
       "name": "IaprieTallgrass",
       "type": "plant",
-      "sortid": 109,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iaprie_tallgrass",
@@ -3639,7 +3630,7 @@
     {
       "name": "InstantPortalSpawn",
       "type": "procedure",
-      "sortid": 357,
+      "sortid": 379,
       "compiles": true,
       "locked_code": false,
       "registry_name": "instant_portal_spawn",
@@ -3672,7 +3663,7 @@
     {
       "name": "ChrysaliumVineNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 359,
+      "sortid": 380,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chrysalium_vine_neighbour_block_changes",
@@ -3700,7 +3691,7 @@
     {
       "name": "KalaisicWastes",
       "type": "biome",
-      "sortid": 360,
+      "sortid": 381,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kalaisic_wastes",
@@ -3709,7 +3700,7 @@
     {
       "name": "AzuraMushroom",
       "type": "plant",
-      "sortid": 110,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azura_mushroom",
@@ -3718,7 +3709,7 @@
     {
       "name": "IndigoSoupRecipe",
       "type": "recipe",
-      "sortid": 361,
+      "sortid": 382,
       "compiles": true,
       "locked_code": false,
       "registry_name": "indigo_soup_recipe",
@@ -3735,7 +3726,7 @@
     {
       "name": "LethreumNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 362,
+      "sortid": 383,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lethreum_natural_entity_spawning_condition",
@@ -3747,7 +3738,7 @@
     {
       "name": "BerthelArmorSharp",
       "type": "procedure",
-      "sortid": 363,
+      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berthel_armor_sharp",
@@ -3771,7 +3762,7 @@
     {
       "name": "ArcedeonDown",
       "type": "keybind",
-      "sortid": 364,
+      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeon_down",
@@ -3780,7 +3771,7 @@
     {
       "name": "ArcedeonDescend",
       "type": "procedure",
-      "sortid": 365,
+      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeon_descend",
@@ -3797,7 +3788,7 @@
     {
       "name": "InstantPortalCommand",
       "type": "command",
-      "sortid": 366,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "registry_name": "instant_portal_command",
@@ -3806,7 +3797,7 @@
     {
       "name": "Woodhutloot",
       "type": "loottable",
-      "sortid": 367,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "registry_name": "woodhutloot",
@@ -3815,7 +3806,7 @@
     {
       "name": "FloweredViridianGrass",
       "type": "plant",
-      "sortid": 108,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flowered_viridian_grass",
@@ -3824,7 +3815,7 @@
     {
       "name": "ArcedeonAscend",
       "type": "procedure",
-      "sortid": 368,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeon_ascend",
@@ -3841,7 +3832,7 @@
     {
       "name": "ChrysaliumVineBottomNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 369,
+      "sortid": 390,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chrysalium_vine_bottom_neighbour_block_changes",
@@ -3869,7 +3860,7 @@
     {
       "name": "ArcedeonUp",
       "type": "keybind",
-      "sortid": 370,
+      "sortid": 391,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arcedeon_up",
@@ -3878,7 +3869,7 @@
     {
       "name": "ThelyariumArmor",
       "type": "armor",
-      "sortid": 135,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium",
@@ -3893,7 +3884,7 @@
     {
       "name": "Pisces",
       "type": "livingentity",
-      "sortid": 122,
+      "sortid": 137,
       "compiles": true,
       "locked_code": true,
       "registry_name": "pisces",
@@ -3902,7 +3893,7 @@
     {
       "name": "Kefgaell",
       "type": "livingentity",
-      "sortid": 121,
+      "sortid": 136,
       "compiles": true,
       "locked_code": true,
       "registry_name": "kefgaell",
@@ -3911,7 +3902,7 @@
     {
       "name": "ThelyariumBootsCrafting",
       "type": "recipe",
-      "sortid": 371,
+      "sortid": 392,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_boots_crafting",
@@ -3920,7 +3911,7 @@
     {
       "name": "ThelyariumHelmetCrafting",
       "type": "recipe",
-      "sortid": 372,
+      "sortid": 393,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_helmet_crafting",
@@ -3929,7 +3920,7 @@
     {
       "name": "ThelyariumLeggingsCrafting",
       "type": "recipe",
-      "sortid": 373,
+      "sortid": 394,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_leggings_crafting",
@@ -3938,7 +3929,7 @@
     {
       "name": "Sullgrowth",
       "type": "plant",
-      "sortid": 113,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullgrowth"
@@ -3946,7 +3937,7 @@
     {
       "name": "ThelyariumChestplateCrafting",
       "type": "recipe",
-      "sortid": 374,
+      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_chestplate_crafting",
@@ -3955,7 +3946,7 @@
     {
       "name": "Sullenbush",
       "type": "plant",
-      "sortid": 112,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullenbush"
@@ -3963,7 +3954,7 @@
     {
       "name": "SmoothSullenSand",
       "type": "block",
-      "sortid": 111,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_sullen_sand"
@@ -3971,7 +3962,7 @@
     {
       "name": "IndigoJamRecipe",
       "type": "recipe",
-      "sortid": 375,
+      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "registry_name": "indigo_jam_recipe",
@@ -3980,7 +3971,7 @@
     {
       "name": "KefgaellHeartItemInHandTick",
       "type": "procedure",
-      "sortid": 376,
+      "sortid": 397,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kefgaell_heart_item_in_hand_tick",
@@ -3996,7 +3987,7 @@
     {
       "name": "EnigmaGloveCraftingRecipe",
       "type": "recipe",
-      "sortid": 377,
+      "sortid": 398,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enigma_glove_crafting_recipe",
@@ -4005,7 +3996,7 @@
     {
       "name": "IndigoPieRecipe",
       "type": "recipe",
-      "sortid": 378,
+      "sortid": 399,
       "compiles": true,
       "locked_code": false,
       "registry_name": "indigo_pie_recipe",
@@ -4014,7 +4005,7 @@
     {
       "name": "Excrearer",
       "type": "livingentity",
-      "sortid": 123,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excrearer",
@@ -4023,7 +4014,7 @@
     {
       "name": "PlainKelaveTree1",
       "type": "structure",
-      "sortid": 379,
+      "sortid": 400,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plain_kelave_tree_1",
@@ -4040,7 +4031,7 @@
     {
       "name": "KefgaellLootTable",
       "type": "loottable",
-      "sortid": 381,
+      "sortid": 401,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kefgaell_loot_table",
@@ -4049,7 +4040,7 @@
     {
       "name": "PlainKelaveTree2",
       "type": "structure",
-      "sortid": 382,
+      "sortid": 402,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plain_kelave_tree_2",
@@ -4058,7 +4049,7 @@
     {
       "name": "PlainKelaveTree3",
       "type": "structure",
-      "sortid": 384,
+      "sortid": 403,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plain_kelave_tree_3",
@@ -4083,7 +4074,7 @@
     {
       "name": "SullenThorn",
       "type": "block",
-      "sortid": 114,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_thorn"
@@ -4091,7 +4082,7 @@
     {
       "name": "SullenThornEntityCollidesInTheBlock",
       "type": "procedure",
-      "sortid": 387,
+      "sortid": 404,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_thorn_entity_collides_in_the_block",
@@ -4107,7 +4098,7 @@
     {
       "name": "PyrrhicBush",
       "type": "plant",
-      "sortid": 388,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pyrrhic_bush",
@@ -4116,7 +4107,7 @@
     {
       "name": "DeadSullenbushDrops",
       "type": "loottable",
-      "sortid": 376,
+      "sortid": 405,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dead_sullenbush_drops",
@@ -4125,7 +4116,7 @@
     {
       "name": "NaturalSullcactus",
       "type": "structure",
-      "sortid": 371,
+      "sortid": 406,
       "compiles": true,
       "locked_code": false,
       "registry_name": "natural_sullcactus",
@@ -4134,7 +4125,7 @@
     {
       "name": "SullenbushDrops",
       "type": "loottable",
-      "sortid": 374,
+      "sortid": 407,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullenbush_drops",
@@ -4143,7 +4134,7 @@
     {
       "name": "SullgrowthDrops",
       "type": "loottable",
-      "sortid": 375,
+      "sortid": 408,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullgrowth_drops",
@@ -4152,7 +4143,7 @@
     {
       "name": "ViridTree2",
       "type": "structure",
-      "sortid": 372,
+      "sortid": 409,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virid_tree_2",
@@ -4161,7 +4152,7 @@
     {
       "name": "ViridTree1",
       "type": "structure",
-      "sortid": 371,
+      "sortid": 410,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virid_tree_1",
@@ -4170,7 +4161,7 @@
     {
       "name": "ViridRosesBush",
       "type": "plant",
-      "sortid": 389,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virid_roses_bush",
@@ -4179,7 +4170,7 @@
     {
       "name": "PyrrhicBushNetStepping",
       "type": "procedure",
-      "sortid": 391,
+      "sortid": 411,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pyrrhic_bush_net_stepping",
@@ -4211,7 +4202,7 @@
     {
       "name": "PyrrhicBushNet",
       "type": "block",
-      "sortid": 390,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pyrrhic_bush_net"
@@ -4219,7 +4210,7 @@
     {
       "name": "PyrrhicBushNetRecipe",
       "type": "recipe",
-      "sortid": 392,
+      "sortid": 412,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pyrrhic_bush_net_recipe",
@@ -4228,7 +4219,7 @@
     {
       "name": "KelaveHut",
       "type": "structure",
-      "sortid": 393,
+      "sortid": 413,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kelave_hut",
@@ -4237,7 +4228,7 @@
     {
       "name": "KiariteBlock",
       "type": "block",
-      "sortid": 394,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_block"
@@ -4245,7 +4236,7 @@
     {
       "name": "KiariteBlockToIngotRecipe",
       "type": "recipe",
-      "sortid": 395,
+      "sortid": 414,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_block_to_ingot_recipe",
@@ -4254,7 +4245,7 @@
     {
       "name": "KiariteIngotToBlockRecipe",
       "type": "recipe",
-      "sortid": 396,
+      "sortid": 415,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_ingot_to_block_recipe",
@@ -4263,7 +4254,7 @@
     {
       "name": "KiariteOreSmelt",
       "type": "recipe",
-      "sortid": 397,
+      "sortid": 416,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kiarite_ore_smelt",
@@ -4272,7 +4263,7 @@
     {
       "name": "ExcerockTools",
       "type": "tag",
-      "sortid": 398,
+      "sortid": 417,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_tools",
@@ -4281,7 +4272,7 @@
     {
       "name": "ExcerockSwordRightClickedInAir",
       "type": "procedure",
-      "sortid": 399,
+      "sortid": 418,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_sword_right_clicked_in_air",
@@ -4301,7 +4292,7 @@
     {
       "name": "ExcerockSwordToolInHandTick",
       "type": "procedure",
-      "sortid": 400,
+      "sortid": 419,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_sword_tool_in_hand_tick",
@@ -4317,7 +4308,7 @@
     {
       "name": "ExcerockSword",
       "type": "tool",
-      "sortid": 399,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_sword",
@@ -4326,7 +4317,7 @@
     {
       "name": "PerformExcerockAttack",
       "type": "procedure",
-      "sortid": 401,
+      "sortid": 420,
       "compiles": true,
       "locked_code": false,
       "registry_name": "perform_excerock_attack",
@@ -4362,7 +4353,7 @@
     {
       "name": "ExcerockDataManagement",
       "type": "procedure",
-      "sortid": 402,
+      "sortid": 421,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_data_management",
@@ -4378,7 +4369,7 @@
     {
       "name": "DragonarShield",
       "type": "tool",
-      "sortid": 403,
+      "sortid": 422,
       "compiles": true,
       "locked_code": true,
       "registry_name": "dragonar_shield",
@@ -4387,7 +4378,7 @@
     {
       "name": "Ellum",
       "type": "livingentity",
-      "sortid": 404,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ellum",
@@ -4396,7 +4387,7 @@
     {
       "name": "Erellum",
       "type": "livingentity",
-      "sortid": 405,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "erellum",
@@ -4405,7 +4396,7 @@
     {
       "name": "EllumErellumAttackTrigger",
       "type": "procedure",
-      "sortid": 406,
+      "sortid": 423,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ellum_erellum_attack_trigger",
@@ -4426,7 +4417,7 @@
     {
       "name": "PurpureanGrassBlock",
       "type": "block",
-      "sortid": 407,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purpurean_grass_block"
@@ -4434,7 +4425,7 @@
     {
       "name": "LilacBuds",
       "type": "plant",
-      "sortid": 408,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lilac_buds",
@@ -4443,7 +4434,7 @@
     {
       "name": "Lavenderfare",
       "type": "biome",
-      "sortid": 407,
+      "sortid": 424,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lavender_fare",
@@ -4452,7 +4443,7 @@
     {
       "name": "Effly",
       "type": "particle",
-      "sortid": 410,
+      "sortid": 425,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effly",
@@ -4461,7 +4452,7 @@
     {
       "name": "PurpureanGrass",
       "type": "plant",
-      "sortid": 409,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purpurean_grass",
@@ -4470,7 +4461,7 @@
     {
       "name": "WaterViridTree1",
       "type": "structure",
-      "sortid": 411,
+      "sortid": 426,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_virid_tree_1"
@@ -4478,7 +4469,7 @@
     {
       "name": "WaterViridTree2",
       "type": "structure",
-      "sortid": 412,
+      "sortid": 427,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_virid_tree_2"
@@ -4486,7 +4477,7 @@
     {
       "name": "RemobrenOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 407,
+      "sortid": 428,
       "compiles": true,
       "locked_code": false,
       "registry_name": "remobren_on_entity_tick_update",
@@ -4518,7 +4509,7 @@
     {
       "name": "RemobrenOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 408,
+      "sortid": 429,
       "compiles": true,
       "locked_code": false,
       "registry_name": "remobren_on_initial_entity_spawn",
@@ -4534,7 +4525,7 @@
     {
       "name": "RemobrenNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 409,
+      "sortid": 430,
       "compiles": true,
       "locked_code": false,
       "registry_name": "remobren_natural_entity_spawning_condition",
@@ -4551,7 +4542,7 @@
     {
       "name": "RemobrenEntityIsHurt",
       "type": "procedure",
-      "sortid": 410,
+      "sortid": 431,
       "compiles": true,
       "locked_code": false,
       "registry_name": "remobren_entity_is_hurt",
@@ -4571,7 +4562,7 @@
     {
       "name": "ExcerockAxe",
       "type": "tool",
-      "sortid": 404,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excerock_axe",
@@ -4580,7 +4571,7 @@
     {
       "name": "Excelhammer",
       "type": "tool",
-      "sortid": 403,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excelhammer",
@@ -4589,7 +4580,7 @@
     {
       "name": "Remobren",
       "type": "livingentity",
-      "sortid": 407,
+      "sortid": 141,
       "compiles": false,
       "locked_code": true,
       "registry_name": "remobren",
@@ -4598,7 +4589,7 @@
     {
       "name": "ExcelhammerBlockDestroyedWithTool",
       "type": "procedure",
-      "sortid": 403,
+      "sortid": 432,
       "compiles": true,
       "locked_code": false,
       "registry_name": "excelhammer_block_destroyed_with_tool",
@@ -4626,7 +4617,7 @@
     {
       "name": "Twighlire",
       "type": "plant",
-      "sortid": 413,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "twighlire",
@@ -4635,7 +4626,7 @@
     {
       "name": "ViridLights",
       "type": "particle",
-      "sortid": 412,
+      "sortid": 433,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virid_lights",
@@ -4644,7 +4635,7 @@
     {
       "name": "ViridianMushroom",
       "type": "plant",
-      "sortid": 411,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_mushroom",
@@ -4653,7 +4644,7 @@
     {
       "name": "BorderSpike1",
       "type": "structure",
-      "sortid": 414,
+      "sortid": 434,
       "compiles": true,
       "locked_code": false,
       "registry_name": "border_spike_1",
@@ -4662,7 +4653,7 @@
     {
       "name": "BorderSpikesAdditionalGenerationCondition",
       "type": "procedure",
-      "sortid": 415,
+      "sortid": 435,
       "compiles": true,
       "locked_code": false,
       "registry_name": "border_spikes_additional_generation_condition",
@@ -4692,7 +4683,7 @@
     {
       "name": "BorderSpike2",
       "type": "structure",
-      "sortid": 416,
+      "sortid": 436,
       "compiles": true,
       "locked_code": false,
       "registry_name": "border_spike_2",
@@ -4701,7 +4692,7 @@
     {
       "name": "BorderSpike3",
       "type": "structure",
-      "sortid": 417,
+      "sortid": 437,
       "compiles": true,
       "locked_code": false,
       "registry_name": "border_spike_3",
@@ -4710,7 +4701,7 @@
     {
       "name": "BorderSpike4",
       "type": "structure",
-      "sortid": 418,
+      "sortid": 438,
       "compiles": true,
       "locked_code": false,
       "registry_name": "border_spike_4",
@@ -4719,7 +4710,7 @@
     {
       "name": "BorderSpike5",
       "type": "structure",
-      "sortid": 419,
+      "sortid": 439,
       "compiles": true,
       "locked_code": false,
       "registry_name": "border_spike_5",
@@ -4728,7 +4719,7 @@
     {
       "name": "ThelyariumBlock",
       "type": "block",
-      "sortid": 420,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_block"
@@ -4736,7 +4727,7 @@
     {
       "name": "ThelyariumBlockCrafting",
       "type": "recipe",
-      "sortid": 421,
+      "sortid": 440,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_block_crafting",
@@ -4745,7 +4736,7 @@
     {
       "name": "ThelyariumIngotFromBlock",
       "type": "recipe",
-      "sortid": 422,
+      "sortid": 441,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thelyarium_ingot_from_block",
@@ -4754,7 +4745,7 @@
     {
       "name": "HethiliteBlock",
       "type": "block",
-      "sortid": 423,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hethilite_block"
@@ -4762,7 +4753,7 @@
     {
       "name": "KalaisicWaterEvaporation",
       "type": "procedure",
-      "sortid": 425,
+      "sortid": 442,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kalaisic_water_evaporation",
@@ -4798,7 +4789,7 @@
     {
       "name": "BeaconBaseBlockBlocks",
       "type": "tag",
-      "sortid": 424,
+      "sortid": 443,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beacon_base_block_blocks"
@@ -4806,7 +4797,7 @@
     {
       "name": "ViridianBush",
       "type": "livingentity",
-      "sortid": 426,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_bush",
@@ -4815,7 +4806,7 @@
     {
       "name": "ViridInfection",
       "type": "particle",
-      "sortid": 428,
+      "sortid": 444,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virid_infection",
@@ -4824,7 +4815,7 @@
     {
       "name": "ViridianBushEntityIsHurt",
       "type": "procedure",
-      "sortid": 429,
+      "sortid": 445,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_bush_entity_is_hurt",
@@ -4853,7 +4844,7 @@
     {
       "name": "ViridianBushEntityDies",
       "type": "procedure",
-      "sortid": 430,
+      "sortid": 446,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_bush_entity_dies",
@@ -4882,7 +4873,7 @@
     {
       "name": "ViridInfectionItem",
       "type": "item",
-      "sortid": 431,
+      "sortid": 447,
       "compiles": true,
       "locked_code": false,
       "registry_name": "virid_infection_item"
@@ -4890,7 +4881,7 @@
     {
       "name": "InfectedRockEntityDies",
       "type": "procedure",
-      "sortid": 432,
+      "sortid": 448,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infected_rock_entity_dies",
@@ -4919,7 +4910,7 @@
     {
       "name": "InfectedRockEntityIsHurt",
       "type": "procedure",
-      "sortid": 433,
+      "sortid": 449,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infected_rock_entity_is_hurt",
@@ -4948,7 +4939,7 @@
     {
       "name": "InfectedRock",
       "type": "livingentity",
-      "sortid": 431,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infected_rock",
@@ -4957,7 +4948,7 @@
     {
       "name": "ViridianTallGrass",
       "type": "plant",
-      "sortid": 434,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_tall_grass",
@@ -4966,7 +4957,7 @@
     {
       "name": "SullenSandstoneStairs",
       "type": "block",
-      "sortid": 435,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_sandstone_stairs"
@@ -4974,7 +4965,7 @@
     {
       "name": "SullenSandstoneSlab",
       "type": "block",
-      "sortid": 436,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_sandstone_slab"
@@ -4982,7 +4973,7 @@
     {
       "name": "SullenSandstoneWall",
       "type": "block",
-      "sortid": 437,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_sandstone_wall"
@@ -4990,7 +4981,7 @@
     {
       "name": "SmoothSullenSandStairs",
       "type": "block",
-      "sortid": 438,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_sullen_sand_stairs"
@@ -4998,7 +4989,7 @@
     {
       "name": "SmoothSullenSandSlab",
       "type": "block",
-      "sortid": 439,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_sullen_sand_slab"
@@ -5006,7 +4997,7 @@
     {
       "name": "SmoothSullenSandWall",
       "type": "block",
-      "sortid": 440,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_sullen_sand_wall"
@@ -5014,7 +5005,7 @@
     {
       "name": "SomberstoneStairsRecipe",
       "type": "recipe",
-      "sortid": 441,
+      "sortid": 450,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stairs_recipe",
@@ -5023,7 +5014,7 @@
     {
       "name": "SomberstoneSlabRecipe",
       "type": "recipe",
-      "sortid": 442,
+      "sortid": 451,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_slab_recipe",
@@ -5032,7 +5023,7 @@
     {
       "name": "PolishedSomberstoneStonecutterRecipe",
       "type": "recipe",
-      "sortid": 443,
+      "sortid": 452,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_stonecutter_recipe",
@@ -5041,7 +5032,7 @@
     {
       "name": "SomberstoneStairsStonecutterRecipe",
       "type": "recipe",
-      "sortid": 444,
+      "sortid": 453,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_stairs_stonecutter_recipe",
@@ -5050,7 +5041,7 @@
     {
       "name": "SomberstoneSlabStonecutterRecipe",
       "type": "recipe",
-      "sortid": 445,
+      "sortid": 454,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_slab_stonecutter_recipe",
@@ -5059,7 +5050,7 @@
     {
       "name": "SomberstoneWallStonecutterRecipe",
       "type": "recipe",
-      "sortid": 446,
+      "sortid": 455,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_wall_stonecutter_recipe",
@@ -5068,7 +5059,7 @@
     {
       "name": "SomberstoneWallRecipe",
       "type": "recipe",
-      "sortid": 447,
+      "sortid": 456,
       "compiles": true,
       "locked_code": false,
       "registry_name": "somberstone_wall_recipe",
@@ -5077,7 +5068,7 @@
     {
       "name": "PolishedSomberstoneSlabStonecutterRecipe",
       "type": "recipe",
-      "sortid": 448,
+      "sortid": 457,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_slab_stonecutter_recipe",
@@ -5086,11 +5077,101 @@
     {
       "name": "PolishedSomberstoneStairsStonecutterRecipe",
       "type": "recipe",
-      "sortid": 448,
+      "sortid": 458,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_stairs_stonecutter_recipe",
       "path": "~/recipes/Somberstone"
+    },
+    {
+      "name": "SullenSandstoneRecipe",
+      "type": "recipe",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_sandstone_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SullenSandstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_sandstone_slab_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SullenSandstoneSlabStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_sandstone_slab_stonecutter_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SullenSandstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_sandstone_stairs_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SullenSandstoneStairsStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_sandstone_stairs_stonecutter_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SullenSandstoneWallRecipe",
+      "type": "recipe",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_sandstone_wall_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SullenSandstoneWallStonecutterRecipe",
+      "type": "recipe",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_sandstone_wall_stonecutter_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SmoothSullenSandSlabRecipe",
+      "type": "recipe",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_sullen_sand_slab_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SmoothSullenSandStairsRecipe",
+      "type": "recipe",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_sullen_sand_stairs_recipe",
+      "path": "~/recipes/Sullen Sand"
+    },
+    {
+      "name": "SmoothSullenSandWallRecipe",
+      "type": "recipe",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_sullen_sand_wall_recipe",
+      "path": "~/recipes/Sullen Sand"
     }
   ],
   "variable_elements": [
@@ -5138,9 +5219,9 @@
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "entity.the_transcendeum.ellum": "Ellum",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
-      "item.the_transcendeum.thelyarium_axe": "Thelyarium Axe",
-      "block.the_transcendeum.viriclinger": "Viriclinger",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
+      "block.the_transcendeum.viriclinger": "Viriclinger",
+      "item.the_transcendeum.thelyarium_axe": "Thelyarium Axe",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "item.the_transcendeum.berthel_sword": "Berthel Sword",
       "entity.the_transcendeum.kefgaell": "Kefgaell",
@@ -5161,8 +5242,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5537,6 +5618,10 @@
         "children": [
           {
             "name": "Somberstone",
+            "children": []
+          },
+          {
+            "name": "Sullen Sand",
             "children": []
           }
         ]
