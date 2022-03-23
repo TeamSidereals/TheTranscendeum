@@ -1,4 +1,5 @@
 {
+  "group": "enigma_glove",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " 1 ",

@@ -1,4 +1,5 @@
 {
+  "group": "berthel_armor",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0 2",

@@ -1,4 +1,5 @@
 {
+  "group": "stariam_wood",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "01",

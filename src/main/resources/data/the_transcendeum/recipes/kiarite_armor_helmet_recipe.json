@@ -1,4 +1,5 @@
 {
+  "group": "kiarite_armor",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",

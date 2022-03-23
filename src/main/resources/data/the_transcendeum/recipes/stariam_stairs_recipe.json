@@ -1,4 +1,5 @@
 {
+  "group": "stariam_stairs",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0  ",
