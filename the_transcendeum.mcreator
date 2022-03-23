@@ -2837,7 +2837,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_stairs_crafting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "SulkstoneStairsStonecutting",
@@ -2846,7 +2846,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_stairs_stonecutting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "SulkstoneSlabCrafting",
@@ -2855,7 +2855,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_slab_crafting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "SulkstoneSlabStonecutting",
@@ -2864,7 +2864,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_slab_stonecutting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "SulkstoneWallCrafting",
@@ -2873,7 +2873,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_wall_crafting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "SulkstoneWallStonecutting",
@@ -2882,7 +2882,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sulkstone_wall_stonecutting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneCrafting",
@@ -2891,7 +2891,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_crafting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneStonecutting",
@@ -2900,7 +2900,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stonecutting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneStairsCrafting",
@@ -2909,7 +2909,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stairs_crafting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneStairsStonecutting1",
@@ -2918,7 +2918,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stairs_stonecutting_1",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneStairsStonecutting2",
@@ -2927,7 +2927,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_stairs_stonecutting_2",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneSlabCrafting",
@@ -2936,7 +2936,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_slab_crafting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneSlabStonecutting1",
@@ -2945,7 +2945,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_slab_stonecutting_1",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstoneSlabStonecutting2",
@@ -2954,7 +2954,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_slab_stonecutting_2",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "PolishedSulkstonePressurePlateCrafting",
@@ -2963,7 +2963,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_sulkstone_pressure_plate_crafting",
-      "path": "~/recipes"
+      "path": "~/recipes/Sulkstone"
     },
     {
       "name": "MorositeStairsCrafting",
@@ -5183,6 +5183,15 @@
         ]
       },
       "path": "~/Renewabilities"
+    },
+    {
+      "name": "WobrStoneExclusion",
+      "type": "tag",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wobr_stone_exclusion",
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [
@@ -5230,9 +5239,9 @@
       "item.the_transcendeum.thelyarium_boots": "Thelyarium Boots",
       "entity.the_transcendeum.ellum": "Ellum",
       "block.the_transcendeum.stariam_fence": "Stariam Fence",
-      "item.the_transcendeum.thelyarium_axe": "Thelyarium Axe",
-      "block.the_transcendeum.viriclinger": "Viriclinger",
       "item.the_transcendeum.acrium_virilily": "Acrium Virilily",
+      "block.the_transcendeum.viriclinger": "Viriclinger",
+      "item.the_transcendeum.thelyarium_axe": "Thelyarium Axe",
       "block.the_transcendeum.kelave_pressure_plate": "Kelave Pressure Plate",
       "item.the_transcendeum.berthel_sword": "Berthel Sword",
       "entity.the_transcendeum.kefgaell": "Kefgaell",
@@ -5253,8 +5262,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5673,6 +5682,10 @@
           },
           {
             "name": "Wood - Kelave",
+            "children": []
+          },
+          {
+            "name": "Sulkstone",
             "children": []
           }
         ]
