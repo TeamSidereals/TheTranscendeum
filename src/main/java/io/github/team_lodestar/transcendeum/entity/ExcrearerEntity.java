@@ -11,8 +11,13 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
@@ -26,6 +31,7 @@ import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
@@ -78,6 +84,22 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class CustomEntity extends CreatureEntity {
+		private static final DataParameter<Integer> ATTACK_STATE = EntityDataManager.createKey(CustomEntity.class, DataSerializers.VARINT);
+		public int attackProgress;
+
+		protected void registerData() {
+			super.registerData();
+			this.dataManager.register(ATTACK_STATE, 0);
+		}
+
+		public void setAttackState(int value) {
+			this.dataManager.set(ATTACK_STATE, value);
+		}
+
+		public int getAttackState() {
+			return this.dataManager.get(ATTACK_STATE);
+		}
+
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -96,12 +118,56 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+				protected void checkAndPerformAttack(LivingEntity enemy, double distToEnemySqr) {
+					double d0 = this.getAttackReachSqr(enemy);
+					if (distToEnemySqr <= d0 * 1.3 && !this.attacker.isSwingInProgress) {
+						this.attacker.swingArm(Hand.MAIN_HAND);
+						CustomEntity.this.setAttackState(1);
+						CustomEntity.this.attackProgress = 0;
+					}
+				}
+			});
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
 			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ArcedeonEntity.CustomEntity.class, false, false));
+		}
+
+		@Override
+		protected void updateArmSwingProgress() {
+			int i = 60;
+			if (this.isSwingInProgress) {
+				++this.swingProgressInt;
+				if (this.swingProgressInt >= i) {
+					this.swingProgressInt = 0;
+					this.isSwingInProgress = false;
+					this.setAttackState(0);
+				}
+			} else {
+				this.swingProgressInt = 0;
+				this.setAttackState(0);
+			}
+			this.swingProgress = (float) this.swingProgressInt / (float) i;
+		}
+
+		public void attackProcedure() {
+			if (this.isSwingInProgress) {
+				if (this.getAttackState() == 1) {
+					if (this.swingProgress > 0.8 && this.attackProgress == 0) {
+						this.attackProgress++;
+						this.playSound(SoundEvents.ENTITY_ZOMBIE_ATTACK_WOODEN_DOOR, 1, 0.7f);
+						if (this.getAttackTarget() != null
+								&& this.getDistanceSq(this.getAttackTarget()) < this.getAttackReach(this.getAttackTarget()))
+							this.attackEntityAsMob(this.getAttackTarget());
+					}
+				}
+			}
+		}
+
+		protected double getAttackReach(LivingEntity attackTarget) {
+			return (double) (this.getWidth() * 2.0F * this.getWidth() * 2.0F + attackTarget.getWidth()) * 1.3;
 		}
 
 		@Override
@@ -149,6 +215,8 @@ public class ExcrearerEntity extends TheTranscendeumModElements.ModElement {
 			double z = this.getPosZ();
 			Random random = this.rand;
 			Entity entity = this;
+			this.updateArmSwingProgress();
+			this.attackProcedure();
 			if (true)
 				for (int l = 0; l < 2; ++l) {
 					double d0 = (x + random.nextFloat());
