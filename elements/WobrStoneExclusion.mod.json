@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Saltrock"
+      },
+      {
+        "value": "CUSTOM:Sulkstone"
+      },
+      {
+        "value": "CUSTOM:Morosite"
+      },
+      {
+        "value": "CUSTOM:Excerock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "invulnerable_stone",
+    "namespace": "forge"
+  }
+}

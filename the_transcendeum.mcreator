@@ -3454,6 +3454,15 @@
       "path": "~/LyofsPlace"
     },
     {
+      "name": "EfowFruit",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "efow_fruit",
+      "path": "~/LyofsPlace"
+    },
+    {
       "name": "EfowWeedBubblyDrops",
       "type": "loottable",
       "sortid": 347,
@@ -3566,6 +3575,14 @@
       "locked_code": false,
       "registry_name": "kiarite_armor_boots_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "IndigoSoup",
+      "type": "food",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_soup"
     },
     {
       "name": "ArcedeonKeyReleased",
@@ -3706,6 +3723,14 @@
       "locked_code": false,
       "registry_name": "indigo_soup_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "IndigoBerries",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_berries"
     },
     {
       "name": "LethreumNaturalEntitySpawningCondition",
@@ -4005,6 +4030,14 @@
       "path": "~/Structures/Natural"
     },
     {
+      "name": "IndigoFruitedPie",
+      "type": "food",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_fruited_pie"
+    },
+    {
       "name": "KefgaellLootTable",
       "type": "loottable",
       "sortid": 381,
@@ -4038,6 +4071,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "kefgaell_heart"
+    },
+    {
+      "name": "IndigoJam",
+      "type": "food",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_jam"
     },
     {
       "name": "SullenThorn",
@@ -4787,45 +4828,80 @@
       }
     },
     {
-      "name": "EfowFruit",
-      "type": "item",
+      "name": "ViridInfection",
+      "type": "particle",
       "sortid": 428,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "efow_fruit",
-      "path": "~/LyofsPlace"
+      "registry_name": "virid_infection",
+      "path": "~/particles"
     },
     {
-      "name": "IndigoSoup",
-      "type": "item",
+      "name": "ViridianBushEntityIsHurt",
+      "type": "procedure",
       "sortid": 429,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "indigo_soup"
+      "registry_name": "viridian_bush_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/particles"
     },
     {
-      "name": "IndigoBerries",
-      "type": "item",
+      "name": "ViridianBushEntityDies",
+      "type": "procedure",
       "sortid": 430,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "indigo_berries"
+      "registry_name": "viridian_bush_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/particles"
     },
     {
-      "name": "IndigoFruitedPie",
-      "type": "item",
-      "sortid": 431,
+      "name": "ViridianBush",
+      "type": "livingentity",
+      "sortid": 426,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "indigo_fruited_pie"
-    },
-    {
-      "name": "IndigoJam",
-      "type": "item",
-      "sortid": 432,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_jam"
+      "registry_name": "viridian_bush",
+      "path": "~/mobs/biome specific"
     }
   ],
   "variable_elements": [
@@ -4879,8 +4955,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
+      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4894,8 +4970,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
+      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5052,7 +5128,6 @@
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.kiarite_shovel": "Kiarite Shovel",
-      "block.the_transcendeum.kalastone": "Kalastone",
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
       "block.the_transcendeum.thelyarium_ore": "Thelyarium Ore",
       "key.the_transcendeum.arcedeon_down": "Arcedeon Descend",
@@ -5282,5 +5357,5 @@
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200120510
+  "mcreatorVersion": 202100353117
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "the_transcendeum:blocks/sullen_sandstone_bottom",
+    "top": "the_transcendeum:blocks/sullen_sandstone_top",
+    "side": "the_transcendeum:blocks/sullen_sandstone"
+  }
+}

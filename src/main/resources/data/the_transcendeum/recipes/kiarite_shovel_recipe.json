@@ -1,4 +1,5 @@
 {
+  "group": "kiarite_shovel",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0",

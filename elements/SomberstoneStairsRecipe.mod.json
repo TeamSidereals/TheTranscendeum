@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "somberstone_stairs",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Somberstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Somberstone"
+      },
+      {
+        "value": "CUSTOM:Somberstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Somberstone"
+      },
+      {
+        "value": "CUSTOM:Somberstone"
+      },
+      {
+        "value": "CUSTOM:Somberstone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Somberstonestairs"
+    },
+    "name": "somberstone_stairs_recipe",
+    "namespace": "mod"
+  }
+}

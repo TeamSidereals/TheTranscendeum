@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "the_transcendeum:blocks/smooth_sullen_sand",
+    "bottom": "the_transcendeum:blocks/smooth_sullen_sand",
+    "top": "the_transcendeum:blocks/smooth_sullen_sand",
+    "side": "the_transcendeum:blocks/smooth_sullen_sand"
+  }
+}

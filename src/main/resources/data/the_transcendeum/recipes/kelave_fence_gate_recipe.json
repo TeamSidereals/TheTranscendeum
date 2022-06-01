@@ -1,4 +1,5 @@
 {
+  "group": "kelave_fence_gate",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",

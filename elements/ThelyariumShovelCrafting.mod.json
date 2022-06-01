@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ThelyariumPickaxe"
+      "value": "CUSTOM:ThelyariumShovel"
     },
     "name": "thelyarium_shovel_crafting",
     "namespace": "mod"

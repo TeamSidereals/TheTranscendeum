@@ -1,4 +1,5 @@
 {
+  "group": "kiarite_block_unrecipe",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0"

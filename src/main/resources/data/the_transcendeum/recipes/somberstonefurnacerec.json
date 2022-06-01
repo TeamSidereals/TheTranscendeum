@@ -1,4 +1,5 @@
 {
+  "group": "somberstone_furnace",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",

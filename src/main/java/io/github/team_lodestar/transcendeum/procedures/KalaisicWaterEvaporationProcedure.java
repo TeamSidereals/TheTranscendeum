@@ -1,35 +1,9 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Direction;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-
-import java.util.Map;
-import java.util.HashMap;
-
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class KalaisicWaterEvaporationProcedure {
+
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -87,12 +61,14 @@ public class KalaisicWaterEvaporationProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure KalaisicWaterEvaporation!");
 			return;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Direction direction = (Direction) dependencies.get("direction");
 		Entity entity = (Entity) dependencies.get("entity");
+
 		boolean flag = false;
 		boolean found = false;
 		double sx = 0;
@@ -107,6 +83,7 @@ public class KalaisicWaterEvaporationProcedure {
 							|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
 									.getItem() == Items.WATER_BUCKET)) {
 				new Object() {
+
 					private int ticks = 0;
 					private float waitTicks;
 					private IWorld world;
@@ -133,7 +110,9 @@ public class KalaisicWaterEvaporationProcedure {
 								{
 									BlockPos _bp = new BlockPos(x, y, z - 1);
 									BlockState _bs = Blocks.AIR.getDefaultState();
+
 									world.setBlockState(_bp, _bs, 3);
+
 								}
 								if (world instanceof World && !world.isRemote()) {
 									((World) world).playSound(null, new BlockPos(x, y, z - 1),
@@ -156,7 +135,9 @@ public class KalaisicWaterEvaporationProcedure {
 								{
 									BlockPos _bp = new BlockPos(x, y, z + 1);
 									BlockState _bs = Blocks.AIR.getDefaultState();
+
 									world.setBlockState(_bp, _bs, 3);
+
 								}
 								if (world instanceof World && !world.isRemote()) {
 									((World) world).playSound(null, new BlockPos(x, y, z + 1),
@@ -179,7 +160,9 @@ public class KalaisicWaterEvaporationProcedure {
 								{
 									BlockPos _bp = new BlockPos(x - 1, y, z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
+
 									world.setBlockState(_bp, _bs, 3);
+
 								}
 								if (world instanceof World && !world.isRemote()) {
 									((World) world).playSound(null, new BlockPos(x - 1, y, z),
@@ -202,7 +185,9 @@ public class KalaisicWaterEvaporationProcedure {
 								{
 									BlockPos _bp = new BlockPos(x + 1, y, z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
+
 									world.setBlockState(_bp, _bs, 3);
+
 								}
 								if (world instanceof World && !world.isRemote()) {
 									((World) world).playSound(null, new BlockPos(x + 1, y, z),
@@ -225,7 +210,9 @@ public class KalaisicWaterEvaporationProcedure {
 								{
 									BlockPos _bp = new BlockPos(x, y + 1, z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
+
 									world.setBlockState(_bp, _bs, 3);
+
 								}
 								if (world instanceof World && !world.isRemote()) {
 									((World) world).playSound(null, new BlockPos(x, y + 1, z),
@@ -248,7 +235,9 @@ public class KalaisicWaterEvaporationProcedure {
 								{
 									BlockPos _bp = new BlockPos(x, y - 1, z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
+
 									world.setBlockState(_bp, _bs, 3);
+
 								}
 								if (world instanceof World && !world.isRemote()) {
 									((World) world).playSound(null, new BlockPos(x, y - 1, z),
@@ -268,8 +257,10 @@ public class KalaisicWaterEvaporationProcedure {
 						}
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
+
 				}.start(world, (int) 1);
 			}
 		}
 	}
+
 }
