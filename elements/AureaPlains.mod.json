@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Aurea Plains",
@@ -48,15 +48,13 @@
     },
     "particlesProbability": 1.0,
     "biomeCategory": "PLAINS",
-    "parent": {
-      "value": "CUSTOM:CrystaliaForest"
-    },
     "rainingPossibility": 0.0,
     "temperature": 1.0,
     "baseHeight": -0.15,
     "heightVariation": 0.04,
-    "biomeType": "COOL",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 100,
     "biomeDictionaryTypes": [
       "PLAINS"

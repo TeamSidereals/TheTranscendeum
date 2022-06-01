@@ -3454,15 +3454,6 @@
       "path": "~/LyofsPlace"
     },
     {
-      "name": "EfowFruit",
-      "type": "food",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "efow_fruit",
-      "path": "~/LyofsPlace"
-    },
-    {
       "name": "EfowWeedBubblyDrops",
       "type": "loottable",
       "sortid": 347,
@@ -3575,14 +3566,6 @@
       "locked_code": false,
       "registry_name": "kiarite_armor_boots_recipe",
       "path": "~/recipes"
-    },
-    {
-      "name": "IndigoSoup",
-      "type": "food",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_soup"
     },
     {
       "name": "ArcedeonKeyReleased",
@@ -3723,14 +3706,6 @@
       "locked_code": false,
       "registry_name": "indigo_soup_recipe",
       "path": "~/recipes"
-    },
-    {
-      "name": "IndigoBerries",
-      "type": "food",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_berries"
     },
     {
       "name": "LethreumNaturalEntitySpawningCondition",
@@ -4030,14 +4005,6 @@
       "path": "~/Structures/Natural"
     },
     {
-      "name": "IndigoFruitedPie",
-      "type": "food",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_fruited_pie"
-    },
-    {
       "name": "KefgaellLootTable",
       "type": "loottable",
       "sortid": 381,
@@ -4071,14 +4038,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "kefgaell_heart"
-    },
-    {
-      "name": "IndigoJam",
-      "type": "food",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_jam"
     },
     {
       "name": "SullenThorn",
@@ -4802,6 +4761,71 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "beacon_base_block_blocks"
+    },
+    {
+      "name": "Kalastone",
+      "type": "block",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kalastone"
+    },
+    {
+      "name": "ThelyariumSwordEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 427,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thelyarium_sword_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EfowFruit",
+      "type": "item",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "efow_fruit",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "IndigoSoup",
+      "type": "item",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_soup"
+    },
+    {
+      "name": "IndigoBerries",
+      "type": "item",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_berries"
+    },
+    {
+      "name": "IndigoFruitedPie",
+      "type": "item",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_fruited_pie"
+    },
+    {
+      "name": "IndigoJam",
+      "type": "item",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_jam"
     }
   ],
   "variable_elements": [
@@ -5028,6 +5052,7 @@
       "block.the_transcendeum.kelave_button": "Kelave Button",
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.kiarite_shovel": "Kiarite Shovel",
+      "block.the_transcendeum.kalastone": "Kalastone",
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
       "block.the_transcendeum.thelyarium_ore": "Thelyarium Ore",
       "key.the_transcendeum.arcedeon_down": "Arcedeon Descend",
@@ -5257,5 +5282,5 @@
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100353117
+  "mcreatorVersion": 202200120510
 }

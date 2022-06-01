@@ -175,7 +175,12 @@ public class EllumEntity extends TheTranscendeumModElements.ModElement {
 				}
 			});
 			this.goalSelector.addGoal(3, new FollowMobGoal(this, (float) 1, 10, 5));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true) {
+				@Override
+				protected double getAttackReachSqr(LivingEntity entity) {
+					return (double) (4.0 + entity.getWidth() * entity.getWidth());
+				}
+			});
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(6, new LookAtGoal(this, ArcedeonEntity.CustomEntity.class, (float) 32));
 			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));

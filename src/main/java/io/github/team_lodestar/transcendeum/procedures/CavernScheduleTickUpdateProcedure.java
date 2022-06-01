@@ -34,7 +34,6 @@ public class CavernScheduleTickUpdateProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		world.getPendingBlockTicks().scheduleTick(new BlockPos((int) x, (int) y, (int) z),
-				world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlock(), (int) 1);
+		world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), world.getBlockState(new BlockPos(x, y, z)).getBlock(), (int) 1);
 	}
 }

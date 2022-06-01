@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Kalaisic Wastes",
@@ -48,15 +48,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.0,
     "temperature": 1.9000000000000001,
     "baseHeight": 0.30000000000000004,
     "heightVariation": 0.19999999999999998,
-    "biomeType": "DESERT",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "MESA",
@@ -105,7 +103,7 @@
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
-    "spawnNetherFossil": false,
+    "spawnNetherFossil": true,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",

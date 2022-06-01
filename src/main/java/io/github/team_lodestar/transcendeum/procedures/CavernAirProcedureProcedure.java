@@ -59,6 +59,6 @@ public class CavernAirProcedureProcedure {
 				zs = (zs + 1);
 			}
 		}
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ExcerockBlock.block.getDefaultState(), 3);
+		world.setBlockState(new BlockPos(x, y, z), ExcerockBlock.block.getDefaultState(), 3);
 	}
 }

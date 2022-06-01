@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Viridian Mires",
@@ -44,15 +44,13 @@
     },
     "particlesProbability": 1.3,
     "biomeCategory": "SWAMP",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.0,
     "temperature": 1.5,
     "baseHeight": -0.4,
     "heightVariation": 0.15,
-    "biomeType": "WARM",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 40,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

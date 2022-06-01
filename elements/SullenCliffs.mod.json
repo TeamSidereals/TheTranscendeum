@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Sullen Cliffs",
@@ -48,15 +48,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
-    "parent": {
-      "value": "CUSTOM:SullenDesert"
-    },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 2.2,
     "heightVariation": 0.6,
-    "biomeType": "DESERT",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 25,
     "biomeDictionaryTypes": [
       "WASTELAND",

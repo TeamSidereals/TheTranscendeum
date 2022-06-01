@@ -36,12 +36,12 @@ public class SullcactusBlockValidPlacementConditionProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		return (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == SullenSandBlock.block
-				|| (world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == SullcactusBlock.block
-				|| (world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == SullcactusBlock.block
-				|| (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == SullcactusBlock.block
-				|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == SullcactusBlock.block
-				|| (world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == SullcactusBlock.block
-				|| (world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == SullcactusBlock.block;
+		return (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == SullenSandBlock.block
+				|| (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == SullcactusBlock.block
+				|| (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == SullcactusBlock.block
+				|| (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == SullcactusBlock.block
+				|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == SullcactusBlock.block
+				|| (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == SullcactusBlock.block
+				|| (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == SullcactusBlock.block;
 	}
 }

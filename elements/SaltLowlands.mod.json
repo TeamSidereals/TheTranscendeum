@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Salt Lowlands",
@@ -44,15 +44,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "ICY",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.0,
     "temperature": 0.2,
     "baseHeight": -0.1,
     "heightVariation": 0.0,
-    "biomeType": "ICY",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 5,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

@@ -28,9 +28,11 @@ import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.entity.AreaEffectCloudEntity;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.LethreumRenderer;
@@ -96,7 +98,12 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
 			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, ArcedeonEntity.CustomEntity.class, true, true));
-			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false) {
+				@Override
+				protected double getAttackReachSqr(LivingEntity entity) {
+					return (double) (4.0 + entity.getWidth() * entity.getWidth());
+				}
+			});
 			this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, (float) 1024));
 			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
 		}
@@ -118,7 +125,7 @@ public class LethreumEntity extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source.getImmediateSource() instanceof PotionEntity)
+			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
 				return false;
 			if (source == DamageSource.FALL)
 				return false;

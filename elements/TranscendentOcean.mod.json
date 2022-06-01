@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Transcendent Ocean",
@@ -40,15 +40,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "OCEAN",
-    "parent": {
-      "value": "CUSTOM:TranscendentSea"
-    },
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": -1.5,
     "heightVariation": 0.1,
-    "biomeType": "COOL",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 90,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

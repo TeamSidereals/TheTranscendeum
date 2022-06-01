@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -100,6 +100,7 @@
         "value": "CUSTOM:SullenDesert"
       }
     ],
-    "patchSize": 128
+    "patchSize": 128,
+    "generateAtAnyHeight": false
   }
 }

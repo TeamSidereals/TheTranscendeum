@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.block.BlockState;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
@@ -22,16 +23,16 @@ public class IndigoJamItem extends TheTranscendeumModElements.ModElement {
 	public static final Item block = null;
 
 	public IndigoJamItem(TheTranscendeumModElements instance) {
-		super(instance, 9);
+		super(instance, 432);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new FoodItemCustom());
+		elements.items.add(() -> new ItemCustom());
 	}
 
-	public static class FoodItemCustom extends Item {
-		public FoodItemCustom() {
+	public static class ItemCustom extends Item {
+		public ItemCustom() {
 			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(7).saturation(0.9f)
 
@@ -47,6 +48,21 @@ public class IndigoJamItem extends TheTranscendeumModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getEatSound() {
 			return net.minecraft.util.SoundEvents.ENTITY_GENERIC_DRINK;
+		}
+
+		@Override
+		public int getItemEnchantability() {
+			return 0;
+		}
+
+		@Override
+		public int getUseDuration(ItemStack itemstack) {
+			return 32;
+		}
+
+		@Override
+		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+			return 0F;
 		}
 
 		@Override

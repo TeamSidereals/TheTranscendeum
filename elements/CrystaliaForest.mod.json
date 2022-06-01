@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Crystalia Forest",
@@ -44,15 +44,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "CUSTOM:SaltLowlands"
-    },
     "rainingPossibility": 0.0,
     "temperature": 0.7,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "COOL",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 60,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

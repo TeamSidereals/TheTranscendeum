@@ -81,8 +81,7 @@ public class BerthelSharpBladeProcedure {
 						((LivingEntity) sourceentity).attackEntityFrom(new DamageSource("berthelspiked").setDamageBypassesArmor(), (float) 2);
 					}
 					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null,
-								new BlockPos((int) (entity.getPosX()), (int) (entity.getPosY() + 1), (int) (entity.getPosZ())),
+						((World) world).playSound(null, new BlockPos(entity.getPosX(), entity.getPosY() + 1, entity.getPosZ()),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
 								SoundCategory.NEUTRAL, (float) 1, (float) 1);
 					} else {

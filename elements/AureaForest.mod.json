@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Aurea Forest",
@@ -48,15 +48,13 @@
     },
     "particlesProbability": 1.0,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "CUSTOM:AureaPlains"
-    },
     "rainingPossibility": 0.0,
     "temperature": 1.0,
     "baseHeight": -0.16,
     "heightVariation": 0.03,
-    "biomeType": "COOL",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 80,
     "biomeDictionaryTypes": [
       "PLAINS"

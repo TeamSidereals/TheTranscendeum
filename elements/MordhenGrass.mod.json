@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -91,6 +91,7 @@
         "value": "CUSTOM:ViridianMires"
       }
     ],
-    "patchSize": 64
+    "patchSize": 64,
+    "generateAtAnyHeight": false
   }
 }

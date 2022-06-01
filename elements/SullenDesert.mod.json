@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Sullen Desert",
@@ -44,15 +44,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
-    "parent": {
-      "value": "CUSTOM:SullenCanyon"
-    },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.8,
     "heightVariation": 0.1,
-    "biomeType": "DESERT",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "WASTELAND",

@@ -57,7 +57,7 @@ public class InstantPortalSpawnProcedure {
 			Template template = ((ServerWorld) world).getStructureTemplateManager()
 					.getTemplateDefaulted(new ResourceLocation("the_transcendeum", "instant_portal"));
 			if (template != null) {
-				template.func_237144_a_((ServerWorld) world, new BlockPos((int) x, (int) y, (int) z),
+				template.func_237144_a_((ServerWorld) world, new BlockPos(x, y, z),
 						new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
 						((World) world).rand);
 			}

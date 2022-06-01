@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "cavern_air",
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": ""
     },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
+    "fallSound": {
       "value": ""
     },
     "hitSound": {
       "value": ""
     },
-    "fallSound": {
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
       "value": ""
     },
     "luminance": 0,
@@ -142,6 +142,7 @@
         "value": "CUSTOM:Excerock"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 1,
     "frequencyOnChunk": 3,
     "minGenerateHeight": 0,

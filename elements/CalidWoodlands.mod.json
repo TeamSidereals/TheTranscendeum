@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Calid Woodlands",
@@ -44,15 +44,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "SAVANNA",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.0,
     "temperature": 1.9000000000000001,
     "baseHeight": 0.1,
     "heightVariation": 0.1,
-    "biomeType": "WARM",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 50,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 8,

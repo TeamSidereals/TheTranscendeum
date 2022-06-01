@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "smooth_sullen_sand",
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": ""
     },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
+    "fallSound": {
       "value": ""
     },
     "hitSound": {
       "value": ""
     },
-    "fallSound": {
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
       "value": ""
     },
     "luminance": 0,
@@ -140,6 +140,7 @@
         "value": "CUSTOM:SullenSand"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 24,
     "frequencyOnChunk": 30,
     "minGenerateHeight": 0,

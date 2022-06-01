@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "plant",
   "definition": {
     "renderType": 13,
@@ -90,6 +90,7 @@
         "value": "CUSTOM:AureaForest"
       }
     ],
-    "patchSize": 64
+    "patchSize": 64,
+    "generateAtAnyHeight": false
   }
 }

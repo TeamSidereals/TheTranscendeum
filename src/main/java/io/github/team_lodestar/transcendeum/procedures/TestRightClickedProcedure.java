@@ -20,51 +20,51 @@ public class TestRightClickedProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGloveItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 0.6, (float) 5, (int) 1);
+				EnigmaGloveItem.shoot(_ent.world, _ent, new Random(), (float) 0.6, 5, 1);
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGlovePoweredItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 1);
+				EnigmaGlovePoweredItem.shoot(_ent.world, _ent, new Random(), 1, 5, 1);
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGloveItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1.2, (float) 5, (int) 1);
+				EnigmaGloveItem.shoot(_ent.world, _ent, new Random(), (float) 1.2, 5, 1);
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGlovePoweredItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1.5, (float) 5, (int) 1);
+				EnigmaGlovePoweredItem.shoot(_ent.world, _ent, new Random(), (float) 1.5, 5, 1);
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGloveItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 0.8, (float) 5, (int) 1);
+				EnigmaGloveItem.shoot(_ent.world, _ent, new Random(), (float) 0.8, 5, 1);
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGlovePoweredItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 2, (float) 5, (int) 1);
+				EnigmaGlovePoweredItem.shoot(_ent.world, _ent, new Random(), 2, 5, 1);
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGloveItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1.8, (float) 5, (int) 1);
+				EnigmaGloveItem.shoot(_ent.world, _ent, new Random(), (float) 1.8, 5, 1);
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			Entity _ent = entity;
+			LivingEntity _ent = (LivingEntity) entity;
 			if (!_ent.world.isRemote()) {
-				EnigmaGloveItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 0.4, (float) 5, (int) 1);
+				EnigmaGloveItem.shoot(_ent.world, _ent, new Random(), (float) 0.4, 5, 1);
 			}
 		}
 	}

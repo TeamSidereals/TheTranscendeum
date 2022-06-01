@@ -200,7 +200,7 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 		}
 
 		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
 		}
 
 		@Override

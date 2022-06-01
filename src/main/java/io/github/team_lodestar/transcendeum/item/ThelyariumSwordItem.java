@@ -17,6 +17,7 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.ThelyariumToolsHitLivingEntityProcedure;
+import io.github.team_lodestar.transcendeum.procedures.ThelyariumSwordEntitySwingsItemProcedure;
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
@@ -68,6 +69,19 @@ public class ThelyariumSwordItem extends TheTranscendeumModElements.ModElement {
 						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
 								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z),
 								new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("sourceentity", sourceentity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+				return retval;
+			}
+
+			@Override
+			public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+				boolean retval = super.onEntitySwing(itemstack, entity);
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+				World world = entity.world;
+
+				ThelyariumSwordEntitySwingsItemProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}

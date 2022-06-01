@@ -43,7 +43,7 @@ public class LilyPadBoatCollisionProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof BoatEntity) {
-			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
+			world.destroyBlock(new BlockPos(x, y, z), false);
 		}
 	}
 }
