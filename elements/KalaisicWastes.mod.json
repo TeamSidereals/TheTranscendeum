@@ -45,16 +45,16 @@
     "particleToSpawn": {
       "value": "CUSTOM:ViridInfection"
     },
-    "particlesProbability": 50.0,
-    "biomeCategory": "NONE",
+    "particlesProbability": 10.0,
+    "biomeCategory": "EXTREME_HILLS",
     "rainingPossibility": 0.0,
-    "temperature": 1.8,
-    "baseHeight": 0.30000000000000004,
-    "heightVariation": 0.30000000000000004,
-    "spawnBiome": true,
+    "temperature": 2.0,
+    "baseHeight": 3.0,
+    "heightVariation": 0.0,
+    "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 20,
+    "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "DEAD"
     ],

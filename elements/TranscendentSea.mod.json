@@ -4,10 +4,13 @@
   "definition": {
     "name": "Transcendent Sea",
     "groundBlock": {
-      "value": "CUSTOM:Sombersoil"
+      "value": "CUSTOM:SullenSandstone"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Somberstone"
+    },
+    "underwaterBlock": {
+      "value": "CUSTOM:SullenSandstone"
     },
     "airColor": {
       "value": -10581628,

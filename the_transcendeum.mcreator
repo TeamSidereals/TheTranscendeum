@@ -111,7 +111,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_desert",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Fervent"
     },
     {
       "name": "StariamSlab",
@@ -351,7 +351,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystalia_forest",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Pre-perpetual"
     },
     {
       "name": "StariamItemsTag",
@@ -477,7 +477,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_canyon",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Fervent"
     },
     {
       "name": "PolishedSomberstoneStairs",
@@ -494,7 +494,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "salt_lowlands",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Perpetual"
     },
     {
       "name": "PolishedSomberstoneStairsRecipe",
@@ -588,7 +588,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "aurea_plains",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Pre-perpetual"
     },
     {
       "name": "IaprieGrass",
@@ -714,7 +714,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "aurea_forest",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Pre-perpetual"
     },
     {
       "name": "Kelfae",
@@ -795,7 +795,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "viridian_mires",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Golden"
     },
     {
       "name": "KelaveWoodRecipe",
@@ -1190,7 +1190,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sullen_cliffs",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Fervent"
     },
     {
       "name": "CalidWoodlands",
@@ -1199,7 +1199,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "calid_woodlands",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Fervent"
     },
     {
       "name": "BerthelCrystalBlock",
@@ -4388,7 +4388,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lavender_fare",
-      "path": "~/Biomes"
+      "path": "~/Biomes/Pre-perpetual"
     },
     {
       "name": "Effly",
@@ -4882,7 +4882,8 @@
       "sortid": 436,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kalaisic_wastes"
+      "registry_name": "kalaisic_wastes",
+      "path": "~/Biomes/Divine"
     }
   ],
   "variable_elements": [
@@ -5249,7 +5250,28 @@
       },
       {
         "name": "Biomes",
-        "children": []
+        "children": [
+          {
+            "name": "Divine",
+            "children": []
+          },
+          {
+            "name": "Fervent",
+            "children": []
+          },
+          {
+            "name": "Golden",
+            "children": []
+          },
+          {
+            "name": "Pre-perpetual",
+            "children": []
+          },
+          {
+            "name": "Perpetual",
+            "children": []
+          }
+        ]
       },
       {
         "name": "caves",

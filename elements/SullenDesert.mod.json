@@ -9,6 +9,9 @@
     "undergroundBlock": {
       "value": "CUSTOM:SullenSandstone"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
     "airColor": {
       "value": -7406593,
       "falpha": 0.0
@@ -45,13 +48,13 @@
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
     "rainingPossibility": 0.0,
-    "temperature": 2.0,
-    "baseHeight": 0.8,
-    "heightVariation": 0.1,
+    "temperature": 1.5,
+    "baseHeight": 1.6,
+    "heightVariation": 0.0,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
+    "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "WASTELAND",
       "HOT",
@@ -102,26 +105,7 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

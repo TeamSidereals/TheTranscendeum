@@ -9,6 +9,9 @@
     "undergroundBlock": {
       "value": "CUSTOM:Sombersoil"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
     "airColor": {
       "value": -16307657,
       "falpha": 0.0
@@ -49,13 +52,13 @@
     "particlesProbability": 1.0,
     "biomeCategory": "PLAINS",
     "rainingPossibility": 0.0,
-    "temperature": 1.0,
-    "baseHeight": -0.15,
-    "heightVariation": 0.04,
+    "temperature": 0.6,
+    "baseHeight": 0.0,
+    "heightVariation": 0.0,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 100,
+    "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "PLAINS"
     ],
@@ -104,26 +107,7 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": [
       {
         "entity": {

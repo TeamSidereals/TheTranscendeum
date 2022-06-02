@@ -9,6 +9,9 @@
     "undergroundBlock": {
       "value": "CUSTOM:Sombersoil"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
     "airColor": {
       "value": -8599833,
       "falpha": 0.0
@@ -45,14 +48,16 @@
     "particlesProbability": 1.3,
     "biomeCategory": "SWAMP",
     "rainingPossibility": 0.0,
-    "temperature": 1.5,
-    "baseHeight": -0.4,
-    "heightVariation": 0.15,
+    "temperature": 0.9,
+    "baseHeight": -0.2,
+    "heightVariation": 0.1,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 40,
-    "biomeDictionaryTypes": [],
+    "biomeWeight": 60,
+    "biomeDictionaryTypes": [
+      "SWAMP"
+    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -98,26 +103,7 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves",
-      "Caves"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

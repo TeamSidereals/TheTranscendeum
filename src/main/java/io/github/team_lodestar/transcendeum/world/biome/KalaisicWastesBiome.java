@@ -5,7 +5,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
@@ -40,14 +39,14 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-10992841).setWaterColor(-10193282).setWaterFogColor(329011)
 						.withSkyColor(-10992841).withFoliageColor(-12761555).withGrassColor(-12761555)
-						.setParticle(new ParticleEffectAmbience(ViridInfectionParticle.particle, 0.5f)).build();
+						.setParticle(new ParticleEffectAmbience(ViridInfectionParticle.particle, 0.1f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MorositeBlock.block.getDefaultState(),
 								KalastoneBlock.block.getDefaultState(), KalastoneBlock.block.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(0.3f).scale(0.3f).temperature(1.8f)
-						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.EXTREME_HILLS).depth(3f).scale(0f)
+						.temperature(2f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:kalaisic_wastes"));
 			}
@@ -57,7 +56,5 @@ public class KalaisicWastesBiome extends TheTranscendeumModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.DEAD);
-		BiomeManager.addBiome(BiomeManager.BiomeType.DESERT,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 20));
 	}
 }

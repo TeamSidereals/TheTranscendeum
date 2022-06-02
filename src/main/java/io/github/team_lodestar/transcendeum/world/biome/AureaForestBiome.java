@@ -17,7 +17,6 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
@@ -69,24 +68,6 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(IaprieGrassBlockBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ArffelEntity.entity, 175, 4, 6));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(PuffelEntity.entity, 175, 4, 6));
@@ -94,8 +75,8 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(HyrumaeGhoulEntity.entity, 940, 1, 2));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(KefgaellEntity.entity, 50, 1, 1));
 				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(LethreumEntity.entity, 60, 1, 1));
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST).depth(-0.16f).scale(0.03f)
-						.temperature(1f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST).depth(0f).scale(0f).temperature(0.6f)
+						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:aurea_forest"));
 			}
@@ -104,7 +85,7 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.PLAINS);
+		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.FOREST);
 	}
 
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
