@@ -1,4 +1,5 @@
 {
+  "group": "indigo_jam",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "01",

@@ -6,23 +6,23 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "indigo_pie",
-    "recipeShapeless": true,
+    "group": "indigo_berry_pie",
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.PUMPKIN_PIE"
+        "value": "CUSTOM:IndigoBerries"
       },
       {
-        "value": "CUSTOM:IndigoJam"
+        "value": "Items.SUGAR"
       },
       {
-        "value": ""
+        "value": "Items.EGG"
       },
       {
-        "value": ""
+        "value": "CUSTOM:IndigoBerries"
       },
       {
-        "value": ""
+        "value": "CUSTOM:IndigoBerries"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:IndigoFruitedPie"
+      "value": "CUSTOM:IndigoBerryPie"
     },
-    "name": "indigo_pie_recipe",
+    "name": "indigo_berry_pie",
     "namespace": "mod"
   }
 }

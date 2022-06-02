@@ -1,11 +1,11 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "indigo_juiced_pie",
+    "texture": "indigo_berry_pie",
     "customModelName": "Normal",
-    "name": "Indigo Fruited Pie",
+    "name": "Indigo Berry Pie",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:TranscendeumItems"
@@ -13,8 +13,11 @@
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
-    "toolType": 0.0,
+    "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -23,12 +26,13 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 8,
-    "saturation": 0.6,
+    "nutritionalValue": 6,
+    "saturation": 0.1,
     "eatResultItem": {
       "value": ""
     },

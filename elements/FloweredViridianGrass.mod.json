@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:IndigoBerries"
     },
     "dropAmount": 1,
     "forceTicking": false,

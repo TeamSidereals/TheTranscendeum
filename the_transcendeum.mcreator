@@ -3577,14 +3577,6 @@
       "path": "~/recipes"
     },
     {
-      "name": "IndigoSoup",
-      "type": "food",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_soup"
-    },
-    {
       "name": "ArcedeonKeyReleased",
       "type": "procedure",
       "sortid": 354,
@@ -3714,23 +3706,6 @@
       "locked_code": false,
       "registry_name": "azura_mushroom",
       "path": "~/Plants/Fungi"
-    },
-    {
-      "name": "IndigoSoupRecipe",
-      "type": "recipe",
-      "sortid": 361,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_soup_recipe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "IndigoBerries",
-      "type": "food",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_berries"
     },
     {
       "name": "LethreumNaturalEntitySpawningCondition",
@@ -4003,15 +3978,6 @@
       "path": "~/recipes"
     },
     {
-      "name": "IndigoPieRecipe",
-      "type": "recipe",
-      "sortid": 378,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_pie_recipe",
-      "path": "~/recipes"
-    },
-    {
       "name": "Excrearer",
       "type": "livingentity",
       "sortid": 123,
@@ -4028,14 +3994,6 @@
       "locked_code": false,
       "registry_name": "plain_kelave_tree_1",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "IndigoFruitedPie",
-      "type": "food",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_fruited_pie"
     },
     {
       "name": "KefgaellLootTable",
@@ -4071,14 +4029,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "kefgaell_heart"
-    },
-    {
-      "name": "IndigoJam",
-      "type": "food",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_jam"
     },
     {
       "name": "SullenThorn",
@@ -4902,6 +4852,38 @@
       "locked_code": false,
       "registry_name": "viridian_bush",
       "path": "~/mobs/biome specific"
+    },
+    {
+      "name": "IndigoBerries",
+      "type": "item",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_berries"
+    },
+    {
+      "name": "IndigoBerryPie",
+      "type": "item",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_berry_pie"
+    },
+    {
+      "name": "IndigoJam",
+      "type": "item",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_jam"
+    },
+    {
+      "name": "IndigoBerryPieRecipe",
+      "type": "recipe",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indigo_berry_pie_recipe"
     }
   ],
   "variable_elements": [
@@ -5054,7 +5036,6 @@
       "item.the_transcendeum.ellum_spawn_egg": "Ellum Spawn Egg",
       "block.the_transcendeum.morosite_slab": "Morosite Slab",
       "block.the_transcendeum.viridwood_slab": "Viridwood Slab",
-      "item.the_transcendeum.indigo_juice": "Indigo Juice",
       "block.the_transcendeum.sombersoil": "Sombersoil",
       "block.the_transcendeum.efow_moss": "Efow Moss",
       "enchantment.the_transcendeum.refreshing": "Refreshing",
@@ -5156,6 +5137,7 @@
       "itemGroup.tabtranscendeum_combat": "Transcendeum Combat",
       "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
       "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
+      "item.the_transcendeum.indigo_berry_pie": "Indigo Berry Pie",
       "block.the_transcendeum.viridwood_pressure_plate": "Viridwood Pressure Plate",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
       "item.the_transcendeum.remobren_spawn_egg": "Remobren Spawn Egg",

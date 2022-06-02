@@ -1,20 +1,23 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "indigo_juice",
+    "texture": "indigo_jam",
     "customModelName": "Normal",
     "name": "Indigo Jam",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:TranscendeumItems"
     },
-    "stackSize": 16,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 32,
-    "toolType": 0.0,
+    "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -23,17 +26,18 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 7,
-    "saturation": 0.9,
+    "nutritionalValue": 2,
+    "saturation": 0.08,
     "eatResultItem": {
       "value": "Items.GLASS_BOTTLE"
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "drink"
   }
 }
