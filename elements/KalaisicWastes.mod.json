@@ -7,26 +7,25 @@
       "value": "CUSTOM:Morosite"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Morosite"
+      "value": "CUSTOM:Kalastone"
+    },
+    "underwaterBlock": {
+      "value": ""
     },
     "airColor": {
-      "value": -5593439,
+      "value": -10992841,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -9939126,
+      "value": -12761555,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -11190224,
+      "value": -12761555,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10250864,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -6834766,
+      "value": -10193282,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -42,38 +41,24 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "CUSTOM:Twilighteris"
+      "value": "CUSTOM:ViridInfection"
     },
-    "particlesProbability": 0.5,
-    "biomeCategory": "DESERT",
-<<<<<<< HEAD
+    "particlesProbability": 50.0,
+    "biomeCategory": "NONE",
     "rainingPossibility": 0.0,
-    "temperature": 1.9000000000000001,
-    "baseHeight": 0.30000000000000004,
-    "heightVariation": 0.19999999999999998,
-=======
-    "parent": {
-      "value": "No parent"
-    },
-    "rainingPossibility": 0.2,
     "temperature": 1.8,
-    "baseHeight": 0.2,
-    "heightVariation": 0.2,
-    "biomeType": "DESERT",
->>>>>>> branch 'master' of https://github.com/Team-Lodestar/TheTranscendeum.git
-    "spawnBiome": false,
+    "baseHeight": 0.30000000000000004,
+    "heightVariation": 0.30000000000000004,
+    "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
+    "biomeWeight": 20,
     "biomeDictionaryTypes": [
-      "MESA",
-      "WASTELAND",
-      "HOT",
-      "DRY"
+      "DEAD"
     ],
-    "grassPerChunk": 2,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
@@ -82,24 +67,24 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 1,
-    "minHeight": 3,
+    "treeType": 0,
+    "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.COAL_BLOCK"
+      "value": ""
     },
     "treeBranch": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "spawnStronghold": false,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
@@ -114,24 +99,13 @@
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
-    "spawnNetherFossil": true,
+    "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Ores",
-      "TaigaRocks"
+      "Caves"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntitySpider"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 10,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }
