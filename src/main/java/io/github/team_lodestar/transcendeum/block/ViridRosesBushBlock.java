@@ -55,7 +55,6 @@ import java.util.List;
 import java.util.Collections;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
-import io.github.team_lodestar.transcendeum.item.IndigoBerriesItem;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -158,7 +157,7 @@ public class ViridRosesBushBlock extends TheTranscendeumModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(IndigoBerriesItem.block));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
 		@Override

@@ -109,6 +109,7 @@
   "block.the_transcendeum.polished_morosite_stairs": "Polished Morosite Stairs",
   "item.the_transcendeum.berthel_chestplate": "Berthel Chestplate",
   "item.the_transcendeum.virilily": "Virilily",
+  "item.the_transcendeum.viridian_bush_spawn_egg": "Viridian Bush Spawn Egg",
   "key.the_transcendeum.arcedeon_up": "Arcedeon Ascend",
   "entity.the_transcendeum.lethreum": "Lethreum",
   "biome.the_transcendeum.aurea_plains": "Aurea Plains",
@@ -200,6 +201,7 @@
   "block.the_transcendeum.kelave_button": "Kelave Button",
   "biome.the_transcendeum.sullen_crags": "Sullen Crags",
   "item.the_transcendeum.kiarite_shovel": "Kiarite Shovel",
+  "block.the_transcendeum.kalastone": "Kalastone",
   "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
   "block.the_transcendeum.thelyarium_ore": "Thelyarium Ore",
   "key.the_transcendeum.arcedeon_down": "Arcedeon Descend",
@@ -237,5 +239,6 @@
   "block.the_transcendeum.viridian_grass": "Viridian Grass",
   "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
   "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
+  "entity.the_transcendeum.viridian_bush": "Viridian Bush",
   "itemGroup.tabtranscendeum_items": "Transcendeum Items"
 }

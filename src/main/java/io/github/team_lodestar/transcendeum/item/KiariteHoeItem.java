@@ -63,17 +63,9 @@ public class KiariteHoeItem extends TheTranscendeumModElements.ModElement {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-<<<<<<< HEAD
-				list.add(new StringTextComponent("?8A tool empowered by the ancient dragons."));
-=======
-				list.add(new StringTextComponent("\u00A78A tool empowered by the ancient dragons."));
->>>>>>> branch 'master' of https://github.com/Team-Lodestar/TheTranscendeum.git
+				list.add(new StringTextComponent("\uFFFD8A tool empowered by the ancient dragons."));
 				list.add(new StringTextComponent(
-<<<<<<< HEAD
-						"?6Knocks up and deals extra 2 damage to the target, only if the target is a mob of the Transcendeum dimension."));
-=======
-						"\u00A76Knocks up and deals extra 2 damage to the target, only if the target is a mob of the Transcendeum dimension."));
->>>>>>> branch 'master' of https://github.com/Team-Lodestar/TheTranscendeum.git
+						"\uFFFD6Knocks up and deals extra 2 damage to the target, only if the target is a mob of the Transcendeum dimension."));
 			}
 
 			@Override

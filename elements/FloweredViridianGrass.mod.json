@@ -7,7 +7,7 @@
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "flowered_virid_grass",
-    "particleTexture": "flowered_virid",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:IndigoBerries"
+      "value": ""
     },
     "dropAmount": 1,
     "forceTicking": false,

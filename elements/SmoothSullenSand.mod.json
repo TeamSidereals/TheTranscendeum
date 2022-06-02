@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "smooth_sullen_sand",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -121,9 +121,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "SmoothSullenSandRenewability"
-    },
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
@@ -145,7 +142,7 @@
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 24,
-    "frequencyOnChunk": 30,
+    "frequencyOnChunk": 32,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 140
   }
