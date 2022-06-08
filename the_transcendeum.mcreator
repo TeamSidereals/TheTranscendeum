@@ -3416,8 +3416,7 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "excerock",
-      "path": "~/LyofsPlace"
+      "registry_name": "excerock"
     },
     {
       "name": "ViridwoodDoor",
@@ -3433,8 +3432,7 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "excerock_tiles",
-      "path": "~/LyofsPlace"
+      "registry_name": "excerock_tiles"
     },
     {
       "name": "EfowFruitEaten",
@@ -3451,15 +3449,6 @@
           }
         ]
       },
-      "path": "~/LyofsPlace"
-    },
-    {
-      "name": "EfowFruit",
-      "type": "food",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "efow_fruit",
       "path": "~/LyofsPlace"
     },
     {
@@ -3486,8 +3475,7 @@
       "sortid": 348,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "excerock_tiles_craft",
-      "path": "~/LyofsPlace"
+      "registry_name": "excerock_tiles_craft"
     },
     {
       "name": "KiariteArmorEmpowered",
@@ -4884,6 +4872,51 @@
       "locked_code": false,
       "registry_name": "kalaisic_wastes",
       "path": "~/Biomes/Divine"
+    },
+    {
+      "name": "Shalow",
+      "type": "block",
+      "sortid": 437,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shalow",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "SmoothShalow",
+      "type": "block",
+      "sortid": 438,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_shalow",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "ShalowBricks",
+      "type": "block",
+      "sortid": 439,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shalow_bricks",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "SmallShalowBricks",
+      "type": "block",
+      "sortid": 440,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_shalow_bricks",
+      "path": "~/LyofsPlace"
+    },
+    {
+      "name": "EfowFruit",
+      "type": "item",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "efow_fruit",
+      "path": "~/LyofsPlace"
     }
   ],
   "variable_elements": [
@@ -5031,6 +5064,7 @@
       "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
       "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
+      "block.the_transcendeum.smooth_shalow": "Smooth Shalow",
       "item.the_transcendeum.efow_fruit": "Efow Fruit",
       "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
       "item.the_transcendeum.ellum_spawn_egg": "Ellum Spawn Egg",
@@ -5074,6 +5108,7 @@
       "block.the_transcendeum.efow_weed_bubbly": "Bubbly Efow Weed",
       "block.the_transcendeum.morosite_wall": "Morosite Wall",
       "item.the_transcendeum.thelyarium_hoe": "Thelyarium Hoe",
+      "block.the_transcendeum.small_shalow_bricks": "Small Shalow Bricks",
       "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
       "item.the_transcendeum.thelyarium_helmet": "Thelyarium Helmet",
       "entity.the_transcendeum.arcedeon": "Arcedeon",
@@ -5111,6 +5146,7 @@
       "biome.the_transcendeum.sullen_crags": "Sullen Crags",
       "item.the_transcendeum.kiarite_shovel": "Kiarite Shovel",
       "block.the_transcendeum.kalastone": "Kalastone",
+      "block.the_transcendeum.shalow": "Shalow",
       "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
       "block.the_transcendeum.thelyarium_ore": "Thelyarium Ore",
       "key.the_transcendeum.arcedeon_down": "Arcedeon Descend",
@@ -5150,7 +5186,8 @@
       "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
       "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
       "entity.the_transcendeum.viridian_bush": "Viridian Bush",
-      "itemGroup.tabtranscendeum_items": "Transcendeum Items"
+      "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+      "block.the_transcendeum.shalow_bricks": "Shalow Bricks"
     }
   },
   "foldersRoot": {

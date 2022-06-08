@@ -121,6 +121,7 @@
   "block.the_transcendeum.iaprie_grass": "Mergoany",
   "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
   "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
+  "block.the_transcendeum.smooth_shalow": "Smooth Shalow",
   "item.the_transcendeum.efow_fruit": "Efow Fruit",
   "block.the_transcendeum.crystalia_grass": "Crystalia Grass",
   "item.the_transcendeum.ellum_spawn_egg": "Ellum Spawn Egg",
@@ -164,6 +165,7 @@
   "block.the_transcendeum.efow_weed_bubbly": "Bubbly Efow Weed",
   "block.the_transcendeum.morosite_wall": "Morosite Wall",
   "item.the_transcendeum.thelyarium_hoe": "Thelyarium Hoe",
+  "block.the_transcendeum.small_shalow_bricks": "Small Shalow Bricks",
   "itemGroup.tabtranscendeum_gear": "Transcendeum Combat",
   "item.the_transcendeum.thelyarium_helmet": "Thelyarium Helmet",
   "entity.the_transcendeum.arcedeon": "Arcedeon",
@@ -201,6 +203,7 @@
   "biome.the_transcendeum.sullen_crags": "Sullen Crags",
   "item.the_transcendeum.kiarite_shovel": "Kiarite Shovel",
   "block.the_transcendeum.kalastone": "Kalastone",
+  "block.the_transcendeum.shalow": "Shalow",
   "item.the_transcendeum.puffel_spawn_egg": "Puffel Spawn Egg",
   "block.the_transcendeum.thelyarium_ore": "Thelyarium Ore",
   "key.the_transcendeum.arcedeon_down": "Arcedeon Descend",
@@ -240,5 +243,6 @@
   "item.the_transcendeum.indigo_fruited_pie": "Indigo Fruited Pie",
   "item.the_transcendeum.erellum_spawn_egg": "Erellum Spawn Egg",
   "entity.the_transcendeum.viridian_bush": "Viridian Bush",
-  "itemGroup.tabtranscendeum_items": "Transcendeum Items"
+  "itemGroup.tabtranscendeum_items": "Transcendeum Items",
+  "block.the_transcendeum.shalow_bricks": "Shalow Bricks"
 }
