@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "Kalaisic Wastes",
@@ -8,9 +8,6 @@
     },
     "undergroundBlock": {
       "value": "CUSTOM:Kalastone"
-    },
-    "underwaterBlock": {
-      "value": ""
     },
     "airColor": {
       "value": -10992841,
@@ -52,8 +49,6 @@
     "baseHeight": 3.0,
     "heightVariation": 0.0,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "DEAD"

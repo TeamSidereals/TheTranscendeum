@@ -33,7 +33,7 @@ public class KiariteArmorEmpoweredProcedure {
 			if (event != null && event.getEntity() != null) {
 				Entity entity = event.getEntity();
 				Entity sourceentity = event.getSource().getTrueSource();
-				Entity immediatesourceentity = event.getSource().getImmediateSource();
+				Entity imediatesourceentity = event.getSource().getImmediateSource();
 				double i = entity.getPosX();
 				double j = entity.getPosY();
 				double k = entity.getPosZ();
@@ -47,7 +47,7 @@ public class KiariteArmorEmpoweredProcedure {
 				dependencies.put("world", world);
 				dependencies.put("entity", entity);
 				dependencies.put("sourceentity", sourceentity);
-				dependencies.put("immediatesourceentity", immediatesourceentity);
+				dependencies.put("imediatesourceentity", imediatesourceentity);
 				dependencies.put("event", event);
 				executeProcedure(dependencies);
 			}
@@ -101,7 +101,7 @@ public class KiariteArmorEmpoweredProcedure {
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null, new BlockPos(x, y, z),
+						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1);
@@ -133,7 +133,7 @@ public class KiariteArmorEmpoweredProcedure {
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null, new BlockPos(x, y, z),
+						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1);
@@ -165,7 +165,7 @@ public class KiariteArmorEmpoweredProcedure {
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null, new BlockPos(x, y, z),
+						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1);
@@ -197,7 +197,7 @@ public class KiariteArmorEmpoweredProcedure {
 								(entity.getPosZ()), (int) 10, 0.2, 0.4, 0.2, 0.1);
 					}
 					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null, new BlockPos(x, y, z),
+						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 										.getValue(new ResourceLocation("entity.elder_guardian.curse")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1);

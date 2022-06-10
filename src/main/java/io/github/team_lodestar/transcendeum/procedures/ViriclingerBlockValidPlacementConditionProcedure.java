@@ -37,8 +37,8 @@ public class ViriclingerBlockValidPlacementConditionProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		return (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ViridwoodLeavesBlock.block
-				|| (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ViriclingerBaseBlock.block
-				|| (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ViriclingerBlock.block;
+		return (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViridwoodLeavesBlock.block
+				|| (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViriclingerBaseBlock.block
+				|| (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == ViriclingerBlock.block;
 	}
 }

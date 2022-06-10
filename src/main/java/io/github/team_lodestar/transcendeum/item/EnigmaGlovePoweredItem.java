@@ -11,8 +11,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.EntityRayTraceResult;
-import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
@@ -49,7 +47,7 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 	public static final Item block = null;
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-			.size(0.5f, 0.5f)).build("projectile_enigma_glove_powered").setRegistryName("projectile_enigma_glove_powered");
+			.size(0.5f, 0.5f)).build("entitybulletenigma_glove_powered").setRegistryName("entitybulletenigma_glove_powered");
 
 	public EnigmaGlovePoweredItem(TheTranscendeumModElements instance) {
 		super(instance, 270);
@@ -130,46 +128,24 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return ItemStack.EMPTY;
+			return null;
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return ItemStack.EMPTY;
+			return null;
 		}
 
 		@Override
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
-		}
-
-		@Override
-		public void onEntityHit(EntityRayTraceResult entityRayTraceResult) {
-			super.onEntityHit(entityRayTraceResult);
-			Entity entity = entityRayTraceResult.getEntity();
 			Entity sourceentity = this.func_234616_v_();
-			Entity immediatesourceentity = this;
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
-
-			EnigmaGlovePoweredBulletHitsLivingEntityProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-
-		@Override
-		public void func_230299_a_(BlockRayTraceResult blockRayTraceResult) {
-			super.func_230299_a_(blockRayTraceResult);
-			double x = blockRayTraceResult.getPos().getX();
-			double y = blockRayTraceResult.getPos().getY();
-			double z = blockRayTraceResult.getPos().getZ();
-			World world = this.world;
-			Entity entity = this.func_234616_v_();
-			Entity immediatesourceentity = this;
+			Entity imediatesourceentity = this;
 
 			EnigmaGlovePoweredBulletHitsLivingEntityProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
@@ -185,7 +161,7 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
-			Entity immediatesourceentity = this;
+			Entity imediatesourceentity = this;
 
 			EnigmaGlovePoweredWhileBulletFlyingTickProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
@@ -204,7 +180,7 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
-		entityarrow.shoot(entity.getLook(1).x, entity.getLook(1).y, entity.getLook(1).z, power * 2, 0);
+		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setIsCritical(false);
 		entityarrow.setDamage(damage);

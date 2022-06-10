@@ -41,7 +41,7 @@ public class SomberstonestairsBlock extends TheTranscendeumModElements.ModElemen
 		public CustomBlock() {
 			super(() -> new Block(
 					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 7.5f).setLightLevel(s -> 0))
-					.getDefaultState(),
+							.getDefaultState(),
 					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 7.5f).setLightLevel(s -> 0));
 			setRegistryName("somberstone_stairs");
 		}

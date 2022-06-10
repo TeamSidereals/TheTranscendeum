@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "bubble_block",
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": "block.bubble_column.bubble_pop"
     },
-    "fallSound": {
+    "stepSound": {
       "value": "ambient.underwater.enter"
-    },
-    "hitSound": {
-      "value": "entity.player.swim"
     },
     "placeSound": {
       "value": "block.bubble_column.bubble_pop"
     },
-    "stepSound": {
+    "hitSound": {
+      "value": "entity.player.swim"
+    },
+    "fallSound": {
       "value": "ambient.underwater.enter"
     },
     "luminance": 5,
@@ -134,7 +134,6 @@
         "value": "Blocks.STONE"
       }
     ],
-    "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

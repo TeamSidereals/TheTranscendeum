@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "Aurea Forest",
@@ -8,9 +8,6 @@
     },
     "undergroundBlock": {
       "value": "CUSTOM:Sombersoil"
-    },
-    "underwaterBlock": {
-      "value": ""
     },
     "airColor": {
       "value": -16307657,
@@ -56,8 +53,6 @@
     "baseHeight": 0.0,
     "heightVariation": 0.0,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "FOREST"

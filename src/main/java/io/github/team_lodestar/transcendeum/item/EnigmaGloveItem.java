@@ -47,7 +47,7 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 	public static final Item block = null;
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-			.size(0.5f, 0.5f)).build("projectile_enigma_glove").setRegistryName("projectile_enigma_glove");
+			.size(0.5f, 0.5f)).build("entitybulletenigma_glove").setRegistryName("entitybulletenigma_glove");
 
 	public EnigmaGloveItem(TheTranscendeumModElements instance) {
 		super(instance, 142);
@@ -128,12 +128,12 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return ItemStack.EMPTY;
+			return null;
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return ItemStack.EMPTY;
+			return null;
 		}
 
 		@Override
@@ -150,7 +150,7 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
-			Entity immediatesourceentity = this;
+			Entity imediatesourceentity = this;
 
 			EnigmaGloveWhileBulletFlyingTickProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
@@ -164,7 +164,7 @@ public class EnigmaGloveItem extends TheTranscendeumModElements.ModElement {
 
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
-		entityarrow.shoot(entity.getLook(1).x, entity.getLook(1).y, entity.getLook(1).z, power * 2, 0);
+		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setIsCritical(false);
 		entityarrow.setDamage(damage);

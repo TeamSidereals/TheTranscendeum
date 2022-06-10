@@ -51,7 +51,7 @@ public class PyrrhicBushNetSteppingProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 1, (false), (true)));
-		world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
+		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 		if (Math.random() <= 0.25) {
 			if (world instanceof World && !world.isRemote()) {
 				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(PyrrhicBushNetBlock.block));

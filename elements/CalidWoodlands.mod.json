@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "Calid Woodlands",
@@ -49,8 +49,6 @@
     "baseHeight": 0.1,
     "heightVariation": 0.1,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 50,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 8,

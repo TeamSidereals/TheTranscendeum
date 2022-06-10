@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -29,18 +29,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "EfowFruitEaten"
-    },
-    "hasDispenseBehavior": false,
-    "isFood": true,
-    "nutritionalValue": 3,
-    "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
-    "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "eat"
+    "hasDispenseBehavior": false
   }
 }

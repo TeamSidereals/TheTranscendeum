@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -91,7 +91,6 @@
         "value": "CUSTOM:CrystaliaForest"
       }
     ],
-    "patchSize": 64,
-    "generateAtAnyHeight": false
+    "patchSize": 64
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "sullen_sand",
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": ""
     },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
+    "stepSound": {
       "value": ""
     },
     "placeSound": {
       "value": ""
     },
-    "stepSound": {
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
       "value": ""
     },
     "luminance": 0,
@@ -134,7 +134,6 @@
         "value": "CUSTOM:SullenSandstone"
       }
     ],
-    "generationShape": "UNIFORM",
     "frequencyPerChunks": 32,
     "frequencyOnChunk": 32,
     "minGenerateHeight": 0,

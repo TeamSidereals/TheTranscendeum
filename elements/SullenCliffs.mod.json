@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "Sullen Cliffs",
@@ -8,9 +8,6 @@
     },
     "undergroundBlock": {
       "value": "CUSTOM:SullenSandstone"
-    },
-    "underwaterBlock": {
-      "value": ""
     },
     "airColor": {
       "value": -5321758,
@@ -56,8 +53,6 @@
     "baseHeight": 3.1,
     "heightVariation": 0.19999999999999998,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "WASTELAND",

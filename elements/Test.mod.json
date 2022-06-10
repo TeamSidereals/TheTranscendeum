@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -35,12 +35,6 @@
     "onRightClickedOnBlock": {
       "name": "TestRightClicked"
     },
-    "hasDispenseBehavior": false,
-    "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
-    "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "eat"
+    "hasDispenseBehavior": false
   }
 }

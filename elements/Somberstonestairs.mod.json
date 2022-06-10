@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "somberstone",
@@ -83,16 +83,16 @@
     "breakSound": {
       "value": ""
     },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
+    "stepSound": {
       "value": ""
     },
     "placeSound": {
       "value": ""
     },
-    "stepSound": {
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
       "value": ""
     },
     "luminance": 0,
@@ -125,7 +125,6 @@
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],
-    "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

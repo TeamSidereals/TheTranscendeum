@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "Viridian Mires",
@@ -8,9 +8,6 @@
     },
     "undergroundBlock": {
       "value": "CUSTOM:Sombersoil"
-    },
-    "underwaterBlock": {
-      "value": ""
     },
     "airColor": {
       "value": -8599833,
@@ -52,8 +49,6 @@
     "baseHeight": -0.2,
     "heightVariation": 0.1,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "SWAMP"

@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -62,7 +62,7 @@
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
@@ -91,7 +91,6 @@
         "value": "CUSTOM:ViridianMires"
       }
     ],
-    "patchSize": 64,
-    "generateAtAnyHeight": false
+    "patchSize": 64
   }
 }

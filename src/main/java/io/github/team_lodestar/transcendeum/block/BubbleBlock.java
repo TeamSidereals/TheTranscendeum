@@ -74,7 +74,7 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WATER, MaterialColor.ICE)
+			super(Block.Properties.create(Material.WATER)
 					.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.bubble_column.bubble_pop")),
 							() -> new SoundEvent(new ResourceLocation("ambient.underwater.enter")),
 							() -> new SoundEvent(new ResourceLocation("block.bubble_column.bubble_pop")),

@@ -1,8 +1,8 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "shalow",
+    "texture": "soil",
     "textureTop": "efow_moss_top",
     "textureLeft": "efow_moss_side",
     "textureFront": "efow_moss_side",
@@ -11,7 +11,7 @@
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "efow_moss_side",
@@ -82,19 +82,19 @@
     "breakSound": {
       "value": ""
     },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
+    "stepSound": {
       "value": ""
     },
     "placeSound": {
       "value": ""
     },
-    "stepSound": {
+    "hitSound": {
       "value": ""
     },
-    "luminance": 0,
+    "fallSound": {
+      "value": ""
+    },
+    "luminance": 3,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "spawnParticles": false,
@@ -124,7 +124,6 @@
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],
-    "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

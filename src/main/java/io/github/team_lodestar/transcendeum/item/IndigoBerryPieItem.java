@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.Food;
 import net.minecraft.block.BlockState;
 
 import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
@@ -28,10 +27,7 @@ public class IndigoBerryPieItem extends TheTranscendeumModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(6).saturation(0.1f)
-
-							.build()));
+			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("indigo_berry_pie");
 		}
 

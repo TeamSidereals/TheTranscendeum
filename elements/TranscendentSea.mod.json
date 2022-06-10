@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "Transcendent Sea",
@@ -8,9 +8,6 @@
     },
     "undergroundBlock": {
       "value": "CUSTOM:Somberstone"
-    },
-    "underwaterBlock": {
-      "value": "CUSTOM:SullenSandstone"
     },
     "airColor": {
       "value": -10581628,
@@ -48,8 +45,6 @@
     "baseHeight": -0.8,
     "heightVariation": 0.1,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 120,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

@@ -33,7 +33,7 @@ public class BerthelArmorSharpProcedure {
 			if (event != null && event.getEntity() != null) {
 				Entity entity = event.getEntity();
 				Entity sourceentity = event.getSource().getTrueSource();
-				Entity immediatesourceentity = event.getSource().getImmediateSource();
+				Entity imediatesourceentity = event.getSource().getImmediateSource();
 				double i = entity.getPosX();
 				double j = entity.getPosY();
 				double k = entity.getPosZ();
@@ -47,7 +47,7 @@ public class BerthelArmorSharpProcedure {
 				dependencies.put("world", world);
 				dependencies.put("entity", entity);
 				dependencies.put("sourceentity", sourceentity);
-				dependencies.put("immediatesourceentity", immediatesourceentity);
+				dependencies.put("imediatesourceentity", imediatesourceentity);
 				dependencies.put("event", event);
 				executeProcedure(dependencies);
 			}
@@ -83,7 +83,7 @@ public class BerthelArmorSharpProcedure {
 					&& ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.FEET) : ItemStack.EMPTY)
 							.getItem() == BerthelArmorItem.boots) {
 				if (world instanceof World && !world.isRemote()) {
-					((World) world).playSound(null, new BlockPos(entity.getPosX(), entity.getPosY() + 1, entity.getPosZ()),
+					((World) world).playSound(null, new BlockPos((int) (entity.getPosX()), (int) (entity.getPosY() + 1), (int) (entity.getPosZ())),
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
 							SoundCategory.NEUTRAL, (float) 1, (float) 1);
 				} else {

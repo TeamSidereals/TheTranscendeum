@@ -37,6 +37,6 @@ public class EfowIfCanPlaceProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		return BlockTags.getCollection().getTagByID(new ResourceLocation("forge:efow_weed_growable"))
-				.contains((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock());
+				.contains((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock());
 	}
 }

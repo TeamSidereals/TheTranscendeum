@@ -39,20 +39,21 @@ public class CavernAirUpdateTickProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		if (Blocks.CAVE_AIR == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
-			if (ExcerockBlock.block == (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock()) {
-				world.setBlockState(new BlockPos(x, y - 1, z), IaprieGrassBlockBlock.block.getDefaultState(), 3);
+		if (Blocks.CAVE_AIR == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()) {
+			if (ExcerockBlock.block == (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock()) {
+				world.setBlockState(new BlockPos((int) x, (int) (y - 1), (int) z), IaprieGrassBlockBlock.block.getDefaultState(), 3);
 				if (0.05 >= Math.random()) {
-					world.setBlockState(new BlockPos(x, y, z), MergoanyBlock.block.getDefaultState(), 3);
+					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), MergoanyBlock.block.getDefaultState(), 3);
 				} else if (0.2 >= Math.random()) {
-					world.setBlockState(new BlockPos(x, y, z), ScaliaWartBlock.block.getDefaultState(), 3);
+					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ScaliaWartBlock.block.getDefaultState(), 3);
 				} else {
-					world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 3);
+					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
 				}
-			} else if (0.2 >= Math.random() && ExcerockBlock.block == (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock()) {
-				world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 3);
+			} else if (0.2 >= Math.random()
+					&& ExcerockBlock.block == (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()) {
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
 			} else {
-				world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.CAVE_AIR.getDefaultState(), 3);
 			}
 		}
 	}

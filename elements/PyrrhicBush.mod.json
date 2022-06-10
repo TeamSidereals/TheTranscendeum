@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -87,7 +87,6 @@
         "value": "CUSTOM:KalaisicWastes"
       }
     ],
-    "patchSize": 32,
-    "generateAtAnyHeight": false
+    "patchSize": 32
   }
 }

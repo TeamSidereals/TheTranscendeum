@@ -72,9 +72,9 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 								new SimpleBlockStateProvider(StariamLeavesBlock.block.getDefaultState()),
 								new AcaciaFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0)),
 								new ForkyTrunkPlacer(10, 2, 2), new TwoLayerFeature(1, 0, 2)))
-								.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
-										new CustomCocoaTreeDecorator()))
-								.build())
+										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
+												new CustomCocoaTreeDecorator()))
+										.build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(10, 0.1F, 1))));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();

@@ -47,190 +47,204 @@ public class BorderSpikesAdditionalGenerationConditionProcedure {
 		boolean adjpreperpetual = false;
 		boolean adjperpetual = false;
 		boolean adjocean = false;
-		if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+		if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:sullen_cliffs"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:sullen_desert"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:sullen_canyon"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))) {
 			fervent = (true);
-		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:viridian_mires"))) {
 			golden = (true);
-		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:lavender_fare"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:crystalia_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:aurea_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:aurea_plains"))) {
 			preperpetual = (true);
-		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:salt_lowlands"))) {
 			perpetual = (true);
 		}
-		if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+		if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:sullen_cliffs"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:sullen_cliffs"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:sullen_cliffs"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:sullen_cliffs"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:sullen_canyon"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:sullen_canyon"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:sullen_canyon"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:sullen_canyon"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:sullen_desert"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:sullen_desert"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:sullen_desert"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:sullen_desert"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))) {
 			adjfervent = (true);
-		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:aurea_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:viridian_mires"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:viridian_mires"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:viridian_mires"))) {
 			adjgolden = (true);
-		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:lavender_fare"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:lavender_fare"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:lavender_fare"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:lavender_fare"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:crystalia_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:crystalia_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:crystalia_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:crystalia_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:aurea_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:aurea_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:aurea_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:aurea_forest"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:aurea_plains"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:aurea_plains"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:aurea_plains"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:aurea_plains"))) {
 			adjpreperpetual = (true);
-		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 						.equals(new ResourceLocation("the_transcendeum:salt_lowlands"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:salt_lowlands"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 								.equals(new ResourceLocation("the_transcendeum:salt_lowlands"))
-				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 								.equals(new ResourceLocation("the_transcendeum:salt_lowlands"))) {
 			adjperpetual = (true);
 		}
 		return (!(fervent == adjfervent) || !(golden == adjgolden) || !(adjpreperpetual == adjpreperpetual) || !(adjperpetual == adjperpetual))
-				&& !(world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				&& !(world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+						.getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:transcendent_ocean"))
-						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+								.getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 										.equals(new ResourceLocation("the_transcendeum:transcendent_ocean"))
-						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+								.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 										.equals(new ResourceLocation("the_transcendeum:transcendent_ocean"))
-						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+								.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 										.equals(new ResourceLocation("the_transcendeum:transcendent_ocean")))
-				&& !(world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x + 3, y, z)))
+				&& !(world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+						.getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
+						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
 								.equals(new ResourceLocation("the_transcendeum:transcendent_sea"))
-						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z))) != null
-								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x - 3, y, z)))
+						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+								.getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
 										.equals(new ResourceLocation("the_transcendeum:transcendent_sea"))
-						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3))) != null
-								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z + 3)))
+						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+								.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
 										.equals(new ResourceLocation("the_transcendeum:transcendent_sea"))
-						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3))) != null
-								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z - 3)))
+						|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+								.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 										.equals(new ResourceLocation("the_transcendeum:transcendent_sea")));
 	}
 }

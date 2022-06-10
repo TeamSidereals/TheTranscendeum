@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "Crystalia Forest",
@@ -8,9 +8,6 @@
     },
     "undergroundBlock": {
       "value": "CUSTOM:Sombersoil"
-    },
-    "underwaterBlock": {
-      "value": ""
     },
     "airColor": {
       "value": -13292701,
@@ -52,8 +49,6 @@
     "baseHeight": 0.0,
     "heightVariation": 0.0,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 60,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

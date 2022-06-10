@@ -38,7 +38,8 @@ public class EfowMossBlockBlock extends TheTranscendeumModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT).hardnessAndResistance(1f, 1f).setLightLevel(s -> 3)
+					.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true));
 			setRegistryName("efow_moss_block");
 		}
 

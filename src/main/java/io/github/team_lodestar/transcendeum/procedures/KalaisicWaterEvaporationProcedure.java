@@ -99,8 +99,8 @@ public class KalaisicWaterEvaporationProcedure {
 		double sy = 0;
 		double sz = 0;
 		if (!world.isRemote()) {
-			if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
-					&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+			if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+					&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 							.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
 					&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 							.getItem() == Items.WATER_BUCKET
@@ -128,15 +128,16 @@ public class KalaisicWaterEvaporationProcedure {
 
 					private void run() {
 						if (direction == Direction.NORTH) {
-							if ((world.getBlockState(new BlockPos(x, y, z - 1))).getMaterial() == net.minecraft.block.material.Material.WATER
-									&& world.canBlockSeeSky(new BlockPos(x, y + 1, z - 1))) {
+							if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1))))
+									.getMaterial() == net.minecraft.block.material.Material.WATER
+									&& world.canBlockSeeSky(new BlockPos((int) x, (int) (y + 1), (int) (z - 1)))) {
 								{
-									BlockPos _bp = new BlockPos(x, y, z - 1);
+									BlockPos _bp = new BlockPos((int) x, (int) y, (int) (z - 1));
 									BlockState _bs = Blocks.AIR.getDefaultState();
 									world.setBlockState(_bp, _bs, 3);
 								}
 								if (world instanceof World && !world.isRemote()) {
-									((World) world).playSound(null, new BlockPos(x, y, z - 1),
+									((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) (z - 1)),
 											(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 													.getValue(new ResourceLocation("block.fire.extinguish")),
 											SoundCategory.AMBIENT, (float) 1, (float) 1);
@@ -151,15 +152,16 @@ public class KalaisicWaterEvaporationProcedure {
 								}
 							}
 						} else if (direction == Direction.SOUTH) {
-							if ((world.getBlockState(new BlockPos(x, y, z + 1))).getMaterial() == net.minecraft.block.material.Material.WATER
-									&& world.canBlockSeeSky(new BlockPos(x, y + 1, z + 1))) {
+							if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1))))
+									.getMaterial() == net.minecraft.block.material.Material.WATER
+									&& world.canBlockSeeSky(new BlockPos((int) x, (int) (y + 1), (int) (z + 1)))) {
 								{
-									BlockPos _bp = new BlockPos(x, y, z + 1);
+									BlockPos _bp = new BlockPos((int) x, (int) y, (int) (z + 1));
 									BlockState _bs = Blocks.AIR.getDefaultState();
 									world.setBlockState(_bp, _bs, 3);
 								}
 								if (world instanceof World && !world.isRemote()) {
-									((World) world).playSound(null, new BlockPos(x, y, z + 1),
+									((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) (z + 1)),
 											(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 													.getValue(new ResourceLocation("block.fire.extinguish")),
 											SoundCategory.AMBIENT, (float) 1, (float) 1);
@@ -174,15 +176,16 @@ public class KalaisicWaterEvaporationProcedure {
 								}
 							}
 						} else if (direction == Direction.WEST) {
-							if ((world.getBlockState(new BlockPos(x - 1, y, z))).getMaterial() == net.minecraft.block.material.Material.WATER
-									&& world.canBlockSeeSky(new BlockPos(x - 1, y + 1, z))) {
+							if ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z)))
+									.getMaterial() == net.minecraft.block.material.Material.WATER
+									&& world.canBlockSeeSky(new BlockPos((int) (x - 1), (int) (y + 1), (int) z))) {
 								{
-									BlockPos _bp = new BlockPos(x - 1, y, z);
+									BlockPos _bp = new BlockPos((int) (x - 1), (int) y, (int) z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
 									world.setBlockState(_bp, _bs, 3);
 								}
 								if (world instanceof World && !world.isRemote()) {
-									((World) world).playSound(null, new BlockPos(x - 1, y, z),
+									((World) world).playSound(null, new BlockPos((int) (x - 1), (int) y, (int) z),
 											(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 													.getValue(new ResourceLocation("block.fire.extinguish")),
 											SoundCategory.AMBIENT, (float) 1, (float) 1);
@@ -197,15 +200,16 @@ public class KalaisicWaterEvaporationProcedure {
 								}
 							}
 						} else if (direction == Direction.EAST) {
-							if ((world.getBlockState(new BlockPos(x + 1, y, z))).getMaterial() == net.minecraft.block.material.Material.WATER
-									&& world.canBlockSeeSky(new BlockPos(x + 1, y + 1, z))) {
+							if ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z)))
+									.getMaterial() == net.minecraft.block.material.Material.WATER
+									&& world.canBlockSeeSky(new BlockPos((int) (x + 1), (int) (y + 1), (int) z))) {
 								{
-									BlockPos _bp = new BlockPos(x + 1, y, z);
+									BlockPos _bp = new BlockPos((int) (x + 1), (int) y, (int) z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
 									world.setBlockState(_bp, _bs, 3);
 								}
 								if (world instanceof World && !world.isRemote()) {
-									((World) world).playSound(null, new BlockPos(x + 1, y, z),
+									((World) world).playSound(null, new BlockPos((int) (x + 1), (int) y, (int) z),
 											(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 													.getValue(new ResourceLocation("block.fire.extinguish")),
 											SoundCategory.AMBIENT, (float) 1, (float) 1);
@@ -220,15 +224,16 @@ public class KalaisicWaterEvaporationProcedure {
 								}
 							}
 						} else if (direction == Direction.UP) {
-							if ((world.getBlockState(new BlockPos(x, y + 1, z))).getMaterial() == net.minecraft.block.material.Material.WATER
-									&& world.canBlockSeeSky(new BlockPos(x, y + 2, z))) {
+							if ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
+									.getMaterial() == net.minecraft.block.material.Material.WATER
+									&& world.canBlockSeeSky(new BlockPos((int) x, (int) (y + 2), (int) z))) {
 								{
-									BlockPos _bp = new BlockPos(x, y + 1, z);
+									BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
 									world.setBlockState(_bp, _bs, 3);
 								}
 								if (world instanceof World && !world.isRemote()) {
-									((World) world).playSound(null, new BlockPos(x, y + 1, z),
+									((World) world).playSound(null, new BlockPos((int) x, (int) (y + 1), (int) z),
 											(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 													.getValue(new ResourceLocation("block.fire.extinguish")),
 											SoundCategory.AMBIENT, (float) 1, (float) 1);
@@ -243,15 +248,16 @@ public class KalaisicWaterEvaporationProcedure {
 								}
 							}
 						} else if (direction == Direction.DOWN) {
-							if ((world.getBlockState(new BlockPos(x, y - 1, z))).getMaterial() == net.minecraft.block.material.Material.WATER
-									&& world.canBlockSeeSky(new BlockPos(x, y, z))) {
+							if ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z)))
+									.getMaterial() == net.minecraft.block.material.Material.WATER
+									&& world.canBlockSeeSky(new BlockPos((int) x, (int) y, (int) z))) {
 								{
-									BlockPos _bp = new BlockPos(x, y - 1, z);
+									BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
 									BlockState _bs = Blocks.AIR.getDefaultState();
 									world.setBlockState(_bp, _bs, 3);
 								}
 								if (world instanceof World && !world.isRemote()) {
-									((World) world).playSound(null, new BlockPos(x, y - 1, z),
+									((World) world).playSound(null, new BlockPos((int) x, (int) (y - 1), (int) z),
 											(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 													.getValue(new ResourceLocation("block.fire.extinguish")),
 											SoundCategory.AMBIENT, (float) 1, (float) 1);

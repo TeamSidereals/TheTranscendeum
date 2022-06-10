@@ -1,7 +1,7 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "the_transcendeum:blocks/shalow",
+    "down": "the_transcendeum:blocks/soil",
     "up": "the_transcendeum:blocks/efow_moss_top",
     "north": "the_transcendeum:blocks/efow_moss_side",
     "east": "the_transcendeum:blocks/efow_moss_side",

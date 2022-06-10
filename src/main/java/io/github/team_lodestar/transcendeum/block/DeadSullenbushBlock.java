@@ -172,7 +172,7 @@ public class DeadSullenbushBlock extends TheTranscendeumModElements.ModElement {
 				int y = pos.getY() + 1;
 				int z = pos.getZ();
 				BlockState blockstate = world.getBlockState(pos.up());
-				additionalCondition = TranscendeumPlantsAdditionalPlacinggrowthConditionProcedure.executeProcedure(Collections.emptyMap());
+				additionalCondition = TranscendeumPlantsAdditionalPlacinggrowthConditionProcedure.executeProcedure(Collections.EMPTY_MAP);
 			}
 			Block ground = state.getBlock();
 			return (ground == SullenSandBlock.block

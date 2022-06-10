@@ -1,4 +1,3 @@
-
 package io.github.team_lodestar.transcendeum.entity.renderer;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;

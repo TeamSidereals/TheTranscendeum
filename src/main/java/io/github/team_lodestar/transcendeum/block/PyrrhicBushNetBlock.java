@@ -94,7 +94,7 @@ public class PyrrhicBushNetBlock extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
-		public int getWeakPower(BlockState blockstate, IBlockReader blockAccess, BlockPos pos, Direction direction) {
+		public int getWeakPower(BlockState blockstate, IBlockReader blockAccess, BlockPos pos, Direction side) {
 			return 1;
 		}
 
