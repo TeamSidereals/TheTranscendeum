@@ -58,7 +58,7 @@ public class BorderSpikesAdditionalGenerationConditionProcedure {
 								.equals(new ResourceLocation("the_transcendeum:sullen_canyon"))
 				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
 						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))) {
+								.equals(new ResourceLocation("the_transcendeum:deleted_mod_element"))) {
 			fervent = (true);
 		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
 				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
@@ -120,16 +120,16 @@ public class BorderSpikesAdditionalGenerationConditionProcedure {
 								.equals(new ResourceLocation("the_transcendeum:sullen_desert"))
 				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
 						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))
-								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
+								.equals(new ResourceLocation("the_transcendeum:deleted_mod_element"))
 				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z))) != null
 						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x - 3), (int) y, (int) z)))
-								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
+								.equals(new ResourceLocation("the_transcendeum:deleted_mod_element"))
 				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3)))) != null
 						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z + 3))))
-								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
+								.equals(new ResourceLocation("the_transcendeum:deleted_mod_element"))
 				|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3)))) != null
 						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
-								.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))) {
+								.equals(new ResourceLocation("the_transcendeum:deleted_mod_element"))) {
 			adjfervent = (true);
 		} else if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z))) != null
 				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) (x + 3), (int) y, (int) z)))

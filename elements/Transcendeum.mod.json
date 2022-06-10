@@ -13,10 +13,19 @@
         "value": "CUSTOM:CrystaliaForest"
       },
       {
-        "value": "CUSTOM:SaltLowlands"
+        "value": "CUSTOM:KalaisicWastes"
+      },
+      {
+        "value": "CUSTOM:LavenderFare"
+      },
+      {
+        "value": "CUSTOM:SaltLowland"
       },
       {
         "value": "CUSTOM:SullenCanyon"
+      },
+      {
+        "value": "CUSTOM:SullenCliffs"
       },
       {
         "value": "CUSTOM:SullenDesert"
@@ -25,19 +34,7 @@
         "value": "CUSTOM:TranscendentOcean"
       },
       {
-        "value": "CUSTOM:TranscendentSea"
-      },
-      {
         "value": "CUSTOM:ViridianMires"
-      },
-      {
-        "value": "CUSTOM:SullenCliffs"
-      },
-      {
-        "value": "CUSTOM:KalaisicWastes"
-      },
-      {
-        "value": "CUSTOM:Lavenderfare"
       }
     ],
     "worldGenType": "Normal world gen",

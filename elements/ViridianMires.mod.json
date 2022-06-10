@@ -10,19 +10,19 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -8599833,
+      "value": -10956839,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -10132655,
+      "value": -12761555,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -12761555,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10984641,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -13408196,
+      "value": -14996196,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -38,24 +38,26 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:ViridLights"
+      "value": "CUSTOM:Twilighteris"
     },
-    "particlesProbability": 1.3,
-    "biomeCategory": "SWAMP",
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "rainingPossibility": 0.0,
-    "temperature": 0.9,
-    "baseHeight": -0.2,
-    "heightVariation": 0.1,
+    "temperature": 1.6,
+    "baseHeight": -0.5,
+    "heightVariation": 0.0,
+    "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 60,
-    "biomeDictionaryTypes": [
-      "SWAMP"
-    ],
+    "biomeWeight": 100,
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
@@ -63,20 +65,20 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
-    "vanillaTreeType": "Savanna trees",
-    "treeType": 1,
-    "minHeight": 20,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
     "treeStem": {
-      "value": "CUSTOM:ViridwoodLog"
+      "value": ""
     },
     "treeBranch": {
-      "value": "CUSTOM:ViridwoodLeaves"
+      "value": ""
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,

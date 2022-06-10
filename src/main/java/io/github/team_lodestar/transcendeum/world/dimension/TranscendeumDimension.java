@@ -106,17 +106,13 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:kalaisic_wastes")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowlands")).getGenerationSettings()
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowlands")).getGenerationSettings()
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sullen_desert")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sullen_desert")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_sea")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_sea")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_ocean")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());

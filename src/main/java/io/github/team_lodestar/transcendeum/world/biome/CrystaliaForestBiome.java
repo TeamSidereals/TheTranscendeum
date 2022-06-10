@@ -54,7 +54,7 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 	public static Biome biome;
 
 	public CrystaliaForestBiome(TheTranscendeumModElements instance) {
-		super(instance, 164);
+		super(instance, 455);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 
@@ -62,8 +62,8 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-13292701).setWaterColor(-4360492).setWaterFogColor(-4360492)
-						.withSkyColor(-13292701).withFoliageColor(10387789).withGrassColor(-12636046).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-11039271).setWaterColor(-4800261).setWaterFogColor(329011)
+						.withSkyColor(-11039271).withFoliageColor(-12761555).withGrassColor(-12761555).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(CrystaliaTransiumBlock.block.getDefaultState(),
 								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
@@ -77,8 +77,12 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 										.build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(10, 0.1F, 1))));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
+								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
+								.func_242731_b(4));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST).depth(0f).scale(0f).temperature(0.6f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(0f).scale(0f).temperature(1f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("the_transcendeum:crystalia_forest"));

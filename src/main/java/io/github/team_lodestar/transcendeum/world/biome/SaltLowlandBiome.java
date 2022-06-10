@@ -8,21 +8,24 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.gen.feature.Features;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
 
-import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.SaltrockBlock;
+import io.github.team_lodestar.transcendeum.block.ExcerockBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
-public class SaltLowlandsBiome extends TheTranscendeumModElements.ModElement {
+public class SaltLowlandBiome extends TheTranscendeumModElements.ModElement {
 	public static Biome biome;
 
-	public SaltLowlandsBiome(TheTranscendeumModElements instance) {
-		super(instance, 175);
+	public SaltLowlandBiome(TheTranscendeumModElements instance) {
+		super(instance, 453);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 
@@ -30,16 +33,20 @@ public class SaltLowlandsBiome extends TheTranscendeumModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-14404290).setWaterColor(-3807771).setWaterFogColor(-3807771)
-						.withSkyColor(-14404290).withFoliageColor(10387789).withGrassColor(-14016696).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-11047975).setWaterColor(-4800261).setWaterFogColor(329011)
+						.withSkyColor(-11047975).withFoliageColor(-12761555).withGrassColor(-12761555).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SaltrockBlock.block.getDefaultState(),
-								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
+								ExcerockBlock.block.getDefaultState(), ExcerockBlock.block.getDefaultState())));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
+								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
+								.func_242731_b(4));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.ICY).depth(0f).scale(0f).temperature(0f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(0f).scale(0f).temperature(0.2f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("the_transcendeum:salt_lowlands"));
+				event.getRegistry().register(biome.setRegistryName("the_transcendeum:salt_lowland"));
 			}
 		}
 	}

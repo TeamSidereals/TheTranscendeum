@@ -7,7 +7,7 @@
       "value": "CUSTOM:Morosite"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Kalastone"
+      "value": "CUSTOM:Sulkstone"
     },
     "airColor": {
       "value": -10992841,
@@ -19,10 +19,6 @@
     },
     "foliageColor": {
       "value": -12761555,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -10193282,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -38,24 +34,28 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:ViridInfection"
+      "value": "CUSTOM:Twilighteris"
     },
-    "particlesProbability": 10.0,
-    "biomeCategory": "EXTREME_HILLS",
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 3.0,
+    "baseHeight": 3.6999999999999997,
     "heightVariation": 0.0,
+    "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 60,
+    "biomeWeight": 100,
     "biomeDictionaryTypes": [
-      "DEAD"
+      "MOUNTAIN"
     ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
@@ -98,9 +98,7 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

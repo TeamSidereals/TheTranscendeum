@@ -10,15 +10,11 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -10998696,
+      "value": -11039271,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10066177,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -6710785,
+      "value": -4800261,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -34,45 +30,47 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:Effly"
+      "value": "CUSTOM:Twilighteris"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "FOREST",
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "rainingPossibility": 0.0,
-    "temperature": 0.6,
+    "temperature": 1.0,
     "baseHeight": 0.0,
     "heightVariation": 0.0,
+    "biomeType": "COOL",
     "spawnBiome": false,
-    "biomeWeight": 60,
-    "biomeDictionaryTypes": [
-      "FOREST"
-    ],
+    "biomeWeight": 100,
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 0,
-    "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treesPerChunk": 10,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 10,
     "treeStem": {
-      "value": ""
+      "value": "CUSTOM:StariamLog"
     },
     "treeBranch": {
-      "value": ""
+      "value": "CUSTOM:StariamLeaves"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -95,16 +93,6 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:HyrumaeGhoul"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "ambient"
-      }
-    ]
+    "spawnEntries": []
   }
 }

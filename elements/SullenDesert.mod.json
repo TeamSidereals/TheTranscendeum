@@ -10,19 +10,15 @@
       "value": "CUSTOM:SullenSandstone"
     },
     "airColor": {
-      "value": -7406593,
+      "value": -10956839,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -6136001,
+      "value": -12761555,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -6307992,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -13384205,
+      "value": -12761555,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -40,24 +36,26 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Twilighteris"
     },
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
+    "parent": {
+      "value": "No parent"
+    },
     "rainingPossibility": 0.0,
-    "temperature": 1.5,
-    "baseHeight": 1.6,
+    "temperature": 1.6,
+    "baseHeight": 3.4,
     "heightVariation": 0.0,
+    "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 60,
+    "biomeWeight": 100,
     "biomeDictionaryTypes": [
-      "WASTELAND",
-      "HOT",
-      "DRY"
+      "MOUNTAIN"
     ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
@@ -66,19 +64,19 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 1,
-    "minHeight": 9,
+    "treeType": 0,
+    "minHeight": 7,
     "treeStem": {
-      "value": "CUSTOM:Sullcactus"
+      "value": ""
     },
     "treeBranch": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,

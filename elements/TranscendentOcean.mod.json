@@ -4,21 +4,13 @@
   "definition": {
     "name": "Transcendent Ocean",
     "groundBlock": {
-      "value": "CUSTOM:SullenSandstone"
+      "value": "CUSTOM:EfowMoss"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Somberstone"
-    },
-    "airColor": {
-      "value": -11770241,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -10132655,
-      "falpha": 0.0
+      "value": "Blocks.GRAVEL"
     },
     "waterColor": {
-      "value": -10388254,
+      "value": -16313502,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -36,17 +28,23 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Twilighteris"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "OCEAN",
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "rainingPossibility": 0.0,
     "temperature": 0.5,
-    "baseHeight": -1.5,
-    "heightVariation": 0.1,
-    "spawnBiome": false,
-    "biomeWeight": 90,
-    "biomeDictionaryTypes": [],
+    "baseHeight": -0.6,
+    "heightVariation": 0.0,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 200,
+    "biomeDictionaryTypes": [
+      "OCEAN"
+    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

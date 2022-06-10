@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Crystalia Forest",
+    "name": "Crystallia Forest",
     "groundBlock": {
       "value": "CUSTOM:CrystaliaTransium"
     },
@@ -10,19 +10,19 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -13292701,
+      "value": -11039271,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -12636046,
+      "value": -12761555,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -12761555,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -4360492,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -4360492,
+      "value": -4800261,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -40,20 +40,24 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Twilighteris"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "FOREST",
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "rainingPossibility": 0.0,
-    "temperature": 0.6,
+    "temperature": 1.0,
     "baseHeight": 0.0,
     "heightVariation": 0.0,
+    "biomeType": "COOL",
     "spawnBiome": false,
-    "biomeWeight": 60,
+    "biomeWeight": 100,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,

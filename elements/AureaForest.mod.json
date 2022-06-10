@@ -10,23 +10,11 @@
       "value": "CUSTOM:Sombersoil"
     },
     "airColor": {
-      "value": -16307657,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -10066177,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -10066177,
+      "value": -16306814,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -8397575,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -6710785,
+      "value": -4800261,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -42,24 +30,26 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "CUSTOM:Twilighteris"
     },
-    "particlesProbability": 1.0,
-    "biomeCategory": "FOREST",
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "CUSTOM:AureaPlains"
+    },
     "rainingPossibility": 0.0,
-    "temperature": 0.6,
+    "temperature": 1.0,
     "baseHeight": 0.0,
     "heightVariation": 0.0,
+    "biomeType": "COOL",
     "spawnBiome": false,
-    "biomeWeight": 60,
-    "biomeDictionaryTypes": [
-      "FOREST"
-    ],
+    "biomeWeight": 100,
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
@@ -69,18 +59,18 @@
     "treesPerChunk": 0,
     "vanillaTreeType": "Savanna trees",
     "treeType": 0,
-    "minHeight": 12,
+    "minHeight": 10,
     "treeStem": {
-      "value": "CUSTOM:Kelavus"
+      "value": "CUSTOM:StariamLog"
     },
     "treeBranch": {
-      "value": "CUSTOM:KelaveLog"
+      "value": "CUSTOM:StariamLeaves"
     },
     "treeVines": {
-      "value": "CUSTOM:ChrysaliumVine"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": "CUSTOM:ChrysaliumVineBottom"
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -103,61 +93,6 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:Arffel"
-        },
-        "minGroup": 4,
-        "maxGroup": 6,
-        "weight": 175,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "CUSTOM:Puffel"
-        },
-        "minGroup": 4,
-        "maxGroup": 6,
-        "weight": 175,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "CUSTOM:Excrearer"
-        },
-        "minGroup": 2,
-        "maxGroup": 3,
-        "weight": 100,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "CUSTOM:HyrumaeGhoul"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 940,
-        "spawnType": "ambient"
-      },
-      {
-        "entity": {
-          "value": "CUSTOM:Kefgaell"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 50,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "CUSTOM:Lethreum"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 60,
-        "spawnType": "ambient"
-      }
-    ]
+    "spawnEntries": []
   }
 }

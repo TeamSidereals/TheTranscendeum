@@ -101,7 +101,7 @@ public class KalaisicWaterEvaporationProcedure {
 		if (!world.isRemote()) {
 			if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
 					&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-							.equals(new ResourceLocation("the_transcendeum:kalaisic_wastes"))
+							.equals(new ResourceLocation("the_transcendeum:deleted_mod_element"))
 					&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 							.getItem() == Items.WATER_BUCKET
 							|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)

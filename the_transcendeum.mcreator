@@ -105,15 +105,6 @@
       "registry_name": "sullen_sandstone"
     },
     {
-      "name": "SullenDesert",
-      "type": "biome",
-      "sortid": 149,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sullen_desert",
-      "path": "~/Biomes/Fervent"
-    },
-    {
       "name": "StariamSlab",
       "type": "block",
       "sortid": 27,
@@ -345,15 +336,6 @@
       "path": "~/Plants/Grass"
     },
     {
-      "name": "CrystaliaForest",
-      "type": "biome",
-      "sortid": 164,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystalia_forest",
-      "path": "~/Biomes/Pre-perpetual"
-    },
-    {
       "name": "StariamItemsTag",
       "type": "tag",
       "sortid": 165,
@@ -389,15 +371,6 @@
       "path": "~/Tags"
     },
     {
-      "name": "TranscendentOcean",
-      "type": "biome",
-      "sortid": 168,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "transcendent_ocean",
-      "path": "~/Biomes"
-    },
-    {
       "name": "Sullcactus",
       "type": "block",
       "sortid": 22,
@@ -422,15 +395,6 @@
       "locked_code": false,
       "registry_name": "huge_sullcactus",
       "path": "~/Structures/Natural"
-    },
-    {
-      "name": "TranscendentSea",
-      "type": "biome",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "transcendent_sea",
-      "path": "~/Biomes"
     },
     {
       "name": "HugeSullcactus1",
@@ -471,30 +435,12 @@
       }
     },
     {
-      "name": "SullenCanyon",
-      "type": "biome",
-      "sortid": 174,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sullen_canyon",
-      "path": "~/Biomes/Fervent"
-    },
-    {
       "name": "PolishedSomberstoneStairs",
       "type": "block",
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polished_somberstone_stairs"
-    },
-    {
-      "name": "SaltLowlands",
-      "type": "biome",
-      "sortid": 175,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "salt_lowlands",
-      "path": "~/Biomes/Perpetual"
     },
     {
       "name": "PolishedSomberstoneStairsRecipe",
@@ -580,15 +526,6 @@
       "locked_code": false,
       "registry_name": "corium_flower",
       "path": "~/Plants/Flowers"
-    },
-    {
-      "name": "AureaPlains",
-      "type": "biome",
-      "sortid": 179,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aurea_plains",
-      "path": "~/Biomes/Pre-perpetual"
     },
     {
       "name": "IaprieGrass",
@@ -708,15 +645,6 @@
       "registry_name": "kelave_button"
     },
     {
-      "name": "AureaForest",
-      "type": "biome",
-      "sortid": 180,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aurea_forest",
-      "path": "~/Biomes/Pre-perpetual"
-    },
-    {
       "name": "Kelfae",
       "type": "block",
       "sortid": 58,
@@ -787,15 +715,6 @@
       "locked_code": false,
       "registry_name": "kelave_wood_tag",
       "path": "~/Tags"
-    },
-    {
-      "name": "ViridianMires",
-      "type": "biome",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "viridian_mires",
-      "path": "~/Biomes/Golden"
     },
     {
       "name": "KelaveWoodRecipe",
@@ -1182,24 +1101,6 @@
       "locked_code": false,
       "registry_name": "large_lilies",
       "path": "~/Tags"
-    },
-    {
-      "name": "SullenCliffs",
-      "type": "biome",
-      "sortid": 210,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sullen_cliffs",
-      "path": "~/Biomes/Fervent"
-    },
-    {
-      "name": "CalidWoodlands",
-      "type": "biome",
-      "sortid": 211,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "calid_woodlands",
-      "path": "~/Biomes/Fervent"
     },
     {
       "name": "BerthelCrystalBlock",
@@ -4370,15 +4271,6 @@
       "path": "~/Plants/Flowers"
     },
     {
-      "name": "Lavenderfare",
-      "type": "biome",
-      "sortid": 407,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lavender_fare",
-      "path": "~/Biomes/Pre-perpetual"
-    },
-    {
       "name": "Effly",
       "type": "particle",
       "sortid": 410,
@@ -4865,15 +4757,6 @@
       "registry_name": "indigo_berry_pie_recipe"
     },
     {
-      "name": "KalaisicWastes",
-      "type": "biome",
-      "sortid": 436,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kalaisic_wastes",
-      "path": "~/Biomes/Divine"
-    },
-    {
       "name": "Shalow",
       "type": "block",
       "sortid": 437,
@@ -4925,6 +4808,105 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "custom"
+    },
+    {
+      "name": "SullenDesert",
+      "type": "biome",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_desert",
+      "path": "~/Biomes/Fervent"
+    },
+    {
+      "name": "SullenCliffs",
+      "type": "biome",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_cliffs",
+      "path": "~/Biomes/Fervent"
+    },
+    {
+      "name": "SullenCanyon",
+      "type": "biome",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sullen_canyon",
+      "path": "~/Biomes/Fervent"
+    },
+    {
+      "name": "KalaisicWastes",
+      "type": "biome",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kalaisic_wastes",
+      "path": "~/Biomes/Divine"
+    },
+    {
+      "name": "ViridianMires",
+      "type": "biome",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viridian_mires",
+      "path": "~/Biomes/Golden"
+    },
+    {
+      "name": "SaltLowland",
+      "type": "biome",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_lowland",
+      "path": "~/Biomes/Perpetual"
+    },
+    {
+      "name": "CrystaliaForest",
+      "type": "biome",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalia_forest",
+      "path": "~/Biomes/Pre-perpetual"
+    },
+    {
+      "name": "AureaForest",
+      "type": "biome",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aurea_forest",
+      "path": "~/Biomes/Pre-perpetual"
+    },
+    {
+      "name": "LavenderFare",
+      "type": "biome",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lavender_fare",
+      "path": "~/Biomes/Pre-perpetual"
+    },
+    {
+      "name": "TranscendentOcean",
+      "type": "biome",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_ocean",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "AureaPlains",
+      "type": "biome",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aurea_plains",
+      "path": "~/Biomes/Pre-perpetual"
     }
   ],
   "variable_elements": [
@@ -4957,7 +4939,6 @@
       "block.the_transcendeum.excerock": "Excerock",
       "item.the_transcendeum.test": "Test",
       "block.the_transcendeum.scalia_wart": "Scalia Wart",
-      "biome.the_transcendeum.calid_woodlands": "Calid Woodlands",
       "block.the_transcendeum.cavern_air": "Cavern Air",
       "block.the_transcendeum.berthel_crystal": "Berthel Crystal",
       "item.the_transcendeum.berthel_shovel": "Berthel Shovel",
@@ -5010,8 +4991,8 @@
       "item.the_transcendeum.hyrumae_ghoul_spawn_egg": "Hyrumae Ghoul Spawn Egg",
       "item.the_transcendeum.kiarite_ingot": "Kiarite Ingot",
       "item.minecraft.splash_potion.effect.arcedeonian_brew": "Splash Arcedeonian Brew",
-      "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "item.the_transcendeum.cadillacium_sword": "Cadillacium Sword",
+      "biome.the_transcendeum.transcendent_ocean": "Transcendent Ocean",
       "item.the_transcendeum.thelyarium_chestplate": "Thelyarium Chestplate",
       "block.the_transcendeum.pyrrhic_bush": "Pyrrhic Bush",
       "block.the_transcendeum.sullcactus": "Sullcactus",
@@ -5027,7 +5008,6 @@
       "block.the_transcendeum.kelave_wood": "Kelave Wood",
       "block.the_transcendeum.pyrrhic_bush_net": "Pyrrhic Bush Net",
       "block.the_transcendeum.stariam_slab": "Stariam Slab",
-      "biome.the_transcendeum.salt_lowlands": "Salt Lowlands",
       "block.the_transcendeum.mordhen_grass": "Viridian Grass",
       "block.the_transcendeum.azura_mushroom": "Azura Mushroom",
       "block.the_transcendeum.mergoany": "Mergoany",
@@ -5109,6 +5089,7 @@
       "block.the_transcendeum.morosite": "Morosite",
       "block.the_transcendeum.viridwood_button": "Viridwood Button",
       "item.the_transcendeum.excelhammer": "Excelhammer",
+      "biome.the_transcendeum.salt_lowland": "Salt Lowlands",
       "biome.the_transcendeum.sullen_canyon": "Sullen Canyon",
       "biome.the_transcendeum.aurea_forest": "Aurea Forest",
       "itemGroup.tabtranscendeum_mobs": "Transcendeum Mobs",
@@ -5136,7 +5117,7 @@
       "item.the_transcendeum.berthel_boots": "Berthel Boots",
       "block.the_transcendeum.iaprie_grass_block": "Iaprie Grass Block",
       "block.the_transcendeum.berthel_crystal_block": "Berthel Crystal Block",
-      "biome.the_transcendeum.crystalia_forest": "Crystalia Forest",
+      "biome.the_transcendeum.crystalia_forest": "Crystallia Forest",
       "item.the_transcendeum.indigo_jam": "Indigo Jam",
       "biome.the_transcendeum.lavender_fare": "Lavender Fare",
       "block.the_transcendeum.stariam_planks": "Stariam Planks",
@@ -5186,7 +5167,6 @@
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
       "item.the_transcendeum.remobren_spawn_egg": "Remobren Spawn Egg",
       "block.the_transcendeum.polished_sulkstone_slab": "Polished Sulkstone Slab",
-      "biome.the_transcendeum.transcendent_sea": "Transcendent Sea",
       "item.the_transcendeum.enigma_glove_powered": "Enigma Glove",
       "block.the_transcendeum.sullgrowth": "Sullgrowth",
       "block.the_transcendeum.lilac_buds": "Lilac Buds",
