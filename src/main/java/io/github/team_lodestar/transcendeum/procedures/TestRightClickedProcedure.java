@@ -1,14 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Random;
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.item.EnigmaGlovePoweredItem;
-import io.github.team_lodestar.transcendeum.item.EnigmaGloveItem;
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class TestRightClickedProcedure {
 
@@ -18,7 +10,9 @@ public class TestRightClickedProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure TestRightClicked!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
+
 		if (entity instanceof LivingEntity) {
 			Entity _ent = entity;
 			if (!_ent.world.isRemote()) {
@@ -68,4 +62,5 @@ public class TestRightClickedProcedure {
 			}
 		}
 	}
+
 }

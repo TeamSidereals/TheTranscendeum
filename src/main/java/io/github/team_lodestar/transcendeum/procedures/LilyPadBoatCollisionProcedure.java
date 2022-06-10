@@ -1,13 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.entity.item.BoatEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class LilyPadBoatCollisionProcedure {
 
@@ -37,13 +30,16 @@ public class LilyPadBoatCollisionProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency entity for procedure LilyPadBoatCollision!");
 			return;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
+
 		if (entity instanceof BoatEntity) {
 			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 		}
 	}
+
 }

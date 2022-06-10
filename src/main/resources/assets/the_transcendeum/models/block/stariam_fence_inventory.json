@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "the_transcendeum:blocks/stariam_planks",
-    "particle": "the_transcendeum:blocks/stariam_planks"
-  }
-}

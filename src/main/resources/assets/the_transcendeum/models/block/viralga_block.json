@@ -1,8 +1,0 @@
-{
-  "parent": "the_transcendeum:custom/viralga",
-  "textures": {
-    "all": "the_transcendeum:blocks/viralga",
-    "particle": "the_transcendeum:blocks/viralga",
-    "0": "the_transcendeum:blocks/viralga"
-  }
-}

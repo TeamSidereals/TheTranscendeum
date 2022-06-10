@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "the_transcendeum:blocks/polished_morosite",
-    "top": "the_transcendeum:blocks/polished_morosite",
-    "side": "the_transcendeum:blocks/polished_morosite"
-  }
-}

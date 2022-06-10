@@ -1,31 +1,11 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.client.util.ITooltipFlag;
-
-import java.util.stream.Stream;
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.util.AbstractMap;
-
-import io.github.team_lodestar.transcendeum.procedures.KiariteToolLivingEntityIsHitWithToolProcedure;
-import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
-import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class KiaritePickaxeItem extends TheTranscendeumModElements.ModElement {
+
 	@ObjectHolder("the_transcendeum:kiarite_pickaxe")
 	public static final Item block = null;
 
@@ -60,6 +40,7 @@ public class KiaritePickaxeItem extends TheTranscendeumModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(KiariteIngotItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(TranscendeumGearItemGroup.tab).isImmuneToFire()) {
+
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
@@ -82,6 +63,8 @@ public class KiaritePickaxeItem extends TheTranscendeumModElements.ModElement {
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}
+
 		}.setRegistryName("kiarite_pickaxe"));
 	}
+
 }

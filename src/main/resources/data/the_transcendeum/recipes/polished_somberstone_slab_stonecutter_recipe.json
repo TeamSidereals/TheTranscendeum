@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "the_transcendeum:polished_somberstone"
-  },
-  "result": "the_transcendeum:polished_somberstone_slab"
-}

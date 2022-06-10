@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "the_transcendeum:blocks/sulkstone",
-    "top": "the_transcendeum:blocks/sulkstone",
-    "side": "the_transcendeum:blocks/sulkstone"
-  }
-}

@@ -1,56 +1,21 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.util.ActionResult;
-import net.minecraft.network.IPacket;
-import net.minecraft.item.UseAction;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.IRendersAsItem;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-
-import java.util.stream.Stream;
-import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.AbstractMap;
-
-import io.github.team_lodestar.transcendeum.procedures.EnigmaGlovePoweredWhileBulletFlyingTickProcedure;
-import io.github.team_lodestar.transcendeum.procedures.EnigmaGlovePoweredRangedItemUsedProcedure;
-import io.github.team_lodestar.transcendeum.procedures.EnigmaGlovePoweredBulletHitsLivingEntityProcedure;
-import io.github.team_lodestar.transcendeum.entity.renderer.EnigmaGlovePoweredRenderer;
-import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElement {
+
 	@ObjectHolder("the_transcendeum:enigma_glove_powered")
 	public static final Item block = null;
+
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletenigma_glove_powered").setRegistryName("entitybulletenigma_glove_powered");
 
 	public EnigmaGlovePoweredItem(TheTranscendeumModElements instance) {
 		super(instance, 270);
+
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EnigmaGlovePoweredRenderer.ModelRegisterHandler());
 	}
 
@@ -61,8 +26,10 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 	}
 
 	public static class ItemRanged extends Item {
+
 		public ItemRanged() {
 			super(new Item.Properties().group(null).maxDamage(1500));
+
 			setRegistryName("enigma_glove_powered");
 		}
 
@@ -90,20 +57,26 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
+
 					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 5.5, 0);
+
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
+
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 
 					EnigmaGlovePoweredRangedItemUsedProcedure.executeProcedure(
 							Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("itemstack", itemstack))
 									.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+
 				}
 			}
 		}
+
 	}
 
 	@OnlyIn(value = Dist.CLIENT, _interface = IRendersAsItem.class)
 	public static class ArrowCustomEntity extends AbstractArrowEntity implements IRendersAsItem {
+
 		public ArrowCustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			super(arrow, world);
 		}
@@ -176,6 +149,7 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 				this.remove();
 			}
 		}
+
 	}
 
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
@@ -187,12 +161,14 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 		entityarrow.setKnockbackStrength(knockback);
 		entityarrow.setFire(100);
 		world.addEntity(entityarrow);
+
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.shulker.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+
 		return entityarrow;
 	}
 
@@ -202,18 +178,22 @@ public class EnigmaGlovePoweredItem extends TheTranscendeumModElements.ModElemen
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 2f * 2, 12.0F);
+
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(5.5);
 		entityarrow.setKnockbackStrength(0);
 		entityarrow.setIsCritical(false);
 		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
+
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.shulker.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
+
 		return entityarrow;
 	}
+
 }

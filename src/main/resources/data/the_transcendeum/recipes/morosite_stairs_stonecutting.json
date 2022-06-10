@@ -1,9 +1,0 @@
-{
-  "group": "morosite_stairs_stonecutting",
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "the_transcendeum:morosite"
-  },
-  "result": "the_transcendeum:morosite_stairs"
-}

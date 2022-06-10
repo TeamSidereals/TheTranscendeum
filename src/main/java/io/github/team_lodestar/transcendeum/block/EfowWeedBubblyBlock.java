@@ -1,58 +1,18 @@
 
 package io.github.team_lodestar.transcendeum.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.shapes.VoxelShapes;
-import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.ISelectionContext;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
-import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.BooleanProperty;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.BlockItem;
-import net.minecraft.fluid.Fluids;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.IWaterLoggable;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import java.util.stream.Stream;
-import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.AbstractMap;
-
-import io.github.team_lodestar.transcendeum.procedures.EfowWeedBreakChangeProcedure;
-import io.github.team_lodestar.transcendeum.procedures.EfowIfCanPlaceProcedure;
-import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
-import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+import net.minecraft.util.SoundEvent;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class EfowWeedBubblyBlock extends TheTranscendeumModElements.ModElement {
+
 	@ObjectHolder("the_transcendeum:efow_weed_bubbly")
 	public static final Block block = null;
 
 	public EfowWeedBubblyBlock(TheTranscendeumModElements instance) {
 		super(instance, 107);
+
 	}
 
 	@Override
@@ -69,13 +29,16 @@ public class EfowWeedBubblyBlock extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class CustomBlock extends Block implements IWaterLoggable {
+
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 		public CustomBlock() {
 			super(Block.Properties.create(Material.PLANTS).sound(SoundType.LILY_PADS).hardnessAndResistance(0.05f, 0f).setLightLevel(s -> 2)
 					.doesNotBlockMovement().notSolid().setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true)
 					.setOpaque((bs, br, bp) -> false));
+
 			this.setDefaultState(this.stateContainer.getBaseState().with(WATERLOGGED, false));
+
 			setRegistryName("efow_weed_bubbly");
 		}
 
@@ -106,7 +69,9 @@ public class EfowWeedBubblyBlock extends TheTranscendeumModElements.ModElement {
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();
-				return EfowIfCanPlaceProcedure.executeProcedure(Stream
+				return
+
+				EfowIfCanPlaceProcedure.executeProcedure(Stream
 						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
 								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
@@ -177,5 +142,7 @@ public class EfowWeedBubblyBlock extends TheTranscendeumModElements.ModElement {
 					world.addParticle(ParticleTypes.BUBBLE, d0, d1, d2, d3, d4, d5);
 				}
 		}
+
 	}
+
 }

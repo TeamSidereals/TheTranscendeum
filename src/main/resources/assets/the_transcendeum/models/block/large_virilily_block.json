@@ -1,8 +1,0 @@
-{
-  "parent": "the_transcendeum:custom/large_virilily",
-  "textures": {
-    "all": "the_transcendeum:blocks/large_virilily",
-    "particle": "the_transcendeum:blocks/large_virilily",
-    "0": "the_transcendeum:blocks/large_virilily"
-  }
-}

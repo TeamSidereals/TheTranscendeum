@@ -1,9 +1,0 @@
-{
-  "group": "polished_sulkstone_stairs_stonecutting2",
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "the_transcendeum:polished_sulkstone"
-  },
-  "result": "the_transcendeum:polished_sulkstone_stairs"
-}

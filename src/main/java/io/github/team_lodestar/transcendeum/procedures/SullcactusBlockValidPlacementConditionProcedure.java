@@ -1,13 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.block.SullenSandBlock;
-import io.github.team_lodestar.transcendeum.block.SullcactusBlock;
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class SullcactusBlockValidPlacementConditionProcedure {
 
@@ -32,10 +25,12 @@ public class SullcactusBlockValidPlacementConditionProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure SullcactusBlockValidPlacementCondition!");
 			return false;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+
 		return (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == SullenSandBlock.block
 				|| (world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == SullcactusBlock.block
 				|| (world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == SullcactusBlock.block
@@ -44,4 +39,5 @@ public class SullcactusBlockValidPlacementConditionProcedure {
 				|| (world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == SullcactusBlock.block
 				|| (world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == SullcactusBlock.block;
 	}
+
 }

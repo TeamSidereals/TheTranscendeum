@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_wall_post",
-  "textures": {
-    "wall": "the_transcendeum:blocks/sullen_sandstone_bottom",
-    "particle": "the_transcendeum:blocks/sullen_sandstone_bottom"
-  }
-}

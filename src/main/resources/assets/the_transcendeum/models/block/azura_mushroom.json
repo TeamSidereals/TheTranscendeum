@@ -1,8 +1,0 @@
-{
-  "parent": "the_transcendeum:custom/azura_mushroom",
-  "textures": {
-    "all": "the_transcendeum:blocks/avermal_mushroom_texture",
-    "particle": "the_transcendeum:blocks/avermal_mushroom_texture",
-    "0": "the_transcendeum:blocks/avermal_mushroom_texture"
-  }
-}

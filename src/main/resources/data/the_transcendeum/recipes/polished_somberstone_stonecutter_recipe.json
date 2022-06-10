@@ -1,9 +1,0 @@
-{
-  "group": "polished_somberstone",
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "the_transcendeum:somberstone"
-  },
-  "result": "the_transcendeum:polished_somberstone"
-}

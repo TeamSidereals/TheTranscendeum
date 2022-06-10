@@ -1,13 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class BorderSpikesAdditionalGenerationConditionProcedure {
 
@@ -32,10 +25,12 @@ public class BorderSpikesAdditionalGenerationConditionProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure BorderSpikesAdditionalGenerationCondition!");
 			return false;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+
 		boolean divine = false;
 		boolean fervent = false;
 		boolean golden = false;
@@ -247,4 +242,5 @@ public class BorderSpikesAdditionalGenerationConditionProcedure {
 										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) (z - 3))))
 										.equals(new ResourceLocation("the_transcendeum:transcendent_sea")));
 	}
+
 }

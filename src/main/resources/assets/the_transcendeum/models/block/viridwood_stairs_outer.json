@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "the_transcendeum:blocks/viridwood_planks",
-    "top": "the_transcendeum:blocks/viridwood_planks",
-    "side": "the_transcendeum:blocks/viridwood_planks"
-  }
-}

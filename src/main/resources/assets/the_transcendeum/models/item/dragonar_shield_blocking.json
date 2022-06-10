@@ -1,7 +1,0 @@
-{
-  "parent": "the_transcendeum:custom/dragonar_shield_blocking",
-  "textures": {
-    "1": "the_transcendeum:blocks/dragonar_shield",
-    "particle": "the_transcendeum:items/dragonar_shield"
-  }
-}

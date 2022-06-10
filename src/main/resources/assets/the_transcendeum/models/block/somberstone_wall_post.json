@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_wall_post",
-  "textures": {
-    "wall": "the_transcendeum:blocks/somberstone",
-    "particle": "the_transcendeum:blocks/somberstone"
-  }
-}

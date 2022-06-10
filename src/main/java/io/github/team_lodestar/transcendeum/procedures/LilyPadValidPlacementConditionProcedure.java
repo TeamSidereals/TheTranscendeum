@@ -1,11 +1,6 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-
-import java.util.Map;
-
-import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class LilyPadValidPlacementConditionProcedure {
 
@@ -30,14 +25,17 @@ public class LilyPadValidPlacementConditionProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure LilyPadValidPlacementCondition!");
 			return false;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+
 		return (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getMaterial() == net.minecraft.block.material.Material.WATER
 				&& !((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
 						.getMaterial() == net.minecraft.block.material.Material.WATER)
 				&& !((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
 						.getMaterial() == net.minecraft.block.material.Material.LAVA);
 	}
+
 }

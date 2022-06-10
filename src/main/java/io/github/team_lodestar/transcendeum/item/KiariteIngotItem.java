@@ -1,23 +1,17 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
-
-import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
-import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class KiariteIngotItem extends TheTranscendeumModElements.ModElement {
+
 	@ObjectHolder("the_transcendeum:kiarite_ingot")
 	public static final Item block = null;
 
 	public KiariteIngotItem(TheTranscendeumModElements instance) {
 		super(instance, 4);
+
 	}
 
 	@Override
@@ -26,6 +20,7 @@ public class KiariteIngotItem extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class ItemCustom extends Item {
+
 		public ItemCustom() {
 			super(new Item.Properties().group(TranscendeumItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("kiarite_ingot");
@@ -45,5 +40,7 @@ public class KiariteIngotItem extends TheTranscendeumModElements.ModElement {
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
 		}
+
 	}
+
 }

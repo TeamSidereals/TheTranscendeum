@@ -4978,8 +4978,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
+      "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4993,8 +4993,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.cellcyte": "Cellcyte",
+      "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -5297,11 +5297,11 @@
         "name": "Biomes",
         "children": [
           {
-            "name": "Divine",
+            "name": "Pre-perpetual",
             "children": []
           },
           {
-            "name": "Fervent",
+            "name": "Divine",
             "children": []
           },
           {
@@ -5309,7 +5309,7 @@
             "children": []
           },
           {
-            "name": "Pre-perpetual",
+            "name": "Fervent",
             "children": []
           },
           {
@@ -5408,5 +5408,5 @@
     "modElementsPackage": "io.github.team_lodestar.transcendeum",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100354000
+  "mcreatorVersion": 202200120510
 }
