@@ -1,9 +1,0 @@
-{
-  "group": "somberstone",
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "the_transcendeum:somberstone"
-  },
-  "result": "the_transcendeum:somberstone_wall"
-}

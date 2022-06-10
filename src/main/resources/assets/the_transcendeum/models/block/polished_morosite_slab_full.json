@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "the_transcendeum:blocks/polished_morosite",
-    "top": "the_transcendeum:blocks/polished_morosite",
-    "side": "the_transcendeum:blocks/polished_morosite"
-  }
-}

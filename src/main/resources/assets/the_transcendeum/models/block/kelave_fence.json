@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_side",
-  "textures": {
-    "texture": "the_transcendeum:blocks/kelave_planks",
-    "particle": "the_transcendeum:blocks/kelave_planks"
-  }
-}

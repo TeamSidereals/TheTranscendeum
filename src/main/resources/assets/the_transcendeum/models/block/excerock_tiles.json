@@ -1,7 +1,0 @@
-{
-  "parent": "block/leaves",
-  "textures": {
-    "all": "the_transcendeum:blocks/excerock_tiles",
-    "particle": "the_transcendeum:blocks/excerock_tiles"
-  }
-}

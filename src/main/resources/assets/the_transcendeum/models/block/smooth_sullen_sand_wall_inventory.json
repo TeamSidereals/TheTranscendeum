@@ -1,7 +1,0 @@
-{
-  "parent": "block/wall_inventory",
-  "textures": {
-    "wall": "the_transcendeum:blocks/smooth_sullen_sand",
-    "particle": "the_transcendeum:blocks/smooth_sullen_sand"
-  }
-}

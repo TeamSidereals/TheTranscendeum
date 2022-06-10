@@ -1,9 +1,0 @@
-{
-  "group": "polished_morosite_slab_stonecutting1",
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "the_transcendeum:morosite"
-  },
-  "result": "the_transcendeum:polished_morosite_slab"
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "the_transcendeum:custom/pyrrhic_bush_net",
-  "textures": {
-    "all": "the_transcendeum:blocks/pyrrhic_bush_net",
-    "particle": "the_transcendeum:blocks/pyrrhic_bush_net",
-    "0": "the_transcendeum:blocks/pyrrhic_bush_net"
-  }
-}
