@@ -1,0 +1,33 @@
+{
+  "group": "polished_somberstone_stairs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:polished_somberstone"
+    },
+    "3": {
+      "item": "the_transcendeum:polished_somberstone"
+    },
+    "4": {
+      "item": "the_transcendeum:polished_somberstone"
+    },
+    "6": {
+      "item": "the_transcendeum:polished_somberstone"
+    },
+    "7": {
+      "item": "the_transcendeum:polished_somberstone"
+    },
+    "8": {
+      "item": "the_transcendeum:polished_somberstone"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:polished_somberstone_stairs",
+    "count": 4
+  }
+}

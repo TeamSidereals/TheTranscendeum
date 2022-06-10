@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_transcendeum:blocks/stariam_log_top",
+    "up": "the_transcendeum:blocks/stariam_log_top",
+    "north": "the_transcendeum:blocks/stariam_log_side",
+    "east": "the_transcendeum:blocks/stariam_log_side",
+    "south": "the_transcendeum:blocks/stariam_log_side",
+    "west": "the_transcendeum:blocks/stariam_log_side",
+    "particle": "the_transcendeum:blocks/stariam_log_side"
+  }
+}

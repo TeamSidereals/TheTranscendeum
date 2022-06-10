@@ -1,9 +1,36 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.living.LivingFallEvent;
+
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
+import net.minecraft.util.DamageSource;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.particles.ParticleTypes;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.stream.Collectors;
+import java.util.function.Function;
+import java.util.Map;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Comparator;
+
+import io.github.team_lodestar.transcendeum.TheTranscendeumModVariables;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class PerformExcerockAttackProcedure {
-
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -61,7 +88,6 @@ public class PerformExcerockAttackProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency distance for procedure PerformExcerockAttack!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
@@ -70,7 +96,6 @@ public class PerformExcerockAttackProcedure {
 		double distance = dependencies.get("distance") instanceof Integer
 				? (int) dependencies.get("distance")
 				: (double) dependencies.get("distance");
-
 		double damage = 0;
 		if ((entity.getCapability(TheTranscendeumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new TheTranscendeumModVariables.PlayerVariables())).DoExcerockAttack) {
@@ -122,5 +147,4 @@ public class PerformExcerockAttackProcedure {
 			}
 		}
 	}
-
 }

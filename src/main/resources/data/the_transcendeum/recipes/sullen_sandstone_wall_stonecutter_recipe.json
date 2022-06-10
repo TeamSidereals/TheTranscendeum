@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "the_transcendeum:sullen_sandstone"
+  },
+  "result": "the_transcendeum:sullen_sandstone_wall"
+}

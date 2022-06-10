@@ -1,0 +1,27 @@
+{
+  "group": "somberstone_tools",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "1": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:stone_hoe",
+    "count": 1
+  }
+}

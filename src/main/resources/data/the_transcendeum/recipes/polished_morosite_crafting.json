@@ -1,0 +1,26 @@
+{
+  "group": "polished_morosite_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:morosite"
+    },
+    "1": {
+      "item": "the_transcendeum:morosite"
+    },
+    "2": {
+      "item": "the_transcendeum:morosite"
+    },
+    "3": {
+      "item": "the_transcendeum:morosite"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:polished_morosite",
+    "count": 4
+  }
+}

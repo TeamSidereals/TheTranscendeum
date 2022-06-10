@@ -1,0 +1,13 @@
+{
+  "group": "stariam_button",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_transcendeum:stariam_planks"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:stariam_button",
+    "count": 1
+  }
+}

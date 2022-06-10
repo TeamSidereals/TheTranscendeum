@@ -1,0 +1,22 @@
+{
+  "group": "viridwood_slab",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:viridwood_planks"
+    },
+    "1": {
+      "item": "the_transcendeum:viridwood_planks"
+    },
+    "2": {
+      "item": "the_transcendeum:viridwood_planks"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:viridwood_slab",
+    "count": 6
+  }
+}

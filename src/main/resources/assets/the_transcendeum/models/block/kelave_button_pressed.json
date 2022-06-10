@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "the_transcendeum:blocks/kelave_planks"
+  }
+}

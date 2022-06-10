@@ -1,0 +1,13 @@
+{
+  "group": "kelave_planks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_transcendeum:kelave_log"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:kelave_planks",
+    "count": 4
+  }
+}

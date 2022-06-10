@@ -1,0 +1,30 @@
+{
+  "group": "kiarite_pickaxe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "1": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "2": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:kiarite_pickaxe",
+    "count": 1
+  }
+}

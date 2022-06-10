@@ -1,0 +1,16 @@
+{
+  "group": "thelyarium_ingot_from_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:thelyarium_block"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:thelyarium_ingot",
+    "count": 9
+  }
+}

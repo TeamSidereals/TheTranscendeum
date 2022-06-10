@@ -1,6 +1,32 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.GameType;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.DamageSource;
+import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.client.network.play.NetworkPlayerInfo;
+import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
+import net.minecraft.client.Minecraft;
+
+import java.util.Random;
+import java.util.Map;
+
+import io.github.team_lodestar.transcendeum.particle.SharpBerthelParticle;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class BerthelSharpBladeProcedure {
 
@@ -25,12 +51,10 @@ public class BerthelSharpBladeProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency itemstack for procedure BerthelSharpBlade!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-
 		if (EntityTypeTags.getCollection().getTagByID(new ResourceLocation("forge:transcendent_mobs")).contains(entity.getType())) {
 			if (Math.random() < 0.25) {
 				if (!(new Object() {
@@ -74,5 +98,4 @@ public class BerthelSharpBladeProcedure {
 			}
 		}
 	}
-
 }

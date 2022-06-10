@@ -1,6 +1,15 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+import io.github.team_lodestar.transcendeum.block.ExcerockBlock;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class CavernAirProcedureProcedure {
 
@@ -25,12 +34,10 @@ public class CavernAirProcedureProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency z for procedure CavernAirProcedure!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-
 		double zs = 0;
 		double ys = 0;
 		double xs = 0;
@@ -42,7 +49,6 @@ public class CavernAirProcedureProcedure {
 					ys = (-8);
 					for (int index2 = 0; index2 < (int) (16); index2++) {
 						ys = (ys + 1);
-
 						CavernAirUpdateTickProcedure.executeProcedure(Stream
 								.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", (x + xs)),
 										new AbstractMap.SimpleEntry<>("y", (y + ys)), new AbstractMap.SimpleEntry<>("z", (z + zs)))
@@ -55,5 +61,4 @@ public class CavernAirProcedureProcedure {
 		}
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ExcerockBlock.block.getDefaultState(), 3);
 	}
-
 }

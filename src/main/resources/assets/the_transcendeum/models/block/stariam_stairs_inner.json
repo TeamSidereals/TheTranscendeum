@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "the_transcendeum:blocks/stariam_planks",
+    "bottom": "the_transcendeum:blocks/stariam_planks",
+    "top": "the_transcendeum:blocks/stariam_planks",
+    "side": "the_transcendeum:blocks/stariam_planks"
+  }
+}

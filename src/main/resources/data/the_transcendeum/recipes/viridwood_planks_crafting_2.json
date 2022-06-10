@@ -1,0 +1,13 @@
+{
+  "group": "viridwood_planks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_transcendeum:viridwood"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:viridwood_planks",
+    "count": 4
+  }
+}

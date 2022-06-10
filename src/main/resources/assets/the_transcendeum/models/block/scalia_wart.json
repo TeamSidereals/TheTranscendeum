@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "the_transcendeum:blocks/scalia_wart",
+    "particle": "the_transcendeum:blocks/scalia_wart"
+  }
+}

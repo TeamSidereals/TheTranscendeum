@@ -1,0 +1,9 @@
+{
+  "parent": "the_transcendeum:custom/sullcactus",
+  "textures": {
+    "all": "the_transcendeum:blocks/sullcactus",
+    "particle": "the_transcendeum:blocks/sullcactus",
+    "2": "the_transcendeum:blocks/sullcactus",
+    "missing": "the_transcendeum:blocks/sullcactus"
+  }
+}

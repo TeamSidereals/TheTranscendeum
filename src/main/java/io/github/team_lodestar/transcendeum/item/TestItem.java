@@ -1,17 +1,37 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
-import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
+import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemUseContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.block.BlockState;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+import io.github.team_lodestar.transcendeum.procedures.TestRightClickedProcedure;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class TestItem extends TheTranscendeumModElements.ModElement {
-
 	@ObjectHolder("the_transcendeum:test")
 	public static final Item block = null;
 
 	public TestItem(TheTranscendeumModElements instance) {
 		super(instance, 143);
-
 	}
 
 	@Override
@@ -20,7 +40,6 @@ public class TestItem extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("test");
@@ -71,7 +90,5 @@ public class TestItem extends TheTranscendeumModElements.ModElement {
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
-
 	}
-
 }

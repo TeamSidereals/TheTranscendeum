@@ -1,17 +1,33 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
-import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.block.BlockState;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+import io.github.team_lodestar.transcendeum.procedures.AcriumVirililyRightClickedInAirProcedure;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class AcriumVirililyItem extends TheTranscendeumModElements.ModElement {
-
 	@ObjectHolder("the_transcendeum:acrium_virilily")
 	public static final Item block = null;
 
 	public AcriumVirililyItem(TheTranscendeumModElements instance) {
 		super(instance, 65);
-
 	}
 
 	@Override
@@ -20,7 +36,6 @@ public class AcriumVirililyItem extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(TranscendeumBlocksItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("acrium_virilily");
@@ -55,7 +70,5 @@ public class AcriumVirililyItem extends TheTranscendeumModElements.ModElement {
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return ar;
 		}
-
 	}
-
 }

@@ -1,9 +1,20 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.entity.ErellumEntity;
+import io.github.team_lodestar.transcendeum.entity.EllumEntity;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class EllumErellumAttackTriggerProcedure {
-
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -43,14 +54,11 @@ public class EllumErellumAttackTriggerProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency sourceentity for procedure EllumErellumAttackTrigger!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-
 		if (sourceentity instanceof EllumEntity.CustomEntity || sourceentity instanceof ErellumEntity.CustomEntity) {
 			entity.setMotion((Math.sin(Math.toRadians(sourceentity.rotationYaw + 180)) * (-0.5)), 0.35,
 					(Math.cos(Math.toRadians(sourceentity.rotationYaw)) * (-0.5)));
 		}
 	}
-
 }

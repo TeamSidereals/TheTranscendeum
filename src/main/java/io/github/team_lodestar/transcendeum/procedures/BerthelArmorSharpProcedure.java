@@ -1,9 +1,31 @@
 package io.github.team_lodestar.transcendeum.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.DamageSource;
+import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import io.github.team_lodestar.transcendeum.particle.SharpBerthelParticle;
+import io.github.team_lodestar.transcendeum.item.BerthelArmorItem;
+import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class BerthelArmorSharpProcedure {
-
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -48,11 +70,9 @@ public class BerthelArmorSharpProcedure {
 				TheTranscendeumMod.LOGGER.warn("Failed to load dependency sourceentity for procedure BerthelArmorSharp!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-
 		if (EntityTypeTags.getCollection().getTagByID(new ResourceLocation("forge:transcendent_mobs")).contains(sourceentity.getType())) {
 			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.HEAD) : ItemStack.EMPTY)
 					.getItem() == BerthelArmorItem.helmet
@@ -110,5 +130,4 @@ public class BerthelArmorSharpProcedure {
 			}
 		}
 	}
-
 }

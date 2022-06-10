@@ -1,0 +1,30 @@
+{
+  "group": "kiarite_axe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "1": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "2": {
+      "item": "the_transcendeum:kiarite_ingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:kiarite_axe",
+    "count": 1
+  }
+}

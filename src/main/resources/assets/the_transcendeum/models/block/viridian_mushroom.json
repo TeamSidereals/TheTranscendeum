@@ -1,0 +1,8 @@
+{
+  "parent": "the_transcendeum:custom/viridian_mushroom",
+  "textures": {
+    "all": "the_transcendeum:blocks/viridian_mushroom_texture",
+    "particle": "the_transcendeum:blocks/viridian_mushroom_texture",
+    "missing": "the_transcendeum:blocks/viridian_mushroom_texture"
+  }
+}

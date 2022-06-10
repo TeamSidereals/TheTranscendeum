@@ -1,18 +1,60 @@
 
 package io.github.team_lodestar.transcendeum.block;
 
-import net.minecraft.block.material.Material;
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.common.util.ForgeSoundType;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IBlockDisplayReader;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Direction;
+import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.BooleanProperty;
+import net.minecraft.loot.LootContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.BlockItem;
+import net.minecraft.fluid.Fluids;
+import net.minecraft.fluid.FluidState;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.PushReaction;
+import net.minecraft.block.material.MaterialColor;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.IWaterLoggable;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Collections;
+import java.util.AbstractMap;
+
+import io.github.team_lodestar.transcendeum.procedures.BubbleTouchGiveAirProcedure;
+import io.github.team_lodestar.transcendeum.procedures.BubbleClickEquipProcedure;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumBlocksItemGroup;
+import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class BubbleBlock extends TheTranscendeumModElements.ModElement {
-
 	@ObjectHolder("the_transcendeum:bubble")
 	public static final Block block = null;
 
 	public BubbleBlock(TheTranscendeumModElements instance) {
 		super(instance, 86);
-
 	}
 
 	@Override
@@ -29,7 +71,6 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class CustomBlock extends Block implements IWaterLoggable {
-
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 		public CustomBlock() {
@@ -41,9 +82,7 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 							() -> new SoundEvent(new ResourceLocation("ambient.underwater.enter"))))
 					.hardnessAndResistance(0.1f, 0f).setLightLevel(s -> 5).doesNotBlockMovement().notSolid()
 					.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true).setOpaque((bs, br, bp) -> false));
-
 			this.setDefaultState(this.stateContainer.getBaseState().with(WATERLOGGED, false));
-
 			setRegistryName("bubble");
 		}
 
@@ -104,7 +143,6 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
@@ -134,7 +172,5 @@ public class BubbleBlock extends TheTranscendeumModElements.ModElement {
 							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
-
 	}
-
 }

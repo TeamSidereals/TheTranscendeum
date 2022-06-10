@@ -1,0 +1,36 @@
+{
+  "group": "enigma_glove",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "the_transcendeum:morosite"
+    },
+    "3": {
+      "item": "the_transcendeum:morosite"
+    },
+    "4": {
+      "item": "the_transcendeum:kefgaell_heart"
+    },
+    "5": {
+      "item": "the_transcendeum:morosite"
+    },
+    "6": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "7": {
+      "item": "minecraft:lava_bucket"
+    },
+    "8": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:enigma_glove",
+    "count": 1
+  }
+}

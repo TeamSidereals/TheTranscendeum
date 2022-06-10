@@ -1,0 +1,13 @@
+{
+  "group": "kelave_button",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_transcendeum:kelave_planks"
+    }
+  ],
+  "result": {
+    "item": "the_transcendeum:kelave_button",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "group": "morosite_wall_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:morosite"
+    },
+    "1": {
+      "item": "the_transcendeum:morosite"
+    },
+    "2": {
+      "item": "the_transcendeum:morosite"
+    },
+    "3": {
+      "item": "the_transcendeum:morosite"
+    },
+    "4": {
+      "item": "the_transcendeum:morosite"
+    },
+    "5": {
+      "item": "the_transcendeum:morosite"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:morosite_wall",
+    "count": 6
+  }
+}

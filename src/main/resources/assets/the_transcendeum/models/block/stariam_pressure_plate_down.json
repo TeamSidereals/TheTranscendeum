@@ -1,0 +1,7 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "particle": "the_transcendeum:blocks/stariam_planks",
+    "texture": "the_transcendeum:blocks/stariam_planks"
+  }
+}

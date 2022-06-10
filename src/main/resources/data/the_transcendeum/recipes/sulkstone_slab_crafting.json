@@ -1,0 +1,22 @@
+{
+  "group": "sulkstone_slab_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:sulkstone"
+    },
+    "1": {
+      "item": "the_transcendeum:sulkstone"
+    },
+    "2": {
+      "item": "the_transcendeum:sulkstone"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:sulkstone_slab",
+    "count": 6
+  }
+}

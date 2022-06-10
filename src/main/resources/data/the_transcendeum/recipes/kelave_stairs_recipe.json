@@ -1,0 +1,33 @@
+{
+  "group": "kelave_stairs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:kelave_planks"
+    },
+    "3": {
+      "item": "the_transcendeum:kelave_planks"
+    },
+    "4": {
+      "item": "the_transcendeum:kelave_planks"
+    },
+    "6": {
+      "item": "the_transcendeum:kelave_planks"
+    },
+    "7": {
+      "item": "the_transcendeum:kelave_planks"
+    },
+    "8": {
+      "item": "the_transcendeum:kelave_planks"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:kelave_stairs",
+    "count": 4
+  }
+}

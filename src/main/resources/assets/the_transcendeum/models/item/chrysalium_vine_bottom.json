@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "the_transcendeum:items/chrysalium_vine_bottom"
+  }
+}

@@ -1,8 +1,20 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
-public class TranscendeumItem extends Item {
+import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.item.ItemUseContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+
+import io.github.team_lodestar.transcendeum.world.dimension.TranscendeumDimension;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumItemsItemGroup;
+
+public class TranscendeumItem extends Item {
 	@ObjectHolder("the_transcendeum:transcendeum")
 	public static final Item block = null;
 
@@ -23,13 +35,11 @@ public class TranscendeumItem extends Item {
 			int y = pos.getY();
 			int z = pos.getZ();
 			boolean success = false;
-
 			if (world.isAirBlock(pos) && true) {
 				TranscendeumDimension.portal.portalSpawn(world, pos);
 				itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));
 				success = true;
 			}
-
 			return success ? ActionResultType.SUCCESS : ActionResultType.FAIL;
 		}
 	}

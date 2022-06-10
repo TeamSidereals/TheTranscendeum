@@ -1,0 +1,26 @@
+{
+  "group": "polished_somberstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "1": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "2": {
+      "item": "the_transcendeum:somberstone"
+    },
+    "3": {
+      "item": "the_transcendeum:somberstone"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:polished_somberstone",
+    "count": 4
+  }
+}

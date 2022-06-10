@@ -1,16 +1,36 @@
 package io.github.team_lodestar.transcendeum.entity.renderer;
 
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.util.math.vector.Vector3f;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
+
+import io.github.team_lodestar.transcendeum.item.EnigmaGlovePoweredItem;
+
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.mojang.blaze3d.matrix.MatrixStack;
+
 @OnlyIn(Dist.CLIENT)
 public class EnigmaGlovePoweredRenderer {
-
 	public static class ModelRegisterHandler {
-
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(EnigmaGlovePoweredItem.arrow, renderManager -> new CustomRender(renderManager));
 		}
-
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -31,7 +51,6 @@ public class EnigmaGlovePoweredRenderer {
 			EntityModel model = new Modelenigma_bullet_entity();
 			model.render(matrixStackIn, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 0.0625f);
 			matrixStackIn.pop();
-
 			super.render(entityIn, entityYaw, partialTicks, matrixStackIn, bufferIn, packedLightIn);
 		}
 
@@ -44,14 +63,12 @@ public class EnigmaGlovePoweredRenderer {
 	// Made with Blockbench 3.9.3
 	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 	// Paste this class into your mod and generate all required imports
-
 	public static class Modelenigma_bullet_entity extends EntityModel<Entity> {
 		private final ModelRenderer arrow;
 
 		public Modelenigma_bullet_entity() {
 			textureWidth = 64;
 			textureHeight = 64;
-
 			arrow = new ModelRenderer(this);
 			arrow.setRotationPoint(2.5F, 16.0F, 0.0F);
 			setRotationAngle(arrow, 0.0F, 0.0F, 1.5708F);

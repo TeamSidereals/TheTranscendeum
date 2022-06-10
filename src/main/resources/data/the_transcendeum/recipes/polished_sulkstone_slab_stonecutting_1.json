@@ -1,0 +1,9 @@
+{
+  "group": "polished_sulkstone_slab_stonecutting1",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "the_transcendeum:sulkstone"
+  },
+  "result": "the_transcendeum:polished_sulkstone_slab"
+}
