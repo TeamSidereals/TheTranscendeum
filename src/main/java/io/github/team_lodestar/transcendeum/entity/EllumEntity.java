@@ -77,8 +77,6 @@ public class EllumEntity extends TheTranscendeumModElements.ModElement {
 			biomeCriteria = true;
 		if (new ResourceLocation("the_transcendeum:aurea_forest").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("the_transcendeum:lavender_fare").equals(event.getName()))
-			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 100, 4, 10));

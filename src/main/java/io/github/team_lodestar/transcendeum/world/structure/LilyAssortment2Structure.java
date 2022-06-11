@@ -97,8 +97,6 @@ public class LilyAssortment2Structure {
 			biomeCriteria = true;
 		if (new ResourceLocation("the_transcendeum:aurea_plains").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("the_transcendeum:lavender_fare").equals(event.getName()))
-			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
