@@ -14,12 +14,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
-import net.minecraft.world.IServerWorld;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -28,9 +25,7 @@ import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
@@ -38,14 +33,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
-import javax.annotation.Nullable;
-
 import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.AbstractMap;
 
-import io.github.team_lodestar.transcendeum.procedures.TranscendentRayOnInitialEntitySpawnProcedure;
 import io.github.team_lodestar.transcendeum.procedures.TranscendentRayOnEntityTickUpdateProcedure;
 import io.github.team_lodestar.transcendeum.procedures.TranscendentRayNaturalEntitySpawningConditionProcedure;
 import io.github.team_lodestar.transcendeum.entity.renderer.TranscendentRayRenderer;
@@ -67,8 +59,8 @@ public class TranscendentRayEntity extends TheTranscendeumModElements.ModElement
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("transcendent_ray_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -205, -205, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("transcendent_ray_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -179,20 +171,6 @@ public class TranscendentRayEntity extends TheTranscendeumModElements.ModElement
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public ILivingEntityData onInitialSpawn(IServerWorld world, DifficultyInstance difficulty, SpawnReason reason,
-				@Nullable ILivingEntityData livingdata, @Nullable CompoundNBT tag) {
-			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-
-			TranscendentRayOnInitialEntitySpawnProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			return retval;
 		}
 
 		@Override

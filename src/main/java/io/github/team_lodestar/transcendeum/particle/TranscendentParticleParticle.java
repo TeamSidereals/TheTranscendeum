@@ -20,7 +20,7 @@ import net.minecraft.client.Minecraft;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TranscendentParticleParticle {
-	public static final BasicParticleType particle = new BasicParticleType(false);
+	public static final BasicParticleType particle = new BasicParticleType(true);
 
 	@SubscribeEvent
 	public static void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
@@ -41,7 +41,7 @@ public class TranscendentParticleParticle {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
 			this.setSize((float) 1, (float) 1);
-			this.particleScale *= (float) 1.1;
+			this.particleScale *= (float) 5;
 			this.maxAge = 10;
 			this.particleGravity = (float) 0;
 			this.canCollide = false;
