@@ -2,19 +2,15 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Aurea Forest",
+    "name": "Transcendent Ocean",
     "groundBlock": {
-      "value": "CUSTOM:IaprieGrassBlock"
+      "value": "CUSTOM:EfowMoss"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Sombersoil"
-    },
-    "airColor": {
-      "value": -16306814,
-      "falpha": 0.0
+      "value": "CUSTOM:EfowMoss"
     },
     "waterColor": {
-      "value": -4800261,
+      "value": -16313502,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -37,18 +33,20 @@
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
     "parent": {
-      "value": "CUSTOM:AureaPlains"
+      "value": "CUSTOM:TranscendentOcean"
     },
     "rainingPossibility": 0.0,
-    "temperature": 1.0,
-    "baseHeight": 0.0,
+    "temperature": 0.5,
+    "baseHeight": -1.2000000000000002,
     "heightVariation": 0.0,
-    "biomeType": "COOL",
+    "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 100,
-    "biomeDictionaryTypes": [],
+    "biomeWeight": 200,
+    "biomeDictionaryTypes": [
+      "OCEAN"
+    ],
     "grassPerChunk": 0,
-    "seagrassPerChunk": 0,
+    "seagrassPerChunk": 8,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
@@ -57,20 +55,20 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
-    "vanillaTreeType": "Savanna trees",
+    "vanillaTreeType": "Default",
     "treeType": 0,
-    "minHeight": 10,
+    "minHeight": 7,
     "treeStem": {
-      "value": "CUSTOM:StariamLog"
+      "value": ""
     },
     "treeBranch": {
-      "value": "CUSTOM:StariamLeaves"
+      "value": ""
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -82,8 +80,8 @@
     "spawnDesertPyramid": false,
     "spawnSwampHut": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": false,
-    "spawnShipwreck": false,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
     "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",

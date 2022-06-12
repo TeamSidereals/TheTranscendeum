@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "transcendent_ray.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 1.0,
+    "height": 1.0,
+    "scale": 1.1,
+    "speedFactor": 2.0,
+    "gravity": 0.0,
+    "maxAge": 10,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
+    "alwaysShow": false,
+    "renderType": "LIT"
+  }
+}

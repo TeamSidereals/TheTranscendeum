@@ -9,11 +9,13 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IBlockDisplayReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -52,8 +54,14 @@ public class HethiliteBlockBlock extends TheTranscendeumModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(3f, 30f).setLightLevel(s -> 0).harvestLevel(2)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool().slipperiness(0.7999999999999999f).tickRandomly());
+					.harvestTool(ToolType.PICKAXE).setRequiresTool().slipperiness(0.7999999999999999f).notSolid().tickRandomly()
+					.setOpaque((bs, br, bp) -> false));
 			setRegistryName("hethilite_block");
+		}
+
+		@Override
+		public boolean shouldDisplayFluidOverlay(BlockState state, IBlockDisplayReader world, BlockPos pos, FluidState fluidstate) {
+			return true;
 		}
 
 		@Override
