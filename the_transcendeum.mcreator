@@ -4733,14 +4733,6 @@
       "registry_name": "indigo_berries"
     },
     {
-      "name": "IndigoBerryPie",
-      "type": "item",
-      "sortid": 432,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indigo_berry_pie"
-    },
-    {
       "name": "IndigoJam",
       "type": "item",
       "sortid": 434,
@@ -4800,14 +4792,6 @@
       "locked_code": false,
       "registry_name": "efow_fruit",
       "path": "~/LyofsPlace"
-    },
-    {
-      "name": "Custom",
-      "type": "code",
-      "sortid": 442,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "custom"
     },
     {
       "name": "SullenDesert",
@@ -4907,6 +4891,140 @@
       "locked_code": false,
       "registry_name": "aurea_plains",
       "path": "~/Biomes/Pre-perpetual"
+    },
+    {
+      "name": "SunkenDepths",
+      "type": "biome",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunken_depths",
+      "path": "~/Biomes"
+    },
+    {
+      "name": "TranscendentParticle",
+      "type": "particle",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_particle"
+    },
+    {
+      "name": "TranscendentHole",
+      "type": "particle",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_hole"
+    },
+    {
+      "name": "TranscendentRayOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_ray_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TranscendentRayNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_ray_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TranscendentRay",
+      "type": "livingentity",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_ray"
+    },
+    {
+      "name": "TranscendentRayOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 470,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_ray_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TranscendentRayBeaming",
+      "type": "procedure",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_ray_beaming",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4932,6 +5050,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "biome.the_transcendeum.sunken_depths": "Transcendent Ocean",
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.kiarite_block": "Kiarite Block",
       "block.the_transcendeum.thelyarium_block": "Block of Thelyarium ",
@@ -4959,8 +5078,8 @@
       "entity.the_transcendeum.kefgaell": "Kefgaell",
       "block.the_transcendeum.virilily_block": "Virilily",
       "block.the_transcendeum.viridwood_fence": "Viridwood Fence",
-      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "block.the_transcendeum.kelave_stairs": "Kelave Stairs",
+      "block.the_transcendeum.somberstone_stairs": "Somberstone Stairs",
       "item.the_transcendeum.testmob_spawn_egg": "testmob Spawn Egg",
       "block.the_transcendeum.smooth_sullen_sand": "Smooth Sullen Sand",
       "item.the_transcendeum.lilyshield": "Lilyshield",
@@ -4974,8 +5093,8 @@
       "item.the_transcendeum.apple_jam": "Apple Jam",
       "block.the_transcendeum.stariam_pressure_plate": "Stariam Pressure Plate",
       "item.the_transcendeum.kiarite_armor_leggings": "Kiarite Leggings",
-      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.polished_somberstone_slab": "Polished Somberstone Slab",
+      "block.the_transcendeum.cellcyte": "Cellcyte",
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
@@ -4983,6 +5102,7 @@
       "block.the_transcendeum.twighlire": "Twighlire",
       "item.the_transcendeum.kiarite_armor_chestplate": "Kiarite Chestplate",
       "biome.the_transcendeum.agarith": "Agarith",
+      "item.the_transcendeum.transcendent_ray_spawn_egg": "Transcendent Ray Spawn Egg",
       "item.the_transcendeum.enigma_glove": "Enigma Glove",
       "block.the_transcendeum.sullen_thorn": "Sullen Thorn",
       "item.the_transcendeum.beetroot_jam": "Beetroot Jam",
@@ -5002,6 +5122,7 @@
       "block.the_transcendeum.saltrock": "Saltrock",
       "item.minecraft.tipped_arrow.effect.arcedeonian_brew": "Arcedeonian Arrow",
       "biome.the_transcendeum.mordhen_wastes": "Viridian Mires",
+      "entity.the_transcendeum.transcendent_ray": "Transcendent Ray",
       "block.the_transcendeum.somberstone_wall": "Somberstone Wall",
       "item.the_transcendeum.berthel_leggings": "Berthel Leggings",
       "block.the_transcendeum.acrium_virilily_block": "Corium Virilily",
@@ -5162,7 +5283,6 @@
       "itemGroup.tabtranscendeum_combat": "Transcendeum Combat",
       "block.the_transcendeum.polished_somberstone_stairs": "Polished Somberstone Stairs",
       "item.the_transcendeum.arffel_spawn_egg": "Arffel Spawn Egg",
-      "item.the_transcendeum.indigo_berry_pie": "Indigo Berry Pie",
       "block.the_transcendeum.viridwood_pressure_plate": "Viridwood Pressure Plate",
       "block.the_transcendeum.stariam_fence_gate": "Stariam Fence Gate",
       "item.the_transcendeum.remobren_spawn_egg": "Remobren Spawn Egg",
