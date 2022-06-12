@@ -9,7 +9,7 @@
       "predicate": {
         "blocking": 1
       },
-      "model": "the_transcendeum:custom/dragonar_shield_blocking"
+      "model": "the_transcendeum:item/dragonar_shield_blocking"
     }
   ]
 }
