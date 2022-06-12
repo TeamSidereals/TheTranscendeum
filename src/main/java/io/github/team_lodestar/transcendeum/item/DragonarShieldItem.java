@@ -1,6 +1,14 @@
 
 package io.github.team_lodestar.transcendeum.item;
 
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumGearItemGroup;
+import net.minecraft.item.*;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
@@ -8,10 +16,6 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
-import net.minecraft.item.UseAction;
-import net.minecraft.item.ShieldItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
@@ -29,29 +33,12 @@ public class DragonarShieldItem extends TheTranscendeumModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ShieldItem(new Item.Properties()) {
+		elements.items.add(() -> new ShieldItem(new Item.Properties().maxDamage(336 * 2).group(TranscendeumGearItemGroup.tab)) {
 			@Override
 			public String getTranslationKey(ItemStack stack) {
 				return stack.getChildTag("BlockEntityTag") != null
 						? this.getTranslationKey() + '.' + getColor(stack).getTranslationKey()
 						: super.getTranslationKey(stack);
-			}
-
-			@Override
-			public UseAction getUseAction(ItemStack stack) {
-				return UseAction.BLOCK;
-			}
-
-			@Override
-			public int getUseDuration(ItemStack stack) {
-				return 10;
-			}
-
-			@Override
-			public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-				ItemStack itemstack = playerIn.getHeldItem(handIn);
-				playerIn.setActiveHand(handIn);
-				return ActionResult.resultConsume(itemstack);
 			}
 
 			@Override
@@ -62,5 +49,13 @@ public class DragonarShieldItem extends TheTranscendeumModElements.ModElement {
 						"\u00A76Knocks up and deals extra 4 damage to the target, only if the target is a mob of the Transcendeum dimension."));
 			}
 		}.setRegistryName("dragonar_shield"));
+	}
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class RenderRegistry {
+		@SubscribeEvent
+		public static void registerModel(final FMLClientSetupEvent event) {
+			ItemModelsProperties.registerProperty(block, new ResourceLocation("blocking"), (itemStack, clientWorld, entity) -> entity != null && entity.isHandActive() && entity.getActiveItemStack() == itemStack ? 1.0F : 0.0F);
+		}
 	}
 }
