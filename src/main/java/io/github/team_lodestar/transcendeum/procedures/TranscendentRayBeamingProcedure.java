@@ -41,6 +41,8 @@ public class TranscendentRayBeamingProcedure {
 			descent = (descent + 0.25);
 			if (!world.getBlockState(new BlockPos((int) x, (int) (y - descent), (int) z)).isSolid()) {
 				world.addParticle(TranscendentParticleParticle.particle, x, (y - descent), z, 0, 0, 0);
+			} else {
+				break;
 			}
 		}
 	}

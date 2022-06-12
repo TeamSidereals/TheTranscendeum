@@ -38,13 +38,13 @@ public class TranscendentRayNaturalEntitySpawningConditionProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		return (((Entity) world
+		return !(((Entity) world
 				.getEntitiesWithinAABB(TranscendentRayEntity.CustomEntity.class,
-						new AxisAlignedBB(x - (20 / 2d), y - (20 / 2d), z - (20 / 2d), x + (20 / 2d), y + (20 / 2d), z + (20 / 2d)), null)
+						new AxisAlignedBB(x - (512 / 2d), y - (512 / 2d), z - (512 / 2d), x + (512 / 2d), y + (512 / 2d), z + (512 / 2d)), null)
 				.stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null) == false;
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null);
 	}
 }
