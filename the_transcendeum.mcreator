@@ -4907,7 +4907,8 @@
       "sortid": 466,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "transcendent_particle"
+      "registry_name": "transcendent_particle",
+      "path": "~/particles"
     },
     {
       "name": "TranscendentHole",
@@ -4915,7 +4916,8 @@
       "sortid": 467,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "transcendent_hole"
+      "registry_name": "transcendent_hole",
+      "path": "~/particles"
     },
     {
       "name": "TranscendentRayOnEntityTickUpdate",
@@ -5024,6 +5026,17 @@
             "type": "world"
           }
         ]
+      }
+    },
+    {
+      "name": "TransmutationSpeed",
+      "type": "gamerule",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmutationSpeed",
+      "metadata": {
+        "type": "number"
       }
     }
   ],
@@ -5170,6 +5183,7 @@
       "block.the_transcendeum.polished_morosite_pressure_plate": "Polished Morosite Pressure Plate",
       "block.the_transcendeum.iaprie_tallgrass": "Mergoany",
       "block.the_transcendeum.kelave_slab": "Kelave Slab",
+      "gamerule.transmutationSpeed.description": "How long it takes for Transcendent Rays to transmute ordinary blocks to their divine counterparts",
       "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
       "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
@@ -5194,6 +5208,7 @@
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.kefgaell_heart": "Kefgaell Heart",
+      "gamerule.transmutationSpeed": "Transmutation Speed",
       "item.the_transcendeum.dragonar_shield": "Dragonar Shield",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",

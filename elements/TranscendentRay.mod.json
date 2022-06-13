@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:TranscendeumMobs"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -117,7 +117,7 @@
     "spawningCondition": {
       "name": "TranscendentRayNaturalEntitySpawningCondition"
     },
-    "spawningProbability": 5,
+    "spawningProbability": 3,
     "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,

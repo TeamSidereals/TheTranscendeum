@@ -18,7 +18,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -40,6 +39,7 @@ import java.util.AbstractMap;
 
 import io.github.team_lodestar.transcendeum.procedures.TranscendentRayOnEntityTickUpdateProcedure;
 import io.github.team_lodestar.transcendeum.procedures.TranscendentRayNaturalEntitySpawningConditionProcedure;
+import io.github.team_lodestar.transcendeum.itemgroup.TranscendeumMobsItemGroup;
 import io.github.team_lodestar.transcendeum.entity.renderer.TranscendentRayRenderer;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
@@ -59,7 +59,7 @@ public class TranscendentRayEntity extends TheTranscendeumModElements.ModElement
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -205, -205, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -205, -205, new Item.Properties().group(TranscendeumMobsItemGroup.tab))
 				.setRegistryName("transcendent_ray_spawn_egg"));
 	}
 
@@ -76,7 +76,7 @@ public class TranscendentRayEntity extends TheTranscendeumModElements.ModElement
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 5, 1, 1));
+		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 3, 1, 1));
 	}
 
 	@Override
