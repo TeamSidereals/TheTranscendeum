@@ -208,10 +208,16 @@ public class RemobrenRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.right_wing.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.remobren.rotateAngleX = -MathHelper.sin(f2 * 0.06F) * 0.45F + ((swingProgress * 2) * 180);
+			this.head.rotateAngleX = MathHelper.cos(f2 * 0.06F) * 0.35F + (f4 / (180F / (float) Math.PI));
+			this.tail.rotateAngleX = -MathHelper.cos(f2 * 0.06F) * 0.45F;
+			this.tail2.rotateAngleX = -MathHelper.cos(f2 * 0.06F) * 0.45F;
+
+			this.right_wing.rotateAngleY = MathHelper.cos(f * 0.4F + (float) Math.PI) * f1;
+			this.right_wing.rotateAngleZ = MathHelper.cos(f * 0.4F + (float) Math.PI) * f1;
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
-			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
-			this.left_wing.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
+			this.left_wing.rotateAngleY = MathHelper.cos(f * 0.4F) * f1;
+			this.left_wing.rotateAngleZ = MathHelper.cos(f * 0.4F) * f1;
 			this.tail.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 			this.tail2.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		}
