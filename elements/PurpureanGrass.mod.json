@@ -84,7 +84,7 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:Lavenderfare"
+        "value": "CUSTOM:LavenderFare"
       }
     ],
     "patchSize": 64

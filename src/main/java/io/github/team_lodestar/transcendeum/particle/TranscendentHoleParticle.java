@@ -43,7 +43,7 @@ public class TranscendentHoleParticle {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
 			this.setSize((float) 2, (float) 2);
-			this.particleScale *= (float) 50;
+			this.particleScale *= (float) 150;
 			this.maxAge = 21;
 			this.particleGravity = (float) 0;
 			this.canCollide = false;

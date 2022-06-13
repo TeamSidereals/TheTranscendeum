@@ -40,7 +40,7 @@ public class TranscendentRayNaturalEntitySpawningConditionProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		return !(((Entity) world
 				.getEntitiesWithinAABB(TranscendentRayEntity.CustomEntity.class,
-						new AxisAlignedBB(x - (512 / 2d), y - (512 / 2d), z - (512 / 2d), x + (512 / 2d), y + (512 / 2d), z + (512 / 2d)), null)
+						new AxisAlignedBB(x - (2048 / 2d), y - (2048 / 2d), z - (2048 / 2d), x + (2048 / 2d), y + (2048 / 2d), z + (2048 / 2d)), null)
 				.stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));

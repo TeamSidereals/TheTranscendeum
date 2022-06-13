@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Transmutation Speed",
+    "description": "How long it takes for Transcendent Rays to transmute ordinary blocks to their divine counterparts",
+    "category": "UPDATES",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 30
+  }
+}
