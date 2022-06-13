@@ -1,6 +1,11 @@
 
 package io.github.team_lodestar.transcendeum.entity;
 
+import io.github.team_lodestar.transcendeum.KefgaellShootGoal;
+import net.minecraft.entity.ai.goal.*;
+import net.minecraft.network.datasync.DataParameter;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
@@ -20,12 +25,6 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.RangedAttackGoal;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -81,6 +80,8 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 	}
 
 	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
+		protected static final DataParameter<Boolean> SHOOTING = EntityDataManager.createKey(CustomEntity.class, DataSerializers.BOOLEAN);
+
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -102,7 +103,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, (float) 32));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, false, false));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8, 20) {
 				@Override
 				protected Vector3d getPosition() {
@@ -115,12 +116,15 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 			});
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(1, new KefgaellShootGoal(this));
+			/*
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
 				@Override
 				public boolean shouldContinueExecuting() {
 					return this.shouldExecute();
 				}
 			});
+			 */
 		}
 
 		@Override
@@ -144,6 +148,11 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 		}
 
 		@Override
+		protected float getSoundPitch() {
+			return 0.5F;
+		}
+
+		@Override
 		public boolean onLivingFall(float l, float d) {
 			return false;
 		}
@@ -158,7 +167,7 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 		}
 
 		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
-			EnigmaGlovePoweredItem.shoot(this, target);
+			//EnigmaGlovePoweredItem.shoot(this, target);
 		}
 
 		@Override
@@ -173,6 +182,20 @@ public class KefgaellEntity extends TheTranscendeumModElements.ModElement {
 		public void livingTick() {
 			super.livingTick();
 			this.setNoGravity(true);
+		}
+
+		public boolean getShooting() {
+			return this.dataManager.get(SHOOTING);
+		}
+
+		public void setShooting(boolean shooting) {
+			this.dataManager.set(SHOOTING, shooting);
+		}
+
+		@Override
+		protected void registerData() {
+			super.registerData();
+			this.dataManager.register(SHOOTING, false);
 		}
 	}
 }

@@ -214,8 +214,7 @@ public class KefgaellRenderer {
 		}
 
 		@Override
-		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
-				float alpha) {
+		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 			head.render(matrixStack, buffer, packedLight, packedOverlay);
 		}
 
@@ -226,11 +225,20 @@ public class KefgaellRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.jaw.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.leg1.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-			this.leg4.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-			this.leg2.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-			this.leg3.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+			this.leg1.rotateAngleX = MathHelper.cos(f * 1.0F) * 0.3F * f1;
+			this.leg4.rotateAngleX = MathHelper.cos(f * 1.0F) * -0.3F * f1;
+			this.leg2.rotateAngleX = MathHelper.cos(f * 1.0F) * -0.3F * f1;
+			this.leg3.rotateAngleX = MathHelper.cos(f * 1.0F) * 0.3F * f1;
+
+			if (((KefgaellEntity.CustomEntity) e).getShooting()) {
+				this.head.rotateAngleX = MathHelper.cos(f2 * 0.052F) * 0.3F - 0.5F;
+				this.jaw.rotateAngleX = MathHelper.cos(f2 * 0.05F) * 0.35F + 0.5F;
+			} else {
+				this.head.rotateAngleX = MathHelper.cos(f2 * 0.052F) * 0.3F;
+				this.jaw.rotateAngleX = MathHelper.cos(f2 * 0.05F) * 0.35F;
+			}
+
+			this.head.rotationPointY = MathHelper.sin(f2 * 0.05F) * 1.25F;
 		}
 	}
 }
