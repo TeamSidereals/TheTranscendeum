@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "soil",
+    "texture": "shalow",
     "textureTop": "efow_moss_top",
     "textureLeft": "efow_moss_side",
     "textureFront": "efow_moss_side",
@@ -11,7 +11,7 @@
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "efow_moss_side",
@@ -34,8 +34,8 @@
     ],
     "name": "Efow Moss",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 1.0,
+    "hardness": 2.0,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {

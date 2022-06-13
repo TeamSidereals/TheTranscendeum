@@ -77,8 +77,7 @@ public class EfowWeedBlock extends TheTranscendeumModElements.ModElement {
 
 		public CustomBlock() {
 			super(Block.Properties.create(Material.PLANTS).sound(SoundType.LILY_PADS).hardnessAndResistance(0.05f, 0f).setLightLevel(s -> 2)
-					.doesNotBlockMovement().notSolid().setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true)
-					.setOpaque((bs, br, bp) -> false));
+					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(WATERLOGGED, false));
 			setRegistryName("efow_weed");
 		}

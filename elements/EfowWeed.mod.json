@@ -11,7 +11,7 @@
     "renderType": 12,
     "customModelName": "Cross model",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "efow_weed_0",
     "particleTexture": "",
