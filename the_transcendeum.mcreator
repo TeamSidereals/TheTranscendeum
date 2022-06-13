@@ -5070,6 +5070,15 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "transcendent_beam"
+    },
+    {
+      "name": "SaltPillar",
+      "type": "structure",
+      "sortid": 476,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_pillar",
+      "path": "~/Structures/Natural"
     }
   ],
   "variable_elements": [
