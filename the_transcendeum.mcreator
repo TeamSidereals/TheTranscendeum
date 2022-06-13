@@ -5045,6 +5045,31 @@
       "locked_code": true,
       "registry_name": "kefgaell_shoot_goal",
       "path": "~/custom elements"
+    },
+    {
+      "name": "ExcerockSwordCrafting",
+      "type": "recipe",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "excerock_sword_crafting"
+    },
+    {
+      "name": "BiaricForest",
+      "type": "biome",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biaric_forest",
+      "path": "~/Biomes/Golden"
+    },
+    {
+      "name": "TranscendentBeam",
+      "type": "particle",
+      "sortid": 475,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transcendent_beam"
     }
   ],
   "variable_elements": [
@@ -5070,7 +5095,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.the_transcendeum.sunken_depths": "Transcendent Ocean",
+      "biome.the_transcendeum.sunken_depths": "Sunken Depths",
       "block.the_transcendeum.large_virilily_block": "Large Virilily",
       "block.the_transcendeum.kiarite_block": "Kiarite Block",
       "block.the_transcendeum.thelyarium_block": "Block of Thelyarium ",
@@ -5118,6 +5143,7 @@
       "block.the_transcendeum.corium_flower": "Corium Flower",
       "entity.the_transcendeum.testmob": "testmob",
       "block.the_transcendeum.polished_sulkstone": "Polished Sulkstone",
+      "biome.the_transcendeum.biaric_forest": "Biaric Forest",
       "block.the_transcendeum.stariam_button": "Stariam Button",
       "block.the_transcendeum.twighlire": "Twighlire",
       "item.the_transcendeum.kiarite_armor_chestplate": "Kiarite Chestplate",
@@ -5190,6 +5216,7 @@
       "block.the_transcendeum.polished_morosite_pressure_plate": "Polished Morosite Pressure Plate",
       "block.the_transcendeum.iaprie_tallgrass": "Mergoany",
       "block.the_transcendeum.kelave_slab": "Kelave Slab",
+      "gamerule.transmutationSpeed.description": "How long it takes for Transcendent Rays to transmute ordinary blocks to their divine counterparts",
       "block.the_transcendeum.iaprie_grass": "Mergoany",
       "block.the_transcendeum.block_of_crystak": "Block Of Crystak",
       "item.the_transcendeum.berthel_armor_helmet": "Berthel Helmet",
@@ -5214,6 +5241,7 @@
       "block.the_transcendeum.kelave_fence": "Kelave Fence",
       "block.the_transcendeum.stariam_leaves": "Stariam Leaves",
       "item.the_transcendeum.kefgaell_heart": "Kefgaell Heart",
+      "gamerule.transmutationSpeed": "Transmutation Speed",
       "item.the_transcendeum.dragonar_shield": "Dragonar Shield",
       "block.the_transcendeum.somberstone": "Somberstone",
       "biome.the_transcendeum.sullen_desert": "Sullen Desert",

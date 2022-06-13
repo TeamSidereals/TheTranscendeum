@@ -113,6 +113,8 @@ public class MordhenGrassBlock extends TheTranscendeumModElements.ModElement {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("the_transcendeum:viridian_mires").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("the_transcendeum:biaric_forest").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);

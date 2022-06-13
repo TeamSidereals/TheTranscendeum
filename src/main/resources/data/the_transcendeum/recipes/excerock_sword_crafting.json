@@ -1,0 +1,24 @@
+{
+  "group": "excerock_sword_crafting",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "the_transcendeum:excerock"
+    },
+    "1": {
+      "item": "the_transcendeum:excerock"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "the_transcendeum:excerock_sword",
+    "count": 1
+  }
+}

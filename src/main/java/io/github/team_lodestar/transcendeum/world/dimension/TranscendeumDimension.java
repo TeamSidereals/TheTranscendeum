@@ -86,6 +86,26 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 	public void init(FMLCommonSetupEvent event) {
 		Set<Block> replaceableBlocks = new HashSet<>();
 		replaceableBlocks.add(ExcerockBlock.block);
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:biaric_forest")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:biaric_forest")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:viridian_mires")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:viridian_mires")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_ocean")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_ocean")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:crystalia_forest")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:crystalia_forest")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sullen_cliffs")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sullen_cliffs")).getGenerationSettings()
@@ -98,33 +118,21 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:lavender_fare")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:viridian_mires")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:viridian_mires")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:kalaisic_wastes")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:kalaisic_wastes")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sunken_depths")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sunken_depths")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sullen_desert")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sullen_desert")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_ocean")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_ocean")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:aurea_plains")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:aurea_plains")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:crystalia_forest")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:crystalia_forest")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:sullen_canyon")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());

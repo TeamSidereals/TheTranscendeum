@@ -35,6 +35,12 @@
       },
       {
         "value": "CUSTOM:ViridianMires"
+      },
+      {
+        "value": "CUSTOM:BiaricForest"
+      },
+      {
+        "value": "CUSTOM:SunkenDepths"
       }
     ],
     "worldGenType": "Normal world gen",

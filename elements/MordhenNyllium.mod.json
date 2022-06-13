@@ -48,14 +48,14 @@
     "dropAmount": 1,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
+    "plantsGrowOn": true,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
       "value": "GRASS"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {

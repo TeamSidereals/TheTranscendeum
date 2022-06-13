@@ -38,7 +38,7 @@ public class TranscendentOceanBiome extends TheTranscendeumModElements.ModElemen
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-16313502).setWaterFogColor(329011)
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-16304219).setWaterFogColor(329011)
 						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(EfowMossBlock.block.getDefaultState(),

@@ -2,15 +2,15 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Sunken Depths",
+    "name": "Biaric Forest",
     "groundBlock": {
-      "value": "CUSTOM:EfowMoss"
+      "value": "CUSTOM:MordhenNyllium"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:EfowMoss"
+      "value": "CUSTOM:Sombersoil"
     },
-    "waterColor": {
-      "value": -16304219,
+    "airColor": {
+      "value": -10956839,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -26,27 +26,25 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "CUSTOM:Twilighteris"
+      "value": "CUSTOM:ViridLights"
     },
-    "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "particlesProbability": 0.6,
+    "biomeCategory": "FOREST",
     "parent": {
-      "value": "CUSTOM:TranscendentOcean"
+      "value": "No parent"
     },
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
-    "baseHeight": -1.2000000000000002,
-    "heightVariation": 0.0,
+    "temperature": 1.6,
+    "baseHeight": 0.9,
+    "heightVariation": 0.1,
     "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 200,
-    "biomeDictionaryTypes": [
-      "OCEAN"
-    ],
+    "biomeWeight": 100,
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
-    "seagrassPerChunk": 8,
+    "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
@@ -54,15 +52,15 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 0,
-    "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treesPerChunk": 10,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 6,
     "treeStem": {
-      "value": ""
+      "value": "CUSTOM:KelaveLog"
     },
     "treeBranch": {
-      "value": ""
+      "value": "CUSTOM:ViridwoodLeaves"
     },
     "treeVines": {
       "value": ""
@@ -80,8 +78,8 @@
     "spawnDesertPyramid": false,
     "spawnSwampHut": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": true,
-    "spawnShipwreck": true,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
     "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
@@ -90,7 +88,12 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [],
+    "defaultFeatures": [
+      "Caves",
+      "Lakes",
+      "TaigaLargeFerns",
+      "TaigaRocks"
+    ],
     "spawnEntries": []
   }
 }

@@ -93,11 +93,11 @@
     },
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:Twilighteris"
+      "value": "FLAME"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleSpawningRadious": 1.2000000014901162,
+    "particleAmount": 20,
     "onMobTickUpdate": {
       "name": "TranscendentRayOnEntityTickUpdate"
     },

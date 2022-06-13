@@ -5,7 +5,7 @@ import net.minecraft.util.math.BlockPos;
 
 import java.util.Map;
 
-import io.github.team_lodestar.transcendeum.particle.TranscendentParticleParticle;
+import io.github.team_lodestar.transcendeum.particle.TranscendentBeamParticle;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 
 public class TranscendentRayBeamingProcedure {
@@ -40,7 +40,7 @@ public class TranscendentRayBeamingProcedure {
 		for (int index0 = 0; index0 < (int) (1024); index0++) {
 			descent = (descent + 0.25);
 			if (!world.getBlockState(new BlockPos((int) x, (int) (y - descent), (int) z)).isSolid()) {
-				world.addParticle(TranscendentParticleParticle.particle, x, (y - descent), z, 0, 0, 0);
+				world.addParticle(TranscendentBeamParticle.particle, x, (y - descent), z, 0, 0, 0);
 			} else {
 				break;
 			}

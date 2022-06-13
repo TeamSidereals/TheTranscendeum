@@ -89,6 +89,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:ViridianMires"
+      },
+      {
+        "value": "CUSTOM:BiaricForest"
       }
     ],
     "patchSize": 64
