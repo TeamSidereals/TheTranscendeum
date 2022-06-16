@@ -2,19 +2,19 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "soil",
-    "textureTop": "viridian_top2",
-    "textureLeft": "viridian",
-    "textureFront": "viridian",
-    "textureRight": "viridian",
-    "textureBack": "viridian",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "verdure_block_top",
+    "textureTop": "efow_moss_top",
+    "textureLeft": "efow_moss_side",
+    "textureFront": "efow_moss_side",
+    "textureRight": "efow_moss_side",
+    "textureBack": "efow_moss_side",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "viridianmoss",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Viridian Nyllium",
+    "name": "Viridian Moss",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 1.0,
@@ -48,14 +48,14 @@
     "dropAmount": 1,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": true,
+    "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "GRASS"
     },
     "tickRate": 10,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -121,13 +121,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
     ],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

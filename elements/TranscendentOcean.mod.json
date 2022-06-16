@@ -4,13 +4,13 @@
   "definition": {
     "name": "Transcendent Ocean",
     "groundBlock": {
-      "value": "CUSTOM:EfowMoss"
+      "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.GRAVEL"
+      "value": "CUSTOM:Shalow"
     },
     "waterColor": {
-      "value": -16304219,
+      "value": -16295974,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -37,7 +37,7 @@
     },
     "rainingPossibility": 0.0,
     "temperature": 0.5,
-    "baseHeight": -1.0999999999999999,
+    "baseHeight": -1.4000000000000001,
     "heightVariation": 0.0,
     "biomeType": "WARM",
     "spawnBiome": false,

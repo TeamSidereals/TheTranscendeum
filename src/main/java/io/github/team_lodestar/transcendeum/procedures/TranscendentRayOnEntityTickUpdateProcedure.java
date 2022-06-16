@@ -42,20 +42,23 @@ public class TranscendentRayOnEntityTickUpdateProcedure {
 		double loop = 0;
 		double zRadius = 0;
 		double particleAmount = 0;
-		loop = 0;
-		particleAmount = 768;
-		xRadius = 70;
-		zRadius = 70;
-		while (loop < particleAmount) {
-			world.addParticle(TranscendentParticleParticle.particle, (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), 250,
-					(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
-			loop = (loop + 1);
+		if (world.isRemote()) {// HOLE
+			world.addParticle(TranscendentHoleParticle.particle, x, 230, z, 0, 0, 0);// BEAM
+
+			TranscendentRayBeamingProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", 205),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			// RING
+			loop = 0;
+			particleAmount = 128;
+			xRadius = 40;
+			zRadius = 40;
+			while (loop < particleAmount) {
+				world.addParticle(TranscendentParticleParticle.particle, (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), 230,
+						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
+				loop = (loop + 1);
+			}
 		}
-		world.addParticle(TranscendentHoleParticle.particle, x, 250, z, 0, 0, 0);
-		TranscendentRayBeamingProcedure
-				.executeProcedure(Stream
-						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
-								new AbstractMap.SimpleEntry<>("y", 230), new AbstractMap.SimpleEntry<>("z", z))
-						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 	}
 }

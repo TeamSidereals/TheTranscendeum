@@ -6,9 +6,6 @@
     "items": [],
     "blocks": [
       {
-        "value": "CUSTOM:Sombersoil"
-      },
-      {
         "value": "CUSTOM:CrystaliaTransium"
       },
       {
@@ -16,6 +13,15 @@
       },
       {
         "value": "CUSTOM:PurpureanGrassBlock"
+      },
+      {
+        "value": "CUSTOM:ViridianMoss"
+      },
+      {
+        "value": "CUSTOM:VerdureBlock"
+      },
+      {
+        "value": "CUSTOM:Excsoil"
       }
     ],
     "functions": [],

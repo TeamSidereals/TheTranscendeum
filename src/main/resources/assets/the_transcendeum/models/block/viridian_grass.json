@@ -1,7 +1,7 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "the_transcendeum:blocks/virid_grass",
+    "cross": "the_transcendeum:blocks/viridgrass",
     "particle": "the_transcendeum:blocks/virid_grass"
   }
 }

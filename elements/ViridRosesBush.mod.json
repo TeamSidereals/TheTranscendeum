@@ -79,7 +79,7 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [
       {
-        "value": "CUSTOM:MordhenNyllium"
+        "value": "CUSTOM:VerdureBlock"
       }
     ],
     "frequencyOnChunks": 5,

@@ -31,8 +31,8 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
-import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
 import io.github.team_lodestar.transcendeum.block.IaprieGrassBlockBlock;
+import io.github.team_lodestar.transcendeum.block.ExcsoilBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
 @TheTranscendeumModElements.ModElement.Tag
@@ -52,7 +52,7 @@ public class AureaForestBiome extends TheTranscendeumModElements.ModElement {
 						.withSkyColor(-16306814).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(IaprieGrassBlockBlock.block.getDefaultState(),
-								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
+								ExcsoilBlock.block.getDefaultState(), ExcsoilBlock.block.getDefaultState())));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(0f).scale(0f).temperature(1f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())

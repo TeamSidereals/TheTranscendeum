@@ -168,7 +168,7 @@ public class FloweredViridianGrassBlock extends TheTranscendeumModElements.ModEl
 		@Override
 		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			Block ground = state.getBlock();
-			return (ground == MordhenNylliumBlock.block
+			return (ground == VerdureBlockBlock.block
 
 			)
 

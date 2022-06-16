@@ -31,7 +31,7 @@ import net.minecraft.block.BlockState;
 
 import java.util.Random;
 
-import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
+import io.github.team_lodestar.transcendeum.block.ExcsoilBlock;
 
 @Mod.EventBusSubscriber
 public class WaterViridTree1Structure {
@@ -62,7 +62,7 @@ public class WaterViridTree1Structure {
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == SombersoilBlock.block)
+							if (blockAt.getBlock() == ExcsoilBlock.block)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;

@@ -1,5 +1,5 @@
 {
-  "parent": "the_transcendeum:block/viridian_moss_block",
+  "parent": "the_transcendeum:block/excsoil",
   "display": {
     "thirdperson": {
       "rotation": [

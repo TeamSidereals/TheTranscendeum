@@ -37,8 +37,8 @@ public class TranscendentRayBeamingProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		double descent = 0;
 		descent = 0;
-		for (int index0 = 0; index0 < (int) (1024); index0++) {
-			descent = (descent + 0.25);
+		for (int index0 = 0; index0 < (int) (128); index0++) {
+			descent = (descent + 4);
 			if (!world.getBlockState(new BlockPos((int) x, (int) (y - descent), (int) z)).isSolid()) {
 				world.addParticle(TranscendentBeamParticle.particle, x, (y - descent), z, 0, 0, 0);
 			} else {

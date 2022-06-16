@@ -6,14 +6,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
-import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
-import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
-import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
+import net.minecraft.world.gen.trunkplacer.ForkyTrunkPlacer;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
+import net.minecraft.world.gen.foliageplacer.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.feature.TwoLayerFeature;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.FeatureSpread;
@@ -30,12 +28,10 @@ import net.minecraft.world.biome.Biome;
 
 import io.github.team_lodestar.transcendeum.particle.ViridLightsParticle;
 import io.github.team_lodestar.transcendeum.block.ViridwoodLeavesBlock;
-import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
-import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
+import io.github.team_lodestar.transcendeum.block.VerdureBlockBlock;
 import io.github.team_lodestar.transcendeum.block.KelaveLogBlock;
+import io.github.team_lodestar.transcendeum.block.ExcsoilBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
-
-import com.google.common.collect.ImmutableList;
 
 @TheTranscendeumModElements.ModElement.Tag
 public class BiaricForestBiome extends TheTranscendeumModElements.ModElement {
@@ -54,21 +50,21 @@ public class BiaricForestBiome extends TheTranscendeumModElements.ModElement {
 						.withSkyColor(-10956839).withFoliageColor(10387789).withGrassColor(9470285)
 						.setParticle(new ParticleEffectAmbience(ViridLightsParticle.particle, 0.006f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(MordhenNylliumBlock.block.getDefaultState(),
-								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(VerdureBlockBlock.block.getDefaultState(),
+								ExcsoilBlock.block.getDefaultState(), ExcsoilBlock.block.getDefaultState())));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
 						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(KelaveLogBlock.block.getDefaultState()),
 								new SimpleBlockStateProvider(ViridwoodLeavesBlock.block.getDefaultState()),
-								new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
-								new MegaJungleTrunkPlacer(6, 2, 19), new TwoLayerFeature(1, 1, 2)))
-										.setDecorators(
-												ImmutableList.of(TrunkVineTreeDecorator.field_236879_b_, LeaveVineTreeDecorator.field_236871_b_))
-										.build())
+								new AcaciaFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0)),
+								new ForkyTrunkPlacer(10, 2, 2), new TwoLayerFeature(1, 0, 2))).setIgnoreVines().build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(10, 0.1F, 1))));
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(5, 0.1F, 1))));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
-				DefaultBiomeFeatures.withLargeFern(biomeGenerationSettings);
+				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
+				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
+				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
+				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
 				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST).depth(0.9f).scale(0.1f)

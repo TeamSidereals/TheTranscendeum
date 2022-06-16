@@ -7,15 +7,15 @@
     "frameDuration": 1,
     "width": 1.0,
     "height": 1.0,
-    "scale": 40.0,
-    "speedFactor": 2.0,
+    "scale": 30.0,
+    "speedFactor": 0.0,
     "gravity": 0.0,
-    "maxAge": 10,
+    "maxAge": 2,
     "maxAgeDiff": 0,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
     "canCollide": false,
     "alwaysShow": true,
-    "renderType": "LIT"
+    "renderType": "OPAQUE"
   }
 }

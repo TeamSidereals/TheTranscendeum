@@ -4,7 +4,7 @@
   "definition": {
     "name": "Kalaisic Wastes",
     "groundBlock": {
-      "value": "CUSTOM:Morosite"
+      "value": "CUSTOM:Kalastone"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Sulkstone"

@@ -6,18 +6,18 @@
     "texture": "viridian_tallgrass_top",
     "textureBottom": "viridian_tallgrass_bottom",
     "customModelName": "Cross model",
-    "itemTexture": "viridgrass",
-    "particleTexture": "viridgrass",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "double",
     "staticPlantGenerationType": "Grass",
-    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewEffect": "POISON",
     "suspiciousStewDuration": 5,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Grass",
-    "customBoundingBox": true,
+    "customBoundingBox": false,
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Viridian Grass",
+    "name": "Viridian Tallgrass",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:TranscendeumBlocks"
@@ -76,19 +76,25 @@
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
-    "speedFactor": 1.0,
+    "speedFactor": 0.9,
     "canBePlacedOn": [
       {
-        "value": "CUSTOM:MordhenNyllium"
+        "value": "CUSTOM:ViridianMoss"
+      },
+      {
+        "value": "CUSTOM:VerdureBlock"
       }
     ],
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 10,
     "spawnWorldTypes": [
       "CUSTOM:Transcendeum"
     ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:ViridianMires"
+      },
+      {
+        "value": "CUSTOM:BiaricForest"
       }
     ],
     "patchSize": 64

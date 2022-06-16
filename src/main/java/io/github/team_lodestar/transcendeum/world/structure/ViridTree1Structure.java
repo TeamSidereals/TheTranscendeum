@@ -31,7 +31,7 @@ import net.minecraft.block.BlockState;
 
 import java.util.Random;
 
-import io.github.team_lodestar.transcendeum.block.MordhenNylliumBlock;
+import io.github.team_lodestar.transcendeum.block.VerdureBlockBlock;
 
 @Mod.EventBusSubscriber
 public class ViridTree1Structure {
@@ -62,7 +62,7 @@ public class ViridTree1Structure {
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == MordhenNylliumBlock.block)
+							if (blockAt.getBlock() == VerdureBlockBlock.block)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;

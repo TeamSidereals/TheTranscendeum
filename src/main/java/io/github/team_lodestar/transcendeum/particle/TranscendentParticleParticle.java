@@ -41,13 +41,13 @@ public class TranscendentParticleParticle {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
 			this.setSize((float) 1, (float) 1);
-			this.particleScale *= (float) 15;
-			this.maxAge = 10;
+			this.particleScale *= (float) 7;
+			this.maxAge = 2;
 			this.particleGravity = (float) 0;
 			this.canCollide = false;
-			this.motionX = vx * 2;
-			this.motionY = vy * 2;
-			this.motionZ = vz * 2;
+			this.motionX = vx * 0;
+			this.motionY = vy * 0;
+			this.motionZ = vz * 0;
 			this.selectSpriteRandomly(spriteSet);
 		}
 

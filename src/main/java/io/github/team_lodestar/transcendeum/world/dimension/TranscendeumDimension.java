@@ -90,6 +90,10 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:biaric_forest")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:dozing_plains")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:dozing_plains")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:viridian_mires")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:viridian_mires")).getGenerationSettings()
@@ -97,6 +101,10 @@ public class TranscendeumDimension extends TheTranscendeumModElements.ModElement
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:salt_lowland")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:dozing_hill")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:dozing_hill")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_transcendeum:transcendent_ocean")).getGenerationSettings()
 				.getSurfaceBuilder().get().getConfig().getTop().getBlock());

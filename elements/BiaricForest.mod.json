@@ -4,10 +4,10 @@
   "definition": {
     "name": "Biaric Forest",
     "groundBlock": {
-      "value": "CUSTOM:MordhenNyllium"
+      "value": "CUSTOM:VerdureBlock"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Sombersoil"
+      "value": "CUSTOM:Excsoil"
     },
     "airColor": {
       "value": -10956839,
@@ -52,10 +52,10 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 10,
-    "vanillaTreeType": "Big trees",
+    "treesPerChunk": 5,
+    "vanillaTreeType": "Savanna trees",
     "treeType": 1,
-    "minHeight": 6,
+    "minHeight": 10,
     "treeStem": {
       "value": "CUSTOM:KelaveLog"
     },
@@ -91,7 +91,10 @@
     "defaultFeatures": [
       "Caves",
       "Lakes",
-      "TaigaLargeFerns",
+      "TaigaRocks",
+      "TaigaRocks",
+      "TaigaRocks",
+      "TaigaRocks",
       "TaigaRocks"
     ],
     "spawnEntries": []

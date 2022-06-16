@@ -44,7 +44,7 @@ public class TranscendentHoleParticle {
 			this.spriteSet = spriteSet;
 			this.setSize((float) 2, (float) 2);
 			this.particleScale *= (float) 150;
-			this.maxAge = 21;
+			this.maxAge = 20;
 			this.particleGravity = (float) 0;
 			this.canCollide = false;
 			this.motionX = vx * 0;
@@ -56,13 +56,8 @@ public class TranscendentHoleParticle {
 		}
 
 		@Override
-		public int getBrightnessForRender(float partialTick) {
-			return 15728880;
-		}
-
-		@Override
 		public IParticleRenderType getRenderType() {
-			return IParticleRenderType.PARTICLE_SHEET_LIT;
+			return IParticleRenderType.PARTICLE_SHEET_OPAQUE;
 		}
 
 		@Override

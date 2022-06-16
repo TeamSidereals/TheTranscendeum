@@ -121,12 +121,22 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "spawnWorldTypes": [
+      "CUSTOM:Transcendeum"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SunkenDepths"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "CUSTOM:EfowMoss"
+      }
+    ],
+    "frequencyPerChunks": 31,
+    "frequencyOnChunk": 31,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 128
   }
 }

@@ -2,19 +2,19 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "virid_top",
-    "textureTop": "efow_moss_top",
-    "textureLeft": "efow_moss_side",
-    "textureFront": "efow_moss_side",
-    "textureRight": "efow_moss_side",
-    "textureBack": "efow_moss_side",
+    "texture": "excsoil",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "soil",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Viridian Moss Block",
+    "name": "Excsoil",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 1.0,
@@ -50,9 +50,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
-      "value": "GRASS"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -121,13 +121,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Transcendeum"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:MordhenNyllium"
+        "value": "Blocks.STONE"
       }
     ],
     "frequencyPerChunks": 10,

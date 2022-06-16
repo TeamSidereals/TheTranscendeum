@@ -41,6 +41,12 @@
       },
       {
         "value": "CUSTOM:SunkenDepths"
+      },
+      {
+        "value": "CUSTOM:DozingPlains"
+      },
+      {
+        "value": "CUSTOM:DozingHill"
       }
     ],
     "worldGenType": "Normal world gen",

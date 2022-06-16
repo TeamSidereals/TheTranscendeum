@@ -43,7 +43,7 @@ import java.util.List;
 
 import io.github.team_lodestar.transcendeum.block.StariamLogBlock;
 import io.github.team_lodestar.transcendeum.block.StariamLeavesBlock;
-import io.github.team_lodestar.transcendeum.block.SombersoilBlock;
+import io.github.team_lodestar.transcendeum.block.ExcsoilBlock;
 import io.github.team_lodestar.transcendeum.block.CrystaliaTransiumBlock;
 import io.github.team_lodestar.transcendeum.TheTranscendeumModElements;
 
@@ -66,7 +66,7 @@ public class CrystaliaForestBiome extends TheTranscendeumModElements.ModElement 
 						.withSkyColor(-11039271).withFoliageColor(-12761555).withGrassColor(-12761555).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(CrystaliaTransiumBlock.block.getDefaultState(),
-								SombersoilBlock.block.getDefaultState(), SombersoilBlock.block.getDefaultState())));
+								ExcsoilBlock.block.getDefaultState(), ExcsoilBlock.block.getDefaultState())));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
 						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(StariamLogBlock.block.getDefaultState()),
 								new SimpleBlockStateProvider(StariamLeavesBlock.block.getDefaultState()),

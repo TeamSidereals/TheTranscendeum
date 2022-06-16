@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_transcendeum:blocks/soil",
+    "up": "the_transcendeum:blocks/verdure_block_top",
+    "north": "the_transcendeum:blocks/verdure_block",
+    "east": "the_transcendeum:blocks/verdure_block",
+    "south": "the_transcendeum:blocks/verdure_block",
+    "west": "the_transcendeum:blocks/verdure_block",
+    "particle": "the_transcendeum:blocks/viridianmoss"
+  }
+}
