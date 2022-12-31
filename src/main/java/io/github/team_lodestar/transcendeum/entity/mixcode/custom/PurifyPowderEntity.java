@@ -8,6 +8,7 @@ import net.minecraft.entity.monster.ZombieVillagerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileItemEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.network.IPacket;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
@@ -38,7 +39,7 @@ public class PurifyPowderEntity extends ProjectileItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return null;
+        return Items.SUGAR.asItem();
     }
 
     @Override

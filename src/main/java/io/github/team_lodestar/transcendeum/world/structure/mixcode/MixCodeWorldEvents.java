@@ -61,6 +61,8 @@ public class MixCodeWorldEvents {
                     new HashMap<>(serverWorld.getChunkProvider().generator.func_235957_b_().func_236195_a_());
             tempMap.putIfAbsent(MixCodeStructureRegister.BIG_KELAVE_TREE.get(),
                     DimensionStructuresSettings.field_236191_b_.get(MixCodeStructureRegister.BIG_KELAVE_TREE.get()));
+            tempMap.putIfAbsent(MixCodeStructureRegister.HAND_OF_THE_SAND.get(),
+                    DimensionStructuresSettings.field_236191_b_.get(MixCodeStructureRegister.HAND_OF_THE_SAND.get()));
             serverWorld.getChunkProvider().generator.func_235957_b_().field_236193_d_ = tempMap;
         }
     }

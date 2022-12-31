@@ -252,5 +252,9 @@
   "item.the_transcendeum.medal" : "Medal",
   "item.the_transcendeum.staff_of_biosphere" : "Staff of Biosphere",
   "block.the_transcendeum.viriclinger_rope" : "Viriclinger Rope",
-  "item.the_transcendeum.purify_powder" : "Purify Powder"
+  "item.the_transcendeum.purify_powder" : "Purify Powder",
+  "item.the_transcendeum.toma_cake" : "Toma Cake",
+  "item.the_transcendeum.aqu_cake" : "Aqu Cake",
+  "item.the_transcendeum.lyof_cake" : "Lyof Cake",
+  "item.the_transcendeum.ddx_cake" : "Ddx Cake"
 }

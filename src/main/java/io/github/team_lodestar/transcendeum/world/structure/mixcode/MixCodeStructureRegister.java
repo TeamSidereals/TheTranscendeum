@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import io.github.team_lodestar.transcendeum.TheTranscendeumMod;
 import io.github.team_lodestar.transcendeum.world.structure.mixcode.custom.BigKelaveTreeStructure;
+import io.github.team_lodestar.transcendeum.world.structure.mixcode.custom.HandOfTheSandStructure;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.Structure;
@@ -33,6 +34,9 @@ public class MixCodeStructureRegister {
     public static void setupStructures() {
         setupMapSpacingAndLand(BIG_KELAVE_TREE.get(),
                 new StructureSeparationSettings(100,50, 1234567890),
+                true);
+        setupMapSpacingAndLand(HAND_OF_THE_SAND.get(),
+                new StructureSeparationSettings(300,250, 1234567891),
                 true);
     }
 
@@ -111,4 +115,6 @@ public class MixCodeStructureRegister {
 
     public static final RegistryObject<Structure<NoFeatureConfig>> BIG_KELAVE_TREE =
             STRUCTURES.register("big_kelave_tree", BigKelaveTreeStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> HAND_OF_THE_SAND =
+            STRUCTURES.register("hand_of_the_sand", HandOfTheSandStructure::new);
 }

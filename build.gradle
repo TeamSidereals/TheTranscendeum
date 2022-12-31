@@ -10,9 +10,9 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 
-version = '1.0'
+version = 'warzone edition'
 group = 'com.yourname.modid'
-archivesBaseName = 'modid'
+archivesBaseName = 'the_transcendeum'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 

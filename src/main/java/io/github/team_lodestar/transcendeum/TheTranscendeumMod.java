@@ -19,11 +19,14 @@ package io.github.team_lodestar.transcendeum;
 
 import io.github.team_lodestar.transcendeum.block.mixcode.MixCodeBlockRegister;
 import io.github.team_lodestar.transcendeum.entity.mixcode.MixCodeEntityType;
+import io.github.team_lodestar.transcendeum.entity.mixcode.custom.PurifyPowderRenderer;
 import io.github.team_lodestar.transcendeum.item.mixcode.MixCodeItemRegister;
 import io.github.team_lodestar.transcendeum.world.structure.mixcode.MixCodeStructureRegister;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemRenderer;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -77,14 +80,7 @@ public class TheTranscendeumMod {
 
 	public void clientLoad(FMLClientSetupEvent event) {
 		elements.getElements().forEach(element -> element.clientLoad(event));
-		registerEntityModel(event.getMinecraftSupplier());
-	}
-
-	private void registerEntityModel(Supplier<Minecraft> minecraft){
-		ItemRenderer renderer = minecraft.get().getItemRenderer();
-
-		RenderingRegistry.registerEntityRenderingHandler(MixCodeEntityType.PURIFY_POWDER_PROJECTILE.get(), (rendererManager) ->
-				new SpriteRenderer<>(rendererManager, renderer));
+		DistExecutor.runWhenOn(Dist.CLIENT, () -> PurifyPowderRenderer::registerEntityRenders);
 	}
 
 	@SubscribeEvent
